@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_redsand_grass", 
+      "material": "badger_grass"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube", 
+        "directional_texture": false, 
+        "directional_shape": false
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "gatherable_no_resources_wood"
+        ]
+      }, 
+      "badger:terrain_type": {
+        "terrain": "grass"
+      }
+    }
+  }
+}

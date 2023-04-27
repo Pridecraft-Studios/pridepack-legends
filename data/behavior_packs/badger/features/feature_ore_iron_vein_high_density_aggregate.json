@@ -1,0 +1,14 @@
+{
+    "format_version": "1.13.0",
+    "code:place_aggregated": {
+      "description": {
+        "identifier": "badger:feature_ore_iron_vein_high_density_aggregate"
+      },
+      "early_out": "first_failure",
+      "features": [
+        "badger:feature_ore_iron_vein_expression"
+        //"badger:feature_ore_iron_vein_high_density_roaming_piglin_scatter"
+      ]
+    }
+  }
+  

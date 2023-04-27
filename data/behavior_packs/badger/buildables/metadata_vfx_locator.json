@@ -1,0 +1,19 @@
+{
+
+  "format_version": "1.8.0",
+
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:metadata_vfx_locator",
+      "runtime_identifier": "badger:buildable"
+    },
+
+    "components": {
+        "badger:aabb": {
+            "width": 1.0,
+            "height": 1.0
+        },
+        "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

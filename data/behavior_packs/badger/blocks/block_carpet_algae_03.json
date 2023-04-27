@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_carpet_algae_03", 
+      "material": "badger_grass"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "carpet", 
+        "directional_texture": false, 
+        "directional_shape": false
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "gatherable_wood_sml"
+        ]
+      }, 
+      "badger:terrain_type": {
+        "terrain": "grass"
+      }
+    }
+  }
+}

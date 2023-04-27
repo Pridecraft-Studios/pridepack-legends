@@ -1,0 +1,72 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_nether_horderunners_prop_piglin_attack_stalag_003"
+    },
+    "structure_name": "prop_piglin_attack_stalag_003",
+
+    "placement_range": {
+      "x": [0,1],
+      "z": [0,1],
+      "y": [0,1]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {
+        "block_allow_list": [
+          "badger:block_netherrack",
+          "badger:block_netherrack_var01",
+          "badger:block_netherrack_var02",
+          "badger:block_netherrack_var03",
+          "badger:block_nylium_grass",
+"badger:block_nylium_grass_var01",
+          "badger:block_nylium", 
+          "badger:block_nylium_var01", 
+          "badger:block_nylium_var02",
+          "badger:block_netherrack_dried",
+          "badger:block_slab_nylium",
+          "badger:block_slab_nylium_var01",
+          "badger:block_slab_nylium_var02",
+          "badger:block_slab_netherrack_dried_var01",
+          "badger:block_slab_netherrack_dried"
+        ]
+      },
+      "block_intersection": {
+        "block_allow_list": [
+          "minecraft:air",
+          "badger:block_deco_netherwart_dried_large",
+          "badger:block_deco_nether_grass_dried",
+          "badger:block_deco_netherwart_dried_small",
+          "badger:block_deco_nether_grass_tall_dried",
+          "badger:block_netherrack",
+          "badger:block_netherrack_var01",
+          "badger:block_netherrack_var02",
+          "badger:block_netherrack_var03",
+          "badger:block_nylium_grass",
+"badger:block_nylium_grass_var01",
+          "badger:block_nylium", 
+          "badger:block_nylium_var01", 
+          "badger:block_nylium_var02",
+          "badger:block_netherrack_dried",
+          "badger:block_netherrack",
+          "badger:block_netherrack_var01",
+          "badger:block_netherrack_var02",
+          "badger:block_netherrack_var03",
+          "badger:block_nylium_grass",
+"badger:block_nylium_grass_var01",
+          "badger:block_nylium", 
+          "badger:block_nylium_var01", 
+          "badger:block_nylium_var02",
+          "badger:block_netherrack_dried",
+          "badger:block_slab_nylium",
+          "badger:block_slab_nylium_var01",
+          "badger:block_slab_nylium_var02",
+          "badger:block_slab_netherrack_dried_var01",
+          "badger:block_slab_netherrack_dried"
+        ]
+      },
+      "unburied": {}
+    }
+  }
+}

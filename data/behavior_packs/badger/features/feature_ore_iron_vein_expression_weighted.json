@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_ore_iron_vein_low_density_aggregate", 90],
+      ["badger:feature_ore_iron_vein_rare_density_aggregate",10]
+    ],
+    "description": {
+      "identifier": "badger:feature_ore_iron_vein_expression_weighted"
+    }
+  }
+}

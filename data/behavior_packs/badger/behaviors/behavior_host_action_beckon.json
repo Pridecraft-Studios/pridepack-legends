@@ -1,0 +1,58 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_host_action_beckon",
+      "runtime_identifier": "badger:behavior",
+      "is_experimental": false
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 0
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 20
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "name": "beckon",
+            "max_range": 100,
+            "action_tickets": {
+              "sc": 0
+            },
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "beckon"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder"
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "beckon",
+            "trigger": "on_beckon",
+            "range": {
+              "max_range": 100.0
+            },
+            "state_machine": {
+              "wind_up": 0.0,
+              "wind_down": 2.5,
+              "cooldown_time": 2,
+              "deactivates_on_cooldown": true
+            }
+          }
+        ]
+      }
+    }
+  }
+}

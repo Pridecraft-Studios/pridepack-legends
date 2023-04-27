@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_blazerod",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:projectile": {
+        "horizontal_speed": 25.0,
+        "min_flight_time": 0.0
+      },
+      "badger:projectile_physics": {
+        "gravity": -25
+      },
+      "badger:presentation_event": {
+        "on_entity_hit": {
+          "spawn_entity": [
+            "badger:proj_blazerod_impact_aoe"
+          ]
+        }
+      }
+    }
+  }
+}

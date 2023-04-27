@@ -1,0 +1,27 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_brokenlands_tarfill",
+      "places_feature": "badger:feature_brokenlands_tarpit_fill_scan_surface"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "first_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "tarpits"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "scatter_chance": 100,
+      "x": 0,
+      "z": 0,
+      "y": 0
+    }
+  }
+}

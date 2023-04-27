@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:zoner_village_center_fountain",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Upgrade",
+      "type": "Player"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:zoner_village_center_fountain",
+        "game_mode": "editor"
+      },
+      "badger:buildable_spawner": {
+        "types": [],
+        "cap": 0,
+        "rate": 1,
+        "offset": [
+          0,
+          3.0,
+          10.0
+        ]
+      }
+    }
+  }
+}

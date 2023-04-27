@@ -1,0 +1,788 @@
+{
+    "content": [
+        {
+            "path": "manifest.json"
+        },
+        {
+            "path": "cinematics/skip_opening.json"
+        },
+        {
+            "path": "cinematics/cultures/vil01_c02_village_intro_wof_fmv.json"
+        },
+        {
+            "path": "cinematics/cultures/vil01_c04_invasion_system_fmv.json"
+        },
+        {
+            "path": "cinematics/cultures/vil01_c05_defended.json"
+        },
+        {
+            "path": "cinematics/cultures/vil01_c09_fountain_disable.json"
+        },
+        {
+            "path": "cinematics/cultures/vil01_c10_ob_spawn.json"
+        },
+        {
+            "path": "cinematics/golems/gol01_c01_giant_outro.json"
+        },
+        {
+            "path": "cinematics/golems/gol02_c01_spawner_outro.json"
+        },
+        {
+            "path": "cinematics/golems/gol04_c01_shield_outro.json"
+        },
+        {
+            "path": "cinematics/golems/gol05_c01_sniper_outro.json"
+        },
+        {
+            "path": "cinematics/golems/gol06_c00_cavalry_intro_fmv.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd00_c01a_piglins_defeated.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd00_c01_village_occupied.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd00_c02_villagers_freed.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd00_c03a_village_defended.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd00_c03_piglins_arrive.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd00_c04_barrack_destroyed.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd00_c06_camp_destroyed.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd00_c07_fountain_restored.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd01_c02_defend_meet_the_boss_fmv.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd01_c03_defend_boss_mad_fmv.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd01_c04a_defend_boss_arrives.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd01_c04_defend_boss_leaves_nether_fmv.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd01_c05_defend_boss_death.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd01_c06_defend_portaldestruction_v1.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd01_c06_defend_portaldestruction_v1b.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd01_c06_defend_portaldestruction_v2.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd01_c06_defend_portaldestruction_v3.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd01_c50a_shield_intro.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd01_c50b_shield_down.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd01_c51_portal.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd02_c02_attack_meet_the_boss_fmv.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd02_c03_attack_boss_mad_fmv.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd02_c04a_attack_boss_arrives.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd02_c04_attack_boss_leaves_nether_fmv.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd02_c05_attack_boss_death.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd02_c06_attack_portaldestruction_v1.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd02_c06_attack_portaldestruction_v1b.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd02_c06_attack_portaldestruction_v3.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd02_c07_attack_boss_lose.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd02_c08_attack_boss_win.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd02_c09_attack_boss_captured.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd02_c50a_shield_intro.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd02_c50b_shield_down.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd02_c51_portal.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd03_c02_obs_meet_the_boss_fmv.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd03_c03_obs_boss_mad_fmv.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd03_c04a_obs_boss_intro.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd03_c04_obs_boss_leaves_nether_fmv.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd03_c05_obs_boss_death.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd03_c06_obs_portaldestruction_v1.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd03_c06_obs_portaldestruction_v1b.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd03_c06_obs_portaldestruction_v2.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd03_c06_obs_portaldestruction_v3.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd03_c50a_shield_intro.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd03_c50b_shield_down.json"
+        },
+        {
+            "path": "cinematics/hordes/hrd03_c51_portal.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob00_mob_disabled.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob01_c01_creeper_intro_fmv.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob01_c03a_creeper_join_fight.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob01_c03b_creeper_piglin_establish.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob01_c03_creeper_piglin_attack_fmv.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob01_c03_creeper_piglin_attack_night_fmv.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob01_c04_creeper_portaldestruction.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob01_c05_creeper_foa_fmv.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob01_c05_creeper_foa_night_fmv.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob01_c06_creeper_obspawn.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob01_c07_creeper_defended.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob02_c01_zombie_intro_fmv.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob02_c03a_zombie_join_fight.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob02_c03b_zombie_piglin_establish.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob02_c03_zombie_piglin_attack_fmv.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob02_c03_zombie_piglin_attack_night_fmv.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob02_c04_zombie_portaldestruction.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob02_c05_zombie_foa_fmv.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob02_c05_zombie_foa_night_fmv.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob02_c06_zombie_obspawn.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob02_c07_zombies_defended.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob03_c01_skeleton_intro_fmv.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob03_c03a_skeleton_join_fight.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob03_c03b_skeleton_piglin_establish.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob03_c03_skeleton_piglin_attack_fmv.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob03_c03_skeleton_piglin_attack_night_fmv.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob03_c04_skeleton_portaldestruction.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob03_c05_skeleton_foa_fmv.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob03_c05_skeleton_foa_night_fmv.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob03_c06_skeleton_obspawn.json"
+        },
+        {
+            "path": "cinematics/mob_alliance/mob03_c07_skeleton_defended.json"
+        },
+        {
+            "path": "cinematics/mounts/mnt02_c01_tiger_intro_fmv.json"
+        },
+        {
+            "path": "cinematics/mounts/mnt02_c01_tiger_intro_night_fmv.json"
+        },
+        {
+            "path": "cinematics/mounts/mnt04_c01_beetle_intro_fmv.json"
+        },
+        {
+            "path": "cinematics/mounts/mnt04_c01_beetle_intro_night_fmv.json"
+        },
+        {
+            "path": "cinematics/mounts/mnt05_c01_bird_intro_fmv.json"
+        },
+        {
+            "path": "cinematics/mounts/mnt05_c01_bird_intro_night_fmv.json"
+        },
+        {
+            "path": "cinematics/story/mst03_c00_opening.json"
+        },
+        {
+            "path": "cinematics/story/mst03_c03a_creeper_fmv.json"
+        },
+        {
+            "path": "cinematics/story/mst03_c03b_creeper_and_co_fmv.json"
+        },
+        {
+            "path": "cinematics/story/mst03_c03_the_coming_war_fmv.json"
+        },
+        {
+            "path": "cinematics/story/mst04_c04b_the_angry_mob_fmv.json"
+        },
+        {
+            "path": "cinematics/story/mst04_c04_nightfall_fmv.json"
+        },
+        {
+            "path": "cinematics/story/mst05_c05a_repercussions.json"
+        },
+        {
+            "path": "cinematics/story/mst05_c05a_repercussions_night.json"
+        },
+        {
+            "path": "cinematics/story/mst05_c05b_villager_1.json"
+        },
+        {
+            "path": "cinematics/story/mst05_c05b_villager_1_night.json"
+        },
+        {
+            "path": "cinematics/story/mst05_c05b_villager_2.json"
+        },
+        {
+            "path": "cinematics/story/mst05_c05b_villager_2_night.json"
+        },
+        {
+            "path": "cinematics/story/mst05_c05_the_hordes_invade_fmv.json"
+        },
+        {
+            "path": "cinematics/story/mst06_c06a_under_siege.json"
+        },
+        {
+            "path": "cinematics/story/mst06_c06b_siege_boss.json"
+        },
+        {
+            "path": "cinematics/story/mst06_c06b_victory.json"
+        },
+        {
+            "path": "cinematics/story/mst07_c07_the_final_boss_leaves_fmv.json"
+        },
+        {
+            "path": "cinematics/story/mst09_c09a_final_boss_death.json"
+        },
+        {
+            "path": "cinematics/story/mst09_c09_rise_of_the_vindicators.json"
+        },
+        {
+            "path": "cinematics/story/mst10_c010_epilogue_fmv.json"
+        },
+        {
+            "path": "cinematics/towers/tow_01_c01_blast_fmv.json"
+        },
+        {
+            "path": "cinematics/towers/tow_01_c01_blast_night.json"
+        },
+        {
+            "path": "cinematics/towers/tow_02_c01_frost_fmv.json"
+        },
+        {
+            "path": "cinematics/towers/tow_02_c01_frost_night.json"
+        },
+        {
+            "path": "cinematics/towers/tow_04_c01_stun_fmv.json"
+        },
+        {
+            "path": "cinematics/towers/tow_04_c01_stun_night.json"
+        },
+        {
+            "path": "scripts_bsharp20/achievements.js"
+        },
+        {
+            "path": "scripts_bsharp20/aaaaaa_counters_triggers/aaaaa_counters_triggers.js"
+        },
+        {
+            "path": "scripts_bsharp20/aaaaaa_counters_triggers/aaaa_triggers.js"
+        },
+        {
+            "path": "scripts_bsharp20/aaaaaa_counters_triggers/aaa_snapshots.js"
+        },
+        {
+            "path": "scripts_bsharp20/aaaaaa_counters_triggers/aa_counters.js"
+        },
+        {
+            "path": "scripts_bsharp20/aaaaaa_counters_triggers/a_counters_triggers_const.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/aaaaa_base_setup.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/aaaaa_base_variations.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/aaaa_barracks_config.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/aaaa_barracks_config_attack.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/aaaa_barracks_config_defend.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/aaaa_barracks_config_obstacle.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/aaaa_piglin_base_helpers.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/aa_base_dynamic_loot_config_easy.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/aa_base_dynamic_loot_config_hard.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/aa_base_dynamic_loot_config_normal.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/aa_base_dynamic_loot_config_peaceful.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/aa_piggo_gold_controller.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/a_base_dynamic_loot_config_shared.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/base_debug.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/base_dynamic_loot.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/base_first_encounter_announcer.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/base_piglin_loot_overrides.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/base_response_piglin_attack.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/base_response_piglin_dbb.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/base_response_piglin_defend.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/base_response_piglin_general.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/base_response_piglin_obstacle.js"
+        },
+        {
+            "path": "scripts_bsharp20/base_response/base_response_piglin_wof.js"
+        },
+        {
+            "path": "scripts_bsharp20/campaign_acts/act1_flow.js"
+        },
+        {
+            "path": "scripts_bsharp20/campaign_acts/act2_boss_base.js"
+        },
+        {
+            "path": "scripts_bsharp20/campaign_acts/a_campaign_acts_config.js"
+        },
+        {
+            "path": "scripts_bsharp20/campaign_acts/campaign_acts.js"
+        },
+        {
+            "path": "scripts_bsharp20/campaign_acts/campaign_acts_audio.js"
+        },
+        {
+            "path": "scripts_bsharp20/celebrations/campaign_celebrations.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/aaaaa_invasion_helpers.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/aaa_invasion_draw_decks_easy.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/aaa_invasion_draw_decks_hard.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/aaa_invasion_draw_decks_normal.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/aaa_invasion_draw_decks_peaceful.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/aaa_invasion_occupation_initial_units.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/aaa_placement_helpers.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/aaa_placement_helpers_legacy.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/a_invasion_phases_config_easy.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/a_invasion_phases_config_hard.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/a_invasion_phases_config_normal.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/a_invasion_phases_config_peaceful.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_attacks_v2.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_attacks_v2_attack_boss.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_attacks_v2_occupation.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_attack_resolution_village.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_claimed_areas.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_intentions_coordinator.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_intentions_dawn_logic.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_intentions_decks.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_intentions_draws.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_intentions_night_logic.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_intentions_noon_logic.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_intentions_reserve.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_messaging.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_night_outposts.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_phases.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_piglin_base_damage_fx.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_player_activity.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_simulation.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_village_state.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/attack_waves/aaa_invasion_attack_waves_attack_easy.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/attack_waves/aaa_invasion_attack_waves_attack_hard.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/attack_waves/aaa_invasion_attack_waves_attack_normal.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/attack_waves/aaa_invasion_attack_waves_attack_peaceful.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/attack_waves/aaa_invasion_attack_waves_dbb_easy.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/attack_waves/aaa_invasion_attack_waves_dbb_hard.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/attack_waves/aaa_invasion_attack_waves_dbb_normal.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/attack_waves/aaa_invasion_attack_waves_dbb_peaceful.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/attack_waves/aaa_invasion_attack_waves_defend_easy.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/attack_waves/aaa_invasion_attack_waves_defend_hard.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/attack_waves/aaa_invasion_attack_waves_defend_normal.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/attack_waves/aaa_invasion_attack_waves_defend_peaceful.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/attack_waves/aaa_invasion_attack_waves_obstacle_easy.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/attack_waves/aaa_invasion_attack_waves_obstacle_hard.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/attack_waves/aaa_invasion_attack_waves_obstacle_normal.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/attack_waves/aaa_invasion_attack_waves_obstacle_peaceful.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/intentions/a_invasion_attack_strength_easy.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/intentions/a_invasion_attack_strength_hard.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/intentions/a_invasion_attack_strength_normal.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/intentions/a_invasion_attack_strength_peaceful.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/intentions/invasion_intentions_attack_village.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/intentions/invasion_intentions_boss_occupation.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/intentions/invasion_intentions_claim_area.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/intentions/invasion_intentions_defensive_outpost.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/intentions/invasion_intentions_establish.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/intentions/invasion_intentions_far_base.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/intentions/invasion_intentions_new_base.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/intentions/invasion_intentions_new_outpost.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/intentions/invasion_intentions_offensive_outpost.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/intentions/invasion_intentions_oops.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/intentions/invasion_intentions_upgrade.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_manager/aa_invasion_manager_action_restriction_easy.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_manager/aa_invasion_manager_action_restriction_hard.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_manager/aa_invasion_manager_action_restriction_normal.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_manager/aa_invasion_manager_action_restriction_peaceful.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_manager/a_invasion_manager_const.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_manager/invasion_manager_action_restriction_all.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_manager/invasion_manager_chrono_tracker.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_manager/invasion_manager_forced_actions.js"
+        },
+        {
+            "path": "scripts_bsharp20/invasion/invasion_manager/invasion_manager_shared_restrictions.js"
+        },
+        {
+            "path": "scripts_bsharp20/mob_alliance/aaaa_mob_alliance_helpers.js"
+        },
+        {
+            "path": "scripts_bsharp20/mob_alliance/aaa_mob_alliance_announcements.js"
+        },
+        {
+            "path": "scripts_bsharp20/mob_alliance/mob_alliances.js"
+        },
+        {
+            "path": "scripts_bsharp20/mob_alliance/mob_alliance_occupation.js"
+        },
+        {
+            "path": "scripts_bsharp20/player_onboarding/campaign_onboarding.js"
+        },
+        {
+            "path": "scripts_bsharp20/player_onboarding/upgradesRewards.js"
+        },
+        {
+            "path": "scripts_bsharp20/poi/poi_allies.js"
+        },
+        {
+            "path": "scripts_bsharp20/poi/poi_ally_respawn.js"
+        },
+        {
+            "path": "scripts_bsharp20/poi/poi_piglin_crate.js"
+        },
+        {
+            "path": "scripts_bsharp20/poi/poi_towers.js"
+        },
+        {
+            "path": "scripts_bsharp20/poi/poi_unnatural_landmark_01.js"
+        },
+        {
+            "path": "scripts_bsharp20/poi/poi_well_of_fate.js"
+        },
+        {
+            "path": "scripts_bsharp20/staggered_entry/staggered_entry/aaaaaaaa_staggered_entry_config_easy.js"
+        },
+        {
+            "path": "scripts_bsharp20/staggered_entry/staggered_entry/aaaaaaaa_staggered_entry_config_hard.js"
+        },
+        {
+            "path": "scripts_bsharp20/staggered_entry/staggered_entry/aaaaaaaa_staggered_entry_config_normal.js"
+        },
+        {
+            "path": "scripts_bsharp20/staggered_entry/staggered_entry/aaaaaaaa_staggered_entry_config_peaceful.js"
+        },
+        {
+            "path": "scripts_bsharp20/staggered_entry/staggered_entry/aaa_staggered_entry_helpers.js"
+        },
+        {
+            "path": "scripts_bsharp20/staggered_entry/staggered_entry/aa_staggered_entry_horde_establishment.js"
+        },
+        {
+            "path": "scripts_bsharp20/staggered_entry/staggered_entry/aa_staggered_entry_order.js"
+        },
+        {
+            "path": "scripts_bsharp20/staggered_entry/staggered_entry/staggered_entry.js"
+        },
+        {
+            "path": "scripts_bsharp20/village/aaaa_village_mono_generation.js"
+        },
+        {
+            "path": "scripts_bsharp20/village/a_village_mono_rewards_config_easy.js"
+        },
+        {
+            "path": "scripts_bsharp20/village/a_village_mono_rewards_config_hard.js"
+        },
+        {
+            "path": "scripts_bsharp20/village/a_village_mono_rewards_config_normal.js"
+        },
+        {
+            "path": "scripts_bsharp20/village/a_village_mono_rewards_config_peaceful.js"
+        },
+        {
+            "path": "scripts_bsharp20/village/chest_open.js"
+        },
+        {
+            "path": "scripts_bsharp20/village/village_mono.js"
+        },
+        {
+            "path": "scripts_bsharp20/village/village_mono_rewards.js"
+        },
+        {
+            "path": "scripts_bsharp20/world/aaa_example_world_gen_def.js"
+        },
+        {
+            "path": "scripts_bsharp20/world/aa_campaign_world_gen_def.js"
+        },
+        {
+            "path": "scripts_bsharp20/world/journal_unlocks.js"
+        },
+        {
+            "path": "scripts_bsharp20/world/journal_unlocks_piglins.js"
+        },
+        {
+            "path": "scripts_bsharp20/world/telemetry_campaign_progress.js"
+        }
+    ],
+    "size": 8957153
+}

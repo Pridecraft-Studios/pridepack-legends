@@ -1,0 +1,61 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_piglin_final_boss_wof",
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 3.5,
+        "air_control_factor": 0.0
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "name": "final_boss_enemy_bash",
+            "max_range": 100,
+            "include_tags": [
+              "zoner_xp_well_of_fate"
+            ],
+            "exclude_tags": [
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "intro_a_loop"
+            ]
+          },
+          {
+            "name": "final_boss_enemy_bash_wof",
+            "max_range": 100,
+            "include_tags": [
+              "boss_target"
+            ],
+            "exclude_tags": [
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "intro_a_loop"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "intro_a_loop",
+            "trigger": "intro_a_loop",
+            "range": {
+              "max_range": 2
+            },
+            "state_machine": {
+              "wind_up": 3.25,
+              "wind_down": 7.75,
+              "pre_activation_sync_time": 0.1
+            }
+          }
+        ]
+      }
+    }
+  }
+}

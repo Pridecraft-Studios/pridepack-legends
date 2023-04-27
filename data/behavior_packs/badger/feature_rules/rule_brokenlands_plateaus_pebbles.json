@@ -1,0 +1,38 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_brokenlands_plateaus_pebbles",
+      "places_feature": "badger:feature_brokenlands_plateaus_boulder_pebbles_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "brokenlands"
+            }
+          ]           
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(1,2)",
+      "scatter_chance": "10",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [0, 15]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "gaussian",
+        "extent": [0, 15]
+      }
+    }
+  }
+}

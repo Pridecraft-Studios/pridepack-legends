@@ -1,0 +1,28 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_plateaus_pebbles_festuca_scatter"
+    },
+    "places_feature": "badger:feature_brokenlands_plateaus_boulder_pebbles_weighted",
+    "iterations": "math.random(2,6)",
+    "scatter_chance": "100",
+    "project_input_to_floor": false,
+    "coordinate_eval_order": "xzy",
+    "x": {
+      "extent": [
+        -2,
+        2
+      ],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [
+        -2,
+        2
+      ],
+      "distribution": "gaussian"
+    },
+    "y": -1.0  
+  }
+}

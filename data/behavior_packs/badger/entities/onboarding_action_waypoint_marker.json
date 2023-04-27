@@ -1,0 +1,27 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:onboarding_action_waypoint_marker",
+        "is_summonable": true,
+        "runtime_identifier": "badger:badger_mob"
+      },
+      "components": {
+        "badger:waypoint_marker_visibility": {
+          "waypoint_min_range": 20,
+          "waypoint_max_range": 20,
+          "compass_max_range": "infinite"
+        },
+        "badger:waypoint_marker": {
+          "path": "waypoint_onboarding_arrow",
+          "label": ""
+        },
+        "badger:tags": {
+          "tags": [
+            "waypoint"
+          ]
+        }
+      }
+    }
+  }
+  

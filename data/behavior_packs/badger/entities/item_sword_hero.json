@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:item_sword_hero",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 1.59099029541,
+        "length": 0.0312499976158,
+        "width": 0.309359207153
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      }
+    }
+  }
+}

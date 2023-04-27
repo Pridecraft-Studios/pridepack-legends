@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_drylands_saltflat_tree_cluster_aggregate"
+    },
+    "features": [
+      "badger:feature_drylands_saltflat_tree_cluster_tree_weighted",
+      "badger:feature_drylands_saltflat_tree_cluster_bush_scatter",
+      "badger:feature_drylands_saltflat_tree_cluster_minis_scatter",
+      "badger:feature_drylands_saltflat_tree_cluster_shrubs_scatter"
+    ],
+    "early_out": "first_failure"
+  }
+}

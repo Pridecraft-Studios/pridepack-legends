@@ -1,0 +1,17 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_obelisk_01", 20.0],
+      ["badger:feature_obelisk_02", 20.0],
+      ["badger:feature_obelisk_03", 20.0],
+      ["badger:feature_obelisk_04", 20.0],
+      ["badger:feature_obelisk_mini_01", 10.0],
+      ["badger:feature_obelisk_mini_02", 10.0],
+      ["badger:feature_obelisk_mini_03", 10.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_fateful_land_obelisk_weighted"
+    }
+  }
+}

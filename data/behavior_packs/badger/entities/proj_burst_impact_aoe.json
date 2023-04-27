@@ -1,0 +1,65 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_burst_impact_aoe",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.7,
+        "height": 1.9
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "auto_step": 3.1
+      },
+      "badger:removal_time": {
+        "time": 0.2
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 5
+        },
+        "damage_effects": [
+          {
+            "name": "aoe_burst_impact",
+            "damage": 25,
+            "knockback": {
+              "angle": 25,
+              "force": 10
+            },
+            "falloff": {
+              "min_radius": 2,
+              "max_radius": 3,
+              "min_damage": 20,
+              "min_angle": 30
+            },
+            "damage_types": [
+              "ranged"
+            ],
+            "include_tags": [
+            ],
+            "exclude_tags": [],
+            "apply_status": {
+              "engaged": {
+                "chance": 1.0,
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:template":[
+        "badger:template_impact_entity_player"
+      ]
+    }
+  }
+}

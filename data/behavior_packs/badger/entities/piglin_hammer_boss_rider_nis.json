@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_hammer_boss_rider_nis",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 5.45275817871,
+        "length": 5.20238259277,
+        "width": 1.875
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      }
+    }
+  }
+}

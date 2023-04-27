@@ -1,0 +1,6 @@
+{
+  "badger:pending_placement_border_service": {
+      "garbage_collection_removed_entity_count_threshold": 200,
+      "garbage_collection_time_interval": 60.0
+  }
+}

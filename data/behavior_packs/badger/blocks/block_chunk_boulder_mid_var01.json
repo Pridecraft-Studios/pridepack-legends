@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_chunk_boulder_mid_var01", 
+      "material": "badger_stone"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "chunk", 
+        "camera_collision": false, 
+        "directional_texture": true, 
+        "directional_shape": true
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "gatherable_stone"
+        ]
+      }, 
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }, 
+      "badger:terrain_type": {
+        "terrain": "stone"
+      }
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_attack",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:village": {
+        "name": "Piglin Attack"
+      },
+      "badger:village_zone": {
+        "expansion_distance": 250.0,
+        "zone_jitter_min": 0.0,
+        "zone_jitter_max": 9.0,
+        "is_zone_jitter_bell_curve_enabled": false,
+        "zone_spacing": 19.0,
+        "water_search_resolution": 6.0
+      },
+      "badger:village_building_path": {
+        "path_blocks": [
+          "block_path_attack_path"
+        ],
+        "edge_blocks": [
+          ["block_nylium_grass",10],
+          ["block_nylium_var01",2],
+          ["block_nylium_var02",2],
+          ["block_nylium",2]
+        ],
+        "edge_decoration_blocks": [
+          {"inner_blocks":
+            [
+              ["badger:block_deco_bramble",60],
+              ["block_deco_bramble_var01",32],
+              ["air",10],
+              ["air",10],
+              ["air",10],
+              ["air",10]
+         
+            ],
+            "outer_blocks":
+            [             
+              ["block_deco_bramble_var02",60],
+              ["block_deco_bramble_var01",32],
+              ["block_deco_netherwart_dried_large",6],
+              ["block_deco_netherwart_dried_small",6],
+              ["block_deco_nether_grass_tall_dried",6],
+              ["block_deco_nether_grass_dried",6],
+              ["block_deco_nether_grass_dried_small",6],
+              ["air",6],
+              ["air",10],
+              ["air",6],
+              ["air",10],
+              ["air",6],
+              ["air",10]
+            ]
+         
+         
+          }
+        ],
+        "path_width": 6,
+        "edge_width": 6.0,
+        "path_noise_scale_factor": 0.02,
+        "path_deco_noise_scale_factor": 100.0,
+        "path_noise_amplitude": 1.0,
+        "edge_noise_amplitude": 1.0,
+        "diagonal_path_degree_tolerance": 90,
+        "prevent_buildable_placement": false,
+        "can_plan_under_buildables": true,
+        "can_place_under_buildables": false,
+        "can_place_bridge_for_height_changes": false,
+        "can_reuse_existing_paths": true,
+        "height_change_needs_bridge": 20.0,
+        "outer_edge_threshold": 0.5,
+        "path_edge_block_noise_scale_factor": 0.5
+      },
+      "badger:village_district_path": {
+        "path_blocks": [
+          "block_path_attack_path"
+         
+
+        ],
+        "edge_blocks": [
+          ["block_nylium_grass",10],
+          ["block_nylium_var01",2],
+          ["block_nylium_var02",2],
+          ["block_nylium",2]
+        ],
+        "edge_decoration_blocks": [
+          {"inner_blocks":
+            [
+              ["badger:block_deco_bramble",60],
+              ["block_deco_bramble_var01",32],
+              ["air",10],
+              ["air",10],
+              ["air",10],
+              ["air",10]
+         
+            ],
+            "outer_blocks":
+            [             
+              ["block_deco_bramble_var02",60],
+              ["block_deco_bramble_var01",32],
+              ["block_deco_netherwart_dried_large",6],
+              ["block_deco_netherwart_dried_small",6],
+              ["block_deco_nether_grass_tall_dried",6],
+              ["block_deco_nether_grass_dried",6],
+              ["block_deco_nether_grass_dried_small",6],
+              ["air",6],
+              ["air",10],
+              ["air",6],
+              ["air",10],
+              ["air",6],
+              ["air",10]
+            ]
+         
+         
+          }
+        ],
+        "path_width": 6,
+        "edge_width": 6.0,
+        "path_noise_scale_factor": 0.02,
+        "path_deco_noise_scale_factor": 100.0,
+        "path_noise_amplitude": 1.0,
+        "edge_noise_amplitude": 1.0,
+        "diagonal_path_degree_tolerance": 1,
+        "prevent_buildable_placement": false,
+        "can_plan_under_buildables": true,
+        "can_place_under_buildables": false,
+        "can_place_bridge_for_height_changes": false,
+        "can_reuse_existing_paths": true,
+        "height_change_needs_bridge": 20.0,
+        "outer_edge_threshold": 0.5,
+        "path_edge_block_noise_scale_factor": 0.5
+      },
+      "badger:village_building_placement": {
+      },
+      "badger:village_wall": {
+        "wall_offset": 3.0
+      },
+      "badger:village_zone_scoring": {
+        "close_to_easing": "linear",
+        "far_from_easing": "linear",
+        "direction_easing": "linear",
+        "close_to_wall_easing": "linear",
+        "spacing_easing": "linear",
+        "close_to_weight": 1.0,
+        "far_from_weight": 1.5,
+        "direction_weight": 1.0,
+        "close_to_wall_weight": 0.1,
+        "spacing_weight": 1.1,
+        "random_weight": 0.7
+      },
+      "badger:village_moat": {
+        "edge_noise_scale_factor": 0.5,
+        "edge_noise_amplitude": 5.0
+      },
+      "badger:village_weathering": {
+        "is_overhanging_edge": false,
+        "position_noise_scale": 0.75,
+        "wave_depth_max": 10.0,
+        "wave_depth_min": 0.5,
+        "wave_period_scale": 0.75,
+        "wave_noise_scale": 0.0,
+        "gradient_passes": [
+          {
+            "gradient_depths": [10.0, 9.0, 8.0],
+            "gradient_weight_heights": [10.0, 6.0, 2.0],
+          "gradient_2d_noise_scale": 0.0,
+            "gradient_3d_noise_scale": 0.8,
+            "gradient_affected_by_wave": true
+          },
+          {
+            "gradient_depths": [2.0, 0.85],
+            "gradient_weight_heights": [0.6, 0.48],
+            "gradient_2d_noise_scale": 1.0,
+            "gradient_3d_noise_scale": 0.0,
+            "gradient_affected_by_wave": false
+          }
+        ]
+      },
+      "badger:village_bounds_trigger_volume_size": {
+				"padding": 65
+			},
+      "badger:template": "badger:template_village_piglin"
+    }
+  }
+}

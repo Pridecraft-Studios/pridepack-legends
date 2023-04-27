@@ -1,0 +1,73 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_magma_cube_impact_aoe",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.7,
+        "height": 1.9
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": false,
+        "auto_step": 3.1
+      },
+      "badger:removal_time": {
+        "time": 0
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 6.5
+        },
+        "damage_effects": [
+          {
+            "name": "aoe_magma_impact",
+            "damage": 5,
+            "knockback": {
+              "angle": 45,
+              "force": 12
+            },
+            "falloff": {
+              "min_radius": 3.25,
+              "max_radius": 6.5,
+              "min_angle": 10
+            },
+            "damage_types": [
+              "ranged"
+            ],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [],
+            "apply_status": {
+              "burning": {
+                "chance": 1.0,
+                "strength": 0.25
+              },
+              "engaged": {
+                "chance": 1.0,
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:movement": {
+        "move_speed": 0.0
+      },
+      "badger:template":[
+        "badger:template_impact_entity_piglin"
+      ]
+    }
+  }
+}

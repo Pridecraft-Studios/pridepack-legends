@@ -1,0 +1,52 @@
+{
+
+    "format_version": "1.8.0",
+
+    "minecraft:entity": {
+
+        "description": {
+
+            "identifier": "badger:template_faction"
+
+        },
+
+        "components": {
+
+          "badger:faction": {
+
+            "id": "faction.nullnull",
+
+            "name": "Faction Template",
+
+            "description": "This is the faction template",
+
+            "color": [
+
+              1.0,
+
+              1.0,
+
+              0.0,
+
+              1.0
+
+            ],
+
+
+            "health_bar_color": [ 0.74, 0.22, 0.77, 1.0 ],
+
+            "known": true
+
+          },
+
+            "badger:campaign_team": {
+
+                "team_tag": "campaign_team"
+
+            }
+
+        }
+
+    }
+
+}

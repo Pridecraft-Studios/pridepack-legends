@@ -1,0 +1,64 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:onboarding_host_island_combat_structure",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "structure_spawner_creeper",
+        "buildable_category": "",
+        "height_offset": 1
+      },
+      "badger:buildable_requirement": {},
+      "badger:buildable_structure": {
+        "nbt_file": "wof_onboarding_defend_structure",
+        "build_time": 1,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:health": {
+        "max_health": 999999
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 2.0,
+          "crush": 1.5,
+          "spore": 0.0,
+          "ranged": 0.5
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 6,
+          "rc": 6
+        }
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_generic"
+      },
+      "badger:deconstruction": {
+        "deconstruct_time_percent": 0.5,
+        "resource_refund_percent": 0.5,
+        "isIndestructable": true
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_health_generation_default"
+      ],
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "onboarding_host_structure_combat",
+          "piglin"
+        ]
+      }
+    }
+  }
+}

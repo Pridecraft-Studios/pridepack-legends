@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_banner",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 4.5,
+        "length": 0.09375,
+        "width": 2.25
+      },
+      "badger:tags": {
+        "tags": [
+          "block",
+          "onboarding_banner"
+        ]
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 3,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_bsharp_interaction_hold"
+          }
+        ]
+      },
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:temp_spatial_trigger_zone_piglin_base_intro_large",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 410.0,
+        "height": 90.0
+      },
+      "badger:trigger_criteria": {
+        "filters": [
+          {
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      }
+    }
+  }
+}

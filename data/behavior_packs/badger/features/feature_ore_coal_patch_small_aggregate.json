@@ -1,0 +1,14 @@
+{
+    "format_version": "1.13.0",
+    "code:place_aggregated": {
+      "description": {
+        "identifier": "badger:feature_ore_coal_patch_small_aggregate"
+      },
+      "early_out": "first_failure",
+      "features": [
+        "badger:feature_ore_coal_patch_small_scatter",
+        "badger:feature_ore_gold_patch_small_roaming_piglin_scatter"
+      ]
+    }
+  }
+  

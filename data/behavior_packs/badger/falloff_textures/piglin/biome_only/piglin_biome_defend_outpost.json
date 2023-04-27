@@ -1,0 +1,31 @@
+{
+
+    "id": "piglin_biome_defend_outpost",
+  
+    "textures": [
+      {
+        "texture": "piglin/biome_only/piglin_biome_square_outpost",
+        "channels": {
+          "r": "blend",
+          "g": "terrain_height",
+          "b": "biome"
+        }
+      }
+    ],
+  
+  
+    "biome_map": [
+      {
+        "biome": "nether_piglin",
+        "value": 255
+      },
+      {
+        "biome": "nether_piglin_border",
+        "value": 155
+      },
+      {
+        "biome": "nether_piglin_border_blend",
+        "value": 55
+      }
+    ]
+  }

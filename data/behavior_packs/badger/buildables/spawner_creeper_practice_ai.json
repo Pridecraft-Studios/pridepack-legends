@@ -1,0 +1,48 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_creeper_practice_ai",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Spawner",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_structure": {
+        "nbt_file": "spawner_creeper",
+        "build_time": 5,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_spawner_creeper"
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:mob_creeper_practice_ai",
+            "percentage": 1
+          }
+        ],
+        "cap": 6,
+        "batch": 2,
+        "rate": 10
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "barracks",
+          "spawner",
+          "creeperspawner"
+        ]
+      },
+      "badger:template": [
+        "badger:template_spawner_practice_ai",
+        "badger:template_structure_player"
+      ]
+    }
+  }
+}

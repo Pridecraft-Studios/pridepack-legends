@@ -1,0 +1,23 @@
+{
+  "id": "onboarding_biome_stamp",
+  "textures": [
+    {
+      "texture": "onboarding/heightmap_onboarding",
+      "channels": {
+        "r": "biome",
+        "g": "terrain_height",
+        "b": "blend"
+      }
+    }
+  ],
+  
+  "biome_map": [
+    {
+      "biome": "onboarding",
+      "value": 255
+    }
+  ],
+  "additional_data": {
+    "lock_rotation": true
+  }
+}

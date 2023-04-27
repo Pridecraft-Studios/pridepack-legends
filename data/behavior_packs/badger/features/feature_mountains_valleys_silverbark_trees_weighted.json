@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_mountains_valleys_silverbark_trees_weighted"
+    },
+    "features": [
+      ["badger:feature_mountains_valleys_tree_silverbark_01",10.0],
+      ["badger:feature_mountains_valleys_tree_silverbark_02",10.0],
+      ["badger:feature_mountains_valleys_tree_silverbark_03",10.0],
+      ["badger:feature_mountains_valleys_tree_silverbark_04",10.0]
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_block_chunk_iron"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_chunk_ore_iron",
+    "may_attach_to": {
+      "bottom": [
+        "badger:block_ore_iron_sediment",
+        "badger:block_ore_iron"
+      ]
+    },
+    "may_replace": [
+      "minecraft:air"
+    ]
+  }
+}

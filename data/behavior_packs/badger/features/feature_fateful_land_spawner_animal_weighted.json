@@ -1,0 +1,20 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_fateful_land_spawner_animal_weighted"
+    },
+    "features": [
+      ["badger:feature_spawner_animal_badger", 10.0],
+      ["badger:feature_spawner_animal_chicken", 10.0],
+      ["badger:feature_spawner_animal_fox", 10.0],
+      ["badger:feature_spawner_animal_llama", 10.0],
+      ["badger:feature_spawner_animal_marmot", 10.0],
+      ["badger:feature_spawner_animal_ocelot", 10.0],
+      ["badger:feature_spawner_animal_pig", 10.0],
+      ["badger:feature_spawner_animal_rabbit", 10.0],
+      ["badger:feature_spawner_animal_sea_turtle", 10.0],
+      ["badger:feature_spawner_animal_wolf", 10.0]
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_illager_greeting",
+      "runtime_identifier": "badger:behavior"
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 2
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 15
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "max_range": 30,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "greeting"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder"
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "greeting",
+            "trigger": "on_greeting",
+            "range": {
+              "min_range": 1,
+              "max_range": 10
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "wind_down": 5.9,
+              "cooldown_time": 0,
+              "deactivates_on_cooldown": false
+            }
+          }
+        ]
+      }
+    }
+  }
+}

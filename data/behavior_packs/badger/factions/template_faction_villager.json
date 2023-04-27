@@ -1,0 +1,27 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:template_faction_villager"
+        },
+        "components": {
+            "badger:faction": {
+                "id": "faction.cul.null",
+                "name": "Villager Faction Template",
+                "description": "This is the villager faction template",
+                "icon":"ui_map_biomelegend_villager",
+                "color": [
+                    0.0,
+                    1.0,
+                    0.5,
+                    1.0
+                ],
+                "known": true
+            },
+            "badger:campaign_team": {
+                "team_tag": "piglin_team"
+            },
+            "badger:template": "badger:template_faction"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:well_of_fate_fast_travel_interact_zone",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 10.0,
+        "height": 10.0
+      },
+      "badger:tags": {
+        "tags": [
+          "well_of_fate_fast_travel_interact_zone"
+        ]
+      },
+      "badger:fast_travel_point": {
+        "incoming_alliance_rule_filter": "can_fast_travel",
+        "outgoing_alliance_rule_filter": "can_fast_travel",
+        "outgoing_tag_filter": {
+          "include_tags": [
+            "luredirect"
+          ],
+          "exclude_tags": []
+        },
+        "spawn_point_archetype": "badger:metadata_wof_spawn_point"
+      }
+    }
+  }
+}

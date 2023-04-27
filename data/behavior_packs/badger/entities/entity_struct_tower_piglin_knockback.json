@@ -1,0 +1,161 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_tower_piglin_knockback",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 11.9375,
+        "length": 3.5,
+        "width": 3.5
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "name": "piglin_tower_mob_knockback",
+            "max_range": 35,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "buildable_combat",
+              "structure"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "knockback"
+            ]
+          },
+          {
+            "name": "piglin_tower_player_knockback",
+            "max_range": 35,
+            "include_tags": [
+              "player"
+            ],
+            "enable_with_line_of_sight": true,
+            "exclude_tags": [
+              "donotattack",
+              "buildable_combat",
+              "structure"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "knockback"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "knockback",
+            "range": {
+              "max_range": 35
+            },
+            "trigger": "on_fire",
+            "on_hit_target_trigger": "on_tower_piglin_knockback_aoe_attack_hit",
+            "transfer_activation": [
+              "charge_1"
+            ],
+            "state_machine": {
+              "wind_up": 2.1,
+              "wind_down": 2.8,
+              "cooldown_time": 3,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 16,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": ["mob"],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 12
+              },
+              "falloff": {
+                "min_angle": 10,
+                "min_radius": 8,
+                "max_radius": 16
+              },
+              "damage": {
+                "damage_amount": 7,
+                "damage_types": [
+                  "spore",
+                  "explosion"
+                ]
+              },
+              "apply_status": {
+                "spore_damaged": {
+                  "strength": 0.8
+                },
+                "engaged": {
+                  "strength": 1.0
+                }
+              }
+            }
+          },
+          {
+            "name": "charge_1",
+            "range": {
+              "max_range": 35
+            },
+            "state_machine": {
+              "wind_up": 2.1,
+              "wind_down": 2.8,
+              "cooldown_time": 1,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 16,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": ["mob"],
+                "exclude_tags": [],
+                "alliance_rule_filter": "friendly"
+              },
+              "damage": {
+                "damage_amount": 0,
+                "damage_types": [
+                  "spore"
+                ]
+              },
+              "apply_status": {
+                "spore_healed": {
+                  "strength": 2
+                }
+              }
+            }
+          }
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "block",
+          "pigKnockbackTower"
+        ]
+      },
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

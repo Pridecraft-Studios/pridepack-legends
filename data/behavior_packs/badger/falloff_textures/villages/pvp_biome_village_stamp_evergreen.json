@@ -1,0 +1,30 @@
+{
+  "id": "pvp_biome_village_stamp_evergreen",
+  "textures": [
+    {
+      "texture": "villages/pvp_biome_bases_stamp",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+  "additional_data": {
+    "manual_height": [
+      20,
+      40
+    ],
+    "village_texture_stamp": true
+  },
+  "biome_map": [
+    {
+      "biome": "fateful_land_pvp_evergreen",
+      "value": 131
+    },
+    {
+      "biome": "fateful_land_pvp_evergreen_thinned",
+      "value": 165
+    }
+  ]
+}

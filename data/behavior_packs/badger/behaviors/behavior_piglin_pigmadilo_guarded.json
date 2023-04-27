@@ -1,0 +1,370 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_piglin_pigmadilo_guarded",
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 3.0
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 5
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Player Targeting
+          {
+            "name": "pigmadilo_player_melee",
+            "max_range": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack"
+            ]
+          },
+          {
+            "name": "pigmadilo_roll_player_distance",
+            "max_range": 40,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "roll_attack"
+            ]
+          },
+          //Group targeting - roll
+          {
+            "name": "pigmadilo_roll_many_targets",
+            "max_range": 25,
+            "required_target_count": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "roll_attack"
+            ]
+          },
+          //Mob targeting
+          {
+            "name": "pigmadilo_mob_melee",
+            "max_range": 10,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack"
+            ]
+          },
+          //Rolling Targeting
+          {
+            "name": "pigmadilo_roll_support_distance",
+            "max_range": 40,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "support"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "roll_attack"
+            ]
+          },
+          {
+            "name": "pigmadilo_roll_mob_distance",
+            "max_range": 40,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "roll_attack"
+            ]
+          },
+          {
+            "name": "pigmadilo_roll_generic_distance",
+            "max_range": 40,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "roll_attack"
+            ]
+          },
+          {
+            "name": "pigmadilo_structures_nav_fail",
+            "max_range": 2,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "disabled_duration": 5,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "animal",
+              "buildable_combat",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack"
+            ]
+          },
+          //Secondary Combat Positioning
+          {
+            "name": "pigmadilo_secondary_combat_pos",
+            "max_range": 5,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "sc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "secondary_combat_position"
+            ]
+          },
+          //Approach
+          {
+            "name": "pigmadilo_target_approach",
+            "max_range": 30,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "sc": 1
+            },
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "pigmadilo_approach"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "roll_attack",
+            "trigger": "on_roll_attack",
+            "on_hit_target_trigger": "on_roll_attack_hit",
+            "grace_period_between_hits": 3,
+            "range": {
+              "max_range": 30
+            },
+            "state_machine": {
+              "wind_up": 1.25,
+              "wind_down": 3.80,
+              "activation_time": 1.8,
+              "cooldown_time": 1,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 175,
+                "radius": 2.5,
+                "thickness": 3.0,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "stairs"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10,
+                "damage_types": [
+                  "cavalry",
+                  "crush"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 20
+              }
+            },
+            "charge": {
+              "speed": 15
+            }
+          },
+          {
+            "name": "melee_attack",
+            "trigger": "on_melee_attack",
+            "on_hit_target_trigger": "on_melee_attack_hit",
+            "range": {
+              "max_range": 2.5
+            },
+            "state_machine": {
+              "wind_up": 1.0,
+              "wind_down": 2.1,
+              "cooldown_time": 1.0,
+              "deactivates_on_cooldown": false
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 160,
+                "radius": 4.0,
+                "thickness": 2.2,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.65
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 25,
+                "damage_types": [
+                  "cavalry",
+                  "crush"
+                ]
+              },
+              "knockback": {
+                "angle": 30,
+                "force": 10
+              }
+            }
+          },
+          {
+            "name": "secondary_combat_position",
+            "range": {
+              "max_range": 4
+            }
+          },
+          {
+            "name": "pigmadilo_approach",
+            "range": {
+              "max_range": 2.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

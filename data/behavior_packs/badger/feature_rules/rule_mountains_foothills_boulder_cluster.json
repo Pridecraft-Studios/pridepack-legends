@@ -1,0 +1,50 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_mountains_foothills_boulder_cluster",
+      "places_feature": "badger:feature_mountains_foothills_boulder_weighted"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "final_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mountain_valleys"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mountain_foothills"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "scatter_chance": 30,
+      "early_out": "v.scatteredy < 25",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "z": {
+        "distribution": "gaussian",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)"
+    }
+  }
+}

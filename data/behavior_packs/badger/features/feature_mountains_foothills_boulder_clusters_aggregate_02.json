@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_mountains_foothills_boulder_clusters_aggregate_02"
+    },
+    "early_out": "first_failure",
+    "features": [
+      "badger:feature_mountains_foothills_boulder_02",
+      "badger:feature_mountains_foothills_boulder_plant_scatter"
+    ]
+  }
+}

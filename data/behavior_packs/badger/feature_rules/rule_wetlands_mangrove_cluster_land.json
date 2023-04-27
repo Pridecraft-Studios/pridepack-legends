@@ -1,0 +1,50 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_wetlands_mangrove_cluster_land",
+      "places_feature": "badger:feature_wetlands_mangrove_cluster_land_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "wetlands"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "wetlands_beach"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "scatter_chance": 20,
+      "early_out": "temp.waterdist = q.water_distance(v.scatteredx, v.scatteredz); return temp.waterdist >= 5 || temp.waterdist == 0 || (q.get_game_rule_value('prevent_obstacles_on_poi_graph') && q.poi_influence_factor(v.scatteredx, v.scatteredz) < 0.5);",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          3,
+          12
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          3,
+          12
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "coordinate_eval_order": "xzy"
+    }
+  }
+}

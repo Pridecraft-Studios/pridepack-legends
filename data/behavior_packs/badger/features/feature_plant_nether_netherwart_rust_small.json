@@ -1,0 +1,18 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_plant_nether_netherwart_rust_small"
+    },
+    "may_replace": ["minecraft:air"],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_attach_to": {
+      "bottom": [
+        "badger:block_netherrack_rust_dried",
+        "badger:block_netherrack_rust_dried_var01"
+      ]
+    },
+    "places_block": "badger:block_deco_netherwart_rust_small"
+  }
+}

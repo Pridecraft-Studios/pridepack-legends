@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_mountains_fairyring_aggregate"
+    },
+    "features": [
+      "badger:feature_mountains_fairyring_scatter_01",
+      "badger:feature_mountains_fairyring_scatter_02",
+      "badger:feature_mountains_fairyring_scatter_03",
+      "badger:feature_mountains_fairyring_scatter_04",
+      "badger:feature_mountains_fairyring_scatter_05",
+      "badger:feature_mountains_fairyring_scatter_06",
+      "badger:feature_mountains_fairyring_scatter_07",
+      "badger:feature_mountains_fairyring_scatter_08",
+      "badger:feature_mountains_fairyring_scatter_09",
+      "badger:feature_mountains_fairyring_scatter_10",
+      "badger:feature_mountains_fairyring_scatter_11",
+      "badger:feature_mountains_fairyring_scatter_12"
+    ]
+  }
+}

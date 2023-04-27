@@ -1,0 +1,78 @@
+{
+
+  "format_version": "1.8.0",
+
+  "minecraft:entity": {
+
+    "description": {
+
+      "identifier": "badger:xp_well_of_fate_culture"
+
+    },
+
+    "components": {
+
+      "badger:faction": {
+
+        "id": "faction.player.well",
+
+        "name": "faction.xp_well_of_fate_culture.name",
+
+        "description": "faction.xp_well_of_fate_culture.description",
+        
+        "color": [ 0.0, 0.0, 0.0, 1.0 ],
+
+        "known": true
+
+      },
+
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:culture_status": {
+
+        "culture_rewards": [
+
+          {
+
+            "threshold": 2500,
+
+            "value": 300,
+			
+            "resource": "wood"
+
+          },
+
+          {
+
+            "threshold": 3200,
+
+            "value": 500,
+			
+            "resource": "wood"
+			
+          },
+
+          {
+		  
+            "threshold": 4000,
+
+            "value": 750,
+          
+		    "resource": "wood"
+          
+		  }
+		  
+        ]
+		
+      },
+
+      "badger:campaign_team": {
+        "team_tag": "campaign_team"
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,62 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_piglin_barrel_impact_aoe",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.7,
+        "height": 1.9
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": false,
+        "auto_step": 3.1
+      },
+      "badger:removal_time": {
+        "time": 0.1
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 4
+        },
+        "timer": {
+          "interval": 0.1
+        },
+        "damage_effects": [
+          {
+            "damage": 3.5,
+            "damage_types": [
+            ],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+            ],
+            "apply_status": {
+              "engaged": {
+                "strength": 1.0
+              }
+            },
+            "knockback": {
+              "angle": 45,
+              "force": 35
+          },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:template":[
+        "badger:template_impact_entity_piglin"
+      ]
+    }
+  }
+}

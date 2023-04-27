@@ -1,0 +1,119 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:increase_lure_cap",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "structure_increase_lure_cap",
+        "tooltip_title": "structures.increase.lure.cap.name",
+        "tactical_description": "structures.increase.lure.cap.tactical_description",
+        "tooltip_description": "structures.increase.lure.cap.description",
+        "buildable_category": "village",
+        "sort_order": 170
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "stone",
+            "amount": 100
+          },
+          {
+            "item": "xp_common",
+            "amount": 100
+          },
+          {
+            "item": "gold",
+            "amount": 25
+          }
+        ],
+        "unlock": [
+          {
+            "item": "unlock_remaining_wof_upgrades",
+            "amount": 1
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:rewards": {
+        "reward": [
+          {
+            "item": "ui_tracking_increase_lure_cap",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:resource_modifier": {
+        "modifiers": [
+          {
+            "resource": "lure_cap",
+            "amount": 15
+          }
+        ]
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "wof_upgrade_small",
+        "build_time": 10,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_increase_lure_cap"
+
+      },
+      "badger:nbt_parts":{
+        "locator": "badger:locator_swappable_icon",
+        "block": "block_deco_xp_banner"
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 0,
+          "rc": 0
+        }
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "donotattack",
+          "increase_lure_cap",
+          "player_upgrade"
+        ]
+      },
+      "badger:offline_traits": {
+        "offline_disabled_components": [
+          "badger:culture"
+        ],
+        "construction_disabled_components": [
+          "badger:culture",
+          "badger:ticket_cap_modifier"
+        ]
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 7,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction"
+          }
+        ]
+      },
+      "badger:template": [
+        "badger:template_upgrade_xp",
+        "badger:template_structure_player"
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_mountains_boulder_scatter"
+    },
+    "places_feature": "badger:feature_resource_stone_boulder_large_fall_weighted",
+    "iterations": "1",
+    "scatter_chance": "100",
+    "project_input_to_floor": true,
+    "early_out": "temp.radius = 8; temp.minheightoffset = 15; temp.minheight = q.heightmap(v.scatteredx, v.scatteredz) + temp.minheightoffset; return q.heightmap(v.scatteredx + temp.radius, v.scatteredz) < temp.minheight && q.heightmap(v.scatteredx - temp.radius, v.scatteredz) < temp.minheight && q.heightmap(v.scatteredx, v.scatteredz + temp.radius) < temp.minheight && q.heightmap(v.scatteredx, v.scatteredz - temp.radius) < temp.minheight;",
+    "x": {
+      "extent": [
+        -5,
+        5
+      ],
+      "distribution": "uniform"
+    },
+    "z": {
+      "extent": [
+        -5,
+        5
+      ],
+      "distribution": "uniform"
+    },
+    "y": -1
+  }
+}

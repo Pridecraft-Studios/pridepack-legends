@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "material": "badger_metal",
+      "identifier": "badger:block_deco_vindicator_chimney"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty",
+        "directional_texture": false,
+        "directional_shape": true
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      },
+      "minecraft:block_light_emission": {
+        "emission": [
+          247,
+          122,
+          7,
+          155
+        ]
+      }
+    }
+  }
+}

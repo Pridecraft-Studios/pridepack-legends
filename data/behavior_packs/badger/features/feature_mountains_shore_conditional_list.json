@@ -1,0 +1,27 @@
+{
+  "format_version": "1.13.0",
+  "code:conditional_list": {
+    "description": {
+      "identifier": "badger:feature_mountains_shore_conditional_list"
+    },
+    "conditional_features": [
+      {
+        "places_feature": "badger:feature_mountains_shore_slab_aggregate",
+        "condition": "temp.wetness <= 3 && math.random(0,10) >= 8"
+      },
+      {
+        "places_feature": "badger:feature_mountains_shore_block_weighted_02",
+        "condition": "temp.wetness <= 3"
+      },
+      {
+        "places_feature": "badger:feature_mountains_boulder_lake_moss_block_01",
+        "condition": "temp.wetness == 4"
+      },
+      {
+        "places_feature": "badger:feature_mountains_shore_block_weighted",
+        "condition": "temp.noise = q.noise(v.worldx, v.worldz, 40); return temp.noise > -0.2 && temp.noise < 0.2;"
+      }
+    ],
+    "early_out_scheme": "condition_success"
+  }
+}

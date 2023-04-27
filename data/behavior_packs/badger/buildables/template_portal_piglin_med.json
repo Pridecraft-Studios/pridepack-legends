@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_portal_piglin_med",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:health": {
+        "max_health": 2000
+      },
+      "badger:loot": {
+        "table": "piglin_portal_loot_medium"
+      },
+      "badger:pop_cap_anchor": {
+        "min_pop_cap": 50,
+        "min_pop_cap_range": 150,
+        "alliance_rule_filter": "friendly",
+        "greedy": false
+      },
+      "badger:template": [
+        "badger:template_portal_piglin"
+      ]
+    }
+  }
+}

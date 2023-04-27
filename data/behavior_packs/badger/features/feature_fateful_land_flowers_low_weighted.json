@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_plant_fateful_daisy_01", 22.0],
+      ["badger:feature_plant_fateful_daisy_02", 22.0],
+      ["badger:feature_plant_fateful_daisy_03", 22.0],
+      ["badger:feature_plant_fateful_wildflower_01", 20.0],
+      ["badger:feature_plant_fateful_wildflower_02", 20.0],
+      ["badger:feature_plant_fateful_wildflower_03", 20.0],
+      ["badger:feature_plant_fateful_periwinkle_01", 25.0],
+      ["badger:feature_plant_fateful_periwinkle_02", 25.0],
+      ["badger:feature_plant_fateful_periwinkle_03", 25.0],
+      ["badger:feature_plant_fateful_flowerscatter_01", 30.0],
+      ["badger:feature_plant_fateful_flowerscatter_02", 30.0],
+      ["badger:feature_plant_fateful_flowerscatter_03", 30.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_fateful_land_flowers_low_weighted"
+    }
+  }
+}

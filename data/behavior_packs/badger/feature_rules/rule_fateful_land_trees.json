@@ -1,0 +1,40 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_fateful_land_trees",
+      "places_feature": "badger:feature_fateful_land_trees_weighted"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "fate"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(0,3)",
+      "scatter_chance": "100 * query.get_game_rule_value('fateful_tree_density')",
+      "early_out": "v.scatteredy >= q.sea_level + 7 || query.water_distance(variable.worldx, variable.worldz) < 14 || (q.get_game_rule_value('prevent_obstacles_on_poi_graph') && q.poi_influence_factor(v.scatteredx, v.scatteredz) < 0.5)",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      }
+    }
+  }
+}

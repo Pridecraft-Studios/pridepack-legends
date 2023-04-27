@@ -1,0 +1,22 @@
+{
+  "id": "poi_mount_01_biome",
+  "textures": [
+    {
+      "texture": "poi_mounts/heightmap_poi_mount_tiger",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+  "biome_map": [
+    {
+      "biome": "drylands",
+      "value": 255
+    }
+  ],
+  "additional_data": {
+    "village_texture_stamp": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_tree_mushroom_snowy_cap_01", 
+      "material": "badger_snow"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube", 
+        "camera_collision": false, 
+        "directional_texture": false, 
+        "directional_shape": true
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "gatherable_wood_sml"
+        ]
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      },
+      "badger:terrain_type": {
+        "terrain": "snow"
+      }
+    }
+  }
+}

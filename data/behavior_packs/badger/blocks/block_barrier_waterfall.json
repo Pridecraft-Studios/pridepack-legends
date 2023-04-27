@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_barrier_waterfall"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "block",
+        "collision_shape": "empty",
+        "camera_collision": false,
+        "directional_texture": false,
+        "directional_shape": false,
+        "render_layer": "barrier"
+      },
+      "badger:block_type": {
+        "tags": [
+          "barrier_waterfall",
+          "villager_solid"
+        ]
+      }
+    }
+  }
+}

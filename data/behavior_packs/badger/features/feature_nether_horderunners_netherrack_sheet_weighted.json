@@ -1,0 +1,23 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_nether_horderunners_netherrack_sheet_weighted"
+    },
+    "features": [
+
+      ["badger:feature_block_netherrack_sheet",100],
+      ["badger:feature_block_netherrack_sheet_var01",100],
+      ["badger:feature_block_netherrack_sheet_var02",100],
+      ["badger:feature_block_netherrack_sheet_var03",100],
+      ["badger:feature_block_netherrack_slab",100],
+      ["badger:feature_block_netherrack_slab_var01",100],
+      ["badger:feature_block_netherrack_slab_var02",100],
+      ["badger:feature_block_netherrack_slab_var03",100],
+      ["badger:feature_block_netherrack",100]
+
+      
+
+    ]
+  }
+}

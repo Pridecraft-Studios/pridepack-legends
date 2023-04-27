@@ -1,0 +1,50 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_ore_iron_patch_small_grassland",
+      "places_feature": "badger:feature_ore_iron_patch_small_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "before_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "resource_iron"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "grasslands"
+              }
+            ]        
+
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "scatter_chance": "return query.heightmap(variable.originx, variable.originz) > query.sea_level + 10 ? q.resource_scaling*2: 0;",
+      "early_out": "math.mod(math.floor(v.originx / 16), 2) != 0 || math.mod(math.floor(v.originz / 16), 2) != 0",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      }
+    }
+  }
+}

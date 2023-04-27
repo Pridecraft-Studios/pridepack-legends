@@ -1,0 +1,41 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:fountain_ruins_waypoint_marker",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Upgrade",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_requirement": {
+      },
+      "badger:tags": {
+        "tags": [
+          "fountain",
+          "fountain_ruins"
+        ]
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 100.0,
+        "waypoint_max_range": -1.0
+      },
+      "badger:waypoint_marker": {
+        "path": "waypoint_culture_pvp",
+        "label": "",
+        "use_faction_name": false
+      },
+      "badger:clear_from_zone_of_control": {
+        "filter_tag_set": {
+          "include_tags": [
+            "fountain"
+          ],
+          "exclude_tags": []
+        }
+      }
+    }
+  }
+}

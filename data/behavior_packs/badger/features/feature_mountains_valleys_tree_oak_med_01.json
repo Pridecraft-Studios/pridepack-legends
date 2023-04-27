@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_mountains_valleys_tree_oak_med_01"
+    },
+    "structure_name": "nature/tree_oak_med_01",
+
+    "placement_range": {
+      "x": [0,1],
+      "z": [0,1],
+      "y": [0,1]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {},
+      "unburied": {},
+      "empty_space": {}
+    }
+  }
+}

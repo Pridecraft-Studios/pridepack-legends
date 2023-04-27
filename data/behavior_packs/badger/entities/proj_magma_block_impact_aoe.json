@@ -1,0 +1,71 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_magma_block_impact_aoe",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.7,
+        "height": 1.9
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": false,
+        "auto_step": 3.1
+      },
+      "badger:removal_time": {
+        "time": 0.01
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 7
+        },
+        "damage_effects": [
+          {
+            "name": "aoe_magma_impact",
+            "damage": 24.5,
+            "knockback": {
+              "angle": 55,
+              "force": 25
+            },
+            "falloff": {
+              "min_radius": 2,
+              "max_radius": 7,
+              "min_damage": 10,
+              "min_angle": 10
+            },
+            "damage_types": [
+              "explosion",
+              "T3_Attack"
+            ],
+            "include_tags": [],
+            "exclude_tags": [],
+            "apply_status": {
+              "engaged": {
+                "strength": 1.0
+              },
+              "burning": {
+                "strength": 2.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:movement": {
+        "move_speed": 0.0
+      },
+      "badger:template":[
+        "badger:template_impact_entity_piglin"
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_brokenlands_horsetail_grass_water_edge",
+      "places_feature": "badger:feature_brokenlands_horsetail_grass_shore_weighted"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "brokenlands_valleys"
+            },
+            {
+              "any_of": [
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "brokenlands_valleys_fossil"
+                },
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "shore"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(28,56)",
+      "early_out": "q.water_distance(v.scatteredx, v.scatteredz) >= 3",
+      "scatter_chance": 60,
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      }
+    }
+  }
+}

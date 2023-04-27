@@ -1,0 +1,27 @@
+{
+
+  "format_version": "1.13.0",
+
+  "code:place_weighted_random": {
+
+    "description": {
+
+      "identifier": "badger:feature_mountains_shore_block_weighted"
+
+    },
+
+   "features": [
+
+    ["badger:feature_mountains_shore_block_01", 15.0],
+
+    ["badger:feature_mountains_shore_block_02", 15.0],
+
+    ["badger:feature_mountains_shore_block_03", 5.0],
+
+    ["badger:feature_mountains_shore_block_04", 10.0]
+
+   ]
+
+  }
+
+}

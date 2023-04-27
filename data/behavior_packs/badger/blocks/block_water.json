@@ -1,0 +1,40 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+        "identifier": "badger:block_water",
+        "material": "badger_water"
+    },
+    "components": {
+      "minecraft:block_shape": {
+          "shape": "block",
+          "directional_texture": false,
+          "directional_shape": false,
+          "render_layer": "water",
+          "collision_shape": "empty"
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      },
+      "badger:block_type": {
+        "tags": [ "water" ]
+      },
+      "badger:terrain_type": {
+        "terrain": "water"
+      },
+      "badger:liquid": {},
+      "badger:block_effects": {
+        "effect_frequency": 0.1,
+        "apply_status": {
+          "wet": {
+            "strength": 1.0
+          },
+          "water": {
+            "strength": 1.0
+    
+          }
+        }
+      }
+    }
+  }
+}

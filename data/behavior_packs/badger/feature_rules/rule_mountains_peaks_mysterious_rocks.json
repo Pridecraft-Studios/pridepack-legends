@@ -1,0 +1,41 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_mountains_peaks_mysterious_rocks",
+      "places_feature": "badger:feature_mountain_peaks_mysterious_rocks_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "mountain_peaks"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(2, 3)",
+      "scatter_chance": "10 * query.get_game_rule_value('mountain_stone_density')",
+      "early_out": "v.scatteredy < 49",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "z": {
+        "distribution": "gaussian",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz) + 4"
+    }
+  }
+}

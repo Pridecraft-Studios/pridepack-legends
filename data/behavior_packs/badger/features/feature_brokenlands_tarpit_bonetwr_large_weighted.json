@@ -1,0 +1,30 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_brokenlands_bonetwr_01",
+        10.0
+      ],
+      [
+        "badger:feature_brokenlands_bonetwr_02",
+        10.0
+      ],
+      [
+        "badger:feature_brokenlands_bonetwr_03",
+        10.0
+      ],
+      [
+        "badger:feature_brokenlands_bonetwr_04",
+        10.0
+      ],
+      [
+        "badger:feature_brokenlands_bonetwr_05",
+        10.0
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_brokenlands_tarpit_bonetwr_large_weighted"
+    }
+  }
+}

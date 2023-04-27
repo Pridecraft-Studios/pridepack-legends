@@ -1,0 +1,144 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_super_netherspreader_pump",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 7.5,
+        "length": 2.5,
+        "width": 2.0
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "main_attack",
+            "trigger": "on_fire",
+            "on_hit_target_trigger": "on_piglin_super_nether_spreader_aoe_attack_hit",
+            "self_trigger": true,
+            "state_machine": {
+              "wind_up": 7.001,
+              "wind_down": 24.999,
+              "pre_activation_sync_time": 0.001,
+              "deactivates_on_cooldown": true
+            },
+            "transfer_activation": [
+              "spore_aoe_enemy",
+              "spore_aoe_friendly"
+            ],
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 35,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": ["mob"],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 20
+              },
+              "falloff": {
+                "min_angle": 10,
+                "min_radius": 8,
+                "max_radius": 16
+              }
+            }
+          },
+          {
+            "name": "spore_aoe_enemy",
+            "state_machine": {
+              "wind_up": 10.101,
+              "wind_down": 21.889
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 35,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": ["mob"],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "falloff": {
+                "min_angle": 10,
+                "min_radius": 8,
+                "max_radius": 16
+              },
+              "damage": {
+                "damage_amount": 3.5,
+                "damage_types": [
+                  "spore"
+                ]
+              },
+              "apply_status": {
+                "spore_damaged": {
+                  "strength": 0.5
+                },
+                "feared": {
+                  "strength": 1
+                }
+              }
+            }
+          },
+          {
+            "name": "spore_aoe_friendly",
+            "state_machine": {
+              "wind_up": 0.301,
+              "wind_down": 31.699
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 30,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": ["mob"],
+                "exclude_tags": [],
+                "alliance_rule_filter": "friendly"
+              },
+              "damage": {
+                "damage_amount": 0,
+                "damage_types": []
+              },
+              "apply_status": {
+                "spore_healed": {
+                  "strength": 2
+                }
+              }
+            }
+          }
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "block",
+          "superNetherSpreaderFear",
+          "superNetherSpreader"
+        ]
+      },
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

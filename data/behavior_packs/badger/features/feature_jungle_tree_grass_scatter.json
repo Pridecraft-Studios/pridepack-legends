@@ -1,0 +1,25 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_jungle_tree_grass_scatter"
+    },
+    "places_feature": "badger:feature_jungle_grass_tall_weighted",
+    "iterations": "math.random(100,120)",
+    "scatter_chance": "100",
+    "project_input_to_floor": false,
+    "x": {
+      "distribution": "gaussian",
+      "extent": [-10,10]
+    },
+    "z": {
+      "distribution": "gaussian",
+      "extent": [-10,10]
+    },
+    "y": {
+      "distribution": "gaussian",
+      "extent": [-3,3]
+    },
+    "coordinate_eval_order": "xzy"
+  }
+}

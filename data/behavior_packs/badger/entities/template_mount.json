@@ -1,0 +1,94 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_mount",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:delayed_jump": {
+        "delay_time": 0.5
+      },
+      "badger:fall_damage": {
+        "min_damage_distance": 16,
+        "min_damage": 8
+      },
+      "badger:fast_travel": {
+        "windup_time": 4.0,
+        "cooldown_time": 3.0
+      },
+      "badger:resist_status": {
+        "stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "feared": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "rooted": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "electric_stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "frozen": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "slowed": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "spore_healed": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        }
+      },
+      // NOTE: Tried to remove stamina component...
+      // ...with approval of removing Stamina & Exhausted...
+      // ...during testing the mounts remain in sprint state while idle.
+      "badger:stamina": {
+        "max_stamina": 5000,
+        "depletion_rate": 0.01,
+        "exhausted_cooldown": 0.0,
+        "regen_rate": 5.0,
+        "regen_cooldown": 0.0,
+        "exhaust_restore_threshold": 0.25,
+        "can_regen_during_exhausted": true
+      },
+      "badger:movement_speed_camera_effects": {
+        "min_fov_degrees": 60,
+        "max_fov_degrees": 90,
+        "field_of_view": {
+          "enter_easing_function": "out_sine",
+          "exit_easing_function": "in_sine",
+          "effect_strength": 1.0,
+          "enter_time": 2.5,
+          "exit_time": 2.5,
+          "min_multiplier": 1.0,
+          "max_multiplier": 1.1
+        },
+        "camera_distance": {
+          "enter_easing_function": "out_sine",
+          "exit_easing_function": "in_sine",
+          "effect_strength": 1.0,
+          "enter_time": 2.5,
+          "exit_time": 2.5,
+          "min_multiplier": 1.0,
+          "max_multiplier": 1.1
+        }
+      }
+    }
+  }
+}

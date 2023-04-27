@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:onboarding_hosts_spawner",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_requirement": {},
+      "badger:buildable_structure": {
+        "nbt_file": "onboarding_spawner_hosts",
+        "build_time": 1
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "hosts_spawner"
+        ]
+      },
+      "badger:buildable_intangible": {}
+    }
+  }
+}

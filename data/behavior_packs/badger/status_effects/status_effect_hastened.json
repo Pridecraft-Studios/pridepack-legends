@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:status_effect_hastened",
+			"runtime_identifier": "badger:status_effect"
+		},
+		"components": {
+			"badger:status": {
+				"applied_name": "hastened",
+				"default_resistance": {
+					"resisted": false,
+					"time": 5.0,
+					"resistance_persist_time": 0.0
+				}
+			},
+			"badger:modifier_movement_speed": {
+				"post_multiply": 2
+			},
+			"badger:negate_status":{
+				"negated_status":[ "slowed", "slowed_tar" ]
+			}			
+		}
+	}
+}

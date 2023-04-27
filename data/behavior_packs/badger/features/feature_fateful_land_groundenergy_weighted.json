@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_fateful_land_block_groundenergy_small", 10.0],
+      ["badger:feature_fateful_land_block_groundenergy_medium", 7.0],
+      ["badger:feature_fateful_land_block_groundenergy_large", 4.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_fateful_land_groundenergy_weighted"
+    }
+  }
+}

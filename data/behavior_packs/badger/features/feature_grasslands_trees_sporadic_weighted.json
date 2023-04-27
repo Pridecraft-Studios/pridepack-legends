@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_tree_pine_lrg_01",
+        30.0
+      ],
+      [
+        "badger:feature_tree_pine_lrg_02",
+        30.0
+      ],
+      [
+        "badger:feature_tree_pine_med_01",
+        25.0
+      ],
+      [
+        "badger:feature_tree_pine_sml_01",
+        15.0
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_grasslands_trees_sporadic_weighted"
+    }
+  }
+}

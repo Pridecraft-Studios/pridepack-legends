@@ -1,0 +1,43 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:status_effect_player_speed",
+			"runtime_identifier": "badger:status_effect"
+		},
+		"components": {
+			"badger:status": {
+				"applied_name": "player_speed",
+				"default_resistance": {
+					"resisted": false,
+					"time": 7.5,
+					"resistance_persist_time": -1
+				}
+			},
+			"badger:modifier_movement_speed": {
+				"post_multiply": 1.335,
+				"scalable": true
+			},
+			"badger:negate_status": {
+				"negated_status": [
+					"engaged",
+					"exhausted"
+				]
+			},
+			"badger:modifier_stamina_regen": {
+				"pre_multiply": 0.0,
+				"post_add": 1000.0
+			},
+			"badger:modifier_stamina_depletion": {
+				"pre_multiply": 0.0,
+				"post_add": -1000.0
+			},
+			"badger:modifier_stamina_regen_cooldown": {
+				"post_multiply": 0.0
+			},
+			"badger:status_effect_ramp_off": {
+				"transition_duration": 2
+			}
+		}
+	}
+}

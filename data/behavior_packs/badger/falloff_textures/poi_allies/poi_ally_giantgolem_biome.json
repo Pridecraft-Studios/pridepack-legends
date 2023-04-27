@@ -1,0 +1,26 @@
+{
+  "id": "poi_ally_giantgolem_home_biome",
+  "textures": [
+    {
+      "texture": "poi_allies/heightmap_poi_ally_giantgolem_home",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+  "additional_data": {
+    "height_range": [
+      0,
+      1
+    ],
+    "village_texture_stamp": true
+  },
+  "biome_map": [
+    {
+      "biome": "grasslands",
+      "value": 255
+    }
+  ]
+}

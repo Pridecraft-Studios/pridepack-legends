@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_block_grass_clump_02", 1],
+      ["badger:feature_block_grass_clump_03", 1],
+      ["badger:feature_block_grass_clump_04", 1],
+      ["badger:feature_block_grass_clump_05", 1]
+    ],
+    "description": {
+      "identifier": "badger:feature_mud_pit_grass_weighted"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "tex_stamp_junglemountain_med_01",
+  "textures": [
+    {
+      "texture": "jungle/tex_stamp_junglemountain_med_01",
+      "channels": {
+        "r": "blend",
+        "g": "biome",
+        "b": "terrain_height"
+      }
+    },
+    {
+      "texture": "jungle/tex_stamp_junglemountain_med_01_anchor",
+      "channels": {
+        "r": "sdf_shape_r",
+        "g": "sdf_shape_g",
+        "b": "sdf_shape_b"
+      }
+    }
+  ],
+
+  "biome_map": [
+    {
+      "biome": "jungle_mountains",
+      "value": 255
+    },
+    {
+      "biome": "jungle_hills",
+      "value": 128
+    }
+  ],
+  "additional_data": {
+    "sdf_shape": {
+      "shape_type": "jungle_egg",
+      "allow_random_orientation": true
+    }
+  }
+}

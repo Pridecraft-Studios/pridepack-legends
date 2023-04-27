@@ -1,0 +1,46 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_plant_drygrass_01",
+        30.0
+      ],
+      [
+        "badger:feature_plant_drygrass_02",
+        30.0
+      ],
+      [
+        "badger:feature_plant_drygrass_03",
+        30.0
+      ],
+      [
+        "badger:feature_plant_drygrass_04",
+        30.0
+      ],
+      [
+        "badger:feature_plant_frondclump_01",
+        5.0
+      ],
+      [
+        "badger:feature_plant_frondclump_02",
+        5.0
+      ],
+      [
+        "badger:feature_plant_frondclump_03",
+        5.0
+      ],
+      [
+        "badger:feature_plant_frondclump_04",
+        5.0
+      ],
+      [
+        "badger:feature_plant_frondclump_05",
+        5.0
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_drylands_mid_trees_grass_weighted"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_mountain_resource_frosty_stone_boulder",
+      "places_feature": "badger:feature_frosty_boulder_expression"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mountain_peaks"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mountain_summit"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "1",
+      "scatter_chance": "100",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          7,
+          8
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          7,
+          8
+        ]
+      },
+      "y": 0
+    }
+  }
+}

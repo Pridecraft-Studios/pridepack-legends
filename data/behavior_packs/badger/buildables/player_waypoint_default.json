@@ -1,0 +1,46 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:player_waypoint_default",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 0.0,
+        "waypoint_max_range": 0.0,
+        "compass_max_range": "infinite",
+        "hide_from_non_alliance" : true,
+        "compass_level": 0,
+        "filter_tagsets": [
+          {
+            "include_tags": [],
+            "exclude_tags": []
+          },
+          {
+            "include_tags": [
+              "village_attack",
+              "base_assault"
+            ],
+            "exclude_tags": []
+          }
+        ]
+      },
+      "badger:waypoint_marker": {
+        "path": "waypoint_waypoint_marker_teammate",
+        "local_player_facing_path": "waypoint_waypoint_marker",
+        "label": "",
+        "alliance_rule_filter": "enemy",
+        "priority": 4
+      },
+      "badger:map_controller": {
+        "initial_key_values": [
+          {
+            "key": "player_waypoint",
+            "value": "enabled"
+          }
+        ]
+      }
+    }
+  }
+}

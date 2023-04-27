@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_roaming_faction"
+    },
+    "components": {
+      "badger:faction": {
+        "name": "Band of Roaming Piglins",
+        "id": "faction.pig.roaming",
+        "description": "Sneaky groups of Piglins outside of bases.",
+        "color": [0.3, 0.7, 0.2, 1.0],
+        "known": true,
+        "appearance_name": "random"
+      },
+      "badger:campaign_team": {
+        "team_tag": "piglin_team"
+      },
+      "badger:template": "badger:template_faction_piglin"
+    }
+  }
+}

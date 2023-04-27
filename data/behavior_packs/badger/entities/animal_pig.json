@@ -1,0 +1,180 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:animal_pig",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Animal"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1.2,
+        "length": 1.2,
+        "height": 1.3
+      },
+      "badger:loot": {
+        "table": "common_animal"
+      },
+      "badger:movement": {
+        "move_speed": 3.0,
+        "air_control_factor": 0.0
+      },
+      "badger:physics": {
+        "gravity": -30,
+        "friction": 0.1
+      },
+      "badger:world_collision": {
+        "has_collision": true,
+        "auto_step": 3.6,
+        "interpolation_speed": 10
+      },
+      "badger:collision_weight": {
+        "weight": 10
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 48
+      },
+      "badger:tags": {
+        "tags": [
+          "pig",
+          "luredirect",
+          "mount",
+          "animal",
+          "mob",
+          "donotattack",
+          "neutral"
+        ]
+      },
+      "badger:health": {
+        "max_health": 10
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Pat Pat
+          {
+            "name": "pat_pat",
+            "max_range": 15,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "pat_pat"
+            ]
+          },
+          //Animal_Targeting
+          {
+            "name": "pig_player_follow",
+            "max_range": 2,
+            "include_tags": [ 
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [ 
+              "follow_player"
+            ]
+          },
+          {
+            "name": "pig_mud_roll",
+            "max_range": 30,
+            "include_tags": [ 
+              "locator_mud_pool"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [ 
+              "roll_in_mud"
+            ]
+          },
+          {
+            "name": "pig_mud_combat_pos",
+            "max_range": 20,
+            "include_tags": [ 
+              "locator_mud_pool"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [ 
+              "secondary_combat_position"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 2,
+          "sc": 1,
+          "rc": 1
+        }
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "roll_in_mud",
+            "range": {
+              "min_range": 2,
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 0.0,
+              "wind_down": 2.5,
+              "cooldown_time": 12,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "secondary_combat_position",
+            "range": {
+              "min_range": 3,
+              "max_range": 4
+            },
+            "state_machine": {
+              "cooldown_time": 10,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "follow_player",
+            "range": {
+              "max_range": 5
+            }
+          }
+        ]
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 1.0
+      },
+      "badger:mount": {
+        "include_tags": [ 
+          "rider"
+        ],
+        "alliance_rule_filter": "friendly"
+      },
+      "badger:resist_status": {
+        "slowed_tar": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        }
+      },
+      "badger:conditionally_solid_blocks": {
+        "include_tags": [
+          "barrier_waterfall"
+        ],
+        "exclude_tags": []
+      },
+      "badger:template": "badger:template_animal"
+    }
+  }
+}

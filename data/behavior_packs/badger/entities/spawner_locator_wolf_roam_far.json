@@ -1,0 +1,50 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_locator_wolf_roam_far",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:tags": {
+        "tags": [
+          "locator_wolf_roam_far",
+          "donotattack",
+          "spawner_locator_animal"
+        ]
+      },
+      "badger:aabb": {
+        "width": 1,
+        "height": 1
+      },
+      "badger:campaign_team": {
+        "team_tag": "wild_team"
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:locator_wolf_roam_far",
+            "percentage": 1
+          }
+        ],
+        "cap": 1,
+        "batch": 1,
+        "rate": 1,
+        "min_radius": 5,
+        "max_radius": 55
+      },
+      "badger:spawner_rules": {
+        "bsharp_rule": {
+          "variable": "gv_started_act_3_a",
+          "value": 1
+        },
+        "block_type_rule": {
+          "valid_types": [
+            "grass"
+          ]
+        }
+      }
+    }
+  }
+}

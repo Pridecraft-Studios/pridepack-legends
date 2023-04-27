@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_resource_grasslands_stone_boulder_aggregate"
+    },
+    "features": [
+      "badger:feature_resource_stone_boulder_large_weighted",
+      "badger:feature_grasslands_grass_ring",
+      "badger:feature_resource_stone_boulder_small_scatter",
+      "badger:feature_resource_stone_boulder_scatter"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "material": "badger_wood",
+      "identifier": "badger:block_brick_tree_mang_trunk_dead"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "brick",
+        "directional_texture": false,
+        "directional_shape": true,
+        "collision_shape": "brick"
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      },
+      "badger:block_type": {
+        "tags": [
+          "gatherable_wood"
+        ]
+      }
+    }
+  }
+}

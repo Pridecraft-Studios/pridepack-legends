@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:component_health_generation_default",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:buildable_health_generation": {
+        "initial_health_percentage": 0.15
+      }
+    }
+  }
+}

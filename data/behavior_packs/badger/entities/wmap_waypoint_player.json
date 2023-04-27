@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:wmap_waypoint_player",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 3.375,
+        "length": 0.046875,
+        "width": 0.6328125
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:buff_wof_visuals_revert",
+      "runtime_identifier": "badger:buff",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buff": {
+        "buff_category": "visuals"
+      },
+      "badger:modifier_block_revert": {
+        "reversal_duration_percentage": 0.0
+      },
+      "badger:removal_time": {
+        "time": 5
+      }
+    }
+  }
+}

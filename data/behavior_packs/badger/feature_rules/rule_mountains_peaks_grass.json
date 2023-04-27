@@ -1,0 +1,42 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_mountains_peaks_grass",
+      "places_feature": "badger:feature_mountain_peaks_decoration_weighted"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "mountain_peaks"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 100,
+      "scatter_chance": 75,
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "jittered_grid",
+        "extent": [
+          0,
+          15
+        ],
+        "step_size": 1.0
+      },
+      "y": "temp.height = query.heightmap(variable.worldx, variable.worldz);\r\ntemp.noisevalue = query.noise((variable.worldx) / 40, (variable.worldz) / 40);\r\ntemp.lownoisewiggle = math.random(-1,2) *0.1;\r\ntemp.highnoisewiggle = math.random(-1,2) * 0.1;\r\nreturn (temp.noisevalue > (-0.2 + temp.lownoisewiggle) && temp.noisevalue < (0.2 + temp.highnoisewiggle) && math.random(1,10) > 3) ? temp.height : 999;",
+      "z": {
+        "distribution": "jittered_grid",
+        "extent": [
+          0,
+          15
+        ],
+        "step_size": 1.0
+      }
+    }
+  }
+}

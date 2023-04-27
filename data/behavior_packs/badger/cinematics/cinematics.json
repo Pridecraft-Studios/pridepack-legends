@@ -1,0 +1,6 @@
+{
+  "view_region_chunk_radius": 4,
+  "cinematic_world_request_type": "cinematic",
+  "allow_skip_default": true,
+  "profile_nises": ["profiling_100", "profiling_200", "profiling_piglin"]
+}

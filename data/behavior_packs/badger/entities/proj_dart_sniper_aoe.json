@@ -1,0 +1,48 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_dart_sniper_aoe",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:removal_time": {
+        "time": 0.2
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 1.0
+        },
+        "damage_effects": [
+          {
+            "name": "dart_aoe",
+            "damage": 0.5,
+            "damage_types": [
+            ],
+            "include_tags": [],
+            "exclude_tags": [],
+            "apply_status": {
+              "engaged": {
+                "chance": 1.0,
+                "strength": 1.0
+              }
+            },
+            "knockback": {
+              "angle": 40,
+              "force": 40
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:movement": {
+        "move_speed": 0.0
+      }
+    }
+  }
+}

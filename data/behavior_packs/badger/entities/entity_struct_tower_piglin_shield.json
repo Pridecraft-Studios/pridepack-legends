@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_tower_piglin_shield",
+      "is_summonable": true,
+      "runtime_identifier": "badger:mob"
+    },
+    "mushroom_data": {
+      "role": "Building",
+      "function": "Military",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1,
+        "height": 1
+      },
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:tags": {
+        "tags": [
+          "buildableChild",
+          "block",
+          "pigShieldTower"
+        ]
+      },
+      "badger:template": [
+        "badger:template_structure_child_entity_piglin"
+      ],
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_plant_snowstalk_01",10.0],
+      ["badger:feature_plant_snowstalk_02",10.0],
+      ["badger:feature_plant_snowstalk_03",10.0],
+      ["badger:feature_frosty_grass_grass_clump_frost_01",10.0],
+      ["badger:feature_frosty_grass_grass_clump_frost_02",10.0],
+      ["badger:feature_frosty_grass_grass_clump_snow_01",10.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_frosty_grass_grass_weighted"
+    }
+  }
+}

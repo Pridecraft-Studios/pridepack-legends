@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "material": "badger_grass", 
+      "identifier": "badger:block_deco_flower_mountain_02"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty", 
+        "directional_texture": false, 
+        "directional_shape": false, 
+        "collision_shape": "empty"
+      }, 
+      "badger:terrain_type": {
+        "terrain": "grass"
+      }
+    }
+  }
+}

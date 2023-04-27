@@ -1,0 +1,18 @@
+{
+
+  "format_version": "1.13.0",
+
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_tarpit_edge_block"
+    },
+
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_sand_d1",
+    "may_replace": [
+      "badger:block_sand",
+      "badger:block_cliffdirt_01"
+    ]
+  }
+}

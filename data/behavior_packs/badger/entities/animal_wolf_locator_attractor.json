@@ -1,0 +1,82 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:animal_wolf_locator_attractor",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Animal"
+    },
+    "components": {
+      "badger:heartbeat": {
+        "min_expire_time": 240
+      },
+      "badger:aabb": {
+        "width": 1.3,
+        "height": 1.3
+      },
+      "badger:loot": {
+        "table": "common_animal"
+      },
+      "badger:movement": {
+        "move_speed": 8.0
+      },
+      "badger:physics": {},
+      "badger:world_collision": {
+        "has_collision": true,
+        "auto_step": 6.1,
+        "interpolation_speed": 10
+      },
+      "badger:wander": {
+        "wander_frequency": 0.2,
+        "wander_radius": 20
+      },
+      "badger:tags": {
+        "tags": [
+          "donotattack",
+          "locator_wolf_attractor"
+        ]
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "name": "wolf_roam_far_howl",
+            "max_range": 100,
+            "action_tickets": {
+              "cc": 1,
+              "sc": 1
+            },
+            "include_tags": [ "locator_wolf_roam_far" ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [ "wolf_howl" ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {}
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 15,
+          "sc": 15,
+          "rc": 15
+        }
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "wolf_howl",
+            "range": {
+              "min_range": 3,
+              "max_range": 5
+            }
+          }
+        ]
+      }
+    }
+  }
+}

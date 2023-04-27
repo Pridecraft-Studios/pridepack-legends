@@ -1,0 +1,45 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_ore_redstone_patch_large",
+      "places_feature": "badger:feature_ore_redstone_patch_large_scatter"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "before_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "resource_redstone"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "early_out": "math.mod(math.floor(v.originx / 16), 2) != 0 || math.mod(math.floor(v.originz / 16), 2) != 0",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "scatter_chance": "q.resource_scaling* 8"
+      
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:flowing_lava",
+      "material": "badger_lava"
+    },
+    "components": {
+      "badger:block_effects": {
+        "damage_amount": 0.75,
+        "damage_types": [
+          "hazard"
+        ],
+        "effect_frequency": 0.25,
+        "apply_status": {
+          "burning": {
+            "strength": 1.0
+          }
+        }
+      },
+      "badger:block_type": {
+        "tags": [
+          "lava",
+          "world_hazard"
+        ]
+      },
+      "badger:terrain_type": {
+        "terrain": "lava"
+      },
+      "badger:liquid": {},
+      "badger:telemetry_category": {
+        "category_name": "Environmental"
+      }
+    }
+  }
+}

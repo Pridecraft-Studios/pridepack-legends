@@ -1,0 +1,32 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_riverbed_stone_02"
+    },
+    "may_replace": [
+      "minecraft:air",
+      "badger:block_riverbed_a",
+      "badger:block_riverbed_a2",
+      "badger:block_riverbed_b",
+      "badger:block_riverbed_b2",
+      "badger:block_sand_d3",
+      "badger:block_sand",
+      "badger:block_riverbed_blend_03",
+      "badger:block_riverbed_blend_01"
+    ],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_riverbed_stone_02",
+    "may_attach_to": {
+      "bottom": [
+        "badger:block_riverbed_a",
+        "badger:block_riverbed_a2",
+        "badger:block_riverbed_b",
+        "badger:block_riverbed_b2",
+        "badger:block_sand_d3",
+        "badger:block_sand"
+      ]
+    }
+  }
+}

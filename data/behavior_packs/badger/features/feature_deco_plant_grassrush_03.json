@@ -1,0 +1,25 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_deco_plant_grassrush_03"
+    },
+    "may_replace": [
+      "minecraft:air",
+      "badger:block_gravel",
+      "badger:block_water"
+    ],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_attach_to": {
+      "bottom": [
+        "badger:block_rivershore",
+        "badger:block_rivershore_02",
+        "badger:block_gravel",
+        "badger:block_rivershore_03"
+      ],
+      "top": "minecraft:air"
+    },
+    "places_block": "badger:block_deco_plant_grassrush_03"
+  }
+}

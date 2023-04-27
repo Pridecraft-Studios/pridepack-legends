@@ -1,0 +1,19 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:teleport_target_faction"
+        },
+        "components": {
+            "badger:faction": {
+                "id": "faction.teleport.faction",
+                "name": "teleport.name",
+                "description": "tepleport.description",
+                "known": true
+            },
+            "badger:campaign_team": {
+                "team_tag": "campaign_team"
+            }
+        }
+    }
+}

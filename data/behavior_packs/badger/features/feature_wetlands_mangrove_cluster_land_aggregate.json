@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_wetlands_mangrove_cluster_land_aggregate"
+    },
+    "features": [
+      "badger:feature_wetlands_trees_mega_weighted",
+      "badger:feature_wetlands_water_veg_cluster_root_scatter",
+      "badger:feature_wetlands_mangrove_cluster_land_mushroom_scatter",
+      "badger:feature_wetlands_mangrove_cluster_land_grass_scatter"
+    ]
+  }
+}

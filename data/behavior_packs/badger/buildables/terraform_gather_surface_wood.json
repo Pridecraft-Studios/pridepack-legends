@@ -1,0 +1,54 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:terraform_gather_surface_wood",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "terraform_gather_surface_wood",
+        "tooltip_title": "terraform.gather.surface.wood.name",
+        "tactical_description": "terraform.gather.surface.wood.tactical_description",
+        "tooltip_description": "terraform.gather.surface.wood.description",
+        "ping_message": "build_preview_ping_gather_wood",
+        "buildable_category": "resourcing",
+        "sort_order": 1000,
+        "height_offset": 1
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "terraform_gather_surface_wood",
+        "build_time": 0,
+        "buildable_placed_player_trigger": "on_building_terraform_gather_surface_wood",
+        "construction_end_trigger": "on_construction_end",
+        "silence_destroyed_trigger_when_killed": true
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "ticket_cost": [
+          {
+            "ticket": "gather",
+            "amount": 1
+          }
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable"
+        ],
+        "invalid_block_snaptoground": true
+      },
+      "badger:core_resource_consumer": {
+        "material_category": [
+          "foliage",
+          "wood",
+		      "no_resources_wood_no_surface_clear"
+        ]
+      },
+      "badger:template": "badger:template_terraform_gather_surface"
+    }
+  }
+}

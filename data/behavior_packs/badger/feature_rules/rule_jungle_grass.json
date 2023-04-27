@@ -1,0 +1,50 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_jungle_grass",
+      "places_feature": "badger:feature_jungle_grass_weighted"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "final_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "jungle"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "sparse_jungle"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 512,
+      "scatter_chance": 100,
+      "early_out": "math.mod(math.floor(v.originx / 16), 2) != 0 || math.mod(math.floor(v.originz / 16), 2) == 0",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          -8,
+          23
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          -8,
+          23
+        ]
+      }
+    }
+  }
+}

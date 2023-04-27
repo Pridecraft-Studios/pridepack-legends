@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:terraform_gather_surface_stone",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false,
+      "is_experimental": false
+    },
+    "components": {
+      "badger:buildable_requirement": {
+        "ticket_cost": [
+          {
+            "ticket": "gather",
+            "amount": 1
+          }
+        ],
+        "unlock": [
+          {
+            "item": "gather_stone",
+            "amount": 1
+          }
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable"
+        ],
+        "invalid_block_snaptoground": true
+      },
+      "badger:template": {
+        "parent": "badger:terraform_gather_surface_stone",
+        "game_mode": "onboarding"
+      }
+    }
+  }
+}

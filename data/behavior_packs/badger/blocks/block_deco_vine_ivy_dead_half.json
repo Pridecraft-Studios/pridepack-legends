@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "material": "badger_bushes", 
+      "identifier": "badger:block_deco_vine_ivy_dead_half"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty", 
+        "directional_texture": false, 
+        "directional_shape": true
+      }, 
+      "badger:terrain_type": {
+        "terrain": "grass"
+      }
+    }
+  }
+}

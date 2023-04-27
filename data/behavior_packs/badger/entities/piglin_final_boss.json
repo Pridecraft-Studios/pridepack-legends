@@ -1,0 +1,964 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_final_boss",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Boss"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 7.01,
+        "height": 9.0
+      },
+      "badger:loot": {
+        "table": "boss_piglin_loot"
+      },
+      "badger:entity_collision": {},
+      "badger:reports_hit_reaction": {},
+      "badger:world_collision": {
+        "auto_step": 1.1,
+        "interpolation_speed": 10
+      },
+      "badger:collision_weight": {
+        "weight": 1000
+      },
+      "badger:physics": {
+        "gravity": -60,
+        "water_speed_modifier": 1,
+        "buoyancy": 10
+      },
+      "badger:movement": {
+        "move_speed": 3
+      },
+      "badger:wander": {
+        "wander_frequency": 0.2,
+        "wander_radius": 15
+      },
+      "badger:leash": {
+        "leash_range": 130,
+        "return_range": 36
+      },
+      "badger:tags": {
+        "tags": [
+          "boss",
+          "piglin",
+          "finalBoss",
+          "mob"
+        ]
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 40,
+          "sc": 20,
+          "rc": 40
+        }
+      },
+      "badger:health": {
+        "max_health": 15000
+      },
+      "badger:navigation": {
+        "avoidance_lookahead": 20.0,
+        "fall_distance": 10,
+        "avoid_block_damage": true,
+        "ignore_solids_rule": "any_team"
+      },
+      "badger:conditionally_solid_blocks": {
+        "include_tags": [
+          "boss_solid"
+        ],
+        "exclude_tags": []
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {
+          "ranged": 0.25,
+          "explosion": 3.0,
+          "lava": 12.0
+        }
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "name": "final_boss_player_ranged",
+            "min_range": 61,
+            "max_range": 250,
+            "include_tags": [
+              "player"
+            ],
+            "enable_with_line_of_sight": true,
+            "exclude_tags": [
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "ranged_attack_1"
+            ]
+          },
+          {
+            "name": "final_boss_ranged",
+            "min_range": 61,
+            "max_range": 250,
+            "include_tags": [
+              "skeleton"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "ranged_attack_1"
+            ]
+          },
+          {
+            "name": "final_boss_enemy_melee",
+            "min_range": 0,
+            "max_range": 10,
+            "include_tags": [],
+            "enable_with_line_of_sight": true,
+            "exclude_tags": [
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_1"
+            ]
+          },
+          {
+            "name": "final_boss_enemy_bash",
+            "min_range": 0,
+            "max_range": 20,
+            "include_tags": [],
+            "exclude_tags": [
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "bash_attack"
+            ]
+          },
+          {
+            "name": "final_boss_player_spin",
+            "min_range": 20,
+            "max_range": 60,
+            "include_tags": [
+              "player",
+              "inside_final_boss_arena"
+            ],
+            "enable_with_line_of_sight": true,
+            "exclude_tags": [
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "spin_charge_attack_1"
+            ]
+          },
+          {
+            "name": "final_boss_cavalry_geyser",
+            "min_range": 0,
+            "max_range": 25,
+            "required_target_count": 10,
+            "include_tags": [
+              "cavalry"
+            ],
+            "enable_with_line_of_sight": true,
+            "exclude_tags": [
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "geyser_attack_fighter"
+            ]
+          },
+          {
+            "name": "final_boss_ranged_geyser",
+            "min_range": 0,
+            "max_range": 50,
+            "required_target_count": 10,
+            "include_tags": [
+              "ranged"
+            ],
+            "enable_with_line_of_sight": true,
+            "exclude_tags": [
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "geyser_attack_disruptor"
+            ]
+          },
+          {
+            "name": "final_boss_melee_geyser",
+            "min_range": 0,
+            "max_range": 15,
+            "required_target_count": 10,
+            "include_tags": [
+              "melee"
+            ],
+            "enable_with_line_of_sight": true,
+            "exclude_tags": [
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "geyser_attack_sieger"
+            ]
+          },
+          {
+            "name": "approach",
+            "min_range": 0,
+            "max_range": 100,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "approach"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "melee_attack_1",
+            "trigger": "on_melee_attack_1",
+            "on_hit_target_trigger": "on_final_boss_melee_attack_hit",
+            "predictive_windup": false,
+            "starts_disabled": false,
+            "range": {
+              "max_range": 7.5
+            },
+            "transfer_activation": [
+              "melee_attack_2"
+            ],
+            "state_machine": {
+              "wind_up": 3.25,
+              "wind_down": 7.75,
+              "cooldown_time": 15,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 12,
+                "rotation": 0,
+                "position": [
+                  0,
+                  -4,
+                  10
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 20,
+                "damage_types": [
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "angle": 90,
+                "force": 5
+              },
+              "apply_status": {
+                "electric_stunned": {
+                  "chance": 1.0,
+                  "strength": 0.5
+                }
+              }
+            }
+          },
+          {
+            "name": "melee_attack_2",
+            "trigger": "on_melee_attack_2",
+            "on_hit_target_trigger": "on_final_boss_melee_attack_hit",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 7.5
+            },
+            "state_machine": {
+              "wind_up": 5.75,
+              "wind_down": 5.25,
+              "cooldown_time": 15.0,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 12,
+                "rotation": 0,
+                "position": [
+                  0,
+                  0,
+                  8
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 20,
+                "damage_types": [
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "angle": 42,
+                "force": 35
+              },
+              "falloff": {
+                "min_radius": 5,
+                "max_radius": 10,
+                "min_damage": 15,
+                "min_angle": 10
+              }
+            }
+          },
+          {
+            "name": "ranged_attack_1",
+            "trigger": "on_ranged_attack_1",
+            "on_hit_target_trigger": "on_final_boss_ranged_attack_hit",
+            "starts_disabled": false,
+            "predictive_windup": false,
+            "range": {
+              "max_range": 300
+            },
+            "transfer_activation": [
+              "ranged_attack_2",
+              "ranged_attack_3"
+            ],
+            "state_machine": {
+              "wind_up": 3.25,
+              "wind_down": 8.0,
+              "cooldown_time": 35.0,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_spear_final_boss",
+              "position_offsets_from_center": [
+                [
+                  3.0,
+                  11.0,
+                  15.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "boss",
+                  "player",
+                  "mob"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 20,
+                "damage_types": [
+                  "ranged"
+                ]
+              }
+            }
+          },
+          {
+            "name": "ranged_attack_2",
+            "trigger": "on_ranged_attack_2",
+            "on_hit_target_trigger": "on_final_boss_ranged_attack_hit",
+            "predictive_windup": false,
+            "state_machine": {
+              "wind_up": 5.25,
+              "wind_down": 6.0,
+              "cooldown_time": 35.0,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_spear_final_boss",
+              "position_offsets_from_center": [
+                [
+                  3.0,
+                  11.0,
+                  15.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "boss",
+                  "player",
+                  "mob"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 20,
+                "damage_types": [
+                  "ranged"
+                ]
+              }
+            }
+          },
+          {
+            "name": "ranged_attack_3",
+            "trigger": "on_ranged_attack_3",
+            "on_hit_target_trigger": "on_final_boss_ranged_attack_hit",
+            "predictive_windup": false,
+            "state_machine": {
+              "wind_up": 7.25,
+              "wind_down": 4.0,
+              "cooldown_time": 35.0,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_spear_final_boss",
+              "position_offsets_from_center": [
+                [
+                  3.0,
+                  11.0,
+                  15.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "boss",
+                  "player",
+                  "mob"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 20,
+                "damage_types": [
+                  "ranged"
+                ]
+              }
+            }
+          },
+          {
+            "name": "spin_charge_attack_1",
+            "trigger": "on_spin_charge_attack_1",
+            "on_hit_target_trigger": "on_final_boss_aoe_attack_hit",
+            "predictive_windup": false,
+            "starts_disabled": false,
+            "range": {
+              "max_range": 50
+            },
+            "auto_cancel_when": {
+              "target_lacks_any": [
+                "inside_final_boss_arena"
+              ]
+            },
+            "interruptible": {
+              "time_windows": [
+                {
+                  "start_time": 0,
+                  "end_time": 5.25
+                },
+                {
+                  "start_time": 9,
+                  "end_time": 9.5
+                },
+                {
+                  "start_time": 12.5,
+                  "end_time": 12.75
+                }
+              ]
+            },
+            "transfer_activation": [
+              "spin_charge_attack_2",
+              "spin_charge_attack_3"
+            ],
+            "grace_period_between_hits": 0.5,
+            "state_machine": {
+              "wind_up": 5.250,
+              "activation_time": 3.75,
+              "wind_down": 12.0,
+              "cooldown_time": 150,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 360,
+                "radius": 10,
+                "thickness": 20,
+                "position": [
+                  0.0,
+                  10.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "finalBoss"
+                ],
+                "alliance_rule_filter": "any_team"
+              },
+              "damage": {
+                "damage_amount": 10,
+                "damage_types": [
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "angle": 20,
+                "force": 25
+              }
+            },
+            "charge": {
+              "speed": 20
+            }
+          },
+          {
+            "name": "spin_charge_attack_2",
+            "trigger": "on_spin_charge_attack_2",
+            "on_hit_target_trigger": "on_final_boss_aoe_attack_hit",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 100
+            },
+            "grace_period_between_hits": 0.5,
+            "state_machine": {
+              "wind_up": 9.5,
+              "activation_time": 3.00,
+              "wind_down": 8.5,
+              "cooldown_time": 150,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {
+              "time_windows": [
+                {
+                  "start_time": 0,
+                  "end_time": 5.25
+                },
+                {
+                  "start_time": 9,
+                  "end_time": 9.5
+                },
+                {
+                  "start_time": 12.5,
+                  "end_time": 12.75
+                }
+              ]
+            },
+            "auto_cancel_when": {
+              "target_lacks_any": [
+                "inside_final_boss_arena"
+              ]
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 360,
+                "radius": 10,
+                "thickness": 20,
+                "position": [
+                  0.0,
+                  10.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "finalBoss"
+                ],
+                "alliance_rule_filter": "any_team"
+              },
+              "damage": {
+                "damage_amount": 10,
+                "damage_types": [
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "angle": 22,
+                "force": 25
+              }
+            },
+            "charge": {
+              "speed": 25
+            }
+          },
+          {
+            "name": "spin_charge_attack_3",
+            "trigger": "on_spin_charge_attack_3",
+            "on_hit_target_trigger": "on_final_boss_aoe_attack_hit",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 150
+            },
+            "grace_period_between_hits": 0.5,
+            "state_machine": {
+              "wind_up": 12.75,
+              "activation_time": 3.5,
+              "wind_down": 4.75,
+              "cooldown_time": 150.0,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {
+              "time_windows": [
+                {
+                  "start_time": 0,
+                  "end_time": 5.25
+                },
+                {
+                  "start_time": 9,
+                  "end_time": 9.5
+                },
+                {
+                  "start_time": 12.5,
+                  "end_time": 12.75
+                }
+              ]
+            },
+            "auto_cancel_when": {
+              "target_lacks_any": [
+                "inside_final_boss_arena"
+              ]
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 360,
+                "radius": 10,
+                "thickness": 20,
+                "position": [
+                  0.0,
+                  10.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "finalBoss"
+                ],
+                "alliance_rule_filter": "any_team"
+              },
+              "damage": {
+                "damage_amount": 10,
+                "damage_types": [
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "angle": 25,
+                "force": 25
+              }
+            },
+            "charge": {
+              "speed": 30
+            }
+          },
+          {
+            "name": "geyser_attack_fighter",
+            "trigger": "on_geyser_attack_fighter",
+            "predictive_windup": false,
+            "starts_disabled": false,
+            "range": {
+              "max_range": 15
+            },
+            "state_machine": {
+              "wind_up": 9.0,
+              "wind_down": 7.25,
+              "cooldown_time": 300,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "geyser_attack_disruptor",
+            "trigger": "on_geyser_attack_disruptor",
+            "predictive_windup": false,
+            "starts_disabled": false,
+            "range": {
+              "max_range": 15
+            },
+            "state_machine": {
+              "wind_up": 9.0,
+              "wind_down": 7.25,
+              "cooldown_time": 300,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "geyser_attack_sieger",
+            "trigger": "on_geyser_attack_sieger",
+            "predictive_windup": false,
+            "starts_disabled": false,
+            "range": {
+              "max_range": 15
+            },
+            "state_machine": {
+              "wind_up": 9.0,
+              "wind_down": 7.25,
+              "cooldown_time": 300,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "bash_attack",
+            "trigger": "on_bash_attack",
+            "on_hit_target_trigger": "on_final_boss_aoe_attack_hit",
+            "grace_period_between_hits": 2.0,
+            "predictive_windup": false,
+            "starts_disabled": false,
+            "range": {
+              "max_range": 7.5
+            },
+            "state_machine": {
+              "wind_up": 5.0,
+              "activation_time": 3.0,
+              "wind_down": 4.0,
+              "cooldown_time": 180,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 20,
+                "rotation": 0,
+                "position": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 20,
+                "damage_types": [
+                  "melee"
+                ]
+              },
+              "apply_status": {
+                "electric_stunned": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                }
+              }
+            }
+          },
+          {
+            "name": "approach",
+            "range": {
+              "min_range": 0.0,
+              "max_range": 0.0
+            }
+          }
+        ]
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 7
+        },
+        "timer": {
+          "interval": 1
+        },
+        "damage_effects": {
+          "damage": 0,
+          "damage_types": [],
+          "include_tags": [
+            "piglin_tier1"
+          ],
+          "exclude_tags": [
+            "boss"
+          ],
+          "apply_status": {
+            "feared": {
+              "chance": 1.0,
+              "strength": 0.25
+            }
+          },
+          "alliance_rule_filter": "friendly"
+        }
+      },
+      "badger:presentation_event": {
+        "on_geyser_attack_fighter": {
+          "spawn_entity": {
+            "chance": 1.0,
+            "entities": [
+              {
+                "chance": 1.0,
+                "entity": "badger:spawner_final_boss_geyser_transform"
+              }
+            ]
+          }
+        },
+        "on_geyser_attack_disruptor": {
+          "spawn_entity": {
+            "chance": 1.0,
+            "entities": [
+              {
+                "chance": 1.0,
+                "entity": "badger:spawner_final_boss_geyser_transform"
+              }
+            ]
+          }
+        },
+        "on_geyser_attack_sieger": {
+          "spawn_entity": {
+            "chance": 1.0,
+            "entities": [
+              {
+                "chance": 1.0,
+                "entity": "badger:spawner_final_boss_geyser_transform"
+              }
+            ]
+          }
+        }
+      },
+      "badger:cinematic_death": {
+        "cine_id": [
+          "mst09_c09a_final_boss_death"
+        ]
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 20.0,
+        "waypoint_max_range": 20.0,
+        "compass_max_range": "medium",
+        "filter_tagsets": [
+          {
+            "include_tags": [
+              "base_assault"
+            ],
+            "exclude_tags": []
+          }
+        ]
+      },
+      "badger:waypoint_marker": {
+        "path": "waypoint_piglin_boss",
+        "label": "faction.piglin_final_faction.boss.name"
+      },
+      "badger:damage_receiver_material": {
+        "material": "block"
+      },
+      "badger:telemetry_category": {
+        "category_name": "Piglin Boss"
+      },
+      "badger:objective_health_bar": {
+        "max_visible_range": 300,
+        "priority": 2,
+        "type": "boss"
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 0
+      },
+      "badger:spawn_tracking": {},
+      "badger:resist_status": {
+        "stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "rooted": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "feared": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "slowed": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "poisoned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "spore_damaged": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "spore_healed": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "burning": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "wet": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "healing": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "healing_stone": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "electric_stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "slowed_piglin_bramble": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        }
+      },
+      "badger:music_emitter_states": [
+        "boss_engaged",
+        "inactive",
+        "final_boss_engaged0",
+        "final_boss_engaged1",
+        "final_boss_engaged2"
+      ],
+      "badger:template": [
+        "badger:component_difficulty_modifiers_piglin_bosses"
+      ]
+    }
+  }
+}

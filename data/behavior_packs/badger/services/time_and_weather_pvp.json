@@ -1,0 +1,15 @@
+{
+  "badger:time_and_weather_service": {
+    "time_of_day": {
+      "seconds_per_day": 720,
+      "start_time": 360,
+      "day_percentage": 0.67,
+      "set_time_when_no_cycle": 0,
+      "lock_daynight_cycle_default": false
+    },
+    "badger:template": {
+      "parent": "badger:time_and_weather_service",
+      "game_mode": "pvp"
+    }
+  }
+}

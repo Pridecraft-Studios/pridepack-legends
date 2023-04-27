@@ -1,0 +1,16 @@
+{
+  "badger:resource_trader_service": {
+	  "trade_list": [
+	  {
+	    "reward": {
+	      "item": "gold",
+	      "amount": 10
+	    },
+	    "cost":{
+	      "item": "wood",
+	      "amount": 300
+	    }
+	  }
+	]
+  }
+}

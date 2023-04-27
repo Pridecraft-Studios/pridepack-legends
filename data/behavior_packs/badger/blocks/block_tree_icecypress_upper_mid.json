@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_tree_icecypress_upper_mid", 
+      "material": "badger_leaves"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube", 
+        "directional_texture": false, 
+        "directional_shape": false
+      }, 
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "gatherable_wood_sml"
+        ]
+      }, 
+      "badger:terrain_type": {
+        "terrain": "grass"
+      }
+    }
+  }
+}

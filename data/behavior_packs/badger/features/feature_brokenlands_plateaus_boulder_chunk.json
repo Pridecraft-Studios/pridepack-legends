@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_plateaus_boulder_chunk"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_replace": [
+      "minecraft:air"
+    ],
+    "may_attach_to": {
+      "bottom": [
+        "badger:block_sand",
+        "badger:block_sand_d1",
+        "badger:block_sand_red"
+      ]
+    },
+    "places_block": "badger:block_chunk_boulder_mid_var01"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:totem_unlock_mob_alliance",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "structure_pvp_totem_unlock_mob_alliance",
+        "tooltip_title": "totem.unlock.mob.alliance.name",
+        "tactical_description": "totem.unlock.mob.alliance.tactical_description",
+        "tooltip_description": "totem.unlock.mob.alliance.description",
+        "buildable_category": "",
+        "sort_order": 4000
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "unlock": [
+          {
+            "item": "unlock_allegiance_structure",
+            "amount": 1
+          }
+        ],
+        "recipe": [
+          {
+            "item": "stone",
+            "amount": 50
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:music_emitter_states": [
+        "default",
+        "occupied",
+        "incoming_attack",
+        "damaged"
+      ],
+      "badger:buildable_structure": {
+        "nbt_file": "totem_unlock_mob_alliance",
+        "build_time": 2,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_allegiance_structure"
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 2.0,
+          "crush": 1.5,
+          "spore": 0.0,
+          "ranged": 0.5
+        }
+      },
+      "badger:health": {
+        "max_health": 600
+      },
+      "badger:zone_type_requirement": {
+        "include_tags": [
+          "mob_alliance"
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "totem_unlock_mob_alliance"
+        ]
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_health_generation_default",
+        "badger:component_deconstruction_default"
+      ]
+    }
+  }
+}

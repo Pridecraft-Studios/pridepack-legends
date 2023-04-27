@@ -1,0 +1,44 @@
+{
+  "format_version": "1.13.0",
+
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_brokenlands_valleys_fossil",
+      "places_feature": "badger:feature_brokenlands_valleys_fossil_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "all_of": [
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "brokenlands_valleys_fossil"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "1",
+      "scatter_chance": "65",
+      "early_out": "v.scatteredy < 5 || v.scatteredy > 28 || (q.get_game_rule_value('prevent_obstacles_on_poi_graph') && q.poi_influence_factor(v.scatteredx, v.scatteredz) < 0.5)",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [0, 15]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [0, 15]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)-1"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_poi_player_buff_jump"
+    },
+    "structure_name": "buff_poi_jump_01",
+    "placement_range": {
+      "x": [0, 1],
+      "z": [0, 1]
+    },
+    "facing_direction": "south",
+    "constraints": {
+      "unburied":{},
+      "grounded": {},
+      "empty_space": {}
+    }
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_launcher",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Building",
+      "function": "Military",
+      "type": "Player"
+    },
+    "components": {
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_health_generation_default",
+        "badger:component_deconstruction_default"
+      ],
+      "badger:buildable_structure": {
+        "nbt_file": "redstone_launcher",
+        "build_time": 10,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:health": {
+        "max_health": 200
+      },
+      "badger:buildable_presentation": {
+        "icon": "tower_trebuchet",
+        "tooltip_title": "structures.mob_launcher.name",
+        "tooltip_description": "structures.mob_launcher.description",
+        "buildable_category": "",
+        "sort_order": 1070,
+        "height_offset": 1
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_mason_small"
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 500
+          },
+          {
+            "item": "stone",
+            "amount": 60
+          },
+          {
+            "item": "iron",
+            "amount": 60
+          },
+          {
+            "item": "redstone",
+            "amount": 25
+          }
+        ],
+        "invalid_blocks": [
+          "block_lava",
+          "flowing_lava",
+          "water",
+          "flowing_water",
+          "block_netherrack"
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable",
+          "world_hazard"
+        ]
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            0, 
+            3, 
+            0
+          ]
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "trebuchet",
+          "mob_launcher",
+          "buffable-crows_nest",
+          "buffable-war_drums",
+          "buffable-kaboomery"
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 3.0,
+          "fire": 2.0,
+          "crush": 2.0,
+          "ranged": 0.3,
+          "melee": 0.25,
+          "cavalry": 0.25,
+          "neutral": 0.1,
+          "spore": 0.0
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 10,
+          "sc": 0,
+          "rc": 4
+        }
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "fire",
+            "range": {
+              "min_range": 10,
+              "max_range": 80
+            },
+            "state_machine": {
+              "wind_up": 0.6,
+              "cooldown_time": 6,
+              "deactivates_on_cooldown": false
+            },
+            "shoot": {
+              "default_projectile_physics": {
+                "horizontal_speed": 50,
+                "min_flight_time": 2.5
+              },
+              "position_offsets_from_center": [
+                [
+                  0,
+                  5,
+                  0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 50,
+                "damage_types": [
+                  "neutral"
+                ]
+              }
+            },
+            "accuracy": {
+              "min_range": 0,
+              "max_range": 5,
+              "scale_with_range": true
+            }
+          }
+        ]
+      },
+      "badger:queueing": {
+        "include_tags": [
+          "mob"
+        ],
+        "exclude_tags": [
+          "buildable_combat"
+        ],
+        "alliance_rule_filter": "friendly",
+        "influence_range": 8,
+        "queue_size": 5,
+        "queue_heads": [
+          "head_queue_1"
+        ]
+      },
+      "badger:labelled_offsets": [
+        {
+          "label": "head_queue_1",
+          "offset": [
+            0.0,
+            0.0,
+            -5.0
+          ]
+        }
+      ],
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 20.0,
+        "waypoint_max_range": 20.0,
+        "compass_max_range": "short"
+      },
+      "badger:waypoint_marker": {
+        "path": "",
+        "label": ""
+      },
+      "badger:aimable": {
+        "min_range": 10.0,
+        "max_range": 80.0,
+        "aim_speed": 0.75
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 13,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_under_construction"
+          },
+          {
+            "camera": "redstone_launcher_camera",
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "include_tags": [
+              "player"
+            ],
+            "input_layout_override": "overlay_gameplay_under_construction",
+            "name": "aim",
+            "range": 10
+          }
+        ]
+      }
+    }
+  }
+}

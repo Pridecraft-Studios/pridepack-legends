@@ -1,0 +1,20 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_mountains_peak_mysterious_rock_01"
+    },
+    "structure_name": "nature/mysterious_rock_01",
+
+    "placement_range": {
+      "x": [0,1],
+      "z": [0,1],
+      "y": [0,1]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "unburied":{},
+      "grounded":{}
+    }
+  }
+}

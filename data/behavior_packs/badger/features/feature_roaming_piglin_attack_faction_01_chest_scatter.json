@@ -1,0 +1,23 @@
+{
+    "format_version": "1.13.0",
+    "code:place_scattered": {
+      "description": {
+        "identifier": "badger:feature_roaming_piglin_attack_faction_01_chest_scatter"
+      },
+      "places_feature": "badger:feature_spawner_controller_roaming_piglin_resources",
+      "iterations": "1",
+      "scatter_chance": "query.get_game_rule_value('piglins_guard_resources') ? 20 : 0",
+      "project_input_to_floor": false,
+      "y": 0,
+      "x": {
+        "extent": [2, 6],
+        "distribution": "gaussian"
+      },
+      "z": {
+        "extent": [2, 6],
+        "distribution": "gaussian"
+      },
+      "coordinate_eval_order": "xzy"
+    }
+  }
+  

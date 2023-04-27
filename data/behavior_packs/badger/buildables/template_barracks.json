@@ -1,0 +1,66 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_barracks",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Spawner",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:buildable_spawner": {
+        "types": [],
+        "cap": 0,
+        "batch": 1,
+        "rate": 0,
+        "offset": [
+          0.0,
+          2.0,
+          0.0
+        ],
+        "spawning_trigger": "on_barracks_spawn"
+      },
+      "badger:scriptable_buildable_spawner": {},
+      "badger:buildable_requirement": {},
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_neather_medium"
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            -0.5, 
+            2.5, 
+            -1.0
+          ]
+        ]
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_health_generation_default",
+        "badger:component_offline_construction_default"
+      ],
+      "badger:health": {
+        "max_health": 250
+      },
+      "badger:loot": {
+        "table": "piglin_barracks"
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "barracks"
+        ]
+      },
+      "badger:spawner_add_tags": {
+        "tags": [
+          "piglin_spawned_by_barracks"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_illager_heavy_excited",
+      "runtime_identifier": "badger:behavior"
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 2.5
+      },
+      "badger:wander": {
+        "wander_frequency": 0.15,
+        "wander_radius": 16
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "max_range": 15,
+            "include_tags": [
+              "piglin"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "evade"
+            ]
+          },
+          {
+            "max_range": 10,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "applaud"
+            ]
+          },
+          {
+            "max_range": 10,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "bow"
+            ]
+          },
+          {
+            "max_range": 15,
+            "include_tags": [
+              "special"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "ally_curious"
+            ]
+          },
+          {
+            "max_range": 20,
+            "required_target_count": 3,
+            "include_tags": [
+              "villager"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "chat"
+            ]
+          },
+          {
+            "max_range": 20,
+            "required_target_count": 3,
+            "include_tags": [
+              "illager"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "chat"
+            ]
+          },
+          {
+            "max_range": 25,
+            "include_tags": [
+              "buildable"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "admire"
+            ]
+          },
+          {
+            "max_range": 25,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "celebrate"
+            ]
+          },
+          {
+            "max_range": 20,
+            "required_target_count": 2,
+            "include_tags": [
+              "villager"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "chat"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder"
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "evade",
+            "trigger": "on_evade",
+            "range": {
+              "min_range": 10,
+              "max_range": 25
+            }
+          },
+          {
+            "name": "applaud",
+            "trigger": "on_applaud",
+            "range": {
+              "min_range": 5,
+              "max_range": 8
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "wind_down": 5.5,
+              "cooldown_time": 180,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "bow",
+            "trigger": "on_bow",
+            "range": {
+              "min_range": 5,
+              "max_range": 15
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "wind_down": 5.5,
+              "cooldown_time": 180,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "chat",
+            "trigger": "on_chat",
+            "range": {
+              "min_range": 1.5,
+              "max_range": 2
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "wind_down": 5.5,
+              "cooldown_time": 8,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "admire",
+            "trigger": "on_admire",
+            "range": {
+              "min_range": 2,
+              "max_range": 8
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "wind_down": 5.5,
+              "cooldown_time": 60,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "celebrate",
+            "trigger": "on_celebrate",
+            "range": {
+              "min_range": 2,
+              "max_range": 8
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "wind_down": 5.5,
+              "cooldown_time": 60,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "ally_curious",
+            "trigger": "on_ally_curious",
+            "range": {
+              "min_range": 2,
+              "max_range": 8
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "wind_down": 5.5,
+              "cooldown_time": 8,
+              "deactivates_on_cooldown": true
+            }
+          }
+        ]
+      }
+    }
+  }
+}

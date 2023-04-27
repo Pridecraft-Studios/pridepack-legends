@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_chunk_ore_coal", 
+      "material": "badger_stone"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "chunk", 
+        "directional_texture": false, 
+        "directional_shape": true
+      }, 
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "gatherable_coal"
+        ]
+      }, 
+      "badger:terrain_type": {
+        "terrain": "stone"
+      }
+    }
+  }
+}

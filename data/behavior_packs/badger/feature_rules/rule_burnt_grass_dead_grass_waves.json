@@ -1,0 +1,62 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_burnt_grass_dead_grass_waves",
+      "places_feature": "badger:feature_mountains_valleys_grass_waves_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "burnt_grass"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "burnt_grass_wetlands"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "burnt_grass_trees"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "burnt_grass_hills"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 256,
+      "scatter_chance": 100,
+      "early_out": "temp.noisevalue = q.noise(v.scatteredx, v.scatteredz, 40); return math.random(1,10) > 4 || temp.noisevalue <= (-0.4 + math.random(-0.1, 0.2)) || temp.noisevalue >= (0.4 + math.random(-0.1, 0.2));",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "jittered_grid",
+        "extent": [
+          0,
+          15
+        ],
+        "step_size": 1.0
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "z": {
+        "distribution": "jittered_grid",
+        "extent": [
+          0,
+          15
+        ],
+        "step_size": 1.0
+      }
+    }
+  }
+}

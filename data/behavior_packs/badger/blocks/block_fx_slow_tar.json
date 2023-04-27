@@ -1,0 +1,21 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "badger:block_fx_slow_tar"
+        },
+        "components": {
+            "minecraft:block_shape": {
+                "shape": "empty",
+                "directional_texture": false,
+                "directional_shape": true
+            },
+            "minecraft:block_light_emission": {
+                "emission": 0.6
+            },
+            "minecraft:destroy_time": {
+                "value": 10
+            }
+        }
+    }
+}

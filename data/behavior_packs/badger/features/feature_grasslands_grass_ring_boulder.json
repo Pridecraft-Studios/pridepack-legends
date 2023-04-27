@@ -1,0 +1,28 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_grasslands_grass_ring_boulder"
+    },
+    "iterations": "return math.random(5,8);",
+    "coordinate_eval_order": "zxy",
+    "x": {
+      "extent": [
+        -4,
+        4
+      ],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [
+        -4,
+        4
+      ],
+      "distribution": "gaussian"
+    },
+    "project_input_to_floor": false,
+    "places_feature": "badger:feature_grasslands_cluster_riverbank_boulder_grass_weighted",
+    "y": "return query.heightmap(variable.worldx, variable.worldz)",
+    "scatter_chance": 100.0
+  }
+}

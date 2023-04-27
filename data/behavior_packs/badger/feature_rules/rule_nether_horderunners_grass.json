@@ -1,0 +1,46 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_nether_horderunners_grass",
+      "places_feature": "badger:feature_nether_horderunners_piglin_grass_scatter"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "nether_horderunner"
+            }
+            // ,
+            // {
+            //   "test": "has_biome_tag",
+            //   "operator": "==",
+            //   "value": "nether_final_battle_arena"
+            // }
+            
+          ]           
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(48,64)",
+      "scatter_chance": "90",
+      "early_out": "temp.abs_diff = math.abs(query.noise(variable.scatteredx / 35, variable.scatteredz / 35) - math.random(-0.1, 0.1)); return temp.abs_diff < 0.25 || (temp.abs_diff > 0.35 && temp.abs_diff < 0.65) || (temp.abs_diff > 0.75 && temp.abs_diff < 0.95);",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [0, 15]
+      },
+      "y": 0,
+      "z": {
+        "distribution": "uniform",
+        "extent": [0, 15]
+      }
+    }
+  }
+}

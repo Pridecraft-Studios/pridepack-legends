@@ -1,0 +1,25 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_frosty_grass_grass_clump_frost_01"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_deco_fol_grass_clump_frost_01",
+    "may_replace": [
+      "badger:block_deco_fol_grass_clump_frost_01",
+      "badger:block_deco_fol_grass_clump_frost_02",
+      "badger:block_deco_fol_grass_clump_snow_01",
+      "minecraft:air"
+    ],
+    "may_attach_to": {
+      "bottom": [
+        "minecraft:grass",
+        "badger:block_frostground",
+        "badger:block_frostground_02",
+        "badger:block_frostground_03"
+      ]
+    }
+  }
+}

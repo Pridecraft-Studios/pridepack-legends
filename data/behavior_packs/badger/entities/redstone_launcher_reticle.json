@@ -1,0 +1,30 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:redstone_launcher_reticle",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:target_assigner": { //Does not actually assign any targets, used only for detecting when to turn the reticle red
+                "find_target_range": 3.5,
+                "drop_target_range": 75.0,
+                "force_target_range": 600.0,
+                "single_target": true,
+                "alliance_rule_filter": "enemy",
+                "pre_redirect_target_filter": {
+                    "include_tags": [],
+                    "exclude_tags": []
+                },
+                "target_filter": {
+                    "include_tags": [],
+                    "exclude_tags": [
+                        "donotattack"
+                    ]
+                },
+                "despawn_on_target_lost": true
+            }
+        }
+    }
+}

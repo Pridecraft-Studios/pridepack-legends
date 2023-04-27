@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:music_emitter_combat_base_final",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.7,
+        "height": 1.9
+      },
+      "badger:tags": {
+        "tags": ["emitter", "final_base_music_emitter"]
+      },
+      "badger:spawn_tracking": {},
+      "badger:music_emitter_states": [
+        "default",
+        "phase1",
+        "phase2",
+        "phase3",
+        "phase4"
+      ]
+    }
+  }
+}

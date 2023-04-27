@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_golem_support_nis",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 1.49994598389,
+        "length": 0.531249961853,
+        "width": 0.8125
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "format_version": "1.13.0",
+
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_nether_horderunners_fossils",
+      "places_feature": "badger:feature_nether_horderunners_fossils_weighted"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "nether_horderunner"
+            },
+            {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "lava_moat_horderunner"
+            },
+            {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value":"nether_piglin_final"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(1,2)",
+      "scatter_chance": "50",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [0, 8]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [0, 8]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)"
+    }
+  }
+}

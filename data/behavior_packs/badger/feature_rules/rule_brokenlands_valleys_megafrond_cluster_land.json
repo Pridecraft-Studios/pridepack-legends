@@ -1,0 +1,50 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_brokenlands_valleys_megafrond_cluster_land",
+      "places_feature": "badger:feature_brokenlands_valleys_megafrond_cluster_land_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "brokenlands_valleys"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "brokenlands_valleys_fossil"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "scatter_chance": 40,
+      "early_out": "q.water_distance(v.scatteredx, v.scatteredz) == 0",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          7,
+          9
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          7,
+          9
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "coordinate_eval_order": "xzy"
+    }
+  }
+}

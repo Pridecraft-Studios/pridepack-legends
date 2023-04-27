@@ -1,0 +1,44 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:villager_player_village",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:village": {
+        "name": "Player Village"
+      },
+      "badger:village_zone": {
+        "expansion_distance": 250.0,
+        "zone_jitter_min": 0.0,
+        "zone_jitter_max": 3.0,
+        "is_zone_jitter_bell_curve_enabled": false,
+        "zone_spacing": 18.0,
+        "water_search_resolution": 6.0
+      },
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+			"badger:culture_status": {
+				"thresholds": [
+				  {"thresholdA": 250, "thresholdB": 250, "thresholdC":250},
+				  {"thresholdA": 500, "thresholdB": 500, "thresholdC":500},
+				  {"thresholdA": 1000, "thresholdB": 1000, "thresholdC":1000}
+				]
+      },
+      "badger:map_controller": {},
+      "badger:telemetry_game_zone": {
+				"id": 4,
+        "alt_id": 99,
+        "add_details_in_pvp": false
+			},
+      "badger:tags": {
+        "tags": [
+          "_shared_data_and_terraforming_opt_out"
+        ]
+      },
+      "badger:template": "badger:template_village_root"
+    }
+  }
+}

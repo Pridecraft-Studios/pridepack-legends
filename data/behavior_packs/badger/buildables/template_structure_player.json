@@ -1,0 +1,57 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_structure_player",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:template": [
+        "badger:template_structure",
+        "badger:component_difficulty_modifiers_player_structures",
+        "badger:component_deconstruction_default"
+      ],
+      "badger:buildable_requirement": {
+        "blocker_entities": {
+          "include_tags": [
+            "player"
+          ],
+          "exclude_tags": [
+          ],
+          "alliance_rule_filter": "any_team"
+        }
+      },
+      // this cannot be moved to a template component due to priority
+      "badger:destroy_on_village_destruction": {
+        "ignore": true
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 3.0,
+          "crush": 1.5,
+          "spore": 0.0,
+          "ranged": 0.1,
+          "melee": 0.20,
+          "fire": 1.0,
+          "chop": 0.85,
+          "T3_Attack": 1.5
+        }
+      },
+      "badger:build_speed_change_on_damage": {
+        "duration": 5,
+        "build_speed_multiplier": 0.1
+      },
+      "badger:unlockable_buffs": {
+        "buffs": [
+          {
+            "resource": "upgrade_carpenter",
+            "has_unlock": true,
+            "buff_id": "badger:buff_construction_speed_increase"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [ 
+      [
+        "badger:feature_drylands_shore_slab",
+        45
+      ],
+      [
+        "badger:feature_drylands_shore_slab_02",
+        45
+      ],
+      [
+        "badger:feature_plant_coralflower_01",
+       10
+      ],
+      [
+        "badger:feature_plant_coralflower_02",
+        10
+      ],
+      [
+        "badger:feature_plant_drylands_goldenrod_01",
+        10
+      ],
+      [
+        "badger:feature_plant_drylands_goldenrod_02",
+        10
+      ],
+      [
+        "badger:feature_plant_drylands_goldenrod_03",
+        10
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_drylands_shore_block_weighted"
+    }
+  }
+}

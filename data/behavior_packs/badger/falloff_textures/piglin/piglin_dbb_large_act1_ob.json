@@ -1,0 +1,16 @@
+{
+  "id": "piglin_dbb_large_act1_ob",
+  "textures": [
+    {
+      "texture": "piglin/biome_only/piglin_biome_defend_ob",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+  "additional_data": {
+    "village_texture_stamp": true
+  }
+}

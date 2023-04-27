@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_nether_horderunners_netherrack_sheet_scatter"
+    },
+    "places_feature": "badger:feature_nether_horderunners_netherrack_sheet_mini_scatter",
+    "iterations": "math.random(2,4)",
+    "scatter_chance": "100",
+    "project_input_to_floor": false,
+    "x": "temp.rmin = 2; temp.rmax = 6; temp.theta = math.random(0, 360); temp.r = math.sqrt(math.random(0, 1) * (math.pow(temp.rmax, 2) - math.pow(temp.rmin, 2)) + math.pow(temp.rmin, 2)); return math.round(temp.r * math.cos(temp.theta));",
+    "z": "math.round(temp.r * math.sin(temp.theta))",
+    "y": 0
+  }
+}

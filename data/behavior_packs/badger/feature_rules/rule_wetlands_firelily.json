@@ -1,0 +1,33 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_wetlands_firelily",
+      "places_feature": "badger:feature_plant_firelily_01"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "wetlands"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "temp.value = query.noise((variable.originx + 8) / 200.0, (variable.originz + 8) / 200.0); return math.abs(temp.value) * 10;",
+      "scatter_chance": "100",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [0,5]
+      },
+      "z": {
+        "distribution": "gaussian",
+        "extent": [0,5]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)"
+    }
+  }
+}

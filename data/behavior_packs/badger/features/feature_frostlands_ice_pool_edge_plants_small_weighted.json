@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_tree_icecypress_01",
+        2.0
+      ],
+      [
+        "badger:feature_tree_icecypress_04",
+        2.0
+      ],
+      [
+        "badger:feature_tree_icecypress_05",
+        2.0
+      ],
+      [
+        "badger:feature_tree_icecypress_06",
+        2.0
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_frostlands_ice_pool_edge_plants_small_weighted"
+    }
+  }
+}

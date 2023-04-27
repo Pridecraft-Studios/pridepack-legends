@@ -1,0 +1,50 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_brokenlands_valleys_tree_pineapple",
+      "places_feature": "badger:feature_brokenlands_valleys_tree_pineapple_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "brokenlands_valleys"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "brokenlands_valleys_fossil"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(1,4)",
+      "scatter_chance": 25,
+      "early_out": "math.random(0,100) >= math.max(0, 1 - ((q.water_distance(v.scatteredx, v.scatteredz) - 1) * 0.33)) * 100 || (q.get_game_rule_value('prevent_obstacles_on_poi_graph') && q.poi_influence_factor(v.scatteredx, v.scatteredz) < 0.5)",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          3,
+          12
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          3,
+          12
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "coordinate_eval_order": "xzy"
+    }
+  }
+}

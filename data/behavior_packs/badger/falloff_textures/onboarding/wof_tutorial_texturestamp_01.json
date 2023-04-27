@@ -1,0 +1,217 @@
+{
+  "id": "wof_tutorial_texturestamp_01",
+  "textures": [
+    {
+      "texture": "onboarding/wof_tutorial_texturestamp_01",
+      "channels": {
+        "r": "blend",
+        "g": "biome",
+        "b": "terrain_height"
+      }
+    },
+    {
+      "texture": "onboarding/wof_tutorial_anchor",
+      "channels": {
+        "r": "buildable_rotation_map",
+        "g": "water_height",
+        "b": "buildable_name_map"
+      }
+    }
+  ],
+  "structure_buildable_map": [
+    {
+      "structure": "badger:onboarding_spawn_point",
+      "value": 90
+    },
+    {
+      "structure": "badger:onboarding_attractor_placement",
+      "value": 92
+    },
+    {
+      "structure": "badger:onboarding_hosts_spawner",
+      "value": 94
+    },
+    {
+      "structure": "badger:onboarding_village_chest",
+      "value": 95
+    },
+    {
+      "structure": "badger:onboarding_wof_wall_var01",
+      "value": 96
+    },
+    {
+      "structure": "badger:onboarding_wof_wall_var02",
+      "value": 98
+    },
+    {
+      "structure": "badger:onboarding_wof_wall_var03",
+      "value": 100
+    },
+    {
+      "structure": "badger:onboarding_wof_wall_var04",
+      "value": 102
+    },
+    {
+      "structure": "badger:onboarding_wof_wall_var05",
+      "value": 104
+    },
+    {
+      "structure": "badger:onboarding_wof_wall_var06",
+      "value": 106
+    },
+    {
+      "structure": "badger:onboarding_wof_wall_var07",
+      "value": 108
+    },
+    {
+      "structure": "badger:onboarding_wof_wall_var08",
+      "value": 110
+    },
+    {
+      "structure": "badger:onboarding_wof_wall_var09",
+      "value": 112
+    },
+    {
+      "structure": "badger:onboarding_wof_wall_var10",
+      "value": 114
+    },
+    {
+      "structure": "badger:onboarding_wof_wall_var11",
+      "value": 116
+    },
+    {
+      "structure": "badger:onboarding_wof_wall_var12",
+      "value": 118
+    },
+    {
+      "structure": "badger:onboarding_wof_wall_var13",
+      "value": 124
+    },
+    {
+      "structure": "badger:onboarding_attractor_placement_teleporter",
+      "value": 122
+    },
+    {
+      "structure": "badger:onboarding_tool_pedestal",
+      "value": 255
+    },
+    {
+      "structure": "badger:onboarding_host_structure_island",
+      "value": 240
+    },
+    {
+      "structure": "badger:onboarding_direct_platform",
+      "value": 230
+    },
+    {
+      "structure": "badger:onboarding_host_island_combat_structure",
+      "value": 220
+    },
+    {
+      "structure": "badger:onboarding_world_teleporter_piece",
+      "value": 210
+    },
+    {
+      "structure": "badger:onboarding_tree_oak_wof_01",
+      "value": 250
+    },
+    {
+      "structure": "badger:onboarding_tree_oak_wof_01",
+      "value": 251
+    },
+    {
+      "structure": "badger:onboarding_tree_oak_wof_01",
+      "value": 252
+    },
+    {
+      "structure": "badger:onboarding_wof_crystalpillar_01",
+      "value": 249
+    },
+    {
+      "structure": "badger:onboarding_wof_crystalpillar_02",
+      "value": 248
+    },
+    {
+      "structure": "badger:onboarding_wof_crystalpillar_03",
+      "value": 247
+    },
+    {
+      "structure": "badger:onboarding_wof_tutorial_peak_01",
+      "value": 128
+    },
+    {
+      "structure": "badger:onboarding_wof_tutorial_peak_02",
+      "value": 130
+    },
+    {
+      "structure": "badger:onboarding_wof_lightbeam",
+      "value": 131
+    },
+    {
+      "structure": "badger:onboarding_generic_marker_for_hosts",
+      "value": 132
+    },
+    {
+      "structure": "badger:onboarding_wof_lantern_01",
+      "value": 134
+    },
+    {
+      "structure": "badger:onboarding_generic_marker_for_hosts_action",
+      "value": 136
+    },
+    {
+      "structure": "badger:onboarding_generic_marker_for_hosts_foresight",
+      "value": 138
+    },
+    {
+      "structure": "badger:onboarding_generic_marker_for_hosts_knowledge",
+      "value": 140
+    }
+  ],
+  "biome_map": [
+    {
+      "biome": "onboarding",
+      "value": 255
+    },
+    {
+      "biome": "onboarding_falls",
+      "value": 128
+    },
+    {
+      "biome": "onboarding_paths",
+      "value": 160
+    },
+    {
+      "biome": "onboarding_barrier",
+      "value": 180
+    },
+    {
+      "biome": "onboarding_barrier_carved",
+      "value": 217
+    },
+    {
+      "biome": "onboarding_barrier_carved_square",
+      "value": 190
+    },
+    {
+      "biome": "onboarding_paths_grey_carved",
+      "value": 120
+    },
+    {
+      "biome": "onboarding_paths_grey_glow",
+      "value": 81
+    },
+    {
+      "biome": "onboarding_paths_prismarine",
+      "value": 52
+    },
+    {
+      "biome": "onboarding_paths_prismarine_raised",
+      "value": 30
+    }
+  ],
+  "additional_data": {
+    "lock_rotation": true,
+    "village_texture_stamp": true
+  }
+}

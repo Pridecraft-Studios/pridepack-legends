@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_barrier_soft"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "block",
+        "directional_texture": false,
+        "directional_shape": false,
+        "render_layer": "barrier"
+      },
+      "badger:block_type": {
+        "tags": ["barrier"]
+      },
+      "badger:disable_block_shadows": {}
+    }
+  }
+}

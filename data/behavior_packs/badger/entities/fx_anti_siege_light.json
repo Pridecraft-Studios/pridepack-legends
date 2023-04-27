@@ -1,0 +1,22 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:fx_anti_siege_light",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:aabb": {
+                "width": 1.0,
+                "length": 1.0,
+                "height": 1.0
+            },
+            "badger:tags": {
+                "tags": [
+                    "fx"
+                ]
+            }
+        }
+    }
+}

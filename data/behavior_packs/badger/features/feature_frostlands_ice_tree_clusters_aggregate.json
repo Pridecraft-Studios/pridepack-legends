@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_frostlands_ice_tree_clusters_aggregate"
+    },
+    "features": [
+      "badger:feature_frostlands_ice_tree_clusters_large_scatter",
+      "badger:feature_frostlands_ice_tree_clusters_small_scatter",
+      "badger:feature_frostlands_tree_clusters_scatter"
+    ],
+    "early_out": "first_failure"
+  }
+}

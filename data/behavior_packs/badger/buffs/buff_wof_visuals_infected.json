@@ -1,0 +1,150 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:buff_wof_visuals_infected",
+      "runtime_identifier": "badger:buff",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buff": {
+        "buff_category": "visuals"
+      },
+      "badger:modifier_block_swap": {
+        "modifiers": [
+          {
+            "badger:block_water": "minecraft:air"
+          },
+          {
+            "badger:block_alabaster_alive": "badger:block_alabaster_dead"
+          },
+          {
+            "badger:block_alabaster_stone_moss_top_alive": "badger:block_alabaster_stone_moss_top_dead"
+          },
+          {
+            "badger:block_alabaster_stone_alive": "badger:block_alabaster_stone_dead"
+          },
+          {
+            "badger:block_prismarine_brick_moss_alive": "badger:block_prismarine_brick_moss_dead"
+          },
+          {
+            "badger:block_prismarine_alive": "badger:block_prismarine_dead"
+          },
+          {
+            "badger:block_prismarine_raw_alive": "badger:block_prismarine_raw_dead"
+          },
+          {
+            "badger:block_prismarine_carved_alive": "badger:block_prismarine_carved_dead"
+          },
+          {
+            "badger:block_prismarine_carved_bottom_light_alive": "badger:block_prismarine_carved_bottom_light_dead"
+          },
+          {
+            "badger:block_prismarine_carved_middle_alive": "badger:block_prismarine_carved_middle_dead"
+          },
+          {
+            "badger:block_alabaster_stone_moss_top_side_alive": "badger:block_alabaster_stone_moss_top_side_dead"
+          },
+          {
+            "badger:block_alabaster_moss_top_side_alive": "badger:block_alabaster_moss_top_side_corrupt_dead"
+          },
+          {
+            "badger:block_deco_plant_fategrass_alive_01": "badger:block_deco_nether_grass"
+          },
+          {
+            "badger:block_deco_plant_fategrass_alive_03": "badger:block_deco_nether_grass_small"
+          },
+          {
+            "badger:block_deco_flowerscatter_alive_02": "badger:block_deco_nether_grass_small"
+          },
+          {
+            "badger:block_deco_plant_daisy_alive_01": "badger:block_deco_nether_grass_small"
+          },
+          {
+            "badger:block_deco_plant_daisy_alive_02_structure": "badger:block_deco_nether_grass"
+          },
+          {
+            "badger:block_deco_plant_daisy_alive_03_structure": "badger:block_deco_nether_grass"
+          },
+          {
+            "badger:block_deco_plant_foxglove_alive_03": "badger:block_deco_nether_grass_tall"
+          },
+          {
+            "badger:block_deco_plant_foxglove_alive_04": "badger:block_deco_nether_grass"
+          },
+          {
+            "badger:block_deco_plant_periwinkle_alive_01": "badger:block_deco_nether_grass"
+          },
+          {
+            "badger:block_deco_plant_wildflower_alive_01": "badger:block_deco_nether_grass"
+          },
+          {
+            "badger:block_deco_plant_wildflower_alive_03": "badger:block_deco_nether_grass"
+          },
+          {
+            "badger:block_deco_vine_ivy_alive_var01": "badger:block_plane_vine_ivy_corrupt_dead"
+          },
+          {
+            "badger:block_deco_vine_ivy_alive": "badger:block_plane_vine_ivy_corrupt_dead"
+          },
+          {
+            "badger:block_deco_plant_junglelily_03": "minecraft:air"
+          },
+          {
+            "badger:block_deco_plant_junglelily_01_structure": "minecraft:air"
+          },
+          {
+            "badger:block_fx_wof_ripple": "minecraft:air"
+          },
+          {
+            "badger:block_alabaster_mossy_alive": "badger:block_alabaster_mossy_corrupt_dead"
+          },
+          {
+            "badger:block_alabaster_carved_var01_alive": "badger:block_alabaster_carved_var01_dead"
+          },
+          {
+            "badger:block_alabaster_moss_top_alive": "badger:block_alabaster_moss_top_corrupt_dead"
+          },
+          {
+            "badger:block_column_prismarine_carved_bottom_light_alive": "badger:block_column_prismarine_carved_bottom_light_dead"
+          },
+          {
+            "badger:block_column_prismarine_carved_middle_alive": "badger:block_column_prismarine_carved_middle_dead"
+          },
+          {
+            "badger:block_slab_prismarine_raw_alive": "badger:block_slab_prismarine_raw_dead"
+          },
+          {
+            "badger:block_stair_alabaster_mossy_alive": "badger:block_stair_alabaster_mossy_corrupt_dead"
+          },
+          {
+            "badger:block_stair_prismarine_raw_alive": "badger:block_stair_prismarine_raw_dead"
+          },
+          {
+            "badger:block_stair_alabaster_alive": "badger:block_stair_alabaster_dead"
+          },
+          {
+            "badger:block_upright_prismarine_raw_alive": "badger:block_upright_prismarine_raw_dead"
+          },
+          {
+            "badger:block_prismarine_brick_moss_alive": "badger:block_prismarine_brick_moss_dead"
+          },
+          {
+            "badger:block_prismarine_moss_alive": "badger:block_prismarine_moss_dead"
+          },
+          {
+            "badger:block_slab_prismarine_moss_alive": "badger:block_slab_prismarine_moss_dead"
+          },
+          {
+            "badger:block_upright_prismarine_moss_alive": "badger:block_upright_prismarine_moss_dead"
+          },
+          {
+            "badger:block_plant_wildflower_pylon": "badger:block_deco_nether_grass"
+          }
+        ],
+        
+        "duration_percentage": 0.0
+      }
+    }
+  }
+}

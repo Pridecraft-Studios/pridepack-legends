@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_sheet_leafpile_01",
+      "material": "badger_leaves"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "sheet",
+        "directional_texture": false,
+        "directional_shape": false,
+        "collision_shape": "empty"
+      },
+      "badger:terrain_type": {
+        "terrain": "grass"
+      }
+    }
+  }
+}

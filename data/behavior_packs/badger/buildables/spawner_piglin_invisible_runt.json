@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_piglin_invisible_runt",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_requirement": {
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "spawner_piglin_invisible_runt",
+        "build_time": 1
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "piglinStructure",
+          "piglinInvisibleSpawner",
+          "piglin"
+        ]
+      },
+      "badger:spawner_add_tags": {
+        "tags": [
+          "night_roaming_piglin"
+        ]
+      }
+    }
+  }
+}

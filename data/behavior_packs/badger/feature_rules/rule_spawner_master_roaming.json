@@ -1,0 +1,44 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+      "description": {
+        "identifier": "badger:rule_spawner_master_roaming",
+        "places_feature": "badger:feature_spawner_roaming_spawner_controller_root"
+      },
+      "conditions": {
+        "enabled": true,
+        "placement_pass": "after_surface_pass",
+        "minecraft:biome_filter": [
+          {
+            "all_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "overworld"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "fate"
+              }
+            ]
+          }
+        ]
+      },
+      "distribution": {
+        "iterations": "1",
+        "early_out": "math.mod(math.floor(v.originx / 16), 5) != 0 || math.mod(math.floor(v.originz / 16), 5) != 0 ||query.water_distance(v.scatteredx, v.scatteredz) <= 2 || query.is_in_village(variable.originx, variable.originz) == 1",        
+        "scatter_chance": "query.get_game_rule_value('roaming_piglins') == true ?100:0 ",
+        "x": {
+          "distribution": "uniform",
+          "extent": [0, 15]
+        },
+        "y": "query.heightmap(variable.worldx, variable.worldz)",
+        "z": {
+          "distribution": "uniform",
+          "extent": [0, 15]
+        }
+      }
+    }
+  }
+  

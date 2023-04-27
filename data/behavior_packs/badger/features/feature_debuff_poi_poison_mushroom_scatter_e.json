@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_debuff_poi_poison_mushroom_scatter_e"
+    },
+    "places_feature": "badger:feature_wetlands_poison_platform_weighted",
+    "iterations": "1",
+    "scatter_chance": "15",
+    "project_input_to_floor": false,
+    "x": {
+      "extent": [1, 10],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [-10, -1],
+      "distribution": "gaussian"
+    },
+    "y": "query.heightmap(variable.worldx, variable.worldz) - variable.originy"
+  }
+}

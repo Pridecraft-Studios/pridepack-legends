@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_dead_mushroom_cap_01",
+      "material": "badger_wood"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "block",
+        "camera_collision": false,
+        "directional_texture": false,
+        "directional_shape": true
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      },
+      "badger:block_type": {
+        "tags": [
+          "gatherable_wood_sml"
+        ]
+      }
+    }
+  }
+}

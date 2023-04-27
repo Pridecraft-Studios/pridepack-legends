@@ -1,0 +1,85 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_grenade_impact",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.7,
+        "height": 1.9
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": false,
+        "auto_step": 3.1
+      },
+      "badger:removal_time": {
+        "time": 0.01
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 5
+        },
+        "damage_effects": [
+          {
+            "name": "aoe_piglin_friendly",
+            "damage": -2.8,
+            "damage_types": [
+              "spore"
+            ],
+            "include_tags": [
+              "piglin"
+            ],
+            "exclude_tags": [
+              "medic"
+            ],
+            "apply_status": {
+              "spore_healed": {
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "friendly"
+          },
+          {
+            "name": "aoe_grenade_impact",
+            "damage": 10.5,
+            "damage_types": [
+              "spore"
+            ],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "grenadier",
+              "piglin"
+            ],
+            "apply_status": {
+              "spore_damaged": {
+                "strength": 1.0
+              },
+              "rooted": {
+                "strength": 0.1
+              }
+            },
+            "knockback": {
+              "angle": 65,
+              "force": 15
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:movement": {
+        "move_speed": 0.0
+      }
+    }
+  }
+}

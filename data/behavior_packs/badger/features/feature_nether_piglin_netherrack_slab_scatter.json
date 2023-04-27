@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_nether_piglin_netherrack_slab_scatter"
+    },
+    "places_feature": "badger:feature_nether_rotters_netherrack_slab_weighted",
+    "iterations": "math.random(3,4)",
+    "scatter_chance": "100",
+    "project_input_to_floor": false,
+    "x": {
+      "extent": [-2,2],
+      "distribution": "uniform"
+    },
+    "z": {
+      "extent": [-2,2],
+      "distribution": "uniform"
+    },
+    "y": 0.0
+  }
+}

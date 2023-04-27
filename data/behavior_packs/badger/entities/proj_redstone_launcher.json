@@ -1,0 +1,57 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_redstone_launcher",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:projectile": {
+        "horizontal_speed": 25.0,
+        "min_flight_time": 4
+      },
+      "badger:projectile_physics": {
+        "gravity": -9.81
+      },
+      "badger:health": {
+        "max_health": 1
+      },
+      "badger:aabb": {
+        "width": 2.0,
+        "length": 2.0,
+        "height": 2.0
+      },
+      "badger:resist_status": {
+        "burning": {
+          "resisted": false,
+          "time": 5.0,
+          "resistance_persist_time": 0
+          }
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {
+        }
+      },
+      "badger:tags": {
+        "tags": [
+          "siege_projectile",
+          "donotattack"
+        ]
+      },
+      "badger:presentation_event": {
+        "on_entity_hit": {
+          "spawn_entity": [
+            "badger:proj_redstone_launcher_impact_aoe"
+          ]
+        },
+        "on_world_hit": {
+          "spawn_entity": [
+            "badger:proj_redstone_launcher_impact_aoe"
+          ]
+        }
+      }
+    }
+  }
+}

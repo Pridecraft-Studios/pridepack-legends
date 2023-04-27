@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_plant_brokenlands_plateau_drygrass_scatter_01e", 50.0],
+      ["badger:feature_plant_brokenlands_plateau_drygrass_scatter_02e", 50.0],
+      ["badger:feature_plant_brokenlands_plateau_drygrass_scatter_03e", 50.0],
+      ["badger:feature_plant_brokenlands_plateau_drygrass_scatter_04e", 50.0],
+      ["badger:feature_plant_brokenlands_plateau_drygrass_scatter_05e", 50.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_brokenlands_plateaus_grass_short_sandd1tier_weighted"
+    }
+  }
+}

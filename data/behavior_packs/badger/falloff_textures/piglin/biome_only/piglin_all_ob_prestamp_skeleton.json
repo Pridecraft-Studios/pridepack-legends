@@ -1,0 +1,21 @@
+{
+  "id": "piglin_all_ob_prestamp_skeleton",
+  "textures": [
+    {
+      "texture": "piglin/piglin_all_ob_prestamp",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+
+  "biome_map": [
+    {
+      "biome": "frostlands",
+      "value": 255,
+      "borderBiome":true
+    }
+  ]
+}

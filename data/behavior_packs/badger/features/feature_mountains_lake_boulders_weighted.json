@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_mountains_lake_boulders_weighted"
+    },
+   "features": [
+
+    ["badger:feature_mountains_lake_boulder_01", 1],
+    ["badger:feature_mountains_lake_boulder_02", 1],
+    ["badger:feature_mountains_lake_boulder_03", 1],
+    ["badger:feature_mountains_lake_boulder_04", 1]
+   ]
+  }
+}

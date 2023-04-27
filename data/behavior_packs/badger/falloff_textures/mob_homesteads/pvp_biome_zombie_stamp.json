@@ -1,0 +1,27 @@
+{
+
+  "id": "pvp_biome_zombie_stamp",
+
+  "textures": [
+    {
+      "texture": "mob_homesteads/pvp_biome_zombie_stamp",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+  "additional_data" : {
+    "height_range" : [5,6]
+  },  
+
+
+  "biome_map": [
+    {
+      "biome": "jungle",
+      "value": 131
+    }
+    
+  ]
+}

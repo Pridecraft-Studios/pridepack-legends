@@ -1,0 +1,17 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_jungle_terraces_grass_03"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_deco_terraced_grass_03",
+    "may_replace": ["minecraft:air"],
+    "may_attach_to": {
+      "bottom":[
+        "badger:block_jungle_terrace_top"
+      ]
+    }
+  }
+}

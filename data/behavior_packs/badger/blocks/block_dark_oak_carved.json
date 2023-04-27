@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "material": "badger_wood", 
+      "identifier": "badger:block_dark_oak_carved"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube", 
+        "camera_collision": false,
+        "directional_texture": false, 
+        "directional_shape": false
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }
+    }
+  }
+}

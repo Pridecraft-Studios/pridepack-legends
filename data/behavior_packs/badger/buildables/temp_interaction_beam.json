@@ -1,0 +1,40 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:temp_interaction_beam",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_structure": {
+        "nbt_file": "temp_interaction_beam",
+        "build_time": 0.1,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:buildable_requirement": {
+      },
+      "badger:tags": {
+        "tags": [
+          "interaction_beam"
+        ]
+      },
+      "badger:buildable_intangible": {},
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 4,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_bsharp_interaction_hold"
+          }
+        ]
+      }
+    }
+  }
+}

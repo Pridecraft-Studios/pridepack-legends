@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_tarstripe",
+      "material": "badger_dirt"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "block",
+        "directional_texture": false,
+        "directional_shape": true,
+        "collision_shape": "block",
+        "connection_family": "tarstripe",
+        "connect_to_family": "tarstripe"
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+
+  "format_version": "1.13.0",
+
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_brokenlands_plateaus_boulder_pebbles_01", 20.0],
+      ["badger:feature_brokenlands_plateaus_boulder_pebbles_02", 20.0],
+      ["badger:feature_brokenlands_plateaus_boulder_pebbles_03", 20.0]
+   ],
+
+    "description": {
+      "identifier": "badger:feature_brokenlands_plateaus_boulder_pebbles_weighted"
+    }
+  }
+
+}

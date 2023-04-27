@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_forest_mud_pit_slab_01", 1],
+      ["badger:feature_forest_mud_pit_slab_02", 1],
+      ["badger:feature_forest_mud_pit_slab_03", 1]
+    ],
+    "description": {
+      "identifier": "badger:feature_mud_pit_slabs_weighted"
+    }
+  }
+}

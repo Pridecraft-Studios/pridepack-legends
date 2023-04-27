@@ -1,0 +1,55 @@
+{
+  "badger:in_game_ui": {
+    "badger:template": {
+      "parent": "badger:in_game_ui",
+      "game_mode": "onboarding"
+    },
+    "max_hotbar_size": 8,
+    "show_locked_recipes": false,
+    // Build Mode = true, Combat Mode = false
+    "build_combat_default": false,
+    // gamepad: dpad up, down, left, right
+    // keyboard: 1, 2, 3 ,4
+    "resource_items": [
+      "wood",
+      "stone",
+      "emerald"
+    ],
+    "songbook_categories": [
+      "resourcing",
+      "mobs",
+      "utility",
+      "village"
+    ],
+    "hud_initial_visible_elements": [
+      "hud_hearts"
+    ],
+    // Order of toolbar_items must match order of songbook_categories
+    "toolbar_items": [
+      {
+        // resourcing
+        "toolbar_id": "resourcing",
+        "initial_hotbar_items": [
+          "badger:terraform_gather_surface_wood"
+        ]
+      },
+      {
+        // combat
+        "toolbar_id": "mobs",
+        "initial_hotbar_items": []
+      },
+      {
+        // structure
+        "toolbar_id": "utility",
+        "initial_hotbar_items": [
+          "badger:stairs_wood"
+        ]
+      },
+      {
+        // village
+        "toolbar_id": "village",
+        "initial_hotbar_items": []
+      }
+    ]
+  }
+}

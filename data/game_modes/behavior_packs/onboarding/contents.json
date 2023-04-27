@@ -1,0 +1,20 @@
+{
+    "content": [
+        {
+            "path": "manifest.json"
+        },
+        {
+            "path": "cinematics/mst00_c01a_tcw2_fmv.json"
+        },
+        {
+            "path": "cinematics/mst00_c01b_tcw2_fmv.json"
+        },
+        {
+            "path": "cinematics/tu01_c01_intro.json"
+        },
+        {
+            "path": "cinematics/tu01_c02_outro.json"
+        }
+    ],
+    "size": 73746
+}

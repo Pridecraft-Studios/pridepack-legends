@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "material": "badger_wood", 
+      "identifier": "badger:block_pillar_coal"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "pillar", 
+        "directional_texture": false, 
+        "directional_shape": true
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "gatherable_coal"
+        ]
+      }
+    }
+  }
+}

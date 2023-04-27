@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "material": "badger_wood",
+      "identifier": "badger:block_chunk_tree_mang_trunk_dead"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "chunk",
+        "directional_texture": true,
+        "directional_shape": true,
+        "collision_shape": "chunk"
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      },
+      "badger:block_type": {
+        "tags": [
+          "gatherable_wood"
+        ]
+      }
+    }
+  }
+}

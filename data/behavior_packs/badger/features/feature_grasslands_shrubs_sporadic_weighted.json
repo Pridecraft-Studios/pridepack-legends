@@ -1,0 +1,42 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_shrub_01",
+        15.0
+      ],
+      [
+        "badger:feature_shrub_02",
+        15.0
+      ],
+      [
+        "badger:feature_shrub_03",
+        15.0
+      ],
+      [
+        "badger:feature_shrub_04",
+        15.0
+      ],
+      [
+        "badger:feature_shrub_flower_01",
+        10.0
+      ],
+      [
+        "badger:feature_shrub_flower_02",
+        10.0
+      ],
+      [
+        "badger:feature_shrub_flower_03",
+        10.0
+      ],
+      [
+        "badger:feature_shrub_flower_04",
+        10.0
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_grasslands_shrubs_sporadic_weighted"
+    }
+  }
+}

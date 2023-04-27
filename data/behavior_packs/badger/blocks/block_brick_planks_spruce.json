@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_brick_planks_spruce",
+      "material": "badger_wood"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "brick",
+        "directional_texture": false,
+        "directional_shape": true
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }
+    }
+  }
+}

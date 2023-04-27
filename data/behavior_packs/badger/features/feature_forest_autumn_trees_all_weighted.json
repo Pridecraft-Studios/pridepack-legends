@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+
+  "code:place_weighted_random": {
+    "description": {
+    "identifier": "badger:feature_forest_autumn_trees_all_weighted"
+    },
+    "features": [
+      ["badger:feature_forest_tree_autumn_green_aggregate", 10.0],
+      ["badger:feature_forest_trees_autumn_aggregate", 90.0]
+    ]
+  }
+}

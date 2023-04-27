@@ -1,0 +1,53 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_hazard_thornvine_02",
+      "material": "badger_grass_long"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty",
+        "directional_texture": false,
+        "directional_shape": false
+      },
+      "badger:block_type": {
+        "tags": [
+          "world_hazard"
+        ]
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      },
+      "badger:block_effects": {
+        "damage_amount": 0.35,
+        "damage_types": [
+          "hazard"
+        ],
+        "effect_frequency": 0.1,
+        "apply_status": {
+          "slowed_thorns": {
+            "strength": 1.0
+          }
+        }
+      },
+      "badger:telemetry_category": {
+        "category_name": "Environmental"
+      },
+      "badger:block_encounter": {
+        "grant_resource": "unlock_journal_hazard_redthorn"
+      },
+      "badger:terrain_type": {
+        "terrain": "grass"
+      },
+      "minecraft:block_light_emission": {
+        "emission": [
+          94,
+          111,
+          29,
+          16
+        ]
+      }
+    }
+  }
+}

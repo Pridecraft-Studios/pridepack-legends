@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:chunk_piglin_bridge_secondskirmish_post",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:template": [
+        "badger:chunk_piglin_bridge_post"
+      ],
+      "badger:buildable_requirement": {
+        "multistep_ground_intersect_depth": 10
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_villager_heavy_scared",
+      "runtime_identifier": "badger:behavior"
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 4
+      },
+      "badger:wander": {
+        "wander_frequency": 1.1,
+        "wander_radius": 10
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "max_range": 10,
+            "include_tags": [
+              "piglin"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "evade"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder"
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "evade",
+            "range": {
+              "max_range": 25
+            },
+            "apply_status_to_owner": {
+              "feared": {
+                "chance": 1.0,
+                "strength": 1.0
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

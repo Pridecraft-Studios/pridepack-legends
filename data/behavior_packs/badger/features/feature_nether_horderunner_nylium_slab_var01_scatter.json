@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_nether_horderunner_nylium_slab_var01_scatter"
+    },
+    "places_feature": "badger:feature_block_nylium_slab_var01",
+    "iterations": "math.random(1,3)",
+    "scatter_chance": "100",
+    "project_input_to_floor": false,
+    "x": {
+      "extent": [-1,1],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [-1,1],
+      "distribution": "gaussian"
+    },
+    "y": 0.0
+  }
+}

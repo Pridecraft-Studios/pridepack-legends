@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:poi_fallen_warrior_body",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_structure": {
+        "nbt_file": "poi_fallen_warrior_body"
+      },
+      "badger:buildable_foundation": {
+        "style": "generic"
+      },
+      "badger:omit_blocks_outline": {},
+      "badger:template": "badger:template_poi",
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "poi",
+          "poi_fallen_warrior_body",
+          "FallenWarriorBody"
+        ]
+      }
+    }
+  }
+}

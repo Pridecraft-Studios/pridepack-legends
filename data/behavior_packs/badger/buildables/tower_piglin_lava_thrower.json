@@ -1,0 +1,65 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:tower_piglin_lava_thrower",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_requirement": {},
+      "badger:buildable_structure": {
+        "nbt_file": "tower_piglin_lava_thrower",
+        "build_time": 20,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:telemetry_category": {
+        "category_name": "Piglin Structure"
+      },
+      "badger:generate_ruins": {
+        "max": 6,
+        "min": -1
+      },
+      "badger:health": {
+        "max_health": 250
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_neather_medium"
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            0, 
+            3, 
+            0
+          ],
+          [
+            0, 
+            7, 
+            0
+          ]
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "buffable-crows_nest",
+          "pigTower",
+          "piglinStructure",
+          "pigMagmaTower",
+          "piglin"
+        ]
+      },
+      "badger:loot": {
+        "table": "piglin_super_tower"
+      },
+      "badger:template": [
+        "badger:template_tower_with_foundation",
+        "badger:template_structure_piglin"
+      ]
+    }
+  }
+}

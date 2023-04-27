@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_valleys_megafrond_cluster_land_aggregate"
+    },
+    "early_out": "first_failure",
+    "features": [
+      "badger:feature_brokenlands_valleys_megafrond_tree_scatter",
+      "badger:feature_brokenlands_valleys_veg_cluster_scatter",
+      "badger:feature_brokenlands_valley_megafrond_cluster_land_grass_scatter"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_jungle_dirt_block_replacement_03"
+    },
+    "may_replace": [
+      "minecraft:grass",
+      "minecraft:air",
+      "badger:block_cliffdirt_04",
+      "badger:block_mud_var06",
+      "badger:block_mud_var02"
+    ],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_mud_var04"
+  }
+}

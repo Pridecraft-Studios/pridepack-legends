@@ -1,0 +1,67 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_spawner_practice_ai",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Spawner",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_spawner": {
+        "types": [],
+        "cap": 0,
+        "batch": 1,
+        "rate": 0,
+        "offset": [
+          0.0,
+          3.0,
+          0.0
+        ],
+        "max_radius": 5,
+        "max_height_difference": 4,
+        "spawning_trigger": "on_barracks_spawn"
+      },
+      "badger:scriptable_buildable_spawner": {},
+      "badger:buildable_requirement": {
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_health_generation_default",
+        "badger:component_offline_construction_default"
+      ],
+      "badger:health": {
+        "max_health": 40
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 2.0,
+          "crush": 1.5,
+          "spore": 0.0,
+          "ranged": 0.05,
+          "melee": 0.25
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 6,
+          "sc": 0,
+          "rc": 6
+        }
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "barracks",
+          "spawner"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_mountains_peakbase_support_trees_weighted"
+    },
+    "features": [
+      ["badger:feature_mountains_peakbase_fir_trees_small_aggregate",10.0],
+      ["badger:feature_mountains_peakbase_fir_trees_med_aggregate",10.0]
+    ]
+  }
+}

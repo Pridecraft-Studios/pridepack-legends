@@ -1,0 +1,31 @@
+{
+  "format_version": "1.13.0",
+  "code:conditional_list": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_plateaus_plateaurock_conditional"
+    },
+    "conditional_features": [
+      {
+        "places_feature": "badger:feature_brokenlands_block_slab_plateaurocks_desertrock_b_var02",
+        "condition" : "(temp.iterationcount / temp.stackheight) > 0.95 && temp.stackheight > 3"
+      },
+      {
+        "places_feature": "badger:feature_brokenlands_block_plateaurocks_desertrock_a_var02",
+        "condition" : "(temp.iterationcount / temp.stackheight) > 0.75"
+      },
+      {
+        "places_feature": "badger:feature_block_cliffdirt_04",
+        "condition" : "(temp.iterationcount / temp.stackheight) > 0.5"
+      },
+      {
+        "places_feature": "badger:feature_block_cliffdirt_02",
+        "condition" : "(temp.iterationcount / temp.stackheight) > 0.25"
+      },
+      {
+        "places_feature": "badger:feature_block_sand_red",
+        "condition" : "(temp.iterationcount / temp.stackheight) > 0"
+      }
+    ],
+	"early_out_scheme": "placement_success"
+  }
+}

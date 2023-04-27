@@ -1,0 +1,39 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_nether_piglin_netherrack_blocks",
+      "places_feature": "badger:feature_nether_horderunners_netherrack_blocks_weighted" //slabs and sheets
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "before_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "nether_piglin"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": { 
+      "early_out": "temp.noisevalue = q.noise(v.scatteredx, v.scatteredz, 40); temp.lownoisewiggle = math.random(-0.1, 0.2); temp.highnoisewiggle = math.random(-0.1, 0.2); return !(temp.noisevalue < (-0.3 + temp.lownoisewiggle) || temp.noisevalue > (0.3 + temp.highnoisewiggle));",
+      "iterations": "1",
+      "scatter_chance": "100",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [0,15]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [0,15]
+      }
+    }
+  }
+}

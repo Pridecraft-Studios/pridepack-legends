@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <style type="text/css"> 
+         ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td, table th {
+            padding: 0
+        }
+
+        .c4 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 26pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c1 {
+            padding-top: 20pt;
+            padding-bottom: 6pt;
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: center
+        }
+
+        .c3 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 20pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c0 {
+            padding-top: 0pt;
+            padding-bottom: 3pt;
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: center
+        }
+
+        /* .c2 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        } */
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: center
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+        
+        /* 
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        } */
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c2 {
+            display: flex;
+            align-items:center;
+            justify-content:center; 
+            margin: auto;
+            background-color: #1B1C1E;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt; 
+        } 
+
+        .title2 {  
+            color: #ffffff;
+            font-weight: 200;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 18pt;
+            font-family: 'Roboto';
+            font-style: normal;
+            text-align: center;
+        }
+
+        .subtitle2 {
+            color: #ffffff;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 14pt; 
+            font-family: 'Roboto', sans-serif; 
+            font-style: normal;  
+            text-align: center;
+        }
+
+        .logo-container{
+            padding-bottom: 2%;
+            width: 150px;
+            margin: auto;
+        }
+
+        img{
+            text-align:center;
+            width:100%;
+            display:block;
+            margin:auto;
+        }
+    </style>
+    <script>
+function getLang() {
+    // uncomment to manually test a specific language
+    //return 'fr'
+    return navigator.language.substring(0, 2).toLowerCase()
+}
+function hideIfNotActiveLanguage(element) {
+    // comment out this line to show all languages
+    element.style.display = element.lang.substring(0, 2) === getLang() ? 'block' : 'none';
+}
+document.addEventListener("DOMContentLoaded", () => {
+    document
+        .querySelectorAll("[data-loc-content]")
+        .forEach(hideIfNotActiveLanguage)
+})
+    </script>
+</head>
+<body class="c2 doc-content">
+    <div class="main-container">
+        <div class="logo-container">
+            <img src="CloseSteamOverlayLogo.png" alt="Minecraft Legends logo">
+        </div>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="ar" data-loc-content>من فضلك ، أغلق Steam Overlay للمتابعة.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="bg" data-loc-content>Моля, затворете наслагването на Steam, за да продължите.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="cs" data-loc-content>Chcete-li pokračovat, zavřete překryvnou vrstvu Steam.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="da" data-loc-content>Luk venligst Steam-overlejringen for at fortsætte.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="de" data-loc-content>Bitte schließen Sie das Steam-Overlay, um fortzufahren.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="el" data-loc-content>Παρακαλούμε, κλείστε την επικάλυψη Steam για να συνεχίσετε.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="es" data-loc-content>Por favor, cierre la superposición de Steam para continuar.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="fi" data-loc-content>Ole hyvä ja sulje Steam-peittokuva jatkaaksesi.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="fr" data-loc-content>Veuillez fermer l'overlay Steam pour continuer.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="he" data-loc-content>בבקשה, סגור את שכבת העל של Steam כדי להמשיך.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="hu" data-loc-content>Kérjük, zárja be a Steam fedvényt a folytatáshoz.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="id" data-loc-content>Harap tutup hamparan Steam untuk melanjutkan.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="it" data-loc-content>Per favore, chiudi l'overlay di Steam per continuare.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="ja" data-loc-content>続行するには、Steam オーバーレイを閉じてください。</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="ko" data-loc-content>계속하려면 Steam 오버레이를 닫으세요.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="nb" data-loc-content>Vennligst lukk Steam-overlegget for å fortsette.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="nl" data-loc-content>Sluit de Steam-overlay om door te gaan.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="pl" data-loc-content>Zamknij nakładkę Steam, aby kontynuować.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="pt" data-loc-content>Por favor, feche a sobreposição do Steam para continuar.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="ru" data-loc-content>Пожалуйста, закройте оверлей Steam, чтобы продолжить.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="sk" data-loc-content>Ak chcete pokračovať, zatvorte prekrytie Steam.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="sv" data-loc-content>Stäng Steam-överlägget för att fortsätta.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="tr" data-loc-content>Devam etmek için lütfen Steam arayüzünü kapatın.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="uk" data-loc-content>Щоб продовжити, закрийте накладку Steam.</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="zh-CN" data-loc-content>请关闭 Steam 界面以继续。</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="zh-TW" data-loc-content>請關閉 Steam 界面以繼續。</h1>
+        <h1 class="title2" id="h.csw2v3ju9osf" lang="en">Please close the Steam overlay to continue.</h1>
+    </div>
+</body>
+</html>

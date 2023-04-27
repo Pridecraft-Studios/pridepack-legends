@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:conditional_list": {
+    "description": {
+      "identifier": "badger:feature_grasslands_conditional_list"
+    },
+    "conditional_features": [
+      {
+        "places_feature": "badger:feature_grasslands_grass_weighted",
+        "condition" : "temp.height = query.heightmap(variable.worldx, variable.worldz);\r\ntemp.noisevalue = query.noise((variable.worldx) / 40, (variable.worldz) / 40);\r\ntemp.lownoisewiggle = math.random(-1,2) *0.1;\r\ntemp.highnoisewiggle = math.random(-1,2) * 0.1;\r\nreturn (temp.noisevalue > (-0.25 + temp.lownoisewiggle) && temp.noisevalue < (0.25 + temp.highnoisewiggle)) && math.random(0,4) < 3;"
+      }
+    ],
+	"early_out_scheme": "placement_success"
+  }
+}

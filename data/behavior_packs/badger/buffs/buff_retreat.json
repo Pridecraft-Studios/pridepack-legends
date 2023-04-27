@@ -1,0 +1,86 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:buff_retreat",
+            "runtime_identifier": "badger:buff"
+        },
+        "components": {
+            "badger:buff": {
+                "buff_category": "action",
+                "application_time_seconds": 0.1
+            },
+            "badger:status": {
+                "applied_name": "buff_retreat",
+                "default_resistance": {
+                    "resisted": false,
+                    "time": 5,
+                    "resistance_persist_time": 0.5
+                }
+            },
+            "badger:granted_actions": {
+                "actions": [
+                    {
+                        "name": "retreat",
+                        "trigger": "on_charge_stun",
+                        "transfer_activation": "tired_recovery",
+                        "on_hit_target_trigger": "on_hammer_boss_melee_attack_hit",
+                        "grace_period_between_hits": 0.25,
+                        "predictive_windup": false,
+                        "range": {
+                            "max_range": 300
+                        },
+                        "state_machine": {
+                            "wind_up": 3.0,
+                            "cooldown_time": 7,
+                            "activation_time": 2.9,
+                            "deactivates_on_cooldown": true
+                        },
+                        "shape_area_damage": {
+                            "shape": {
+                                "type": "wedge",
+                                "aperture_angle": 70,
+                                "radius": 6.0,
+                                "rotation": 0,
+                                "thickness": 8,
+                                "position": [
+                                    0.0,
+                                    8.0,
+                                    0.0
+                                ]
+                            },
+                            "requires_los": false,
+                            "collision": {
+                                "include_tags": [],
+                                "exclude_tags": [
+                                    "fountain",
+                                    "hammerBoss"
+                                ],
+                                "alliance_rule_filter": "enemy"
+                            },
+                            "damage": {
+                                "damage_amount": 50,
+                                "damage_types": [
+                                    "crush"
+                                ]
+                            },
+                            "knockback": {
+                                "angle": 25,
+                                "force": 25
+                            },
+                            "falloff": {
+                                "min_radius": 5,
+                                "max_radius": 10,
+                                "min_damage": 15,
+                                "min_angle": 10
+                            }
+                        },
+                        "charge": {
+                            "speed": 30
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

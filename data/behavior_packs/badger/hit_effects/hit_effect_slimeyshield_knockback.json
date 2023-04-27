@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:hit_effect_slimeyshield_knockback",
+      "runtime_identifier": "badger:hit_effect"
+    },
+    "components": {
+      "badger:hit_effect": {
+        "trigger": "slimeyshield_knockback",
+        "on_hit_target_trigger": "on_slimeyshield_knockback"
+      },
+      "badger:knockback": {
+        "knockback": {
+          "angle": 30,
+          "force": 15
+        }
+      }
+    }
+  }
+}

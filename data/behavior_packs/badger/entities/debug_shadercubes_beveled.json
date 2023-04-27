@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:debug_shadercubes_beveled",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": true,
+        "auto_step": 1.1
+      },
+      "badger:physics": {},
+      "badger:movement": {
+        "move_speed": 0
+      },
+      "badger:tags": {
+        "tags": [
+          "mob"
+        ]
+      },
+      "badger:health": {
+        "max_health": 20
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder"
+      }
+    }
+  }
+}

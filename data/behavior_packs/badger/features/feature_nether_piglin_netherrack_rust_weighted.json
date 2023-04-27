@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_nether_piglin_netherrack_rust_weighted"
+    },
+    "features": [
+      ["badger:feature_block_netherrack_rust_dried", 20.0],
+      ["badger:feature_block_netherrack_rust_dried_var01", 20.0]
+    ]
+  }
+}

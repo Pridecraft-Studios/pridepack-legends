@@ -1,0 +1,118 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:aoe_portal_destroyed",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 1.0,
+        "width": 1.0
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": false,
+        "auto_step": 3.1
+      },
+      "badger:removal_time": {
+        "time": 0.1
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 50
+        },
+        "damage_effects": [
+          {
+            "name": "piglin_fear",
+            "damage": 0,
+            "damage_types": [
+              "neutral"
+            ],
+            "include_tags": [
+              "piglin"
+            ],
+            "exclude_tags": [
+            ],
+            "apply_status": {
+              "feared": {
+                "chance": 1.0,
+                "strength": 2.0
+              }
+            },
+            "alliance_rule_filter": "friendly"
+          },
+          {
+            "name": "mob_healed",
+            "damage": 0,
+            "damage_types": [
+              "neutral"
+            ],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+            ],
+            "apply_status": {
+              "healing": {
+                "chance": 2.0,
+                "strength": 5.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          },
+          {
+            "name": "mob_wet",
+            "damage": 0,
+            "damage_types": [
+              "neutral"
+            ],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+            ],
+            "apply_status": {
+              "wet": {
+                "chance": 2.0,
+                "strength": 5.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          },
+          {
+            "name": "mob_celebrate",
+            "damage": 0,
+            "damage_types": [
+              "neutral"
+            ],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+            ],
+            "apply_status": {
+              "celebration": {
+                "chance": 2.0,
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:movement": {
+        "move_speed": 0.0
+      },
+      "badger:telemetry_category": {
+        "category_name": "Piglin Melee"
+      }
+    }
+  }
+}

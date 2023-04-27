@@ -1,0 +1,24 @@
+{
+  "timers": [
+    {
+      "timer_group": "MicroProfile",
+      "timer_label": "MicroProfileFlip",
+      "watchdogs": [
+        {
+          "execution_budget": "50ms",
+          "overage_actions": [ "signal_on_capture" ]
+        }
+      ]
+    },
+    {
+      "timer_group": "Default Group",
+      "timer_label": "MinecraftGame::update",
+      "watchdogs": [
+        {
+          "execution_budget": "100ms",
+          "overage_actions": [ "perf_turtle", "microprofile_dump" ]
+        }
+      ]
+    }
+  ]
+}

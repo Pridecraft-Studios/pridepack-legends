@@ -1,0 +1,63 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_magma_block_ground_aoe",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.1,
+        "height": 1.0
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": false,
+        "auto_step": 3.1
+      },
+      "badger:removal_time": {
+        "time": 8.0
+      },
+      "badger:movement": {
+        "move_speed": 0.0
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 5
+        },
+        "timer": {
+          "interval": 1
+        },
+        "damage_effects": [
+          {
+            "name": "aoe_magma_impact_ground",
+            "damage": 1,
+            "damage_types": [
+              "ranged"
+            ],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [],
+            "apply_status": {
+              "engaged": {
+                "chance": 1.0,
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:template":[
+        "badger:template_impact_entity_piglin"
+      ]
+    }
+  }
+}

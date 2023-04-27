@@ -1,0 +1,17 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:gate_piglin_active",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 11,
+        "height": 8,
+        "length": 3
+      }
+    }
+  }
+}

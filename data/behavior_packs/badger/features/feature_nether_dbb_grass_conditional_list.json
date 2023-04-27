@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "code:conditional_list": {
+    "description": {
+      "identifier": "badger:feature_nether_dbb_grass_conditional_list"
+    },
+    "conditional_features": [
+
+      // {
+      //   "places_feature": "badger:feature_nether_dbb_piglin_grass_weighted_02",
+      //   "condition" : "temp.noise = query.noise(variable.worldx / 40, variable.worldz / 40) ; return temp.noise > -0.2 && temp.noise < 0.2 && math.random(0,10) < 3 ;"
+      // },
+      {
+        "places_feature": "badger:feature_nether_dbb_piglin_grass_weighted_01",
+        "condition" : "math.random(0,10) < 5"
+      }
+
+    ],
+	"early_out_scheme": "placement_success"
+  }
+}

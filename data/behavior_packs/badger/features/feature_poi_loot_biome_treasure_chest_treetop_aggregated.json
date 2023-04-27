@@ -1,0 +1,13 @@
+{
+    "format_version": "1.13.0",
+    "code:place_aggregated": {
+        "description": {
+            "identifier": "badger:feature_poi_loot_biome_treasure_chest_treetop_aggregated"
+        },
+        "early_out": "first_failure",
+        "features": [
+            "badger:feature_poi_loot_biome_treasure_chest_treetop",
+            "badger:feature_roaming_piglin_grunter_army_treetop_treasure_chest_scatter"
+        ]
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_nether_piglins_bubblerack_borders_fill"
+    },
+    "may_replace": [
+    "badger:block_netherrack_var01",
+    "badger:block_netherrack",
+    "badger:block_netherrack_var02",
+    "badger:block_netherrack_var03",
+    "badger:block_nylium_grass",
+"badger:block_nylium_grass_var01",
+    "badger:block_bubblerack_side"
+    
+    ],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_attach_to": {
+      "min_sides_must_attach": 1,
+      "sides": [ 
+      "badger:block_barrier_boss",
+      "badger:block_lava",
+      "badger:block_magma"
+      ],
+      "bottom":[ 
+        "badger:block_netherrack",
+        "badger:block_bubblerack_side"
+      ],
+      "top" : [
+      "minecraft:air",
+      "badger:block_sheet_netherrack"
+      ]
+    },
+    "places_block": "badger:block_bubblerack_light"
+  }
+}

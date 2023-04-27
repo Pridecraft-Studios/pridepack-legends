@@ -1,0 +1,33 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_drylands_saltflat_tree_cluster_bush_scatter"
+    },
+    "places_feature": "badger:feature_drylands_saltflat_tree_cluster_bush_weighted",
+    "x": {
+      "extent": [
+        -10,
+        10
+      ],
+      "distribution": "inverse_gaussian"
+    },
+    "z": {
+      "extent": [
+        -10,
+        10
+      ],
+      "distribution": "inverse_gaussian"
+    },
+    "iterations": "math.random(5,10)",
+    "scatter_chance": 35.0,
+    "project_input_to_floor": false,
+    "y": {
+      "extent": [
+        -3,
+        3
+      ],
+      "distribution": "gaussian"
+    }
+  }
+}

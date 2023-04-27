@@ -1,0 +1,84 @@
+{
+    "format_version": "1.13.0",
+    "code:place_node": {
+      "description": {
+        "identifier": "badger:feature_nether_horderunners_ground_block_node"
+      },
+      "weighted_blocks": [
+        ["badger:block_nylium_grass", 10.0],
+        ["badger:block_nylium", 10.0],
+        ["badger:block_nylium_var01", 10.0],
+        ["badger:block_nylium_var02", 10.0],
+        ["badger:block_netherrack_dried", 10.0]
+  
+
+      ],
+      "x": {
+        "range": [
+          7,10
+        ],
+        "distribution": "gaussian"
+      },
+      "z": {
+        "range": [
+          7,10
+        ],
+        "distribution": "gaussian"
+      },
+      "y":1,
+      "proportion": {},
+      "num_blocks": {
+        "range": [99,100],
+        "distribution": "gaussian"
+      },
+      "density": {
+        "range": [2,4],
+        "distribution": "gaussian"
+      },
+      "constraints": {
+
+        "block_intersection":{
+          "block_allow_list":[
+            "badger:block_nylium_grass",
+"badger:block_nylium_grass_var01",
+            "minecraft:air",
+            "badger:block_nylium_grass",
+"badger:block_nylium_grass_var01",
+            "badger:block_netherrack",
+            "badger:block_netherrack_var01",
+            "badger:block_netherrack_var02",
+            "badger:block_netherrack_var03",
+            "badger:block_nylium_grass",
+"badger:block_nylium_grass_var01",
+            "badger:block_nylium", 
+            "badger:block_nylium_var01", 
+            "badger:block_nylium_var02",
+            "badger:block_netherrack_dried",
+            "minecraft:air"
+          ]
+        },
+
+
+
+
+        "grounded": {
+          "block_allow_list": [
+            "badger:block_nylium_grass",
+"badger:block_nylium_grass_var01",
+            "badger:block_nylium_grass",
+"badger:block_nylium_grass_var01",
+            "badger:block_netherrack",
+            "badger:block_netherrack_var01",
+            "badger:block_netherrack_var02",
+            "badger:block_netherrack_var03",
+            "badger:block_nylium_grass",
+"badger:block_nylium_grass_var01",
+            "badger:block_nylium", 
+            "badger:block_nylium_var01", 
+            "badger:block_nylium_var02",
+            "badger:block_netherrack_dried"          ],
+          "chop_off": true
+        }
+      }
+    }
+  }

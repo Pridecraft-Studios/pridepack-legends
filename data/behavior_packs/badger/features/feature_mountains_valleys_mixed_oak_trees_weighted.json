@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_mountains_valleys_mixed_oak_trees_weighted"
+    },
+    "features": [
+      ["badger:feature_mountains_valleys_tree_oak_large_01",10.0],
+      ["badger:feature_mountains_valleys_tree_oak_med_01",10.0],
+      ["badger:feature_mountains_valleys_tree_oak_small_01",10.0]
+    ]
+  }
+}

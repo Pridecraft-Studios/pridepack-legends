@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_shore_block"
+    },
+    "may_replace": ["badger:block_dirt", "minecraft:grass"],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_rivershore"
+  }
+}

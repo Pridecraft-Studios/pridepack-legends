@@ -1,0 +1,35 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_nether_rotter_waterpads",
+      "places_feature": "badger:feature_nether_rotters_nether_wart_warped_island_large_scatter"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "nether_rotters"
+        }
+      ]
+    },
+    "distribution": {
+     // "early_out": "query.water_distance(v.scatteredx, v.scatteredz) < ",
+     // "iterations": "temp.value = query.noise((variable.originx + 8) / 200.0, (variable.originz + 8) / 200.0); return math.abs(temp.value) * 10;",
+      "iterations": 1,
+      "scatter_chance": 80,
+      "x": {
+        "distribution": "uniform",
+        "extent": [2,13]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [2,13]
+      },
+      "y": "q.sea_level"
+    }
+  }
+}

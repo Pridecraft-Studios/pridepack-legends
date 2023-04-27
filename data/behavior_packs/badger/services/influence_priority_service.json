@@ -1,0 +1,20 @@
+{
+  "badger:influence_priority_service": {
+    "priorities": [
+      {
+        "include_tags": [
+          "mob"
+        ],
+        "exclude_tags": [
+          "animal"
+        ]
+      },
+      {
+        "include_tags": [
+          "animal"
+        ],
+        "exclude_tags": []
+      }
+    ]
+  }
+}

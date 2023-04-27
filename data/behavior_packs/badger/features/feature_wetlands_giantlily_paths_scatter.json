@@ -1,0 +1,25 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_wetlands_giantlily_paths_scatter"
+    }, 
+    "places_feature": "badger:feature_wetlands_lilypad_path_weighted",
+    "iterations": 1,
+    "scatter_chance": 100,
+    "project_input_to_floor": false,
+    "x": {
+      "distribution": "uniform",
+      "extent": [
+        -1, 1
+      ]
+    },
+    "z": {
+      "distribution": "uniform",
+      "extent": [
+        -1, 1
+      ]
+    },
+    "y": 0.0
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "format_version": "1.13.0",
+
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_brokenlands_plateaus_boulder_cluster_small",
+      "places_feature": "badger:feature_brokenlands_plateaus_boulder_small_clusters_aggregate"
+    },
+
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "brokenlands"
+        }
+      ]
+    },
+
+    "distribution": {
+      "iterations": "1",
+      "scatter_chance": "15 * query.get_game_rule_value('brokenlands_stone_density')",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [0, 15]
+      },
+      "z": {
+        "distribution": "gaussian",
+        "extent": [0, 15]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "coordinate_eval_order": "xzy"
+    }
+  }
+}

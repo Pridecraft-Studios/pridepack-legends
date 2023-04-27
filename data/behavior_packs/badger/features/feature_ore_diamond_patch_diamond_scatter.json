@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_ore_diamond_patch_diamond_scatter"
+    },
+    "places_feature": "badger:feature_block_diamond",
+    "iterations": "30",
+    "scatter_chance": "100",
+    "project_input_to_floor": false,
+    "x": {
+      "extent": [-4,4],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [-4,4],
+      "distribution": "gaussian"
+    },
+    "y":"temp.heightroll = math.random(-2, 0); temp.heightoffset = (temp.heightroll == 0 && math.random(0,10) > 3) ? -1 : temp.heightroll; return query.heightmap(variable.worldx, variable.worldz) + temp.heightoffset - variable.originy;"
+  }
+}

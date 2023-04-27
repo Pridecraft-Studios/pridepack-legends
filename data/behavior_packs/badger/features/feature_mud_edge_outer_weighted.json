@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_block_mud_03", 5],
+      ["badger:feature_block_mud_moss_01", 2],
+      ["badger:feature_block_mud_moss_02", 2]
+    ],
+    "description": {
+      "identifier": "badger:feature_mud_edge_outer_weighted"
+    }
+  }
+}

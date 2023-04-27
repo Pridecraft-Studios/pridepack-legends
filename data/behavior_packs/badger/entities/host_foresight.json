@@ -1,0 +1,142 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:host_foresight",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1.01,
+        "height": 5.375
+      },
+      "badger:movement": {
+        "move_speed": 3.0
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "auto_step": 4.1,
+        "interpolation_speed": 5.5
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 20
+      },
+      "badger:leash": {
+        "leash_range": 50,
+        "return_range": 10
+      },
+      "badger:bsharp_teleport_presentation": {
+        "engaged_event": "host_generic_teleport_leave",
+        "arrived_event": "host_generic_teleport_arrive",
+        "windup_time": 0.5
+      },
+      "badger:tags": {
+        "tags": [
+          "host",
+          "donotattack",
+          "foresight"
+        ]
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "name": "host_foresight_player_cheer",
+            "max_range": 50,
+            "action_tickets": {
+              "rc": 1
+            },
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "cheer"
+            ]
+          },
+          {
+            "name": "host_foresight_host_talk",
+            "max_range": 50,
+            "include_tags": [
+              "host"
+            ],
+            "exclude_tags": [
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "talk"
+            ]
+          },
+          {
+            "name": "host_foresight_player_follow",
+            "max_range": 75,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "follow"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "talk",
+            "trigger": "talk",
+            "predictive_windup": false,
+            "range": {
+              "min_range": 1.0,
+              "max_range": 5.0
+            },
+            "state_machine": {
+              "wind_up": 3.3,
+              "wind_down": 0.5,
+              "cooldown_time": 15.0,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "cheer",
+            "predictive_windup": false,
+            "range": {
+              "min_range": 6,
+              "max_range": 7
+            },
+            "state_machine": {
+              "wind_up": 4.0,
+              "wind_down": 0.5,
+              "cooldown_time": 20.0,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "follow",
+            "predictive_windup": false,
+            "range": {
+              "min_range": 6,
+              "max_range": 7
+            },
+            "state_machine": {
+              "wind_up": 0.0,
+              "cooldown_time": 5.0,
+              "deactivates_on_cooldown": true
+            }
+          }
+        ]
+      },
+      "badger:bsharp_lifetime": {
+        "variable": "gv_disable_hosts",
+        "value": 1
+      },
+      "badger:template": "badger:template_host"
+    }
+  }
+}

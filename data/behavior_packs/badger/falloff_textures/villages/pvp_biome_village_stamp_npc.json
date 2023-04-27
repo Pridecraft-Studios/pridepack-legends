@@ -1,0 +1,69 @@
+{
+  "id": "pvp_biome_village_stamp_npc",
+  "textures": [
+    {
+      "texture": "villages/utopian_village_biome",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    },
+    {
+      "texture": "villages/pvp_npc_structures",
+      "channels": {
+        "r": "buildable_rotation_map",
+        "g": "not_used",
+        "b": "buildable_name_map"
+      }
+    }
+  ],
+  "additional_data": {
+    "manual_height": [
+      20,
+      40
+    ],
+    "lock_rotation": true,
+    "village_texture_stamp": true
+  },
+  "structure_buildable_map": [
+    {
+      "structure": "badger:chunk_drag_wall",
+      "value": 134
+    },
+    {
+      "structure": "badger:tower_arrow",
+      "value": 100
+    },
+    {
+      "structure": "badger:tower_shotgun",
+      "value": 200
+    },
+    {
+      "structure": "badger:zoner_regen_structures",
+      "value": 99
+    },
+    {
+      "structure": "badger:gate",
+      "value": 255
+    },
+    {
+      "structure": "badger:spawner_creeper_practice_ai",
+      "value": 248
+    },
+    {
+      "structure": "badger:spawner_zombie_practice_ai",
+      "value": 238
+    },
+    {
+      "structure": "badger:spawner_skeleton_practice_ai",
+      "value": 228
+    }
+  ],
+  "biome_map": [
+    {
+      "biome": "fateful_land_pvp_evergreen",
+      "value": 131
+    }
+  ]
+}

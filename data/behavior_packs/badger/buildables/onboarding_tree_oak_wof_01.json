@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:onboarding_tree_oak_wof_01",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {        
+      "badger:buildable_presentation": {
+      "icon": "structure_spawner_creeper",
+      "buildable_category": "",
+      "height_offset": 1
+    },
+      "badger:buildable_structure": {
+        "nbt_file": "nature/tree_oak_wof_01"
+      },
+      "badger:template": "badger:template_poi",
+      "badger:buildable_intangible": {},
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "poi",
+          "onboardingObjective",
+          "actionTree"          
+        ]
+      },
+      "badger:omit_team_id": {}
+    }
+  }
+}

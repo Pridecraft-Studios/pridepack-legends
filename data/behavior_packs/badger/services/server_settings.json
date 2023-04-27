@@ -1,0 +1,5 @@
+{
+  "badger:server_settings_service": {
+    "max_players": 8
+  }
+}

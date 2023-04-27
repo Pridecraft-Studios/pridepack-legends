@@ -1,0 +1,23 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:placeable_director_flag",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:world_collision": {
+                "has_collision": false,
+                "auto_step": 1.1
+            },
+            "badger:aabb": {
+                "width": 2.0,
+                "height": 2.0
+            },
+            "badger:physics": {
+                "gravity": -600
+            }
+        }
+    }
+}

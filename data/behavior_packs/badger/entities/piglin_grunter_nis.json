@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_grunter_nis",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "mushroom_data": {
+      "role": "NIS"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1.2,
+        "length": 1.2,
+        "height": 2.0
+      },
+      "badger:tags": {
+        "tags": [
+          "grunter_nis"
+        ]
+      },
+      "badger:movement": {
+        "move_speed": 3.5,
+        "air_control_factor": 0.0
+      },
+      "badger:physics": {
+        "gravity": -30,
+        "friction": 0.04
+      },
+      "badger:world_collision": {
+        "has_collision": true,
+        "auto_step": 2.1,
+        "interpolation_speed": 5.5
+      },
+      "badger:template": "badger:template_piglin"
+    }
+  }
+}

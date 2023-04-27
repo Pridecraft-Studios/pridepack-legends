@@ -1,0 +1,24 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_mountains_fairyring_scatter_01"
+    },
+    "places_feature": "badger:feature_mountains_valleys_mushroom_structure_aggregate",
+    "iterations": "15",
+    "scatter_chance": "100",
+    "project_input_to_floor": false,
+    "x": {
+      "extent": [9,11],
+      "distribution": "inverse_gaussian"
+    },
+    "z": {
+      "extent": [-1,1],
+      "distribution": "inverse_gaussian"
+    },
+    "y": {
+      "extent": [-1,1],
+      "distribution": "uniform"
+    }
+  }
+}

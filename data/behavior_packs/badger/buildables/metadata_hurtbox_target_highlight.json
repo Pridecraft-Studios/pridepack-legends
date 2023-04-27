@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0", //WARNING: Only to be used for advanced direct reticle targeting. Tag accordingly.
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:metadata_hurtbox_target_highlight",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 5.0,
+        "height": 5.0
+      },
+      "badger:meta_aabb": {},
+      "badger:hurtbox": {
+        "no_tickets": true,
+        "target_assigner_redirect_to_default": true
+      },
+      "badger:tags": {
+        "tags": [
+          "donotattack"
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb"
+      },
+      "badger:take_block_space": {}
+    }
+  }
+}

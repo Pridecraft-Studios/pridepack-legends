@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_brick_tree_willow_trunk",
+      "material": "badger_wood"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "brick",
+        "camera_collision": false,
+        "directional_texture": false,
+        "directional_shape": true
+      },
+      "badger:block_type": {
+        "tags": [
+          "gatherable_wood"
+        ]
+      }
+    }
+  }
+}

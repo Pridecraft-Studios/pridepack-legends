@@ -1,0 +1,40 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_mud_pit_grass",
+      "places_feature": "badger:feature_mud_pit_grass_weighted"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "sky_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "mud_pit"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 160,
+      "scatter_chance": 100,
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "coordinate_eval_order": "xzy"
+    }
+  }
+}

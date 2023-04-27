@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_mountains_valleys_mushroom_structure_weighted"
+    },
+    "features": [
+      ["badger:feature_mushroom_cap_red",10.0],
+      ["badger:feature_mushroom_cap_brown",10.0],
+      ["badger:feature_mushroom_cap_beige",10.0]
+    ]
+  }
+}

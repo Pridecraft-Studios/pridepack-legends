@@ -1,0 +1,52 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_brokenlands_tarpit_edge",
+      "places_feature": "badger:feature_brokenlands_tarpit_edge_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "brokenlands"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "tarpits"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 256,
+      "scatter_chance": 100,
+      "early_out": "temp.dist = q.water_distance(v.scatteredx, v.scatteredz); return v.scatteredy < 34 || v.scatteredy > 42 || temp.dist == 0 || temp.dist >= math.random(2,5);",
+      "x": {
+        "distribution": "jittered_grid",
+        "extent": [
+          0,
+          15
+        ],
+        "step_size": 1.0
+      },
+      "z": {
+        "distribution": "jittered_grid",
+        "extent": [
+          0,
+          15
+        ],
+        "step_size": 1.0
+      },
+      "y": "q.heightmap(v.worldx, v.worldz) - 1",
+      "coordinate_eval_order": "xzy"
+    }
+  }
+}

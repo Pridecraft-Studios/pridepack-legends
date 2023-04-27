@@ -1,0 +1,43 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_frosty_grass_frostblock_01_wave",
+      "places_feature": "badger:feature_block_frostground_01"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "frosty_grass"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 256,
+      "scatter_chance": 100,
+      "early_out": "temp.noisevalue = q.noise(v.scatteredx, v.scatteredz, 40); temp.lownoisewiggle = math.random(-0.1, 0.1); temp.highnoisewiggle = math.random(-0.1, 0.1); return !((temp.noisevalue > (-0.8 + temp.lownoisewiggle) && temp.noisevalue < (-0.4 + temp.highnoisewiggle)) || (temp.noisevalue > (0.4 + temp.lownoisewiggle) && temp.noisevalue < (0.8 + temp.highnoisewiggle)));",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "jittered_grid",
+        "extent": [
+          0,
+          15
+        ],
+        "step_size": 1.0
+      },
+      "y": "q.heightmap(v.worldx, v.worldz) - 1",
+      "z": {
+        "distribution": "jittered_grid",
+        "extent": [
+          0,
+          15
+        ],
+        "step_size": 1.0
+      }
+    }
+  }
+}

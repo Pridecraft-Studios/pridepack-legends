@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_slab_tree_willow_leaves", 
+      "material": "badger_leaves"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "slab", 
+        "camera_collision": false, 
+        "directional_texture": true, 
+        "directional_shape": true, 
+        "render_layer": "opaque"
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "gatherable_wood_sml"
+        ]
+      }, 
+      "badger:terrain_type": {
+        "terrain": "grass"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_plant_fateful_wildflower_01", 5.0],
+      ["badger:feature_plant_fateful_wildflower_02", 5.0],
+      ["badger:feature_plant_fateful_wildflower_03", 5.0],
+      ["badger:feature_plant_mountains_whiteberry_01",1.0],
+      ["badger:feature_plant_mountains_whiteberry_02",1.0],
+      ["badger:feature_plant_mountains_whiteberry_03",1.0],
+      ["badger:feature_plant_jungle_tropical_plant_01",1.0],
+      ["badger:feature_plant_jungle_tropical_plant_02",1.0],
+      ["badger:feature_plant_jungle_tropical_plant_03",1.0],
+      ["badger:feature_plant_jungle_grass_01", 300.0],
+      ["badger:feature_plant_jungle_grass_02", 300.0],
+      ["badger:feature_plant_jungle_grass_03", 300.0],
+      ["badger:feature_plant_jungle_grass_04", 300.0],
+      ["badger:feature_plant_jungle_grass_05", 300.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_jungle_flowers_weighted"
+    }
+  }
+}

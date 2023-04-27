@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:item_orb_05",
+      "is_summonable": true,
+      "runtime_identifier": "badger:item"
+    },
+    "components": {
+      "badger:template": "badger:template_item_orb",
+      "badger:tags": {
+        "tags": [
+          "item",
+          "nether_star",
+          "ghostTriggerFriendly"
+        ]
+      }
+    }
+  }
+}

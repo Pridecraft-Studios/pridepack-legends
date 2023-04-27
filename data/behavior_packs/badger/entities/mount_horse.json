@@ -1,0 +1,114 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mount_horse",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1.4,
+        "length": 1.4,
+        "height": 1.8
+      },
+      "badger:physics": {
+        "gravity": -60,
+        "friction": 0.1,
+        "buoyancy": 30,
+        "water_drag": 0.25,
+        "water_submerged_ratio": 0.75
+      },
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": true,
+        "auto_step": 2.1,
+        "interpolation_speed": 24,
+        "interpolate_from_height": false
+      },
+      "badger:interacts_with_blocks": {},
+      "badger:collision_weight": {
+        "weight": 100
+      },
+      "badger:movement": {
+        "move_speed": 10.15,
+        "air_control_factor": 0.4
+      },
+      "badger:jump": {
+        "initial_height": 6.33,
+        "hold_velocity": {
+          "start": -30.0,
+          "end": -60.0
+        },
+        "hold_duration": 0.85,
+        "jump_from_water": true
+      },
+      "badger:tags": {
+        "tags": [
+          "cavalry",
+          "blocks_respawn"
+        ]
+      },
+      "badger:mount": {
+        "include_tags": [
+          "rider"
+        ],
+        "alliance_rule_filter": "friendly",
+        "unlock_requirement": "unlock_quest_mount_00",
+        "base_skin": "badger:mount_horse"
+      },
+      "badger:has_saddle": {
+        "search_range": 0.0,
+        "mount_range": 0.0,
+        "despawn_if_dismounted": true
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 1.8
+      },
+      "badger:sprint": {
+        "idle_time_to_deactivate": -1,
+        "sprint_status": {
+          "apply_status": {
+            "sprint": {
+              "chance": 1.0,
+              "strength": 1.0
+            }
+          }
+        },
+        "sprint_negate_status": {
+          "apply_status": {
+            "sprint_negate": {
+              "chance": 1.0,
+              "strength": 1.0
+            }
+          }
+        },
+        "exhausted_status": {
+          "apply_status": {
+            "exhausted": {
+              "chance": 1.0,
+              "strength": 1.0
+            }
+          }
+        },
+        "exhausted_negate_status": {
+          "apply_status": {
+            "exhausted_negate": {
+              "chance": 1.0,
+              "strength": 1.0
+            }
+          }
+        }
+      },
+      // NOTE: Moved "badger:stamina" component to "badger:template_mount"...
+      // ... This note can be removed after stamina component removed properly...
+      // ...during testing the mounts remain in sprint state while idle.
+      "badger:telemetry_category": {
+        "category_name": "Mount Ability"
+      },
+      "badger:template": [
+        "badger:template_mount"
+      ]
+    }
+  }
+}

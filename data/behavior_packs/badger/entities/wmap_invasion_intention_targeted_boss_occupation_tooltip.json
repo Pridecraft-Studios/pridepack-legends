@@ -1,0 +1,21 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:wmap_invasion_intention_targeted_boss_occupation_tooltip",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": false
+        },
+        "components": {
+            "badger:map3_tooltip_extended": {
+                "description": "tooltip.invasion.intention.targeted.boss.occupation",
+                "icon": "/icons/map/inline_piglin_boss_banner_attack.png",
+                "priority": 5
+            },
+            "badger:map3_tooltip_audio": {
+                "event_id": "BAE_ui_wmap_invasion_tooltip_telegraph_village_danger",
+                "event_type": "Music"
+            }
+        }
+    }
+}

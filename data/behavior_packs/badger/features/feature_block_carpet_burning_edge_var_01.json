@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_block_carpet_burning_edge_var_01"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_carpet_burning_edge_var01",
+    "may_attach_to": {
+      "bottom": [
+        "badger:block_burning_edge_var03",
+        "badger:block_burning_edge_var04",
+        "badger:block_burning_edge_var05"
+      ]
+    },
+    "may_replace": [
+      "minecraft:air"
+    ]
+  }
+}

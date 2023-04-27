@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_controller_world_single_place",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:world_single_spawn":{
+        "entity":"badger:spawner_controller_roaming_piglin_root"
+      },
+      "badger:tags": {
+        "tags": [
+          "roaming_piglin_spawner_single"
+        ]
+      }
+    }
+  }
+}

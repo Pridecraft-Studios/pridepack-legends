@@ -1,0 +1,95 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:block_hazard_geyser",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1.0,
+        "length": 1.0,
+        "height": 1.0
+      },
+      "badger:tags": {
+        "tags": [
+          "fx"
+        ]
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "max_range": 50,
+            "required_target_count": 1,
+            "include_tags": [],
+            "actions": [
+              "erupt"
+            ],
+            "alliance_rule_filter": "enemy"
+          },
+          {
+            "max_range": 50,
+            "required_target_count": 1,
+            "include_tags": [],
+            "actions": [
+              "erupt"
+            ],
+            "alliance_rule_filter": "friendly"
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "erupt",
+            "trigger": "on_erupt",
+            "range": {
+              "max_range": 50.0
+            },
+            "state_machine": {
+              "wind_up": 0.0,
+              "wind_down": 0.0,
+              "cooldown_time": 6.0,
+              "deactivates_on_cooldown": false,
+              "activation_time": 2.0
+            },
+            "shape_area_damage": {
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "any_team"
+              },
+              "damage": {
+                "damage_amount": 0.0
+              },
+              "knockback": {
+                "angle": 80,
+                "force": 30,
+                "falloff": {
+                  "min_radius": 0
+                }
+              },
+              "shape": {
+                "type": "cylinder",
+                "radius": 3.0,
+                "position": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "height": 3.0
+              }
+            }
+          }
+        ]
+      },
+      "badger:campaign_team": {
+        "team_tag": "campaign_team"
+      },
+      "badger:telemetry_category": {
+        "category_name": "Environmental"
+      }
+    }
+  }
+}

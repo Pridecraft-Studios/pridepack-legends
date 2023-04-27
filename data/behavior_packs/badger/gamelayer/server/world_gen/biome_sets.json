@@ -1,0 +1,421 @@
+{
+  "settings": {
+    "enabled": true,
+    "allow_biome_edge_placements": true,
+    "allow_inside_min_range_placements": true,
+    "allow_outside_max_range_placements": true,
+    "allow_outside_biomesets": true,
+    "allow_split_biomesets": false,
+    "biomeset_pixel_to_blockpos_multiplier": 200.0,
+    "biomeset_scoring_epsilon": 0.5,
+    "pick_weighted_biomes": true,
+    "placement_minimum_chunks_from_edge": 3,
+    "position_radius_scalar_range": [1.0, 1.0],
+    "filler_radius": 0.4,
+    "starting_place_retry_radius": 10,
+    "weight_float_to_int_multiplier": 1000,
+    "dev_logging_grid_resolution": 32
+  },
+  "biome_set_cards": [
+    {
+      "set": "biomeset:layout:fateful_land",
+      "biomes": [
+        {
+          "biome": "fateful_land_campaign",
+          "weight_range": [0.02, 0.6]
+        }
+      ],
+      // For fateful land (channel 1 biome sets), this controls how far from the world center the biome starts
+      "distance_scalar_range": [0.5, 1.5],
+      // Controls the radius of the fateful lands biome
+      "pixel_range": [8, 8],
+      "center_bias": [0.0, 0.0],
+      // Sets the biome set to override the normal world gen rules
+      "channel": 1
+    },
+    {
+      "set": "biomeset:layout:fateful_land_small",
+      "biomes": [
+        {
+          "biome": "fateful_land_pvp",
+          "weight_range": [1.0, 1.0]
+        }
+      ],
+      "distance_scalar_range": [0.5, 1.5],
+      "pixel_range": [5, 5],
+      "center_bias": [0, 0],
+      "channel": 1
+    },
+    {
+      "set": "biomeset:layout:forest",
+      "tags": ["campaign"],
+      "biomes": [
+        {
+          "biome": "forest",
+          "weight_range": [1.0, 1.0]
+        },
+        {
+          "biome": "forest_hills",
+          "weight_range": [0.5, 0.6]
+        }
+      ],
+      "distance_scalar_range": [0.8, 1.1],
+      "pixel_range": [30, 40],
+      "center_bias": [0.5, 0.5]
+    },
+    {
+      "set": "biomeset:layout:forest_small",
+      "tags": ["pvp"],
+      "biomes": [
+        {
+          "biome": "forest",
+          "weight_range": [1.0, 1.0]
+        },
+        {
+          "biome": "forest_hills",
+          "weight_range": [1.0, 1.0]
+        }
+      ],
+      "distance_scalar_range": [0.7, 0.9],
+      "pixel_range": [2, 3],
+      "center_bias": [0.0, 0.0]
+    },
+    {
+      "set": "biomeset:layout:grasslands",
+      "tags": ["campaign"],
+      "biomes": [
+        {
+          "biome": "grasslands",
+          "weight_range": [1.5, 2.0]
+        }
+      ],
+      "distance_scalar_range": [0.8, 1.1],
+      "pixel_range": [30, 40],
+      "center_bias": [0.5, 0.5]
+    },
+    {
+      "set": "biomeset:layout:grasslands_small",
+      "tags": ["pvp"],
+      "biomes": [
+        {
+          "biome": "grasslands",
+          "weight_range": [1.0, 1.0]
+        }
+      ],
+      "distance_scalar_range": [0.7, 0.9],
+      "pixel_range": [2, 3],
+      "center_bias": [0.0, 0.0]
+    },
+    {
+      "set": "biomeset:layout:frostlands",
+      "tags": ["campaign"],
+      "biomes": [
+        {
+          "biome": "frostlands",
+          "weight_range": [1.0, 1.0]
+        }
+      ],
+      "distance_scalar_range": [0.8, 1.1],
+      "pixel_range": [30, 40],
+      "center_bias": [0.5, 0.5]
+    },
+    {
+      "set": "biomeset:layout:frostlands_small",
+      "tags": ["pvp"],
+      "biomes": [
+        {
+          "biome": "frostlands",
+          "weight_range": [1.0, 1.0]
+        }
+      ],
+      "distance_scalar_range": [0.7, 0.9],
+      "pixel_range": [2, 3],
+      "center_bias": [0.5, 0.5]
+    },
+    {
+      "set": "biomeset:layout:drylands",
+      "tags": ["campaign"],
+      "biomes": [
+        {
+          "biome": "drylands",
+          "weight_range": [1.0, 1.0]
+        }
+      ],
+      "distance_scalar_range": [0.8, 1.1],
+      "pixel_range": [30, 40],
+      "center_bias": [0.5, 0.5]
+    },
+    {
+      "set": "biomeset:layout:drylands_small",
+      "tags": ["pvp"],
+      "biomes": [
+        {
+          "biome": "drylands",
+          "weight_range": [1.0, 1.0]
+        }
+      ],
+      "distance_scalar_range": [0.7, 0.9],
+      "pixel_range": [2, 3],
+      "center_bias": [0.0, 0.0]
+    },
+    {
+      "set": "biomeset:layout:mountains",
+      "tags": ["campaign"],
+      "biomes": [
+        {
+          "biome": "mountain_parent_valleys",
+          "weight_range": [1.0, 1.0]
+        },
+        {
+          "biome": "ice_mountains",
+          "weight_range": [0.2]
+        }
+      ],
+      "distance_scalar_range": [0.8, 1.1],
+      "pixel_range": [30, 40],
+      "center_bias": [0.5, 0.5]
+    },
+    {
+      "set": "biomeset:layout:mountains_small",
+      "tags": ["pvp"],
+      "biomes": [
+        {
+          "biome": "mountain_parent_valleys",
+          "weight_range": [1.0, 1.0]
+        },
+        {
+          "biome": "ice_mountains",
+          "weight_range": [0.2]
+        }
+      ],
+      "distance_scalar_range": [0.7, 0.9],
+      "pixel_range": [2, 3],
+      "center_bias": [0.3, 0.3]
+    },
+    {
+      "set": "biomeset:layout:jungle",
+      "tags": ["campaign"],
+      "biomes": [
+        {
+          "biome": "jungle",
+          "weight_range": [1.0, 1.0]
+        }
+      ],
+      "distance_scalar_range": [0.8, 1.1],
+      "pixel_range": [30, 40],
+      "center_bias": [0.5, 0.5]
+    },
+    {
+      "set": "biomeset:layout:jungle_small",
+      "tags": ["pvp"],
+      "biomes": [
+        {
+          "biome": "jungle",
+          "weight_range": [1.0, 1.0]
+        }
+      ],
+      "distance_scalar_range": [0.7, 0.9],
+      "pixel_range": [2, 3],
+      "center_bias": [0.5, 0.5]
+    },
+    {
+      "set": "biomeset:layout:brokenlands",
+      "tags": ["campaign"],
+      "biomes": [
+        {
+          "biome": "brokenlands",
+          "weight_range": [1.0, 1.0]
+        }
+      ],
+      "distance_scalar_range": [0.8, 1.1],
+      "pixel_range": [30, 40],
+      "center_bias": [0.5, 0.5]
+    },
+    {
+      "set": "biomeset:layout:brokenlands_small",
+      "tags": ["pvp"],
+      "biomes": [
+        {
+          "biome": "brokenlands",
+          "weight_range": [1.0, 1.0]
+        }
+      ],
+      "distance_scalar_range": [0.7, 0.9],
+      "pixel_range": [2, 3],
+      "center_bias": [0.5, 0.5]
+    },
+    {
+      "set": "biomeset:outbounds",
+      "biomes": [
+        {
+          "biome": "outbounds_ocean",
+          "weight_range": [0.05, 0.05]
+        }
+      ],
+      "pixel_range": [20, 20]
+    }
+  ],
+  "additional_biome_sets": [
+    {
+      "set": "biomeset:fateful_land",
+      "biomes": ["fateful_land_campaign"]
+    },
+    {
+      "set": "biomeset:poi_overworld",
+      "biomes": [
+        "brokenlands",
+        "grasslands",
+        "forest",
+        "jungle",
+        "mountain_parent_valleys",
+        "extreme_hills_plus_trees"
+      ]
+    },
+    {
+      "set": "biomeset:poi_grassland",
+      "biomes": ["grasslands"]
+    },
+    {
+      "set": "biomeset:poi_frostlands",
+      "biomes": ["frostlands", "frostlands_hills", "frostlands_springs"]
+    },
+    {
+      "set": "biomeset:poi_mob_alliance_creeper",
+      "biomes": [
+        "brokenlands",
+        "brokenlands_sanddune"
+      ]
+    },
+    {
+      "set": "biomeset:village_desert",
+      "biomes": ["brokenlands_valleys"]
+    },
+    {
+      "set": "biomeset:village_drylands",
+      "biomes": [
+        "drylands",
+        "drylands_hoodoo_large",
+        "drylands_hoodoo_medium",
+        "drylands_hoodoo_small"
+      ]
+    },
+    {
+      "set": "biomeset:village_plains",
+      "biomes": ["grasslands"]
+    },
+    {
+      "set": "biomeset:village_forest",
+      "biomes": ["forest", "forest_hills"]
+    },
+    {
+      "set": "biomeset:village_frostlands",
+      "biomes": ["frostlands", "frostlands_hills", "frostlands_springs"]
+    },
+    {
+      "set": "biomeset:village_jungle",
+      "biomes": ["jungle", "jungle_hills", "jungle_edge"]
+    },
+    {
+      "set": "biomeset:village_generic",
+      "biomes": [
+        "forest",
+        "forest_autumn",
+        "drylands",
+        "frostlands",
+        "frostlands_hills",
+        "brokenlands",
+        "brokenlands_valleys",
+        "brokenlands_sanddune",
+        "grasslands"
+      ]
+    },
+    {
+      "set": "biomeset:piglin_base",
+      "biomes": [
+        "mountain_parent_valleys",
+        "ice_mountains",
+        "brokenlands",
+        "brokenlands_sanddune",
+        "brokenlands_valleys",
+        "drylands",
+        "extreme_hills_plus_trees",
+        "forest",
+        "forest_hills",
+        "grasslands",
+        "frostlands_hills",
+        "frostlands",
+        "frostlands_springs",
+        "jungle",
+        "jungle_hills"
+      ]
+    },
+    {
+      "set": "biomeset:piglin_attack",
+      "biomes": ["grasslands"]
+    },
+    {
+      "set": "biomeset:piglin_switch",
+      "biomes": ["drylands"]
+    },
+    {
+      "set": "biomeset:piglin_useless",
+      "biomes": ["frostlands", "frostlands_hills", "frostlands_springs"]
+    },
+    {
+      "set": "biomeset:piglin_average",
+      "biomes": ["forest", "forest_hills"]
+    },
+    {
+      "set": "biomeset:piglin_defend",
+      "biomes": ["mountain_parent_valleys", "extreme_hills_plus_trees"]
+    },
+    {
+      "set": "biomeset:unnatural_landmark_01",
+      "biomes": ["forest", "forest_hills"]
+    },
+    {
+      "set": "biomeset:poi_ally_01",
+      "biomes": ["grasslands"]
+    },
+    {
+      "set": "biomeset:poi_ally_02",
+      "biomes": ["extreme_hills_plus_trees", "mountain_parent_valleys"]
+    },
+    {
+      "set": "biomeset:poi_ally_03",
+      "biomes": [
+        "frostlands",
+        "frostlands_hills",
+        "frostlands_springs"
+      ]
+    },
+    {
+      "set": "biomeset:poi_ally_04",
+      "biomes": ["drylands"]
+    },
+    {
+      "set": "biomeset:poi_ally_05",
+      "biomes": ["brokenlands"]
+    },
+    {
+      "set": "biomeset:poi_mount_01",
+      "biomes": ["drylands"]
+    },
+    {
+      "set": "biomeset:poi_mount_03",
+      "biomes": ["jungle"]
+    },
+    {
+      "set": "biomeset:poi_mount_04",
+      "biomes": ["extreme_hills_plus_trees", "mountain_parent_valleys"]
+    },
+    {
+      "set": "biomeset:zombie_mob_alliance",
+      "biomes": ["jungle"]
+    },
+    {
+      "set": "biomeset:skeleton_mob_alliance",
+      "biomes": ["frostlands", "frostlands_hills", "frostlands_springs"]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_bullrush_clump_01",
+        20.0
+      ],
+      [
+        "badger:feature_bullrush_clump_02",
+        20.0
+      ],
+      [
+        "badger:feature_bullrush_clump_03",
+        20.0
+      ],
+      [
+        "badger:feature_grassrush_clump_01",
+        60.0
+      ],
+      [
+        "badger:feature_plant_fateful_wildflower_01",
+        10.0
+      ],
+      [
+        "badger:feature_plant_fateful_wildflower_02",
+        10.0
+      ],
+      [
+        "badger:feature_plant_fateful_wildflower_03",
+        10.0
+      ],
+      [
+        "badger:feature_plant_fateful_daisy_01",
+        8.0
+      ],
+      [
+        "badger:feature_plant_fateful_daisy_02",
+        8.0
+      ],
+      [
+        "badger:feature_plant_fateful_daisy_03",
+        8.0
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_fateful_land_shore_weighted"
+    }
+  }
+}

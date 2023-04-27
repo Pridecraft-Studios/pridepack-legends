@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_grasslands_cluster_riverbank_aggregate"
+    },
+    "features": [
+      "badger:feature_grasslands_cluster_riverbank_boulder_scatter",
+      "badger:feature_grasslands_cluster_riverbank_shrub_scatter",
+      "badger:feature_grasslands_cluster_riverbank_tree_scatter"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:status_effect_shield_tower_vulnerable",
+			"runtime_identifier": "badger:status_effect"
+		},
+		"components": {
+			"badger:status": {
+				"applied_name": "shield_tower_vulnerable",
+				"default_resistance": {
+					"resisted": false,
+					"time": 1,
+					"resistance_persist_time": -0.1
+				}
+			},
+			"badger:negate_status":{
+				"negated_status":[ "shield_tower_invincible" ]
+			}	
+		}
+	}
+}

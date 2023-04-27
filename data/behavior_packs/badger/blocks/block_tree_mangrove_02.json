@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_tree_mangrove_02", 
+      "material": "badger_leaves"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube", 
+        "camera_collision": false, 
+        "directional_texture": false, 
+        "directional_shape": false, 
+        "connection_family": "block_tree_mangrove_01", 
+        "connect_to_family": "block_tree_mangrove_01"
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "gatherable_wood_sml"
+        ]
+      }, 
+      "badger:terrain_type": {
+        "terrain": "grass"
+      }
+    }
+  }
+}

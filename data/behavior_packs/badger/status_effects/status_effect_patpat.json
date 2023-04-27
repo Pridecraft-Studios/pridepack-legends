@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:status_effect_patpat",
+			"runtime_identifier": "badger:status_effect"
+		},
+		"components": {
+			"badger:status": {
+				"applied_name": "patpat",
+				"default_resistance": {
+					"resisted": false,
+					"time": 3.5,
+					"resistance_persist_time": -1
+				}
+			},
+			"badger:granted_actions": {
+				"actions": [
+				  {
+					"name": "pat_pat",
+					"range": {
+					  "max_range": 1.5
+					}
+				  }
+				]
+			},
+			"badger:disables_movement": {
+			}	
+		}
+	}
+}

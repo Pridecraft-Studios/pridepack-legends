@@ -1,0 +1,85 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:totem_unlock_mob_alliance",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:totem_unlock_mob_alliance",
+        "game_mode": "campaign"
+      },
+      "badger:objective_health_bar": {
+        "max_visible_range": 100,
+        "priority": 1,
+        "type": "mob_alliance"
+      },
+      "badger:disable_by_health": {
+        "health_disabled_percent": 0.0,
+        "health_enabled_percent": 0.01,
+        "cine_id": "mob00_c01_mob_disabled",
+        "block_conversion_cinematic_delay": 1.00,
+        "block_conversion_states": {
+          "disabled_state": {
+            "modifiers": [
+              {
+                "badger:block_alabaster_moss_top_side": "badger:block_alabaster_moss_top_side_dead"
+              },
+              {
+                "badger:block_alabaster_mossy": "badger:block_alabaster_mossy_dead"
+              },
+              {
+                "badger:block_prismarine_raw": "badger:block_prismarine_raw_disabled"
+              },
+              {
+                "badger:block_slab_prismarine_moss": "badger:block_slab_prismarine_moss_disabled"
+              },
+              {
+                "badger:block_deco_vine_ivy": "badger:block_deco_vine_ivy_dead"
+              },
+              {
+                "badger:block_deco_allegiance_cage": "badger:block_deco_allegiance_cage_disabled"
+              },
+              {
+                "badger:block_deco_allegiance_banners": "badger:block_deco_allegiance_banners_disabled"
+              },
+              {
+                "badger:block_upright_prismarine_moss": "badger:block_upright_prismarine_moss_disabled"
+              },
+              {
+                "badger:block_deco_plant_fategrass_03": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_foxglove_04": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_foxglove_03": "minecraft:air"
+              },
+              {
+                "badger:block_column_prismarine_carved_bottom_light": "badger:block_column_prismarine_carved_bottom_light_disabled"
+              },
+              {
+                "badger:block_column_prismarine_carved_top": "badger:block_column_prismarine_carved_top_disabled"
+              },
+              {
+                "badger:block_deco_vine_ivy_var01": "badger:block_deco_vine_ivy_dead"
+              }
+            ],
+            "duration_percentage": 0.5,
+            "top_to_bottom": true
+          },
+          "enabled_state": {
+            "reverse_existing_modifiers": true,
+            "reversal_duration_percentage": 0.5
+          }
+        }
+      },
+      "badger:offline_traits": {
+        "disabled_by_health_components": [
+        ]
+      }
+    }
+  }
+}

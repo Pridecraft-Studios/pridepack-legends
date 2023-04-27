@@ -1,0 +1,120 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:entity_struct_nether_spreader",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "mushroom_data": {
+            "function": "Entity_Struct"
+        },
+        "components": {
+            "badger:aabb": {
+                "width": 3.0,
+                "length": 3.0,
+                "height": 8.3
+            },
+            "badger:tags": {
+                "tags": [
+                    "block",
+                    "netherSpreader"
+                ]
+            },
+            "badger:target_actions": {
+                "actions": [
+                    {
+                        "name": "spore_aoe_enemy",
+                        "trigger": "on_fire",
+                        "on_hit_target_trigger": "on_piglin_nether_spreader_aoe_attack_hit",
+                        "self_trigger": true,
+                        "state_machine": {
+                            "wind_up": 5.5,
+                            "wind_down": 5.0,
+                            "pre_activation_sync_time": 0.1
+                        },
+                        "transfer_activation": [
+                            "spore_aoe_friendly"
+                        ],
+                        "shape_area_damage": {
+                            "shape": {
+                                "type": "sphere",
+                                "radius": 15,
+                                "position": [
+                                    0.0,
+                                    1.0,
+                                    0.0
+                                ]
+                            },
+                            "collision": {
+                                "include_tags": ["mob"],
+                                "exclude_tags": [],
+                                "alliance_rule_filter": "enemy"
+                            },
+                            "knockback": {
+                                "angle": 45,
+                                "force": 15
+                            },
+                            "falloff": {
+                                "min_angle": 10,
+                                "min_radius": 8,
+                                "max_radius": 16
+                            },
+                            "damage": {
+                                "damage_amount": 1,
+                                "damage_types": [
+                                    "spore"
+                                ]
+                            },
+                            "apply_status": {
+                                "spore_damaged": {
+                                    "strength": 0.3
+                                },
+                                "engaged": {
+                                    "strength": 1.0
+                                  }
+                            }
+                        }
+                    },
+                    {
+                        "name": "spore_aoe_friendly",
+                        "state_machine": {
+                            "wind_up": 5.5,
+                            "wind_down": 5.0
+                        },
+                        "shape_area_damage": {
+                            "shape": {
+                                "type": "sphere",
+                                "radius": 15,
+                                "position": [
+                                    0.0,
+                                    1.0,
+                                    0.0
+                                ]
+                            },
+                            "collision": {
+                                "include_tags": ["mob"],
+                                "exclude_tags": [],
+                                "alliance_rule_filter": "friendly"
+                            },
+                            "damage": {
+                                "damage_amount": 0,
+                                "damage_types": []
+                            },
+                            "apply_status": {
+                                "spore_healed": {
+                                    "strength": 2
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "badger:suppress_target_action": {
+                "min_time": 5,
+                "max_time": 10
+            },
+            "badger:exclude_from_spatial_partition": {}
+        }
+    }
+}

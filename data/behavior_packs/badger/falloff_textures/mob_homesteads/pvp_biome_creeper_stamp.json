@@ -1,0 +1,24 @@
+{
+
+  "id": "pvp_biome_creeper_stamp",
+
+  "textures": [
+    {
+      "texture": "mob_homesteads/pvp_biome_creeper_stamp",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+
+
+  "biome_map": [
+    {
+      "biome": "brokenlands_ridge",
+      "value": 131
+    }
+
+  ]
+}

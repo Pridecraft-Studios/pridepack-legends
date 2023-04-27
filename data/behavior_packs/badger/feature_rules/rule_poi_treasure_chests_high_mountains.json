@@ -1,0 +1,49 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_poi_treasure_chests_high_mountains",
+      "places_feature": "badger:feature_poi_loot_treasure_chest_mountain"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mountain_peaks"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mountain_summit"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "early_out": "v.scatteredy < 190 || math.mod(math.floor(v.originx / 16), 2) != 0 || math.mod(math.floor(v.originz / 16), 2) != 0",
+      "iterations": 1,
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          4,
+          11
+        ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          4,
+          11
+        ]
+      },
+      "scatter_chance":"100"
+    }
+  }
+}

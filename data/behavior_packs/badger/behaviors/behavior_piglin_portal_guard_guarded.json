@@ -1,0 +1,685 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_piglin_portal_guard_guarded",
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 3.0
+      },
+      "badger:wander": {
+        "wander_frequency": 0.2,
+        "wander_radius": 10
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Player Targeting
+          {
+            "name": "portal_guard_player_ball_swing",
+            "max_range": 5,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "required_target_count": 1,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "wall",
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_4_ball_drop",
+              "melee_attack_4_angle_135",
+              "melee_attack_4_angle_45",
+              "melee_attack_4_angle_305",
+              "melee_attack_4_angle_225"
+            ]
+          },
+          {
+            "name": "portal_guard_player_firing_blast",
+            "min_range": 7,
+            "max_range": 14,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "required_target_count": 1,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "walls",
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_3",
+              "melee_attack_3_firing_blast",
+              "melee_attack_3_first_pull",
+              "melee_attack_3_second_pull"
+            ]
+          },
+          //Crowd Control
+          {
+            "name": "portal_guard_ball_swing",
+            "max_range": 5,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "required_target_count": 3,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "wall",
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_4_ball_drop",
+              "melee_attack_4_angle_135",
+              "melee_attack_4_angle_45",
+              "melee_attack_4_angle_305",
+              "melee_attack_4_angle_225"
+            ]
+          },
+          {
+            "name": "portal_guard_firing_blast",
+            "min_range": 7,
+            "max_range": 14,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "required_target_count": 2,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "walls",
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_3",
+              "melee_attack_3_firing_blast",
+              "melee_attack_3_first_pull",
+              "melee_attack_3_second_pull"
+            ]
+          },
+          //Support Golem Targeting
+          {
+            "name": "portal_guard_support_melee",
+            "max_range": 10,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "support"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "wall",
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_1"
+            ]
+          },
+          //Mob targeting
+          {
+            "name": "portal_guard_mob_melee",
+            "max_range": 10,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mobs"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "wall",
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_1"
+            ]
+          },
+          //General targeting
+          {
+            "name": "portal_guard_default_melee",
+            "max_range": 10,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "animal",
+              "buildable_combat",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_1"
+            ]
+          },
+          //Approach
+          {
+            "name": "portal_guard_target_approach",
+            "max_range": 35,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "sc": 1
+            },
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "animal",
+              "buildable_combat",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "portal_guard_approach"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "melee_attack_1",
+            "trigger": "on_melee_attack_1",
+            "on_hit_target_trigger": "on_melee_attack_hit",
+            "range": {
+              "max_range": 2.0
+            },
+            "state_machine": {
+              "wind_up": 1.1,
+              "wind_down": 3.7,
+              "cooldown_time": 0.5,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 170,
+                "radius": 5.0,
+                "rotation": 0,
+                "thickness": 2.2,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.65
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 20,
+                "damage_types": [
+                  "crush",
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "offset": [
+                  0,
+                  0,
+                  -2
+                ],
+                "angle": 40,
+                "force": 22
+              }
+            }
+          },
+          {
+            "name": "melee_attack_3",
+            "trigger": "on_melee_attack_3",
+            "on_hit_target_trigger": "on_melee_attack_hit",
+            "range": {
+              "max_range": 12
+            },
+            "predictive_windup": false,
+            "state_machine": {
+              "wind_up": 4.0,
+              "wind_down": 5.1,
+              "cooldown_time": 12.0,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 5.0,
+                "position": [
+                  0.0,
+                  1.0,
+                  12.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 20,
+                "damage_types": [
+                  "crush",
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 20
+              }
+            }
+          },
+          {
+            "name": "melee_attack_3_firing_blast",
+            "range": {
+              "max_range": 12
+            },
+            "predictive_windup": false,
+            "state_machine": {
+              "wind_up": 3.0,
+              "wind_down": 6.1,
+              "cooldown_time": 12.0,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 180,
+                "radius": 4.0,
+                "thickness": 2.2,
+                "rotation": 0,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 30,
+                "damage_types": [
+                  "crush",
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 18
+              }
+            }
+          },
+          {
+            "name": "melee_attack_3_first_pull",
+            "on_hit_target_trigger": "on_melee_attack_hit",
+            "range": {
+              "max_range": 12
+            },
+            "predictive_windup": false,
+            "state_machine": {
+              "wind_up": 5.8,
+              "wind_down": 3.3,
+              "cooldown_time": 12.0,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 30,
+                "radius": 8.0,
+                "thickness": 2.2,
+                "rotation": 180,
+                "position": [
+                  0.0,
+                  1.0,
+                  13.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 20,
+                "damage_types": [
+                  "crush",
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "angle": 75,
+                "force": 18
+              }
+            }
+          },
+          {
+            "name": "melee_attack_3_second_pull",
+            "on_hit_target_trigger": "on_melee_attack_hit",
+            "range": {
+              "max_range": 12
+            },
+            "predictive_windup": false,
+            "state_machine": {
+              "wind_up": 6.6,
+              "wind_down": 2.5,
+              "cooldown_time": 12.0,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 70,
+                "radius": 7.0,
+                "thickness": 2.2,
+                "rotation": 180,
+                "position": [
+                  0.0,
+                  1.0,
+                  8.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 20,
+                "damage_types": [
+                  "crush",
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 18
+              }
+            }
+          },
+          {
+            "name": "melee_attack_4_ball_drop",
+            "on_hit_target_trigger": "on_melee_attack_hit",
+            "range": {
+              "max_range": 1.5
+            },
+            "state_machine": {
+              "wind_up": 1.2,
+              "wind_down": 5.1,
+              "cooldown_time": 20.0,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 2.5,
+                "position": [
+                  -1.0,
+                  1.0,
+                  -3.5
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 30,
+                "damage_types": [
+                  "crush",
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 18
+              }
+            }
+          },
+          {
+            "name": "melee_attack_4_angle_135",
+            "trigger": "on_melee_attack_4",
+            "on_hit_target_trigger": "on_melee_attack_hit",
+            "range": {
+              "max_range": 1.5
+            },
+            "state_machine": {
+              "wind_up": 3.2,
+              "wind_down": 3.1,
+              "cooldown_time": 20.0,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 6.0,
+                "thickness": 2.2,
+                "rotation": 135,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 20,
+                "damage_types": [
+                  "crush",
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 20
+              }
+            }
+          },
+          {
+            "name": "melee_attack_4_angle_45",
+            "range": {
+              "max_range": 1.5
+            },
+            "state_machine": {
+              "wind_up": 3.4,
+              "wind_down": 2.9,
+              "cooldown_time": 20.0,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 6.0,
+                "thickness": 2.2,
+                "rotation": 45,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 20,
+                "damage_types": [
+                  "crush",
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 20
+              }
+            }
+          },
+          {
+            "name": "melee_attack_4_angle_305",
+            "range": {
+              "max_range": 1.5
+            },
+            "state_machine": {
+              "wind_up": 3.6,
+              "wind_down": 2.7,
+              "cooldown_time": 20.0,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 6.0,
+                "thickness": 2.2,
+                "rotation": 305,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 20,
+                "damage_types": [
+                  "crush",
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 20
+              }
+            }
+          },
+          {
+            "name": "melee_attack_4_angle_225",
+            "on_hit_target_trigger": "on_melee_attack_hit",
+            "range": {
+              "max_range": 1.5
+            },
+            "state_machine": {
+              "wind_up": 3.8,
+              "wind_down": 2.5,
+              "cooldown_time": 20.0,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 6.0,
+                "thickness": 2.2,
+                "rotation": 225,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 20,
+                "damage_types": [
+                  "crush",
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 20
+              }
+            }
+          },
+          {
+            "name": "portal_guard_approach",
+            "range": {
+              "max_range": 2.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

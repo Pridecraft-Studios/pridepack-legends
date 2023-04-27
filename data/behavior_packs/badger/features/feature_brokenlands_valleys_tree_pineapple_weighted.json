@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_brokenlands_tree_pineapple_01", 15.0],
+      ["badger:feature_brokenlands_tree_pineapple_02", 10.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_brokenlands_valleys_tree_pineapple_weighted"
+    }
+  }
+}

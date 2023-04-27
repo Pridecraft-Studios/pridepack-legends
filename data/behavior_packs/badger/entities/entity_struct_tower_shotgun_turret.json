@@ -1,0 +1,247 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_tower_shotgun_turret",
+      "is_summonable": true,
+      "runtime_identifier": "badger:mob"
+    },
+    "mushroom_data": {
+      "role": "Building",
+      "function": "Military",
+      "type": "Player"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1,
+        "height": 1
+      },
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          // mob targeting
+          {
+            "max_range": 25,
+            "include_tags": [
+              "mob"
+            ],
+            "enable_with_line_of_sight": true,
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "turret_1",
+              "turret_2",
+              "turret_3"
+            ]
+          },
+          // structure targeting
+          {
+            "max_range": 25,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "enable_with_line_of_sight": true,
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "turret_1",
+              "turret_2",
+              "turret_3"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "turret_1",
+            "trigger": "on_close",
+            "on_hit_target_trigger": "on_tower_shotgun_ranged_attack_hit",
+            "range": {
+              "min_range": 0,
+              "max_range": 25
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.5,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 0,
+              "max_range": 3,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_archer_tower_arrow",
+              "position_offsets_from_center": [
+                [
+                  2,
+                  0.5,
+                  0
+                ],
+                [
+                  -2,
+                  0.5,
+                  0
+                ],
+                [
+                  0,
+                  0.5,
+                  2
+                ],
+                [
+                  0,
+                  0.5,
+                  -2
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "siege_projectile"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 12.5,
+                "damage_types": [
+                  "ranged"
+                ]
+              }
+            }
+          },
+          {
+            "name": "turret_2",
+            "trigger": "on_close_sound",
+            "on_hit_target_trigger": "on_tower_shotgun_ranged_attack_hit",
+            "range": {
+              "min_range": 0,
+              "max_range": 25
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.5,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 0,
+              "max_range": 3,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_archer_tower_arrow",
+              "position_offsets_from_center": [
+                [
+                  2,
+                  0.5,
+                  0.5
+                ],
+                [
+                  -2,
+                  0.5,
+                  -0.5
+                ],
+                [
+                  0.5,
+                  0.5,
+                  2
+                ],
+                [
+                  -0.5,
+                  0.5,
+                  -2
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "siege_projectile"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 12.5,
+                "damage_types": [
+                  "ranged"
+                ]
+              }
+            }
+          },
+          {
+            "name": "turret_3",
+            "trigger": "on_close",
+            "on_hit_target_trigger": "on_tower_shotgun_ranged_attack_hit",
+            "range": {
+              "min_range": 0,
+              "max_range": 25
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.5,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 0,
+              "max_range": 3,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_archer_tower_arrow",
+              "position_offsets_from_center": [
+                [
+                  2,
+                  0.5,
+                  -0.5
+                ],
+                [
+                  -2,
+                  0.5,
+                  0.5
+                ],
+                [
+                  -0.5,
+                  0.5,
+                  2
+                ],
+                [
+                  0.5,
+                  0.5,
+                  -2
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "siege_projectile"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 12.5,
+                "damage_types": [
+                  "ranged"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buldableChild",
+          "block"
+        ]
+      },
+      "badger:template": [
+        "badger:template_structure_child_entity_player"
+      ],
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

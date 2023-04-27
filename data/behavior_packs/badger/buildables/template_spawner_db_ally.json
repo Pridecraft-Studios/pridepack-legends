@@ -1,0 +1,39 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:template_spawner_db_ally",
+            "runtime_identifier": "badger:buildable",
+            "is_summonable": false
+        },
+        "mushroom_data": {
+            "function": "Military",
+            "type": "Piglin"
+        },
+        "components": {
+            "badger:buildable_requirement": {},
+            "badger:buildable_structure": {
+                "nbt_file": "spawner_db_ally_mobs",
+                "build_time": 0
+            },
+            "badger:damage_receiver": {
+                "auto_generate_shape": "aabb"
+            },
+            "badger:spawner_rules": {
+                "distance_rule": {
+                    "distance_data": {
+                        "max_distance": 125.0,
+                        "alliance_rule": "friendly",
+                        "tag_filter": {
+                            "include_tags": ["player"],
+                            "exclude_tags": []
+                        }
+                    }
+                }
+            },
+            "badger:offline_traits": {
+                "construction_disabled_components": ["badger:buildable_spawner"]
+            }
+        }
+    }
+}

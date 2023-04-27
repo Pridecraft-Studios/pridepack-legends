@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_block_mud_02"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_pigsty_mud_02",
+    "may_replace": [
+      "minecraft:grass"
+    ]
+  }
+}

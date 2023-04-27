@@ -1,0 +1,158 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_mob",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.7,
+        "height": 1.9
+      },
+      "badger:fast_travel": {
+        "windup_time": 4.0,
+        "cooldown_time": 3.0
+      },
+      "badger:interacts_with_blocks": {},
+      "badger:reports_hit_reaction": {},
+      "badger:heartbeat": {
+        "min_expire_time": 240
+      },
+      "badger:movement": {
+        "move_speed": 2.5,
+        "air_control_factor": 0.03
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": true,
+        "auto_step": 4.1,
+        "interpolation_speed": 12
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 5
+      },
+      "badger:suppress_target_action": {
+        "max_time": 2
+      },
+      "badger:loot": {
+        "table": "common_mob"
+      },
+      "badger:navigation": {
+        "avoidance_lookahead": 10.0,
+        "fall_distance": 7,
+        "avoid_block_damage": true,
+        "ignore_solids_rule": "same_team"
+      },
+      "badger:tags": {
+        "tags": [
+          "mob",
+          "luredirect",
+          "do_not_test"
+        ]
+      },
+      "badger:health": {
+        "max_health": 15
+      },
+      "badger:health_regeneration": {
+        "attack_cooldown_seconds": 5.0,
+        "regen_cooldown_seconds": 2,
+        "health_regen_amount": 1.5,
+        "alliance_rule": "enemy",
+        "tag_filter": {
+          "include_tags": [],
+          "exclude_tags": []
+        }
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder"
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 1.5
+      },
+      "badger:fall_damage": {
+        "min_damage_distance": 12,
+        "min_damage": 1.0
+      },
+      "badger:pop_capped": {},
+      "badger:spawn_tracking": {},
+      "badger:lured": {
+        "default_configuration": {
+          "leash_range": 20.0,
+          "return_range": 10.0,
+          "arrive_range": 5.0,
+          "attack_move_range": 20.0
+        },
+        "configurations": [
+          {
+            "config_id": "hero",
+            "leash_range": 15.0,
+            "return_range": 5.0,
+            "attack_move_range": 9.0
+          },
+          {
+            "config_id": "force_move",
+            "leash_range": 600.0,
+            "return_range": 15.0,
+            "arrive_range": 5.0,
+            "attack_move_range": 15.0,
+            "on_lured_buffs": [
+              "badger:buff_directed"
+            ],
+            "tutorial_treat_as_direct": true,
+            "remove_lured_buffs_on_engagement": true,
+            "recallable": true
+          },
+          {
+            "config_id": "charge",
+            "leash_range": 600.0,
+            "return_range": 15.0,
+            "arrive_range": 5.0,
+            "attack_move_range": 15.0,
+            "on_lured_buffs": [
+              "badger:buff_directed"
+            ],
+            "tutorial_treat_as_direct": true,
+            "remove_lured_buffs_on_engagement": true,
+            "recallable": true
+          },
+          {
+            "config_id": "quick_attack",
+            "leash_range": 600.0,
+            "return_range": 15.0,
+            "arrive_range": 5.0,
+            "attack_move_range": 15.0,
+            "on_lured_buffs": [
+              "badger:buff_directed"
+            ],
+            "tutorial_treat_as_direct": true,
+            "remove_lured_buffs_on_engagement": true,
+            "recallable": true
+          },
+          {
+            "config_id": "hero_lure_stop",
+            "leash_range": 15.0,
+            "return_range": 5.0,
+            "arrive_range": 5.0,
+            "attack_move_range": 0.0
+          }
+        ]
+      },
+      "badger:damage_receiver_material": {
+        "material": "mob"
+      },
+      "badger:telemetry_category": {
+        "category_name": "Player Unit"
+      },
+      "badger:dynamic_scale_interpolate": {
+        "interpolate_time": 1
+      },
+      "badger:template": [
+        "badger:component_difficulty_modifiers_player"
+      ]
+    }
+  }
+}

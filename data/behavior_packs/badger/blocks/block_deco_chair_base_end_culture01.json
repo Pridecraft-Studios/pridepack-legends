@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_chair_base_end_culture01",
+      "material": "badger_wood"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty",
+        "directional_texture": false,
+        "directional_shape": true,
+        "collision_shape": "slab"
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }
+    }
+  }
+}

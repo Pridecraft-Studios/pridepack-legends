@@ -1,0 +1,127 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:tower_child_turret",
+      "runtime_identifier": "badger:buildable"
+    },
+    "mushroom_data": {
+      "role": "Building",
+      "function": "Military",
+      "type": "Player"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1,
+        "height": 19
+      },
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "name": "tower_mob_turret",
+            "max_range": 45.0,
+            "include_tags": [
+              "mob"
+            ],
+            "enable_with_line_of_sight": true,
+            "exclude_tags": [
+              "donotattack",
+              "buildable_combat",
+              "structure"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "turret"
+            ]
+          },
+          {
+            "name": "tower_enemy_turret",
+            "max_range": 45.0,
+            "include_tags": [],
+            "enable_with_line_of_sight": true,
+            "exclude_tags": [
+              "donotattack",
+              "mob",
+              "player",
+              "piglin_wall",
+              "siege_projectile"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "turret"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "turret",
+            "trigger": "on_arrow_shoot",
+            "on_hit_target_trigger": "on_tower_arrow_ranged_attack_hit",
+            "range": {
+              "min_range": 0,
+              "max_range": 45
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.5,
+              "deactivates_on_cooldown": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_archer_tower_arrow",
+              "position_offsets_from_center": [
+                [
+                  -2.0,
+                  9.5,
+                  0
+                ],
+                [
+                  2.0,
+                  9.5,
+                  0
+                ],
+                [
+                  0,
+                  9.5,
+                  -2.0
+                ],
+                [
+                  0,
+                  9.5,
+                  2.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "siege_projectile"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 12.5,
+                "damage_types": [
+                  "ranged"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "block",
+          "buildable",
+          "buildable_combat"
+        ]
+      },
+      "badger:template": [
+        "badger:template_structure_child_entity_player"
+      ]
+    }
+  }
+}

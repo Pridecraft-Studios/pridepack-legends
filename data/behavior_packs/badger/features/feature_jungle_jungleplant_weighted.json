@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_plant_jungleplant_01",
+        10.0
+      ],
+      [
+        "badger:feature_plant_jungleplant_02",
+        10.0
+      ],
+      [
+        "badger:feature_plant_jungleplant_03",
+        10.0
+      ],
+      [
+        "badger:feature_plant_jungleplant_04",
+        10.0
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_jungle_jungleplant_weighted"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_debuff_poison_01"
+    },
+    "structure_name": "nature/dot_poi_01",
+    "placement_range": {
+      "x": [0, 1],
+      "z": [0, 1],
+      "y": [-1, 0]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "unburied":{},
+      "block_intersection": {
+        "block_allow_list": [
+          "minecraft:air",
+          "minecraft:grass"
+        ]
+      },
+      "grounded": {
+        "block_allow_list": [
+          "badger:block_sand",
+          "badger:block_dirt_rock_var01",
+          "badger:block_dirt_rock_var02",
+          "badger:block_dirt_rock_var03",
+          "badger:block_sand_d1",
+          "badger:block_sand_d2",
+          "badger:block_sand_red",
+          "badger:block_dirt",
+          "badger:block_stone",
+          "minecraft:grass"
+        ]
+      }
+    }
+  }
+}

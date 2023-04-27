@@ -1,0 +1,58 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:terraform_gather_surface_coal",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "terraform_gather_surface_coal",
+        "tooltip_title": "terraform.gather.surface.coal.name",
+        "tactical_description": "terraform.gather.surface.coal.tactical_description",
+        "tooltip_description": "terraform.gather.surface.coal.description",
+        "ping_message": "build_preview_ping_gather_coal",
+        "buildable_category": "resourcing",
+        "sort_order": 1300,
+        "height_offset": 1
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "terraform_gather_surface_uncommon_ore",
+        "build_time": 0,
+        "buildable_placed_player_trigger": "on_building_terraform_gather_surface_coal",
+        "construction_end_trigger": "on_construction_end",
+        "silence_destroyed_trigger_when_killed": true
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "ticket_cost": [
+          {
+            "ticket": "gather",
+            "amount": 1
+          }
+        ],
+        "unlock": [
+          {
+            "item": "gather_coal",
+            "amount": 1
+          }
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable"
+        ],
+        "invalid_block_snaptoground": true
+      },
+      "badger:core_resource_consumer": {
+        "material_category": [
+          "coal"
+        ]
+      },
+      "badger:template": "badger:template_terraform_gather_surface"
+    }
+  }
+}

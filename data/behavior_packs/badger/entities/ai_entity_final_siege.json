@@ -1,0 +1,108 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:ai_entity_final_siege",
+            "runtime_identifier": "badger:ai"
+        },
+        "components": {
+            "badger:influence_map_ai": {
+                "map_resolution": 5,
+                "map_decay": 0.03,
+                "perception_radius": 600,
+                "query_name": "default"
+            },
+            "badger:damage_influence_source": {
+                "sensors": [
+                    {
+                        "inflictor_or_receiver_position": "inflictor",
+                        "damage_type_filter": {
+                            "include_all": [],
+                            "exclude_any": []
+                        },
+                        "damage_receiver_filter": {
+                            "include_tags": ["piglinStructure"],
+                            "exclude_tags": ["portal_piglin"],
+                            "alliance_rule_filter": "friendly"
+                        },
+                        "multiplier": 20,
+                        "propagation_decay": 0.1
+                    },
+                    {
+                        "inflictor_or_receiver_position": "receiver",
+                        "damage_type_filter": {
+                            "include_all": ["ranged"],
+                            "exclude_any": []
+                        },
+                        "damage_receiver_filter": {
+                            "include_tags": [],
+                            "exclude_tags": [],
+                            "alliance_rule_filter": "friendly"
+                        },
+                        "multiplier": -20,
+                        "propagation_decay": 0.85
+                    },
+                    {
+                        "inflictor_or_receiver_position": "receiver",
+                        "damage_type_filter": {
+                            "include_all": ["ranged"],
+                            "exclude_any": []
+                        },
+                        "damage_receiver_filter": {
+                            "include_tags": ["tower"],
+                            "exclude_tags": [],
+                            "alliance_rule_filter": "friendly"
+                        },
+                        "multiplier": 30,
+                        "propagation_decay": 0.8
+                    },
+                    {
+                        "inflictor_or_receiver_position": "receiver",
+                        "damage_type_filter": {
+                            "include_all": [],
+                            "exclude_any": []
+                        },
+                        "damage_receiver_filter": {
+                            "include_tags": ["tier2PlayerStructure"],
+                            "exclude_tags": [],
+                            "alliance_rule_filter": "enemy"
+                        },
+                        "multiplier": 30,
+                        "propagation_decay": 0.8
+                    },
+                    {
+                        "inflictor_or_receiver_position": "receiver",
+                        "damage_type_filter": {
+                            "include_all": [],
+                            "exclude_any": []
+                        },
+                        "damage_receiver_filter": {
+                            "include_tags": ["tier3PlayerStructure"],
+                            "exclude_tags": [],
+                            "alliance_rule_filter": "enemy"
+                        },
+                        "multiplier": 40,
+                        "propagation_decay": 0.8
+                    },
+                    {
+                        "inflictor_or_receiver_position": "inflictor",
+                        "damage_type_filter": {
+                            "include_all": ["ranged"],
+                            "exclude_any": []
+                        },
+                        "damage_receiver_filter": {
+                            "include_tags": ["tower"],
+                            "exclude_tags": [],
+                            "alliance_rule_filter": "friendly"
+                        },
+                        "multiplier": 20,
+                        "propagation_decay": 0.8
+                    }
+                ]
+            },
+            "badger:tags": {
+                "tags": ["scriptedAi", "piglin", "finalAi", "finalSiegeAi"]
+            }
+        }
+    }
+}

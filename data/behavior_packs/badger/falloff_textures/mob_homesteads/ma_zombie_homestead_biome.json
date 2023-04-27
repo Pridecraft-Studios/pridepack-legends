@@ -1,0 +1,22 @@
+{
+  "id": "ma_zombie_homestead_biome",
+  "textures": [
+    {
+      "texture": "mob_homesteads/heightmap_zombie_homestead",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+  "biome_map": [
+    {
+      "biome": "jungle",
+      "value": 255
+    }
+  ],
+  "additional_data": {
+    "village_texture_stamp": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_poi_loot_biome_treasure_chest_snow_exclusive"
+    },
+    "structure_name": "poi_loot_treasure_chest",
+    "placement_range": {
+      "x": [0, 15],
+      "y": [-8, 8],
+      "z": [0, 15]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "unburied": {},
+      "grounded": {
+      "block_allow_list": ["badger:block_snow_terrain"]
+      },
+      "empty_space":{}
+     
+    }
+  }
+}

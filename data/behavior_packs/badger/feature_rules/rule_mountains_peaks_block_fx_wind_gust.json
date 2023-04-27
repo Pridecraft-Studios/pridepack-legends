@@ -1,0 +1,41 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_mountains_peaks_block_fx_wind_gust",
+      "places_feature": "badger:feature_block_fx_mountain_wind_gust"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "mountain_peaks"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(1,10) <= 4 ? 3 : 2",
+      "scatter_chance": "q.heightmap(v.worldx, v.worldz)",
+      "early_out": "v.scatteredy < 49",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz) + 4"
+    }
+  }
+}

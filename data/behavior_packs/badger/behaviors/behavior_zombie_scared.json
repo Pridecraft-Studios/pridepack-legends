@@ -1,0 +1,170 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_zombie_scared",
+      "runtime_identifier": "badger:behavior"
+    },
+    "components": {
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "max_range": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "zombie_melee_attack"
+            ]
+          },
+          {
+            "max_range": 5,
+            "action_tickets": {
+              "sc": 1
+            },
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "secondary_combat_position"
+            ]
+          },
+          {
+            "max_range": 10,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "cavalry"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "zombie_melee_attack"
+            ]
+          },
+          {
+            "max_range": 10,
+            "action_tickets": {
+              "sc": 1
+            },
+            "include_tags": [
+              "cavalry"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "secondary_combat_position"
+            ]
+          },
+          {
+            "max_range": 10,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "zombie_melee_attack"
+            ]
+          },
+          {
+            "max_range": 10,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "secondary_combat_position"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "zombie_melee_attack",
+            "range": {
+              "min_range": 0.25,
+              "max_range": 0.85
+            },
+            "state_machine": {
+              "wind_up": 0.3,
+              "wind_down": 0.2,
+              "cooldown_time": 0.1,
+              "deactivates_on_cooldown": false
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 20,
+                "radius": 1.5,
+                "thickness": 2.2,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.5
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 2,
+                "damage_types": [
+                  "melee"
+                ]
+              }
+            }
+          },
+          {
+            "name": "secondary_combat_position",
+            "range": {
+              "min_range": 3,
+              "max_range": 4
+            }
+          }
+        ]
+      }
+    }
+  }
+}

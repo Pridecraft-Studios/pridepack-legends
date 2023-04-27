@@ -1,0 +1,19 @@
+{
+  "format_version": "1.13.0",
+  "code:conditional_list": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_valleys_conditional_list"
+    },
+    "conditional_features": [
+      {
+        "places_feature": "badger:feature_brokenlands_valleys_grass_weighted",
+        "condition" : "temp.abs_noise_diff = math.abs(query.noise(variable.worldx / 40, variable.worldz / 40) - math.random(-0.1, 0.1)); return (temp.abs_noise_diff > 0.85) || (temp.abs_noise_diff < 0.75 && temp.abs_noise_diff > 0.55) || (temp.abs_noise_diff < 0.35 && temp.abs_noise_diff > 0.15);"
+      },
+      {
+        "places_feature": "badger:feature_brokenlands_valley_grass_shore_weighted",
+        "condition" : "math.random(0,4) < 1 && math.random(0,1) < 1 - ((query.water_distance(variable.worldx, variable.worldz) - 1) * 0.33)"
+      }
+    ],
+	"early_out_scheme": "placement_success"
+  }
+}

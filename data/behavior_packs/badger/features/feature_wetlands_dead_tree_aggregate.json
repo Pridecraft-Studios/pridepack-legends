@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_wetlands_dead_tree_aggregate"
+    },
+    "features": [
+      "badger:feature_wetlands_dead_tree_spidertree_weighted",
+      "badger:feature_wetlands_dead_tree_mushroom_scatter"
+    ]
+  }
+}

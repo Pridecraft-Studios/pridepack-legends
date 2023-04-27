@@ -1,0 +1,69 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_resource_frostlands_stone_boulder_large_fallen_02"   
+    },
+    "structure_name": "nature/boulder_frostland_large_02",
+
+    "placement_range": {
+      "x": [0,2],
+      "z": [0,2],
+      "y": [-2,2]
+    },
+    "facing_direction": "random",
+    "constraints": { 
+      "grounded": {
+        "block_allow_list": [
+
+          "badger:block_rivershore",
+          "badger:block_frostsnow",
+          "badger:block_alpine_rock_01",
+          "badger:block_pigsty_mud",
+          "badger:block_pigsty_mud_01",
+          "badger:block_pigsty_mud_02",
+          "badger:block_pigsty_mud_03",
+          "badger:block_alpine_rock_snowy_01",
+          "badger:block_alpine_rock_snowy_02"    
+          ]
+      },
+      "block_intersection": {
+        "block_deny_list": [
+          "minecraft:stone",
+          "minecraft:grass",
+          "badger:block_dirt_rock_var03",
+          "badger:block_alpine_rock_06",
+          "badger:block_boulder_mid",
+          "badger:block_boulder_frostland_mid",
+          "badger:block_tree_redbark_snowy_01",
+          "badger:block_tree_fir_snowy_01",
+          "badger:block_tree_fir_snowy_02",
+          "badger:block_tree_fir_snowy_03",
+          "badger:block_tree_mang_trunk",
+          "badger:block_snow",
+          "badger:block_snow_01",
+          "badger:block_snow_tree_01",
+          "badger:block_pillar_tree_dead_fir_trunk_02",
+          "badger:block_pillar_tree_redbark_snowy_01",
+          "badger:block_slab_tree_fir_snowy_01",
+          "badger:block_slab_tree_fir_snowy_02",
+          "badger:block_slab_tree_fir_snowy_03",
+          "badger:block_slab_snow_01",
+          "badger:block_sheet_snow",
+          "badger:block_tree_fir_01",
+          "badger:block_tree_fir_02",
+          "badger:block_tree_fir_03",
+          "badger:block_tree_redbark_trunk_01",
+          "badger:block_tree_redbark_trunk_02",
+          "badger:block_tree_redbark_trunk_03",
+          "badger:block_pillar_tree_redbark_trunk_01",
+          "badger:block_pillar_tree_redbark_trunk_02",
+          "badger:block_pillar_tree_redbark_trunk_03",
+          "badger:block_slab_tree_fir_01",
+          "badger:block_slab_tree_fir_02",
+          "badger:block_slab_tree_fir_03"
+        ]
+      }
+    }
+  }
+}

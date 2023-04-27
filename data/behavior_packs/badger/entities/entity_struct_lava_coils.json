@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_lava_coils",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 2.0,
+        "length": 2.875,
+        "width": 2.875
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      },
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

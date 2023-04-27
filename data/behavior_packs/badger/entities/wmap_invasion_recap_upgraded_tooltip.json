@@ -1,0 +1,21 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:wmap_invasion_recap_upgraded_tooltip",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": false
+        },
+        "components": {
+            "badger:map3_tooltip_extended": {
+                "description": "tooltip.invasion.recap.upgraded",
+                "icon": "/map_screen/wmaplegend_invasion_upgrade.png",
+                "priority": 4
+            },
+            "badger:map3_tooltip_audio": {
+                "event_id": "BAE_ui_wmap_invasion_tooltip_action_piglin_danger",
+                "event_type": "Music"
+            }
+        }
+    }
+}

@@ -1,0 +1,173 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:poi_tower_01_child_turret",
+      "runtime_identifier": "badger:buildable"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1,
+        "height": 47
+      },
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "name": "poi_tower_01_mob_turret",
+            "min_range": 15,
+            "max_range": 60,
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "buildable_combat",
+              "structure"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "turret"
+            ]
+          },
+          {
+            "name": "poi_tower_01_player_turret",
+            "min_range": 15,
+            "max_range": 60,
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "buildable_combat",
+              "structure"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "turret"
+            ]
+          },
+          {
+            "name": "poi_tower_01_buildable_turret",
+            "min_range": 15,
+            "max_range": 60,
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "mob",
+              "player",
+              "wall"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "turret"
+            ]
+          },
+          {
+            "name": "poi_tower_01_wall_turret",
+            "min_range": 15,
+            "max_range": 60,
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "turret"
+            ]
+          },
+          {
+            "name": "poi_tower_01_enemy_turret",
+            "min_range": 15,
+            "max_range": 10,
+            "enable_with_line_of_sight": true,
+            "include_tags": [],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "required_target_count": 5,
+            "actions": [
+              "turret"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "turret",
+            "trigger": "on_projectile_shoot",
+            "on_hit_target_trigger": "on_tower_knockback_aoe_attack_hit",
+            "range": {
+              "min_range": 10,
+              "max_range": 60
+            },
+            "state_machine": {
+              "wind_up": 3,
+              "cooldown_time": 7,
+              "deactivates_on_cooldown": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_poi_knockback_tower",
+              "position_offsets_from_center": [
+                [
+                  -7.5,
+                  23,
+                  0
+                ],
+                [
+                  7.5,
+                  23,
+                  0
+                ],
+                [
+                  0,
+                  23,
+                  -7.5
+                ],
+                [
+                  0,
+                  23,
+                  7.5
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 0,
+                "damage_types": [
+                  "neutral"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "block",
+          "buildable",
+          "buildable_combat",
+          "buildable_structure"
+        ]
+      },
+      "badger:template": [
+        "badger:template_structure_child_entity_player"
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_grasslands_cluster_riverbank_boulder_scatter"
+    },
+    "places_feature": "badger:feature_grasslands_cluster_riverbank_boulder_aggregate",
+    "x": {
+      "extent": [
+        -10,
+        10
+      ],
+      "distribution": "uniform"
+    },
+    "z": {
+      "extent": [
+        -10,
+        10
+      ],
+      "distribution": "uniform"
+    },
+    "iterations": "6",
+    "scatter_chance": 50.0,
+    "project_input_to_floor": false,
+    "y": {
+      "extent": [
+        0.0,
+        5.0
+      ],
+      "distribution": "uniform"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:metadata_resource_gather_volume",
+            "runtime_identifier": "badger:buildable",
+            "is_summonable": false
+        },
+        "components": {
+            "badger:aabb": {
+                "width": 10.0,
+                "height": 10.0
+            },
+            "badger:meta_aabb": {}
+        }
+    }
+}

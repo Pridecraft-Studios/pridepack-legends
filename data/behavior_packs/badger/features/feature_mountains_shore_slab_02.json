@@ -1,0 +1,23 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_mountains_shore_slab_02"
+    },
+    "may_replace": [
+      "minecraft:air"
+      ],
+  
+      "may_attach_to": {
+        "bottom": [
+          "badger:block_boulder_lake_04",
+          "badger:block_boulder_lake_03",
+          "badger:block_boulder_lake_02"
+        ]
+      },
+
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_slab_boulder_lake_02"
+  }
+}

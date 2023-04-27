@@ -1,0 +1,89 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_terraform_gather_surface",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:buildable_requirement": {
+        "ticket_cost": [
+          {
+            "ticket": "gather",
+            "amount": 1
+          }
+        ],
+        "invalid_block_tags": [
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable"
+        ],
+        "invalid_block_snaptoground": true
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_generic"
+      },
+      "badger:tags": {
+        "tags": [
+          "gather",
+          "buildable_combat"
+        ]
+      },
+      "badger:health": {
+        "max_health": 5
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 3,
+          "rc": 3,
+          "ct": 0
+        }
+      },
+      "badger:damage_receiver": {
+        "shape": {
+          "type": "box",
+          "width": 1.5,
+          "height": 2.0,
+          "position": [
+            0,
+            1.0,
+            0
+          ]
+        }
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 2,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction"
+          }
+        ]
+      },
+      "badger:reports_buildable_state": {
+        "reports_state": "resourcing"
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_deconstruction_default"
+      ],
+      "badger:waypoint_marker": {
+        "label": "",
+        "path": "",
+        "local_player_facing_path": "waypoint_allay_gather"
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 0.0,
+        "waypoint_max_range": 0.0,
+        "compass_max_range": "short"
+      }
+    }
+  }
+}

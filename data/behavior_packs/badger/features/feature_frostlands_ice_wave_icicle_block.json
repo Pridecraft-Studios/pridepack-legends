@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_frostlands_ice_wave_icicle_block"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_pillar_frostice",
+    "may_replace": [
+      "minecraft:air"
+    ],
+    "may_attach_to": {
+      "top": [
+        "badger:block_blackrock_b",
+        "badger:block_snow_terrain",
+        "badger:block_pillar_frostice",
+        "badger:block_glacier_02"
+      ]
+    }
+  }
+}

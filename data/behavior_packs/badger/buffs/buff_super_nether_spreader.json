@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:buff_super_nether_spreader",
+      "runtime_identifier": "badger:buff",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:buff": {},
+      "badger:modifier_damage": {
+        "post_multiply": 3
+      },
+      "badger:modifier_knockback_force":{
+        "post_multiply": 2
+      },
+      "badger:status": {
+				"applied_name": "super_nether_spreader",
+				"default_resistance": {
+					"resisted": false,
+					"time": 1.0,
+					"resistance_persist_time": 1
+				}
+			}
+    }
+  }
+}

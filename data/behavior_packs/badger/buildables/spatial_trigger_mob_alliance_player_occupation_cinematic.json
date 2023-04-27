@@ -1,0 +1,27 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:spatial_trigger_mob_alliance_player_occupation_cinematic",
+        "runtime_identifier": "badger:buildable",
+        "is_summonable": false
+      },
+      "components": {
+        "badger:aabb": {
+          "width": 350.0,
+          "height": 30.0
+        },
+        "badger:trigger_criteria": {
+          "filters": [
+            {
+              "include_tags": [
+                "player"
+              ],
+              "exclude_tags": [],
+              "alliance_rule_filter": "enemy"
+            }
+          ]
+        }
+      }
+    }
+  }

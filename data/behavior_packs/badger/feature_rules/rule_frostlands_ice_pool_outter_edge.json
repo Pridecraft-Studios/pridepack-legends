@@ -1,0 +1,36 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_frostlands_ice_pool_outter_edge",
+      "places_feature": "badger:feature_frostlands_ice_pool_edge_outter_scan_surface"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "frostlands"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "springs"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "scatter_chance": 100,
+      "x": 0,
+      "z": 0,
+      "y": 0
+    }
+  }
+}

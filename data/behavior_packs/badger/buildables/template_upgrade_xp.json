@@ -1,0 +1,47 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_upgrade_xp",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Upgrade",
+      "type": "Player"
+    },
+    "components": {
+      "badger:chunk_reload_indestructible_flag":{},
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_health_generation_default"
+      ],
+      "badger:reports_buildable_state": {
+        "reports_state": "building"
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_generic"
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            0, 
+            1.5, 
+            0
+          ]
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure"
+        ]
+      },
+      "badger:zone_type_requirement": {
+        "include_tags": [ "xp" ]
+      }
+    }
+  }
+}

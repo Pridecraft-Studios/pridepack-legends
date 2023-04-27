@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_pillar_snow_skeleton", 
+      "material": "badger_snow"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "pillar", 
+        "directional_texture": false, 
+        "directional_shape": true
+      }, 
+      "badger:terrain_type": {
+        "terrain": "snow"
+      }
+    }
+  }
+}

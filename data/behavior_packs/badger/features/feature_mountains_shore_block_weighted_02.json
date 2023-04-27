@@ -1,0 +1,21 @@
+{
+
+  "format_version": "1.13.0",
+
+  "code:place_weighted_random": {
+
+    "description": {
+
+      "identifier": "badger:feature_mountains_shore_block_weighted_02"
+
+    },
+
+   "features": [
+    ["badger:feature_mountains_boulder_lake_block_04", 5.0],
+    ["badger:feature_mountains_boulder_lake_block_02", 15.0],
+    ["badger:feature_mountains_boulder_lake_block_03", 5.0]
+   ]
+
+  }
+
+}

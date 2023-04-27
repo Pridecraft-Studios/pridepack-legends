@@ -1,0 +1,73 @@
+{
+  "format_version": "1.13.0",
+  "code:place_expression": {
+    "description": {
+      "identifier": "badger:feature_debuff_poi_thornvine_expression"
+    },
+    "iterations": 20,
+    "resolution": 200,
+    "places_feature": "badger:feature_debuff_poi_thornvine_b_scatter_bezier",
+    "bezier": {
+      "x0": {
+        "extent": [
+          -10,
+          -5
+        ],
+        "distribution": "uniform"
+      },
+      "y0": 0,
+      "z0": {
+        "extent": [
+          -10,
+          -5
+        ],
+        "distribution": "uniform"
+      },
+      "x1": {
+        "extent": [
+          -5,
+          5
+        ],
+        "distribution": "uniform"
+      },
+      "y1": 0,
+      "z1": {
+        "extent": [
+          -5,
+          5
+        ],
+        "distribution": "uniform"
+      },
+      "x2": {
+        "extent": [
+          -5,
+          5
+        ],
+        "distribution": "uniform"
+      },
+      "y2": 0,
+      "z2": {
+        "extent": [
+          -5,
+          5
+        ],
+        "distribution": "uniform"
+      },
+      "x3": {
+        "extent": [
+          5,
+          10
+        ],
+        "distribution": "uniform"
+      },
+      "y3": 0,
+      "z3": {
+        "extent": [
+          5,
+          10
+        ],
+        "distribution": "uniform"
+      }
+    }
+  }
+}

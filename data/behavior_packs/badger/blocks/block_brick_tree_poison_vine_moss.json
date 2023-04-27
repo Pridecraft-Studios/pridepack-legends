@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_brick_tree_poison_vine_moss",
+      "material": "badger_bushes"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "brick",
+        "directional_texture": false,
+        "directional_shape": true
+      },
+      "badger:block_type": {
+        "tags": [
+          "world_hazard"
+        ]
+      },
+      "badger:block_effects": {
+        "damage_amount": 0,
+        "damage_types": [
+          "hazard"
+        ],
+        "effect_frequency": 0.5,
+        "apply_status": {
+          "poisoned": {
+            "strength": 1.0
+          }
+        }
+      },
+      "badger:telemetry_category": {
+        "category_name": "Environmental"
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      }
+    }
+  }
+}

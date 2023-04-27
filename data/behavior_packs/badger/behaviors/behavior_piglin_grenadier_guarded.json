@@ -1,0 +1,295 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_piglin_grenadier_guarded",
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 3.5
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 10
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Player Targeting
+          {
+            "name": "grenadier_player_grenade",
+            "max_range": 10,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "player"
+            ],
+            "action_tickets": {
+              "rc": 1
+            },
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grenade_attack"
+            ]
+          },
+          //Support Golem Targeting
+          {
+            "name": "grenadier_support_grenade",
+            "max_range": 30,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "rc": 1
+            },
+            "include_tags": [
+              "support"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grenade_attack"
+            ]
+          },
+          {
+            "name": "grenadier_support_grenade_arc",
+            "max_range": 35,
+            "enable_with_line_of_sight": false,
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "action_tickets": {
+              "rc": 1
+            },
+            "include_tags": [
+              "support"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grenade_arc_attack"
+            ]
+          },
+          //Mob targeting
+          {
+            "name": "grenadier_mob_grenade",
+            "max_range": 30,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mob"
+            ],
+            "action_tickets": {
+              "rc": 1
+            },
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grenade_attack"
+            ]
+          },
+          {
+            "name": "grenadier_default_grenade_arc",
+            "max_range": 35,
+            "enable_with_line_of_sight": false,
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "include_tags": [],
+            "action_tickets": {
+              "rc": 1
+            },
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grenade_arc_attack"
+            ]
+          },
+          //Secondary Combat Positioning
+          {
+            "name": "grenadier_secondary_combat_pos",
+            "max_range": 25.0,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "sc": 1
+            },
+            "include_tags": [],
+            "exclude_tags": [
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "secondary_combat_position"
+            ]
+          },
+          //Approach
+          {
+            "name": "grenadier_target_approach",
+            "max_range": 20.0,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "sc": 1
+            },
+            "include_tags": [],
+            "exclude_tags": [
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grenadier_approach"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "grenade_attack",
+            "range": {
+              "max_range": 30
+            },
+            "state_machine": {
+              "wind_up": 1.0,
+              "wind_down": 2.46,
+              "cooldown_time": 6,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 1,
+              "max_range": 2,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_grenade",
+              "position_offsets_from_center": [
+                [
+                  0.0,
+                  2.0,
+                  0.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "buildable_combat"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 5,
+                "damage_types": [
+                  "spore",
+                  "ranged"
+                ]
+              },
+              "apply_status": {
+                "spore_damaged": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                },
+                "rooted": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                }
+              }
+            }
+          },
+          {
+            "name": "grenade_arc_attack",
+            "range": {
+              "min_range": 2.25,
+              "max_range": 30.0
+            },
+            "state_machine": {
+              "wind_up": 1.0,
+              "wind_down": 2.46,
+              "cooldown_time": 6.0,
+              "deactivates_on_cooldown": false
+            },
+            "shoot": {
+              "projectile": "badger:proj_grenade_arc",
+              "position_offsets_from_center": [
+                [
+                  0,
+                  2.0,
+                  0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "buildable_combat"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 5,
+                "damage_types": [
+                  "spore",
+                  "ranged"
+                ]
+              },
+              "apply_status": {
+                "spore_damaged": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                },
+                "rooted": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                }
+              }
+            }
+          },
+          {
+            "name": "grenadier_approach",
+            "range": {
+              "max_range": 2.0
+            }
+          },
+          {
+            "name": "secondary_combat_position",
+            "range": {
+              "min_range": 0.35,
+              "max_range": 20
+            }
+          }
+        ]
+      }
+    }
+  }
+}

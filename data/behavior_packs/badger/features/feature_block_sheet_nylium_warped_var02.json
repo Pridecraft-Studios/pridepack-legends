@@ -1,0 +1,19 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_block_sheet_nylium_warped_var02"
+    },
+    "may_replace": [
+      "minecraft:air"
+    ],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_attach_to": {
+      "bottom": [
+        "badger:block_water"
+      ]
+    },
+    "places_block": "badger:block_sheet_nether_wart_warped_var02"
+  }
+}

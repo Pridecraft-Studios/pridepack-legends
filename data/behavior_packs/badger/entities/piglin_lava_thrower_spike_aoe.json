@@ -1,0 +1,62 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_lava_thrower_spike_aoe",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.7,
+        "height": 1.9
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": false,
+        "auto_step": 3.1
+      },
+      "badger:removal_time": {
+        "time": 0.1
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 10
+        },
+        "damage_effects": [
+          {
+            "name": "aoe_spike",
+            "damage": 15,
+            "knockback": {
+              "angle": 45,
+              "force": 15
+            },
+            "falloff": {
+              "min_radius": 5,
+              "max_radius": 10,
+              "min_damage": 5,
+              "min_angle": 10
+            },
+            "damage_types": [
+              "fire",
+              "explosion"
+            ],
+            "include_tags": [],
+            "exclude_tags": [
+              "piglin"
+            ],
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:movement": {
+        "move_speed": 0.0
+      }
+    }
+  }
+}

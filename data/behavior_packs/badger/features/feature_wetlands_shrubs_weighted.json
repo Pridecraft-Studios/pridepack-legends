@@ -1,0 +1,18 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_shrub_mushroom_01",
+        30.0
+      ],
+      [
+        "badger:feature_shrub_mushroom_02",
+        30.0
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_wetlands_shrubs_weighted"
+    }
+  }
+}

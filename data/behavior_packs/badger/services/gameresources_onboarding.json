@@ -1,0 +1,125 @@
+{
+  "badger:game_resources_service": {
+    "game_resources": [
+      //core resources
+      {
+        "resource": "wood",
+        "type": "team",
+        "default_amount": 0,
+        "starting_cap": 250
+      },
+      {
+        "resource": "stone",
+        "type": "team",
+        "default_amount": 0,
+        "starting_cap": 250
+      },
+      {
+        "resource": "gather_redstone",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "gather_rare_resource",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "clear_nether_resource",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "gather_uncommon_resource",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      //Misc Resources
+      {
+        "resource": "unlock_onboarding_tutorials_valid",
+        "type": "team",
+        "default_amount": 1
+      },
+      //Common
+      {
+        "resource": "emerald",
+        "type": "team",
+        "archetype_name": "badger:item_prismarine",
+        "default_amount": 0,
+        "starting_cap": 50,
+        "stack_size": 5
+      },
+      //Unlocks
+      {
+        "resource": "clear_nether_resource",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_defensive_buildings",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_gate",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_repair_fountain",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_bridge",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_golemstone",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_golemwood",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "advanced_direct_unlock",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0
+      },
+      {
+        "resource": "battle_view_unlock",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0
+      }
+    ],
+    "badger:template": {
+      "parent": "badger:game_resources_service",
+      "game_mode": "onboarding"
+    }
+  }
+}

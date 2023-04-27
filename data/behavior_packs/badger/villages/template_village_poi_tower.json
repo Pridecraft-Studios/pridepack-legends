@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:template_village_poi_tower"
+		},
+		"components": {
+			"badger:map_controller": {
+				"initial_key_values": [
+					{
+						"key": "visibility",
+						"value": "hidden"
+					}
+				],
+				"player_triggers": [
+					{
+						"range": 256.0,
+						"set": [
+							{
+								"key": "visibility",
+								"value": "visible"
+							}
+						]
+					}
+				]
+			},
+			"badger:telemetry_game_zone": {
+				"id": 5,
+				"alt_id": 99,
+				"add_details_in_pvp": true
+			},
+			"badger:template": "badger:template_village_root"
+		}
+	}
+}

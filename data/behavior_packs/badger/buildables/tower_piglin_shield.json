@@ -1,0 +1,828 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:tower_piglin_shield",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:buildable_requirement": {},
+      "badger:buildable_structure": {
+        "nbt_file": "tower_piglin_shield",
+        "build_time": 20,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:telemetry_category": {
+        "category_name": "Piglin Structure"
+      },
+      "badger:generate_ruins": {
+        "max": 4,
+        "min": -1
+      },
+      "badger:health": {
+        "max_health": 300
+      },
+      "badger:culture": {
+        "base_culture_a": 30
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_neather_medium"
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            0, 
+            3, 
+            0
+          ],
+          [
+            0, 
+            9, 
+            0
+          ]
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "buffable-crows_nest",
+          "pigTower",
+          "piglinStructure",
+          "pigShieldTower",
+          "piglin"
+        ]
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Mob turret targeting
+          {
+            "name": "piglin_shield_mob_turret",
+            "max_range": 15,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "buildable_combat",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "shield_down"
+            ]
+          },
+          //Shield raise - invulnerable
+          {
+            "name": "shield_up",
+            "min_range": 16,
+            "max_range": 150,
+            "include_tags": [],
+            "exclude_tags": [
+              "donotattack",
+              "buildable_combat",
+              "piglin"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "shield_up"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "shield_down",
+            "trigger": "on_open",
+            "transfer_activation": [
+              "turret",
+              "turret_2",
+              "turret_3",
+              "turret_4",
+              "turret_5",
+              "turret_6",
+              "turret_7",
+              "turret_8",
+              "turret_9",
+              "turret_10",
+              "turret_11",
+              "turret_12"
+            ],
+            "range": {
+              "min_range": 0,
+              "max_range": 15
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.5,
+              "deactivates_on_cooldown": false
+            },
+            "apply_status_to_owner": {
+              "shield_tower_vulnerable": {
+                "chance": 1.0,
+                "strength": 1.0
+              }
+            }
+          },
+          //Column 1
+          {
+            "name": "turret",
+            "trigger": "on_arrow_shoot",
+            "on_hit_target_trigger": "on_tower_piglin_shield_ranged_attack_hit",
+            "range": {
+              "min_range": 0,
+              "max_range": 15
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.7,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 2,
+              "max_range": 12,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_shield_tower_blazerod",
+              "position_offsets_from_center": [
+                [
+                  4.0,
+                  8.5,
+                  0.0
+                ],
+                [
+                  0.0,
+                  8.5,
+                  4.0
+                ],
+                [
+                  -4.0,
+                  8.5,
+                  0.0
+                ],
+                [
+                  0.0,
+                  8.5,
+                  -4.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10.5,
+                "damage_types": [
+                  "neutral"
+                ]
+              }
+            }
+          },
+          {
+            "name": "turret_2",
+            "trigger": "on_arrow_shoot",
+            "on_hit_target_trigger": "on_tower_piglin_shield_ranged_attack_hit",
+            "range": {
+              "min_range": 0,
+              "max_range": 15
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.7,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 1,
+              "max_range": 3,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_shield_tower_blazerod",
+              "position_offsets_from_center": [
+                [
+                  4.0,
+                  7.5,
+                  0.0
+                ],
+                [
+                  0.0,
+                  7.5,
+                  4.0
+                ],
+                [
+                  -4.0,
+                  7.5,
+                  0.0
+                ],
+                [
+                  0.0,
+                  7.5,
+                  -4.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10.5,
+                "damage_types": [
+                  "neutral"
+                ]
+              }
+            }
+          },
+          {
+            "name": "turret_3",
+            "trigger": "on_arrow_shoot",
+            "on_hit_target_trigger": "on_tower_piglin_shield_ranged_attack_hit",
+            "range": {
+              "min_range": 0,
+              "max_range": 15
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.7,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 1,
+              "max_range": 3,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_shield_tower_blazerod",
+              "position_offsets_from_center": [
+                [
+                  4.0,
+                  6.5,
+                  0.0
+                ],
+                [
+                  0.0,
+                  6.5,
+                  4.0
+                ],
+                [
+                  -4.0,
+                  6.5,
+                  0.0
+                ],
+                [
+                  0.0,
+                  6.5,
+                  -4.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10.5,
+                "damage_types": [
+                  "neutral"
+                ]
+              }
+            }
+          },
+          {
+            "name": "turret_4",
+            "trigger": "on_arrow_shoot",
+            "on_hit_target_trigger": "on_tower_piglin_shield_ranged_attack_hit",
+            "range": {
+              "min_range": 0,
+              "max_range": 15
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.7,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 2,
+              "max_range": 12,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_shield_tower_blazerod",
+              "position_offsets_from_center": [
+                [
+                  4.0,
+                  5.5,
+                  0.0
+                ],
+                [
+                  0.0,
+                  5.5,
+                  4.0
+                ],
+                [
+                  -4.0,
+                  5.5,
+                  0.0
+                ],
+                [
+                  0.0,
+                  5.5,
+                  -4.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10.5,
+                "damage_types": [
+                  "neutral"
+                ]
+              }
+            }
+          },
+          //Column 2
+          {
+            "name": "turret_5",
+            "trigger": "on_arrow_shoot",
+            "on_hit_target_trigger": "on_tower_piglin_shield_ranged_attack_hit",
+            "range": {
+              "min_range": 0,
+              "max_range": 15
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.7,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 2,
+              "max_range": 12,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_shield_tower_blazerod",
+              "position_offsets_from_center": [
+                [
+                  4.0,
+                  8.5,
+                  1.0
+                ],
+                [
+                  1.0,
+                  8.5,
+                  4.0
+                ],
+                [
+                  -4.0,
+                  8.5,
+                  1.0
+                ],
+                [
+                  1.0,
+                  8.5,
+                  -4.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10.5,
+                "damage_types": [
+                  "neutral"
+                ]
+              }
+            }
+          },
+          {
+            "name": "turret_6",
+            "trigger": "on_arrow_shoot",
+            "on_hit_target_trigger": "on_tower_piglin_shield_ranged_attack_hit",
+            "range": {
+              "min_range": 0,
+              "max_range": 15
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.7,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 1,
+              "max_range": 2,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_shield_tower_blazerod",
+              "position_offsets_from_center": [
+                [
+                  4.0,
+                  7.5,
+                  1.0
+                ],
+                [
+                  1.0,
+                  7.5,
+                  4.0
+                ],
+                [
+                  -4.0,
+                  7.5,
+                  1.0
+                ],
+                [
+                  1.0,
+                  7.5,
+                  -4.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10.5,
+                "damage_types": [
+                  "neutral"
+                ]
+              }
+            }
+          },
+          {
+            "name": "turret_7",
+            "trigger": "on_arrow_shoot",
+            "on_hit_target_trigger": "on_tower_piglin_shield_ranged_attack_hit",
+            "range": {
+              "min_range": 0,
+              "max_range": 15
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.7,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 1,
+              "max_range": 2,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_shield_tower_blazerod",
+              "position_offsets_from_center": [
+                [
+                  4.0,
+                  6.5,
+                  1.0
+                ],
+                [
+                  1.0,
+                  6.5,
+                  4.0
+                ],
+                [
+                  -4.0,
+                  6.5,
+                  1.0
+                ],
+                [
+                  1.0,
+                  6.5,
+                  -4.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10.5,
+                "damage_types": [
+                  "neutral"
+                ]
+              }
+            }
+          },
+          {
+            "name": "turret_8",
+            "trigger": "on_arrow_shoot",
+            "on_hit_target_trigger": "on_tower_piglin_shield_ranged_attack_hit",
+            "range": {
+              "min_range": 0,
+              "max_range": 15
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.7,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 2,
+              "max_range": 12,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_shield_tower_blazerod",
+              "position_offsets_from_center": [
+                [
+                  4.0,
+                  5.5,
+                  1.0
+                ],
+                [
+                  1.0,
+                  5.5,
+                  4.0
+                ],
+                [
+                  -4.0,
+                  5.5,
+                  1.0
+                ],
+                [
+                  1.0,
+                  5.5,
+                  -4.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10.5,
+                "damage_types": [
+                  "neutral"
+                ]
+              }
+            }
+          },
+          //Column 3
+          {
+            "name": "turret_9",
+            "trigger": "on_arrow_shoot",
+            "on_hit_target_trigger": "on_tower_piglin_shield_ranged_attack_hit",
+            "range": {
+              "min_range": 0,
+              "max_range": 15
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.7,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 2,
+              "max_range": 12,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_shield_tower_blazerod",
+              "position_offsets_from_center": [
+                [
+                  4.0,
+                  8.5,
+                  -1.0
+                ],
+                [
+                  -1.0,
+                  8.5,
+                  4.0
+                ],
+                [
+                  -4.0,
+                  8.5,
+                  -1.0
+                ],
+                [
+                  -1.0,
+                  8.5,
+                  -4.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10.5,
+                "damage_types": [
+                  "neutral"
+                ]
+              }
+            }
+          },
+          {
+            "name": "turret_10",
+            "trigger": "on_arrow_shoot",
+            "on_hit_target_trigger": "on_tower_piglin_shield_ranged_attack_hit",
+            "range": {
+              "min_range": 0,
+              "max_range": 15
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.7,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 1,
+              "max_range": 3,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_shield_tower_blazerod",
+              "position_offsets_from_center": [
+                [
+                  4.0,
+                  7.5,
+                  -1.0
+                ],
+                [
+                  -1.0,
+                  7.5,
+                  4.0
+                ],
+                [
+                  -4.0,
+                  7.5,
+                  -1.0
+                ],
+                [
+                  -1.0,
+                  7.5,
+                  -4.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10.5,
+                "damage_types": [
+                  "neutral"
+                ]
+              }
+            }
+          },
+          {
+            "name": "turret_11",
+            "trigger": "on_arrow_shoot",
+            "on_hit_target_trigger": "on_tower_piglin_shield_ranged_attack_hit",
+            "range": {
+              "min_range": 0,
+              "max_range": 15
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.7,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 1,
+              "max_range": 3,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_shield_tower_blazerod",
+              "position_offsets_from_center": [
+                [
+                  4.0,
+                  6.5,
+                  -1.0
+                ],
+                [
+                  -1.0,
+                  6.5,
+                  4.0
+                ],
+                [
+                  -4.0,
+                  6.5,
+                  -1.0
+                ],
+                [
+                  -1.0,
+                  6.5,
+                  -4.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10.5,
+                "damage_types": [
+                  "neutral"
+                ]
+              }
+            }
+          },
+          {
+            "name": "turret_12",
+            "trigger": "on_arrow_shoot",
+            "on_hit_target_trigger": "on_tower_piglin_shield_ranged_attack_hit",
+            "range": {
+              "min_range": 0,
+              "max_range": 15
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.7,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 2,
+              "max_range": 12,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_shield_tower_blazerod",
+              "position_offsets_from_center": [
+                [
+                  4.0,
+                  5.5,
+                  -1.0
+                ],
+                [
+                  -1.0,
+                  5.5,
+                  4.0
+                ],
+                [
+                  -4.0,
+                  5.5,
+                  -1.0
+                ],
+                [
+                  -1.0,
+                  5.5,
+                  -4.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10.5,
+                "damage_types": [
+                  "neutral"
+                ]
+              }
+            }
+          },
+          {
+            "name": "shield_up",
+            "trigger": "on_close",
+            "range": {
+              "min_range": 0,
+              "max_range": 140
+            },
+            "state_machine": {
+              "wind_up": 1.0,
+              "wind_down": 2.0,
+              "cooldown_time": 0,
+              "deactivates_on_cooldown": false
+            },
+            "apply_status_to_owner": {
+              "shield_tower_invincible": {
+                "strength": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "badger:loot": {
+        "table": "piglin_tower"
+      },
+      "badger:template": [
+        "badger:template_tower_with_foundation",
+        "badger:template_structure_piglin"
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_ore_redstone_patch_small_scatter"
+    },
+    "places_feature": "badger:feature_ore_redstone_patch_construction_aggregate",
+    "iterations": "5",
+    "scatter_chance": 100.0,
+    "x": {
+      "distribution": "gaussian",
+      "extent": [
+        0,
+        4
+      ]
+    },
+    "z": {
+      "distribution": "gaussian",
+      "extent": [
+        0,
+        4
+      ]
+    },
+    "y":0,
+    "project_input_to_floor": false,
+    "coordinate_eval_order": "xzy"
+  }
+}

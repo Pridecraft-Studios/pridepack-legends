@@ -1,0 +1,31 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_block_coal_fill"
+    },
+    "may_replace": [
+      "badger:block_dirt",
+      "badger:block_cliffdirt_01",
+      "badger:block_tarrock",
+      "badger:block_desertrock_a",
+      "minecraft:grass",
+      "badger:block_stone",
+      "badger:block_sand",
+      "badger:block_sand_d1",
+      "badger:block_sand_d2",
+      "badger:block_sand_d3",
+      "badger:block_redsand_a",
+      "badger:block_redsand_b",
+      "badger:block_redsand_c",
+      "badger:block_redsand_d",
+      "badger:block_riverbed_a",
+      "badger:block_riverbed_a2",
+      "badger:block_riverbed_b",
+      "badger:block_riverbed_b2"
+    ],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block":  "badger:block_coal_light"
+  }
+}

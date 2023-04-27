@@ -1,0 +1,19 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_plant_brokenlands_plateau_drygrass_festuca_glauca_04"
+    },
+    "may_replace": ["minecraft:air"],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_attach_to": {
+      "bottom": [
+        "badger:block_sand",
+        "badger:block_sand_d1",
+        "badger:block_sand_red"
+      ]
+    },
+    "places_block": "badger:block_deco_plant_drygrass_festuca_glauca_04"
+  }
+}

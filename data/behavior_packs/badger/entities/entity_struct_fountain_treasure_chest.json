@@ -1,0 +1,46 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_fountain_treasure_chest",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "mushroom_data": {
+      "function": "Entity_Struct"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 2.7,
+        "width": 3.0
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": true,
+        "auto_step": 0.001
+      },
+      "badger:tags": {
+        "tags": [
+          "block",
+          "village_treasure_chest_interact"
+        ]
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "alliance_rule_filter": "friendly",
+            "exclude_tags": [],
+            "include_tags": [
+              "player"
+            ],
+            "input_layout_override": "overlay_gameplay_chest_interaction_hold",
+            "name": "interaction_zone",
+            "range": 4
+          }
+        ]
+      },
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

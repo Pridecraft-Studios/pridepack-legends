@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:status_effect_electric_stun",
+			"runtime_identifier": "badger:status_effect"
+		},
+		"components": {
+			"badger:status": {
+				"applied_name": "electric_stunned",
+				"default_resistance": {
+					"resisted": false,
+					"time": 4.0,
+					"resistance_persist_time": 1
+				}
+			},
+			"badger:disables_movement": {},
+			"badger:disables_actions": {}
+		}
+	}
+}

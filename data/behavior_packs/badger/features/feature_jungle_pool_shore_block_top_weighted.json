@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_jungle_pool_shore_block_top_sheet_01",
+        20.0
+      ],
+      [
+        "badger:feature_jungle_pool_shore_block_top_sheet_02",
+        20.0
+      ],
+      [
+        "badger:feature_jungle_pool_shore_block_top_slab_01",
+        20.0
+      ],
+      [
+        "badger:feature_jungle_pool_shore_block_top_slab_02",
+        20.0
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_jungle_pool_shore_block_top_weighted"
+    }
+  }
+}

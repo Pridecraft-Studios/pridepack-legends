@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_shrub_brighter", 
+      "material": "badger_bushes"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube", 
+        "camera_collision": false, 
+        "directional_texture": false, 
+        "directional_shape": true
+      }, 
+      "badger:terrain_type": {
+        "terrain": "grass"
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "code:conditional_list": {
+    "description": {
+      "identifier": "badger:feature_mountain_valleys_conditional_list"
+    },
+    "conditional_features": [
+      
+      {
+        "places_feature": "badger:feature_mountain_foothills_mixed_plants_weighted",
+          "condition" : "temp.height = query.heightmap(variable.worldx, variable.worldz); temp.noisevalue = query.noise((variable.worldx) / 30, (variable.worldz) / 30); temp.lownoisewiggle = math.random(-1,2) *0.1; temp.highnoisewiggle = math.random(-1,2) * 0.1; return (temp.noisevalue > (-0.3 + temp.lownoisewiggle) && temp.noisevalue < (0.5 + temp.highnoisewiggle) && math.random(1,10) <= 3);"
+      },
+
+      {
+        "places_feature": "badger:feature_mountains_valleys_grass_waves_aggregate",
+        "condition" : "temp.height = query.heightmap(variable.worldx, variable.worldz); temp.noisevalue = query.noise((variable.worldx) / 40, (variable.worldz) / 40); temp.lownoisewiggle = math.random(-1,2) *0.1; temp.highnoisewiggle = math.random(-1,2) * 0.1; return (temp.noisevalue > (-0.4 + temp.lownoisewiggle) && temp.noisevalue < (0.4 + temp.highnoisewiggle) && math.random(1,10) <= 6);"
+      }
+
+    ],
+	"early_out_scheme": "placement_success"
+  }
+}

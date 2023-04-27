@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_flame",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 1.0,
+        "length": 0.25,
+        "width": 0.25
+      },
+      "badger:tags": {
+        "tags": [
+          "block",
+          "onboarding_flame"
+        ]
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 3,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_flame_interaction_hold"
+          }
+        ]
+      },
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

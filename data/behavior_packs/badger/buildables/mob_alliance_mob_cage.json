@@ -1,0 +1,76 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_alliance_mob_cage",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_requirement": {
+        "invalid_blocks": [
+          "block_lava",
+          "water"
+        ]
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "mob_alliance_mob_cage"
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_generic"
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:mob_zombie",
+            "percentage": 1
+          }
+        ],
+        "cap": 0,
+        "batch": 12,
+        "rate": 2,
+        "spawning_trigger": "on_barracks_spawn",
+        "offset": [
+          0.0,
+          2.0,
+          0.0
+        ]
+      },
+      "badger:scriptable_buildable_spawner": {},
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "mob_alliance_mob_cage",
+          "donotattack"
+        ]
+      },
+      "badger:spawner_add_tags": {
+        "tags": [
+          "caged_mob"
+        ]
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 8,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction_piglin_cage"
+          }
+        ]
+      },
+      "badger:destroy_on_village_destruction": {
+        "group": "cages"
+      },
+      "badger:template": [
+        "badger:component_block_damage_default"
+      ]
+    }
+  }
+}

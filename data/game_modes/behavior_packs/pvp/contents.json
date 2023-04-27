@@ -1,0 +1,587 @@
+{
+    "content": [
+        {
+            "path": "manifest.json"
+        },
+        {
+            "path": "behaviors/behavior_pvp_mobs_lose.json"
+        },
+        {
+            "path": "behaviors/behavior_pvp_mobs_win.json"
+        },
+        {
+            "path": "buffs/buff_carpenter_pvp_hq.json"
+        },
+        {
+            "path": "buffs/buff_celebrate_pvp.json"
+        },
+        {
+            "path": "buffs/buff_increase_damage_1_pvp.json"
+        },
+        {
+            "path": "buffs/buff_increase_damage_2_pvp.json"
+        },
+        {
+            "path": "buffs/buff_increase_damage_3_pvp.json"
+        },
+        {
+            "path": "buildables/chunk_drag_wall_panel_pvp.json"
+        },
+        {
+            "path": "buildables/chunk_drag_wall_pvp.json"
+        },
+        {
+            "path": "buildables/component_deconstruction_default_pvp.json"
+        },
+        {
+            "path": "buildables/gate_child_turret_pvp.json"
+        },
+        {
+            "path": "buildables/gate_pvp.json"
+        },
+        {
+            "path": "buildables/increase_allay_cap_build_pvp.json"
+        },
+        {
+            "path": "buildables/increase_allay_cap_gather_build_pvp.json"
+        },
+        {
+            "path": "buildables/increase_allay_cap_gather_pvp.json"
+        },
+        {
+            "path": "buildables/increase_carpenter_regen_pvp.json"
+        },
+        {
+            "path": "buildables/increase_lure_cap_pvp.json"
+        },
+        {
+            "path": "buildables/increase_mason_rate_pvp.json"
+        },
+        {
+            "path": "buildables/increase_spawner_cap_medium_pvp.json"
+        },
+        {
+            "path": "buildables/increase_spawner_cap_pvp.json"
+        },
+        {
+            "path": "buildables/increase_starting_cap_medium_pvp.json"
+        },
+        {
+            "path": "buildables/increase_starting_cap_pvp.json"
+        },
+        {
+            "path": "buildables/poi_tower_01_buildable_pvp.json"
+        },
+        {
+            "path": "buildables/poi_tower_01_pvp.json"
+        },
+        {
+            "path": "buildables/poi_tower_01_pvp_child_turret.json"
+        },
+        {
+            "path": "buildables/poi_tower_01_pvp_wild.json"
+        },
+        {
+            "path": "buildables/poi_tower_02_buildable_pvp.json"
+        },
+        {
+            "path": "buildables/poi_tower_02_pvp.json"
+        },
+        {
+            "path": "buildables/poi_tower_02_pvp_wild.json"
+        },
+        {
+            "path": "buildables/poi_tower_04_buildable_pvp.json"
+        },
+        {
+            "path": "buildables/poi_tower_04_pvp.json"
+        },
+        {
+            "path": "buildables/poi_tower_04_pvp_child_turret.json"
+        },
+        {
+            "path": "buildables/poi_tower_04_pvp_wild.json"
+        },
+        {
+            "path": "buildables/poi_zoner_well_of_fate_pylon_pvp.json"
+        },
+        {
+            "path": "buildables/redstone_launcher_pvp.json"
+        },
+        {
+            "path": "buildables/spatial_trigger_hq_pvp.json"
+        },
+        {
+            "path": "buildables/spatial_trigger_pvp_capturable_tv.json"
+        },
+        {
+            "path": "buildables/spawner_cavalry_golem_pvp.json"
+        },
+        {
+            "path": "buildables/spawner_creeper_pvp.json"
+        },
+        {
+            "path": "buildables/spawner_first_brick_pvp.json"
+        },
+        {
+            "path": "buildables/spawner_first_diorite_pvp.json"
+        },
+        {
+            "path": "buildables/spawner_first_oak_pvp.json"
+        },
+        {
+            "path": "buildables/spawner_first_stone_pvp.json"
+        },
+        {
+            "path": "buildables/spawner_piglin_barracks_fighter_pvp.json"
+        },
+        {
+            "path": "buildables/spawner_skeleton_pvp.json"
+        },
+        {
+            "path": "buildables/spawner_stone_golem_pvp.json"
+        },
+        {
+            "path": "buildables/spawner_support_golem_pvp.json"
+        },
+        {
+            "path": "buildables/spawner_vindicator_pvp.json"
+        },
+        {
+            "path": "buildables/spawner_wood_golem_pvp.json"
+        },
+        {
+            "path": "buildables/spawner_zombie_pvp.json"
+        },
+        {
+            "path": "buildables/stairs_wood_end_filler_pvp.json"
+        },
+        {
+            "path": "buildables/stairs_wood_filler_pvp.json"
+        },
+        {
+            "path": "buildables/stairs_wood_panel_pvp.json"
+        },
+        {
+            "path": "buildables/stairs_wood_pvp.json"
+        },
+        {
+            "path": "buildables/template_barracks_pvp.json"
+        },
+        {
+            "path": "buildables/template_poi_tower_pvp.json"
+        },
+        {
+            "path": "buildables/template_spawner_pvp.json"
+        },
+        {
+            "path": "buildables/template_structure_piglin_pvp.json"
+        },
+        {
+            "path": "buildables/terraform_gather_surface_002_pvp.json"
+        },
+        {
+            "path": "buildables/terraform_gather_surface_coal_pvp.json"
+        },
+        {
+            "path": "buildables/terraform_gather_surface_denether_pvp.json"
+        },
+        {
+            "path": "buildables/terraform_gather_surface_rare_ore_pvp.json"
+        },
+        {
+            "path": "buildables/terraform_gather_surface_redstone_pvp.json"
+        },
+        {
+            "path": "buildables/terraform_gather_surface_stone_pvp.json"
+        },
+        {
+            "path": "buildables/terraform_gather_surface_uncommon_ore_pvp.json"
+        },
+        {
+            "path": "buildables/terraform_gather_surface_wood_pvp.json"
+        },
+        {
+            "path": "buildables/terraform_gather_surface_z_all_pvp.json"
+        },
+        {
+            "path": "buildables/totem_unlock_village_pvp.json"
+        },
+        {
+            "path": "buildables/tower_anti_siege_pvp.json"
+        },
+        {
+            "path": "buildables/tower_arrow_pvp.json"
+        },
+        {
+            "path": "buildables/tower_child_turret_pvp.json"
+        },
+        {
+            "path": "buildables/tower_piglin_child_turret_pvp.json"
+        },
+        {
+            "path": "buildables/tower_piglin_thrower_2_pvp.json"
+        },
+        {
+            "path": "buildables/tower_piglin_thrower_3_pvp.json"
+        },
+        {
+            "path": "buildables/tower_shotgun_pvp.json"
+        },
+        {
+            "path": "buildables/unlock_clear_nether_pvp.json"
+        },
+        {
+            "path": "buildables/unlock_gather_coal_pvp.json"
+        },
+        {
+            "path": "buildables/unlock_gather_gold_pvp.json"
+        },
+        {
+            "path": "buildables/unlock_gather_rare_pvp.json"
+        },
+        {
+            "path": "buildables/unlock_gather_redstone_pvp.json"
+        },
+        {
+            "path": "buildables/unlock_gather_uncommon_pvp.json"
+        },
+        {
+            "path": "buildables/unlock_linked_village_chests_pvp.json"
+        },
+        {
+            "path": "buildables/unlock_poi_golem_pvp.json"
+        },
+        {
+            "path": "buildables/unlock_poi_tower_pvp.json"
+        },
+        {
+            "path": "buildables/zoner_apply_freeze_pvp.json"
+        },
+        {
+            "path": "buildables/zoner_buff_structures_pvp.json"
+        },
+        {
+            "path": "buildables/zoner_explosive_missiles_pvp.json"
+        },
+        {
+            "path": "buildables/zoner_fort_outpost_pvp.json"
+        },
+        {
+            "path": "buildables/zoner_increased_range_missiles_pvp.json"
+        },
+        {
+            "path": "buildables/zoner_rapid_fire_missiles_pvp.json"
+        },
+        {
+            "path": "buildables/zoner_regen_structures_pvp.json"
+        },
+        {
+            "path": "cinematics/pvp/pvp_c01_intro.json"
+        },
+        {
+            "path": "cinematics/pvp/pvp_c02_outro.json"
+        },
+        {
+            "path": "entities/entity_struct_dot_piston_pvp.json"
+        },
+        {
+            "path": "entities/entity_struct_poi_tower_04_pvp.json"
+        },
+        {
+            "path": "entities/entity_struct_redstone_launcher_pvp.json"
+        },
+        {
+            "path": "entities/entity_struct_tower_shotgun_turret_pvp.json"
+        },
+        {
+            "path": "entities/entity_struct_trap_freeze_pvp.json"
+        },
+        {
+            "path": "entities/entity_struct_treasure_chest_pvp.json"
+        },
+        {
+            "path": "entities/mob_creeper_pvp.json"
+        },
+        {
+            "path": "entities/mob_fallen_warrior_pvp.json"
+        },
+        {
+            "path": "entities/mob_golem_carrier_nis_pvp.json"
+        },
+        {
+            "path": "entities/mob_golem_carrier_pvp.json"
+        },
+        {
+            "path": "entities/mob_golem_cavalry_pvp.json"
+        },
+        {
+            "path": "entities/mob_golem_shield_nis_pvp.json"
+        },
+        {
+            "path": "entities/mob_golem_shield_pvp.json"
+        },
+        {
+            "path": "entities/mob_golem_sniper_nis_pvp.json"
+        },
+        {
+            "path": "entities/mob_golem_sniper_pvp.json"
+        },
+        {
+            "path": "entities/mob_golem_stone_pvp.json"
+        },
+        {
+            "path": "entities/mob_golem_support_pvp.json"
+        },
+        {
+            "path": "entities/mob_golem_wood_pvp.json"
+        },
+        {
+            "path": "entities/mob_illager_axe_pvp.json"
+        },
+        {
+            "path": "entities/mob_skeleton_pvp.json"
+        },
+        {
+            "path": "entities/mob_zombie_pvp.json"
+        },
+        {
+            "path": "entities/mount_beetle_pvp.json"
+        },
+        {
+            "path": "entities/mount_bird_pvp.json"
+        },
+        {
+            "path": "entities/piglin_bruiser_pvp.json"
+        },
+        {
+            "path": "entities/piglin_grunter_pvp.json"
+        },
+        {
+            "path": "entities/piglin_medic_pvp.json"
+        },
+        {
+            "path": "entities/piglin_piggo_warboar_pvp.json"
+        },
+        {
+            "path": "entities/player_pvp.json"
+        },
+        {
+            "path": "entities/proj_boulder_fallenwarrior_impact_aoe_pvp.json"
+        },
+        {
+            "path": "entities/proj_boulder_fallenwarrior_pvp.json"
+        },
+        {
+            "path": "entities/proj_piglin_barrel_2_pvp.json"
+        },
+        {
+            "path": "entities/proj_piglin_barrel_3_pvp.json"
+        },
+        {
+            "path": "entities/proj_poi_ice_tower_impact_aoe_pvp.json"
+        },
+        {
+            "path": "entities/proj_poi_knockback_tower_impact_aoe_pvp.json"
+        },
+        {
+            "path": "entities/proj_redstone_launcher_impact_aoe_pvp.json"
+        },
+        {
+            "path": "entities/spawner_controller_roaming_piglin_general_world_night_pvp.json"
+        },
+        {
+            "path": "entities/spawner_controller_roaming_piglin_root_pvp.json"
+        },
+        {
+            "path": "entities/spawner_mount_01_pvp.json"
+        },
+        {
+            "path": "entities/spawner_mount_03_pvp.json"
+        },
+        {
+            "path": "entities/spawner_mount_04_pvp.json"
+        },
+        {
+            "path": "entities/spawner_mount_05_pvp.json"
+        },
+        {
+            "path": "entities/spawner_world_beetle_mount_pvp.json"
+        },
+        {
+            "path": "entities/spawner_world_bird_mount_pvp.json"
+        },
+        {
+            "path": "entities/spawner_world_tiger_mount_pvp.json"
+        },
+        {
+            "path": "entities/template_piglin_pvp.json"
+        },
+        {
+            "path": "entities/wmap_piglin_base_small_size_tooltip_pvp.json"
+        },
+        {
+            "path": "feature_rules/rule_ore_coal_patch_small_pvp.json"
+        },
+        {
+            "path": "feature_rules/rule_ore_diamond_patch_large_pvp.json"
+        },
+        {
+            "path": "feature_rules/rule_ore_diamond_patch_small_pvp.json"
+        },
+        {
+            "path": "feature_rules/rule_ore_iron_vein_high_density_pvp.json"
+        },
+        {
+            "path": "feature_rules/rule_ore_redstone_patch_small_pvp.json"
+        },
+        {
+            "path": "feature_rules/rule_poi_loot_treasure_chest_pvp.json"
+        },
+        {
+            "path": "feature_rules/rule_roaming_piglin_spawner_controllers_pvp.json"
+        },
+        {
+            "path": "gamelayer/server/build_logic/costs_piglin_pvp.json"
+        },
+        {
+            "path": "gamelayer/server/build_logic/costs_player_hq_pvp.json"
+        },
+        {
+            "path": "gamelayer/world_placements/placements_pvp.json"
+        },
+        {
+            "path": "scripts_bsharp20/aaaa_pvp_helpers.js"
+        },
+        {
+            "path": "scripts_bsharp20/aaa_pvp_consts.js"
+        },
+        {
+            "path": "scripts_bsharp20/achievements.js"
+        },
+        {
+            "path": "scripts_bsharp20/clear_area_pvp.js"
+        },
+        {
+            "path": "scripts_bsharp20/day_night_logic.js"
+        },
+        {
+            "path": "scripts_bsharp20/end_match_pvp.js"
+        },
+        {
+            "path": "scripts_bsharp20/grant_damage_increase_pvp.js"
+        },
+        {
+            "path": "scripts_bsharp20/grant_resources_pvp.js"
+        },
+        {
+            "path": "scripts_bsharp20/hq_announce_pvp.js"
+        },
+        {
+            "path": "scripts_bsharp20/hq_audio_pvp.js"
+        },
+        {
+            "path": "scripts_bsharp20/hq_state_pvp.js"
+        },
+        {
+            "path": "scripts_bsharp20/invulnerable_structures_pvp.js"
+        },
+        {
+            "path": "scripts_bsharp20/mounts_pvp.js"
+        },
+        {
+            "path": "scripts_bsharp20/resource_drip_pvp.js"
+        },
+        {
+            "path": "scripts_bsharp20/start_match_pvp.js"
+        },
+        {
+            "path": "scripts_bsharp20/upgrade_rewards.js"
+        },
+        {
+            "path": "scripts_bsharp20/piglin/aa_piglin_data_attack.js"
+        },
+        {
+            "path": "scripts_bsharp20/piglin/aa_piglin_data_defend.js"
+        },
+        {
+            "path": "scripts_bsharp20/piglin/aa_piglin_data_obstacle.js"
+        },
+        {
+            "path": "scripts_bsharp20/piglin/a_piglin_init.js"
+        },
+        {
+            "path": "scripts_bsharp20/piglin/piglin_base_gen_pvp.js"
+        },
+        {
+            "path": "scripts_bsharp20/piglin/piglin_base_presence_pvp.js"
+        },
+        {
+            "path": "scripts_bsharp20/piglin/piglin_base_rebuild_pvp.js"
+        },
+        {
+            "path": "scripts_bsharp20/piglin/piglin_wave_logic_pvp.js"
+        },
+        {
+            "path": "scripts_bsharp20/practice/base_response_practice_mode.js"
+        },
+        {
+            "path": "scripts_bsharp20/practice/conquest_practice_mode.js"
+        },
+        {
+            "path": "scripts_bsharp20/world/aa_pvp_world_gen_definition.js"
+        },
+        {
+            "path": "scripts_bsharp20/world/world_definition.js"
+        },
+        {
+            "path": "services/gameresources_pvp.json"
+        },
+        {
+            "path": "services/gametickets_pvp.json"
+        },
+        {
+            "path": "services/inventory_pvp.json"
+        },
+        {
+            "path": "services/in_game_ui_pvp.json"
+        },
+        {
+            "path": "services/loot_table_pvp.json"
+        },
+        {
+            "path": "services/player_spawn_pvp.json"
+        },
+        {
+            "path": "services/pop_cap_service_pvp.json"
+        },
+        {
+            "path": "services/post_game_stats_pvp.json"
+        },
+        {
+            "path": "services/team_manager_conquest_practice.json"
+        },
+        {
+            "path": "services/team_manager_pvp.json"
+        },
+        {
+            "path": "villages/piglin_pvp_attack.json"
+        },
+        {
+            "path": "villages/piglin_pvp_defend.json"
+        },
+        {
+            "path": "villages/piglin_pvp_obstacle.json"
+        },
+        {
+            "path": "villages/pvp_hq_blue.json"
+        },
+        {
+            "path": "villages/pvp_hq_red.json"
+        },
+        {
+            "path": "villages/template_village_piglin_pvp.json"
+        }
+    ],
+    "size": 531988
+}

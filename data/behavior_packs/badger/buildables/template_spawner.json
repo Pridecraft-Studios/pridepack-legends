@@ -1,0 +1,154 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_spawner",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Siegecraft",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_spawner"
+      },
+      "badger:health": {
+        "max_health": 125
+      },
+      "badger:loot": {
+        "table": "mob_spawner_loot"
+      },
+      "badger:offline_traits": {
+        "offline_disabled_components": [
+          "badger:culture"
+        ],
+        "construction_disabled_components": [
+          "badger:culture",
+          "badger:buildable_spawner"
+        ]
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 20.0,
+        "waypoint_max_range": 20.0,
+        "compass_max_range": "short",
+        "filter_tagsets": [
+          {
+            "include_tags": [],
+            "exclude_tags": []
+          },
+          {
+            "include_tags": [
+              "village_attack",
+              "base_assault"
+            ],
+            "exclude_tags": []
+          }
+        ]
+      },
+      "badger:waypoint_marker": {
+        "path": "",
+        "world_position_offset": [
+          0,
+          4,
+          0
+        ],
+        "screen_position_offset": [
+          0,
+          0
+        ],
+        "priority": 0
+      },
+      "badger:generate_ruins": {
+        "max": 1
+      },
+      "badger:reports_buildable_state": {
+        "reports_state": "combat"
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            0, 
+            1.5, 
+            0
+          ]
+        ]
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_deconstruction_default",
+        "badger:component_health_generation_default",
+        "badger:component_generate_ruins_default"
+      ],
+      "badger:hud_message_proximity": {
+        "messages": [
+          {
+            "range": 6.0,
+            "hud_message_id": "spawn_ticket_required",
+            "cooldown_seconds": 1.0,
+            "hud_message_args": [],
+            "filter": {
+              "include": [
+                "player"
+              ],
+              "exclude": [],
+              "alliance_rule_filter": "friendly"
+            }
+          },
+          {
+            "range": 6.0,
+            "hud_message_id": "no_mobs_recalled",
+            "cooldown_seconds": 1.0,
+            "hud_message_args": [],
+            "filter": {
+              "include": [
+                "player"
+              ],
+              "exclude": [],
+              "alliance_rule_filter": "friendly"
+            }
+          }
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "player_buildable",
+          "spawner"
+        ]
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 4,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction_spawner",
+            "input_layout_under_construction": "overlay_gameplay_under_construction"
+          }
+        ]
+      },
+      "badger:lost_entity_recall_point": {
+        "min_recall_radius": 0.0,
+        "min_entity_distance_from_hero": 0.0,
+        "alliance_rule_filter": "can_recall",
+        "tag_filter": {
+          "include_tags": [],
+          "exclude_tags": []
+        },
+        "include_in_combat": true,
+        "disable_influencing_during_channel": false,
+        "arrival_min_radius": 0.0,
+        "arrival_max_radius": 5.0,
+        "arrival_max_height_difference": 4
+      }
+    }
+  }
+}

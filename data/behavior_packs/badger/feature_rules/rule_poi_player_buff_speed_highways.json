@@ -1,0 +1,44 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_poi_player_buff_speed_highways",
+      "places_feature": "badger:feature_buff_speed_scatter_small"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "hot_and_dry"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "icy_cold"
+            }
+          ]
+        }
+]
+    },
+    "distribution": {
+      "iterations": "math.random(1,6)",
+      "scatter_chance": "q.poi_distance(v.worldx, v.worldz) > 200 ? 20 : 0",
+      "early_out": "q.poi_influence_factor(v.scatteredx, v.scatteredz) >= 0.09",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [0, 4]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [0, 4]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)"
+    }
+  }
+}

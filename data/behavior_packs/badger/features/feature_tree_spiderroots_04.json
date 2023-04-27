@@ -1,0 +1,43 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_tree_spiderroots_04"
+    },
+    "structure_name": "nature/tree_spiderroots_04",
+    "placement_range": {
+      "x": [
+        0,
+        2
+      ],
+      "z": [
+        0,
+        2
+      ],
+      "y": [
+        -2,
+        4
+      ]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {},
+      "block_intersection": {
+        "block_allow_list": [
+          "minecraft:air",
+          "badger:block_water",
+          "minecraft:grass",
+          "badger:block_dirt",
+          "badger:block_gravel",
+          "badger:block_sand",
+          "badger:block_stone",
+          "badger:block_rivershore",
+          "badger:block_deco_plant_bullrush_01",
+          "badger:block_deco_plant_bullrush_02",
+          "badger:block_deco_plant_bullrush_03",
+          "badger:block_deco_grassrush_01"
+        ]
+      }
+    }
+  }
+}

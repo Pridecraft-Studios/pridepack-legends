@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_engine_piglin_large", 
+      "material": "badger_metal"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty", 
+        "directional_texture": true, 
+        "directional_shape": true, 
+        "collision_shape": "block"
+      }, 
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }, 
+      "minecraft:block_light_emission":  {
+        "emission": [
+          255,
+          176,
+          0,
+          150
+        ]
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "deco_nether", 
+          "piglin_base_not_buildable"
+        ]
+      }, 
+      "badger:terrain_type": {
+        "terrain": "stone"
+      }
+    }
+  }
+}

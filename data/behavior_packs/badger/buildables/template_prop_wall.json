@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_prop_wall",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:buildable_requirement": {},
+      "badger:buildable_structure": {
+        "nbt_file": "chunk_piglin_attack_wall_netherrack_01",
+        "build_time": 0
+      },
+      "badger:server_block_source_removal": {},
+      "badger:destroy_on_village_destruction": {
+        "group": "walls"
+      }
+    }
+  }
+}

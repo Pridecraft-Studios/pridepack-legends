@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_fateful_land_pillar_01",
+        20.0
+      ],
+      [
+        "badger:feature_fateful_land_pillar_02",
+        20.0
+      ],
+      [
+        "badger:feature_fateful_land_pillar_03",
+        20.0
+      ],
+      [
+        "badger:feature_fateful_land_pillar_04",
+        20.0
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_fateful_land_pillar_weighted"
+    }
+  }
+}

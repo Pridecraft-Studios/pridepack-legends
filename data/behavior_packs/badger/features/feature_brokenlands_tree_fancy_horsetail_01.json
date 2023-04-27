@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_tree_fancy_horsetail_01"
+    },
+    "structure_name": "nature/tree_fancy_horsetail_01",
+    "placement_range": {
+      "x": [1, 3],
+      "z": [1, 3]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "block_intersection": {
+        "block_allow_list": ["minecraft:air", "minecraft:grass"]
+      },
+      "grounded": {
+        "block_allow_list": ["minecraft:grass"]
+      }
+    }
+  }
+}

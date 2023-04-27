@@ -1,0 +1,28 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:piglin_village_attack_spawn_location",
+            "runtime_identifier": "badger:buildable",
+            "is_summonable": true
+        },
+      "components": {
+        "badger:buildable_requirement": {
+        },
+        "badger:buildable_structure": {
+          "nbt_file": "piglin_village_attack_spawn_point",
+          "build_time": 1,
+          "construction_start_trigger": "on_construction_start",
+          "construction_end_trigger": "on_construction_end"
+        },
+        "badger:tags": {
+          "tags": [
+            "piglin_village_attack_spawn_location"
+          ]
+        },
+        "badger:template": [
+          "badger:template_structure_piglin"
+        ]
+      }
+    }
+}

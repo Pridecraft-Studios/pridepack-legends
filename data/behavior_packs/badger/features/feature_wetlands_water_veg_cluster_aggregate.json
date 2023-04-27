@@ -1,0 +1,19 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_wetlands_water_veg_cluster_aggregate"
+    },
+    "early_out": "first_failure",
+    "features": [
+
+      "badger:feature_wetlands_trees_mega_weighted",
+      "badger:feature_wetlands_water_veg_cluster_tree_scatter",
+      "badger:feature_wetlands_water_veg_cluster_root_scatter",
+      "badger:feature_wetlands_water_veg_cluster_firelily_scatter",
+      "badger:feature_wetlands_mangrove_cluster_land_grass_scatter",
+      "badger:feature_wetlands_water_veg_cluster_lily_scatter"
+      
+    ]
+  }
+}

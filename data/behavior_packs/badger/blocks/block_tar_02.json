@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_tar_02",
+      "material": "badger_dirt"
+    },
+    "components": {
+      "badger:block_effects": {
+        "effect_frequency": 0.1,
+        "apply_status": {
+          "slowed_tar": {
+            "strength": 1.0
+          }
+        }
+      },
+      "minecraft:block_shape": {
+        "shape": "block",
+        "directional_texture": false,
+        "directional_shape": false,
+        "collision_shape": "empty"
+      },
+      "badger:block_type": {
+        "tags": [
+          "block_tar",
+          "water"
+        ]
+      },
+      "badger:terrain_type": {
+        "terrain": "tar"
+      },
+      "badger:liquid": {},
+      "minecraft:destroy_time": {
+        "value": 10
+      }
+    }
+  }
+}

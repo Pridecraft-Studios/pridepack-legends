@@ -1,0 +1,17 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_structure",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      //This template exists only so that the difficulty system reference specific blank templates and inject stat modifiers into them.
+      //Templates have to contain at least one component, so an empty badger:template is specified here
+      "badger:template": [
+        "badger:component_destroy_on_village_destruction_structures"
+      ]
+    }
+  }
+}

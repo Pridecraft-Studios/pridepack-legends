@@ -1,0 +1,6 @@
+{
+  "badger:ping_service": {
+    "rate_limit_regen_time": 3.0,
+    "rate_limit_buffer": 3
+  }
+}

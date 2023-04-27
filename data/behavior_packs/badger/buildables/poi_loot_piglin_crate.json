@@ -1,0 +1,25 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:poi_loot_piglin_crate",
+            "runtime_identifier": "badger:buildable",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:buildable_structure": {
+                "nbt_file": "poi_loot_piglin_crate"
+            },
+            "badger:buildable_destruction": {
+                "particle_effect": "badger:fx_destruction_generic"
+            },
+            "badger:destroy_on_village_destruction": {
+                "ignore": true
+            },
+            "badger:template": "badger:template_poi",
+            "badger:tags": {
+                "tags": ["buildable", "buildable_combat", "buildable_structure", "poi_loot_piglin_crate", "base_destruction_opt_out"]
+            }
+        }
+    }
+}

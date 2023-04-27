@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:poi_tower_04_child_turret",
+      "runtime_identifier": "badger:buildable"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1,
+        "height": 1
+      },
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:telemetry_category": {
+        "category_name": "Player Structure"
+      },
+      "badger:tags": {
+        "tags": [
+          "block",
+          "buildable",
+          "buildable_combat",
+          "buildable_structure"
+        ]
+      },
+      "badger:template": [
+        "badger:template_structure_child_entity_player"
+      ]
+    }
+  }
+}

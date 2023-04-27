@@ -1,0 +1,45 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_brokenlands_plateaus_grass_waves",
+	    "places_feature": "badger:feature_brokenlands_plateaus_grass_waves_weighted"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "brokenlands_plateau"
+            }
+          ]
+        }
+      ]
+    },
+	  "distribution": {
+      "early_out": "query.heightmap(variable.scatteredx, variable.scatteredz) < 46",
+      "iterations": "50",
+      "scatter_chance": "100",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": 0,
+      "coordinate_eval_order": "xzy"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_jungle_dirt_replacement_scatter_03"
+    },
+    "places_feature": "badger:feature_jungle_dirt_block_replacement_03",
+    "iterations": "60",
+    "scatter_chance": "100",
+    "project_input_to_floor": false,
+    "y": "temp.height = query.heightmap(variable.worldx,variable.worldz); return temp.height - (variable.originy +1);",
+    "x": "temp.rmin = 0; temp.rmax = 6; temp.theta = math.random(0, 360); temp.r = math.sqrt(math.random(0, 1) * (math.pow(temp.rmax, 2) - math.pow(temp.rmin, 2)) + math.pow(temp.rmin, 2)); return math.round(temp.r * math.cos(temp.theta));",
+    "z": "math.round(temp.r * math.sin(temp.theta))",
+    "coordinate_eval_order": "xzy"
+  }
+}

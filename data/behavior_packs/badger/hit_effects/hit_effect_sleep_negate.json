@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:hit_effect_sleep_negate",
+      "runtime_identifier": "badger:hit_effect"
+    },
+    "components": {
+      "badger:hit_effect": {
+        "trigger": "sleep_negate"
+      },
+      "badger:apply_status": {
+        "apply_status": {
+          "sleep_negate": {
+            "strength": 1.0
+          }
+        }
+      }
+    }
+  }
+}

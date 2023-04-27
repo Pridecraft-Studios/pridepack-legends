@@ -1,0 +1,49 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_mountain_resource_stone_boulder",
+      "places_feature": "badger:feature_boulder_expression"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "final_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mountain_mid_hills"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mountain_foot_hills"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "1",
+      "scatter_chance": "100",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": 0
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_jungle_block_firefly_medium"
+    },
+    "may_attach_to": {
+      "bottom": [
+        "badger:block_water"
+      ]
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_fx_jungle_fireflies_medium"
+  }
+}

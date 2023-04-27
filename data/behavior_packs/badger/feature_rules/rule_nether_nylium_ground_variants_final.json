@@ -1,0 +1,44 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": { 
+      "identifier": "badger:rule_nether_nylium_ground_variants_final",
+      "places_feature": "badger:feature_nether_final_nylium_scatter"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "nether_final_battle_arena"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "nether_piglin_final" 
+            }
+          ] 
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "1",
+      "scatter_chance": "90",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [0,15]
+      },
+      "y": 0,
+      "z": {
+        "distribution": "gaussian",
+        "extent": [0,15]
+      }
+    }
+  }
+}

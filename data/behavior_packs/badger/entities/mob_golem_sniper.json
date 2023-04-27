@@ -1,0 +1,870 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_golem_sniper",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Ally Unit"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 2.65,
+        "height": 4.5
+      },
+      "badger:loot": {
+        "table": "common_mob"
+      },
+      "badger:movement": {
+        "move_speed": 4
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:collision_weight": {
+        "weight": 300
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 5
+      },
+      "badger:navigation": {
+        "avoidance_lookahead": 15.0,
+        "fall_distance": 10,
+        "avoid_block_damage": true,
+        "ignore_solids_rule": "same_team"
+      },
+      "badger:tags": {
+        "tags": [
+          "sniper",
+          "mob",
+          "luredirect",
+          "special",
+          "ranged",
+          "poi_golem"
+        ]
+      },
+      "badger:health": {
+        "max_health": 500
+      },
+      "badger:map_controller": {
+        "initial_key_values": [
+          {
+            "key": "mob",
+            "value": "mob_golem_sniper"
+          },
+          {
+            "key": "visibility",
+            "value": "revealed"
+          }
+        ]
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 20.0,
+        "waypoint_max_range": 20.0,
+        "compass_max_range": "short"
+      },
+      "badger:telemetry_category": {
+        "category_name": "POI Golem"
+      },
+      "badger:waypoint_marker": {
+        "path": "waypoint_mob_golem_sniper",
+        "label": "poi.ally.05.name",
+        "world_position_offset": [
+          0,
+          7,
+          0
+        ]
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Close Targeting
+          {
+            "name": "ally_sniper_mob_shot_short",
+            "max_range": 7,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "action_tickets": {
+              "rc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "close_shot_knockback",
+              "close_shot",
+              "close_shot_2",
+              "close_shot_3",
+              "close_shot_4",
+              "close_shot_5",
+              "close_shot_6",
+              "close_shot_7",
+              "close_shot_8",
+              "close_shot_9",
+              "close_shot_10"
+            ]
+          },
+          //Boss targeting
+          {
+            "name": "ally_sniper_boss_shot",
+            "min_range": 6,
+            "max_range": 35,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "action_tickets": {
+              "rc": 1
+            },
+            "include_tags": [
+              "boss"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "burst_shot_1"
+            ]
+          },
+          //Mob targeting
+          {
+            "name": "ally_sniper_mob_shot",
+            "min_range": 6,
+            "max_range": 80,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "action_tickets": {
+              "rc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "burst_shot_1"
+            ]
+          },
+          //Celebrate
+          {
+            "name": "celebrate",
+            "max_range": 100,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "sc": 0
+            },
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "celebration"
+            ]
+          },
+          //General targeting
+          {
+            "name": "ally_sniper_enemy_shot",
+            "min_range": 6,
+            "max_range": 80,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "action_tickets": {
+              "rc": 1
+            },
+            "include_tags": [],
+            "exclude_tags": [
+              "buildable_combat",
+              "donotattack",
+              "siege_projectile"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "burst_shot_1"
+            ]
+          },
+          //Buildable targeting
+          {
+            "name": "ally_sniper_buildable_shot",
+            "min_range": 6,
+            "max_range": 35,
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "wall",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "burst_shot_1"
+            ]
+          },
+          //Wall targeting
+          {
+            "name": "ally_sniper_buildable_shot",
+            "min_range": 1,
+            "max_range": 3,
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "burst_shot_1"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {
+          "fire": 2.0,
+          "chop": 1.5
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 8,
+          "sc": 4,
+          "rc": 8,
+          "ht": 1
+        }
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "burst_shot_1",
+            "trigger": "on_ranged_attack",
+            "on_hit_target_trigger": "on_golem_sniper_ranged_attack_hit",
+            "predictive_windup": true,
+            "range": {
+              "max_range": 80
+            },
+            "state_machine": {
+              "wind_up": 2.0,
+              "wind_down": 1.0,
+              "cooldown_time": 0.0,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {
+              "time_window": 1.5
+            },
+            "shoot": {
+              "projectile": "badger:proj_burst_shot",
+              "position_offsets_from_center": [
+                [
+                  0,
+                  3,
+                  4
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 20,
+                "damage_types": []
+              }
+            }
+          },
+          {
+            "name": "close_shot",
+            "trigger": "on_ranged_attack",
+            "on_hit_target_trigger": "on_golem_sniper_ranged_attack_hit",
+            "predictive_windup": true,
+            "range": {
+              "max_range": 7
+            },
+            "state_machine": {
+              "wind_up": 1.0,
+              "wind_down": 0.5,
+              "cooldown_time": 1.0,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {
+              "time_window": 0.9
+            },
+            "shoot": {
+              "projectile": "badger:proj_dart_sniper",
+              "position_offsets_from_center": [
+                [
+                  0,
+                  2,
+                  1
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 2.1,
+                "damage_types": [
+                  "ranged"
+                ]
+              }
+            }
+          },
+          {
+            "name": "close_shot_2",
+            "trigger": "on_ranged_attack",
+            "on_hit_target_trigger": "on_golem_sniper_ranged_attack_hit",
+            "predictive_windup": true,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 1.0,
+              "wind_down": 0.5,
+              "cooldown_time": 1.0,
+              "deactivates_on_cooldown": true
+            },
+            "accuracy": {
+              "min_range": 0.5,
+              "max_range": 1,
+              "scale_with_range": true
+            },
+            "interruptible": {
+              "time_window": 0.9
+            },
+            "shoot": {
+              "projectile": "badger:proj_dart_sniper",
+              "position_offsets_from_center": [
+                [
+                  0.1,
+                  2,
+                  1
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 2.1,
+                "damage_types": [
+                  "ranged"
+                ]
+              }
+            }
+          },
+          {
+            "name": "close_shot_3",
+            "trigger": "on_ranged_attack",
+            "on_hit_target_trigger": "on_golem_sniper_ranged_attack_hit",
+            "predictive_windup": true,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 1.0,
+              "wind_down": 0.5,
+              "cooldown_time": 1.0,
+              "deactivates_on_cooldown": true
+            },
+            "accuracy": {
+              "min_range": 1,
+              "max_range": 1.5,
+              "scale_with_range": true
+            },
+            "interruptible": {
+              "time_window": 0.9
+            },
+            "shoot": {
+              "projectile": "badger:proj_dart_sniper",
+              "position_offsets_from_center": [
+                [
+                  0.2,
+                  2,
+                  1
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 2.1,
+                "damage_types": [
+                  "ranged"
+                ]
+              }
+            }
+          },
+          {
+            "name": "close_shot_4",
+            "trigger": "on_ranged_attack",
+            "on_hit_target_trigger": "on_golem_sniper_ranged_attack_hit",
+            "predictive_windup": true,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 1.0,
+              "wind_down": 0.5,
+              "cooldown_time": 1.0,
+              "deactivates_on_cooldown": true
+            },
+            "accuracy": {
+              "min_range": 1,
+              "max_range": 2,
+              "scale_with_range": true
+            },
+            "interruptible": {
+              "time_window": 0.9
+            },
+            "shoot": {
+              "projectile": "badger:proj_dart_sniper",
+              "position_offsets_from_center": [
+                [
+                  -0.1,
+                  2,
+                  1
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 2.1,
+                "damage_types": [
+                  "ranged"
+                ]
+              }
+            }
+          },
+          {
+            "name": "close_shot_5",
+            "trigger": "on_ranged_attack",
+            "on_hit_target_trigger": "on_golem_sniper_ranged_attack_hit",
+            "predictive_windup": true,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 1.0,
+              "wind_down": 0.5,
+              "cooldown_time": 1.0,
+              "deactivates_on_cooldown": true
+            },
+            "accuracy": {
+              "min_range": 1,
+              "max_range": 2.5,
+              "scale_with_range": true
+            },
+            "interruptible": {
+              "time_window": 0.9
+            },
+            "shoot": {
+              "projectile": "badger:proj_dart_sniper",
+              "position_offsets_from_center": [
+                [
+                  -0.2,
+                  2,
+                  1
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 2.1,
+                "damage_types": [
+                  "ranged"
+                ]
+              }
+            }
+          },
+          {
+            "name": "close_shot_6",
+            "trigger": "on_ranged_attack",
+            "on_hit_target_trigger": "on_golem_sniper_ranged_attack_hit",
+            "predictive_windup": true,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 1.0,
+              "wind_down": 0.5,
+              "cooldown_time": 1.0,
+              "deactivates_on_cooldown": true
+            },
+            "accuracy": {
+              "min_range": 0.5,
+              "max_range": 2,
+              "scale_with_range": true
+            },
+            "interruptible": {
+              "time_window": 0.9
+            },
+            "shoot": {
+              "projectile": "badger:proj_dart_sniper",
+              "position_offsets_from_center": [
+                [
+                  0,
+                  2,
+                  1
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 2.1,
+                "damage_types": [
+                  "ranged"
+                ]
+              }
+            }
+          },
+          {
+            "name": "close_shot_7",
+            "trigger": "on_ranged_attack",
+            "on_hit_target_trigger": "on_golem_sniper_ranged_attack_hit",
+            "predictive_windup": true,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 1.0,
+              "wind_down": 0.5,
+              "cooldown_time": 1.0,
+              "deactivates_on_cooldown": true
+            },
+            "accuracy": {
+              "min_range": 0.5,
+              "max_range": 2,
+              "scale_with_range": true
+            },
+            "interruptible": {
+              "time_window": 0.9
+            },
+            "shoot": {
+              "projectile": "badger:proj_dart_sniper",
+              "position_offsets_from_center": [
+                [
+                  0,
+                  2.2,
+                  1
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 2.1,
+                "damage_types": [
+                  "ranged"
+                ]
+              }
+            }
+          },
+          {
+            "name": "close_shot_8",
+            "trigger": "on_ranged_attack",
+            "on_hit_target_trigger": "on_golem_sniper_ranged_attack_hit",
+            "predictive_windup": true,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 1.0,
+              "wind_down": 0.5,
+              "cooldown_time": 1.0,
+              "deactivates_on_cooldown": true
+            },
+            "accuracy": {
+              "min_range": 0.5,
+              "max_range": 2.5,
+              "scale_with_range": true
+            },
+            "interruptible": {
+              "time_window": 0.9
+            },
+            "shoot": {
+              "projectile": "badger:proj_dart_sniper",
+              "position_offsets_from_center": [
+                [
+                  0,
+                  2.2,
+                  1
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 2.1,
+                "damage_types": [
+                  "ranged"
+                ]
+              }
+            }
+          },
+          {
+            "name": "close_shot_9",
+            "trigger": "on_ranged_attack",
+            "on_hit_target_trigger": "on_golem_sniper_ranged_attack_hit",
+            "predictive_windup": true,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 1.0,
+              "wind_down": 0.5,
+              "cooldown_time": 1.0,
+              "deactivates_on_cooldown": true
+            },
+            "accuracy": {
+              "min_range": 0.5,
+              "max_range": 2,
+              "scale_with_range": true
+            },
+            "interruptible": {
+              "time_window": 0.9
+            },
+            "shoot": {
+              "projectile": "badger:proj_dart_sniper",
+              "position_offsets_from_center": [
+                [
+                  0,
+                  2.2,
+                  1
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 2.1,
+                "damage_types": [
+                  "ranged"
+                ]
+              }
+            }
+          },
+          {
+            "name": "close_shot_10",
+            "trigger": "on_ranged_attack",
+            "on_hit_target_trigger": "on_golem_sniper_ranged_attack_hit",
+            "predictive_windup": true,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 1.0,
+              "wind_down": 0.5,
+              "cooldown_time": 1.0,
+              "deactivates_on_cooldown": true
+            },
+            "accuracy": {
+              "min_range": 1.5,
+              "max_range": 2,
+              "scale_with_range": true
+            },
+            "interruptible": {
+              "time_window": 0.9
+            },
+            "shoot": {
+              "projectile": "badger:proj_dart_sniper",
+              "position_offsets_from_center": [
+                [
+                  0,
+                  2.2,
+                  1
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 2.1,
+                "damage_types": [
+                  "ranged"
+                ]
+              }
+            }
+          },
+          {
+            "name": "close_shot_knockback",
+            "trigger": "on_ranged_attack",
+            "on_hit_target_trigger": "on_golem_sniper_ranged_attack_hit",
+            "predictive_windup": true,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 1.0,
+              "activation_time": 0.2,
+              "wind_down": 0.5,
+              "cooldown_time": 1.0,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 120,
+                "radius": 5,
+                "thickness": 5,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.25
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 2.1,
+                "damage_types": [
+                  "crush"
+                ]
+              },
+              "apply_status": {
+              "engaged": {
+                "chance": 1.0,
+                "strength": 1.0
+              }
+            },
+            "knockback": {
+              "angle": 40,
+              "force": 40
+              }
+            }
+          }
+        ]
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 1.2,
+          "position": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "damage_effects": [
+          {
+            "damage": 0,
+            "damage_types": [],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [],
+            "apply_status": {
+              "large_collide": {
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 0.0
+      },
+      "badger:resist_status": {
+        "stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "rooted": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "spore_damaged": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "spore_healed": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "feared": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "frozen": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "poisoned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "poisoned_no_vfx": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        }
+      },
+      "badger:auto_despawn": {
+        "distance": 400
+      },
+      "badger:village_influence": {
+        "amount": 10
+      },
+      "badger:telemetry_track_banner_order": {
+        "enabled": true
+      },
+      "badger:conditionally_solid_blocks": {
+        "include_tags": [
+          "barrier_waterfall"
+        ],
+        "exclude_tags": []
+      },
+      "badger:template": [
+        "badger:template_poi_mob",
+        "badger:component_leash_on_stop_default",
+        "badger:component_becomes_lost_poi_golem"
+      ]
+    }
+  }
+}

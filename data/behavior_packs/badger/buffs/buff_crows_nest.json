@@ -1,0 +1,48 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:buff_crows_nest",
+      "runtime_identifier": "badger:buff",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buff": {
+        "buff_category": "attack",
+        "application_time_seconds": 10
+      },
+      "badger:modifier_targeting_range": {
+        "post_multiply": 1.3
+      },
+      "badger:modifier_area_overlays_range": {
+        "modifiers": [
+          {
+            "shape": "circles",
+            "type": "tower",
+            "post_multiply": 1.3
+          }
+        ]
+      },
+      "badger:modifier_block_swap": {
+        "modifiers": [
+          {
+            "badger:block_deco_spear_head_small": "badger:block_deco_piglin_head_attack_small_hor"
+          },
+          {
+            "badger:block_deco_spear_head": "badger:block_deco_piglin_head_attack_small"
+          }
+        ],
+        "duration_percentage": 0.1,
+        "applied_by": "crows_nest"
+      },
+      "badger:status": {
+        "applied_name": "crows_nest",
+        "default_resistance": {
+          "resisted": false,
+          "time": 5,
+          "resistance_persist_time": 0.5
+        }
+      }
+    }
+  }
+}

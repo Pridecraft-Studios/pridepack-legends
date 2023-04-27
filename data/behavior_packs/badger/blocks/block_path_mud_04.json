@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "material": "badger_grass_wet", 
+      "identifier": "badger:block_path_mud_04"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "path", 
+        "directional_texture": false, 
+        "directional_shape": true, 
+        "collision_shape": "cube"
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:terrain_type": {
+        "terrain": "grass"
+      }
+    }
+  }
+}

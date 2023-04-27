@@ -1,0 +1,27 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_frostlands_block_frostice_blend_03"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_frostice_blend_03",
+    "may_replace": [
+      "badger:block_frostsnow",
+      "minecraft:air",
+      "badger:block_water"
+    ],
+    "may_attach_to": {
+      "min_sides_must_attach": 2,
+      "sides": [ 
+        "badger:block_frostice_blend_02"
+      ],
+      "bottom": [
+        "badger:block_glacier_02",
+        "badger:block_hotrock_mid_var01",
+        "badger:block_water"
+      ]
+    }
+  }
+}

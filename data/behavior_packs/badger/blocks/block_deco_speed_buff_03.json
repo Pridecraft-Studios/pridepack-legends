@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_speed_buff_03",
+      "material": "badger_grass_long"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty",
+        "directional_texture": false,
+        "directional_shape": true
+      },
+      "badger:block_effects": {
+        "effect_frequency": 0.0,
+        "apply_status": {
+          "player_speed": {
+            "strength": 1.0
+          }
+        }
+      },
+      "badger:terrain_type": {
+        "terrain": "grass"
+      },
+      "minecraft:block_light_emission": {
+        "emission": [
+          243.0,
+          227.0,
+          173.0,
+          128.0
+        ]
+      }
+    }
+  }
+}

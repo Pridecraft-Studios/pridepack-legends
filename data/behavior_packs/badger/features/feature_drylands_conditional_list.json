@@ -1,0 +1,63 @@
+{
+
+  "format_version": "1.13.0",
+
+  "code:conditional_list": {
+
+    "description": {
+
+      "identifier": "badger:feature_drylands_conditional_list"
+
+    },
+
+    "conditional_features": [
+
+      {
+
+        "places_feature": "badger:feature_drylands_grass_waves_aggregate",
+
+        "condition" : "temp.noisevalue = query.noise((variable.worldx) / 40, (variable.worldz) / 40);\r\ntemp.lownoisewiggle = math.random(-0.1,0.2);\r\ntemp.highnoisewiggle = math.random(-0.1,0.2);\r\nreturn (temp.noisevalue > (-0.4 + temp.lownoisewiggle) && temp.noisevalue < (0.4 + temp.highnoisewiggle) && math.random(1,10) > 3) && math.random(0,3) < 2;"
+
+      },
+
+      {
+
+        "places_feature": "badger:feature_drylands_hoodoo_base_grass_weighted",
+
+        "condition": "return (temp.wetness < 9) && (temp.distance > query.sea_level + 8) && (temp.distance < query.sea_level + 14) && math.random(0,5) < 2;"
+
+      },
+
+      {
+
+        "places_feature": "badger:feature_drylands_saltflat_riverbed_stone_weighted",
+
+        "condition" : " return (temp.wetness >= 3 && temp.wetness <= 5) && math.random(0,2) < -1;"
+
+      },
+
+      {
+
+        "places_feature": "badger:feature_drylands_saltflat_riverbed_stone_weighted",
+
+        "condition" : "return (temp.wetness >= 6 && temp.wetness <= 10) && math.random(0,3) < -1;"
+
+      },
+
+      {
+
+        "places_feature": "badger:feature_drylands_saltflat_riverbed_stone_weighted",
+
+        "condition" : "return (temp.wetness >= 11 && temp.wetness <= 15) && math.random(0,5) < -1;"
+
+      }
+
+
+
+    ],
+
+	"early_out_scheme": "placement_success"
+
+  }
+
+}

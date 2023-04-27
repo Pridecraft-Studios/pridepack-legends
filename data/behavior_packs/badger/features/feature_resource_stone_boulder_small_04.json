@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_resource_stone_boulder_small_04"
+    },
+    "may_replace": [
+      "minecraft:air"
+    ],
+    "may_attach_to": {
+      "bottom": [
+        "minecraft:grass",
+        "badger:block_rivershore",
+        "badger:block_frostsnow"
+      ]
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_deco_lake_boulder_04"
+  }
+}

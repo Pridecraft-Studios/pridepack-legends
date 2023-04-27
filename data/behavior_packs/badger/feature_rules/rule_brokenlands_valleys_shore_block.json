@@ -1,0 +1,52 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_brokenlands_valleys_shore_block",
+      "places_feature": "badger:feature_brokenlands_shore_block"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "brokenlands_valleys"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "brokenlands_valleys_fossil"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 256,
+      "scatter_chance": 100,
+      "early_out": "q.heightmap(v.scatteredx, v.scatteredz) != q.sea_level || q.water_distance(v.scatteredx, v.scatteredz) >= math.random(8, 12)",
+      "x": {
+        "distribution": "jittered_grid",
+        "extent": [
+          0,
+          15
+        ],
+        "step_size": 1.0
+      },
+      "z": {
+        "distribution": "jittered_grid",
+        "extent": [
+          0,
+          15
+        ],
+        "step_size": 1.0
+      },
+      "y": "q.sea_level - 1",
+      "coordinate_eval_order": "xzy"
+    }
+  }
+}

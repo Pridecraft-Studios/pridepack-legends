@@ -1,0 +1,448 @@
+{
+   "materials" : [
+      {
+         "name" : "AmbientOcclusion",
+         "path" : "AmbientOcclusion"
+      },
+      {
+         "name" : "badger_block_particles",
+         "path" : "BadgerBlockParticles"
+      },
+      {
+         "name" : "BadgerClouds",
+         "path" : "BadgerClouds"
+      },
+      {
+         "name" : "BadgerDecals",
+         "path" : "BadgerDecals"
+      },
+      {
+         "name" : "BadgerDecalsDebug",
+         "path" : "BadgerDecalsDebug"
+      },
+      {
+         "name" : "BadgerFlipbook",
+         "path" : "BadgerFlipbook"
+      },
+      {
+         "name" : "BadgerInvulnerability",
+         "path" : "BadgerInvulnerability"
+      },
+      {
+         "name" : "BadgerLightRays",
+         "path" : "BadgerLightRays"
+      },
+      {
+         "name" : "BadgerNormalMappedDecals",
+         "path" : "BadgerNormalMappedDecals"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBase",
+         "path" : "BadgerParticlesBase"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBaseEmissive",
+         "path" : "BadgerParticlesBaseEmissive"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBaseEmissiveMesh",
+         "path" : "BadgerParticlesBaseEmissiveMesh"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBaseMesh",
+         "path" : "BadgerParticlesBaseMesh"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBaseMultiplierEmissive",
+         "path" : "BadgerParticlesBaseMultiplierEmissive"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBaseMultiplierEmissiveMesh",
+         "path" : "BadgerParticlesBaseMultiplierEmissiveMesh"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlend",
+         "path" : "BadgerParticlesBlend"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendEmissive",
+         "path" : "BadgerParticlesBlendEmissive"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendEmissiveMesh",
+         "path" : "BadgerParticlesBlendEmissiveMesh"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendEmissiveMeshWithAlphaMask",
+         "path" : "BadgerParticlesBlendEmissiveMeshWithAlphaMask"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendEmissiveVertexDisplacementMesh",
+         "path" : "BadgerParticlesBlendEmissiveVertexDisplacementMesh"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendEmissiveWithAlphaMask",
+         "path" : "BadgerParticlesBlendEmissiveWithAlphaMask"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticleBlendMesh",
+         "path" : "BadgerParticlesBlendMesh"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticleBlendMeshWithAlphaMask",
+         "path" : "BadgerParticlesBlendMeshWithAlphaMask"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendMultiplierEmissive",
+         "path" : "BadgerParticlesBlendMultiplierEmissive"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendMultiplierEmissiveMesh",
+         "path" : "BadgerParticlesBlendMultiplierEmissiveMesh"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendMultiplierEmissiveMeshWithAlphaMask",
+         "path" : "BadgerParticlesBlendMultiplierEmissiveMeshWithAlphaMask"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendMultiplierEmissiveVertexDisplacementMesh",
+         "path" : "BadgerParticlesBlendMultiplierEmissiveVertexDisplacementMesh"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendMultiplierEmissiveWithAlphaMask",
+         "path" : "BadgerParticlesBlendMultiplierEmissiveWithAlphaMask"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendRamp",
+         "path" : "BadgerParticlesBlendRamp"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendRampCutout",
+         "path" : "BadgerParticlesBlendRampCutout"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendRampCutoutMesh",
+         "path" : "BadgerParticlesBlendRampCutoutMesh"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendRampMesh",
+         "path" : "BadgerParticlesBlendRampMesh"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendRampSoft",
+         "path" : "BadgerParticlesBlendRampSoft"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendRampSoftMesh",
+         "path" : "BadgerParticlesBlendRampSoftMesh"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendSoft",
+         "path" : "BadgerParticlesBlendSoft"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendSoftMesh",
+         "path" : "BadgerParticlesBlendSoftMesh"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticleBlendVertexDisplacementMesh",
+         "path" : "BadgerParticlesBlendVertexDisplacementMesh"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesBlendWithAlphaMask",
+         "path" : "BadgerParticlesBlendWithAlphaMask"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticleCutout",
+         "path" : "BadgerParticlesCutout"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesCutoutEmissive",
+         "path" : "BadgerParticlesCutoutEmissive"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesCutoutEmissiveMesh",
+         "path" : "BadgerParticlesCutoutEmissiveMesh"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesCutoutEmissiveMeshWithAlphaMask",
+         "path" : "BadgerParticlesCutoutEmissiveMeshWithAlphaMask"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesCutoutEmissiveWithAlphaMask",
+         "path" : "BadgerParticlesCutoutEmissiveWithAlphaMask"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticleCutoutMesh",
+         "path" : "BadgerParticlesCutoutMesh"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesCutoutMultiplierEmissive",
+         "path" : "BadgerParticlesCutoutMultiplierEmissive"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesCutoutMultiplierEmissiveMesh",
+         "path" : "BadgerParticlesCutoutMultiplierEmissiveMesh"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesCutoutMultiplierEmissiveMeshWithAlphaMask",
+         "path" : "BadgerParticlesCutoutMultiplierEmissiveMeshWithAlphaMask"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesCutoutMultiplierEmissiveWithAlphaMask",
+         "path" : "BadgerParticlesCutoutMultiplierEmissiveWithAlphaMask"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesDebug",
+         "path" : "BadgerParticlesDebug"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesDebugMesh",
+         "path" : "BadgerParticlesDebugMesh"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesMagenta",
+         "path" : "BadgerParticlesMagenta"
+      },
+      {
+         "name" : "BadgerParticles/BadgerParticlesMagentaMesh",
+         "path" : "BadgerParticlesMagentaMesh"
+      },
+      {
+         "name" : "BadgerRenderChunk",
+         "path" : "BadgerRenderChunk"
+      },
+      {
+         "name" : "BadgerRenderChunkOpaqueLiquid",
+         "path" : "BadgerRenderChunkOpaqueLiquid"
+      },
+      {
+         "name" : "BadgerScreenSpaceReflections",
+         "path" : "BadgerScreenSpaceReflections"
+      },
+      {
+         "name" : "BadgerSky",
+         "path" : "BadgerSky"
+      },
+      {
+         "name" : "BadgerSkyBase",
+         "path" : "BadgerSkyBase"
+      },
+      {
+         "name" : "BadgerSkyDome",
+         "path" : "BadgerSkyDome"
+      },
+      {
+         "name" : "BadgerStars",
+         "path" : "BadgerStars"
+      },
+      {
+         "name" : "BadgerSunMoon",
+         "path" : "BadgerSunMoon"
+      },
+      {
+         "name" : "badger_trails",
+         "path" : "BadgerTrails"
+      },
+      {
+         "name" : "BadgerWater",
+         "path" : "BadgerWater"
+      },
+      {
+         "name" : "BadgerWaterRainDropsSim",
+         "path" : "BadgerWaterRainDropsSim"
+      },
+      {
+         "name" : "BadgerWaterSSR",
+         "path" : "BadgerWaterSSR"
+      },
+      {
+         "name" : "BadgerWeather",
+         "path" : "BadgerWeather"
+      },
+      {
+         "name" : "BadgerWorldMapEntity",
+         "path" : "BadgerWorldMapEntity"
+      },
+      {
+         "name" : "BadgerWorldMapPrototype",
+         "path" : "BadgerWorldMapPrototype"
+      },
+      {
+         "name" : "Blit",
+         "path" : "Blit"
+      },
+      {
+         "name" : "BlitColor",
+         "path" : "BlitColor"
+      },
+      {
+         "name" : "Core/Color",
+         "path" : "Color"
+      },
+      {
+         "name" : "Cyan",
+         "path" : "Cyan"
+      },
+      {
+         "name" : "Debug",
+         "path" : "Debug"
+      },
+      {
+         "name" : "decorations",
+         "path" : "Decorations"
+      },
+      {
+         "name" : "decorations_base",
+         "path" : "DecorationsBase"
+      },
+      {
+         "name" : "decorations_fancy",
+         "path" : "DecorationsFancy"
+      },
+      {
+         "name" : "entity_blend_emissive_flipbook",
+         "path" : "EntityBlendEmissiveFlipbook"
+      },
+      {
+         "name" : "entity_buff",
+         "path" : "EntityBuff"
+      },
+      {
+         "name" : "entity_lure",
+         "path" : "EntityLure"
+      },
+      {
+         "name" : "entity_model",
+         "path" : "EntityModel"
+      },
+      {
+         "name" : "entity_model_base",
+         "path" : "EntityModelBase"
+      },
+      {
+         "name" : "entity_model_static",
+         "path" : "EntityModelStatic"
+      },
+      {
+         "name" : "entity_model_texture_buff",
+         "path" : "EntityModelTextureBuff"
+      },
+      {
+         "name" : "entity_model_with_construction",
+         "path" : "EntityModelWithConstruction"
+      },
+      {
+         "name" : "entity_shield",
+         "path" : "EntityShield"
+      },
+      {
+         "name" : "Gameface/Blit",
+         "path" : "GamefaceBlit"
+      },
+      {
+         "name" : "Gameface/ClearQuad",
+         "path" : "GamefaceClearQuad"
+      },
+      {
+         "name" : "Gameface/Path",
+         "path" : "GamefacePath"
+      },
+      {
+         "name" : "Gameface/Renoir",
+         "path" : "GamefaceRenoir"
+      },
+      {
+         "name" : "Gameface/Standard",
+         "path" : "GamefaceStandard"
+      },
+      {
+         "name" : "Gameface/StandardRare",
+         "path" : "GamefaceStandardRare"
+      },
+      {
+         "name" : "Gameface/Stencil",
+         "path" : "GamefaceStencil"
+      },
+      {
+         "name" : "Gameface/StencilPath",
+         "path" : "GamefaceStencilPath"
+      },
+      {
+         "name" : "Gameface/StencilRare",
+         "path" : "GamefaceStencilRare"
+      },
+      {
+         "name" : "Gameface/TexturesWithColorMix",
+         "path" : "GamefaceTexturesWithColorMix"
+      },
+      {
+         "name" : "GbufferResolve",
+         "path" : "GbufferResolve"
+      },
+      {
+         "name" : "Debug/ImGui",
+         "path" : "ImGui"
+      },
+      {
+         "name" : "item_drops",
+         "path" : "ItemDrops"
+      },
+      {
+         "name" : "MapBeacon",
+         "path" : "MapBeacon"
+      },
+      {
+         "name" : "MeshFallbackPosUVNormalColor",
+         "path" : "MeshFallbackPosUVNormalColor"
+      },
+      {
+         "name" : "PostFX",
+         "path" : "PostFX"
+      },
+      {
+         "name" : "Core/Screen/Blit",
+         "path" : "ScreenBlit"
+      },
+      {
+         "name" : "Debug/ScreenUV",
+         "path" : "ScreenUV"
+      },
+      {
+         "name" : "SpecularConvolution",
+         "path" : "SpecularConvolution"
+      },
+      {
+         "name" : "UI/Base",
+         "path" : "UIBase"
+      },
+      {
+         "name" : "UI/Blit",
+         "path" : "UIBlit"
+      },
+      {
+         "name" : "ui_entity_model",
+         "path" : "UIEntityModel"
+      },
+      {
+         "name" : "ui_entity_platform",
+         "path" : "UIEntityPlatform"
+      },
+      {
+         "name" : "UI/Fill",
+         "path" : "UIFill"
+      },
+      {
+         "name" : "UI/Glint",
+         "path" : "UIGlint"
+      },
+      {
+         "name" : "UI/Sprite",
+         "path" : "UISprite"
+      },
+      {
+         "name" : "UI/Text",
+         "path" : "UIText"
+      }
+   ]
+}

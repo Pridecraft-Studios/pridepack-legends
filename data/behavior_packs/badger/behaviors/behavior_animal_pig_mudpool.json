@@ -1,0 +1,110 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_animal_pig_mudpool",
+      "runtime_identifier": "badger:behavior"
+    },
+    "components": {
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "max_range": 150,
+            "include_tags": [
+              "portal_piglin"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "piglin_base_avoid"
+            ]
+          },
+          {
+            "name": "pig_player_follow",
+            "max_range": 15,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "follow_player"
+            ]
+          },
+          {
+            "max_range": 30,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "locator_mud_pool"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "roll_in_mud"
+            ]
+          },
+          {
+            "max_range": 30,
+            "action_tickets": {
+              "sc": 1
+            },
+            "include_tags": [
+              "locator_mud_pool"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "secondary_combat_position"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder"
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "evade",
+            "range": {
+              "min_range": 10,
+              "max_range": 15
+            },
+            "state_machine": {
+              "cooldown_time": 1.0,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "roll_in_mud",
+            "range": {
+              "max_range": 0.5
+            },
+            "state_machine": {
+              "wind_up": 0.0,
+              "wind_down": 4.5,
+              "cooldown_time": 10,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "secondary_combat_position",
+            "range": {
+              "min_range": 3,
+              "max_range": 4
+            }
+          },
+          {
+            "name": "follow_player",
+            "range": {
+              "min_range": 3.5,
+              "max_range": 5
+            }
+          }
+        ]
+      }
+    }
+  }
+}

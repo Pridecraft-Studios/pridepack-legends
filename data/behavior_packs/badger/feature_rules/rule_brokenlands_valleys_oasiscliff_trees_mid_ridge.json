@@ -1,0 +1,45 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_brokenlands_valleys_oasiscliff_trees_mid_ridge",
+      "places_feature": "badger:feature_brokenlands_valleys_oasiscliff_trees_aggregate_02"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "brokenlands"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 25,
+      "scatter_chance": 50,
+      "early_out": "v.scatteredy < 29 || v.scatteredy > 36 || (q.get_game_rule_value('prevent_obstacles_on_poi_graph') && q.poi_influence_factor(v.scatteredx, v.scatteredz) < 0.5)",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)"
+    }
+  }
+}

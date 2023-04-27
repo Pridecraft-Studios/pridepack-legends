@@ -1,0 +1,89 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_trap_freeze",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 1.0,
+        "length": 1.5,
+        "width": 1.5
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder"
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "name": "freeze_trap_mob_frozen",
+            "max_range": 15,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "cannotbefrozen",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "freeze_trap_triggered"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "trigger": "on_freeze_trap_triggered",
+            "name": "freeze_trap_triggered",
+            "range": {
+              "max_range": 4
+            },
+            "state_machine": {
+              "wind_up": 0.3,
+              "wind_down": 0.2,
+              "cooldown_time": 10,
+              "deactivates_on_cooldown": false,
+              "ready_state_name": "freeze_trap_ready"
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 8,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "buildable"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 0.0001,
+                "damage_types": []
+              },
+              "apply_status": {
+                "frozen": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                }
+              }
+            }
+          }
+        ]
+      },
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

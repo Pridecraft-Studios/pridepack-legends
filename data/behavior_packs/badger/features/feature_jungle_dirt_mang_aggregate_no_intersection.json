@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_jungle_dirt_mang_aggregate_no_intersection"
+    },
+    "early_out": "first_failure",
+    "features": [
+      "badger:feature_jungle_mega_mang_canopy_weighted_no_intersection",
+      "badger:feature_jungle_dirt_floor_aggregate"
+    ]
+  }
+}

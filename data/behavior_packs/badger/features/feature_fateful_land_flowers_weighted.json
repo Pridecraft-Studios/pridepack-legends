@@ -1,0 +1,25 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_plant_fateful_foxglove_01", 100.0],
+      ["badger:feature_plant_fateful_foxglove_02", 100.0],
+      ["badger:feature_plant_fateful_foxglove_03", 100.0],
+      ["badger:feature_plant_fateful_foxglove_04", 100.0],
+      ["badger:feature_plant_fateful_fategrass_01", 12.0],
+      ["badger:feature_plant_fateful_fategrass_02", 12.0],
+      ["badger:feature_plant_fateful_fategrass_03", 12.0],
+      ["badger:feature_plant_fateful_fategrass_04", 12.0],
+      ["badger:feature_plant_fateful_fategrass_05", 12.0],
+      ["badger:feature_plant_fateful_daisy_01", 25.0],
+      ["badger:feature_plant_fateful_daisy_02", 25.0],
+      ["badger:feature_plant_fateful_daisy_03", 25.0],
+      ["badger:feature_plant_fateful_wildflower_01", 18.0],
+      ["badger:feature_plant_fateful_wildflower_02", 18.0],
+      ["badger:feature_plant_fateful_wildflower_03", 18.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_fateful_land_flowers_weighted"
+    }
+  }
+}

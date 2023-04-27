@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:status_effect_water",
+			"runtime_identifier": "badger:status_effect"
+		},
+		"components": {
+			"badger:status": {
+				"applied_name": "water",
+				"default_resistance": {
+					"resisted": false,
+					"time": 0.15,
+					"resistance_persist_time": -1
+				}
+			},
+			"badger:modifier_movement_speed": {
+				"post_multiply": 0.6
+			},
+			"badger:negate_status":{
+				"negated_status":[ 
+					"spore_damaged", 
+					"burning", 
+					"spore_healed", 
+					"slowed_tar",
+					"sprint_negate"
+				]
+			}			
+		}
+	}
+}

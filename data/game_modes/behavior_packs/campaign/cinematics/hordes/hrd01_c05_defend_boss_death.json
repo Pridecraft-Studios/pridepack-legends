@@ -1,0 +1,2558 @@
+{
+   "audio_snapshot" : "snapshot:/cinematic/STATE_cinematic_nis_piglin_portal",
+   "cine_id" : "hrd01_c05_defend_boss_death",
+   "clips" : [
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "bu",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 1242,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 80.0,
+         "ignore_camera_shake" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "BackUp Camera",
+         "near_plane" : 0.02500000037252903,
+         "pan_end_transform" : {
+            "locator_name" : "sbu_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "sbu_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "priority" : 10,
+         "row_index" : 13,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 53,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : true
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s01",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : true,
+         "duration" : 417,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 62.0,
+         "grid_size_x" : 3,
+         "grid_size_y" : 3,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s01",
+         "near_plane" : 0.02500000037252903,
+         "obstruction_target" : "0",
+         "obstruction_window" : {
+            "max" : [ 3.309999942779541, 5.969999790191650 ],
+            "min" : [ -4.300000190734863, 1.879999995231628 ]
+         },
+         "offset" : [ 0.0, 0.50, 5.0 ],
+         "priority" : 5,
+         "row_index" : 15,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 53,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : true,
+         "wants_pan" : false
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s02",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : true,
+         "duration" : 63,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 40.0,
+         "grid_size_x" : 2,
+         "grid_size_y" : 2,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s02",
+         "near_plane" : 0.02500000037252903,
+         "obstruction_target" : "0",
+         "obstruction_window" : {
+            "max" : [ 1.539999961853027, 8.369999885559082 ],
+            "min" : [ -4.570000171661377, 3.740000009536743 ]
+         },
+         "offset" : [ -4.50, 1.0, 3.0 ],
+         "priority" : 5,
+         "row_index" : 15,
+         "spawn_transform" : {
+            "locator_name" : "s03_b_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 470,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : true,
+         "wants_pan" : false
+      },
+      {
+         "blend_from" : false,
+         "blend_in" : 0,
+         "camera_id" : "s06",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 173,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 80.0,
+         "ignore_camera_shake" : false,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.8249996304512024, 0.01500000711530447 ],
+            "P2" : [ 0.5500000119209290, 0.9499999880790710 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "s06",
+         "near_plane" : 0.02500000037252903,
+         "pan_end_transform" : {
+            "locator_name" : "s06_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s06_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "priority" : 4,
+         "row_index" : 13,
+         "spawn_transform" : {
+            "locator_name" : "s02_insert_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 1481,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : true
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s04",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : true,
+         "duration" : 764,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 30.0,
+         "grid_size_x" : 2,
+         "grid_size_y" : 2,
+         "ignore_camera_shake" : false,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.8249996304512024, 0.01500000711530447 ],
+            "P2" : [ 0.5500000119209290, 0.9499999880790710 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "s04",
+         "near_plane" : 0.02500000037252903,
+         "obstruction_target" : "0",
+         "obstruction_window" : {
+            "max" : [ 3.549999952316284, 2.859999895095825 ],
+            "min" : [ -3.250, -0.5099999904632568 ]
+         },
+         "offset" : [ 0.0, 4.0, 4.0 ],
+         "pan_end_transform" : {
+            "locator_name" : "s02_insert_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s02_insert_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "priority" : 5,
+         "row_index" : 15,
+         "spawn_transform" : {
+            "locator_name" : "s02_insert_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 533,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : true,
+         "wants_pan" : true
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s05",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : true,
+         "duration" : 189,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 30.0,
+         "ignore_camera_shake" : false,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.8249996304512024, 0.01500000711530447 ],
+            "P2" : [ 0.5500000119209290, 0.9499999880790710 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "s05",
+         "near_plane" : 0.02500000037252903,
+         "pan_end_transform" : {
+            "locator_name" : "s02_insert_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s02_insert_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "priority" : 5,
+         "row_index" : 15,
+         "spawn_transform" : {
+            "locator_name" : "s02_insert_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 1297,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : true
+      },
+      {
+         "camera_id" : "s06",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 173,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 0.4750005006790161, 0.9950000047683716 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1.2",
+         "pan_end_transform" : {
+            "locator_name" : "s06_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s06_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 14,
+         "start_time" : 1481,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s01",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 198,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 0.5850003957748413, 0.9850000143051147 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "4.1",
+         "pan_end_transform" : {
+            "locator_name" : "s02_insert_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s02_insert_4",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 16,
+         "start_time" : 53,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s01",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 94,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1.1",
+         "pan_end_transform" : {
+            "locator_name" : "s02_insert_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s02_insert_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 16,
+         "start_time" : 251,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s01",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 40,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.6399998664855957, -0.01500000339001417 ],
+            "P2" : [ 0.2050002217292786, 1.259999752044678 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1.b2",
+         "pan_end_transform" : {
+            "locator_name" : "s02_insert_b_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s02_insert_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 16,
+         "start_time" : 345,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s01",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 22,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.6399998664855957, -0.01500000339001417 ],
+            "P2" : [ 0.2050002217292786, 1.259999752044678 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "b2.b2",
+         "pan_end_transform" : {
+            "locator_name" : "s02_insert_b_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s02_insert_b_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 16,
+         "start_time" : 385,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s01",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 32,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4450000524520874, 0.05999998748302460 ],
+            "P2" : [ 0.5149999260902405, 0.9450000524520874 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "b2.b3",
+         "pan_end_transform" : {
+            "locator_name" : "s02_insert_b_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s02_insert_b_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 16,
+         "start_time" : 407,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s01",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 31,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4450000524520874, 0.05999998748302460 ],
+            "P2" : [ 0.5149999260902405, 0.9450000524520874 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "b3.b4",
+         "pan_end_transform" : {
+            "locator_name" : "s02_insert_b_4",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s02_insert_b_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 16,
+         "start_time" : 439,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s02",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 25,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4450000524520874, 0.05999998748302460 ],
+            "P2" : [ 0.5149999260902405, 0.9450000524520874 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "b1.b1",
+         "pan_end_transform" : {
+            "locator_name" : "s03_b_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s03_b_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 16,
+         "start_time" : 470,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s02",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 16,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.2600002288818359, 0.06999999284744263 ],
+            "P2" : [ 0.5199999213218689, 0.9400000572204590 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "b1.b2",
+         "pan_end_transform" : {
+            "locator_name" : "s03_b_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s03_b_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 16,
+         "start_time" : 495,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s02",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 22,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.2600002288818359, 0.06999999284744263 ],
+            "P2" : [ 0.5199999213218689, 0.9400000572204590 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "b2.b2",
+         "pan_end_transform" : {
+            "locator_name" : "s03_b_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s03_b_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 16,
+         "start_time" : 511,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s04",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 40,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.2600002288818359, 0.06999999284744263 ],
+            "P2" : [ 0.5199999213218689, 0.9400000572204590 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "i3.i3",
+         "pan_end_transform" : {
+            "locator_name" : "s02_insert_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s02_insert_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 16,
+         "start_time" : 533,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s04",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 88,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4600000679492950, 0.09000000357627869 ],
+            "P2" : [ 0.5199999213218689, 0.9400000572204590 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "i3.i5",
+         "pan_end_transform" : {
+            "locator_name" : "s02_insert_5",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s02_insert_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 16,
+         "start_time" : 573,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s04",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 284,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4600000679492950, 0.09000000357627869 ],
+            "P2" : [ 0.5199999213218689, 0.9400000572204590 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "i5.i5b",
+         "pan_end_transform" : {
+            "locator_name" : "s02_insert_5b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s02_insert_5",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 16,
+         "start_time" : 661,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s04",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 352,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4150001108646393, 0.02499999850988388 ],
+            "P2" : [ 0.7299997210502625, 0.7100002765655518 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "i5.i5b",
+         "pan_end_transform" : {
+            "locator_name" : "s04_b_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s02_insert_5b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 16,
+         "start_time" : 945,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s05",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 105,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4949997663497925, 0.7399996519088745 ],
+            "P2" : [ 0.5000004172325134, 0.9850000143051147 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1.2",
+         "pan_end_transform" : {
+            "locator_name" : "s05_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s05_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 16,
+         "start_time" : 1297,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s05",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 18,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.6700003147125244, 0.01499982830137014 ],
+            "P2" : [ 0.9950000047683716, 0.1800008565187454 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "3.2",
+         "pan_end_transform" : {
+            "locator_name" : "s05_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s05_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 16,
+         "start_time" : 1468,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s05",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 48,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.6499996185302734, 0.6149997711181641 ],
+            "P2" : [ 0.7450002431869507, 0.9950000047683716 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "2.2",
+         "pan_end_transform" : {
+            "locator_name" : "s05_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s05_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 16,
+         "start_time" : 1402,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s05",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 18,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.02999969199299812, 0.7249997854232788 ],
+            "P2" : [ 0.5849999785423279, 1.000000119209290 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "2.3",
+         "pan_end_transform" : {
+            "locator_name" : "s05_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s05_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 16,
+         "start_time" : 1450,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "animation" : "cine_death",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "0",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "  BOSS DEATH ANIM",
+         "row_index" : 23,
+         "start_time" : 70,
+         "trigger_parents" : false
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 71,
+         "enabled" : true,
+         "frequency" : 1.0,
+         "intensity" : 5.0,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.1800004988908768, 0.6500003337860107 ],
+               "P2" : [ 0.4050006270408630, 0.8750001192092896 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.0,
+            "blend_out" : {
+               "P0" : [ 0.0, 0.9699996113777161 ],
+               "P1" : [ 0.7000001072883606, 0.9500000476837158 ],
+               "P2" : [ 0.2850001752376556, 0.01000016182661057 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.8000000119209290
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 19,
+         "start_time" : 590
+      },
+      {
+         "clip_type" : "destroy_entity",
+         "despawn" : false,
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "portal",
+         "fixup_ids_hack" : true,
+         "locked_for_edit" : false,
+         "name" : "  <----- Portal Destruction",
+         "row_index" : 10,
+         "start_time" : 1447
+      },
+      {
+         "clip_type" : "cinematic_mode",
+         "do_debug_draw" : false,
+         "duration" : 1293,
+         "enabled" : true,
+         "entity_id" : "0",
+         "locked_for_edit" : false,
+         "name" : "BOSS - CINE MODE",
+         "row_index" : 20,
+         "start_time" : 1
+      },
+      {
+         "angle" : 35.0,
+         "clip_type" : "knockback",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "filter" : "any_team",
+         "force" : 10.0,
+         "locked_for_edit" : false,
+         "name" : "",
+         "range" : 10.0,
+         "row_index" : 24,
+         "start_time" : 245,
+         "team" : "blue_team",
+         "transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "angle" : 30.0,
+         "clip_type" : "knockback",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "filter" : "any_team",
+         "force" : 15.0,
+         "locked_for_edit" : false,
+         "name" : "  Knock Back to clear area",
+         "range" : 10.0,
+         "row_index" : 24,
+         "start_time" : 70,
+         "team" : "blue_team",
+         "transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "angle" : 35.0,
+         "clip_type" : "knockback",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "filter" : "any_team",
+         "force" : 25.0,
+         "locked_for_edit" : false,
+         "name" : "",
+         "range" : 25.0,
+         "row_index" : 24,
+         "start_time" : 590,
+         "team" : "blue_team",
+         "transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "camera_id" : "s04",
+         "clip_type" : "camera_fov_change",
+         "do_debug_draw" : false,
+         "duration" : 17,
+         "enabled" : true,
+         "fov_end" : 1.221730589866638,
+         "fov_start" : 0.5235987901687622,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.2850001454353333, 0.08000000566244125 ],
+            "P2" : [ 0.2400001883506775, 1.289999723434448 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 17,
+         "start_time" : 573
+      },
+      {
+         "camera_id" : "s02",
+         "clip_type" : "camera_fov_change",
+         "do_debug_draw" : false,
+         "duration" : 16,
+         "enabled" : true,
+         "fov_end" : 1.047197580337524,
+         "fov_start" : 0.6981317400932312,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4550000131130219, 0.02999999932944775 ],
+            "P2" : [ 0.5149999856948853, 0.9549999833106995 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 17,
+         "start_time" : 495
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 50,
+         "enabled" : true,
+         "frequency" : 5.0,
+         "intensity" : 0.05000000074505806,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.6400006413459778, 2.235174179077148e-07 ],
+               "P2" : [ 0.2600006163120270, 1.0 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.50,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.009999632835388 ],
+               "P1" : [ 0.6250001192092896, 0.9949991703033447 ],
+               "P2" : [ 0.2100002467632294, 0.009999839588999748 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.1000000014901161
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 18,
+         "start_time" : 892
+      },
+      {
+         "archetype_hint" : "badger:piglin_grunter",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 45,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "Happy Blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 491
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 3,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "super angry",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 124
+      },
+      {
+         "alliance_rule" : "enemy",
+         "behaviour" : "",
+         "behaviour_radius" : 100.0,
+         "clear_actors" : false,
+         "clear_players" : true,
+         "clip_type" : "crowd_clearing",
+         "collect_entities_to_clear" : false,
+         "disable_spawners" : false,
+         "do_debug_draw" : false,
+         "duration" : 372,
+         "enabled" : true,
+         "exclude_tags" : null,
+         "include_tags" : null,
+         "locked_for_edit" : false,
+         "look_at_radius" : 100.0,
+         "name" : "cc_portal",
+         "navigate_radius" : 30.0,
+         "radius" : 20.0,
+         "restore_teleported_entities" : false,
+         "row_index" : 5,
+         "start_time" : 1282,
+         "team" : "piglin_team",
+         "transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "alliance_rule" : "friendly",
+         "behaviour" : "",
+         "behaviour_radius" : 100.0,
+         "clear_actors" : false,
+         "clear_players" : false,
+         "clip_type" : "crowd_clearing",
+         "collect_entities_to_clear" : false,
+         "disable_spawners" : false,
+         "do_debug_draw" : false,
+         "duration" : 1242,
+         "enabled" : true,
+         "exclude_tags" : [ "magmaBoss" ],
+         "include_tags" : null,
+         "locked_for_edit" : false,
+         "look_at_radius" : 71.0,
+         "name" : "cc_pigs",
+         "navigate_radius" : 70.0,
+         "radius" : 10.0,
+         "restore_teleported_entities" : false,
+         "row_index" : 5,
+         "start_time" : 40,
+         "team" : "piglin_team",
+         "transform" : {
+            "entity_id" : "0",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 121,
+         "enabled" : true,
+         "frequency" : 5.0,
+         "intensity" : 0.3000000119209290,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.5250002145767212, 0.03499998897314072 ],
+               "P2" : [ 0.2200000435113907, 1.019999742507935 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.8000000119209290,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.1999999880790710
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 18,
+         "start_time" : 469
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 124,
+         "enabled" : true,
+         "frequency" : 1.0,
+         "intensity" : 3.0,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.03000033274292946, 0.8999996185302734 ],
+               "P2" : [ 0.1249997690320015, 0.9700002670288086 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.1000000014901161,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.5100004076957703, 0.9350001215934753 ],
+               "P2" : [ 0.4850000739097595, 0.06499997526407242 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.6000000238418579
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 19,
+         "start_time" : 234
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 284
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 56,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "neutral",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 61
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 120
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 3,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "super angry",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 117
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 92,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "angry",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 127
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 15,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "angry",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 219
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 8,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "surprised",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 234
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 242
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 5,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "neutral",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 288
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "surprised",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 280
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 185,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 637
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 276
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 8,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "angry",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 293
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 38,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "neutral",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 301
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "angry",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 339
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 8,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 343
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "surprised",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 271
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 36,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "neutral",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 351
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 24,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "angry",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 387
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 24,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "super angry",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 411
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 8,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 435
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 48,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "angry",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 443
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 28,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "angry",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 540
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 536
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 19,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "super angry",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 568
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 12,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "surprised",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 591
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 34,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "pained",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 603
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 587
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 86,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 956
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 822
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 37,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "angry",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 892
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 929
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 9,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "pained",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 933
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 14,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "surprised",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 942
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 62,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "angry",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 826
+      },
+      {
+         "archetype_hint" : "badger:piglin_magma_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "entity_id" : "0",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 888
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 86,
+         "enabled" : true,
+         "frequency" : 0.8999999761581421,
+         "intensity" : 1.299999952316284,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.7000004649162292, 0.01500030141323805 ],
+               "P2" : [ 0.3650005459785461, 1.004999995231628 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.004999637603760 ],
+               "P1" : [ 0.1600005626678467, 0.7099994421005249 ],
+               "P2" : [ 0.2100002467632294, 0.009999839588999748 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.8000000119209290
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 18,
+         "start_time" : 942
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 42,
+         "enabled" : true,
+         "frequency" : 0.8999999761581421,
+         "intensity" : 2.0,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.7599999308586121, 0.01500065159052610 ],
+               "P2" : [ 0.3900004923343658, 0.9950000047683716 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.1000000014901161,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.004999637603760 ],
+               "P1" : [ 0.6250001192092896, 0.9949991703033447 ],
+               "P2" : [ 0.2100002467632294, 0.009999839588999748 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.8999999761581421
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 18,
+         "start_time" : 630
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 153,
+         "enabled" : true,
+         "frequency" : 0.50,
+         "intensity" : 0.2000000029802322,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.1000000014901161,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.3000000119209290
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 19,
+         "start_time" : 1466
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 358,
+         "enabled" : true,
+         "frequency" : 0.6999999880790710,
+         "intensity" : 0.3000000119209290,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 18,
+         "start_time" : 53
+      },
+      {
+         "audio_event_on_skip" : "BAE_cine_hrd01_c05_stop",
+         "audio_event_on_start" : "BAE_cine_hrd01_c05",
+         "audio_event_on_stop" : "",
+         "clip_type" : "audio_clip",
+         "do_debug_draw" : false,
+         "duration" : 1690,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "Audio Track",
+         "row_index" : 2,
+         "start_time" : 0
+      },
+      {
+         "audio_event_on_skip" : "",
+         "audio_event_on_start" : "BAE_test_clap_2d",
+         "audio_event_on_stop" : "",
+         "clip_type" : "audio_clip",
+         "do_debug_draw" : false,
+         "duration" : 2,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "CLAPPER - AUDIO: Place on NIS Story Start.",
+         "row_index" : 3,
+         "start_time" : 48
+      },
+      {
+         "clip_type" : "screen_text",
+         "do_debug_draw" : false,
+         "duration" : 1698,
+         "enabled" : false,
+         "locked_for_edit" : false,
+         "name" : "[ Keep Disabled ] Cinematic Candidates Descriptor :: 0:Boss, 1:Portal",
+         "row_index" : 0,
+         "start_time" : 0,
+         "text" : ""
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 1,
+         "enabled" : true,
+         "entity_id" : "local_player",
+         "locked_for_edit" : false,
+         "name" : "Turn the Local_Player Towards Source NIS",
+         "row_index" : 14,
+         "should_pathfind" : true,
+         "start_time" : 0,
+         "transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 220,
+         "enabled" : true,
+         "frequency" : 1.0,
+         "intensity" : 0.3000000119209290,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.6400006413459778, 2.235174179077148e-07 ],
+               "P2" : [ 0.2600006163120270, 1.0 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.009999632835388 ],
+               "P1" : [ 0.6250001192092896, 0.9949991703033447 ],
+               "P2" : [ 0.2100002467632294, 0.009999839588999748 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 18,
+         "start_time" : 672
+      },
+      {
+         "camera_id" : "s05",
+         "clip_type" : "camera_fov_change",
+         "do_debug_draw" : false,
+         "duration" : 105,
+         "enabled" : true,
+         "fov_end" : 1.570796370506287,
+         "fov_start" : 0.8726646304130554,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4899997115135193, 0.7449994683265686 ],
+            "P2" : [ 0.5000004172325134, 0.9950000047683716 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "60.80",
+         "row_index" : 17,
+         "start_time" : 1297
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_destruction_portal_explosion",
+         "locked_for_edit" : false,
+         "name" : "Portal Explosion FX",
+         "row_index" : 12,
+         "start_time" : 1445,
+         "transform" : {
+            "locator_name" : "fx_boom1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, -6.0 ]
+         }
+      },
+      {
+         "angle" : 60.0,
+         "clip_type" : "knockback",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "filter" : "any_team",
+         "force" : 30.0,
+         "locked_for_edit" : false,
+         "name" : "",
+         "range" : 30.0,
+         "row_index" : 13,
+         "start_time" : 1445,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "knockbackSource",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 270,
+         "enabled" : true,
+         "frequency" : 4.0,
+         "intensity" : 0.2000000029802322,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.5050002336502075, 0.5499997138977051 ],
+               "P2" : [ 0.4949997663497925, 0.5300002098083496 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.8999999761581421,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.1000000014901161
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 18,
+         "start_time" : 1175
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 36,
+         "enabled" : true,
+         "frequency" : 1.50,
+         "intensity" : 2.0,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.1000000014901161,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.50
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 18,
+         "start_time" : 1445
+      },
+      {
+         "clip_type" : "destroy_entity",
+         "despawn" : false,
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "0",
+         "fixup_ids_hack" : true,
+         "locked_for_edit" : false,
+         "name" : "  <----- Boss Destruction",
+         "row_index" : 23,
+         "start_time" : 1302
+      },
+      {
+         "alliance_rule" : "friendly",
+         "behaviour" : "",
+         "behaviour_radius" : 100.0,
+         "clear_actors" : false,
+         "clear_players" : true,
+         "clip_type" : "crowd_clearing",
+         "collect_entities_to_clear" : false,
+         "disable_spawners" : false,
+         "do_debug_draw" : false,
+         "duration" : 1242,
+         "enabled" : true,
+         "exclude_tags" : [ "magmaBoss" ],
+         "include_tags" : null,
+         "locked_for_edit" : false,
+         "look_at_radius" : 21.0,
+         "name" : "cc_allies",
+         "navigate_radius" : 20.0,
+         "radius" : 10.0,
+         "restore_teleported_entities" : false,
+         "row_index" : 4,
+         "start_time" : 40,
+         "team" : "blue_team",
+         "transform" : {
+            "entity_id" : "0",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "audition" : [
+            {
+               "exclude_tags" : null,
+               "include_tags" : [ "portal_piglin" ],
+               "index" : "portal",
+               "optional" : false
+            }
+         ],
+         "clip_type" : "audition_clip",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "max_distance" : -1.0,
+         "name" : "Portal Audition",
+         "offset" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 8,
+         "start_time" : 2
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 60,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE OUT Duration",
+         "out_duration" : 0,
+         "row_index" : 9,
+         "start_time" : 1660,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "do_debug_draw" : false,
+         "duration" : 96,
+         "enabled" : true,
+         "in_duration" : 30,
+         "locked_for_edit" : false,
+         "name" : "[FTB] Nis Quick in - 1 sec out",
+         "out_duration" : 60,
+         "row_index" : 10,
+         "start_time" : 1624,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "hud_visibility_clip",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 1698,
+         "enabled" : true,
+         "hud_visibility" : "hidden",
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "HIDE HUD - Hidden for NISs",
+         "out_duration" : 0,
+         "row_index" : 1,
+         "start_time" : 0,
+         "toggle_state" : ""
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 6,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF] On Black",
+         "out_duration" : 0,
+         "row_index" : 9,
+         "start_time" : 1654,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : false,
+         "in_duration" : 60,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE In Duration",
+         "out_duration" : 0,
+         "row_index" : 9,
+         "start_time" : 1624,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 29,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE OUT Duration",
+         "out_duration" : 0,
+         "row_index" : 10,
+         "start_time" : 68,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "do_debug_draw" : false,
+         "duration" : 78,
+         "enabled" : true,
+         "in_duration" : 30,
+         "locked_for_edit" : false,
+         "name" : "[FTB] Nis CUSTOM",
+         "out_duration" : 29,
+         "row_index" : 11,
+         "start_time" : 0,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 38,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF] On Black",
+         "out_duration" : 0,
+         "row_index" : 10,
+         "start_time" : 30,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE In Duration",
+         "out_duration" : 0,
+         "row_index" : 10,
+         "start_time" : 0,
+         "toggle_state" : "none"
+      },
+      {
+         "clip_type" : "transition_clip",
+         "do_debug_draw" : false,
+         "duration" : 60,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "[ Transition Cam :: OUT NIS Quick ]",
+         "rate" : 0.2000000029802322,
+         "row_index" : 11,
+         "start_time" : 1660,
+         "time_to_reach_rate" : 0.3000000119209290,
+         "transition_out" : true
+      },
+      {
+         "clip_type" : "transition_clip",
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "[ Transition Cam :: IN NIS Quick ]",
+         "rate" : 0.2000000029802322,
+         "row_index" : 12,
+         "start_time" : 0,
+         "time_to_reach_rate" : 0.3000000119209290,
+         "transition_out" : false
+      },
+      {
+         "alliance_rule" : "any_team",
+         "behaviour" : "",
+         "behaviour_radius" : 25.0,
+         "clear_actors" : true,
+         "clear_players" : false,
+         "clip_type" : "crowd_clearing",
+         "collect_entities_to_clear" : false,
+         "disable_spawners" : false,
+         "do_debug_draw" : false,
+         "duration" : 2,
+         "enabled" : true,
+         "exclude_tags" : null,
+         "include_tags" : [ "magmaBoss" ],
+         "locked_for_edit" : false,
+         "look_at_radius" : 25.0,
+         "name" : "CC_BOSS_from_Portal_1",
+         "navigate_radius" : 25.0,
+         "radius" : 25.0,
+         "restore_teleported_entities" : false,
+         "row_index" : 6,
+         "start_time" : 30,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "cc_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "alliance_rule" : "any_team",
+         "behaviour" : "",
+         "behaviour_radius" : 25.0,
+         "clear_actors" : true,
+         "clear_players" : false,
+         "clip_type" : "crowd_clearing",
+         "collect_entities_to_clear" : false,
+         "disable_spawners" : false,
+         "do_debug_draw" : false,
+         "duration" : 2,
+         "enabled" : true,
+         "exclude_tags" : null,
+         "include_tags" : [ "magmaBoss" ],
+         "locked_for_edit" : false,
+         "look_at_radius" : 25.0,
+         "name" : "CC_BOSS_from_Portal_2",
+         "navigate_radius" : 25.0,
+         "radius" : 25.0,
+         "restore_teleported_entities" : false,
+         "row_index" : 7,
+         "start_time" : 32,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "cc_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "alliance_rule" : "any_team",
+         "behaviour" : "",
+         "behaviour_radius" : 25.0,
+         "clear_actors" : true,
+         "clear_players" : false,
+         "clip_type" : "crowd_clearing",
+         "collect_entities_to_clear" : false,
+         "disable_spawners" : false,
+         "do_debug_draw" : false,
+         "duration" : 2,
+         "enabled" : true,
+         "exclude_tags" : null,
+         "include_tags" : [ "magmaBoss" ],
+         "locked_for_edit" : false,
+         "look_at_radius" : 25.0,
+         "name" : "CC_BOSS_from_Portal_3",
+         "navigate_radius" : 25.0,
+         "radius" : 25.0,
+         "restore_teleported_entities" : false,
+         "row_index" : 8,
+         "start_time" : 32,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "cc_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "alliance_rule" : "any_team",
+         "behaviour" : "",
+         "behaviour_radius" : 25.0,
+         "clear_actors" : true,
+         "clear_players" : false,
+         "clip_type" : "crowd_clearing",
+         "collect_entities_to_clear" : false,
+         "disable_spawners" : false,
+         "do_debug_draw" : false,
+         "duration" : 2,
+         "enabled" : true,
+         "exclude_tags" : null,
+         "include_tags" : [ "magmaBoss" ],
+         "locked_for_edit" : false,
+         "look_at_radius" : 25.0,
+         "name" : "CC_BOSS_from_Portal_4",
+         "navigate_radius" : 25.0,
+         "radius" : 25.0,
+         "restore_teleported_entities" : false,
+         "row_index" : 9,
+         "start_time" : 34,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "cc_4",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "DestroyInRegion",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "exclude_tags" : [ "portal_piglin" ],
+         "include_tags" : [ "piglin_wall" ],
+         "locked_for_edit" : false,
+         "name" : "  Destroy Piglin Walls around boss",
+         "range" : 17.0,
+         "row_index" : 23,
+         "should_despawn" : true,
+         "start_time" : 36,
+         "transform" : {
+            "entity_id" : "0",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "DestroyInRegion",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "exclude_tags" : [ "portal_piglin" ],
+         "include_tags" : [ "piglinStructure" ],
+         "locked_for_edit" : false,
+         "name" : "  Destroy Piglin Walls around boss",
+         "range" : 17.0,
+         "row_index" : 22,
+         "should_despawn" : true,
+         "start_time" : 36,
+         "transform" : {
+            "entity_id" : "0",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      }
+   ],
+   "extra_cast" : null,
+   "extra_entity_ids" : null,
+   "extra_world_requests" : null,
+   "interrupts_vo_sequences" : true,
+   "locators" : [
+      {
+         "attach_to_id" : "portal",
+         "locator_name" : "cc_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 1.600000023841858, 8.399999618530273, -8.399999618530273 ]
+      },
+      {
+         "attach_to_id" : "portal",
+         "locator_name" : "cc_2",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 1.399999976158142, 8.50, 0.6999999880790710 ]
+      },
+      {
+         "attach_to_id" : "portal",
+         "locator_name" : "cc_3",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 1.50, 8.50, -14.80000019073486 ]
+      },
+      {
+         "attach_to_id" : "portal",
+         "locator_name" : "cc_4",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 1.50, 8.199999809265137, 7.50 ]
+      },
+      {
+         "attach_to_id" : "portal",
+         "locator_name" : "fx_boom1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 1.700000047683716, 10.60000038146973, 0.4000000059604645 ]
+      },
+      {
+         "attach_to_id" : "portal",
+         "locator_name" : "knockbackSource",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 1.50, 8.0, -7.0 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s01a_1",
+         "rotation" : [ 26.0, -37.0, 0.0 ],
+         "translation" : [ 11.71356678009033, 13.54471302032471, 19.92493057250977 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s01a_2",
+         "rotation" : [ 27.0, -14.0, 0.0 ],
+         "translation" : [ 4.545778274536133, 13.54471492767334, 22.82280731201172 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s02_insert3_1",
+         "rotation" : [ 17.0, 127.0, -0.0 ],
+         "translation" : [ -8.939981460571289, 8.523168563842773, -5.077189445495605 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s02_insert3_2",
+         "rotation" : [ 17.0, 127.0, -0.0 ],
+         "translation" : [ -6.399921417236328, 7.567623615264893, -3.132732391357422 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s02_insert_1",
+         "rotation" : [ 3.0, -3.0, 0.0 ],
+         "translation" : [ 0.7153822183609009, 4.545120716094971, 11.37649917602539 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s02_insert_2",
+         "rotation" : [ -1.0, -22.0, -0.0 ],
+         "translation" : [ 4.826271533966064, 4.888674736022949, 26.32865142822266 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s02_insert_3",
+         "rotation" : [ -2.0, 2.0, -3.0 ],
+         "translation" : [ 0.7479209899902344, 5.210102558135986, 13.48766326904297 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s02_insert_4",
+         "rotation" : [ 5.0, -4.0, 0.0 ],
+         "translation" : [ 1.01377797126770, 4.749522686004639, 15.34032821655273 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s02_insert_5",
+         "rotation" : [ 18.0, 1.0, -0.0 ],
+         "translation" : [ 0.7479209899902344, 5.210104465484619, 13.48766708374023 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s02_insert_5b",
+         "rotation" : [ 18.0, 1.0, -0.0 ],
+         "translation" : [ 0.7341041564941406, 5.467614173889160, 14.27536010742188 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s02_insert_6",
+         "rotation" : [ 26.0, 14.0, -0.0 ],
+         "translation" : [ -1.196445465087891, 4.340541839599609, 14.14562416076660 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s02_insert_7",
+         "rotation" : [ 26.0, 31.0, -0.0 ],
+         "translation" : [ -3.191894531250, 4.668787479400635, 13.82164192199707 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s02_insert_b_1",
+         "rotation" : [ 0.0, -15.0, -0.0 ],
+         "translation" : [ 1.145595312118530, 4.677658081054688, 9.902660369873047 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s02_insert_b_2",
+         "rotation" : [ 12.0, -23.0, 0.0 ],
+         "translation" : [ 0.9389314651489258, 4.819166183471680, 10.94004058837891 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s02_insert_b_3",
+         "rotation" : [ 6.0, -4.0, 0.0 ],
+         "translation" : [ 1.410573959350586, 6.391162395477295, 12.17956352233887 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s02_insert_b_4",
+         "rotation" : [ 14.0, -4.0, 0.0 ],
+         "translation" : [ 1.341197967529297, 6.286637783050537, 11.18746566772461 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s03_b_1",
+         "rotation" : [ 24.0, 94.0, -0.0 ],
+         "translation" : [ -5.346171379089355, 8.505013465881348, 2.331703186035156 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s03_b_2",
+         "rotation" : [ 26.0, 101.0, -0.0 ],
+         "translation" : [ -5.486270904541016, 8.403445243835449, 0.04680252075195312 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s03_b_3",
+         "rotation" : [ 21.0, 118.0, 0.0 ],
+         "translation" : [ -3.738388061523438, 6.865857601165771, -2.96273660659790 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s03_cu_1",
+         "rotation" : [ 2.0, -21.0, 0.0 ],
+         "translation" : [ 3.724037170410156, 5.807186603546143, 7.875802993774414 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s03_cu_2",
+         "rotation" : [ 2.0, -21.0, 0.0 ],
+         "translation" : [ 3.959844589233398, 5.826320171356201, 8.499076843261719 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s04_a_1",
+         "rotation" : [ 3.0, -29.0, 0.0 ],
+         "translation" : [ 4.557374954223633, 2.696146011352539, 28.40874481201172 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s04_a_2",
+         "rotation" : [ 12.0, 14.0, -0.0 ],
+         "translation" : [ -1.063930511474609, 4.187425613403320, 14.83083724975586 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s04_alt_1",
+         "rotation" : [ 11.0, -30.0, 0.0 ],
+         "translation" : [ 6.632098674774170, 5.187094688415527, 27.22942161560059 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s04_alt_2",
+         "rotation" : [ -21.0, -11.0, -0.0 ],
+         "translation" : [ 1.760036349296570, 0.7432641983032227, 25.84184837341309 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s04_b_1",
+         "rotation" : [ 18.0, 12.0, -0.0 ],
+         "translation" : [ -1.196444511413574, 4.340540885925293, 14.14562225341797 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s04_b_2",
+         "rotation" : [ 41.0, 0.0, 0.0 ],
+         "translation" : [ 0.6983528137207031, 10.44324970245361, 16.32203674316406 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s04_pan_1",
+         "rotation" : [ 18.0, 12.0, -0.0 ],
+         "translation" : [ -1.196446418762207, 4.340542793273926, 14.14562606811523 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s04_pan_2",
+         "rotation" : [ 39.0, 46.0, -0.0 ],
+         "translation" : [ -7.232656478881836, 8.839001655578613, 12.72767257690430 ]
+      },
+      {
+         "attach_to_id" : "portal",
+         "locator_name" : "s05_1",
+         "rotation" : [ -19.0, -1.0, -0.0 ],
+         "translation" : [ 1.807164192199707, 7.580375671386719, 7.488485336303711 ]
+      },
+      {
+         "attach_to_id" : "portal",
+         "locator_name" : "s05_2",
+         "rotation" : [ -19.0, -1.0, -0.0 ],
+         "translation" : [ 1.807164192199707, 7.580375671386719, 9.0 ]
+      },
+      {
+         "attach_to_id" : "portal",
+         "locator_name" : "s05_3",
+         "rotation" : [ -42.0, 18.0, 0.0 ],
+         "translation" : [ 1.807164192199707, 7.580375671386719, 9.0 ]
+      },
+      {
+         "attach_to_id" : "portal",
+         "locator_name" : "s06_1",
+         "rotation" : [ 48.0, -29.0, 0.0 ],
+         "translation" : [ 12.55322456359863, 36.00622558593750, 19.29217910766602 ]
+      },
+      {
+         "attach_to_id" : "portal",
+         "locator_name" : "s06_2",
+         "rotation" : [ 48.0, -29.0, 0.0 ],
+         "translation" : [ 12.76338005065918, 36.48777008056641, 19.67139053344727 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "sbu_1",
+         "rotation" : [ 59.0, 32.0, -0.0 ],
+         "translation" : [ -5.429393768310547, 18.76040840148926, 10.70651245117188 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "sbu_2",
+         "rotation" : [ 68.0, -40.0, 0.0 ],
+         "translation" : [ 5.570493698120117, 18.76040649414062, 10.26878738403320 ]
+      }
+   ],
+   "max_distance" : -1.0,
+   "proximity_range" : 200.0,
+   "requires_watcher" : false,
+   "sharing_policy" : "proximity",
+   "skip_condition_variable" : "",
+   "skip_to_cinematic" : "default_skip_cinematic",
+   "skippable" : true,
+   "stage" : "",
+   "version" : 9,
+   "wants_skip_queue" : true
+}

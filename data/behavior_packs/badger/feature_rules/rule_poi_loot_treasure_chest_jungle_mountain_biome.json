@@ -1,0 +1,41 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_poi_loot_treasure_chest_jungle_mountain_biome",
+      "places_feature": "badger:feature_poi_loot_treasure_chest_jungle"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "jungle_mountains"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "scatter_chance": "100 * (1 - query.is_in_village(variable.originx, variable.originz))",
+      "early_out": "v.scatteredy < 90 || math.mod(math.floor(v.originx / 16), 2) != 0 || math.mod(math.floor(v.originz / 16), 2) != 0",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,428 @@
+{
+   "audio_snapshot" : "snapshot:/cinematic/STATE_cinematic_nis",
+   "cine_id" : "mob00_c01_mob_disabled",
+   "clips" : [
+      {
+         "blend_from" : false,
+         "blend_in" : 0,
+         "camera_id" : "bu01",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 336,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 80.0,
+         "ignore_camera_shake" : false,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "bu01",
+         "near_plane" : 0.02500000037252903,
+         "pan_end_transform" : {
+            "locator_name" : "bu1_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "bu1_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "priority" : 10,
+         "row_index" : 9,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 35,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : true
+      },
+      {
+         "blend_from" : false,
+         "blend_in" : 0,
+         "camera_id" : "s01",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 336,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 80.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s01",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 5,
+         "row_index" : 10,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 35,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "camera_id" : "s01",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 109,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1-2",
+         "pan_end_transform" : {
+            "locator_name" : "s01_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s01_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 11,
+         "start_time" : 262,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s01",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 227,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.3849998116493225, 0.01499999966472387 ],
+            "P2" : [ 0.4149999916553497, 0.9900000095367432 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1-2",
+         "pan_end_transform" : {
+            "locator_name" : "s01_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s01_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 11,
+         "start_time" : 35,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "audio_event_on_skip" : "BAE_cine_mob00_c01_stop",
+         "audio_event_on_start" : "BAE_cine_mob00_c01",
+         "audio_event_on_stop" : "",
+         "clip_type" : "audio_clip",
+         "do_debug_draw" : false,
+         "duration" : 400,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 1,
+         "start_time" : 0
+      },
+      {
+         "audio_event_on_skip" : "",
+         "audio_event_on_start" : "BAE_test_clap_2d",
+         "audio_event_on_stop" : "",
+         "clip_type" : "audio_clip",
+         "do_debug_draw" : false,
+         "duration" : 2,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "CLAPPER - AUDIO",
+         "row_index" : 2,
+         "start_time" : 35
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_cine_allegiance_smoke_whisps",
+         "locked_for_edit" : false,
+         "name" : "  fx_cine_allegiance_smoke_whisps",
+         "row_index" : 12,
+         "start_time" : 210,
+         "transform" : {
+            "locator_name" : "fx_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_cine_allegiance_flame_stop",
+         "locked_for_edit" : false,
+         "name" : "  fx_cine_allegiance_flame_stop",
+         "row_index" : 12,
+         "start_time" : 37,
+         "transform" : {
+            "locator_name" : "fx_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_cine_allegiance_flame_stop",
+         "locked_for_edit" : false,
+         "name" : "  fx_cine_allegiance_flame_stop",
+         "row_index" : 12,
+         "start_time" : 145,
+         "transform" : {
+            "locator_name" : "fx_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "transition_clip",
+         "do_debug_draw" : false,
+         "duration" : 32,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "[ Transition Cam :: OUT NIS Quick ]",
+         "rate" : 0.2000000029802322,
+         "row_index" : 9,
+         "start_time" : 375,
+         "time_to_reach_rate" : 0.3000000119209290,
+         "transition_out" : true
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "do_debug_draw" : false,
+         "duration" : 66,
+         "enabled" : true,
+         "in_duration" : 30,
+         "locked_for_edit" : false,
+         "name" : "[FTB] Nis Quick in - Quick Out",
+         "out_duration" : 30,
+         "row_index" : 8,
+         "start_time" : 341,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE OUT Duration",
+         "out_duration" : 0,
+         "row_index" : 7,
+         "start_time" : 377,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : false,
+         "in_duration" : 60,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE In Duration",
+         "out_duration" : 0,
+         "row_index" : 7,
+         "start_time" : 341,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 6,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF] On Black",
+         "out_duration" : 0,
+         "row_index" : 7,
+         "start_time" : 371,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE OUT Duration",
+         "out_duration" : 0,
+         "row_index" : 7,
+         "start_time" : 35,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "do_debug_draw" : false,
+         "duration" : 65,
+         "enabled" : true,
+         "in_duration" : 30,
+         "locked_for_edit" : false,
+         "name" : "[FTB] Nis Quick In - Quick Out",
+         "out_duration" : 30,
+         "row_index" : 8,
+         "start_time" : 0,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 5,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF] On Black",
+         "out_duration" : 0,
+         "row_index" : 7,
+         "start_time" : 30,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE In Duration",
+         "out_duration" : 0,
+         "row_index" : 7,
+         "start_time" : 0,
+         "toggle_state" : "none"
+      },
+      {
+         "clip_type" : "transition_clip",
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "[ Transition Cam :: IN NIS Quick ]",
+         "rate" : 0.2000000029802322,
+         "row_index" : 9,
+         "start_time" : 0,
+         "time_to_reach_rate" : 0.3000000119209290,
+         "transition_out" : false
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "hud_visibility_clip",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 407,
+         "enabled" : true,
+         "hud_visibility" : "hidden",
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "HIDE HUD - Hidden for NISs",
+         "out_duration" : 0,
+         "row_index" : 0,
+         "start_time" : 0,
+         "toggle_state" : ""
+      }
+   ],
+   "extra_cast" : null,
+   "extra_entity_ids" : null,
+   "extra_world_requests" : null,
+   "interrupts_vo_sequences" : true,
+   "locators" : [
+      {
+         "attach_to_id" : "",
+         "locator_name" : "bu1_1",
+         "rotation" : [ 65.0, -43.0, 0.0 ],
+         "translation" : [ 2.888946533203125, 13.82314300537109, 2.739196777343750 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "fx_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 0.0, 5.50, 0.0 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "fx_2",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -0.2000000029802322, 5.50, 0.0 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s01_1",
+         "rotation" : [ 39.0, -22.0, 0.0 ],
+         "translation" : [ 1.168373107910156, 9.494819641113281, 5.672943592071533 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s01_2",
+         "rotation" : [ 35.0, -76.0, 0.0 ],
+         "translation" : [ 4.009836196899414, 8.089149475097656, 1.123073339462280 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "bu1_2",
+         "rotation" : [ 65.0, -43.0, 0.0 ],
+         "translation" : [ 3.292380332946777, 15.05582046508789, 3.164648056030273 ]
+      }
+   ],
+   "max_distance" : -1.0,
+   "proximity_range" : 190.0,
+   "requires_watcher" : false,
+   "sharing_policy" : "proximity",
+   "skip_condition_variable" : "",
+   "skip_to_cinematic" : "default_skip_cinematic",
+   "skippable" : true,
+   "stage" : "",
+   "version" : 9,
+   "wants_skip_queue" : true
+}

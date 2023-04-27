@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_structure_piglin",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+//Note: Below tunings match the player structures + mason resistances july 4/22
+    "components": {
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 1.5,
+          "crush": 1.125,
+          "spore": 0.0,
+          "ranged": 0.05,
+          "melee": 0.15,
+          "fire": 0.5,
+          "chop": 0.255
+        }
+      },
+      "badger:template": [
+        "badger:template_structure",
+        "badger:component_difficulty_modifiers_piglin_structures"
+      ]
+    }
+  }
+}

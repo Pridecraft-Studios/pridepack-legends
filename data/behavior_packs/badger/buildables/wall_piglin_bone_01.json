@@ -1,0 +1,153 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:wall_piglin_bone_01",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:template": [
+        "badger:template_wall"
+      ],
+      "badger:buildable_requirement": {
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [
+          "block_lava",
+          "water"
+        ]
+      },
+      "badger:multistep_buildable": {
+        "segments": {
+          "type": "sequence",
+          "segments": [
+            {
+              "type": "pattern",
+              "segments": [
+                {
+                  "buildable": "badger:prop_piglin_attack_wall"
+                },
+                {
+                  "buildable": "badger:prop_piglin_attack_wall_netherrack"
+                }
+              ],
+              "percentage": 0
+            },
+            {
+              "type": "pattern",
+              "segments": [
+                {
+                  "buildable": "badger:prop_piglin_attack_wall2"
+                },
+                {
+                  "buildable": "badger:prop_piglin_attack_wall_netherrack"
+                }
+              ],
+              "percentage": 0.15
+            },
+            {
+              "type": "pattern",
+              "segments": [
+                {
+                  "buildable": "badger:prop_piglin_attack_wall3"
+                },
+                {
+                  "buildable": "badger:prop_piglin_attack_wall_netherrack2"
+                }
+              ],
+              "percentage": 0.3
+            },
+            {
+              "type": "pattern",
+              "segments": [
+                {
+                  "buildable": "badger:prop_piglin_attack_wall4"
+                },
+                {
+                  "buildable": "badger:prop_piglin_attack_wall_netherrack2"
+                }
+              ],
+              "percentage": 0.45
+            },
+            {
+              "type": "pattern",
+              "segments": [
+                {
+                  "buildable": "badger:prop_piglin_attack_wall5"
+                },
+                {
+                  "buildable": "badger:prop_piglin_attack_wall_netherrack3"
+                }
+              ],
+              "percentage": 0.55
+            },
+            {
+              "type": "pattern",
+              "segments": [
+                {
+                  "buildable": "badger:prop_piglin_attack_wall4"
+                },
+                {
+                  "buildable": "badger:prop_piglin_attack_wall_netherrack2"
+                }
+              ],
+              "percentage": 0.7
+            },
+            {
+              "type": "pattern",
+              "segments": [
+                {
+                  "buildable": "badger:prop_piglin_attack_wall3"
+                },
+                {
+                  "buildable": "badger:prop_piglin_attack_wall_netherrack2"
+                }
+              ],
+              "percentage": 0.8
+            },
+            {
+              "type": "pattern",
+              "segments": [
+                {
+                  "buildable": "badger:prop_piglin_attack_wall2"
+                },
+                {
+                  "buildable": "badger:prop_piglin_attack_wall_netherrack"
+                }
+              ],
+              "percentage": 0.9
+            }
+          ]
+        },
+        "mid_segment_count": 100,
+        "placement_cursor_range": 60,
+        "style": "grounded",
+        "max_segments": 100
+      },
+      "badger:server_block_source_removal": {},
+      "badger:buildable_structure": {
+        "nbt_file": "chunk_piglin_attack_wall_03",
+        "build_time": 0
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 2.0,
+          "crush": 1.5,
+          "spore": 0.0,
+          "ranged": 0.0,
+          "melee": 0.0
+        }
+      }
+    }
+  }
+}

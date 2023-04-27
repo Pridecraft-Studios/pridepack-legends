@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_block_carpet_burning_edge_var_01_internal", 10.0],
+      ["badger:feature_block_sheet_burning_edge_var_01_internal", 10.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_nether_burnt_border_trees_ember_weighted"
+    }
+  }
+}

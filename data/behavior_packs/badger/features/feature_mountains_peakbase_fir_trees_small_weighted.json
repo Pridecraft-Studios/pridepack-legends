@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_mountains_peakbase_fir_trees_small_weighted"
+    },
+    "features": [
+      ["badger:feature_mountains_peakbase_tree_redbark_fir_04",10.0],
+      ["badger:feature_mountains_peakbase_tree_redbark_fir_05",10.0],
+      ["badger:feature_mountains_peakbase_tree_redbark_fir_07",10.0]
+    ]
+  }
+}

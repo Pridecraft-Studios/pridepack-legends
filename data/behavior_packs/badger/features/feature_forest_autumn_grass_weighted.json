@@ -1,0 +1,25 @@
+{
+  "format_version": "1.13.0",
+
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_plant_forest_autumn_clump_dry_01", 30.0],
+
+      ["badger:feature_plant_forest_autumn_clump_dry_02", 30.0],
+
+      ["badger:feature_plant_fateful_wofgrass_01", 20.0],
+
+      ["badger:feature_plant_fateful_wofgrass_02", 20.0],
+
+      ["badger:feature_plant_fateful_wofgrass_03", 20.0],
+
+      ["badger:feature_plant_fateful_wofgrass_04", 5.0],
+
+      ["badger:feature_plant_fateful_wofgrass_05", 5.0]
+    ],
+
+    "description": {
+      "identifier": "badger:feature_forest_autumn_grass_weighted"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_ore_coal_vein_construction_aggregate"
+    },
+    "features": [
+      "badger:feature_ore_coal_vein_fill_scatter",
+      "badger:feature_ore_coal_vein_coal_scatter",
+      "badger:feature_ore_slab_coal_vein_scatter",
+      "badger:feature_ore_chunk_coal_vein_coal_scatter"
+    ]
+  }
+}

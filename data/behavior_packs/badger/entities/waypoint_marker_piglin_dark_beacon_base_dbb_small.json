@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:waypoint_marker_piglin_dark_beacon_base_dbb_small",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:waypoint_marker": {
+        "path": "waypoint_piglinbase_horde_outpost",
+        "priority": 5
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 0.0,
+        "waypoint_max_range": 0.0,
+        "compass_max_range": "long",
+        "compass_level": 1
+      },
+      "badger:tags": {
+        "tags": [
+          "waypoint"
+        ]
+      }
+    }
+  }
+}
+  

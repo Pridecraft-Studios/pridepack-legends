@@ -1,0 +1,22 @@
+{
+  "id": "xp_well_of_fate_biome",
+  "textures": [
+    {
+      "texture": "xOld/test_big_2",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+  
+  "biome_map": [
+    {
+      "biome": "fateful_land_campaign",
+      "value": 255
+    }
+  ]
+}
+
+  

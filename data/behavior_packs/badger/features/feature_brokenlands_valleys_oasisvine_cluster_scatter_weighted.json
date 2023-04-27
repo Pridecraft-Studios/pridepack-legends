@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_brokenlands_tree_oasisvine_large_02", 15.0],
+      ["badger:feature_brokenlands_tree_oasisvine_med_01", 25.0],
+      ["badger:feature_tree_mangrove_01", 10.0],
+      ["badger:feature_tree_mangrove_02", 5.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_brokenlands_valleys_oasisvine_cluster_scatter_weighted"
+    }
+  }
+}

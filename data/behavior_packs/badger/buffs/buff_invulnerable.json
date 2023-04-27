@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:buff_invulnerable",
+      "runtime_identifier": "badger:buff"
+    },
+    "components": {
+      "badger:buff": {},
+      "badger:modifier_resistance": {
+        "resistances": {
+          "melee": 0,
+          "ranged": 0,
+          "explosion": 0,
+          "piercing": 0,
+          "cavalry": 0,
+          "fire": 0,
+          "spore": 0,
+          "crush": 0,
+          "fall_damage": 0,
+          "hazard": 0,
+          "neutral": 0
+        }
+      }
+    }
+  }
+}

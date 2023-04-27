@@ -1,0 +1,19 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_mountains_plant_greenblade_flower_03"
+    },
+    "may_replace": [
+      "minecraft:air"
+    ],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_attach_to": {
+      "bottom": [
+        "minecraft:grass"
+      ]
+    },
+    "places_block": "badger:block_deco_plant_greenblade_flower_03"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_tree_reservoir_01"
+    },
+    "structure_name": "nature/tree_reservoir_01",
+    "placement_range": {
+      "x": [
+        0,
+        16
+      ],
+      "z": [
+        0,
+        16
+      ],
+      "y": [
+        -6,
+        0
+      ]
+    },
+    "facing_direction": "south",
+    "constraints": {
+      "grounded": {
+        "block_allow_list": [
+        ]
+      }
+      
+    }
+  }
+}

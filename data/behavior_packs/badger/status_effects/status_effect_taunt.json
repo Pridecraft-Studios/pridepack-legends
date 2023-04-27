@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:status_effect_taunt",
+			"runtime_identifier": "badger:status_effect"
+		},
+		"components": {
+			"badger:status": {
+				"applied_name": "taunted",
+				"default_resistance": {
+					"resisted": false,
+					"time": 5,
+					"resistance_persist_time": 10
+				}
+			},
+			"badger:granted_actions": {
+				"actions": [
+				  {
+					"name": "taunt_effect",
+					"range": {
+					  "max_range": 1
+					}
+				  }
+				]
+			}
+		}
+	}
+}

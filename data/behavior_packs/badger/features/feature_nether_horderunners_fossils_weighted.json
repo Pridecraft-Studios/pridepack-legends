@@ -1,0 +1,27 @@
+{
+
+  "format_version": "1.13.0",
+
+  "code:place_weighted_random": {
+
+    "description": {
+
+    "identifier": "badger:feature_nether_horderunners_fossils_weighted"
+
+    },
+
+    "features": [
+
+      ["badger:feature_nether_horderunners_prop_fossil_head", 20],
+
+      ["badger:feature_nether_horderunners_prop_fossil_rib", 20],
+
+      ["badger:feature_nether_horderunners_prop_fossil_tail", 20.0],
+
+      ["badger:feature_nether_horderunners_prop_piglin_attack_bones_debris", 50.0]
+
+    ]
+
+  }
+
+}

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_structure_stone_player",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "PvP",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_foundation": {
+        "style": "pillar",
+        "custom_block": "badger:block_cobblestone",
+        "placement_rule": "always",
+        "pillar_height": 5
+      },
+      "badger:template": {
+        "parent": "badger:template_structure_stone_player",
+        "game_mode": "pvp"
+      }
+    }
+  }
+}

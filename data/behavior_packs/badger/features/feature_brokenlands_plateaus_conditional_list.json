@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:conditional_list": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_plateaus_conditional_list"
+    },
+    "conditional_features": [
+      {
+        "places_feature": "badger:feature_brokenlands_plateaus_plateaurock_scatter",
+        "condition" : "temp.noisevalue = query.noise((variable.worldx) / 20, (variable.worldz) / 20);temp.stackheight = variable.worldy > 50 ? math.floor(temp.noisevalue * 8) * 2 : 0;return temp.stackheight > 0;"
+      }
+    ]
+  }
+}

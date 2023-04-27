@@ -1,0 +1,28 @@
+{
+  "id": "piglin_common_ob",
+  "textures": [
+    {
+      "texture": "piglin/biome_only/piglin_common_village_attack_ob",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+
+  "biome_map": [
+    {
+      "biome": "nether_horderunner",
+      "value": 255
+    },
+    {
+      "biome": "nether_piglin_border",
+      "value": 155
+    },
+    {
+      "biome": "nether_piglin_border_blend",
+      "value": 55
+    }
+  ]
+}

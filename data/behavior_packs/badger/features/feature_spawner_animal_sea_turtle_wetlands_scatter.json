@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_spawner_animal_sea_turtle_wetlands_scatter"
+    },
+    "places_feature": "badger:feature_spawner_animal_sea_turtle_wetlands",
+    "iterations": "1",
+    "scatter_chance": "100",
+    "project_input_to_floor": false,
+    "y": "query.heightmap(variable.worldx, variable.worldy)",
+    "x": {
+      "extent": [-1, 1],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [-1, 1],
+      "distribution": "gaussian"
+    },
+    "coordinate_eval_order": "xzy"
+  }
+}

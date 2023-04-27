@@ -1,0 +1,9 @@
+{
+  "format_version": "1.13.0",
+  "code:scan_surface": {
+     "description": {
+      "identifier": "badger:feature_fateful_land_outer_scan_surface_pvp"
+    },
+	"scan_surface_feature": "badger:feature_fateful_land_outer_conditional_list_pvp"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_valley_megafrond_cluster_land_grass_scatter"
+    },
+    "places_feature": "badger:feature_brokenlands_valleys_megafrond_rushes_weighted",
+    "iterations": "math.random(16,20)",
+    "scatter_chance": "100",
+    "project_input_to_floor": false,
+    "y": "query.heightmap(variable.worldx, variable.worldy)",
+    "x": {
+      "extent": [-11, 11],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [-11, 11],
+      "distribution": "gaussian"
+    },
+    "coordinate_eval_order": "xzy"
+  }
+}

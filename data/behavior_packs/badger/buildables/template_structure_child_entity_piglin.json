@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_structure_child_entity_piglin",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:template": [
+        "badger:component_difficulty_modifiers_piglin"
+      ]
+    }
+  }
+}

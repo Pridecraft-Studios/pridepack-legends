@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_lure_instant_visual",
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:lure": {
+        "lure_range": 10.0,
+        "alliance_rule_filter": "is_lureable",
+        "show_influence_range": true,
+        "visual_alliance_rule_filter": "friendly",
+        "sticky_assignment": true
+      },
+      "badger:telemetry_lure_direct": {
+        "order_type": "lure",
+        "is_advanced": false
+      }
+    }
+  }
+}

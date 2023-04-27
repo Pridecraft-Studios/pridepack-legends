@@ -1,0 +1,84 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:piglin_dbb_three_outposts",
+            "is_summonable": true
+        },
+        "components": {
+			"badger:waypoint_marker": {
+                "path": "waypoint_piglinbase_horde_outpost",
+                "priority": 5,
+                "label": "faction.piglin_dbb_faction.name"
+            },
+			"badger:village_district_path": {
+                "path_blocks": ["block_path_netherrack_dried_var01"],
+                "edge_blocks": ["block_path_netherrack_dried"],
+                "edge_decoration_blocks": ["air", "air", "block_deco_netherwart_dried_large", "air", "air", "block_deco_netherwart_dried_small", "air", "air", "air", "block_deco_nether_grass_tall_dried", "air", "air", "air", "block_deco_nether_grass_dried", "air", "air", "block_deco_nether_grass_dried_small", "air", "air"],
+                "path_width": 3.0,
+                "edge_width": 2.0,
+                "path_noise_scale_factor": 0.02,
+                "path_deco_noise_scale_factor": 1.0,
+                "path_noise_amplitude": 1.0,
+                "edge_noise_amplitude": 2.0,
+                "diagonal_path_degree_tolerance": 45,
+                "prevent_buildable_placement": false,
+                "can_plan_under_buildables": false,
+                "can_place_under_buildables": false,
+                "can_place_bridge_for_height_changes": false,
+                "can_reuse_existing_paths": false,
+                "height_change_needs_bridge": 1000.0
+            },
+            "badger:village_building_path": {
+                "path_blocks": ["block_path_netherrack_dried_var01"],
+                "edge_blocks": ["block_path_netherrack_dried"],
+                "edge_decoration_blocks": ["air", "air", "block_deco_netherwart_dried_large", "air", "air", "block_deco_netherwart_dried_small", "air", "air", "air", "block_deco_nether_grass_tall_dried", "air", "air", "air", "block_deco_nether_grass_dried", "air", "air", "block_deco_nether_grass_dried_small", "air", "air"],
+                "path_width": 3.0,
+                "edge_width": 2.0,
+                "path_noise_scale_factor": 0.02,
+                "path_deco_noise_scale_factor": 1.0,
+                "path_noise_amplitude": 1.0,
+                "edge_noise_amplitude": 2.0,
+                "diagonal_path_degree_tolerance": 45,
+                "prevent_buildable_placement": false,
+                "can_plan_under_buildables": false,
+                "can_place_under_buildables": false,
+                "can_place_bridge_for_height_changes": false,
+                "can_reuse_existing_paths": false,
+                "height_change_needs_bridge": 1000.0
+            },
+			"badger:village_heart_destruction": {
+				"groups": {
+					"structures": { 
+						"delay": 0.1,
+						"interval": 0.1,
+						"amount": 1,
+						"disable_vfx": false
+					},
+					"walls": {
+						"delay": 0.1,
+						"interval": 0.1,
+						"amount": 5,
+						"disable_vfx": true
+					},
+					"cages": {
+						"delay": 1,
+						"interval": 0.2,
+						"amount": 1,
+						"disable_vfx": false
+					},
+					"units": {
+						"delay": 3.0,
+						"interval": 1.0,
+						"amount": 10,
+						"disable_vfx": false
+					}
+				}
+			},
+            "badger:destroy_on_village_destruction" : {
+                "group": "structures"
+            },
+            "badger:template": "badger:piglin_dbb"
+        }
+    }
+}

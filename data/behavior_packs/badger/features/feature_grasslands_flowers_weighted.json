@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_grasslands_flower_01",
+        33.0
+      ],
+      [
+        "badger:feature_grasslands_flower_02",
+        33.0
+      ],
+      [
+        "badger:feature_grasslands_flower_03",
+        33.0
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_grasslands_flowers_weighted"
+    }
+  }
+}

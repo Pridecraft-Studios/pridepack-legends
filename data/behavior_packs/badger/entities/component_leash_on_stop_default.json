@@ -1,0 +1,16 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:component_leash_on_stop_default",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:leash_on_stop": {
+        "leash_range": 20.0,
+        "return_range": 5.0
+      }
+    }
+  }
+}

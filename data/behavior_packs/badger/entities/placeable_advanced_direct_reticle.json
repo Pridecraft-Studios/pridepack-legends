@@ -1,0 +1,18 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:placeable_advanced_direct_reticle",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:template": "badger:placeable_force_move",
+            "badger:lure": {
+                "show_influence_range": false,
+                "show_influence_direction_line": false
+            }
+        }
+    }
+}
+//Used for the preview reticle. All the same functionality, but without the flag model or line decal.

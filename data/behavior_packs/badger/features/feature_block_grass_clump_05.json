@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_block_grass_clump_05"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_deco_grass_clump_05",
+    "may_attach_to": {
+      "bottom": "badger:block_pigsty_mud_03"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_jungle_canopy_tree_scatter"
+    },
+    "places_feature": "badger:feature_jungle_canopy_trees_weighted",
+    "iterations": "1",
+    "scatter_chance": "100",
+    "project_input_to_floor": false,
+    "y": "query.above_top_solid(variable.worldx, variable.worldz)-variable.originy",
+    "x": {
+      "distribution": "gaussian",
+      "extent": [
+        -2,
+        2
+      ]
+
+    },
+    "z":{
+      "distribution": "gaussian",
+      "extent": [
+        -2,
+        2
+      ]
+
+    },
+    "coordinate_eval_order": "xzy"
+  }
+}

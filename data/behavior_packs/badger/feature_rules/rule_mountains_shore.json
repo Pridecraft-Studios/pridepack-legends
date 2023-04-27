@@ -1,0 +1,35 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_mountains_shore",
+      "places_feature": "badger:feature_mountains_shore_scan_surface"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mountain_valleys"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mountain_foothills"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "x": 0,
+      "z": 0,
+      "y": 0
+    }
+  }
+}

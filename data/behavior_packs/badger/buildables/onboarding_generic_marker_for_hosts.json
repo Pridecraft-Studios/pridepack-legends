@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:onboarding_generic_marker_for_hosts",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "structure_spawner_creeper",
+        "buildable_category": "",
+        "height_offset": 1
+      },
+      "badger:buildable_requirement": {},
+      "badger:buildable_structure": {
+        "nbt_file": "onboarding_generic_marker",
+        "build_time": 1
+      },
+      "badger:buildable_intangible": {},
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "onboarding_generic_marker_for_hosts"
+        ]
+      }
+    }
+  }
+}

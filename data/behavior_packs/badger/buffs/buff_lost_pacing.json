@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:buff_lost_pacing",
+      "runtime_identifier": "badger:buff"
+    },
+    "components": {
+      "badger:buff": {},
+      "badger:status": {
+        "applied_name": "lost_pacing",
+        "default_resistance": {
+          "resisted": false,
+          "time": 5,
+          "resistance_persist_time": 0
+        }
+      },
+      "badger:modifier_movement_speed": {
+        "post_multiply": 0.5
+      }
+    }
+  }
+}

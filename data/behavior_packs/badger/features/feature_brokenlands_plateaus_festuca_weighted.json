@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_plant_brokenlands_plateau_drygrass_festuca_glauca_01", 10.0],
+      ["badger:feature_plant_brokenlands_plateau_drygrass_festuca_glauca_02", 10.0],
+      ["badger:feature_plant_brokenlands_plateau_drygrass_festuca_glauca_03", 10.0],
+      ["badger:feature_plant_brokenlands_plateau_drygrass_festuca_glauca_04", 10.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_brokenlands_plateaus_festuca_weighted"
+    }
+  }
+}

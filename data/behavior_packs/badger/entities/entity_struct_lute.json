@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_lute",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 2.25,
+        "length": 0.125,
+        "width": 0.34375
+      },
+      "badger:tags": {
+        "tags": [
+          "block",
+          "onboarding_lute"
+        ]
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 3,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_lute_interaction_hold"
+          }
+        ]
+      },
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

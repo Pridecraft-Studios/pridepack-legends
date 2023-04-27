@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_lure_instant_trigger",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:lure": {
+        "lure_range": 10.0,
+        "sticky_assignment": true,
+        "influencer_priority": 11,
+        "influenced_priority": 10,
+        "active_timer": 0.0,
+        "include_tags": [
+          "luredirect"
+        ],
+        "exclude_tags": [
+          "illager",
+          "villager"
+        ],
+        "alliance_rule_filter": "is_lureable",
+        "config_id": "hero",
+        "on_apply_target_trigger": "on_hero_lured",
+        "max_speed_factor": 2.0,
+        "max_speed_distance": 10.0,
+        "applies_strict_ownership": true
+      },
+      "badger:telemetry_lure_direct": {
+        "order_type": "lure",
+        "is_advanced": false
+      }
+    }
+  }
+}

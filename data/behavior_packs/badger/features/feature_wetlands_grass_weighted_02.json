@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_deco_drygrass_scatter_06", 60.0],
+      ["badger:feature_deco_drygrass_scatter_06b", 70.0],
+      ["badger:feature_deco_drygrass_scatter_06c", 25.00]
+
+    ],
+    "description": {
+      "identifier": "badger:feature_wetlands_grass_weighted_02"
+    }
+  }
+}

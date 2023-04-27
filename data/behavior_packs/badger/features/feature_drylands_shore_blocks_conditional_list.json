@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "code:conditional_list": {
+    "description": {
+      "identifier": "badger:feature_drylands_shore_blocks_conditional_list"
+    },
+    "conditional_features": [
+      {
+      "places_feature": "badger:feature_drylands_shore_block_aggregate",
+        "condition" : "temp.wetness == 1 && query.heightmap(variable.worldx, variable.worldz) == query.sea_level"
+      },
+      {
+        "places_feature": "badger:feature_drylands_shore_block_02",
+          "condition" : "temp.wetness == 2 && query.heightmap(variable.worldx, variable.worldz) == query.sea_level"
+      }
+      
+
+    ],
+	"early_out_scheme": "placement_success"
+  }
+}

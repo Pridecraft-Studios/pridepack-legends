@@ -1,0 +1,44 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_nether_rotters_mushroom_sml"
+    },
+    "structure_name": "prop_piglin_obstacle_mushroom_sml",
+    "placement_range": {
+      "x": [
+        0,
+        2
+      ],
+      "z": [
+        0,
+        2
+      ]
+
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {
+        "block_allow_list": [
+          "badger:block_netherrack",
+          "badger:block_netherrack_var01",
+          "badger:block_netherrack_var02",
+          "badger:block_netherrack_var03",
+          "badger:block_nylium_grass",
+          "badger:block_nylium_grass_var01",
+          "badger:block_nylium",
+          "badger:block_nylium_var01",
+          "badger:block_nylium_var02",
+          "badger:block_netherrack_dried",
+          "badger:block_nether_wart_warped",
+          "badger:block_nylium_warped",
+          "badger:block_nylium_warped_grass",
+          "badger:block_nylium_warped_var01",
+          "badger:block_nylium_warped_var02"
+        ]
+      },
+      "unburied": {},
+      "empty_space": {}
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_tree_dead_snowy_cedar_01", 20.0],
+      ["badger:feature_tree_dead_snowy_cedar_02", 20.0],
+      ["badger:feature_tree_dead_snowy_cedar_03", 20.0],
+      ["badger:feature_tree_pine_melt_lrg_02", 20.0],
+      ["badger:feature_tree_pine_melt_med_01", 20.0],
+      ["badger:feature_tree_pine_melt_med_02", 20.0],
+      ["badger:feature_mountains_valleys_tree_snowyfir_f", 20.0],
+      ["badger:feature_mountains_valleys_tree_snowyfir_e", 20.0],
+      ["badger:feature_mountains_valleys_tree_snowyfir_d", 20.0],
+      ["badger:feature_mountains_valleys_tree_snowyfir_c", 20.0],
+      ["badger:feature_tree_oak_melt_small_01", 20.0],
+      ["badger:feature_tree_oak_melt_small_02", 20.0],
+      ["badger:feature_tree_birch_melt_01", 20.0],
+      ["badger:feature_tree_birch_melt_02", 20.0],
+      ["badger:feature_resource_frostlands_stone_boulder_01", 5.0],
+      ["badger:feature_resource_frostlands_stone_boulder_02", 5.0],
+      ["badger:feature_resource_frostlands_stone_boulder_03", 5.0],
+      ["badger:feature_resource_frostlands_stone_boulder_04", 5.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_frosty_grass_dead_trees_weighted"
+    }
+  }
+}

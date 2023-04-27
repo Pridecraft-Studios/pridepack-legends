@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_brazier_player_var01",
+      "material": "badger_metal"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty",
+        "directional_texture": false,
+        "directional_shape": true,
+        "collision_shape": "cube"
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      },
+      "minecraft:block_light_emission": {
+        "emission": [
+          225,
+          110,
+          32,
+          255
+        ]
+      }
+    }
+  }
+}

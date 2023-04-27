@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_slab_ore_diamond_sediment", 
+      "material": "badger_stone"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "slab", 
+        "directional_texture": false, 
+        "directional_shape": true
+      }, 
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }, 
+      
+      "badger:terrain_type": {
+        "terrain": "stone"
+      }
+    }
+  }
+}

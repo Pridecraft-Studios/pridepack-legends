@@ -1,0 +1,48 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_forest_scan_surface",
+	    "places_feature": "badger:feature_forest_scan_surface"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+            {
+              "any_of": [
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "forest"
+                },
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "forest_hills"
+                }
+              ]
+            },
+            {
+              "any_of": [
+                {
+                  "test": "has_biome_tag",
+                  "operator": "!=",
+                  "value": "forest_autumn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+	  "distribution": {
+      "iterations": "1",
+      "x": 0,
+      "z": 0,
+      "y": 0
+    }
+  }
+}

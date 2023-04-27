@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:item_gold",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:template": "badger:template_item_orb",
+      "badger:aabb": {
+        "height": 0.5,
+        "length": 0.0625,
+        "width": 0.21875
+      },
+      "badger:tags": {
+        "tags": [
+          "item",
+          "enchanting_orb",
+          "ghostTriggerFriendly"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "format_version": "1.13.0",
+  "code:scan_surface": {
+    "description": {
+      "identifier": "badger:feature_frostlands_ice_pool_edge_noise_scan_surface"
+    },
+    "scan_surface_feature": "badger:feature_frostlands_ice_pool_edge_noise_aggregate",
+    "early_out" : "q.water_distance(v.worldx, v.worldz) != 1",
+    "height_override": "q.sea_level - 1"
+  }
+}

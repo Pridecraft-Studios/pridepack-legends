@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_plant_forest_autumn_driedstalks_01", 100.0],
+      ["badger:feature_plant_forest_autumn_driedstalks_02", 100.0],
+      ["badger:feature_mountains_lake_boulder_01", 1],
+      ["badger:feature_mountains_lake_boulder_02", 1],
+      ["badger:feature_mountains_lake_boulder_03", 1],
+      ["badger:feature_mountains_lake_boulder_04", 1]
+    ],
+    "description": {
+      "identifier": "badger:feature_forest_autumn_driedstalks_shore_weighted"
+    }
+  }
+}

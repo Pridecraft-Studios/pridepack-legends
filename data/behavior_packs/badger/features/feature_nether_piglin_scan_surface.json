@@ -1,0 +1,11 @@
+{
+  "format_version": "1.13.0",
+  "code:scan_surface": {
+    "description": {
+      "identifier": "badger:feature_nether_piglin_scan_surface"
+    },
+    "scan_surface_feature": "badger:feature_nether_piglin_conditional_list",
+    "constant_y_offset": -1
+
+  }
+}

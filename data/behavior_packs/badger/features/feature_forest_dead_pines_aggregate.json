@@ -1,0 +1,10 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_forest_dead_pines_aggregate"
+    },
+    "early_out": "first_failure",
+    "features": ["badger:feature_forest_dead_pines_weighted"]
+  }
+}

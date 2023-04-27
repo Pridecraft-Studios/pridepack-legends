@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_wof_cube",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 4.53550109863,
+        "length": 2.26766708374,
+        "width": 2.26766662598
+      },
+      "badger:tags": {
+        "tags": [
+          "block",
+          "wof_cube"
+        ]
+      },
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

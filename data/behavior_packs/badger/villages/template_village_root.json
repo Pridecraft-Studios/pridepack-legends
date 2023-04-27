@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:template_village_root"
+		},
+		"components": {
+			"badger:village": {
+				"name": "Village Template"
+			},
+			"badger:village_bounds_trigger_volume_size": {
+				"padding": 0
+			},
+			"badger:village_heart_destruction": {
+				"groups": {}
+			},
+			"badger:telemetry_game_zone": {
+				"id": 99,
+				"alt_id": 99,
+				"add_details_in_pvp": false
+			}
+		}
+	}
+}

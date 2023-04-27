@@ -1,0 +1,36 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_tree_mang_fallen_03"
+    },
+    "structure_name": "nature/tree_mang_fallen_03",
+    "placement_range": {
+      "x": [
+        0,
+        3
+      ],
+      "z": [
+        0,
+        3
+      ],
+      "y": [
+        -3,
+        3
+      ]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "block_intersection": {
+        "block_allow_list": [
+          "minecraft:grass",
+          "badger:block_dirt",
+          "badger:block_limestone_top",
+          "badger:block_limestone_mid_var02",
+          "badger:block_sheet_limestone_var01",
+          "badger:block_slab_limestone_var01"
+        ]
+      }
+    }
+  }
+}

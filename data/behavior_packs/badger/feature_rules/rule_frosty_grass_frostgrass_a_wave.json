@@ -1,0 +1,41 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_frosty_grass_frostgrass_a_wave",
+      "places_feature": "badger:feature_frosty_grass_frostgrass_a"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "frosty_grass"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(86,128)",
+      "scatter_chance": 100,
+      "early_out": "temp.noisevalue = q.noise(v.scatteredx, v.scatteredz, 40); temp.lownoisewiggle = math.random(-0.1, 0.2); temp.highnoisewiggle = math.random(-0.1, 0.2); return !(temp.noisevalue < (-0.3 + temp.lownoisewiggle) || temp.noisevalue > (0.3 + temp.highnoisewiggle));",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz) - 1",
+      "z": {
+        "distribution": "gaussian",
+        "extent": [
+          0,
+          15
+        ]
+      }
+    }
+  }
+}

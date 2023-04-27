@@ -1,0 +1,24 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:onboarding_village_chest",
+        "runtime_identifier": "badger:buildable",
+        "is_summonable": true
+      },
+      "components": {
+        "badger:buildable_requirement": {},
+        "badger:buildable_structure": {
+          "nbt_file": "onboarding_village_chest_buildable",
+          "build_time": 1
+        },
+        "badger:tags": {
+          "tags": [
+            "buildable",
+            "buildable_combat",
+            "buildable_structure"
+          ]
+        }
+      }
+    }
+  }

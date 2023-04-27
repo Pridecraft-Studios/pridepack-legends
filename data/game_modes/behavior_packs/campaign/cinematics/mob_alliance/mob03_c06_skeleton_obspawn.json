@@ -1,0 +1,2074 @@
+{
+   "audio_snapshot" : "snapshot:/cinematic/STATE_cinematic_nis",
+   "cine_id" : "mob03_c06_skeleton_obspawn",
+   "clips" : [
+      {
+         "blend_from" : false,
+         "blend_in" : 0,
+         "camera_id" : "cam01",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 761,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 50.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "cam01",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 0,
+         "row_index" : 11,
+         "spawn_transform" : {
+            "locator_name" : "cine_origin_locator",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 38,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "camera_id" : "cam01",
+         "clip_type" : "camera_look_at",
+         "do_debug_draw" : false,
+         "duration" : 761,
+         "enabled" : true,
+         "force_look_at_init" : true,
+         "hard_bounds_max" : [ 0.8799999952316284, 0.7599999904632568 ],
+         "hard_bounds_min" : [ -0.9399999976158142, -0.50 ],
+         "locked_for_edit" : false,
+         "look_at" : [
+            {
+               "first" : "skeleton_1",
+               "second" : 0.0
+            }
+         ],
+         "look_at_offset" : [ 0.0, 0.0, 0.0 ],
+         "look_target_vertical_offset" : 0.0,
+         "name" : "",
+         "row_index" : 17,
+         "soft_bounds_max" : [ -0.1600000262260437, 0.1799999475479126 ],
+         "soft_bounds_min" : [ -0.3600000143051147, -0.04000002145767212 ],
+         "soft_bounds_smoothing_spring" : 3.0,
+         "start_time" : 38,
+         "try_focus_head" : true
+      },
+      {
+         "camera_id" : "cam01",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 373,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.5450004339218140, 0.05999964103102684 ],
+            "P2" : [ 0.4250004887580872, 0.9050002098083496 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "Trans 2.3",
+         "pan_end_transform" : {
+            "locator_name" : "cam01alt_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "cam01_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 314,
+         "use_transform_orientation" : false,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "cam01",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 252,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.2799999713897705, 0.06499999761581421 ],
+            "P2" : [ 0.5300003886222839, 0.9750000238418579 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "Trans 1.2",
+         "pan_end_transform" : {
+            "locator_name" : "cam01_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "cam01_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 38,
+         "use_transform_orientation" : false,
+         "use_transform_position" : true
+      },
+      {
+         "clip_type" : "screen_text",
+         "do_debug_draw" : false,
+         "duration" : 835,
+         "enabled" : false,
+         "locked_for_edit" : false,
+         "name" : "[ Keep Disabled ] Cinematic Candidates Descriptor :: 0:Skeleton Main Structure",
+         "row_index" : 0,
+         "start_time" : 0,
+         "text" : ""
+      },
+      {
+         "audio_event_on_skip" : "BAE_cine_mob03_c06_stop",
+         "audio_event_on_start" : "BAE_cine_mob03_c06",
+         "audio_event_on_stop" : "",
+         "clip_type" : "audio_clip",
+         "do_debug_draw" : false,
+         "duration" : 830,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "Audio Track",
+         "row_index" : 2,
+         "start_time" : 0
+      },
+      {
+         "audio_event_on_skip" : "",
+         "audio_event_on_start" : "BAE_test_clap_2d",
+         "audio_event_on_stop" : "",
+         "clip_type" : "audio_clip",
+         "do_debug_draw" : false,
+         "duration" : 2,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "CLAPPER - AUDIO: Place on NIS Story Start.",
+         "row_index" : 3,
+         "start_time" : 38
+      },
+      {
+         "alliance_rule" : "any_team",
+         "behaviour" : "badger:behavior_zombie_happy",
+         "behaviour_radius" : 100.0,
+         "clear_actors" : false,
+         "clear_players" : true,
+         "clip_type" : "crowd_clearing",
+         "collect_entities_to_clear" : false,
+         "disable_spawners" : true,
+         "do_debug_draw" : false,
+         "duration" : 767,
+         "enabled" : true,
+         "exclude_tags" : null,
+         "include_tags" : null,
+         "locked_for_edit" : false,
+         "look_at_radius" : 50.0,
+         "name" : "CC HomeStead",
+         "navigate_radius" : 35.0,
+         "radius" : 25.0,
+         "restore_teleported_entities" : true,
+         "row_index" : 4,
+         "start_time" : 32,
+         "team" : "blue_team",
+         "transform" : {
+            "locator_name" : "loc_cc",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 28,
+         "enabled" : true,
+         "entity_id" : "skeleton_1",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 21,
+         "should_pathfind" : false,
+         "start_time" : 687,
+         "transform" : {
+            "locator_name" : "skeleton_nav_1d",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "walk_a",
+         "blend_in_time" : 0.250,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : false,
+         "entity_id" : "skeleton_1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 290,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "sprint",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.1000000014901161,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "wolf01",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 26,
+         "start_time" : 327,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "knockback_landing_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "skeleton_8",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 48,
+         "start_time" : 642,
+         "trigger_parents" : false
+      },
+      {
+         "archetype" : "badger:animal_wolf",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 770,
+         "enabled" : true,
+         "entity_id" : "wolf01",
+         "entity_owner_id" : "",
+         "faction_selector" : {
+            "id" : "",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "Wolf01",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 24,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 30,
+         "team" : "blue_team",
+         "transform" : {
+            "locator_name" : "wolf_spawn_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:mob_skeleton",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 510,
+         "enabled" : true,
+         "entity_id" : "skeleton_2",
+         "entity_owner_id" : "",
+         "faction_selector" : {
+            "id" : "",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "Skele02",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 29,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 290,
+         "team" : "blue_team",
+         "transform" : {
+            "locator_name" : "skeleton_spawn_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:mob_skeleton",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 510,
+         "enabled" : true,
+         "entity_id" : "skeleton_3",
+         "entity_owner_id" : "",
+         "faction_selector" : {
+            "id" : "",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "Skele03",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 32,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 290,
+         "team" : "blue_team",
+         "transform" : {
+            "locator_name" : "skeleton_spawn_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 97,
+         "enabled" : true,
+         "entity_id" : "skeleton_4",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 36,
+         "should_pathfind" : false,
+         "start_time" : 563,
+         "transform" : {
+            "locator_name" : "skeleton_nav_4b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:mob_skeleton",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 430,
+         "enabled" : true,
+         "entity_id" : "skeleton_4",
+         "entity_owner_id" : "",
+         "faction_selector" : {
+            "id" : "",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "Skele04",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 35,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 370,
+         "team" : "blue_team",
+         "transform" : {
+            "locator_name" : "skeleton_spawn_4",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 96,
+         "enabled" : true,
+         "entity_id" : "skeleton_5",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 39,
+         "should_pathfind" : false,
+         "start_time" : 546,
+         "transform" : {
+            "locator_name" : "skeleton_nav_5b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:mob_skeleton",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 382,
+         "enabled" : true,
+         "entity_id" : "skeleton_5",
+         "entity_owner_id" : "",
+         "faction_selector" : {
+            "id" : "",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "Skele05",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 38,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 418,
+         "team" : "blue_team",
+         "transform" : {
+            "locator_name" : "skeleton_spawn_5",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 84,
+         "enabled" : true,
+         "entity_id" : "skeleton_6",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 42,
+         "should_pathfind" : false,
+         "start_time" : 588,
+         "transform" : {
+            "locator_name" : "skeleton_nav_6b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:mob_skeleton",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 332,
+         "enabled" : true,
+         "entity_id" : "skeleton_6",
+         "entity_owner_id" : "",
+         "faction_selector" : {
+            "id" : "",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "Skele06",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 41,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 468,
+         "team" : "blue_team",
+         "transform" : {
+            "locator_name" : "skeleton_spawn_6",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 38,
+         "enabled" : true,
+         "entity_id" : "skeleton_7",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 45,
+         "should_pathfind" : false,
+         "start_time" : 614,
+         "transform" : {
+            "locator_name" : "skeleton_nav_7b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:mob_skeleton",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 288,
+         "enabled" : true,
+         "entity_id" : "skeleton_7",
+         "entity_owner_id" : "",
+         "faction_selector" : {
+            "id" : "",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "Skele07",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 44,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 512,
+         "team" : "blue_team",
+         "transform" : {
+            "locator_name" : "skeleton_spawn_7",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 761,
+         "enabled" : true,
+         "frequency" : 0.8000000119209290,
+         "intensity" : 0.07500000298023224,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 15,
+         "start_time" : 38
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 128,
+         "enabled" : true,
+         "entity_id" : "skeleton_5",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 39,
+         "should_pathfind" : false,
+         "start_time" : 418,
+         "transform" : {
+            "locator_name" : "skeleton_nav_5a",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "hit_reaction_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "skeleton_1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 251,
+         "trigger_parents" : false
+      },
+      {
+         "clip_type" : "rotate_entity",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "entity_id" : "skeleton_4",
+         "forward_transform" : {
+            "locator_name" : "skeleton_nav_4b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 37,
+         "start_time" : 662
+      },
+      {
+         "animation" : "knockback_landing_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "skeleton_4",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 36,
+         "start_time" : 662,
+         "trigger_parents" : false
+      },
+      {
+         "clip_type" : "rotate_entity",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "entity_id" : "skeleton_5",
+         "forward_transform" : {
+            "locator_name" : "skeleton_nav_5b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 40,
+         "start_time" : 642
+      },
+      {
+         "animation" : "knockback_landing_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "skeleton_5",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 39,
+         "start_time" : 642,
+         "trigger_parents" : false
+      },
+      {
+         "clip_type" : "rotate_entity",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "entity_id" : "skeleton_6",
+         "forward_transform" : {
+            "locator_name" : "skeleton_nav_6b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 43,
+         "start_time" : 672
+      },
+      {
+         "animation" : "knockback_landing_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "skeleton_6",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 42,
+         "start_time" : 672,
+         "trigger_parents" : false
+      },
+      {
+         "clip_type" : "rotate_entity",
+         "do_debug_draw" : false,
+         "duration" : 7,
+         "enabled" : true,
+         "entity_id" : "skeleton_12",
+         "forward_transform" : {
+            "locator_name" : "skeleton_nav_10",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 62,
+         "start_time" : 672
+      },
+      {
+         "animation" : "knockback_landing_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "skeleton_12",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 61,
+         "start_time" : 670,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "idle_d",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "skeleton_2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 31,
+         "start_time" : 370,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "nis_range_attack_hold",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "skeleton_3",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 34,
+         "start_time" : 640,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "nis_range_attack_hold",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "skeleton_4",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 37,
+         "start_time" : 688,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "nis_range_attack_hold",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "skeleton_5",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 40,
+         "start_time" : 668,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "nis_range_attack_hold",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "skeleton_6",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 43,
+         "start_time" : 698,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "nis_range_attack_hold",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "skeleton_12",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 62,
+         "start_time" : 696,
+         "trigger_parents" : false
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 119,
+         "enabled" : true,
+         "entity_id" : "wolf01",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 25,
+         "should_pathfind" : false,
+         "start_time" : 327,
+         "transform" : {
+            "locator_name" : "wolf_nav_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 67,
+         "enabled" : true,
+         "entity_id" : "wolf01",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 25,
+         "should_pathfind" : false,
+         "start_time" : 446,
+         "transform" : {
+            "locator_name" : "wolf_nav_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:mob_skeleton",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 762,
+         "enabled" : true,
+         "entity_id" : "skeleton_1",
+         "entity_owner_id" : "",
+         "faction_selector" : {
+            "id" : "",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "Skele01",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 19,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 38,
+         "team" : "blue_team",
+         "transform" : {
+            "locator_name" : "skeleton_spawn_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "idle_d",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.2000000029802322,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "skeleton_1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 32,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "cine_idle_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "wolf01",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 25,
+         "start_time" : 95,
+         "trigger_parents" : false
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 111,
+         "enabled" : true,
+         "entity_id" : "skeleton_1",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 21,
+         "should_pathfind" : false,
+         "start_time" : 290,
+         "transform" : {
+            "locator_name" : "skeleton_nav_1a",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 67,
+         "enabled" : true,
+         "entity_id" : "skeleton_1",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 21,
+         "should_pathfind" : false,
+         "start_time" : 401,
+         "transform" : {
+            "locator_name" : "skeleton_nav_1b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 113,
+         "enabled" : true,
+         "entity_id" : "skeleton_1",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 21,
+         "should_pathfind" : false,
+         "start_time" : 468,
+         "transform" : {
+            "locator_name" : "skeleton_nav_1c",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 106,
+         "enabled" : true,
+         "entity_id" : "skeleton_1",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 21,
+         "should_pathfind" : false,
+         "start_time" : 581,
+         "transform" : {
+            "locator_name" : "skeleton_nav_1d",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "camera_id" : "cam01",
+         "clip_type" : "camera_fov_change",
+         "do_debug_draw" : false,
+         "duration" : 315,
+         "enabled" : true,
+         "fov_end" : 1.291543722152710,
+         "fov_start" : 0.8726646304130554,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 16,
+         "start_time" : 314
+      },
+      {
+         "animation" : "nis_range_attack_hold",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "skeleton_2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 31,
+         "start_time" : 642,
+         "trigger_parents" : false
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 192,
+         "enabled" : true,
+         "entity_id" : "skeleton_4",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 36,
+         "should_pathfind" : false,
+         "start_time" : 370,
+         "transform" : {
+            "locator_name" : "skeleton_nav_4a",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 120,
+         "enabled" : true,
+         "entity_id" : "skeleton_6",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 42,
+         "should_pathfind" : false,
+         "start_time" : 468,
+         "transform" : {
+            "locator_name" : "skeleton_nav_6a",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 102,
+         "enabled" : true,
+         "entity_id" : "skeleton_7",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 45,
+         "should_pathfind" : false,
+         "start_time" : 512,
+         "transform" : {
+            "locator_name" : "skeleton_nav_7a",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:mob_skeleton",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 391,
+         "enabled" : true,
+         "entity_id" : "skeleton_8",
+         "entity_owner_id" : "",
+         "faction_selector" : {
+            "id" : "",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "Skele08",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 47,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 409,
+         "team" : "blue_team",
+         "transform" : {
+            "locator_name" : "skeleton_spawn_8",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:animal_fox",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 319,
+         "enabled" : true,
+         "entity_id" : "fox01",
+         "entity_owner_id" : "",
+         "faction_selector" : {
+            "id" : "",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "Fox01",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 66,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 481,
+         "team" : "blue_team",
+         "transform" : {
+            "locator_name" : "skeleton_spawn_10",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 89,
+         "enabled" : false,
+         "entity_id" : "skeleton_8",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 48,
+         "should_pathfind" : false,
+         "start_time" : 553,
+         "transform" : {
+            "locator_name" : "skeleton_nav_8",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "rotate_entity",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "entity_id" : "skeleton_8",
+         "forward_transform" : {
+            "locator_name" : "skeleton_nav_8",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 49,
+         "start_time" : 642
+      },
+      {
+         "animation" : "nis_range_attack_hold",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "skeleton_8",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 49,
+         "start_time" : 668,
+         "trigger_parents" : false
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 184,
+         "enabled" : true,
+         "entity_id" : "fox01",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 67,
+         "should_pathfind" : false,
+         "start_time" : 481,
+         "transform" : {
+            "locator_name" : "skeleton_nav_9a",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 107,
+         "enabled" : true,
+         "entity_id" : "fox01",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 68,
+         "should_pathfind" : false,
+         "start_time" : 665,
+         "transform" : {
+            "locator_name" : "skeleton_nav_9b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 143,
+         "enabled" : true,
+         "entity_id" : "wolf02",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 65,
+         "should_pathfind" : false,
+         "start_time" : 629,
+         "transform" : {
+            "locator_name" : "skeleton_nav_9b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:animal_wolf",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 354,
+         "enabled" : true,
+         "entity_id" : "wolf02",
+         "entity_owner_id" : "",
+         "faction_selector" : {
+            "id" : "",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "Wolf02",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 63,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 446,
+         "team" : "blue_team",
+         "transform" : {
+            "locator_name" : "skeleton_spawn_10",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 182,
+         "enabled" : true,
+         "entity_id" : "wolf02",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 64,
+         "should_pathfind" : false,
+         "start_time" : 446,
+         "transform" : {
+            "locator_name" : "skeleton_nav_9a",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 61,
+         "enabled" : true,
+         "entity_id" : "skeleton_10",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 56,
+         "should_pathfind" : false,
+         "start_time" : 581,
+         "transform" : {
+            "locator_name" : "skeleton_nav_9b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 130,
+         "enabled" : true,
+         "entity_id" : "skeleton_10",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 55,
+         "should_pathfind" : false,
+         "start_time" : 642,
+         "transform" : {
+            "locator_name" : "skeleton_nav_9c",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:mob_skeleton",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 418,
+         "enabled" : true,
+         "entity_id" : "skeleton_10",
+         "entity_owner_id" : "",
+         "faction_selector" : {
+            "id" : "",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "Skele10",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 54,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 382,
+         "team" : "blue_team",
+         "transform" : {
+            "locator_name" : "skeleton_spawn_10",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 199,
+         "enabled" : true,
+         "entity_id" : "skeleton_10",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 55,
+         "should_pathfind" : false,
+         "start_time" : 382,
+         "transform" : {
+            "locator_name" : "skeleton_nav_9a",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 58,
+         "enabled" : true,
+         "entity_id" : "skeleton_9",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 53,
+         "should_pathfind" : false,
+         "start_time" : 584,
+         "transform" : {
+            "locator_name" : "skeleton_nav_9b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 130,
+         "enabled" : true,
+         "entity_id" : "skeleton_9",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 52,
+         "should_pathfind" : false,
+         "start_time" : 642,
+         "transform" : {
+            "locator_name" : "skeleton_nav_9c",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 143,
+         "enabled" : true,
+         "entity_id" : "skeleton_9",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 52,
+         "should_pathfind" : false,
+         "start_time" : 437,
+         "transform" : {
+            "locator_name" : "skeleton_nav_9a",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:mob_skeleton",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 363,
+         "enabled" : true,
+         "entity_id" : "skeleton_9",
+         "entity_owner_id" : "",
+         "faction_selector" : {
+            "id" : "",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "Skele09",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 51,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 437,
+         "team" : "blue_team",
+         "transform" : {
+            "locator_name" : "skeleton_spawn_10",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:mob_skeleton",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 382,
+         "enabled" : true,
+         "entity_id" : "skeleton_11",
+         "entity_owner_id" : "",
+         "faction_selector" : {
+            "id" : "",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "Skele11",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 57,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 418,
+         "team" : "blue_team",
+         "transform" : {
+            "locator_name" : "skeleton_spawn_10",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:mob_skeleton",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 299,
+         "enabled" : true,
+         "entity_id" : "skeleton_12",
+         "entity_owner_id" : "",
+         "faction_selector" : {
+            "id" : "",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "Skele12",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 60,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 501,
+         "team" : "blue_team",
+         "transform" : {
+            "locator_name" : "skeleton_spawn_10",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 170,
+         "enabled" : true,
+         "entity_id" : "skeleton_12",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 61,
+         "should_pathfind" : false,
+         "start_time" : 501,
+         "transform" : {
+            "locator_name" : "skeleton_nav_9a",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 246,
+         "enabled" : true,
+         "entity_id" : "skeleton_11",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 58,
+         "should_pathfind" : false,
+         "start_time" : 418,
+         "transform" : {
+            "locator_name" : "skeleton_nav_9a",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 107,
+         "enabled" : true,
+         "entity_id" : "skeleton_11",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 59,
+         "should_pathfind" : false,
+         "start_time" : 665,
+         "transform" : {
+            "locator_name" : "skeleton_nav_9b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "nis_range_attack_hold",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "skeleton_7",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 46,
+         "start_time" : 678,
+         "trigger_parents" : false
+      },
+      {
+         "clip_type" : "rotate_entity",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "entity_id" : "skeleton_7",
+         "forward_transform" : {
+            "locator_name" : "skeleton_nav_7b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 46,
+         "start_time" : 652
+      },
+      {
+         "animation" : "knockback_landing_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "skeleton_7",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 45,
+         "start_time" : 652,
+         "trigger_parents" : false
+      },
+      {
+         "clip_type" : "rotate_entity",
+         "do_debug_draw" : false,
+         "duration" : 9,
+         "enabled" : true,
+         "entity_id" : "skeleton_1",
+         "forward_transform" : {
+            "locator_name" : "skeleton_spawn_1b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 22,
+         "start_time" : 251
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE OUT Duration",
+         "out_duration" : 0,
+         "row_index" : 8,
+         "start_time" : 38,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 8,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF] On Black",
+         "out_duration" : 0,
+         "row_index" : 8,
+         "start_time" : 30,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE In Duration",
+         "out_duration" : 0,
+         "row_index" : 8,
+         "start_time" : 0,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "do_debug_draw" : false,
+         "duration" : 68,
+         "enabled" : true,
+         "in_duration" : 30,
+         "locked_for_edit" : false,
+         "name" : "[FTB] Nis Quick In - Quick Out",
+         "out_duration" : 30,
+         "row_index" : 9,
+         "start_time" : 0,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "do_debug_draw" : false,
+         "duration" : 66,
+         "enabled" : true,
+         "in_duration" : 30,
+         "locked_for_edit" : false,
+         "name" : "[FTB] Nis Quick in - Quick Out",
+         "out_duration" : 30,
+         "row_index" : 9,
+         "start_time" : 769,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : false,
+         "in_duration" : 60,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE In Duration",
+         "out_duration" : 0,
+         "row_index" : 8,
+         "start_time" : 769,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 6,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF] On Black",
+         "out_duration" : 0,
+         "row_index" : 8,
+         "start_time" : 799,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE OUT Duration",
+         "out_duration" : 0,
+         "row_index" : 8,
+         "start_time" : 805,
+         "toggle_state" : "none"
+      },
+      {
+         "clip_type" : "transition_clip",
+         "do_debug_draw" : false,
+         "duration" : 36,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "[ Transition Cam :: OUT NIS Quick ]",
+         "rate" : 0.2000000029802322,
+         "row_index" : 10,
+         "start_time" : 799,
+         "time_to_reach_rate" : 0.3000000119209290,
+         "transition_out" : true
+      },
+      {
+         "clip_type" : "transition_clip",
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "[ Transition Cam :: IN NIS Quick ]",
+         "rate" : 0.2000000029802322,
+         "row_index" : 10,
+         "start_time" : 0,
+         "time_to_reach_rate" : 0.3000000119209290,
+         "transition_out" : false
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "hud_visibility_clip",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 835,
+         "enabled" : true,
+         "hud_visibility" : "hidden",
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "HIDE HUD - Hidden for NISs",
+         "out_duration" : 0,
+         "row_index" : 1,
+         "start_time" : 0,
+         "toggle_state" : ""
+      }
+   ],
+   "extra_cast" : null,
+   "extra_entity_ids" : null,
+   "extra_world_requests" : null,
+   "interrupts_vo_sequences" : true,
+   "locators" : [
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "cam01_1",
+         "rotation" : [ -2.0, 71.0, -0.0 ],
+         "translation" : [ -9.34802246093750, 15.89710998535156, 9.851745605468750 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "cam01_2",
+         "rotation" : [ -2.0, 71.0, -0.0 ],
+         "translation" : [ -8.3127441406250, 15.93613433837891, 9.48522949218750 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "cam01_3",
+         "rotation" : [ 0.0, 36.0, 0.0 ],
+         "translation" : [ -10.77191162109375, 3.083499908447266, 15.2519531250 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "cam01alt_1",
+         "rotation" : [ -2.0, 71.0, -0.0 ],
+         "translation" : [ -9.34802246093750, 15.89710998535156, 9.851745605468750 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "cam01alt_2",
+         "rotation" : [ 3.0, 49.0, -0.0 ],
+         "translation" : [ -13.95138168334961, 2.836906433105469, 11.67627906799316 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "cam01rot_1",
+         "rotation" : [ -2.0, 71.0, -0.0 ],
+         "translation" : [ -9.34802246093750, 15.89710998535156, 9.851745605468750 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "cam01rot_2",
+         "rotation" : [ -4.0, 66.0, 0.0 ],
+         "translation" : [ -8.312805175781250, 15.93613433837891, 9.485290527343750 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "cam01rot_3",
+         "rotation" : [ 9.0, 85.0, 0.0 ],
+         "translation" : [ -10.69915771484375, 3.239715576171875, 12.6716308593750 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "cam01rot_4",
+         "rotation" : [ 1.0, 14.0, -0.0 ],
+         "translation" : [ -10.69915771484375, 3.239715576171875, 12.6716308593750 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "fox_spawn_1",
+         "rotation" : [ 2.0, 5.0, -0.0 ],
+         "translation" : [ -9.685485839843750, 1.342823028564453, 15.93811035156250 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "loc_cc",
+         "rotation" : [ 10.0, -177.0, 0.0 ],
+         "translation" : [ 0.5833435058593750, 11.97570037841797, 1.091403007507324 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_10",
+         "rotation" : [ 6.0, -4.0, 0.0 ],
+         "translation" : [ -10.81250, 1.307853698730469, 6.0119628906250 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_1a",
+         "rotation" : [ 40.0, -89.0, 0.0 ],
+         "translation" : [ 7.900000095367432, 13.67112731933594, 6.9548339843750 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_1b",
+         "rotation" : [ 60.0, -142.0, -0.0 ],
+         "translation" : [ 5.599999904632568, 8.199999809265137, 11.0 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_1c",
+         "rotation" : [ 26.0, -54.0, 0.0 ],
+         "translation" : [ -10.60000038146973, 1.224620819091797, 11.10000038146973 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_1d",
+         "rotation" : [ 28.0, -7.0, 0.0 ],
+         "translation" : [ -9.399999618530273, 1.472827911376953, -4.599999904632568 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_1e",
+         "rotation" : [ -0.0, 95.0, 0.0 ],
+         "translation" : [ -2.65222167968750, 1.108280181884766, 0.36950683593750 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_2a",
+         "rotation" : [ 53.0, -94.0, 0.0 ],
+         "translation" : [ -2.893581390380859, 1.703647613525391, 11.56552886962891 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_2b",
+         "rotation" : [ 0.0, -35.0, -0.0 ],
+         "translation" : [ -5.099999904632568, 1.200000047683716, 2.50 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_3",
+         "rotation" : [ 0.0, 49.0, 0.0 ],
+         "translation" : [ -7.400000095367432, 1.477775573730469, 3.099999904632568 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_4a",
+         "rotation" : [ 29.0, -180.0, 0.0 ],
+         "translation" : [ -9.508728027343750, 1.534519195556641, 3.045227050781250 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_4b",
+         "rotation" : [ 8.0, 16.0, -0.0 ],
+         "translation" : [ -0.535217285156250, 1.345726013183594, 4.50744628906250 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_5a",
+         "rotation" : [ 17.0, 87.0, -0.0 ],
+         "translation" : [ -10.0214843750, 1.307144165039062, 3.079040527343750 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_5b",
+         "rotation" : [ -2.0, 16.0, 0.0 ],
+         "translation" : [ -3.023010253906250, 1.663169860839844, 4.269714355468750 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_6a",
+         "rotation" : [ 12.0, 1.0, -0.0 ],
+         "translation" : [ -10.46319580078125, 1.644626617431641, 2.232971191406250 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_6b",
+         "rotation" : [ 1.0, 16.0, -0.0 ],
+         "translation" : [ -4.11608886718750, 1.558776855468750, 4.449645996093750 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_7a",
+         "rotation" : [ 6.0, 5.0, -0.0 ],
+         "translation" : [ -9.670593261718750, 1.665458679199219, 4.041198730468750 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_7b",
+         "rotation" : [ -6.0, 14.0, 0.0 ],
+         "translation" : [ -8.452697753906250, 1.231334686279297, 4.513732910156250 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_8",
+         "rotation" : [ 8.0, 16.0, -0.0 ],
+         "translation" : [ -8.8225097656250, 1.414226531982422, 13.396972656250 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_9a",
+         "rotation" : [ 14.0, 0.0, 0.0 ],
+         "translation" : [ -10.2233886718750, 1.690837860107422, 9.053283691406250 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_9b",
+         "rotation" : [ 14.0, 0.0, 0.0 ],
+         "translation" : [ -10.164550781250, 1.610725402832031, 0.4616699218750 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_nav_9c",
+         "rotation" : [ 21.0, 90.0, 0.0 ],
+         "translation" : [ -3.312927246093750, 0.8158874511718750, 0.363464355468750 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_spawn_1",
+         "rotation" : [ 3.0, 82.0, 0.0 ],
+         "translation" : [ -4.261535644531250, 15.19999980926514, 6.960632324218750 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_spawn_10",
+         "rotation" : [ 14.0, -23.0, 0.0 ],
+         "translation" : [ -3.00622558593750, 0.9629669189453125, 20.38031005859375 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_spawn_1b",
+         "rotation" : [ 3.0, -5.0, 0.0 ],
+         "translation" : [ -4.261535644531250, 15.19999980926514, 6.960632324218750 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_spawn_2",
+         "rotation" : [ 0.0, 29.0, 0.0 ],
+         "translation" : [ -2.767272949218750, 1.218364715576172, 9.305358886718750 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_spawn_3",
+         "rotation" : [ 5.0, -10.0, 0.0 ],
+         "translation" : [ -13.89999961853027, 1.132297515869141, 8.800000190734863 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_spawn_4",
+         "rotation" : [ -2.0, -1.0, -0.0 ],
+         "translation" : [ -9.75109863281250, 1.903823852539062, 17.97552490234375 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_spawn_5",
+         "rotation" : [ -2.0, -1.0, -0.0 ],
+         "translation" : [ -8.234558105468750, 1.874736785888672, 18.78210449218750 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_spawn_6",
+         "rotation" : [ -2.0, -1.0, -0.0 ],
+         "translation" : [ -9.299011230468750, 1.835823059082031, 19.91784667968750 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_spawn_7",
+         "rotation" : [ -2.0, -1.0, -0.0 ],
+         "translation" : [ -6.472839355468750, 1.859092712402344, 19.20184326171875 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_spawn_8",
+         "rotation" : [ 5.0, 25.0, -0.0 ],
+         "translation" : [ -4.50, 1.40075683593750, 8.62561035156250 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "skeleton_spawn_9",
+         "rotation" : [ 21.0, -87.0, 0.0 ],
+         "translation" : [ -19.64904785156250, 1.633499145507812, 8.451232910156250 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "wolf_nav_1",
+         "rotation" : [ 46.0, 96.0, -0.0 ],
+         "translation" : [ 11.43183326721191, 13.64241790771484, 7.667792320251465 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "wolf_spawn_1",
+         "rotation" : [ 9.0, 39.0, -0.0 ],
+         "translation" : [ -0.00671386718750, 19.77843475341797, 0.9357910156250 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "wolf_nav_2",
+         "rotation" : [ 54.0, 35.0, -0.0 ],
+         "translation" : [ 19.87697219848633, 1.657382965087891, -0.05138587951660156 ]
+      }
+   ],
+   "max_distance" : -1.0,
+   "proximity_range" : 200.0,
+   "requires_watcher" : false,
+   "sharing_policy" : "proximity",
+   "skip_condition_variable" : "",
+   "skip_to_cinematic" : "default_skip_cinematic",
+   "skippable" : true,
+   "stage" : "",
+   "version" : 9,
+   "wants_skip_queue" : true
+}

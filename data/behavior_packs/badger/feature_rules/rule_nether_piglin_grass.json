@@ -1,0 +1,44 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_nether_piglin_grass",
+      "places_feature": "badger:feature_nether_piglin_grass_scatter"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "nether_piglin"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "nether_piglin_dbb"
+            }
+          ]           
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(14,28)",
+      "early_out": "temp.abs_diff = math.abs(query.noise(variable.scatteredx / 40, variable.scatteredz / 40) - math.random(-0.1, 0.1)); return temp.abs_diff < 0.25 || (temp.abs_diff > 0.35 && temp.abs_diff < 0.65) || (temp.abs_diff > 0.75 && temp.abs_diff < 0.95);",
+      "scatter_chance": "100",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [0, 15]
+      },
+      "y": 0,
+      "z": {
+        "distribution": "uniform",
+        "extent": [0, 15]
+      }
+    }
+  }
+}

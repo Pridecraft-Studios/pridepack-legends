@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "code:scan_surface": {
+     "description": {
+      "identifier": "badger:feature_mountains_shore_scan_surface"
+    },
+	  "scan_surface_feature": "badger:feature_mountains_shore_conditional_list",
+    "temp_variable_setup": "temp.wetness = q.water_distance(v.worldx, v.worldz);",
+    "early_out": "temp.wetness > 7 || temp.wetness == 0 || v.worldy > q.sea_level + 1",
+    "constant_y_offset": -1
+  }
+}

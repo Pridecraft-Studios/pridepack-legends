@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_valleys_algae_paths_scatter"
+    },
+    "places_feature": "badger:feature_brokenlands_valleys_algae_weighted",
+    "iterations": "1",
+    "scatter_chance": "temp.noisevalue1 = query.noise((temp.xstore) / 50, (temp.zstore) / 50);\r\nreturn (temp.noisevalue1 > -0.2 && temp.noisevalue1 < 0.2) ? 100 :0;",
+    "project_input_to_floor": false,
+    "x": 0.0,
+    "z": 0.0,
+    "y": 0.0
+  }
+}

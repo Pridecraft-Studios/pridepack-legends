@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:status_effect_sleep",
+      "runtime_identifier": "badger:status_effect"
+    },
+    "components": {
+      "badger:status": {
+        "applied_name": "sleep",
+        "default_resistance": {
+          "resisted": false,
+          "time": 5.0,
+          "resistance_persist_time": -1
+        }
+      },
+      "badger:disables_movement": {},
+      "badger:disables_actions": {},
+      "badger:counterattacker": {
+        "counterattacks": [
+          {
+            "include_tags": [],
+            "exclude_tags": [],
+            "alliance_rule_filter": "enemy",
+            "include_damage_types": [],
+            "exclude_damage_types": [],
+            "hit_effect_on_self": "badger:hit_effect_sleep_negate"
+          }
+        ]
+      }
+    }
+  }
+}

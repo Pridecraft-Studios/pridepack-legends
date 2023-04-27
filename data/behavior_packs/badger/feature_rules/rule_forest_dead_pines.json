@@ -1,0 +1,50 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_forest_dead_pines",
+      "places_feature": "badger:feature_forest_dead_pines_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "forest"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "forest_autumn"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(3,5)",
+      "scatter_chance": 5,
+      "early_out": "v.scatteredy < 30 || (q.get_game_rule_value('prevent_obstacles_on_poi_graph') && q.poi_influence_factor(v.scatteredx, v.scatteredz) < 0.5)",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [
+          2,
+          14
+        ]
+      },
+      "z": {
+        "distribution": "gaussian",
+        "extent": [
+          2,
+          14
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "coordinate_eval_order": "xzy"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "format_version": "1.13.0",
+  "code:place_expression": {
+    "description": {
+      "identifier": "badger:feature_ore_diamond_vein_expression_03"
+    },
+    "iterations": 7,
+    "resolution": 200,
+    "places_feature": "badger:feature_ore_diamond_patch_construction_aggregate",
+    "bezier": {
+      "x0": {
+        "extent": [
+          15,
+          20
+        ],
+        "distribution": "uniform"
+      },
+      "y0": "return query.heightmap(variable.worldx, variable.worldz) - variable.originy + math.random(-2,1);",
+      "z0": {
+        "extent": [
+          -10,
+          -5
+        ],
+        "distribution": "uniform"
+      },
+      "x1": {
+        "extent": [
+          -5,
+          5
+        ],
+        "distribution": "uniform"
+      },
+      "y1": "return query.heightmap(variable.worldx, variable.worldz) - variable.originy + math.random(-2,1);",
+      "z1": {
+        "extent": [
+          -5,
+          5
+        ],
+        "distribution": "uniform"
+      },
+      "x2": {
+        "extent": [
+          -5,
+          5
+        ],
+        "distribution": "uniform"
+      },
+      "y2": "return query.heightmap(variable.worldx, variable.worldz) - variable.originy + math.random(-2,1);",
+      "z2": {
+        "extent": [
+          -5,
+          5
+        ],
+        "distribution": "uniform"
+      },
+      "x3": {
+        "extent": [
+          5,
+          10
+        ],
+        "distribution": "uniform"
+      },
+      "y3": "return query.heightmap(variable.worldx, variable.worldz) - variable.originy + math.random(-2,1);",
+      "z3": {
+        "extent": [
+          5,
+          10
+        ],
+        "distribution": "uniform"
+      }
+    }
+  }
+}

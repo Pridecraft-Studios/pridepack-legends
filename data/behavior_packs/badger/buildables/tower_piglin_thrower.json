@@ -1,0 +1,199 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:tower_piglin_thrower",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:buildable_requirement": {},
+      "badger:buildable_structure": {
+        "nbt_file": "tower_piglin_thrower",
+        "build_time": 20,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:telemetry_category": {
+        "category_name": "Piglin Structure"
+      },
+      "badger:generate_ruins": {
+        "max": 8,
+        "min": -1
+      },
+      "badger:health": {
+        "max_health": 200
+      },
+      "capped_spawner": {
+        "cap_type": "piglin_crates_launched_runts",
+        "individual_cap": 15,
+        "toggled_actions": [
+          "turret"
+        ]
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            0, 
+            15, 
+            0
+          ]
+        ]
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          // mob targeting
+          {
+            "name": "piglin_thrower_mob_turret",
+            "max_range": 75,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "buildable_combat",
+              "structure"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "turret"
+            ]
+          },
+          // player targeting
+          {
+            "name": "piglin_thrower_player_turret",
+            "max_range": 75,
+            "include_tags": [
+              "player"
+            ],
+            "enable_with_line_of_sight": true,
+            "exclude_tags": [
+              "donotattack",
+              "buildable_combat",
+              "structure"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "turret"
+            ]
+          },
+          // buildable combat targeting
+          {
+            "name": "piglin_thrower_buildable_turret",
+            "max_range": 100,
+            "include_tags": [
+              "fountain"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "mob"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "turret"
+            ]
+          },
+          {
+            "name": "piglin_thrower_buildable_turret",
+            "max_range": 100,
+            "include_tags": [
+              "house"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "mob"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "turret"
+            ]
+          },
+          {
+            "name": "piglin_thrower_buildable_turret",
+            "max_range": 100,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "mob"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "turret"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "turret",
+            "trigger": "on_projectile_shoot",
+            "range": {
+              "min_range": 15,
+              "max_range": 100
+            },
+            "state_machine": {
+              "wind_up": 8.15,
+              "cooldown_time": 13,
+              "deactivates_on_cooldown": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_piglin_barrel",
+              "position_offsets_from_center": [
+                [
+                  0,
+                  31,
+                  0
+                ]
+              ],
+              "collision": {
+                "include_tags": [
+                  "nothing"
+                ],
+                "exclude_tags": [],
+                "alliance_rule_filter": "any_team"
+              },
+              "damage": {
+                "damage_amount": 2.1,
+                "damage_types": [
+                  "neutral"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_neather_medium"
+      },
+      "badger:loot": {
+        "table": "piglin_super_tower"
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_health_generation_default",
+        "badger:component_offline_construction_default",
+        "badger:template_tower_with_foundation",
+        "badger:template_structure_piglin"
+      ],
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "buffable-crows_nest",
+          "piglinStructure",
+          "pigThrowerTower",
+          "piglin"
+        ]
+      }
+    }
+  }
+}

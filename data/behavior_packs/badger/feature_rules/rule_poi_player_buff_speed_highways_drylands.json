@@ -1,0 +1,41 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_poi_player_buff_speed_highways_drylands",
+      "places_feature": "badger:feature_buff_speed_scatter_drylands_small"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "hot_and_dry"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(2,6)",
+      "scatter_chance": "q.poi_distance(v.worldx, v.worldz) > 200 ? 20 : 0",
+      "early_out": "q.poi_influence_factor(v.scatteredx, v.scatteredz) >= 0.09",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          2
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          2
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)"
+    }
+  }
+}

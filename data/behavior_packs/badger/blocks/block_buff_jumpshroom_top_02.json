@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_buff_jumpshroom_top_02",
+      "material": "badger_wood"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "slab",
+        "directional_texture": false,
+        "directional_shape": true
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      },
+      "badger:block_effects": {
+        "effect_frequency": 0.0,
+        "apply_status": {
+          "player_jump": {
+            "strength": 1.0
+          }
+        }
+      },
+      "minecraft:block_light_emission": {
+        "emission": [
+          218,
+          177,
+          100,
+          128
+        ]
+      }
+    }
+  }
+}

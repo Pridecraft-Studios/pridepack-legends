@@ -1,0 +1,24 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_buff_speed_scatter_frostlands_small"
+    },
+    "places_feature": "badger:feature_poi_player_buff_speed_frostlands",
+    "iterations": "math.random(4,7)",
+    "scatter_chance":"return 100 * (1 - query.is_in_village(variable.originx, variable.originz));",
+    "project_input_to_floor": false,
+    "x": {
+      "extent": [-4, 4],
+      "distribution": "uniform"
+    },
+    "z": {
+      "extent": [-4, 4],
+      "distribution": "uniform"
+    },
+    "y": {
+      "extent": [-2, 2],
+      "distribution": "uniform"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_table_cupcakes_culture01",
+      "material": "badger_dirt"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty",
+        "directional_texture": false,
+        "directional_shape": true,
+        "collision_shape": "sheet"
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }
+    }
+  }
+}

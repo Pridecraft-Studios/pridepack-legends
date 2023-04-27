@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_tower_piglin_thrower",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 21.0,
+        "length": 4.5,
+        "width": 3.50000030518
+      },
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:tags": {
+        "tags": [
+          "block",
+          "pigThrowerTower"
+        ]
+      },
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

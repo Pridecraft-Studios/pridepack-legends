@@ -1,0 +1,193 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:redstone_launcher",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Building",
+      "function": "Military",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_structure": {
+        "nbt_file": "redstone_launcher",
+        "build_time": 12,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_redstone_launcher"
+      },
+      "badger:health": {
+        "max_health": 250
+      },
+      "badger:telemetry_category": {
+        "category_name": "Player Structure"
+      },
+      "badger:buildable_presentation": {
+        "icon": "tower_redstone_launcher",
+        "tooltip_title": "structures.tower_trebuchet.name",
+        "tactical_description": "structures.tower_trebuchet.tactical_description",
+        "tooltip_description": "structures.tower_trebuchet.description",
+        "buildable_category": "utility",
+        "sort_order": 1800,
+        "height_offset": 0
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_redstone"
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 50
+          },
+          {
+            "item": "stone",
+            "amount": 100
+          },
+          {
+            "item": "redstone",
+            "amount": 100
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:offline_traits": {
+        "offline_disabled_components": [
+          "badger:culture",
+          "badger:aimable"
+        ],
+        "construction_disabled_components": [
+          "badger:culture",
+          "badger:aimable"
+        ]
+      },
+      "badger:culture": {
+        "base_culture_a": 400
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            0, 
+            3, 
+            0
+          ]
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "trebuchet",
+          "redStoneLauncher",
+          "buffable-crows_nest-rsl",
+          "buffable-war_drums",
+          "buffable-kaboomery-rsl",
+          "tier3PlayerStructure"
+        ]
+      },
+      "badger:reports_buildable_state": {
+        "reports_state": "combat"
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_health_generation_default",
+        "badger:component_generate_ruins_default",
+        "badger:template_structure_stone_player"
+      ],
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 20.0,
+        "waypoint_max_range": 20.0,
+        "compass_max_range": "short",
+        "filter_tagsets": [
+          {
+            "include_tags": [],
+            "exclude_tags": []
+          },
+          {
+            "include_tags": [
+              "village_attack",
+              "base_assault"
+            ],
+            "exclude_tags": []
+          }
+        ]
+      },
+      "badger:waypoint_marker": {
+        "path": "tower_redstone_launcher",
+        "label": "structures.tower_trebuchet.name",
+        "priority": 0,
+        "world_position_offset": [
+          0,
+          4,
+          0
+        ]
+      },
+      "badger:aimable": {
+        "reticle_entity_id": "badger:redstone_launcher_reticle",
+        "min_range": 15.0,
+        "max_range": 115.0,
+        "aim_speed": 0.75,
+        "gamepad_aim_speed": 0.75,
+        "shoot_action": "fire"
+      },
+      "badger:invasion_defense_value": {
+        "defense_value": 0
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "aim",
+            "camera": "redstone_launcher_camera",
+            "range": 10,
+            "delay": 1,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_aiming",
+            "input_layout_under_construction": "overlay_gameplay_under_construction",
+            "exclusive_interactor": true
+          }
+        ]
+      },
+      "badger:village_influence": {
+        "amount": 20
+      },
+      "badger:deconstruction": {
+        "deconstruct_time_percent": 5,
+        "resource_refund_percent": 1,
+        "isIndestructable": false,
+        "resource_cost": [],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:zone_visualization": {
+        "group": "redstone_launcher"
+      }
+    }
+  }
+}

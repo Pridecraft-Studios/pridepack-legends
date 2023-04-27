@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_mountains_foothills_boulder_plant_weighted"
+    },
+   "features": [
+    ["badger:feature_mountains_plant_greenblade_01", 10.0],
+    ["badger:feature_mountains_plant_greenblade_02", 10.0],
+    ["badger:feature_mountains_plant_greenblade_03", 10.0],
+    ["badger:feature_mountains_plant_greenblade_flower_01", 10.0],
+    ["badger:feature_mountains_plant_greenblade_flower_02", 10.0],
+    ["badger:feature_mountains_plant_greenblade_flower_03", 10.0]
+   ]
+  }
+}

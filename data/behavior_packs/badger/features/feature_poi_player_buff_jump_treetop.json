@@ -1,0 +1,55 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_poi_player_buff_jump_treetop"
+    },
+    "structure_name": "buff_poi_jump_01",
+    "placement_range": {
+      "x": [0, 1],
+      "z": [0, 1]
+    },
+    "facing_direction": "south",
+    "constraints": {
+      "unburied": {},
+      "grounded": {
+        "block_allow_list": [
+          "badger:block_shrub", 
+          "badger:block_slab_shrub",
+          "badger:block_tree_mangrove_01",
+          "badger:block_tree_mangrove_02",
+          "badger:block_tree_mangrove_03",
+          "badger:block_tree_mangrove_04",
+          "badger:block_oasistree_leaf_02",
+          "badger:block_slab_oasisvine_02",
+          "badger:block_tree_mangrove_01",
+          "badger:block_carpet_tree_mangrove_01"
+
+        ]
+      },
+      "block_intersection": {
+        "block_allow_list": [
+          "minecraft:air",
+          "badger:block_deco_terraced_grass_01",
+          "badger:block_deco_terraced_grass_02",
+          "badger:block_deco_terraced_grass_03",
+          "badger:block_deco_green_plant_01",
+          "badger:block_deco_green_plant_02",
+          "badger:block_deco_orange_flower_01",
+          "badger:block_deco_orange_flower_02",
+          "badger:block_shrub", 
+          "badger:block_slab_shrub",
+          "badger:block_tree_mangrove_01",
+          "badger:block_tree_mangrove_02",
+          "badger:block_tree_mangrove_03",
+          "badger:block_tree_mangrove_04",
+          "badger:block_oasistree_leaf_02",
+          "badger:block_slab_oasisvine_02",
+          "badger:block_tree_mangrove_01",
+          "badger:block_carpet_tree_mangrove_01"
+          
+        ]
+      }
+    }
+  }
+}

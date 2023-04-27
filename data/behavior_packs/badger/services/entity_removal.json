@@ -1,0 +1,21 @@
+{
+  "badger:entity_removal_service": {
+    "entity_destruction_tags": {
+        "include_any": [
+            "animal",
+            "spawner_animal",
+            "spawner_locator_animal",
+            "treasure_chest_interact",
+            "mount_01_food",
+            "mount_03_food",
+            "mount_04_food",
+            "mob_world_spawner",
+            "fx",
+            "world_mount_spawner",
+            "roaming_piglin_spawner"
+        ],
+        "exclude_any": [
+        ]
+    }
+  }
+}

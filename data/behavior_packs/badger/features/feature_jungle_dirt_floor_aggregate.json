@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_jungle_dirt_floor_aggregate"
+    },
+    "features": [
+      "badger:feature_jungle_dirt_replacement_scatter_01",
+      "badger:feature_jungle_dirt_replacement_scatter_02",
+      "badger:feature_jungle_dirt_replacement_scatter_03"
+      
+
+    ]
+  }
+}

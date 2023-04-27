@@ -1,0 +1,73 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:transform_hammer_boss_stunned_state",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1.0,
+        "length": 1.0,
+        "height": 1.0
+      },
+      "badger:tags": {
+        "tags": [
+          "hammer_boss_stun",
+          "donotattack"
+        ]
+      },
+      "badger:removal_time": {
+        "time": 10
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "charge_stun",
+            "self_trigger": true,
+            "state_machine": {
+              "wind_up": 6.1,
+              "wind_down": 0.1,
+              "cooldown_time": 10,
+              "deactivates_on_cooldown": false
+            },
+            "shape_area_damage": {
+              "collision": {
+                "friendly_fire": false,
+                "include_tags": [
+                  "hammerBoss"
+                ],
+                "exclude_tags": [
+                  "donotattack"
+                ],
+                "hits_friendlies": false,
+                "hits_enemies": false,
+                "alliance_rule_filter": "any_team"
+              },
+              "shape": {
+                "type": "cylinder",
+                "radius": 100.0,
+                "position": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "height": 10.0
+              },
+              "damage": {
+                "damage_amount": 0.0
+              },
+              "apply_status": {
+                "tired": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

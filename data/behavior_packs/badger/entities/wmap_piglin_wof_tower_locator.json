@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      // note this is a map controller entity not a wmap entity
+      "identifier": "badger:wmap_piglin_wof_tower_locator",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:tags": {
+        "tags": ["baseWallBastionLocator"]
+      },
+      "badger:map_controller": {
+        "initial_key_values": [
+          {
+            "key": "district",
+            "value": "tower"
+          }
+        ]
+      }
+    }
+  }
+}

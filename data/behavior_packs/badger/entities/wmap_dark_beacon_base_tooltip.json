@@ -1,0 +1,21 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:wmap_dark_beacon_base_tooltip",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:map3_tooltip": {
+                "title": "dark.beacon.base.tooltip.name",
+                "description": "dark.beacon.base.tooltip.description",
+                "banner": "map_screen/banners/legend_banner_horde_dbb.png"
+            },
+            "badger:map3_tooltip_audio": {
+                "event_id": "BAE_ui_wmap_invasion_tooltip_action_piglin_danger",
+                "event_type": "Music"
+            }
+        }
+    }
+}

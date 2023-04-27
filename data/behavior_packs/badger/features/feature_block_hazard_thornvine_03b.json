@@ -1,0 +1,39 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_block_hazard_thornvine_03b"
+    },
+    "may_replace": [
+      "minecraft:air",
+      "minecraft:grass",
+      "badger:block_deco_drygrass_scatter_01e",
+      "badger:block_deco_drygrass_scatter_02e",
+      "badger:block_deco_drygrass_scatter_03e",
+      "badger:block_deco_drygrass_scatter_04e",
+      "badger:block_deco_drygrass_scatter_05e"
+],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_deco_hazard_thornvine_03b",
+    "may_attach_to": {
+      "bottom": [
+        "minecraft:grass",
+        "badger:block_sand",
+        "badger:block_sand",
+        "badger:block_rivershore",
+        "badger:block_sand",
+        "badger:block_sand_d1",
+        "badger:block_sand_d2",
+        "badger:block_sand_red",
+        "badger:block_riverbed_a",
+        "badger:block_riverbed_a2",
+        "badger:block_redsand_b",
+        "badger:block_redsand_c",
+        "badger:block_redsand_d",
+        "badger:block_redsand_a_top",
+        "badger:block_cliffdirt_01"
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_villager_illager_sad",
+      "runtime_identifier": "badger:behavior"
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 1
+      },
+      "badger:wander": {
+        "wander_frequency": 0.05,
+        "wander_radius": 5
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "max_range": 15,
+            "include_tags": [
+              "piglin"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "evade"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder"
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "evade",
+            "range": {
+              "min_range": 10,
+              "max_range": 25
+            }
+          }
+        ]
+      }
+    }
+  }
+}

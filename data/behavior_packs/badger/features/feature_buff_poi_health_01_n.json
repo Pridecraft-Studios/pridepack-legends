@@ -1,0 +1,46 @@
+{
+    "format_version": "1.13.0",
+    "code:place_nbt": {
+      "description": {
+        "identifier": "badger:feature_buff_poi_health_01_n"
+      },
+      "structure_name": "nature/buff_poi_health_01",
+      "placement_range": {
+        "x": [0, 1],
+        "z": [0, 1],
+        "y": [0, 1]
+      },
+      "facing_direction": "north",
+      "constraints": {
+        "unburied":{},
+        "grounded": {
+          "block_allow_list": [
+            "minecraft:grass",
+            "badger:block_sand",
+            "badger:block_sand",
+            "badger:block_rivershore",
+            "badger:block_sand",
+            "badger:block_sand_d1",
+            "badger:block_sand_d2",
+            "badger:block_sand_red",
+            "badger:block_riverbed_a",
+            "badger:block_riverbed_a2",
+            "badger:block_redsand_a",
+            "badger:block_redsand_b",
+            "badger:block_redsand_c",
+            "badger:block_redsand_d",
+            "badger:block_redsand_a_top",
+            "badger:block_cliffdirt_01",
+            "badger:block_blackrock_b",
+            "badger:block_blackrock_a",
+            "badger:block_riverbed_b",
+            "badger:block_riverbed_b2",
+            "badger:block_alpine_rock_snowy_01",
+            "badger:block_alpine_rock_01"
+          ]
+        },
+        "empty_space": {}
+      }
+    }
+  }
+  

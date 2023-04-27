@@ -1,0 +1,69 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:placeable_force_move",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:tags": {
+                "tags": [
+                    "lure"
+                ]
+            },
+            "badger:influencer_coordinator": {
+                "formation_aspect_ratio": 2.0,
+                "formation_jitter": 0.25,
+                "formation_separation": 0.25,
+                "despawn_if_empty": true
+            },
+            "badger:target_assigner": {
+                "find_target_range": 3.5,
+                "drop_target_range": 75.0,
+                "force_target_range": 600.0,
+                "single_target": true,
+                "alliance_rule_filter": "enemy",
+                "pre_redirect_target_filter": {
+                    "include_tags": [],
+                    "exclude_tags": []
+                },
+                "target_filter": {
+                    "include_tags": [],
+                    "exclude_tags": [
+                        "donotattack"
+                    ]
+                },
+                "despawn_on_target_lost": true,
+                "parent_self_to_target": true
+            },
+            "badger:lure": {
+                "lure_range": 10.0,
+                "release_range": 150.0,
+                "active_timer": 0.0,
+                "release_on_arrival": false,
+                "sticky_assignment": false,
+                "influencer_priority": 11,
+                "influenced_priority": 0,
+                "include_tags": [],
+                "exclude_tags": [
+                    "animal",
+                    "villager",
+                    "illager"
+                ],
+                "config_id": "force_move",
+                "alliance_rule_filter": "is_lureable",
+                "show_influence_range": false,
+                "show_influence_direction_line": true,
+                "visual_alliance_rule_filter": "friendly",
+                "on_apply_target_trigger": "on_placed_lured",
+                "center_effect_on_owner": true
+            },
+            "badger:telemetry_lure_direct": {
+                "order_type": "focus_target",
+                "is_advanced": true
+            },
+            "badger:track_influenced_group_position": {}
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "format_version": "1.13.0",
+  "code:scan_surface": {
+    "description": {
+      "identifier": "badger:feature_frostlands_spring_edge_outer_scan_surface"
+    },
+    "scan_surface_feature": "badger:feature_frostlands_spring_edge_outer_aggregate",
+    "early_out" : "temp.dist = q.water_distance(v.worldx, v.worldz); return v.worldy < query.sea_level - 1 || v.worldy > query.sea_level + 2 || temp.dist < 1 || temp.dist > 6 + (q.noise(v.worldx, v.worldz, 50) * 4);",
+    "constant_y_offset": -1
+  }
+}

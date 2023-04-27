@@ -1,0 +1,43 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_plant_mushmini_02"
+    },
+    "structure_name": "nature/plant_mushmini_02",
+    "placement_range": {
+      "x": [
+        0,
+        1
+      ],
+      "z": [
+        0,
+        1
+      ],
+      "y": [
+        -4,
+        5
+      ]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "unburied": {},
+      "block_intersection": {
+        "block_allow_list": [
+          "minecraft:air",
+          "badger:block_deco_fol_moss_01",
+          "badger:block_deco_fol_moss_02",
+          "badger:block_deco_fol_moss_03"
+        ]
+      },
+      "grounded": {
+        "block_allow_list": [
+          "minecraft:grass",
+          "badger:block_rivershore",
+          "badger:block_tree_mang_trunk_moss2",
+          "badger:block_tree_mang_trunk_moss"
+        ]
+      }
+    }
+  }
+}

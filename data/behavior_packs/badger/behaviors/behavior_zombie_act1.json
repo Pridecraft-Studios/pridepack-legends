@@ -1,0 +1,224 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_zombie_act1",
+      "runtime_identifier": "badger:behavior"
+    },
+    "components": {
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Mob targeting
+          {
+            "name": "zombie_mob_melee",
+            "max_range": 18,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "animal",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "zombie_melee_attack"
+            ]
+          },
+          //Celebrate
+          {
+            "name": "celebrate",
+            "max_range": 100,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "celebration"
+            ]
+          },
+          //Buildable targeting
+          {
+            "name": "zombie_enemy_melee_buildable",
+            "max_range": 12,
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "pigGoldMine"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "zombie_melee_attack"
+            ]
+          },
+          {
+            "name": "zombie_enemy_melee_wall",
+            "max_range": 2,
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "piglin_wall",
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "zombie_melee_attack"
+            ]
+          },
+          {
+            "name": "zombie_enemy_melee_nav_fail",
+            "max_range": 3,
+            "enable_with_line_of_sight": true,
+            "enable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "piglin_wall",
+              "pigGoldMine"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "zombie_melee_attack"
+            ]
+          },
+          //General Targeting
+          {
+            "name": "zombie_general_melee",
+            "max_range": 18,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [
+            ],
+            "exclude_tags": [
+              "piglin_wall",
+              "animal",
+              "donotattack",
+              "pigGoldMine"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "zombie_melee_attack"
+            ]
+          },
+          {
+            "name": "zombie_goledmine_melee",
+            "max_range": 2,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "piglin_wall",
+              "animal",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "zombie_melee_attack"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "zombie_melee_attack",
+            "on_hit_target_trigger": "on_zombie_melee_attack_hit",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 0.85
+            },
+            "state_machine": {
+              "wind_up": 0.6,
+              "wind_down": 0.6,
+              "cooldown_time": 1.0,
+              "deactivates_on_cooldown": false
+            },
+            "interruptible": {},
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 75,
+                "radius": 1.7,
+                "thickness": 2.2,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.5
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 12.5,
+                "damage_types": [
+                  "melee"
+                ]
+              },
+              "apply_status": {
+                "bumped": {
+                  "strength": 1.0
+                }
+              },
+              "knockback": {
+                "angle": 15,
+                "force": 15
+              }
+            }
+          },
+          {
+            "name": "zombie_approach",
+            "range": {
+              "max_range": 3
+            }
+          },
+          {
+            "name": "secondary_combat_position",
+            "range": {
+              "min_range": 3,
+              "max_range": 4
+            }
+          },
+          {
+            "name": "zombie_greeting",
+            "range": {
+              "max_range": 2
+            },
+            "state_machine": {
+              "wind_up": 0.1,
+              "wind_down": 2.4,
+              "cooldown_time": 35,
+              "deactivates_on_cooldown": true
+            }
+          }
+        ]
+      }
+    }
+  }
+}

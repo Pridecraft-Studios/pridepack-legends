@@ -1,0 +1,189 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:zoner_increased_range_missiles",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Upgrade",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "zoner_increased_range_missiles",
+        "tooltip_title": "structures.zoner.increased.range.projectiles.name",
+        "tactical_description": "structures.zoner.increased.range.projectiles.tactical_description",
+        "tooltip_description": "structures.zoner.increased.range.projectiles.description",
+        "buildable_category": "utility",
+        "sort_order": 2000,
+        "height_offset": 0
+      },
+      "badger:culture": {
+        "base_culture_a": 850
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 50
+          },
+          {
+            "item": "stone",
+            "amount": 100
+          },
+          {
+            "item": "diamond",
+            "amount": 200
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:unlockable_buffs": {
+        "buffs": [
+          {
+            "resource": "upgrade_mason",
+            "has_unlock": true,
+            "buff_id": "badger:buff_zone_increase"
+          },
+          {
+            "resource": "upgrade_carpenter",
+            "has_unlock": true,
+            "buff_id": "badger:buff_construction_speed_increase"
+          }
+        ]
+      },
+      "badger:aura_applicator": {
+        "auras": [
+          {
+            "include_tags": [
+              "buffable-crows_nest"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "buff_id": "badger:buff_crows_nest",
+            "apply_to_build_previews": true
+          },
+          {
+            "include_tags": [
+              "buffable-crows_nest-rsl"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "buff_id": "badger:buff_crows_nest_rsl",
+            "apply_to_build_previews": true
+          }
+        ]
+      },
+      "badger:owned_territory": {
+        "prevent_overlap_tag_set": [],
+        "zone": 41
+      },
+      "badger:zone_type": {
+        "zone_type": "zone_spyglass",
+        "non_blocking": true
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "zoner_increased_range_missiles",
+        "build_time": 20,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_spyglass"
+      },
+      "badger:health": {
+        "max_health": 250
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_mason_small"
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            0, 
+            3, 
+            0
+          ],
+          [
+            0, 
+            8, 
+            0
+          ]
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "Upgrade",
+          "crowsNest",
+          "increased_range_missiles",
+          "tier2PlayerStructure",
+          "playerBuffStructure"
+        ]
+      },
+      "badger:reports_buildable_state": {
+        "reports_state": "building"
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_health_generation_default",
+        "badger:template_structure_stone_player"
+      ],
+      "badger:offline_traits": {
+        "offline_disabled_components": [
+          "badger:culture"
+        ],
+        "construction_disabled_components": [
+          "badger:culture",
+          "badger:aura_applicator"
+        ]
+      },
+      "badger:invasion_defense_value": {
+        "defense_value": 0,
+        "defense_multiplier": {
+          "key": "crows_nest",
+          "value": 1.2
+        }
+      },
+      "badger:zone_visualization": {
+        "group": "carpenter"
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 6.5,
+            "delay": 1,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction"
+          }
+        ]
+      },
+      "badger:village_influence": {
+        "amount": 10
+      }
+    }
+  }
+}

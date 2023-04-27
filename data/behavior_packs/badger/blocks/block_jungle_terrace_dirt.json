@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "material": "badger_dirt", 
+      "identifier": "badger:block_jungle_terrace_dirt"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube", 
+        "directional_texture": false, 
+        "directional_shape": false, 
+        "collision_shape": "cube"
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }
+    }
+  }
+}

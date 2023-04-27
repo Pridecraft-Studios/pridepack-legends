@@ -1,0 +1,43 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_poi_player_buff_jump_jungle",
+      "places_feature": "badger:feature_buff_jump_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "jungle"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "jungle_hills"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "1",
+      "scatter_chance": "q.poi_distance(v.originx, v.originz) > 150 ? 10 : 0",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [0, 15]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [0, 15]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)"
+    }
+  }
+}

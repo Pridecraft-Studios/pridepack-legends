@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_tree_mang_moss_snow_01", 
+      "material": "badger_snow"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube", 
+        "camera_collision": false, 
+        "directional_texture": false, 
+        "directional_shape": false
+      }, 
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "gatherable_wood"
+        ]
+      }, 
+      "badger:terrain_type": {
+        "terrain": "snow"
+      }
+    }
+  }
+}

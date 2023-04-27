@@ -1,0 +1,65 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_spear_final_boss_ground_aoe",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.1,
+        "height": 1.0
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": false,
+        "auto_step": 3.1
+      },
+      "badger:removal_time": {
+        "time": 8.0
+      },
+      "badger:movement": {
+        "move_speed": 0.0
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 5
+        },
+        "timer": {
+          "interval": 1
+        },
+        "damage_effects": [
+          {
+            "name": "aoe_final_boss_impact_ground",
+            "damage": 5,
+            "damage_types": [
+              "spore"
+            ],
+            "include_tags": [],
+            "exclude_tags": [],
+            "apply_status": {
+              "spore_damaged": {
+                "chance": 1,
+                "strength": 1
+              },
+              "engaged": {
+                "chance": 1.0,
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:template": [
+        "badger:template_impact_entity_piglin"
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_mountains_foothills_boulder_small_scatter"
+    },
+    "places_feature": "badger:feature_mountain_foothills_boulder_small_clusters_aggregate",
+    "iterations": "math.random(3,5)",
+    "scatter_chance": "100",
+    "project_input_to_floor": false,
+    "x": {
+      "extent": [-4, 4],
+      "distribution": "inverse_gaussian"
+    },
+    "z": {
+      "extent": [-4, 4],
+      "distribution": "inverse_gaussian"
+    },
+    "y": {
+      "extent": [-2, 2],
+      "distribution": "uniform"
+    }
+  }
+}

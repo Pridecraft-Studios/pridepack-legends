@@ -1,0 +1,28 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_grasslands_grass_ring"
+    },
+    "iterations": "return math.random(10,20);",
+    "coordinate_eval_order": "zxy",
+    "x": {
+      "extent": [
+        -8,
+        8
+      ],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [
+        -8,
+        8
+      ],
+      "distribution": "gaussian"
+    },
+    "project_input_to_floor": false,
+    "places_feature": "badger:feature_grasslands_grass_ring_weighted",
+    "y": "return query.heightmap(variable.worldx, variable.worldz)",
+    "scatter_chance": 100.0
+  }
+}

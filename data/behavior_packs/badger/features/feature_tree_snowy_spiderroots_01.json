@@ -1,0 +1,40 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_tree_snowy_spiderroots_01"
+    },
+    "structure_name": "nature/tree_snowy_spiderroots_01",
+    "placement_range": {
+      "x": [
+        0,
+        2
+      ],
+      "z": [
+        0,
+        2
+      ],
+      "y": [
+        0,
+        0
+      ]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {
+        "block_allow_list": [
+          "minecraft:grass",
+          "badger:block_frostground",
+          "badger:block_frostground_02",
+          "badger:block_dirt",
+          "badger:block_gravel",
+          "badger:block_sand",
+          "badger:block_sand_d2",
+          "badger:block_sand_d3",
+          "badger:block_stone",
+          "badger:block_rivershore"
+        ]
+      }
+    }
+  }
+}

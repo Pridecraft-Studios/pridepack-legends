@@ -1,0 +1,13 @@
+{
+    "format_version": "1.13.0",
+    "code:place_aggregated": {
+        "description": {
+            "identifier": "badger:feature_poi_loot_treasure_chest_brokenlands"
+        },
+        "early_out": "first_failure",
+        "features": [
+            "badger:feature_poi_loot_brokenlands_treasure_chest",
+            "badger:feature_roaming_piglin_seeker_group_treasure_chest_scatter"
+        ]
+    }
+}

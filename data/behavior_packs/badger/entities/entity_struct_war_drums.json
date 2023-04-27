@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_war_drums",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "mushroom_data": {
+      "function": "Entity_Struct"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 4.50000030518,
+        "length": 1.6875,
+        "width": 2.00117797852
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder"
+      },
+      "badger:health": {
+        "max_health": 20
+      },
+      "badger:movement": {
+        "move_speed": 0
+      },
+      "badger:tags": {
+        "tags": ["mob"]
+      },
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

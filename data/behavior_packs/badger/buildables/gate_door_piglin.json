@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:gate_door_piglin",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:destruction_generic"
+      },
+      
+      "badger:aabb": {
+        "width": 11,
+        "height": 8,
+        "length": 3
+      },
+      "badger:template": [
+        "badger:template_structure_piglin"
+      ]
+    }
+  }
+}

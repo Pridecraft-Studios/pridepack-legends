@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_tar_block"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_tar_02",
+    "may_replace": [
+      "badger:block_tarrock"
+    ],
+    "may_attach_to": {
+      "sides": [
+        "badger:block_tarrock",
+        "badger:block_tar_02"
+      ]
+    },
+    "may_not_attach_to": {
+      "diagonal": [
+        "badger:block_sand",
+        "minecraft:air"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_nether_rotters_grass_surface_scan",
+	    "places_feature": "badger:feature_nether_rotters_grass_scan_surface"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "nether_rotters"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "nether_final_battle_arena"
+            }
+          ]
+        }
+      ]
+    },
+	  "distribution": {
+      "iterations": "1",
+      "x": 0,
+      "z": 0,
+      "y": 0
+    }
+  }
+}

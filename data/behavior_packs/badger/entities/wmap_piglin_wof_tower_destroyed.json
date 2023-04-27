@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:wmap_piglin_wof_tower_destroyed",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 0.46875,
+        "length": 0.1171875,
+        "width": 0.1171875
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      }
+    }
+  }
+}

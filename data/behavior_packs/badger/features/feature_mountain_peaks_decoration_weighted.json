@@ -1,0 +1,37 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_plant_snowgrass_01",
+        10.0
+      ],
+      [
+        "badger:feature_plant_snowgrass_02",
+        10.0
+      ],
+      [
+        "badger:feature_plant_snowgrass_03",
+        10.0
+      ],
+      [
+        "badger:feature_plant_snowgrass_04",
+        10.0
+      ],
+      [
+        "badger:feature_plant_snowgrass_05",
+        10.0
+      ],
+      ["badger:feature_resource_frostlands_stone_boulder_large_01",1.0],
+      ["badger:feature_resource_frostlands_stone_boulder_large_02",1.0],
+      ["badger:feature_resource_frostlands_stone_boulder_large_03",1.0],
+      
+      ["badger:feature_plant_flower_mountain_01",3.0],
+      ["badger:feature_plant_flower_mountain_02",3.0],
+      ["badger:feature_plant_flower_mountain_03",3.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_mountain_peaks_decoration_weighted"
+    }
+  }
+}

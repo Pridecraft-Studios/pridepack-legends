@@ -1,0 +1,17 @@
+{
+	"format_version": 1,
+	"header": {
+		"description": "Tutorial Resource Pack Description",
+		"name": "Tutorial Resources",
+		"uuid": "9e1f947e-2efc-4d20-a3d0-91fc55949cc8",
+		"version": [ 0, 0, 1 ]
+	},
+	"modules": [
+		{
+			"description": "Tutorial Resource Pack Description",
+			"type": "data",
+			"uuid": "37aa5480-4410-4f9a-95c5-1c67de373ccf",
+			"version": [ 0, 0, 1 ]
+		}
+ ]
+}

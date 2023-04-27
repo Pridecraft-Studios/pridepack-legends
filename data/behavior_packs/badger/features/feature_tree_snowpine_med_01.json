@@ -1,0 +1,33 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_tree_snowpine_med_01"
+    },
+    "structure_name": "nature/tree_snowpine_med_01",
+    "placement_range": {
+      "x": [
+        0,
+        1
+      ],
+      "z": [
+        0,
+        1
+      ],
+      "y": [
+        0,
+        1
+      ]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {
+        "block_allow_list": [
+          "badger:block_frostsnow",
+          "badger:block_frostground_02"
+        ]
+      },
+      "empty_space": {}
+    }
+  }
+}

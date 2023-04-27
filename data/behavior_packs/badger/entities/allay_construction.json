@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:allay_construction",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:tags": {
+        "tags": [
+          "allay"
+        ]
+      },
+      "badger:allay": {
+        "spin_speed": 0,
+        "bounce_speed": 0,
+        "radius_scale": 0,
+        "bounce_scale": 0,
+        "travel_time": 0.75,
+        "between_blocks_travel_time": 0.25,
+        "max_range": 100.0,
+        "landed_position": [
+          0,
+          1,
+          0
+        ],
+        "spawn_offset": [
+          0,
+          3,
+          3
+        ]
+      }
+    }
+  }
+}

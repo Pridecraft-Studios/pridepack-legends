@@ -1,0 +1,34 @@
+{
+  "id": "anchor_test",
+
+  "textures": [
+    {
+      "texture": "villages/anchor_test",
+      "channels": {
+        "r": "buildable_rotation_map",
+        "g": "not_used",
+        "b": "buildable_name_map"
+      }
+    }
+  ],
+
+
+  "structure_buildable_map": [
+    {
+      "structure": "badger:village_arch_01",
+      "value": 255
+    },
+    {
+      "structure": "badger:tower_arrow",
+      "value": 254
+    },
+    {
+      "structure": "badger:zoner_village_house_small",
+      "value": 253
+    },
+    {
+      "structure": "badger:mob_alliance_skeleton_house",
+      "value": 252
+    }
+  ]
+}

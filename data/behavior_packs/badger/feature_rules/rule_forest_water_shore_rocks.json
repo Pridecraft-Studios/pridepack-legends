@@ -1,0 +1,50 @@
+{
+  "minecraft:feature_rules": {
+    "description": {
+      "places_feature": "badger:feature_forest_water_shore_plant_weighted",
+      "identifier": "badger:rule_forest_water_shore_rocks"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "forest"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "forest_autumn"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(1,4)",
+      "scatter_chance": 50,
+      "early_out": "q.water_distance(v.scatteredx, v.scatteredz) >= 3",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      }
+    }
+  },
+  "format_version": "1.13.0"
+}

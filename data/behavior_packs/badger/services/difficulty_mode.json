@@ -1,0 +1,70 @@
+{
+  "badger:difficulty_mode_service": {
+    "difficulties": {
+      "Peaceful": {
+        "controller_spawners": [
+          //Roaming Piglins
+          {
+            "include_tags": [
+              "roaming_piglin_spawner_controller_root"
+            ],
+            "exclude_tags": [],
+            "spawn_rate": 0.5
+          }
+        ]
+      },  
+      "Easy": {
+        "controller_spawners": [
+          //Roaming Piglins
+          {
+            "include_tags": [
+              "roaming_piglin_spawner_controller_root"
+            ],
+            "exclude_tags": [],
+            "spawn_rate": 0.75
+          }
+        ]
+      },  
+      "Normal": {
+        "controller_spawners": [
+          //Roaming Piglins
+          {
+            "include_tags": [
+              "roaming_piglin_spawner_controller_root"
+            ],
+            "exclude_tags": [],
+            "spawn_rate": 1.0
+          },
+          //Vanilla Mobs
+          {
+            "include_tags": [
+              "spawner_controller_roaming_vanilla_node"
+            ],
+            "exclude_tags": [],
+            "spawn_rate": 0.5
+          }
+        ]
+      },
+      "Hard": {
+        "controller_spawners": [
+          //Roaming Piglins
+          {
+            "include_tags": [
+              "roaming_piglin_spawner_controller_root"
+            ],
+            "exclude_tags": [],
+            "spawn_rate": 1.0
+          },
+          //Vanilla Mobs
+          {
+            "include_tags": [
+              "spawner_controller_roaming_vanilla_node"
+            ],
+            "exclude_tags": [],
+            "spawn_rate": 0.25
+          }
+        ]
+      }
+    }
+  }
+}

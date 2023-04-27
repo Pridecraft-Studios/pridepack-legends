@@ -1,0 +1,1348 @@
+{
+   "audio_snapshot": "snapshot:/cinematic/STATE_cinematic_nis",
+   "cine_id": "hrd00_c07_fountain_restored",
+   "clips": [
+      {
+         "blend_from": false,
+         "blend_in": 0,
+         "camera_id": "s01",
+         "clip_type": "camera_clip",
+         "dd_camera": true,
+         "dd_grid_rays": true,
+         "dd_world_grid": true,
+         "do_debug_draw": false,
+         "duration": 298,
+         "ease": "linear",
+         "enabled": true,
+         "field_of_view": 80.0,
+         "ignore_camera_shake": false,
+         "locked_for_edit": false,
+         "name": "s01",
+         "near_plane": 0.02500000037252903,
+         "priority": 0,
+         "row_index": 11,
+         "spawn_transform": {
+            "rotation": [
+               0.0,
+               0.0,
+               0.0
+            ],
+            "translation": [
+               0.0,
+               0.0,
+               0.0
+            ]
+         },
+         "start_time": 30,
+         "wants_attach_to": false,
+         "wants_fov_change": false,
+         "wants_look_at": false,
+         "wants_obstruction_detection": false,
+         "wants_pan": false
+      },
+      {
+         "camera_id": "s01",
+         "clip_type": "camera_pan",
+         "do_debug_draw": false,
+         "duration": 298,
+         "enabled": true,
+         "interpolation_curve": {
+            "P0": [
+               0.0,
+               0.0
+            ],
+            "P1": [
+               0.0,
+               0.0
+            ],
+            "P2": [
+               1.0,
+               1.0
+            ],
+            "P3": [
+               1.0,
+               1.0
+            ]
+         },
+         "locked_for_edit": false,
+         "name": "1-2",
+         "pan_end_transform": {
+            "locator_name": "s01_2",
+            "rotation": [
+               0.0,
+               0.0,
+               0.0
+            ],
+            "translation": [
+               0.0,
+               0.0,
+               0.0
+            ]
+         },
+         "pan_start_transform": {
+            "locator_name": "s01_1",
+            "rotation": [
+               0.0,
+               0.0,
+               0.0
+            ],
+            "translation": [
+               0.0,
+               0.0,
+               0.0
+            ]
+         },
+         "row_index": 12,
+         "start_time": 30,
+         "use_transform_orientation": true,
+         "use_transform_position": true
+      },
+      {
+         "audio_event_on_skip": "",
+         "audio_event_on_start": "BAE_test_clap_2d",
+         "audio_event_on_stop": "",
+         "clip_type": "audio_clip",
+         "do_debug_draw": false,
+         "duration": 1,
+         "enabled": false,
+         "locked_for_edit": false,
+         "name": "CLAPPER - AUDIO",
+         "row_index": 2,
+         "start_time": 30
+      },
+      {
+         "alliance_rule": "any_team",
+         "behaviour": "badger:behavior_zombie_happy",
+         "behaviour_radius": 22.0,
+         "clear_actors": false,
+         "clear_players": false,
+         "clip_type": "crowd_clearing",
+         "disable_spawners": true,
+         "do_debug_draw": false,
+         "duration": 298,
+         "enabled": true,
+         "exclude_tags": null,
+         "include_tags": null,
+         "locked_for_edit": false,
+         "look_at_radius": 22.0,
+         "name": "CC - Fountain",
+         "navigate_radius": 21.0,
+         "radius": 20.0,
+         "restore_teleported_entities": true,
+         "row_index": 4,
+         "start_time": 30,
+         "team": "blue_team",
+         "transform": {
+            "rotation": [
+               0.0,
+               0.0,
+               0.0
+            ],
+            "translation": [
+               0.0,
+               0.0,
+               0.0
+            ]
+         }
+      },
+      {
+         "broadcast": false,
+         "clip_type": "fade_to_black",
+         "do_debug_draw": false,
+         "duration": 96,
+         "enabled": true,
+         "in_duration": 60,
+         "locked_for_edit": false,
+         "name": "[FTB] Nis Normal in - Quick Out",
+         "out_duration": 30,
+         "row_index": 9,
+         "start_time": 268,
+         "toggle_state": "none"
+      },
+      {
+         "archetype": "badger:villager_culture01",
+         "clip_type": "spawn_entity_clip",
+         "despawn": true,
+         "do_debug_draw": false,
+         "duration": 298,
+         "enabled": true,
+         "entity_id": "v7",
+         "entity_owner_id": "0",
+         "locked_for_edit": false,
+         "name": "v1",
+         "remove_physics": false,
+         "role": "",
+         "row_index": 27,
+         "skip_spawn_state": true,
+         "snap_to_ground": true,
+         "spawn_client_only": true,
+         "spawn_tags": null,
+         "start_time": 30,
+         "team": "blue_team",
+         "transform": {
+            "locator_name": "v1_5",
+            "rotation": [
+               0.0,
+               0.0,
+               0.0
+            ],
+            "translation": [
+               0.0,
+               0.0,
+               0.0
+            ]
+         },
+         "faction_selector": {
+            "id": "",
+            "mode": "by_name"
+         }
+      },
+      {
+         "archetype": "badger:villager_culture01",
+         "clip_type": "spawn_entity_clip",
+         "despawn": true,
+         "do_debug_draw": false,
+         "duration": 298,
+         "enabled": true,
+         "entity_id": "v1",
+         "entity_owner_id": "0",
+         "locked_for_edit": false,
+         "name": "v1",
+         "remove_physics": false,
+         "role": "",
+         "row_index": 15,
+         "skip_spawn_state": true,
+         "snap_to_ground": true,
+         "spawn_client_only": true,
+         "spawn_tags": null,
+         "start_time": 30,
+         "team": "blue_team",
+         "transform": {
+            "locator_name": "v1",
+            "rotation": [
+               0.0,
+               0.0,
+               0.0
+            ],
+            "translation": [
+               0.0,
+               0.0,
+               0.0
+            ]
+         },
+         "faction_selector": {
+            "id": "",
+            "mode": "by_name"
+         }
+      },
+      {
+         "archetype": "badger:villager_illager_culture01",
+         "clip_type": "spawn_entity_clip",
+         "despawn": true,
+         "do_debug_draw": false,
+         "duration": 298,
+         "enabled": true,
+         "entity_id": "v2",
+         "entity_owner_id": "0",
+         "locked_for_edit": false,
+         "name": "v1",
+         "remove_physics": false,
+         "role": "",
+         "row_index": 17,
+         "skip_spawn_state": true,
+         "snap_to_ground": true,
+         "spawn_client_only": true,
+         "spawn_tags": null,
+         "start_time": 30,
+         "team": "blue_team",
+         "transform": {
+            "locator_name": "v1_0",
+            "rotation": [
+               0.0,
+               0.0,
+               0.0
+            ],
+            "translation": [
+               0.0,
+               0.0,
+               0.0
+            ]
+         },
+         "faction_selector": {
+            "id": "",
+            "mode": "by_name"
+         }
+      },
+      {
+         "archetype": "badger:villager_culture01",
+         "clip_type": "spawn_entity_clip",
+         "despawn": true,
+         "do_debug_draw": false,
+         "duration": 298,
+         "enabled": true,
+         "entity_id": "v3",
+         "entity_owner_id": "0",
+         "locked_for_edit": false,
+         "name": "v1",
+         "remove_physics": false,
+         "role": "",
+         "row_index": 19,
+         "skip_spawn_state": true,
+         "snap_to_ground": true,
+         "spawn_client_only": true,
+         "spawn_tags": null,
+         "start_time": 30,
+         "team": "blue_team",
+         "transform": {
+            "locator_name": "v1_1",
+            "rotation": [
+               0.0,
+               0.0,
+               0.0
+            ],
+            "translation": [
+               0.0,
+               0.0,
+               0.0
+            ]
+         },
+         "faction_selector": {
+            "id": "",
+            "mode": "by_name"
+         }
+      },
+      {
+         "archetype": "badger:villager_illager_culture01",
+         "clip_type": "spawn_entity_clip",
+         "despawn": true,
+         "do_debug_draw": false,
+         "duration": 298,
+         "enabled": true,
+         "entity_id": "v4",
+         "entity_owner_id": "0",
+         "locked_for_edit": false,
+         "name": "v1",
+         "remove_physics": false,
+         "role": "",
+         "row_index": 21,
+         "skip_spawn_state": true,
+         "snap_to_ground": true,
+         "spawn_client_only": true,
+         "spawn_tags": null,
+         "start_time": 30,
+         "team": "blue_team",
+         "transform": {
+            "locator_name": "v1_2",
+            "rotation": [
+               0.0,
+               0.0,
+               0.0
+            ],
+            "translation": [
+               0.0,
+               0.0,
+               0.0
+            ]
+         },
+         "faction_selector": {
+            "id": "",
+            "mode": "by_name"
+         }
+      },
+      {
+         "archetype": "badger:villager_culture01",
+         "clip_type": "spawn_entity_clip",
+         "despawn": true,
+         "do_debug_draw": false,
+         "duration": 298,
+         "enabled": true,
+         "entity_id": "v5",
+         "entity_owner_id": "0",
+         "locked_for_edit": false,
+         "name": "v1",
+         "remove_physics": false,
+         "role": "",
+         "row_index": 23,
+         "skip_spawn_state": true,
+         "snap_to_ground": true,
+         "spawn_client_only": true,
+         "spawn_tags": null,
+         "start_time": 30,
+         "team": "blue_team",
+         "transform": {
+            "locator_name": "v1_3",
+            "rotation": [
+               0.0,
+               0.0,
+               0.0
+            ],
+            "translation": [
+               0.0,
+               0.0,
+               0.0
+            ]
+         },
+         "faction_selector": {
+            "id": "",
+            "mode": "by_name"
+         }
+      },
+      {
+         "archetype": "badger:villager_illager_culture01",
+         "clip_type": "spawn_entity_clip",
+         "despawn": true,
+         "do_debug_draw": false,
+         "duration": 298,
+         "enabled": true,
+         "entity_id": "v6",
+         "entity_owner_id": "0",
+         "locked_for_edit": false,
+         "name": "v1",
+         "remove_physics": false,
+         "role": "",
+         "row_index": 25,
+         "skip_spawn_state": true,
+         "snap_to_ground": true,
+         "spawn_client_only": true,
+         "spawn_tags": null,
+         "start_time": 30,
+         "team": "blue_team",
+         "transform": {
+            "locator_name": "v1_4",
+            "rotation": [
+               0.0,
+               0.0,
+               0.0
+            ],
+            "translation": [
+               0.0,
+               0.0,
+               0.0
+            ]
+         },
+         "faction_selector": {
+            "id": "",
+            "mode": "by_name"
+         }
+      },
+      {
+         "animation": "behaviour_happy_a",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v1",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 16,
+         "start_time": 30,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v2",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 18,
+         "start_time": 30,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_a",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v3",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 20,
+         "start_time": 30,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v4",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 22,
+         "start_time": 30,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_a",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v5",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 24,
+         "start_time": 30,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v6",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 26,
+         "start_time": 30,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v7",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 28,
+         "start_time": 30,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_a",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v1",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 16,
+         "start_time": 268,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v2",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 18,
+         "start_time": 268,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_a",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v3",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 20,
+         "start_time": 268,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v4",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 22,
+         "start_time": 268,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_a",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v5",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 24,
+         "start_time": 268,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v6",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 26,
+         "start_time": 268,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v7",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 28,
+         "start_time": 268,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_a",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v1",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 16,
+         "start_time": 88,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v2",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 18,
+         "start_time": 88,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_a",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v3",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 20,
+         "start_time": 88,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v4",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 22,
+         "start_time": 88,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_a",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v5",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 24,
+         "start_time": 88,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v6",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 26,
+         "start_time": 88,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v7",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 28,
+         "start_time": 88,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_a",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v1",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 16,
+         "start_time": 148,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v2",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 18,
+         "start_time": 148,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_a",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v3",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 20,
+         "start_time": 148,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v4",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 22,
+         "start_time": 148,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_a",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v5",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 24,
+         "start_time": 148,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v6",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 26,
+         "start_time": 148,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v7",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 28,
+         "start_time": 148,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_a",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v1",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 16,
+         "start_time": 208,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v2",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 18,
+         "start_time": 208,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_a",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v3",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 20,
+         "start_time": 208,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v4",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 22,
+         "start_time": 208,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_a",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v5",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 24,
+         "start_time": 208,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v6",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 26,
+         "start_time": 208,
+         "trigger_parents": false
+      },
+      {
+         "animation": "behaviour_happy_b",
+         "blend_in_time": 0.0,
+         "blend_time": 0.0,
+         "clip_type": "play_animation",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "entity_id": "v7",
+         "is_additive": false,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 28,
+         "start_time": 208,
+         "trigger_parents": false
+      },
+      {
+         "clip_type": "trigger_script",
+         "do_debug_draw": false,
+         "duration": 0,
+         "enabled": true,
+         "event_name": "enable_fountain_at_first_village",
+         "locked_for_edit": false,
+         "name": "  BSHARP: enable_fountain_at_first_village",
+         "row_index": 13,
+         "start_time": 33,
+         "stop_event_name": ""
+      },
+      {
+         "audio_event_on_skip": "BAE_cine_hrd00_c07_stop",
+         "audio_event_on_start": "BAE_cine_hrd00_c07",
+         "audio_event_on_stop": "",
+         "clip_type": "audio_clip",
+         "do_debug_draw": false,
+         "duration": 360,
+         "enabled": true,
+         "locked_for_edit": false,
+         "name": "audio_clip",
+         "row_index": 1,
+         "start_time": 0
+      },
+      {
+         "clip_type": "audio_vo_clip",
+         "do_debug_draw": false,
+         "duration": 236,
+         "enabled": true,
+         "locked_for_edit": false,
+         "name": "",
+         "row_index": 2,
+         "start_time": 62,
+         "vo_event_name": "BAE_VO_1661_nar_nis_repairfountain_1"
+      },
+      {
+         "broadcast": false,
+         "clip_type": "fade_to_black",
+         "color": [
+            9.999999974752427e-07,
+            0.0,
+            0.0,
+            1.0
+         ],
+         "do_debug_draw": false,
+         "duration": 6,
+         "enabled": false,
+         "in_duration": 0,
+         "locked_for_edit": false,
+         "name": "[REF] On Black",
+         "out_duration": 0,
+         "row_index": 8,
+         "start_time": 328,
+         "toggle_state": "none"
+      },
+      {
+         "broadcast": false,
+         "clip_type": "fade_to_black",
+         "color": [
+            0.8000000119209290,
+            0.7793548107147217,
+            0.1599999964237213,
+            1.0
+         ],
+         "do_debug_draw": false,
+         "duration": 30,
+         "enabled": false,
+         "in_duration": 0,
+         "locked_for_edit": false,
+         "name": "[REF]FADE OUT Duration",
+         "out_duration": 0,
+         "row_index": 8,
+         "start_time": 334,
+         "toggle_state": "none"
+      },
+      {
+         "broadcast": false,
+         "clip_type": "fade_to_black",
+         "color": [
+            0.8000000119209290,
+            0.7793548107147217,
+            0.1599999964237213,
+            1.0
+         ],
+         "do_debug_draw": false,
+         "duration": 60,
+         "enabled": false,
+         "in_duration": 60,
+         "locked_for_edit": false,
+         "name": "[REF]FADE In Duration",
+         "out_duration": 0,
+         "row_index": 8,
+         "start_time": 268,
+         "toggle_state": "none"
+      },
+      {
+         "clip_type": "transition_clip",
+         "do_debug_draw": false,
+         "duration": 30,
+         "enabled": true,
+         "locked_for_edit": false,
+         "name": "[ Transition Cam :: IN NIS Quick ]",
+         "rate": 0.2000000029802322,
+         "row_index": 10,
+         "start_time": 0,
+         "time_to_reach_rate": 0.3000000119209290,
+         "transition_out": false
+      },
+      {
+         "clip_type": "transition_clip",
+         "do_debug_draw": false,
+         "duration": 36,
+         "enabled": true,
+         "locked_for_edit": false,
+         "name": "[ Transition Cam :: OUT NIS Quick ]",
+         "rate": 0.2000000029802322,
+         "row_index": 10,
+         "start_time": 328,
+         "time_to_reach_rate": 0.3000000119209290,
+         "transition_out": true
+      },
+      {
+         "broadcast": false,
+         "clip_type": "fade_to_black",
+         "do_debug_draw": false,
+         "duration": 99,
+         "enabled": true,
+         "in_duration": 30,
+         "locked_for_edit": false,
+         "name": "[FTB] Nis Quick In - Normal Out",
+         "out_duration": 60,
+         "row_index": 9,
+         "start_time": 0,
+         "toggle_state": "none"
+      },
+      {
+         "broadcast": false,
+         "clip_type": "fade_to_black",
+         "color": [
+            0.8000000119209290,
+            0.7793548107147217,
+            0.1599999964237213,
+            1.0
+         ],
+         "do_debug_draw": false,
+         "duration": 60,
+         "enabled": false,
+         "in_duration": 0,
+         "locked_for_edit": false,
+         "name": "[REF]FADE OUT Duration",
+         "out_duration": 0,
+         "row_index": 8,
+         "start_time": 39,
+         "toggle_state": "none"
+      },
+      {
+         "broadcast": false,
+         "clip_type": "fade_to_black",
+         "color": [
+            9.999999974752427e-07,
+            0.0,
+            0.0,
+            1.0
+         ],
+         "do_debug_draw": false,
+         "duration": 9,
+         "enabled": false,
+         "in_duration": 0,
+         "locked_for_edit": false,
+         "name": "[REF] On Black",
+         "out_duration": 0,
+         "row_index": 8,
+         "start_time": 30,
+         "toggle_state": "none"
+      },
+      {
+         "broadcast": false,
+         "clip_type": "fade_to_black",
+         "color": [
+            0.8000000119209290,
+            0.7793548107147217,
+            0.1599999964237213,
+            1.0
+         ],
+         "do_debug_draw": false,
+         "duration": 30,
+         "enabled": false,
+         "in_duration": 0,
+         "locked_for_edit": false,
+         "name": "[REF]FADE In Duration",
+         "out_duration": 0,
+         "row_index": 8,
+         "start_time": 0,
+         "toggle_state": "none"
+      },
+      {
+         "broadcast": false,
+         "clip_type": "hud_visibility_clip",
+         "color": [
+            9.999999974752427e-07,
+            0.0,
+            0.0,
+            1.0
+         ],
+         "do_debug_draw": false,
+         "duration": 364,
+         "enabled": true,
+         "hud_visibility": "hidden",
+         "in_duration": 120,
+         "locked_for_edit": false,
+         "name": "HIDE HUD - Hidden for NISs",
+         "out_duration": 120,
+         "row_index": 0,
+         "start_time": 0,
+         "toggle_state": ""
+      }
+   ],
+   "extra_cast": null,
+   "extra_entity_ids": null,
+   "extra_world_requests": null,
+   "interrupts_vo_sequences": true,
+   "locators": [
+      {
+         "attach_to_id": "",
+         "locator_name": "s01_1",
+         "rotation": [
+            51.0,
+            128.0,
+            -0.0
+         ],
+         "translation": [
+            -13.7714843750,
+            33.0,
+            -12.89660644531250
+         ]
+      },
+      {
+         "attach_to_id": "",
+         "locator_name": "s01_2",
+         "rotation": [
+            47.0,
+            142.0,
+            0.0
+         ],
+         "translation": [
+            -10.853027343750,
+            31.0,
+            -16.02459716796875
+         ]
+      },
+      {
+         "attach_to_id": "",
+         "locator_name": "v1",
+         "rotation": [
+            0.0,
+            0.0,
+            0.0
+         ],
+         "translation": [
+            -6.599999904632568,
+            3.200000047683716,
+            -2.400000095367432
+         ]
+      },
+      {
+         "attach_to_id": "",
+         "locator_name": "v1_0",
+         "rotation": [
+            -0.0,
+            161.0,
+            0.0
+         ],
+         "translation": [
+            -0.6000000238418579,
+            3.200000047683716,
+            -7.400000095367432
+         ]
+      },
+      {
+         "attach_to_id": "",
+         "locator_name": "v1_1",
+         "rotation": [
+            0.0,
+            0.0,
+            0.0
+         ],
+         "translation": [
+            -7.50,
+            3.200000047683716,
+            0.6999999880790710
+         ]
+      },
+      {
+         "attach_to_id": "",
+         "locator_name": "v1_2",
+         "rotation": [
+            0.0,
+            53.0,
+            0.0
+         ],
+         "translation": [
+            -9.0,
+            3.200000047683716,
+            9.0
+         ]
+      },
+      {
+         "attach_to_id": "",
+         "locator_name": "v1_3",
+         "rotation": [
+            -0.0,
+            138.0,
+            0.0
+         ],
+         "translation": [
+            9.100000381469727,
+            3.200000047683716,
+            -9.100000381469727
+         ]
+      },
+      {
+         "attach_to_id": "",
+         "locator_name": "v1_4",
+         "rotation": [
+            -0.0,
+            113.0,
+            0.0
+         ],
+         "translation": [
+            6.800000190734863,
+            3.200000047683716,
+            0.4000000059604645
+         ]
+      },
+      {
+         "attach_to_id": "",
+         "locator_name": "v1_5",
+         "rotation": [
+            0.0,
+            55.0,
+            0.0
+         ],
+         "translation": [
+            6.800000190734863,
+            3.200000047683716,
+            -1.100000023841858
+         ]
+      }
+   ],
+   "max_distance": -1.0,
+   "proximity_range": 200.0,
+   "requires_watcher": false,
+   "sharing_policy": "proximity",
+   "skip_condition_variable": "",
+   "skip_to_cinematic": "default_skip_cinematic",
+   "skippable": true,
+   "stage": "",
+   "version": 9,
+   "wants_skip_queue": true
+}

@@ -1,0 +1,41 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_brokenlands_valleys_oasisvine",
+      "places_feature": "badger:feature_brokenlands_valleys_oasisvine_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "brokenlands_ridge"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 3,
+      "scatter_chance": 50,
+      "early_out": "v.scatteredy <= q.sea_level - 1 || v.scatteredy >= q.sea_level + 4",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          1,
+          14
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          1,
+          14
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "coordinate_eval_order": "xzy"
+    }
+  }
+}

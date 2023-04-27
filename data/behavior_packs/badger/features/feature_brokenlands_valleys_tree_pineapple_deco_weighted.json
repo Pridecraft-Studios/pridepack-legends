@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_brokenlands_grass_horsetail_01", 5.0],
+      ["badger:feature_brokenlands_grass_horsetail_02", 10.0],
+      ["badger:feature_brokenlands_grass_horsetail_03", 20.0],
+      ["badger:feature_grassrush_clump_01", 10.0],
+      ["badger:feature_grass_clump_02", 10.0],
+      ["badger:feature_grass_clump_03", 10.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_brokenlands_valleys_tree_pineapple_deco_weighted"
+    }
+  }
+}

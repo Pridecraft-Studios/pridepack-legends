@@ -1,0 +1,23 @@
+{
+  "format_version": "1.13.0",
+  "code:conditional_list": {
+    "description": {
+      "identifier": "badger:feature_jungle_pool_shore_ground_conditional_list"
+    },
+    "conditional_features": [
+      {
+        "places_feature": "badger:feature_jungle_scatter_lily",
+        "condition": "q.water_distance(v.worldx, v.worldz) == 0 && math.random(0, 1) <= 0.03"
+      },
+      {
+        "places_feature": "badger:feature_jungle_pool_shore_block",
+        "condition": "q.water_distance(v.worldx, v.worldz) <= 2 || (q.water_distance(v.worldx, v.worldz) == 3 && math.random(0, 1) <= 0.5)"
+      },
+      {
+        "places_feature": "badger:feature_jungle_pool_shore_block_02",
+        "condition": "q.water_distance(v.worldx, v.worldz) <= 3"
+      }
+    ],
+    "early_out_scheme": "placement_success"
+  }
+}

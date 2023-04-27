@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_slab_tree_cedar_leaves", 
+      "material": "badger_leaves"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "slab", 
+        "camera_collision": false, 
+        "directional_texture": false, 
+        "directional_shape": true
+      }, 
+      "badger:terrain_type": {
+        "terrain": "grass"
+      }
+    }
+  }
+}

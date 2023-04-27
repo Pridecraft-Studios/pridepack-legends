@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_phoenix_feathers",
+      "material": "badger_dirt"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty",
+        "directional_texture": false,
+        "directional_shape": true,
+        "collision_shape": "sheet"
+      },
+      "minecraft:block_light_emission": {
+        "emission": [
+          243,
+          173,
+          0,
+          100
+        ]
+      }
+    }
+  }
+}

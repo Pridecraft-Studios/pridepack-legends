@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_bullrush_clump_01", 10.0],
+      ["badger:feature_bullrush_clump_02", 10.0],
+      ["badger:feature_bullrush_clump_03", 10.0],
+      ["badger:feature_grassrush_clump_01", 40.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_forest_water_shore_plant_weighted"
+    }
+  }
+}

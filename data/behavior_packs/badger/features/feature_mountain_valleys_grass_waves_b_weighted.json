@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_mountain_valleys_grass_waves_b_weighted"
+    },
+    "features": [
+      ["badger:feature_plant_mountains_grass_field_02",10.0],
+      ["badger:feature_plant_mountains_grass_field_02",10.0],
+      ["badger:feature_plant_mountains_grass_field_02",10.0],
+      ["badger:feature_plant_mountains_grass_field_02",10.0],
+      ["badger:feature_plant_mountains_grass_field_02",10.0]
+    ]
+  }
+}

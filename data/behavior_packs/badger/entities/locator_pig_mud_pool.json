@@ -1,0 +1,42 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:locator_pig_mud_pool",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:removal_time": {
+        "time": 4
+     },
+      "badger:aabb": {
+        "width": 1,
+        "height": 1
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {}
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 4,
+          "sc": 3
+        }
+      },
+      "badger:tags": {
+        "tags": ["locator_mud_pool", "donotattack"]
+      },
+      "badger:spawner_rules": {
+        "block_type_rule": {
+          "valid_types": [
+            "block_pigsty_mud_01",
+            "block_pigsty_mud_02",
+            "block_pigsty_mud_03",
+            "block_pigsty_mud"
+          ]
+        }
+      }
+    }
+  }
+}

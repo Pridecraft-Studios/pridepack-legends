@@ -1,0 +1,60 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_frosty_grass_grass_clump_frost_01_wave",
+      "places_feature": "badger:feature_frosty_grass_grass_clump_frost_01"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "frosty_grass"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "frosty_grass_hills"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "frosty_grass_wetlands"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "frosty_grass_trees"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 128,
+      "scatter_chance": 100,
+      "early_out": "temp.noisevalue = q.noise(v.scatteredx, v.scatteredz, 40);\r\ntemp.lownoisewiggle = math.random(-1,2) *0.1;\r\ntemp.highnoisewiggle = math.random(-1,2) * 0.1;\r\nreturn !((temp.noisevalue > (-0.35 + temp.lownoisewiggle) && temp.noisevalue < (-0.2 + temp.highnoisewiggle)) || (temp.noisevalue > (0.2 + temp.lownoisewiggle) && temp.noisevalue < (0.35 + temp.highnoisewiggle)));",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "z": {
+        "distribution": "gaussian",
+        "extent": [
+          0,
+          15
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_poi_mob_alliance",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 2.0,
+          "crush": 1.5,
+          "spore": 0.0,
+          "ranged": 0.5
+        }
+      },
+      "badger:disable_by_health": {
+        "health_disabled_percent": 0.5, //at what percentage of health should the structure be considered disabled. E.g. 0.5 = 50% of its health it will disable
+        "health_enabled_percent": 1.0, //at what percentage of health should the structure be considered enabled. E.g. 1.0 = 100% of its health must be restored before it is re-enabled.
+        "block_conversion_states": { //NOTE: This is not the "cracking" material, but is actually a list of blocks that are replaced
+          "disabled_state": {
+            "modifiers": [], //A list of blocks and the counterparts to replace them with when the building is considered disabled
+            "duration_percentage": 0.5,//How long it takes for the block conversion once disabled. 0.5 = 50% of the structures build time.
+            "top_to_bottom": true
+          },
+          "enabled_state": {
+            "reverse_existing_modifiers": true,
+            "reversal_duration_percentage": 0.5//How long it takes for the block conversion to reverse once enabled. 0.5 = 50% of the structures build time.
+          }
+        }
+      },
+      "badger:offline_traits": {
+        "offline_disabled_components": [
+          "badger:buildable_spawner"
+        ],
+        "construction_disabled_components": [
+          "badger:buildable_spawner"
+        ],
+        "disabled_by_health_components": [//this disables the component when the structure has been disabled by health (the above component)
+          "badger:buildable_spawner"
+        ]
+      },
+      "badger:template": "badger:template_poi"
+    }
+  }
+}

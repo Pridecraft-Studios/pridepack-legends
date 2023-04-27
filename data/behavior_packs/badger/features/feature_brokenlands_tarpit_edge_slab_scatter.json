@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_tarpit_edge_slab_scatter"
+    },
+    "places_feature": "badger:feature_brokenlands_tarpit_edge_slab_weighted",
+    "iterations": "1",
+    "scatter_chance": "35",
+    "project_input_to_floor": false,
+    "y": "1",
+    "x": "0",
+    "z": "0",
+    "coordinate_eval_order": "xzy"
+  }
+}

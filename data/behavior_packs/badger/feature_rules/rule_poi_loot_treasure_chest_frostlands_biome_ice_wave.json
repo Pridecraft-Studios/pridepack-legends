@@ -1,0 +1,50 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_poi_loot_treasure_chest_frostlands_biome_ice_wave",
+      "places_feature": "badger:feature_poi_loot_treasure_chest_frostlands_icewave"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "final_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "frostlands"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "springs"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "early_out": "v.scatteredy <= 34 || math.mod(math.floor(v.originx / 16), 4) != 0 || math.mod(math.floor(v.originz / 16), 4) != 0",
+      "iterations": 1,
+      "scatter_chance": "return 100 * (1 - query.is_in_village(variable.originx, variable.originz));",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [
+          2,
+          16
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "z": {
+        "distribution": "gaussian",
+        "extent": [
+          2,
+          16
+        ]
+      }
+    }
+  }
+}

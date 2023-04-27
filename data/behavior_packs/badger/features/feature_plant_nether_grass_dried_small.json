@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_plant_nether_grass_dried_small"
+    },
+    "may_replace": ["minecraft:air"],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_attach_to": {
+      "bottom": [
+        "badger:block_netherrack",
+        "badger:block_netherrack_var01",
+        "badger:block_netherrack_var02",
+        "badger:block_netherrack_var03",
+        "badger:block_nylium_grass",
+"badger:block_nylium_grass_var01",
+        "badger:block_nylium", 
+        "badger:block_nylium_var01", 
+        "badger:block_nylium_var02",
+        "badger:block_netherrack_dried"
+      ]
+    },
+    "places_block": "badger:block_deco_nether_grass_dried_small"
+  }
+}

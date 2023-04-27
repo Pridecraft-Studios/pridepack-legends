@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_forest_tree_large_fir_aggregate"
+    },
+    "early_out": "first_failure",
+    "features": [
+      "badger:feature_forest_tree_large_fir_weighted",
+      "badger:feature_forest_tree_large_pine_cone_scatter",
+      "badger:feature_forest_tree_grass_clump_scatter"
+    ]
+  }
+}

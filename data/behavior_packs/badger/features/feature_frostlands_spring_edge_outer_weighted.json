@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_frostlands_block_hotrock_02",
+        10.0
+      ],
+      [
+        "badger:feature_frostlands_block_hotrock_03",
+        10.0
+      ],
+      [
+        "badger:feature_frostlands_block_hotrock_04",
+        10.0
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_frostlands_spring_edge_outer_weighted"
+    }
+  }
+}

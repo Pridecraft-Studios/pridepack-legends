@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_upright_tree_dead_mang_trunk_bare",
+      "material": "badger_wood"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "upright",
+        "camera_collision": true,
+        "directional_texture": false,
+        "directional_shape": true
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:conditional_list": {
+    "description": {
+      "identifier": "badger:feature_jungle_with_waterplants_conditional_list"
+    },
+    "conditional_features": [
+      {
+        "places_feature": "badger:feature_jungle_jungleplant_weighted",
+        "condition" : "return math.random(0,6) < 1 && query.water_distance(variable.worldx, variable.worldz) < 6;"
+      }
+    ],
+	  "early_out_scheme": "placement_success"
+  }
+}

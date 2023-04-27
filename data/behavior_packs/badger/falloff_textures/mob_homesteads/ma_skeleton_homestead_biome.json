@@ -1,0 +1,22 @@
+{
+  "id": "ma_skeleton_homestead_biome",
+  "textures": [
+    {
+      "texture": "mob_homesteads/heightmap_skeleton_homestead",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+  "biome_map": [
+    {
+      "biome": "frostlands",
+      "value": 255
+    }
+  ],
+  "additional_data": {
+    "village_texture_stamp": true
+  }
+}

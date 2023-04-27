@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_mountain_foothills_boulder_small_clusters_aggregate"
+    },
+    "features": [
+      "badger:feature_block_whiterock_var01",
+      "badger:feature_mountains_foothills_boulder_plant_scatter"
+    ]
+  }
+}

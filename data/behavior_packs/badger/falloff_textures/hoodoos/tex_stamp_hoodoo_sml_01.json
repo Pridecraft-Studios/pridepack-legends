@@ -1,0 +1,20 @@
+{
+  "id": "tex_stamp_hoodoo_sml_01",
+  "textures": [
+    {
+      "texture": "hoodoos/tex_stamp_hoodoo_sml_01",
+      "channels": {
+        "r": "blend",
+        "g": "biome",
+        "b": "terrain_height"
+      }
+    }
+  ],
+
+  "biome_map": [
+    {
+      "biome": "drylands_hoodoo_small",
+      "value": 255
+    }
+  ]
+}

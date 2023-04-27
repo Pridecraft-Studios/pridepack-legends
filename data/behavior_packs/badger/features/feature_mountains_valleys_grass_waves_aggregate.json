@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_mountains_valleys_grass_waves_aggregate"
+    },
+    "early_out": "first_success",
+    "features": [
+      "badger:feature_mountain_valleys_grass_waves_a_weighted",
+      "badger:feature_mountain_valleys_grass_waves_b_weighted"
+    ]
+  }
+}

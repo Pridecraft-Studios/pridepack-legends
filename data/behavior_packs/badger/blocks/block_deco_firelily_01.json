@@ -1,0 +1,42 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_firelily_01",
+      "material": "badger_lilypad"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty",
+        "directional_texture": true,
+        "directional_shape": true
+      },
+      "minecraft:block_light_emission": {
+        "emission": [
+          252,
+          146,
+          33,
+          255
+        ]
+      },
+      "badger:block_effects": {
+        "damage_amount": 0.25,
+        "damage_types": [
+          "fire"
+        ],
+        "effect_frequency": 0.1,
+        "apply_status": {
+          "burning": {
+            "strength": 0.5
+          }
+        }
+      },
+      "badger:telemetry_category": {
+        "category_name": "Environmental"
+      },
+      "badger:terrain_type": {
+        "terrain": "grass"
+      }
+    }
+  }
+}

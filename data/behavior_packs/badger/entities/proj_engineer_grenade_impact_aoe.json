@@ -1,0 +1,70 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_engineer_grenade_impact_aoe",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.7,
+        "height": 1.9
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": true,
+        "auto_step": 3.1
+      },
+      "badger:removal_time": {
+        "time": 0.01
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 3
+        },
+        "damage_effects": [
+          {
+            "name": "aoe_grenade_impact",
+            "damage": 7,
+            "knockback": {
+              "angle": 45,
+              "force": 12
+            },
+            "falloff": {
+              "min_radius": 1,
+              "max_radius": 3,
+              "min_damage": 1,
+              "min_angle": 35
+            },
+            "damage_types": [
+              "explosion"
+            ],
+            "include_tags": [
+            ],
+            "exclude_tags": [
+              "piglin"
+            ],
+            "apply_status": {
+              "engaged": {
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:movement": {
+        "move_speed": 0.0
+      },
+      "badger:template":[
+        "badger:template_impact_entity_piglin"
+      ]
+    }
+  }
+}

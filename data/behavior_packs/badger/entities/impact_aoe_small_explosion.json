@@ -1,0 +1,65 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:impact_aoe_small_explosion",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:physics": {},
+      "badger:world_collision": {
+        "has_collision": false,
+        "auto_step": 3.1
+      },
+      "badger:removal_time": {
+        "time": 0.2
+      },
+      "badger:telemetry_category": {
+        "category_name": "Player Unit"
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 2
+        },
+        "damage_effects": [
+          {
+            "name": "aoe_small_explosion",
+            "damage": 1,
+            "knockback": {
+              "angle": 20,
+              "force": 5
+            },
+            "falloff": {
+              "min_radius": 1,
+              "max_radius": 2,
+              "min_angle": 30
+            },
+            "damage_types": [
+              "explosion",
+              "fire"
+            ],
+            "include_tags": [],
+            "exclude_tags": [],
+            "apply_status": {
+              "burning": {
+                "strength": 2.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:movement": {
+        "move_speed": 0.0
+      },
+      "badger:template":[
+        "badger:template_impact_entity_player"
+      ]
+    }
+  }
+}

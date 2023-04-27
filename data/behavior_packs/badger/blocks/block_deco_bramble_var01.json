@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "material": "badger_bushes", 
+      "identifier": "badger:block_deco_bramble_var01"
+    }, 
+    "components": {
+      "badger:block_effects": {
+        "effect_frequency": 0.1, 
+        "apply_status": {
+          "slowed_piglin_bramble": {
+            "strength": 1.0
+          }
+        }
+      }, 
+      "minecraft:block_shape": {
+        "shape": "empty", 
+        "directional_texture": false, 
+        "directional_shape": true
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "deco_nether", 
+          "gatherable_denether", 
+          "piglin_base_not_buildable"
+        ]
+      }, 
+      "badger:terrain_type": {
+        "terrain": "grass"
+      }
+    }
+  }
+}

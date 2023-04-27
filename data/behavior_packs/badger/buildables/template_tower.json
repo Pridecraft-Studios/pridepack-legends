@@ -1,0 +1,58 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_tower",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Player"
+    },
+    "components": {
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_health_generation_default",
+        "badger:component_offline_construction_default"
+      ],
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_generic"
+      },
+      "badger:health": {
+        "max_health": 75
+      },
+      "badger:loot": {
+        "table": "common_structure"
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 100
+          },
+          {
+            "item": "iron",
+            "amount": 15
+          }
+        ]
+      },
+      "ticket_cost": [
+        {
+          "ticket": "build",
+          "amount": 1
+        }
+      ],
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "structure",
+          "tower"
+        ]
+      }
+    }
+  }
+}

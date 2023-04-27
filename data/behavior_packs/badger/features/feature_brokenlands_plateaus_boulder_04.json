@@ -1,0 +1,37 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_plateaus_boulder_04"
+    },
+    "structure_name": "nature/boulder_plateau_04",
+
+    "placement_range": {
+      "x": [0, 1],
+      "z": [0, 1]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {
+        "block_allow_list": [
+          "badger:block_sand",
+          "badger:block_sand_d1",
+          "badger:block_sand_red",
+          "badger:block_desertrock_a"
+        ]
+      },
+      "block_intersection": {
+        "block_allow_list": [
+          "minecraft:air",
+          "minecraft:grass",
+          "badger:block_dirt",
+          "badger:block_stone",
+          "badger:block_sand",
+          "badger:block_sand_d1",
+          "badger:block_sand_red",
+          "badger:block_desertrock_a"
+        ]
+      }
+    }
+  }
+}

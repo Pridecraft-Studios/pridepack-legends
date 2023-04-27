@@ -1,0 +1,519 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_illager_axe",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Melee"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.9,
+        "length": 0.9,
+        "height": 2.1
+      },
+      "badger:spawn_costs": {
+        "costs": [
+          {
+            "item": "stone",
+            "amount": 1
+          },
+          {
+            "item": "emerald",
+            "amount": 1
+          }
+        ],
+        "tickets": [
+          {
+            "ticket": "spawn",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:loot": {
+        "table": "rare_mob"
+      },
+      "badger:movement": {
+        "move_speed": 4.5,
+        "air_control_factor": 0.0
+      },
+      "badger:physics": {
+        "gravity": -30,
+        "friction": 0.04
+      },
+      "badger:collision_weight": {
+        "weight": 40
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 5
+      },
+      "badger:tags": {
+        "tags": [
+          "vindicator",
+          "melee",
+          "mob",
+          "rider",
+          "luredirect",
+          "frontline"
+        ]
+      },
+      "badger:health": {
+        "max_health": 125
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Mob targeting
+          {
+            "name": "axe_short_speed",
+            "max_range": 18,
+            "enable_with_line_of_sight": true,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "axe_special_fast"
+            ]
+          },
+          {
+            "name": "illager_mob_heavy_melee",
+            "max_range": 18,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "vindicator_melee_attack"
+            ]
+          },
+          {
+            "name": "illager_mob_light_melee",
+            "max_range": 10,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "vindicator_melee_attack_3"
+            ]
+          },
+          //Celebrate
+          {
+            "name": "celebrate",
+            "max_range": 100,
+            "action_tickets": {
+              "sc": 0
+            },
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "celebration"
+            ]
+          },
+          //Buildable Targeting
+          {
+            "name": "illager_buildable_melee",
+            "max_range": 8,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "wall",
+              "donotattack",
+              "pigGoldMine"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "vindicator_melee_attack_2"
+            ]
+          },
+          {
+            "name": "illager_wall_melee",
+            "max_range": 2,
+            "enable_with_line_of_sight": true,
+            "enable_on_navigation_failure": false,
+            "enabled_duration": 2.5,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "piglin_wall",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "vindicator_melee_attack_2"
+            ]
+          },
+          {
+            "name": "illager_wall_melee_nav_fail",
+            "max_range": 2,
+            "enable_with_line_of_sight": true,
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "piglin_wall",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "vindicator_melee_attack_2"
+            ]
+          },
+          //General targeting
+          {
+            "name": "illager_general_melee",
+            "max_range": 10,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [],
+            "exclude_tags": [
+              "wall",
+              "piglin_wall",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "vindicator_melee_attack_3"
+            ]
+          },
+          {
+            "name": "illager_buildable_goldmine_melee",
+            "max_range": 2,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "wall",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "vindicator_melee_attack_2"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {
+          "crush": 0.8,
+          "fire": 0.8,
+          "explosion": 1.0,
+          "ranged": 0.4
+        }
+      },
+      "badger:resist_status": {
+        "spore_healed": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "burning": {
+          "resisted": false,
+          "time": 1.0,
+          "resistance_persist_time": 0
+        },
+        "feared": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "stunned": {
+          "resisted": false,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "electric_stunned": {
+          "resisted": true,
+          "time": 0.5,
+          "resistance_persist_time": 0
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 2,
+          "sc": 4,
+          "rc": 2,
+          "ht": 1
+        }
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "vindicator_melee_attack",
+            "trigger": "on_vindicator_melee_attack",
+            "on_hit_target_trigger": "on_illager_axe_melee_attack_hit",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 0.85
+            },
+            "state_machine": {
+              "wind_up": 0.9,
+              "wind_down": 1.4,
+              "cooldown_time": 6.0,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {
+              "time_window": 0.7
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 2,
+                "thickness": 2.2,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.5
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 40,
+                "damage_types": [
+                  "chop"
+                ],
+                "apply_status": {
+                  "engaged": {
+                    "chance": 1.0,
+                    "strength": 1.0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "vindicator_melee_attack_2",
+            "trigger": "on_vindicator_melee_attack_2",
+            "on_hit_target_trigger": "on_illager_axe_melee_attack_hit",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 0.85
+            },
+            "state_machine": {
+              "wind_up": 0.9,
+              "wind_down": 1.4,
+              "cooldown_time": 0.1,
+              "deactivates_on_cooldown": false
+            },
+            "interruptible": {
+              "time_window": 0.7
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 145,
+                "radius": 2,
+                "thickness": 2.2,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.5
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 12,
+                "damage_types": [
+                  "chop"
+                ],
+                "apply_status": {
+                  "engaged": {
+                    "chance": 1.0,
+                    "strength": 1.0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "vindicator_melee_attack_3",
+            "trigger": "on_vindicator_melee_attack_3",
+            "on_hit_target_trigger": "on_illager_axe_melee_attack_hit",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 0.85
+            },
+            "state_machine": {
+              "wind_up": 0.9,
+              "wind_down": 1.4,
+              "cooldown_time": 0.1,
+              "deactivates_on_cooldown": false
+            },
+            "interruptible": {
+              "time_window": 0.7
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 2,
+                "thickness": 2.2,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.5
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 24,
+                "damage_types": [
+                  "chop"
+                ],
+                "apply_status": {
+                  "engaged": {
+                    "chance": 1.0,
+                    "strength": 1.0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "axe_special_fast",
+            "range": {
+              "max_range": 18
+            },
+            "state_machine": {
+              "cooldown_time": 5,
+              "deactivates_on_cooldown": true
+            },
+            "apply_status_to_owner": {
+              "hastened": {
+                "chance": 1.0,
+                "strength": 1.0
+              }
+            }
+          },
+          {
+            "name": "secondary_combat_position",
+            "range": {
+              "min_range": 3,
+              "max_range": 4
+            }
+          },
+          {
+            "name": "axe_approach",
+            "range": {
+              "max_range": 2
+            }
+          }
+        ]
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 1.3,
+          "position": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "damage_effects": [
+          {
+            "damage": 0,
+            "damage_types": [],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [],
+            "apply_status": {
+              "large_collide": {
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 0.5
+      },
+      "badger:rider": {
+        "include_tags": [
+          "mount"
+        ],
+        "alliance_rule_filter": "friendly"
+      },
+      "badger:village_influence": {
+        "amount": 20
+      },
+      "badger:telemetry_track_banner_order": {
+        "enabled": true
+      },
+      "badger:conditionally_solid_blocks": {
+        "include_tags": [
+          "barrier_waterfall"
+        ],
+        "exclude_tags": []
+      },
+      "badger:template": [
+        "badger:template_mob",
+        "badger:component_leash_on_stop_default",
+        "badger:component_becomes_lost_default"
+      ]
+    }
+  }
+}

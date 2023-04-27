@@ -1,0 +1,58 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_grasslands_resource_stone_boulder",
+      "places_feature": "badger:feature_resource_grasslands_stone_boulder_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "grasslands"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "forest"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "fate_village"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mountain_parent_valleys"  
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mountain_foothills" 
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "return math.random(1,10) <= 4 ? 2:1;",
+      "scatter_chance": "20 * query.get_game_rule_value('grassland_stone_density')",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [0, 15]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [0, 15]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)"
+    }
+  }
+}

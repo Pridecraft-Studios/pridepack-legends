@@ -1,0 +1,18 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_debuff_poi_poison_aggregate_wetlands"
+    },
+    "early_out": "first_failure",
+    "features": [
+      "badger:feature_debuff_poison_01",
+      "badger:feature_debuff_poi_poison_mushroom_scatter_n",
+      "badger:feature_debuff_poi_poison_mushroom_scatter_s",
+      "badger:feature_debuff_poi_poison_mushroom_scatter_e",
+      "badger:feature_debuff_poi_poison_mushroom_scatter_w",
+      "badger:feature_debuff_poi_poison_root_scatter"
+      
+    ]
+  }
+}

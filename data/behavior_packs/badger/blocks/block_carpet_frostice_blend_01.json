@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_carpet_frostice_blend_01", 
+      "material": "badger_ice"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "carpet", 
+        "camera_collision": false, 
+        "directional_texture": false, 
+        "directional_shape": false
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }, 
+      "badger:terrain_type": {
+        "terrain": "snow"
+      }
+    }
+  }
+}

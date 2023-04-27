@@ -1,0 +1,71 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_redstone_launcher_impact_aoe",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1.1,
+        "height": 1.9
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": false,
+        "auto_step": 3.1
+      },
+      "badger:removal_time": {
+        "time": 0.01
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 7
+        },
+        "damage_effects": [
+          {
+            "name": "aoe_redstone_launcher_impact",
+            "damage": 50,
+            "falloff": {
+              "min_radius": 3,
+              "max_radius": 7,
+              "min_angle": 30,
+              "min_damage": 50
+            },
+            "damage_types": [
+              "explosion",
+              "redstone"
+            ],
+            "include_tags": [],
+            "exclude_tags": [],
+            "alliance_rule_filter": "enemy",
+            "apply_status": {
+              "engaged": {
+                "strength": 1.0
+              },
+              "feared": {
+                "strength": 1.0
+              }
+            },
+            "knockback": {
+              "angle": 55,
+              "force": 40
+            }
+          }
+        ]
+      },
+      "badger:movement": {
+        "move_speed": 0.0
+      },
+      "badger:template": [
+        "badger:template_impact_entity_player"
+      ]
+    }
+  }
+}

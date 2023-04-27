@@ -1,0 +1,895 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_portal_guard",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Melee"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 3.01,
+        "height": 4.5
+      },
+      "badger:loot": {
+        "table": "rare_piglin_loot",
+        "overrides": [
+          {
+            "name": "roaming",
+            "table": "roaming_rare_piglin_loot"
+          },
+          {
+            "name": "outpost",
+            "table": "outpost_rare_piglin_loot"
+          },
+          {
+            "name": "village_attack",
+            "table": "outpost_rare_piglin_loot"
+          },
+          {
+            "name": "act1",
+            "table": "act1_piglins"
+          }
+        ]
+      },
+      "badger:telemetry_category": {
+        "category_name": "Piglin Melee"
+      },
+      "badger:movement": {
+        "move_speed": 4.5
+      },
+      "badger:physics": {
+      },
+      "badger:collision_weight": {
+        "weight": 5000
+      },
+      "badger:wander": {
+        "wander_frequency": 0.2,
+        "wander_radius": 10
+      },
+      "badger:tags": {
+        "tags": [
+          "large",
+          "piglin",
+          "portalguard",
+          "mob",
+          "fighter",
+          "melee",
+          "large_mob"
+        ]
+      },
+      "badger:health": {
+        "max_health": 1400
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Crowd Control
+          {
+            "name": "portal_guard_ball_swing",
+            "max_range": 5,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "required_target_count": 3,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "wall",
+              "donotattack",
+              "animal",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "circular_attack_ball_drop",
+              "circular_attack_angle_135",
+              "circular_attack_angle_45",
+              "circular_attack_angle_305",
+              "circular_attack_angle_225"
+            ]
+          },
+          {
+            "name": "portal_guard_firing_blast",
+            "min_range": 7,
+            "max_range": 14,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "required_target_count": 2,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "walls",
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "range_attack",
+              "range_attack_firing_blast",
+              "range_attack_first_pull",
+              "range_attack_second_pull"
+            ]
+          },
+          //Mob targeting
+          {
+            "name": "portal_guard_mob_melee",
+            "max_range": 10,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mobs"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "wall",
+              "donotattack",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_b"
+            ]
+          },
+          //Mob alliance targeting
+          {
+            "name": "portal_guard_totem_alliance_melee",
+            "max_range": 15,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "totem_unlock_mob_alliance"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "wall",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_b"
+            ]
+          },
+          {
+            "name": "portal_guard_mob_alliance_melee",
+            "max_range": 15,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mob_alliance_structure"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "wall",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_b"
+            ]
+          },
+          //Buildable targeting
+          {
+            "name": "portal_guard_structures_melee",
+            "max_range": 10,
+            "enable_with_line_of_sight": false,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_b"
+            ]
+          },
+          {
+            "name": "portal_guard_wall_melee",
+            "max_range": 3,
+            "enable_with_line_of_sight": false,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "buildable_combat",
+              "stairs",
+              "donotattack",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_b"
+            ]
+          },
+          {
+            "name": "portal_guard_nav_fail",
+            "max_range": 2,
+            "enable_with_line_of_sight": false,
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_b"
+            ]
+          },
+          //General targeting
+          {
+            "name": "portal_guard_default_melee",
+            "max_range": 35,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_b"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "damage_resistances": {
+          "explosion": 2.0,
+          "ranged": 0.25,
+          "lava": 12.0
+        },
+        "shape": {
+          "type": "cylinder",
+          "radius": 2.0,
+          "height": 4.0
+        }
+      },
+      "badger:resist_status": {
+        "stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "spore_damaged": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "feared": {
+          "resisted": false,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "healing": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "healing_stone": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "electric_stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "slowed_piglin_bramble": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 20,
+          "sc": 4,
+          "rc": 20,
+          "ct": 4,
+          "ht": 1
+        }
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "melee_attack_b",
+            "on_hit_target_trigger": "on_portal_guard_melee_attack_hit",
+            "range": {
+              "max_range": 2.0
+            },
+            "state_machine": {
+              "wind_up": 1.1,
+              "wind_down": 3.7,
+              "cooldown_time": 0.02,
+              "deactivates_on_cooldown": false
+            },
+            "interruptible": {},
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 170,
+                "radius": 5.0,
+                "rotation": 0,
+                "thickness": 2.2,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.65
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 24.5,
+                "damage_types": [
+                  "crush",
+                  "T3_Attack"
+                ]
+              },
+              "apply_status": {
+                "engaged": {
+                  "strength": 1.0
+                }
+              },
+              "knockback": {
+                "offset": [
+                  0,
+                  0,
+                  -2
+                ],
+                "angle": 40,
+                "force": 22
+              }
+            }
+          },
+          {
+            "name": "range_attack",
+            "on_hit_target_trigger": "on_portal_guard_aoe_attack_hit",
+            "range": {
+              "max_range": 12
+            },
+            "predictive_windup": false,
+            "state_machine": {
+              "wind_up": 4.0,
+              "wind_down": 5.1,
+              "cooldown_time": 12.0,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {},
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 5.0,
+                "position": [
+                  0.0,
+                  1.0,
+                  12.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 17.5,
+                "damage_types": [
+                  "crush",
+                  "T3_Attack"
+                ]
+              },
+              "apply_status": {
+                "engaged": {
+                  "strength": 1.0
+                },
+                "stunned": {
+                  "strength": 1.0
+                }
+              },
+              "knockback": {
+                "angle": 50,
+                "force": 40
+              }
+            }
+          },
+          {
+            "name": "range_attack_firing_blast",
+            "on_hit_target_trigger": "on_portal_guard_melee_attack_hit",
+            "range": {
+              "max_range": 12
+            },
+            "predictive_windup": false,
+            "state_machine": {
+              "wind_up": 3.0,
+              "wind_down": 6.1,
+              "cooldown_time": 12.0,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {},
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 180,
+                "radius": 4.0,
+                "thickness": 2.2,
+                "rotation": 0,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 17.5,
+                "damage_types": [
+                  "crush",
+                  "T3_Attack"
+                ]
+              },
+              "apply_status": {
+                "engaged": {
+                  "strength": 1.0
+                },
+                "stunned": {
+                  "strength": 1.0
+                }
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 25
+              }
+            }
+          },
+          {
+            "name": "range_attack_first_pull",
+            "on_hit_target_trigger": "on_portal_guard_melee_attack_hit",
+            "range": {
+              "max_range": 12
+            },
+            "predictive_windup": false,
+            "state_machine": {
+              "wind_up": 5.8,
+              "wind_down": 3.3,
+              "cooldown_time": 12.0,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {},
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 30,
+                "radius": 8.0,
+                "thickness": 2.2,
+                "rotation": 180,
+                "position": [
+                  0.0,
+                  1.0,
+                  13.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 17.5,
+                "damage_types": [
+                  "crush",
+                  "T3_Attack"
+                ]
+              },
+              "apply_status": {
+                "engaged": {
+                  "strength": 1.0
+                },
+                "stunned": {
+                  "strength": 1.0
+                }
+              },
+              "knockback": {
+                "angle": 75,
+                "force": 15
+              }
+            }
+          },
+          {
+            "name": "range_attack_second_pull",
+            "on_hit_target_trigger": "on_portal_guard_melee_attack_hit",
+            "range": {
+              "max_range": 12
+            },
+            "predictive_windup": false,
+            "state_machine": {
+              "wind_up": 6.6,
+              "wind_down": 2.5,
+              "cooldown_time": 12.0,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {},
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 70,
+                "radius": 7.0,
+                "thickness": 2.2,
+                "rotation": 180,
+                "position": [
+                  0.0,
+                  1.0,
+                  8.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 17.5,
+                "damage_types": [
+                  "crush",
+                  "T3_Attack"
+                ]
+              },
+              "apply_status": {
+                "engaged": {
+                  "strength": 1.0
+                },
+                "stunned": {
+                  "strength": 1.0
+                }
+              },
+              "knockback": {
+                "angle": 55,
+                "force": 35
+              }
+            }
+          },
+          {
+            "name": "circular_attack_ball_drop",
+            "on_hit_target_trigger": "on_portal_guard_aoe_attack_hit",
+            "range": {
+              "max_range": 1.5
+            },
+            "state_machine": {
+              "wind_up": 1.2,
+              "wind_down": 5.1,
+              "cooldown_time": 20.0,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {},
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 2.5,
+                "position": [
+                  -1.0,
+                  1.0,
+                  -3.5
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 17.5,
+                "damage_types": [
+                  "crush",
+                  "T3_Attack"
+                ]
+              },
+              "apply_status": {
+                "engaged": {
+                  "strength": 1.0
+                },
+                "stunned": {
+                  "strength": 1.0
+                }
+              },
+              "knockback": {
+                "angle": 56,
+                "force": 26
+              }
+            }
+          },
+          {
+            "name": "circular_attack_angle_135",
+            "on_hit_target_trigger": "on_portal_guard_melee_attack_hit",
+            "range": {
+              "max_range": 1.5
+            },
+            "state_machine": {
+              "wind_up": 3.2,
+              "wind_down": 3.1,
+              "cooldown_time": 20.0,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {},
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 6.0,
+                "thickness": 2.2,
+                "rotation": 135,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 17.5,
+                "damage_types": [
+                  "crush",
+                  "T3_Attack"
+                ]
+              },
+              "apply_status": {
+                "engaged": {
+                  "strength": 1.0
+                },
+                "stunned": {
+                  "strength": 1.0
+                }
+              },
+              "knockback": {
+                "angle": 50,
+                "force": 25
+              }
+            }
+          },
+          {
+            "name": "circular_attack_angle_45",
+            "on_hit_target_trigger": "on_portal_guard_melee_attack_hit",
+            "range": {
+              "max_range": 1.5
+            },
+            "state_machine": {
+              "wind_up": 3.4,
+              "wind_down": 2.9,
+              "cooldown_time": 20.0,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {},
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 6.0,
+                "thickness": 2.2,
+                "rotation": 45,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 17.5,
+                "damage_types": [
+                  "crush",
+                  "T3_Attack"
+                ]
+              },
+              "apply_status": {
+                "engaged": {
+                  "strength": 1.0
+                },
+                "stunned": {
+                  "strength": 1.0
+                }
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 20
+              }
+            }
+          },
+          {
+            "name": "circular_attack_angle_305",
+            "on_hit_target_trigger": "on_portal_guard_melee_attack_hit",
+            "range": {
+              "max_range": 1.5
+            },
+            "state_machine": {
+              "wind_up": 3.6,
+              "wind_down": 2.7,
+              "cooldown_time": 20.0,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {},
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 6.0,
+                "thickness": 2.2,
+                "rotation": 305,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 17.5,
+                "damage_types": [
+                  "crush",
+                  "T3_Attack"
+                ]
+              },
+              "apply_status": {
+                "engaged": {
+                  "strength": 1.0
+                },
+                "stunned": {
+                  "strength": 1.0
+                }
+              },
+              "knockback": {
+                "angle": 50,
+                "force": 25
+              }
+            }
+          },
+          {
+            "name": "circular_attack_angle_225",
+            "on_hit_target_trigger": "on_portal_guard_melee_attack_hit",
+            "range": {
+              "max_range": 1.5
+            },
+            "state_machine": {
+              "wind_up": 3.8,
+              "wind_down": 2.5,
+              "cooldown_time": 20.0,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {},
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 6.0,
+                "thickness": 2.2,
+                "rotation": 225,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 17.5,
+                "damage_types": [
+                  "crush",
+                  "T3_Attack"
+                ]
+              },
+              "apply_status": {
+                "engaged": {
+                  "strength": 1.0
+                },
+                "stunned": {
+                  "strength": 1.0
+                }
+              },
+              "knockback": {
+                "angle": 55,
+                "force": 22
+              }
+            }
+          }
+        ]
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 3.3,
+          "position": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "damage_effects": [
+          {
+            "damage": 0,
+            "damage_types": [
+            ],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+            ],
+            "apply_status": {
+              "large_collide": {
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 0.1
+      },
+      "badger:damage_receiver_material": {
+        "material": "block"
+      },
+      "badger:conditionally_solid_blocks": {
+        "include_tags": ["barrier_waterfall"],
+        "exclude_tags": []
+      },
+      "badger:template": "badger:template_piglin"
+    }
+  }
+}

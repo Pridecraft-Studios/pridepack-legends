@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_drylands_upper_trees_coral_weighted"
+    },
+    "features": [
+      [
+        "badger:feature_plant_coralbush_01",
+        10.0
+      ],
+      [
+        "badger:feature_plant_coralbush_02",
+        10.0
+      ],
+      [
+        "badger:feature_plant_coralbush_03",
+        10.0
+      ]
+    ]
+  }
+}

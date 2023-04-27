@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_upright_mushroom_light_attack_transition",
+      "material": "badger_wood"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "upright",
+        "directional_texture": false,
+        "directional_shape": true
+      },
+      "minecraft:block_light_emission": {
+        "emission": [
+          255,
+          119,
+          0,
+          255
+        ]
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      },
+      "badger:block_type": {
+        "tags": [
+          "deco_nether",  
+          "gatherable_denether",
+           "piglin_base_not_buildable" 
+        ]
+      }
+    }
+  }
+}

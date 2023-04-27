@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_golem_cavalry_practice_ai",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Melee",
+      "function": "PvP"
+    },
+    "components": {
+      "badger:template": [
+        "badger:mob_golem_cavalry"
+      ],
+      "badger:leash_on_stop": {
+        "leash_range": 200.0,
+        "return_range": 150.0
+      },
+      "badger:telemetry_track_banner_order": {
+        "enabled": false
+      }
+    }
+  }
+}

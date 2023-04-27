@@ -1,0 +1,119 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_gate",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Player"
+    },
+    "components": {
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:reports_buildable_state": {
+        "reports_state": "building"
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_health_generation_default"
+      ],
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_generic"
+      },
+      "badger:health": {
+        "max_health": 500
+      },
+      "badger:loot": {
+        "table": "common_structure"
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 100
+          },
+          {
+            "item": "iron",
+            "amount": 15
+          }
+        ]
+      },
+      "ticket_cost": [
+        {
+          "ticket": "build",
+          "amount": 1
+        }
+      ],
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure"
+        ]
+      },
+      "badger:offline_traits": {
+        "offline_disabled_components": [
+          "badger:culture"
+        ],
+        "construction_disabled_components": [
+          "badger:culture"
+        ]
+      },
+      "badger:buildable_foundation": {
+        "style": "pillar"
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "gate_wood",
+        "build_time": 60,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "name": "template_gate_mob_open",
+            "max_range": 1.5,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "open_gate"
+            ]
+          },
+          {
+            "name": "template_gate_player_open",
+            "max_range": 1.5,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "open_gate"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "open_gate",
+            "badger:gate_action": {
+              "gate_closed_file": "gate_door_wood_closed",
+              "gate_open_file": "gate_door_wood_open",
+              "close_gate_cool_down_time": 2.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

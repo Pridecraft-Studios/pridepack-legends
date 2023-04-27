@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_pillar_tree_fir_burned_01",
+      "material": "badger_wood"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "pillar",
+        "camera_collision": false,
+        "directional_texture": true,
+        "directional_shape": true
+      },
+
+      "badger:block_type": {
+        "tags": [
+          "gatherable_wood_sml",
+          "gatherable_denether"
+        ]
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      }
+    }
+  }
+}

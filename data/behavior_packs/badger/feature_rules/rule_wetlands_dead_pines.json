@@ -1,0 +1,41 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_wetlands_dead_pines",
+      "places_feature": "badger:feature_wetlands_dead_pines_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "before_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "wetlands"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(2, 3)",
+      "scatter_chance": 50,
+      "early_out": "math.random(0, 100) >= 50 || v.scatteredy <= q.sea_level + 3 || q.water_distance(v.scatteredx, v.scatteredz) <= 7 || (q.get_game_rule_value('prevent_obstacles_on_poi_graph') && q.poi_influence_factor(v.scatteredx, v.scatteredz) < 0.5)",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [
+          2,
+          13
+        ]
+      },
+      "z": {
+        "distribution": "gaussian",
+        "extent": [
+          2,
+          13
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "coordinate_eval_order": "xzy"
+    }
+  }
+}

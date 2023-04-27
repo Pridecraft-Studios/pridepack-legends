@@ -1,0 +1,437 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_piglin_bruiser_guarded",
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 3.5,
+        "air_control_factor": 0.0
+      },
+      "badger:wander": {
+        "wander_frequency": 0.7,
+        "wander_radius": 7
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Player targeting
+          {
+            "name": "bruiser_mob_360",
+            "max_range": 3,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "required_target_count": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "360_attack"
+            ]
+          },
+          {
+            "name": "bruiser_mob_180",
+            "max_range": 3,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "required_target_count": 2,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "180_attack"
+            ]
+          },
+          {
+            "name": "bruiser_mob_90",
+            "max_range": 20,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "90_attack"
+            ]
+          },
+          //Support Golem Targeting
+          {
+            "name": "bruiser_support_90",
+            "max_range": 20,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "support"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "90_attack"
+            ]
+          },
+          //Mob targeting
+          {
+            "name": "bruiser_mob_360",
+            "max_range": 3,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "required_target_count": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "360_attack"
+            ]
+          },
+          {
+            "name": "bruiser_mob_180",
+            "max_range": 3,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "required_target_count": 2,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "180_attack"
+            ]
+          },
+          {
+            "name": "bruiser_mob_90",
+            "max_range": 20,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "90_attack"
+            ]
+          },
+          //Buildable targeting (nav fail only)
+          {
+            "name": "bruiser_buildable_90_nav_fail",
+            "max_range": 1,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "animal",
+              "buildable_combat",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "90_attack"
+            ]
+          },
+          //General targeting
+          {
+            "name": "bruiser_general_90",
+            "max_range": 15,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "90_attack"
+            ]
+          },
+          //Secondary Combat Positioning
+          {
+            "name": "bruiser_secondary_combat_pos",
+            "max_range": 20,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "sc": 1
+            },
+            "include_tags": [],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "mob_alliance_structure",
+              "animal",
+              "buildable_combat",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "secondary_combat_position"
+            ]
+          },
+          //Approach
+          {
+            "name": "bruiser_target_approach",
+            "max_range": 25,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "sc": 1
+            },
+            "include_tags": [],
+            "exclude_tags": [
+              "player",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "bruiser_approach"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "360_attack",
+            "trigger": "on_360_attack",
+            "range": {
+              "min_range": 0.05,
+              "max_range": 0.7
+            },
+            "state_machine": {
+              "wind_up": 0.6,
+              "wind_down": 1.4,
+              "cooldown_time": 2.0,
+              "deactivates_on_cooldown": false
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 2.0,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10,
+                "damage_types": [
+                  "melee"
+                ]
+              }
+            }
+          },
+          {
+            "name": "180_attack",
+            "trigger": "on_180_attack",
+            "range": {
+              "min_range": 0.05,
+              "max_range": 1.30
+            },
+            "state_machine": {
+              "wind_up": 0.6,
+              "wind_down": 0.9,
+              "cooldown_time": 2.0,
+              "deactivates_on_cooldown": false
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 180,
+                "radius": 2.0,
+                "thickness": 2.2,
+                "position": [
+                  0.0,
+                  1.0,
+                  1.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10,
+                "damage_types": [
+                  "melee"
+                ]
+              }
+            }
+          },
+          {
+            "name": "90_attack",
+            "trigger": "on_90_attack",
+            "range": {
+              "min_range": 0.05,
+              "max_range": 1.15
+            },
+            "state_machine": {
+              "wind_up": 0.1,
+              "wind_down": 1.0,
+              "cooldown_time": 2.0,
+              "deactivates_on_cooldown": false
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 2.0,
+                "thickness": 2.2,
+                "position": [
+                  0.0,
+                  1.0,
+                  1.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10,
+                "damage_types": [
+                  "melee"
+                ]
+              }
+            }
+          },
+          {
+            "name": "bruiser_approach",
+            "range": {
+              "max_range": 2.0
+            }
+          },
+          {
+            "name": "secondary_combat_position",
+            "range": {
+              "min_range": 3,
+              "max_range": 4
+            }
+          }
+        ]
+      }
+    }
+  }
+}

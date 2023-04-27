@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_drylands_saltflat_coral_nodes_aggregate"
+    },
+    "early_out": "first_failure",
+    "features": [
+      "badger:feature_drylands_saltflat_coral_nodes_clump_weighted",
+      "badger:feature_drylands_saltflat_coral_nodes_minis_scatter",
+      "badger:feature_drylands_saltflat_riverbed_stone_scatter"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_zoner_house",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Decorative",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:villager_culture01",
+            "percentage": 0.5
+          },
+          {
+            "type": "badger:villager_illager_culture01",
+            "percentage": 0.5
+          }
+        ],
+        "cap": 2,
+        "rate": 60,
+        "offset": [
+          0.0,
+          2.0,
+          0.0
+        ]
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_village"
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 2.0,
+          "crush": 1.5,
+          "spore": 0.0,
+          "ranged": 0.5
+        }
+      },
+      "badger:loot": {
+        "table": "common_structure"
+      },
+
+      "badger:zone_type": {
+
+        "zone_type": "housing"
+
+      },
+
+      "badger:zone_type_requirement": {
+
+        "include_tags": [ "utopia" ]
+
+      },
+      "badger:offline_traits": {
+        "offline_disabled_components": [
+          "badger:culture",
+          "badger:buildable_spawner"
+        ],
+        "construction_disabled_components": [
+          "badger:culture",
+          "badger:buildable_spawner"
+        ],
+        "disabled_by_health_components": [//this disables the component when the structure has been disabled by health (the above component)
+          "badger:buildable_spawner"
+        ]
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_health_generation_default",
+        "badger:component_foundation_default"
+      ]
+    }
+  }
+}

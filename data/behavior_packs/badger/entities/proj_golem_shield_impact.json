@@ -1,0 +1,59 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_golem_shield_impact",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:removal_time": {
+        "time": 14.0
+      },
+      "badger:aabb": {
+        "width": 10,
+        "height": 7
+      },
+      "badger:physics": {},
+      "badger:world_collision": {
+        "has_collision": false,
+        "auto_step": 3.1,
+        "interpolation_speed": 12
+      },
+      "badger:movement": {
+        "move_speed": 0
+      },
+      "badger:health": {
+        "max_health": 200
+      },
+      "badger:tags": {
+        "tags": [
+          "shield"
+        ]
+      },
+      "badger:damage_receiver": {
+        "shape": {
+          "type": "sphere",
+          "radius": 7,
+          "position": [
+            0.0,
+            0.1,
+            0.0
+          ]
+        },
+        "damage_resistances": {
+          "melee": 1.0,
+          "cavalry": 0.5,
+          "ranged": 0.1,
+          "crush": 0.75,
+          "neutral": 0.5,
+          "spore": 0
+        },
+        "alliance_rule_filter": "friendly"
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 0
+      }
+    }
+  }
+}

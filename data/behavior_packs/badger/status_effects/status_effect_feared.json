@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:status_effect_feared",
+			"runtime_identifier": "badger:status_effect"
+		},
+		"components": {
+			"badger:status": {
+				"applied_name": "feared",
+				"default_resistance": {
+					"resisted": false,
+					"time": 5.0,
+					"resistance_persist_time": 2
+				}
+			},
+			"badger:causes_fear": {},
+			"badger:disables_influence": {
+				"tag_filter": {
+					"include_tags": ["mob", "animal"],
+					"exclude_tags": []
+				}
+			},
+			"badger:modifier_movement_speed": {
+				"post_multiply": 1.5
+			},
+			"badger:disables_actions": {},
+			"badger:negate_status":{
+				"negated_status":[ 
+					"player_speed", 
+					"directed" 
+				]
+			}	
+		}
+	}
+}

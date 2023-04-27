@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_resource_stone_boulder_04"
+    },
+    "structure_name": "nature/boulder_04",
+    "placement_range": {
+      "x": [0,2],
+      "z": [0,2]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {
+        "block_allow_list": [
+          "minecraft:grass",
+          "badger:block_rivershore",
+          "badger:block_frostsnow",
+          "badger:block_alpine_rock_01"
+          ]
+      },
+      "unburied": {},
+      "empty_space": {}
+    }
+  }
+}

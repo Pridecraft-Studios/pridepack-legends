@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:block_poi_fallen_warrior_torso",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 2.5,
+        "height": 2
+      },
+
+      "badger:entity_collision": {},
+      "badger:tags": {
+        "tags": [ "mob", "fallenwarriortorso" ]
+      }
+    }
+  }
+}

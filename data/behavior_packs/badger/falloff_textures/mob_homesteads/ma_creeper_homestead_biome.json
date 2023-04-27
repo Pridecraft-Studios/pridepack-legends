@@ -1,0 +1,22 @@
+{
+  "id": "ma_creeper_homestead_biome",
+  "textures": [
+    {
+      "texture": "mob_homesteads/heightmap_creeper_homestead",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+  "biome_map": [
+    {
+      "biome": "brokenlands_ridge",
+      "value": 255
+    }
+  ],
+  "additional_data": {
+    "village_texture_stamp": true
+  }
+}

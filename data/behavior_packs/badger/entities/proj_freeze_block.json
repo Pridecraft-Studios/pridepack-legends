@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_freeze_block",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 1.00000007629,
+        "length": 0.500000038147,
+        "width": 0.500000038147
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      }
+    }
+  }
+}

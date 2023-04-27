@@ -1,0 +1,47 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_animal_wolf_gathering",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1,
+        "height": 1
+      },
+      "badger:campaign_team": {
+        "team_tag": "wild_team"
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:animal_wolf",
+            "percentage": 1
+          }
+        ],
+        "cap": 10,
+        "batch": 10,
+        "rate": 10,
+        "radius": 30
+      },
+      "badger:spawner_rules": {
+        "bsharp_rule": {
+          "variable": "gv_started_act_3_a",
+          "value": 1
+        },
+        "block_type_rule": {
+          "valid_types": [
+            "grass"
+          ]
+        }
+      },
+      "badger:tags": {
+        "tags": [
+          "spawner_animal"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_tree_oak_melt_small_02"
+    },
+    "structure_name": "nature/tree_oak_melt_small_02",
+    "placement_range": {
+      "x": [
+        0,
+        2
+      ],
+      "z": [
+        0,
+        2
+      ]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {
+        "block_allow_list": [
+          "minecraft:grass",
+          "badger:block_rivershore",
+          "badger:block_frostsnow",
+          "badger:block_alpine_rock_01",
+          "badger:block_frostsnow",
+          "badger:block_frostground",
+          "badger:block_frostground_02",
+          "badger:block_frostground_03",
+          "badger:block_frostground_04",
+          "badger:block_frostground_05",
+          "badger:block_frostground_06"
+        ]
+      },
+      "empty_space": {}
+    }
+  }
+}

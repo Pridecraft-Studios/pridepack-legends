@@ -1,0 +1,23 @@
+{
+
+    "id": "piglin_biome_attack_medium",
+  
+    "textures": [
+      {
+        "texture": "piglin/biome_only/piglin_biome_circle_medium",
+        "channels": {
+          "r": "blend",
+          "g": "terrain_height",
+          "b": "biome"
+        }
+      }
+    ],
+  
+  
+    "biome_map": [
+      {
+        "biome": "nether_horderunner",
+        "value": 255
+      }
+    ]
+  }

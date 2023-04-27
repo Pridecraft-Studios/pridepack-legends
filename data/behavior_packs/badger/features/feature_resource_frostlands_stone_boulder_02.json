@@ -1,0 +1,35 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_resource_frostlands_stone_boulder_02"
+    },
+    "structure_name": "nature/boulder_frostland_02",
+    "placement_range": {
+      "x": [0,2],
+      "z": [0,2],
+      "y":[-1,1]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {
+        "block_allow_list": [
+          "badger:block_rivershore",
+          "badger:block_frostsnow",
+          "badger:block_alpine_rock_01",
+          "badger:block_frostsnow",
+          "badger:block_frostground",
+          "badger:block_frostground_02",          
+          "badger:block_frostground_03",          
+          "badger:block_frostground_04",          
+          "badger:block_frostground_05",          
+          "badger:block_frostground_06",
+          "badger:block_alpine_rock_snowy_01",
+          "badger:block_alpine_rock_snowy_02"    
+          ]
+      },
+      "unburied": {},
+      "empty_space": {}
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:item_piglin_crate_key",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 1.0,
+        "length": 0.3125,
+        "width": 0.127032699585
+      },
+      "badger:template": "badger:template_item_orb",
+      "badger:tags": {
+        "tags": [
+          "item",
+          "xp_common",
+          "ghostTriggerFriendly"
+        ]
+      }
+    }
+  }
+}

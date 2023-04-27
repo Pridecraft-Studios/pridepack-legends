@@ -1,0 +1,29 @@
+{
+  "format_version": "1.13.0",
+
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_spawner_animal_pig_mud_pit_locator"
+    },
+
+    "structure_name": "spawner_block_animal_pig_locator_mud_pool",
+    "placement_range": {
+      "x": [0, 1],
+      "y": [-1, 1],
+      "z": [0, 1]
+    },
+
+    "facing_direction": "random",
+    "constraints": {
+      "empty_space": {},
+      "grounded": { 
+        "block_allow_list": [
+          "badger:block_pigsty_mud",
+          "badger:block_pigsty_mud_01",
+          "badger:block_pigsty_mud_02",
+          "badger:block_pigsty_mud_03" 
+        ] 
+      }
+    }
+  }
+}

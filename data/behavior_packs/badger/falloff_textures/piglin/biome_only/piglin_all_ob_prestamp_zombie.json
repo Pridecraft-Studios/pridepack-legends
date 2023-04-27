@@ -1,0 +1,21 @@
+{
+  "id": "piglin_all_ob_prestamp_zombie",
+  "textures": [
+    {
+      "texture": "piglin/piglin_all_ob_prestamp",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+
+  "biome_map": [
+    {
+      "biome": "jungle",
+      "value": 255,
+      "borderBiome":true
+    }
+  ]
+}

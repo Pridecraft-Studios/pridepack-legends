@@ -1,0 +1,27 @@
+{
+
+  "id": "pvp_biome_bases_stamp",
+
+  "textures": [
+    {
+      "texture": "villages/pvp_biome_bases_stamp",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+  "additional_data" : {
+    "height_range" : [7,10],
+    "lock_rotation":true
+  } ,
+
+
+  "biome_map": [
+    {
+      "biome": "grasslands",
+      "value": 131
+    }
+  ]
+}

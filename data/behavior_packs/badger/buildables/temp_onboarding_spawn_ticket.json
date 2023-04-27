@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:temp_onboarding_spawn_ticket",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_requirement": {},
+      "badger:buildable_structure": {
+        "nbt_file": "onboarding_generic_marker",
+        "build_time": 2
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "temp_onboarding_spawn_ticket"
+        ]
+      },
+      "badger:ticket_cap_modifier": {
+        "ticket_modifiers": [
+          {
+            "ticket": "spawn",
+            "amount": 10
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_tower_piglin_lava_thrower",
+      "is_summonable": true,
+      "runtime_identifier": "badger:mob"
+    },
+    "mushroom_data": {
+      "role": "Building",
+      "function": "Military",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1,
+        "height": 1
+      },
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          // structure targeting
+          {
+            "min_range": 25,
+            "max_range": 100,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "enable_with_line_of_sight": true,
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "spike_turret_1"
+            ]
+          },
+          // mob targeting
+          {
+            "min_range": 25,
+            "max_range": 100,
+            "include_tags": [
+              "mob"
+            ],
+            "enable_with_line_of_sight": true,
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "spike_turret_1"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "close",
+            "trigger": "on_close",
+            "range": {
+              "min_range": 0,
+              "max_range": 25
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 2,
+              "deactivates_on_cooldown": false
+            }
+          },
+          {
+            "name": "spike_turret_1",
+            "starts_disabled": false,
+            "trigger": "on_open",
+            "on_hit_target_trigger": "on_tower_piglin_lava_thrower_aoe_attack_hit",
+            "range": {
+              "min_range": 25,
+              "max_range": 100
+            },
+            "state_machine": {
+              "wind_up": 1.0,
+              "wind_down": 2.0,
+              "cooldown_time": 20.0,
+              "deactivates_on_cooldown": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_lava_tower_spike",
+              "position_offsets_from_center": [
+                [
+                  0,
+                  2.5,
+                  0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "player",
+                  "mob"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 5
+              },
+              "damage": {
+                "damage_amount": 0,
+                "damage_types": [
+                  "fire"
+                ]
+              },
+              "accuracy": {
+                "min_range": 3,
+                "max_range": 5,
+                "scale_with_range": true
+              },
+              "should_lead": false
+            }
+          }
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buildableChild",
+          "block",
+          "lavaTowerMagmaShooter",
+          "pigMagmaTower"
+        ]
+      },
+      "badger:template": [
+        "badger:template_structure_child_entity_piglin"
+      ],
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

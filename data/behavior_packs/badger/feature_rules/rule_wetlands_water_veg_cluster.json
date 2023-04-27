@@ -1,0 +1,40 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_wetlands_water_veg_cluster",
+      "places_feature": "badger:feature_wetlands_water_veg_cluster_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "wetlands"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "1",
+      "scatter_chance": "15",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          2,
+          13
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          2,
+          13
+        ]
+      },
+      "y": "temp.waterfloor = query.above_top_solid(variable.worldx, variable.worldz);\r\n return temp.waterfloor > query.sea_level - 1 || temp.waterfloor < query.sea_level - 4 ? 999 : temp.waterfloor;",
+      "coordinate_eval_order": "xzy"
+    }
+  }
+}

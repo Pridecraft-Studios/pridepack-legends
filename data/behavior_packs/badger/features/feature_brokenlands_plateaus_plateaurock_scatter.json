@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_plateaus_plateaurock_scatter"
+    },
+    "places_feature": "badger:feature_brokenlands_plateaus_plateaurock_conditional",
+    "iterations": "temp.iterationcount = 0; return temp.stackheight;",
+    "scatter_chance": 100,
+    "project_input_to_floor": false,
+    "x": 0,
+    "z": 0,
+    "y": "temp.iterationcount = temp.iterationcount + 1; return temp.iterationcount -1;"
+  }
+}

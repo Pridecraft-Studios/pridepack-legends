@@ -1,0 +1,26 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:spatial_trigger_rally_point",
+        "runtime_identifier": "badger:badger_mob",
+        "is_summonable": true
+      },
+      "components": {
+        "badger:aabb": {
+          "width": 25.0,
+          "height": 25.0
+        },
+        "badger:trigger_criteria": {
+          "filters": [
+            {
+              "include_tags": [ "piglin", "mob" ],
+              "exclude_tags": [ "boss", "engineer" ],
+              "alliance_rule_filter": "friendly"
+            }
+          ]
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "material": "badger_stone", 
+      "identifier": "badger:block_chunk_alabaster"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "chunk", 
+        "directional_texture": false, 
+        "directional_shape": true
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:terrain_type": {
+        "terrain": "stone"
+      }
+    }
+  }
+}

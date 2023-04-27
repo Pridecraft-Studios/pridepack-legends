@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_upright_termite_mid_var02",
+      "material": "badger_dirt"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "upright",
+        "directional_texture": false,
+        "directional_shape": true
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      }
+    }
+  }
+}

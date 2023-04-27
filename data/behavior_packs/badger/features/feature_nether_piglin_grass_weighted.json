@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_nether_piglin_grass_weighted"
+    },
+    "features": [
+      ["badger:feature_plant_nether_grass", 20.0],
+      ["badger:feature_plant_nether_grass_small", 20.0],
+      ["badger:feature_plant_nether_grass_tall", 20.0],
+      ["badger:feature_plant_netherwart_small", 10.0],
+      ["badger:feature_plant_netherwart_large", 10.0]
+    ]
+  }
+}

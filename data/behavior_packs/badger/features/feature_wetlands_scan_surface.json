@@ -1,0 +1,11 @@
+{
+  "format_version": "1.13.0",
+  "code:scan_surface": {
+     "description": {
+      "identifier": "badger:feature_wetlands_scan_surface"
+    },
+    "temp_variable_setup": "temp.water = q.water_distance(v.worldx, v.worldz);",
+    "early_out": "temp.water == 0 || temp.water > 4 || q.heightmap(v.worldx, v.worldz) != q.sea_level || math.random(0.0, 1.0) > 0.85",
+	  "scan_surface_feature": "badger:feature_wetlands_grass_shore_weighted"
+  }
+}

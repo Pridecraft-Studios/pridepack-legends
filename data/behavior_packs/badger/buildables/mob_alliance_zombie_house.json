@@ -1,0 +1,65 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_alliance_zombie_house",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_structure": {
+        "nbt_file": "poi_mob_alliance_zombie_house"
+      },
+      "badger:buildable_foundation": {
+        "style": "generic"
+      },
+      "badger:omit_blocks_outline": {},
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 20,
+          "sc": 0,
+          "rc": 20
+        }
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:mob_zombie",
+            "percentage": 1
+          }
+        ],
+        "cap": 3,
+        "batch": 1,
+        "rate": 2,
+        "spawning_trigger": "on_barracks_spawn",
+        "offset": [
+          0.0,
+          1.0,
+          6.0
+        ]
+      },
+      "badger:spawner_add_tags": {
+        "tags": [
+          "homestead_mob"
+        ]
+      },
+      "badger:scriptable_buildable_spawner": {},
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "zombie_mob_alliance_piglin_target",
+          "mob_alliance_zombie_house",
+          "mob_alliance_structure"
+        ]
+      },
+      "badger:health": {
+        "max_health": 100
+      },
+      "badger:template": [
+        "badger:template_poi_mob_alliance"
+      ]
+    }
+  }
+}

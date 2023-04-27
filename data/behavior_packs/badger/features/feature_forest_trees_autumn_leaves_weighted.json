@@ -1,0 +1,18 @@
+{
+  "format_version": "1.13.0",
+
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_forest_autumn_block_sheet_leafpile_01", 10.0],
+      ["badger:feature_forest_autumn_block_sheet_leafpile_02", 10.0],
+      ["badger:feature_forest_autumn_block_sheet_leafpile_03", 10.0],
+      ["badger:feature_forest_autumn_block_leafpile_slab_01", 10.0],
+      ["badger:feature_forest_autumn_block_leafpile_slab_02", 10.0],
+      ["badger:feature_forest_autumn_block_leafpile_slab_03", 10.0]
+    ],
+
+    "description": {
+      "identifier": "badger:feature_forest_trees_autumn_leaves_weighted"
+    }
+  }
+}

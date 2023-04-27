@@ -1,0 +1,60 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_frosty_grass_frostgrass_c_wave",
+      "places_feature": "badger:feature_frosty_grass_frostgrass_c"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "frosty_grass"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "frosty_grass_hills"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "frosty_grass_wetlands"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "frosty_grass_trees"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(86,128)",
+      "scatter_chance": 100,
+      "early_out": "temp.noisevalue = q.noise(v.scatteredx, v.scatteredz, 40); temp.lownoisewiggle = math.random(-0.1, 0.2); temp.highnoisewiggle = math.random(-0.1, 0.2); return !(temp.noisevalue < (-0.3 + temp.lownoisewiggle) || temp.noisevalue > (0.3 + temp.highnoisewiggle));",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "inverse_gaussian",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz) - 1",
+      "z": {
+        "distribution": "inverse_gaussian",
+        "extent": [
+          0,
+          15
+        ]
+      }
+    }
+  }
+}

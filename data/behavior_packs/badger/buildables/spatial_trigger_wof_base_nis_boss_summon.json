@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spatial_trigger_wof_base_nis_boss_summon",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 750.0,
+        "height": 30.0
+      },
+      "badger:trigger_criteria": {
+        "filters": [
+          {
+            "include_tags": ["player"],
+            "exclude_tags": [],
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.13.0",
+
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_spawner_animal_sea_turtle_wetlands"
+    },
+
+    "structure_name": "spawner_block_animal_sea_turtle_wetlands",
+
+    "placement_range": {
+      "x": [0, 3],
+
+      "y": [0, 3],
+
+      "z": [0, 3]
+    },
+
+    "facing_direction": "random",
+
+    "constraints": {
+      "empty_space": {},
+
+      "grounded": {
+        "block_allow_list": [
+          "badger:block_water",
+          "minecraft:grass",
+          "badger:block_rivershore",
+          "badger:block_sand",
+          "badger:block_sand"
+        ]
+      }
+    }
+  }
+}

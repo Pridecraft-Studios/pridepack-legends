@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:conditional_list": {
+    "description": {
+      "identifier": "badger:feature_nether_horderunners_conditional_list"
+    },
+    "conditional_features": [
+	    {
+        "places_feature": "badger:feature_nether_horderunners_piglin_grass_weighted",
+		    "condition" : "query.noise(variable.worldx / 15, variable.worldz / 15) < -0.2"
+	    }
+    ],
+	  "early_out_scheme": "placement_success"
+  }
+}

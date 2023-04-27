@@ -1,0 +1,10 @@
+{
+  "format_version": "1.13.0",
+  "code:scan_surface": {
+    "description": {
+      "identifier": "badger:feature_drylands_salt_wave_scan_surface"
+    },
+    "constant_y_offset": -1,
+    "scan_surface_feature": "badger:feature_drylands_salt_waves_conditional_list"
+  }
+}

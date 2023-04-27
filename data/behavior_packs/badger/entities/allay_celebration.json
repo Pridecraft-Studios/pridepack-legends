@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:allay_celebration",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 0.625,
+        "length": 0.187499980927,
+        "width": 0.1875
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      }
+    }
+  }
+}

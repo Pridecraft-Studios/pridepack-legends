@@ -1,0 +1,40 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:chunk_piglin_bridge_secondskirmish",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:template": [
+        "badger:chunk_piglin_bridge"
+      ],
+      "badger:buildable_requirement": {
+        "multistep_ground_intersect_depth": 10
+      },
+      "badger:multistep_buildable": {
+        "segments": {
+          "type": "random",
+          "segments": [
+            {
+              "buildable": "badger:chunk_piglin_bridge_secondskirmish_section_001",
+              "percentage": 0.4
+            },
+            {
+              "buildable": "badger:chunk_piglin_bridge_secondskirmish_section_002",
+              "percentage": 0.3
+            },
+            {
+              "buildable": "badger:chunk_piglin_bridge_secondskirmish_section_003",
+              "percentage": 0.3
+            }
+          ]
+        },
+        "cap_piece_name": "badger:chunk_piglin_bridge_secondskirmish_post",
+        "cap_piece_flat_name": "badger:chunk_piglin_bridge_secondskirmish_end_flat",
+        "stepup_name": "badger:chunk_piglin_bridge_secondskirmish_stair"
+      }
+    }
+  }
+}

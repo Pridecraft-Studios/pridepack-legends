@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_plant_coralfanbit_06",
+      "material": "badger_wood"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "slab",
+        "directional_texture": false,
+        "directional_shape": false,
+        "render_layer": "alpha_test"
+      },
+      "badger:block_type": {
+        "tags": [
+          "gatherable_stone"
+        ]
+      }
+    }
+  }
+}

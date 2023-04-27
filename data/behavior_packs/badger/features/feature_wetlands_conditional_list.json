@@ -1,0 +1,19 @@
+{
+  "format_version": "1.13.0",
+  "code:conditional_list": {
+    "description": {
+      "identifier": "badger:feature_wetlands_conditional_list"
+    },
+    "conditional_features": [
+      // {
+      //   "places_feature": "badger:feature_wetlands_scatter_grass_shore",
+      //   "condition" : "false" //"temp.water < 2"
+      // },
+      {
+        "places_feature": "badger:feature_wetlands_grass_shore_weighted",
+        "condition" : "math.random(0.0, 1.0) < 0.85"
+      }
+    ],
+	  "early_out_scheme": "placement_success"
+  }
+}

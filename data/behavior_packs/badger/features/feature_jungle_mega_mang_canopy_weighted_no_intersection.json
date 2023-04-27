@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_jungle_mega_mang_canopy_weighted_no_intersection"
+    },
+    "features": [
+      ["badger:feature_tree_mangrove_mega_01",15.0],
+      ["badger:feature_tree_mangrove_mega_02",15.0],
+      ["badger:feature_tree_mangrove_mega_03",15.0],
+      ["badger:feature_jungle_tree_canopy_mang_aggregate_no_intersection",120.0]
+    ]
+  }
+}

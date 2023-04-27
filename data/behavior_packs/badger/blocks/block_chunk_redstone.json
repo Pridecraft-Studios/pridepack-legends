@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "material": "badger_stone", 
+      "identifier": "badger:block_chunk_redstone"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "chunk", 
+        "camera_collision": false, 
+        "directional_texture": false, 
+        "directional_shape": true
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }, 
+      "badger:terrain_type": {
+        "terrain": "stone"
+      }
+    }
+  }
+}

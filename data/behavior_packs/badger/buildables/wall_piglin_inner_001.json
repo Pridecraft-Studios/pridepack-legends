@@ -1,0 +1,53 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:wall_piglin_inner_001",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:multistep_buildable": {
+        "segments": {
+          "type": "random",
+          "segments": [
+            {
+              "buildable": "badger:chunk_piglin_wall_panel_001",
+              "percentage": 0.4
+            },
+            {
+              "buildable": "badger:chunk_piglin_wall_panel_002",
+              "percentage": 0.2
+            },
+            {
+              "buildable": "badger:chunk_piglin_wall_panel_003",
+              "percentage": 0.4
+            }
+          ]
+        },
+        "mid_segment_count": 5,
+        "placement_cursor_range": 60,
+        "style": "grounded",
+        "max_segments": 100,
+        "shared_health_group_size": 4
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "wall",
+          "piglin_wall_inner",
+          "piglinStructure",
+          "piglin",
+          "piglin_wall"
+        ]
+      },
+      "badger:template": "badger:chunk_piglin_wall_001"
+    }
+  }
+}

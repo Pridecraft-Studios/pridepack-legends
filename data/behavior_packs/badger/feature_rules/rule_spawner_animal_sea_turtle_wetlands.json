@@ -1,0 +1,49 @@
+{
+  "format_version": "1.13.0",
+
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_spawner_animal_sea_turtle_wetlands",
+      "places_feature": "badger:feature_spawner_animal_sea_turtle_wetlands_scatter"
+    },
+
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "beach"
+            },
+
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "wetlands"
+            }
+          ]
+        }
+      ]
+    },
+
+    "distribution": {
+      "iterations": 1,
+      "early_out": "query.get_game_rule_value('roaming_animals') == false",
+      "scatter_chance": "query.get_game_rule_value('roaming_animals') ? 2 : 0",
+
+      "x": {
+        "distribution": "gaussian",
+        "extent": [0, 15]
+      },
+
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "z": {
+        "distribution": "gaussian",
+        "extent": [0, 15]
+      }
+    }
+  }
+}

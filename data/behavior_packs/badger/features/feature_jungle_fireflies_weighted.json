@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_jungle_block_firefly_medium", 10.0],
+      ["badger:feature_jungle_block_firefly_large", 10.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_jungle_fireflies_weighted"
+    }
+  }
+}

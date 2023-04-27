@@ -1,0 +1,27 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_ore_chunk_coal_vein_coal_scatter"
+    },
+    "places_feature": "badger:feature_block_chunk_coal",
+    "x": {
+      "extent": [
+        -1,
+        1
+      ],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [
+        -1,
+        1
+      ],
+      "distribution": "gaussian"
+    },
+    "iterations": 3,
+    "scatter_chance": 100.0,
+    "project_input_to_floor": false,
+    "y":"temp.heightroll = math.random(0, 1); return query.heightmap(variable.worldx, variable.worldz) + temp.heightroll - variable.originy;"
+  }
+}

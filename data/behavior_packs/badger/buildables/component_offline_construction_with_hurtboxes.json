@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:component_offline_construction_with_hurtboxes",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:offline_traits": {
+        "pre_construction_disabled_components": [
+          "badger:damage_receiver",
+          "badger:netherrack_spreading",
+          "badger:buildable_spawner"
+        ],
+        "construction_disabled_components": [
+          "badger:damage_receiver",
+          "badger:netherrack_spreading",
+          "badger:buildable_spawner"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_first_shield_golem_village",
+      "runtime_identifier": "badger:behavior"
+    },
+    "components": {
+      "badger:wander": {
+        "wander_frequency": 0.5,
+        "wander_radius": 5
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Ally targetting
+          {
+            "name": "ally_shield_spawn_10",
+            "max_range": 40,
+            "max_health": 0.5,
+            "required_target_count": 10,
+            "action_tickets": {
+              "rc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "animal", 
+              "host", 
+              "wall", 
+              "stairs", 
+              "donotattack"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "shield_spawn"
+            ]
+          },
+          {
+            "name": "ally_shield_spawn_5",
+            "max_range": 40,
+            "max_health": 0.8,
+            "required_target_count": 5,
+            "action_tickets": {
+              "rc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "animal", 
+              "host", 
+              "wall", 
+              "stairs", 
+              "donotattack"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "shield_spawn"
+            ]
+          },
+          {
+            "name": "ally_shield_spawn_3",
+            "max_range": 40,
+            "max_health": 0.9,
+            "required_target_count": 3,
+            "action_tickets": {
+              "rc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "animal", 
+              "host", 
+              "wall", 
+              "stairs", 
+              "donotattack"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "shield_spawn"
+            ]
+          },
+          //Melee Attack
+          {
+            "name": "ally_shield_melee_attack",
+            "max_range": 8,
+            "enable_with_line_of_sight": true,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+            ],
+            "exclude_tags": [
+              "wall",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "attack_melee"
+            ]
+          },
+          //Celebrate
+          {
+            "name": "celebrate",
+            "max_range": 100,
+            "action_tickets": {
+              "sc": 0
+            },
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "celebration"
+            ]
+          },
+          //Bespoke Behavior
+          {
+            "name": "shield_player_approach",
+            "max_range": 15,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "shield_approach_player"
+            ]
+          },
+          {
+            "name": "shield_villager_approach",
+            "max_range": 15,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "villager"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "shield_approach_village"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "shield_spawn",
+            "trigger": "on_shield_spawn",
+            "proximity_toggle": {
+              "toggle": "on",
+              "count": 1,
+              "distance": 20,
+              "include_tags": [],
+              "exclude_tags": [],
+              "alliance_rule_filter": "enemy"
+            },
+            "range": {
+              "max_range": 13
+            },
+            "state_machine": {
+              "wind_up": 2.0,
+              "wind_down": 2.0,
+              "cooldown_time": 10,
+              "deactivates_on_cooldown": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_golem_shield",
+              "position_offsets_from_center": [[0.0, 3.2, 4.0]],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "player",
+                  "mob",
+                  "shield_golem",
+                  "piglin",
+                  "buildable_combat"
+                ],
+                "alliance_rule_filter": "friendly"
+              },
+              "damage": {
+                "damage_amount": 0,
+                "damage_types": []
+              }
+            }
+          },
+          {
+            "name": "attack_melee",
+            "trigger": "on_attack_melee",
+            "on_hit_target_trigger": "on_golem_shield_melee_attack_hit",
+            "range": {
+              "max_range": 0.5
+            },
+            "state_machine": {
+              "wind_up": 2.0,
+              "wind_down": 3,
+              "cooldown_time": 3.0,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 4.5,
+                "position": [0.0, 0.0, 0.0]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10,
+                "damage_types": ["melee"]
+              },
+              "apply_status": {
+                "engaged": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                }
+              },
+              "knockback": {
+                "angle": 47,
+                "force": 30,
+                "falloff": {
+                  "min_radius": 0
+                }
+              }
+            }
+          },
+          {
+            "name": "shield_approach",
+            "range": {
+              "max_range": 2
+            }
+          },
+          {
+            "name": "shield_approach_village",
+            "range": {
+              "max_range": 2
+            },
+            "state_machine": {
+              "cooldown_time": 65.0,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "shield_approach_player",
+            "range": {
+              "max_range": 2
+            },
+            "state_machine": {
+              "cooldown_time": 65.0,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "shield_celebrate",
+            "range": {
+              "max_range": 2
+            }
+          }
+        ]
+      }
+    }
+  }
+}

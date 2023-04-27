@@ -1,0 +1,82 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:poi_zoner_well_of_fate_pylon",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:chunk_reload_indestructible_flag":{},
+      "badger:buildable_presentation": {
+        "icon": "poi_zoner_well_of_fate_pylon",
+        "tooltip_title": "pylon",
+        "tooltip_description": "pylon",
+        "buildable_category": "",
+        "height_offset": 1
+      },
+      "badger:owned_territory": {
+        "prevent_overlap_tag_set": [],
+        "zone": 9,
+        "village_gen_zone_control_score_threshold": 0.0
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "poi_zoner_well_of_fate_pylon",
+        "build_time": 15,
+        "construction_start_trigger": "on_construction_start",
+        "buildable_placed_player_trigger": "on_building_poi_zoner_well_of_fate_pylon"
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [
+          "block_lava",
+          "flowing_lava",
+          "water",
+          "block_netherrack"
+        ]
+      },
+      "badger:rewards": {
+        "reward": [
+          {
+            "item": "ui_tracking_pylon",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:zone_type": {
+        "zone_type": "xp"
+      },
+      "badger:buildable_foundation": {
+        "style": "generic"
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "donotattack",
+          "well_of_fate_pylon"
+        ]
+      },
+      "badger:offline_traits": {
+        "offline_disabled_components": [
+          "badger:owned_territory"
+        ],
+        "construction_disabled_components": [
+          "badger:owned_territory"
+        ]
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_health_generation_default",
+        "badger:component_deconstruction_default"
+      ]
+    }
+  }
+}

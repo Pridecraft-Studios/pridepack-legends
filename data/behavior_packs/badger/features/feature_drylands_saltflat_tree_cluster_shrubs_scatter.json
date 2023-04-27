@@ -1,0 +1,33 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_drylands_saltflat_tree_cluster_shrubs_scatter"
+    },
+    "places_feature": "badger:feature_drylands_saltflat_grass_shrubs_weighted",
+    "x": {
+      "extent": [
+        -20,
+        20
+      ],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [
+        -20,
+        20
+      ],
+      "distribution": "gaussian"
+    },
+    "iterations" : "math.random(25,100)",
+    "scatter_chance": 100.0,
+    "project_input_to_floor": false,
+    "y": {
+      "extent": [
+        -1.0,
+        1.0
+      ],
+      "distribution": "uniform"
+    }
+  }
+}

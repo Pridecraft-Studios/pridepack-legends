@@ -1,0 +1,105 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:village_bench_01",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "village_bench_01",
+        "tooltip_title": "structures.village.bench.01.name",
+        "tooltip_description": "structures.village.bench.01.description",
+        "buildable_category": ""
+      },
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:offline_traits": {
+        "offline_disabled_components": [
+          "badger:culture"
+        ],
+        "construction_disabled_components": [
+          "badger:culture"
+        ]
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_health_generation_default"
+      ],
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 5
+          },
+          {
+            "item": "stone",
+            "amount": 5
+          },
+          {
+            "item": "gold",
+            "amount": 5
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [          
+          "water",          
+          "lava",          
+          "netherrack",
+          "gatherable_denether", 
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard"        
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 3.0,
+          "neutral": 0.5,
+          "ranged": 0.3
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 6,
+          "rc": 6
+        }
+      },
+
+      "badger:zone_type_requirement": {
+
+        "include_tags": [ "utopia" ]
+
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "village_bench_01",
+        "build_time": 2,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:tags": {
+        "tags": [
+          "donotattack",
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "buildable_prop"
+        ]
+      },
+      "badger:buildable_replace": {},
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_deco_arch"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "poi_ally_shieldgolem_giantnest_biome",
+  "textures": [
+    {
+      "texture": "poi_allies/heightmap_poi_ally_shieldgolem_giantnest",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+  "additional_data" : {
+    "height_range" : [0,8]
+  },
+  
+  "biome_map": [
+    {
+      "biome": "forest",
+      "value": 255
+    }
+  ]
+}
+
+  

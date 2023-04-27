@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_mountains_valleys_mixed_trees_aggregate_02"
+    },
+    "features": [
+      "badger:feature_block_mountain_valleys_locator_01",
+      "badger:feature_mountains_valleys_mixed_trees_scatter_02",
+      "badger:feature_mountains_valleys_oak_mixed_plants_scatter_02"
+    ]
+  }
+}

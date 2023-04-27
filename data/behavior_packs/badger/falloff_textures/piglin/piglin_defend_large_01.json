@@ -1,0 +1,63 @@
+{
+  "id": "piglin_defend_large_01",
+  "textures": [
+    {
+      "texture": "piglin/piglin_defend_large_01",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+  "additional_data": {
+    "height_range": [
+      1,
+      3
+    ],
+    "priority_biomes": [
+      "nether_piglin",
+      "lava_moat",
+      "nether_piglin_lava_border",
+      "nether_piglin_border_blend",
+      "nether_burnt_border",
+      "nether_burnt_border_inner_edge",
+      "nether_burnt_border_outer_edge"
+    ],
+    "village_texture_stamp": true
+  },
+  "biome_map": [
+    {
+      "biome": "nether_piglin",
+      "value": 255
+    },
+    {
+      "biome": "lava_moat",
+      "value": 110
+    },
+    {
+      "biome": "nether_burnt_border",
+      "value": 155
+    },
+    {
+      "biome": "nether_piglin_border_blend",
+      "value": 55
+    },
+    {
+      "biome": "nether_burnt_border",
+      "value": 100
+    },
+    {
+      "biome": "nether_burnt_border_outer_edge",
+      "value": 200
+    },
+    {
+      "biome": "nether_burnt_border_inner_edge",
+      "value": 220
+    },
+    {
+      "biome": "nether_piglin_lava_border",
+      "value": 80
+    }
+  ]
+}

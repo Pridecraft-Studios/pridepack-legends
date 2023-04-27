@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_carpet_plant_coralfan_01",
+      "material": "badger_wood"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "carpet",
+        "directional_texture": false,
+        "directional_shape": true,
+        "render_layer": "alpha_test"
+      },
+      "badger:block_type": {
+        "tags": [
+          "gatherable_stone"
+        ]
+      }
+    }
+  }
+}

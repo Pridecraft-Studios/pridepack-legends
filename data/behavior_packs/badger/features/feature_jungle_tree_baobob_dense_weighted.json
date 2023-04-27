@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_jungle_tree_baobob_dense_weighted"
+    },
+    "features": [
+      ["badger:feature_tree_baobab_01",4.0],
+      ["badger:feature_tree_baobab_02",4.0],
+      ["badger:feature_tree_baobab_03",4.0]
+    ]
+  }
+}

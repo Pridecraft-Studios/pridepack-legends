@@ -1,0 +1,43 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_wetlands_giantlily_paths",
+      "places_feature": "badger:feature_wetlands_giantlily_paths_scatter"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "wetlands"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 25,
+      "scatter_chance": 100,
+      "early_out": "temp.noise = q.noise(v.worldx, v.worldz, 50); return temp.noise < -0.10 || temp.noise > 0.10;",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "jittered_grid",
+        "extent": [
+          1,
+          14
+        ],
+        "step_size": 3.0
+      },
+      "y": "query.sea_level",
+      "z": {
+        "distribution": "jittered_grid",
+        "extent": [
+          1,
+          14
+        ],
+        "step_size": 3.0
+      }
+    }
+  }
+}

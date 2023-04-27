@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:wmap_player_waypoint_tooltip",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:map3_tooltip": {
+        "title": "tooltip.player.waypoint.title",
+        "description": "tooltip.player.waypoint.description",
+        "banner": "map_screen/banners/legend_banner_hero_waypoint.png"
+      },
+      "badger:map3_selectable": {}
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_valleys_tree_pineapple_deco_scatter"
+    },
+    "places_feature": "badger:feature_brokenlands_valleys_tree_pineapple_deco_weighted",
+    "iterations": "math.random(4,18)",
+    "scatter_chance": "100",
+    "project_input_to_floor": false,
+    "y": "query.heightmap(variable.worldx, variable.worldy)",
+    "x": {
+      "extent": [-9, 9],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [-9, 9],
+      "distribution": "gaussian"
+    },
+    "coordinate_eval_order": "xzy"
+  }
+}

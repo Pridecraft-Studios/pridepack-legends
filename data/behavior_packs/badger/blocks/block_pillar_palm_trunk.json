@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_pillar_palm_trunk",
+      "material": "badger_wood"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "pillar",
+        "directional_texture": false,
+        "directional_shape": false
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      },
+      "badger:block_type": {
+        "tags": [
+          "gatherable_wood"
+        ]
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }
+    }
+  }
+}

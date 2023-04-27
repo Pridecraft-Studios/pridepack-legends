@@ -1,0 +1,45 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_brokenlands_valleys_algae_paths",
+      "places_feature": "badger:feature_brokenlands_valleys_algae_paths_scatter"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "brokenlands_valleys"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "brokenlands_valleys_fossil"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(124,136)",
+      "scatter_chance": "100",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "jittered_grid",
+        "extent": [0, 15],
+        "step_size": 2.0
+      },
+      "y": "temp.xstore = variable.worldx; temp.zstore = variable.worldz; return query.sea_level;",
+      "z": {
+        "distribution": "jittered_grid",
+        "extent": [0,15],
+        "step_size": 2.0
+      }
+    }
+  }
+}

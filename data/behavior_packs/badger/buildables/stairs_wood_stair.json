@@ -1,0 +1,88 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:stairs_wood_stair",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Player"
+    },
+    "components": {
+      "badger:culture": {
+        "base_culture_a": 2
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 3
+          }
+        ],
+        "invalid_blocks": [
+          "block_prismarine_wof_stone_var01",
+          "block_prismarine_wof_stone_var02",
+          "block_prismarine_wof_stone_carved_var01",
+          "block_prismarine_wof_stone_var01_dark",          
+          "block_prismarine_wof_stone_var01_light",
+          "block_prismarine_wof_stone_carved_var02",
+          "block_prismarine_wof_stone_carved_var03",
+          "block_prismarine_wof_stone_carved_var04",
+          "block_prismarine_wof_stone_carved_var05",
+          "block_prismarine_wof_stone_carved_var06",
+          "block_prismarine_wof_stone_carved_var07",
+          "block_prismarine_wof_stone_carved_var08",
+          "block_prismarine_wof_stone_carved_var09",
+          "block_prismarine_wof_stone_carved_var10",
+          "block_prismarine_wof_stone_carved_var11",
+          "block_prismarine_wof_stone_cracked",          
+          "block_prismarine_wof_stone",          
+          "block_lava",
+          "flowing_lava",
+          "water",
+          "flowing_water"
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "barrier",
+          "world_hazard",
+          "wof"
+        ]
+      },
+      "badger:buildable_presentation": {
+        "icon": "",
+        "buildable_category": "",
+        "segment_offset": 0
+      },
+      "badger:template": [
+        "badger:template_stairs",
+        "badger:template_structure_player"
+      ],
+      "badger:tags": {
+        "tags": [
+          "buffable-mason",
+          "stairs",
+          "structure",
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "playerBridge",
+          "donotattack"
+        ]
+      },
+      "badger:buildable_snap_point": {},
+      "badger:buildable_structure": {
+        "nbt_file": "stairs_wood_stair",
+        "build_time": 0,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:zone_visualization": {
+        "group": "mason_and_carpenter"
+      }
+    }
+  }
+}

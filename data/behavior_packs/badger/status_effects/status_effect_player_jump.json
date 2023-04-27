@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:status_effect_player_jump",
+			"runtime_identifier": "badger:status_effect"
+		},
+		"components": {
+			"badger:status": {
+				"applied_name": "player_jump",
+				"default_resistance": {
+					"resisted": false,
+					"time": 30,
+					"resistance_persist_time": -1
+				}
+			},
+			"badger:modifier_resistance": {
+				"resistances": {
+				  "fall_damage": 0
+				}
+			},
+			"badger:modifier_jump_height": {
+				"post_multiply": 4.0
+			}
+		}
+	}
+}

@@ -1,0 +1,58 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_piglin_poi",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.7,
+        "height": 1.9
+      },
+      "badger:movement": {
+        "move_speed": 2.5
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": true,
+        "auto_step": 3.1,
+        "interpolation_speed": 12
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 5
+      },
+      "badger:loot": {
+        "table": "common_mob"
+      },
+      "badger:navigation": {
+        "avoidance_lookahead": 19.0,
+        "fall_distance": 4,
+        "avoid_block_damage": true,
+        "ignore_solids_rule": "same_team"
+      },
+      "badger:tags": {
+        "tags": [
+          "mob",
+          "do_not_test"
+        ]
+      },
+      "badger:health": {
+        "max_health": 15
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {
+          "explosion": 1.0,
+          "neutral": 1.0
+        }
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 1.5
+      }
+    }
+  }
+}

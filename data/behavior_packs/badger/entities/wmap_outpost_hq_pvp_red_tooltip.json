@@ -1,0 +1,17 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:wmap_outpost_hq_pvp_red_tooltip",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:map3_tooltip": {
+                "title": "pvp.hq.red.name",
+                "description": "pvp.hq.red.description",
+                "banner": "map_screen/banners/legend_banner_pvp_orangebase.png"
+            }
+        }
+    }
+}

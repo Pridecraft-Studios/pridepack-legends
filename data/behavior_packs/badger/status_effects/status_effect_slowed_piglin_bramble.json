@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:status_effect_slowed_piglin_bramble",
+			"runtime_identifier": "badger:status_effect"
+		},
+		"components": {
+			"badger:status": {
+				"applied_name": "slowed_piglin_bramble",
+				"default_resistance": {
+					"resisted": false,
+					"time": 0.15,
+					"resistance_persist_time": -1
+				}
+			},
+			"badger:modifier_movement_speed": {
+				"post_multiply": 0.5
+			},
+			"badger:modifier_jump_height": {
+				"post_multiply": 0.45
+			},
+		"badger:negate_status":{
+			"negated_status":[ "slowed", "slowed_thorns", "slowed_tar", "exhausted","player_jump", "player_speed", "engaged" ]
+			}				
+		}
+	}
+}

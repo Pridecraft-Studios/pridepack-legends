@@ -1,0 +1,42 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_forest_autumn_water_shore",
+      "places_feature": "badger:feature_forest_autumn_water_shore_block"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "forest_autumn"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 7,
+      "scatter_chance": 25,
+      "x": {
+        "distribution": "jittered_grid",
+        "extent": [
+          0,
+          15
+        ],
+        "step_size": 1.0
+      },
+      "z": {
+        "distribution": "jittered_grid",
+        "extent": [
+          0,
+          15
+        ],
+        "step_size": 1.0
+      },
+      "y": "query.water_distance(variable.worldx, variable.worldz) < math.random(3,4) && query.heightmap(variable.worldx, variable.worldz) == query.sea_level ? query.sea_level - 1 : 999",
+      "coordinate_eval_order": "xzy"
+    }
+  }
+}

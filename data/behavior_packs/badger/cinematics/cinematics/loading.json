@@ -1,0 +1,70 @@
+{
+   "audio_snapshot" : "",
+   "cine_id" : "loading",
+   "clips" : [
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "do_debug_draw" : false,
+         "duration" : 120,
+         "enabled" : true,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "PURE BLACK FOR LOADING",
+         "out_duration" : 0,
+         "row_index" : 1,
+         "start_time" : 0,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "hud_visibility_clip",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 120,
+         "enabled" : true,
+         "hud_visibility" : "hidden",
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "HIDE HUD - Hidden for NISs",
+         "out_duration" : 0,
+         "row_index" : 0,
+         "start_time" : 0,
+         "toggle_state" : ""
+      }
+   ],
+   "extra_cast" : null,
+   "extra_entity_ids" : null,
+   "extra_world_requests" : null,
+   "interrupts_vo_sequences" : false,
+   "locators" : [
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s01-1",
+         "rotation" : [ 39.0, 1.0, -0.0 ],
+         "translation" : [ -2.301823616027832, 16.55025482177734, 9.055513381958008 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s01-2",
+         "rotation" : [ -7.0, 33.0, 0.0 ],
+         "translation" : [ -2.301823616027832, 16.55025482177734, 9.055513381958008 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s01-3",
+         "rotation" : [ -33.0, -10.0, -0.0 ],
+         "translation" : [ -2.301823616027832, 16.55025482177734, 9.055513381958008 ]
+      }
+   ],
+   "max_distance" : -1.0,
+   "proximity_range" : 150.0,
+   "requires_watcher" : false,
+   "sharing_policy" : "proximity",
+   "skip_condition_variable" : "",
+   "skip_to_cinematic" : "",
+   "skippable" : false,
+   "stage" : "",
+   "version" : 9,
+   "wants_skip_queue" : false
+}

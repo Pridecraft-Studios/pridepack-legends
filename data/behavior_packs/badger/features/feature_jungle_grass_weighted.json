@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_plant_jungle_grass_01", 20.0],
+      ["badger:feature_plant_jungle_grass_02", 20.0],
+      ["badger:feature_plant_jungle_grass_03", 20.0],
+      ["badger:feature_plant_jungle_grass_04", 5.0],
+      ["badger:feature_plant_jungle_grass_05", 5.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_jungle_grass_weighted"
+    }
+  }
+}

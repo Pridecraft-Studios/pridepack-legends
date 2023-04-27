@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_buff_jump_aggregate"
+    },
+    "early_out": "first_failure",
+    "features": [
+      "badger:feature_poi_player_buff_jump",
+      "badger:feature_buff_jumpshroom_scatter",
+      "badger:feature_buff_jump_plant_mushroom_stalk_scatter",
+      "badger:feature_buff_jump_plant_greenblades_scatter"      
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_frostlands_tree_clusters",
+      "places_feature": "badger:feature_frostlands_tree_clusters_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+          {
+            "any_of":[
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "frostlands_hills"
+            }
+          ]
+          },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "springs"
+            }    
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "1",
+      "scatter_chance": "temp.height = query.heightmap(variable.originx, variable.originz); return temp.height >= 22 ? 30 : 0;",
+      "early_out": "q.get_game_rule_value('prevent_obstacles_on_poi_graph') && q.poi_influence_factor(v.scatteredx, v.scatteredz) < 0.5",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          3,
+          13
+        ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          3,
+          13
+        ]
+      },
+      "coordinate_eval_order": "zxy"
+    }
+  }
+}

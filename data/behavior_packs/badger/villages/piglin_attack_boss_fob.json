@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_attack_boss_fob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:village": {
+        "name": "Piglin Attack Boss FOB"
+      },
+      "badger:waypoint_marker": {
+        "path": "waypoint_piglinattack_hunt",
+        "priority": 5
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 0.0,
+        "waypoint_max_range": 0.0,
+        "compass_max_range": "zero",
+        "compass_level": 1,
+        "filter_tagsets": [
+          {
+            "include_tags":["village_attack"],
+            "exclude_tags":[]
+          }
+        ]
+      },
+      "badger:template": "badger:piglin_attack_fob"
+    }
+  }
+}

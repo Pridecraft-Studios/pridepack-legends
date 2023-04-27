@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_corpse_flower",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "mushroom_data": {
+      "function": "Entity_Struct"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 8.8125,
+        "length": 4.56708251953,
+        "width": 4.56708190918
+      },
+      "badger:tags": {
+        "tags": [
+          "block",
+          "corpse_flower"
+        ]
+      },
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

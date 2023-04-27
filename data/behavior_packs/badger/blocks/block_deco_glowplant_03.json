@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_glowplant_03", 
+      "material": "badger_grass"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty", 
+        "directional_texture": true, 
+        "directional_shape": true
+      }, 
+      "minecraft:block_light_emission": {
+        "emission": [
+          95,
+          248,
+          248,
+          60
+        ]
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "gatherable_no_resources_wood"
+        ]
+      }, 
+      "badger:terrain_type": {
+        "terrain": "grass"
+      }
+    }
+  }
+}

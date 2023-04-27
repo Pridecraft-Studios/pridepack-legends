@@ -1,0 +1,27 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_ore_diamond_patch_fill_scatter"
+    },
+    "places_feature": "badger:feature_block_diamond_fill",
+    "x": {
+      "extent": [
+        -4,
+        4
+      ],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [
+        -4,
+        4
+      ],
+      "distribution": "gaussian"
+    },
+    "iterations": 150,
+    "scatter_chance": 100.0,
+    "project_input_to_floor": false,
+    "y": "query.heightmap(variable.worldx, variable.worldz) + math.random(-2, -1) - variable.originy"
+  }
+}

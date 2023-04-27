@@ -1,0 +1,11 @@
+{
+  "format_version": "1.13.0",
+  "code:scan_surface": {
+     "description": {
+      "identifier": "badger:feature_drylands_shore_block_scan_surface"
+    },
+    "height_override": "query.sea_level - 1",
+	  "scan_surface_feature": "badger:feature_drylands_shore_blocks_conditional_list",
+    "temp_variable_setup": "temp.wetness = query.water_distance(variable.worldx, variable.worldz);"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": { // this controls the patches of nlyium that lie flat along it. 
+      "identifier": "badger:rule_nether_horderunners_netherrack_blocks_02",
+      "places_feature": "badger:feature_nether_horderunners_ground_block_node"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "nether_horderunner"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "nether_piglin_final"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "nether_final_battle_arena"
+            }
+            
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(1,2)",
+      "scatter_chance": "75",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [0,15]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)-1",
+      "z": {
+        "distribution": "gaussian",
+        "extent": [0,15]
+      }
+    }
+  }
+}

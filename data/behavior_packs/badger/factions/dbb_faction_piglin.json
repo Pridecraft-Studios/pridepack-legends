@@ -1,0 +1,30 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:dbb_faction_piglin"
+        },
+        "components": {
+            "badger:faction": {
+                "id": "faction.pig.dbb",
+                "name": "Piglin DBB Faction",
+                "description": "The faction that invades in Act 1",
+                "icon": "ui_map_biomelegend_piglin",
+                "color": [
+                    0.238,
+                    0.13,
+                    0.238,
+                    1.0
+                ],
+                "health_bar_color": [ 0.74, 0.22, 0.77, 1.0 ],
+                "known": true,
+                "appearance_name": "attack",
+                "appearance_index": 0
+            },
+            "badger:campaign_team": {
+                "team_tag": "piglin_team"
+            },
+            "badger:template": "badger:template_faction_piglin"
+        }
+    }
+}

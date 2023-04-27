@@ -1,0 +1,216 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_piglin_grunter_guarded",
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 3.5,
+        "air_control_factor": 0.0
+      },
+      "badger:wander": {
+        "wander_frequency": 1.0,
+        "wander_radius": 8
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Player targeting
+          {
+            "name": "grunter_player_attack",
+            "max_range": 4,
+            "action_tickets": {
+              "rc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grunter_ranged_attack"
+            ]
+          },
+          //Support Golem Targeting
+          {
+            "name": "grunter_support_attack",
+            "max_range": 15,
+            "action_tickets": {
+              "rc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [
+              "support"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grunter_ranged_attack"
+            ]
+          },
+          //Mob Targeting
+          {
+            "name": "grunter_mob_attack",
+            "max_range": 15,
+            "action_tickets": {
+              "rc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grunter_ranged_attack"
+            ]
+          },
+          //Buildable targeting (nav fail only)
+          {
+            "name": "grunter_buildable_attack_nav_fail",
+            "max_range": 1,
+            "action_tickets": {
+              "rc": 1
+            },
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grunter_ranged_attack"
+            ]
+          },
+          //General targeting
+          {
+            "name": "grunter_default_attack",
+            "max_range": 15,
+            "action_tickets": {
+              "rc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grunter_ranged_attack"
+            ]
+          },
+          //Approach
+          {
+            "name": "grunter_enemy_approach",
+            "max_range": 30.0,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "action_tickets": {
+              "sc": 1
+            },
+            "include_tags": [],
+            "exclude_tags": [
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grunter_approach"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "grunter_ranged_attack",
+            "trigger": "on_melee_attack_1",
+            "range": {
+              "max_range": 10.0
+            },
+            "state_machine": {
+              "wind_up": 0.35,
+              "wind_down": 0.85,
+              "cooldown_time": 1.5,
+              "deactivates_on_cooldown": true
+            },
+            "accuracy": {
+              "min_range": 0.25,
+              "max_range": 1,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_blazerod",
+              "position_offsets_from_center": [
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 5,
+                "damage_types": [
+                  "ranged",
+                  "fire"
+                ]
+              }
+            }
+          },
+          {
+            "name": "grunter_approach",
+            "range": {
+              "max_range": 1.5
+            }
+          }
+        ]
+      }
+    }
+  }
+}

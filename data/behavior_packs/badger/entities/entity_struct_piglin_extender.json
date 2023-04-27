@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_piglin_extender",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 6.6875,
+        "length": 2.75,
+        "width": 2.74999633789
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      },
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

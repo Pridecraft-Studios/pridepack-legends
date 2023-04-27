@@ -1,0 +1,16 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:component_generate_ruins_default",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:generate_ruins": {
+        "max": 0,
+        "min": 0
+      }
+    }
+  }
+}

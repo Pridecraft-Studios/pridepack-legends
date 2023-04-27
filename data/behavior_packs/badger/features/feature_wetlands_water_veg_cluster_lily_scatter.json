@@ -1,0 +1,28 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_wetlands_water_veg_cluster_lily_scatter"
+    },
+    "places_feature": "badger:feature_plant_giantlily_01",
+    "iterations": "10",
+    "scatter_chance": "100",
+    "project_input_to_floor": false,
+    "y": "return query.sea_level - temp.waterfloor;",
+    "x": {
+      "extent": [
+        -15,
+        15
+      ],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [
+        -15,
+        15
+      ],
+      "distribution": "gaussian"
+    },
+    "coordinate_eval_order": "xzy"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_plant_coralflower_02"
+    },
+    "may_replace": [
+      "minecraft:air"
+    ],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_deco_plant_coralflower_02",
+    "may_attach_to": {
+      "bottom": [
+        "badger:block_redsand_a",
+        "badger:block_redsand_b",
+        "badger:block_redsand_c",
+        "badger:block_redsand_d",
+        "badger:block_redsand_a_top",
+        "badger:block_riverbed_a",
+        "badger:block_riverbed_b",
+        "badger:block_plant_coralstump_c",
+        "badger:block_coralstone_a",
+        "badger:block_riverbed_blend_01",
+        "badger:block_riverbed_b2",
+        "badger:block_riverbed_blend_02",
+        "badger:block_riverbed_stone_02",
+        "badger:block_riverbed_blend_03"
+      ]
+    }
+  }
+}

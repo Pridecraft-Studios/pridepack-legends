@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_plant_junglelily_01",
+      "material": "badger_lilypad"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty",
+        "directional_texture": true,
+        "directional_shape": true
+      },
+      "badger:terrain_type": {
+        "terrain": "grass"
+      },
+      "minecraft:block_light_emission": {
+        "emission": [
+          238,
+          224,
+          177,
+          64
+        ]
+      }
+    }
+  }
+}

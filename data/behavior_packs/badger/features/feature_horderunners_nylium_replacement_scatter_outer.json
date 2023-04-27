@@ -1,0 +1,30 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_horderunners_nylium_replacement_scatter_outer"
+    },
+    "places_feature": "badger:feature_horderunners_nylium_block_replacement_01",
+    "iterations": "50",
+    "scatter_chance": "100",
+    "project_input_to_floor": false,
+    "y": "temp.height = query.heightmap(variable.worldx,variable.worldz); return temp.height - (variable.originy +1);",
+    "x": {
+      "distribution": "gaussian",
+      "extent": [
+        -3,
+        3
+      ]
+
+    },
+    "z":{
+      "distribution": "gaussian",
+      "extent": [
+        -3,
+        3
+      ]
+
+    },
+    "coordinate_eval_order": "xzy"
+  }
+}

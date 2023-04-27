@@ -1,0 +1,459 @@
+{
+   "audio_snapshot" : "",
+   "cine_id" : "skip_opening",
+   "clips" : [
+      {
+         "blend_from" : false,
+         "blend_in" : 0,
+         "camera_id" : "ctg",
+         "clip_type" : "camera_clip",
+         "color" : [ 0.3882353007793427, 0.0, 1.0, 1.0 ],
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 35,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 65.0,
+         "ignore_camera_shake" : false,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "Cine to Game Transition Camera for Local Player",
+         "near_plane" : 0.02500000037252903,
+         "pan_end_transform" : {
+            "locator_name" : "s01_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s01_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "priority" : 1,
+         "row_index" : 3,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 0,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : true
+      },
+      {
+         "clip_type" : "trigger",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "host_player",
+         "locked_for_edit" : false,
+         "name" : "  <-DETTACH LOOT",
+         "on_end" : "",
+         "on_start" : "remove_center_attachment",
+         "row_index" : 4,
+         "start_time" : 3,
+         "trigger_parents" : false
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "do_debug_draw" : false,
+         "duration" : 65,
+         "enabled" : true,
+         "in_duration" : 120,
+         "locked_for_edit" : false,
+         "name" : "[FTB] FMV Outro",
+         "out_duration" : 25,
+         "row_index" : 2,
+         "start_time" : 0,
+         "toggle_state" : "off"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 25,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF] On Black",
+         "out_duration" : 0,
+         "row_index" : 1,
+         "start_time" : 0,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "hud_visibility_clip",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 65,
+         "enabled" : true,
+         "hud_visibility" : "hidden",
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "HIDE HUD - Hidden for NISs",
+         "out_duration" : 0,
+         "row_index" : 0,
+         "start_time" : 0,
+         "toggle_state" : ""
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 25,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE OUT Duration",
+         "out_duration" : 0,
+         "row_index" : 1,
+         "start_time" : 40,
+         "toggle_state" : "none"
+      },
+      {
+         "clip_type" : "transition_clip",
+         "do_debug_draw" : false,
+         "duration" : 26,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "[ Transition Cam :: OUT ]",
+         "rate" : 0.2000000029802322,
+         "row_index" : 3,
+         "start_time" : 39,
+         "time_to_reach_rate" : 0.3000000119209290,
+         "transition_out" : true
+      },
+      {
+         "audition" : [
+            {
+               "exclude_tags" : null,
+               "include_tags" : [ "action" ],
+               "index" : "action",
+               "optional" : false
+            },
+            {
+               "exclude_tags" : null,
+               "include_tags" : [ "knowledge" ],
+               "index" : "knowledge",
+               "optional" : false
+            },
+            {
+               "exclude_tags" : null,
+               "include_tags" : [ "foresight" ],
+               "index" : "foresight",
+               "optional" : false
+            },
+            {
+               "exclude_tags" : null,
+               "include_tags" : [ "vil09_game" ],
+               "index" : "vil09",
+               "optional" : false
+            },
+            {
+               "exclude_tags" : null,
+               "include_tags" : [ "vil07_game" ],
+               "index" : "vil07",
+               "optional" : false
+            }
+         ],
+         "clip_type" : "audition_clip",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "max_distance" : 200.0,
+         "name" : "  Char.Hosts.Audition",
+         "offset" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 7,
+         "start_time" : 1
+      },
+      {
+         "clip_type" : "teleport",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "player2",
+         "locked_for_edit" : false,
+         "name" : "  Teleport P2 ",
+         "row_index" : 7,
+         "snap_to_ground" : true,
+         "start_time" : 5,
+         "transform" : {
+            "locator_name" : "p.2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "teleport",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "player3",
+         "locked_for_edit" : false,
+         "name" : "  Teleport P3",
+         "row_index" : 8,
+         "snap_to_ground" : true,
+         "start_time" : 5,
+         "transform" : {
+            "locator_name" : "p.3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "teleport",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "vil07",
+         "locked_for_edit" : false,
+         "name" : "  Teleport Vil07",
+         "row_index" : 15,
+         "snap_to_ground" : true,
+         "start_time" : 5,
+         "transform" : {
+            "locator_name" : "vil09_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "teleport",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "player4",
+         "locked_for_edit" : false,
+         "name" : "  Teleport P4",
+         "row_index" : 9,
+         "snap_to_ground" : true,
+         "start_time" : 5,
+         "transform" : {
+            "locator_name" : "p.4",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "teleport",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "action",
+         "locked_for_edit" : false,
+         "name" : "  Teleport Action",
+         "row_index" : 11,
+         "snap_to_ground" : true,
+         "start_time" : 5,
+         "transform" : {
+            "locator_name" : "h.action",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "teleport",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "knowledge",
+         "locked_for_edit" : false,
+         "name" : "  Teleport Knowledge",
+         "row_index" : 12,
+         "snap_to_ground" : true,
+         "start_time" : 5,
+         "transform" : {
+            "locator_name" : "h.knowledge",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "teleport",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "host_player",
+         "locked_for_edit" : false,
+         "name" : "  Teleport Host",
+         "row_index" : 6,
+         "snap_to_ground" : false,
+         "start_time" : 5,
+         "transform" : {
+            "locator_name" : "p.3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "audition" : [
+            {
+               "exclude_tags" : null,
+               "include_tags" : [ "player" ],
+               "index" : "player2",
+               "optional" : true
+            },
+            {
+               "exclude_tags" : null,
+               "include_tags" : [ "player" ],
+               "index" : "player3",
+               "optional" : true
+            },
+            {
+               "exclude_tags" : null,
+               "include_tags" : [ "player" ],
+               "index" : "player4",
+               "optional" : true
+            }
+         ],
+         "clip_type" : "audition_clip",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "max_distance" : 200.0,
+         "name" : "  Audition Multiplayers",
+         "offset" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 6,
+         "start_time" : 1
+      },
+      {
+         "clip_type" : "set_gameplay_camera_clip",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "  Set Gameplay camera to start position.",
+         "pitch" : 50.0,
+         "row_index" : 6,
+         "start_time" : 15,
+         "yaw" : 270.0
+      },
+      {
+         "clip_type" : "teleport",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "foresight",
+         "locked_for_edit" : false,
+         "name" : "  Teleport Foresight",
+         "row_index" : 13,
+         "snap_to_ground" : true,
+         "start_time" : 5,
+         "transform" : {
+            "locator_name" : "h.foresight",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "teleport",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "vil07",
+         "locked_for_edit" : false,
+         "name" : "  Teleport Vil09",
+         "row_index" : 14,
+         "snap_to_ground" : true,
+         "start_time" : 5,
+         "transform" : {
+            "locator_name" : "h.foresight",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      }
+   ],
+   "extra_cast" : null,
+   "extra_entity_ids" : null,
+   "extra_world_requests" : null,
+   "interrupts_vo_sequences" : false,
+   "locators" : [
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "h.action",
+         "rotation" : [ 0.0, 90.0, 0.0 ],
+         "translation" : [ -13.25045776367188, 8.0002441406250, 12.85510253906250 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "h.foresight",
+         "rotation" : [ 0.0, 90.0, 0.0 ],
+         "translation" : [ -10.52752685546875, 10.00022506713867, 3.438293457031250 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "h.knowledge",
+         "rotation" : [ 0.0, 90.0, 0.0 ],
+         "translation" : [ -10.20217895507812, 10.00022125244141, -7.622741699218750 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "p.1",
+         "rotation" : [ 0.0, 90.0, 0.0 ],
+         "translation" : [ -19.32467651367188, 5.800000190734863, -7.193176269531250 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "p.2",
+         "rotation" : [ 0.0, 90.0, 0.0 ],
+         "translation" : [ -19.22528076171875, 4.000225067138672, -14.89703369140625 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "p.3",
+         "rotation" : [ 0.0, 90.0, 0.0 ],
+         "translation" : [ -19.50714111328125, 4.000236511230469, 0.20495605468750 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "p.4",
+         "rotation" : [ 0.0, 90.0, 0.0 ],
+         "translation" : [ -19.27426147460938, 4.000228881835938, 7.612121582031250 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s01_1",
+         "rotation" : [ 44.0, -91.0, 0.0 ],
+         "translation" : [ -16.05780410766602, 10.73079681396484, -7.138772487640381 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "vil09_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -20.52496337890625, 4.001235961914062, 18.96845626831055 ]
+      }
+   ],
+   "max_distance" : 200.0,
+   "proximity_range" : 150.0,
+   "requires_watcher" : false,
+   "sharing_policy" : "shared",
+   "skip_condition_variable" : "",
+   "skip_to_cinematic" : "",
+   "skippable" : false,
+   "stage" : "",
+   "version" : 9,
+   "wants_skip_queue" : false
+}

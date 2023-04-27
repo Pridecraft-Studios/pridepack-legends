@@ -1,0 +1,63 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_piglin_crate",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "mushroom_data": {
+      "function": "Entity_Struct"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 5.0,
+        "length": 4.0,
+        "width": 4.0
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 20.0,
+        "waypoint_max_range": 20.0,
+        "compass_max_range": "short",
+        "filter_tagsets": [
+            {
+                "include_tags": [],
+                "exclude_tags": []
+            },
+            {
+                "include_tags": ["base_assault"],
+                "exclude_tags": []
+            }
+        ]
+    },
+    "badger:waypoint_marker": {
+        "path": "waypoint_piglin_chest",
+        "label": "resources.unlock_journal_piglin_crate.name",
+        "world_position_offset": [0, 7, 0]
+    },
+      "badger:tags": {
+        "tags": [
+          "piglin_crate_interact"
+        ]
+      },
+      "badger:campaign_team": {
+        "team_tag": "piglin_team"
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "alliance_rule_filter": "enemy",
+            "exclude_tags": [],
+            "include_tags": [
+              "player"
+            ],
+            "input_layout_override": "overlay_gameplay_crate_interaction_hold",
+            "name": "interaction_zone",
+            "range": 4
+          }
+        ]
+      },
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

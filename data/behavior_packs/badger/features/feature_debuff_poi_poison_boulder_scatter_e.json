@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_debuff_poi_poison_boulder_scatter_e"
+    },
+    "places_feature": "badger:feature_poison_boulders_weighted",
+    "iterations": "1",
+    "scatter_chance": "30",
+    "project_input_to_floor": false,
+    "x": {
+      "extent": [-10, -1],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [1, 10],
+      "distribution": "gaussian"
+    },
+    "y": "query.heightmap(variable.worldx, variable.worldz) - variable.originy"
+  }
+}

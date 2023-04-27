@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_frostlands_block_slab_frostice_blend_01",   7.0],
+      ["badger:feature_frostlands_block_carpet_frostice_blend_01",11.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_frostlands_ice_pool_edge_slabs_sheets_weighted"
+    }
+  }
+}

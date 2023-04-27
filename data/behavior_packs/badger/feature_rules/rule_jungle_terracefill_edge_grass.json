@@ -1,0 +1,42 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_jungle_terracefill_edge_grass",
+      "places_feature": "badger:feature_jungle_terraces_grass_weighted"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "final_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "jungle_terraces"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "272",
+      "scatter_chance": "96",
+      "x": {
+        "distribution":  "uniform",
+        "extent": [
+          0,
+          16
+        ]
+
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          16
+        ]
+
+      },
+      "y": "return query.above_top_solid(variable.worldx, variable.worldz);",
+      "coordinate_eval_order": "xzy"
+    }
+  }
+}

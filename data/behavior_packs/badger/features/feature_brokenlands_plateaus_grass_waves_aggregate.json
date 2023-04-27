@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_plateaus_grass_waves_aggregate"
+    },
+    "early_out": "first_failure",
+    "features": [
+      "badger:feature_brokenlands_plateaus_grass_short_scatter",
+      "badger:feature_brokenlands_plateaus_grass_long_scatter"
+    ]
+  }
+}

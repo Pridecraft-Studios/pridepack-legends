@@ -1,0 +1,17 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_plant_fateful_wofgrass_01", 40.0],
+      ["badger:feature_plant_fateful_wofgrass_02", 40.0],
+      ["badger:feature_plant_fateful_wofgrass_03", 40.0],
+      ["badger:feature_plant_fateful_wofgrass_04", 10.0],
+      ["badger:feature_plant_fateful_wofgrass_05", 10.0],
+      ["badger:feature_grasslands_begonias_scatter", 1.0],
+      ["badger:feature_grasslands_wildflowers_scatter", 1.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_grasslands_grass_weighted"
+    }
+  }
+}

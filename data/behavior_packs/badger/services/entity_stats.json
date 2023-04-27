@@ -1,0 +1,5 @@
+{
+  "badger:entity_stats_service": {
+      "server_entity_stats_update_time_interval": 1.0
+  }
+}

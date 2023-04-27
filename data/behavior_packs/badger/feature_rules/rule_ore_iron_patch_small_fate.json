@@ -1,0 +1,44 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_ore_iron_patch_small_fate",
+      "places_feature": "badger:feature_ore_iron_patch_small_fate_conditional"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "fate"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(3,5)",
+      "early_out": "math.mod(math.floor(v.originx / 16), 2) != 0 || math.mod(math.floor(v.originz / 16), 2) != 0",
+      "scatter_chance": "q.resource_scaling*8",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [
+          4,
+          12
+        ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "gaussian",
+        "extent": [
+          4,
+          12
+        ]
+      }
+    }
+  }
+}

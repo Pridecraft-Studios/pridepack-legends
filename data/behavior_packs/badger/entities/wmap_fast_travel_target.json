@@ -1,0 +1,15 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:wmap_fast_travel_target",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:map3_tooltip_action": {
+                "action": "fast_travel"
+            }
+        }
+    }
+}

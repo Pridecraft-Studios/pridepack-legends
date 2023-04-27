@@ -1,0 +1,23 @@
+{
+  "format_version": "1.13.0",
+  "code:conditional_list": {
+    "description": {
+      "identifier": "badger:feature_mud_pit_conditional_list"
+    },
+    "conditional_features": [
+	    {
+        "places_feature": "badger:feature_block_mud_01",
+		    "condition" : "temp.mud_noise = temp.mud + (1.2 * (q.noise(v.worldx, v.worldz, 20) + 1)); return temp.mud_noise < 4;"
+	    },
+      {
+        "places_feature": "badger:feature_block_mud_02",
+		    "condition" : "temp.mud_noise < 6.5"
+	    },
+      {
+        "places_feature": "badger:feature_mud_edge_outer_weighted",
+		    "condition" : "temp.mud_noise < 9"
+	    }
+    ],
+	  "early_out_scheme": "placement_success"
+  }
+}

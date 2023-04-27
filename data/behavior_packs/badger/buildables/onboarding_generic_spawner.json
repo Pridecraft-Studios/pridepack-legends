@@ -1,0 +1,45 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:onboarding_generic_spawner",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_requirement": {},
+      "badger:buildable_structure": {
+        "nbt_file": "onboarding_generic_spawner",
+        "build_time": 1
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "onboarding_generic_spawner"
+        ]
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:mob_golem_wood",
+            "percentage": 1
+          }
+        ],
+        "has_spawn_cost": false,
+        "cap": 0,
+        "batch": 5,
+        "rate": 1,
+        "disable_wander": true,
+        "enable_recall": true
+      },
+      "badger:scriptable_buildable_spawner": {},
+      "badger:spawner_add_tags": {
+        "tags": [
+          "onboarding_generic_mob"
+        ]
+      }
+    }
+  }
+}

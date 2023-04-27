@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_tree_birch_yel_01", 10.0],
+      ["badger:feature_tree_birch_yel_02", 10.0],
+      ["badger:feature_tree_birch_yel_03", 10.0],
+      ["badger:feature_tree_birch_rust_01", 10.0],
+      ["badger:feature_tree_birch_rust_02", 10.0],
+      ["badger:feature_tree_birch_rust_03", 10.0],
+      ["badger:feature_tree_birch_orng_01", 5.0],
+      ["badger:feature_tree_birch_orng_02", 5.0],
+      ["badger:feature_tree_birch_orng_03", 5.0],
+      ["badger:feature_tree_birch_red_01", 3.0],
+      ["badger:feature_tree_birch_red_02", 3.0],
+      ["badger:feature_tree_birch_red_03", 3.0],
+      ["badger:feature_forest_tree_oak_autumn_03", 20.0],
+      ["badger:feature_forest_tree_oak_autumn_02", 10.0],
+      ["badger:feature_forest_tree_oak_autumn_01", 30.0]
+
+    ],
+    "description": {
+      "identifier": "badger:feature_forest_trees_autumn_weighted"
+    }
+  }
+}

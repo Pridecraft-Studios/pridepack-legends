@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_resource_stone_boulder_large_fall_weighted"
+    },
+    "features": [
+      ["badger:feature_resource_stone_boulder_large_01_fall",10.0],
+      ["badger:feature_resource_stone_boulder_large_02_fall",10.0],
+      ["badger:feature_resource_stone_boulder_large_03_fall",10.0]
+    ]
+  }
+}

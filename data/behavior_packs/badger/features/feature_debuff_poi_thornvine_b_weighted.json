@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_debuff_poi_thornvine_b_weighted"
+    },
+   "features": [
+    ["badger:feature_block_hazard_thornvine_01b", 10.0],
+    ["badger:feature_block_hazard_thornvine_02b", 10.0],
+    ["badger:feature_block_hazard_thornvine_03b", 10.0],
+    ["badger:feature_block_hazard_thornvine_04b", 10.0]
+   ]
+  }
+}

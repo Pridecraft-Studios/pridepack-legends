@@ -1,0 +1,24 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_plant_giantlily_01",
+        50.0
+      ],
+      [ 
+        "badger:feature_plant_firelily_01",
+        5
+      ],
+      [ 
+        "badger:feature_wetlands_water_veg_cluster_firelily_scatter",
+        2
+      ]
+
+      
+    ],
+    "description": {
+      "identifier": "badger:feature_wetlands_lilypad_path_weighted"
+    }
+  }
+}

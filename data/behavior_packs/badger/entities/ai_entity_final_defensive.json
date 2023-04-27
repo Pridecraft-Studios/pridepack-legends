@@ -1,0 +1,178 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:ai_entity_final_defensive",
+            "runtime_identifier": "badger:ai"
+        },
+        "components": {
+            "badger:influence_map_ai": {
+                "map_resolution": 5,
+                "map_decay": 0.03,
+                "perception_radius": 600,
+                "query_name": "default"
+            },
+            "badger:damage_influence_source": {
+                "sensors": [
+                    {
+                        "inflictor_or_receiver_position": "inflictor",
+                        "damage_type_filter": {
+                            "include_all": [],
+                            "exclude_any": ["hazard", "lava", "fall_damage", "fire"]
+                        },
+                        "damage_receiver_filter": {
+                            "include_tags": ["piglin"],
+                            "exclude_tags": ["piglinStructure"],
+                            "alliance_rule_filter": "friendly"
+                        },
+                        "multiplier": 25,
+                        "propagation_decay": 0.4
+                    },
+                    {
+                        "inflictor_or_receiver_position": "inflictor",
+                        "damage_type_filter": {
+                            "include_all": [],
+                            "exclude_any": []
+                        },
+                        "damage_receiver_filter": {
+                            "include_tags": ["piglinStructure"],
+                            "exclude_tags": ["portal_piglin"],
+                            "alliance_rule_filter": "friendly"
+                        },
+                        "multiplier": 20,
+                        "propagation_decay": 0.3
+                    },
+                    {
+                        "inflictor_or_receiver_position": "inflictor",
+                        "damage_type_filter": {
+                            "include_all": [],
+                            "exclude_any": []
+                        },
+                        "damage_receiver_filter": {
+                            "include_tags": ["pigRangeUp"],
+                            "exclude_tags": [],
+                            "alliance_rule_filter": "friendly"
+                        },
+                        "multiplier": 40,
+                        "propagation_decay": 0.1
+                    },
+                    {
+                        "inflictor_or_receiver_position": "inflictor",
+                        "damage_type_filter": {
+                            "include_all": [],
+                            "exclude_any": []
+                        },
+                        "damage_receiver_filter": {
+                            "include_tags": ["pigCarpenter"],
+                            "exclude_tags": [],
+                            "alliance_rule_filter": "friendly"
+                        },
+                        "multiplier": 40,
+                        "propagation_decay": 0.1
+                    },
+                    {
+                        "inflictor_or_receiver_position": "inflictor",
+                        "damage_type_filter": {
+                            "include_all": [],
+                            "exclude_any": []
+                        },
+                        "damage_receiver_filter": {
+                            "include_tags": ["superNetherSpreader"],
+                            "exclude_tags": [],
+                            "alliance_rule_filter": "friendly"
+                        },
+                        "multiplier": 40,
+                        "propagation_decay": 0.1
+                    },
+                    {
+                        "inflictor_or_receiver_position": "inflictor",
+                        "damage_type_filter": {
+                            "include_all": [],
+                            "exclude_any": []
+                        },
+                        "damage_receiver_filter": {
+                            "include_tags": ["pigMagmaTower"],
+                            "exclude_tags": [],
+                            "alliance_rule_filter": "friendly"
+                        },
+                        "multiplier": 30,
+                        "propagation_decay": 0.1
+                    },
+                    {
+                        "inflictor_or_receiver_position": "inflictor",
+                        "damage_type_filter": {
+                            "include_all": [],
+                            "exclude_any": []
+                        },
+                        "damage_receiver_filter": {
+                            "include_tags": ["pigThrowerTower"],
+                            "exclude_tags": [],
+                            "alliance_rule_filter": "friendly"
+                        },
+                        "multiplier": 30,
+                        "propagation_decay": 0.1
+                    },
+                    {
+                        "inflictor_or_receiver_position": "inflictor",
+                        "damage_type_filter": {
+                            "include_all": [],
+                            "exclude_any": []
+                        },
+                        "damage_receiver_filter": {
+                            "include_tags": ["pigKnockbackTower"],
+                            "exclude_tags": [],
+                            "alliance_rule_filter": "friendly"
+                        },
+                        "multiplier": 30,
+                        "propagation_decay": 0.1
+                    },
+                    {
+                        "inflictor_or_receiver_position": "inflictor",
+                        "damage_type_filter": {
+                            "include_all": [],
+                            "exclude_any": []
+                        },
+                        "damage_receiver_filter": {
+                            "include_tags": ["finalBoss"],
+                            "exclude_tags": [],
+                            "alliance_rule_filter": "friendly"
+                        },
+                        "multiplier": 40,
+                        "propagation_decay": 0.01
+                    },
+                    {
+                        "inflictor_or_receiver_position": "inflictor",
+                        "damage_type_filter": {
+                            "include_all": [],
+                            "exclude_any": []
+                        },
+                        "damage_receiver_filter": {
+                            "include_tags": ["barracks"],
+                            "exclude_tags": [],
+                            "alliance_rule_filter": "friendly"
+                        },
+                        "multiplier": 25,
+                        "propagation_decay": 0.5
+                    },
+                    {
+                        "inflictor_or_receiver_position": "inflictor",
+                        "damage_type_filter": {
+                            "include_all": [],
+                            "exclude_any": []
+                        },
+                        "damage_receiver_filter": {
+                            "include_tags": ["pigSpreader"],
+                            "exclude_tags": [],
+                            "alliance_rule_filter": "friendly"
+                        },
+                        "multiplier": 20,
+                        "propagation_decay": 0.5
+                    }
+                ]
+            },
+            "badger:tags": {
+                "tags": ["scriptedAi", "piglin", "finalAi", "finalDefensiveAi"]
+            }
+        }
+    }
+}

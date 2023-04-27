@@ -1,0 +1,17 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_mountains_valleys_mixed_trees_scatter_01"
+    },
+    "places_feature": "badger:feature_mountains_valleys_mixed_cedar_trees_weighted",
+    "iterations": "1",
+    "scatter_chance": "100",
+    "project_input_to_floor": false,
+    "coordinate_eval_order": "xzy",
+
+    "x": "0",
+    "z": "0",
+    "y": "-1"    
+  }
+}

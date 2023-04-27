@@ -1,0 +1,104 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:zoner_piglin_increased_range_missiles",
+            "runtime_identifier": "badger:buildable",
+            "is_summonable": true
+        },
+        "mushroom_data": {
+            "function": "Upgrade",
+            "type": "Piglin"
+        },
+        "components": {
+            "badger:waypoint_marker_visibility": {
+                "waypoint_min_range": 20,
+                "waypoint_max_range": 20,
+                "compass_max_range": "short",
+                "filter_tagsets": [
+                    {
+                        "include_tags": [
+                            "base_assault"
+                        ],
+                        "exclude_tags": []
+                    }
+                ]
+            },
+            "badger:waypoint_marker": {
+                "path": "waypoint_piglin_rangeextender",
+                "label": "resources.unlock_journal_piglin_structure_range_extender.name",
+                "world_position_offset": [
+                    0,
+                    3,
+                    0
+                ]
+            },
+            "badger:loot": {
+                "table": "piglin_increase_missle_range"
+            },
+            "badger:buildable_foundation": {
+                "style": "generic"
+            },
+            "badger:buildable_requirement": {
+                "invalid_blocks": [
+                    "block_lava",
+                    "flowing_lava",
+                    "water",
+                    "flowing_water",
+                    "block_netherrack"
+                ]
+            },
+            "badger:aura_applicator": {
+                "auras": [
+                    {
+                        "include_tags": [
+                            "buffable-crows_nest"
+                        ],
+                        "exclude_tags": [],
+                        "alliance_rule_filter": "friendly",
+                        "buff_id": "badger:buff_crows_nest",
+                        "search_mode": "village"
+                    }
+                ]
+            },
+            "badger:buildable_structure": {
+                "nbt_file": "zoner_piglin_increased_range_missiles",
+                "build_time": 20,
+                "construction_start_trigger": "on_construction_start",
+                "construction_end_trigger": "on_construction_end"
+            },
+            "badger:health": {
+                "max_health": 250
+            },
+            "badger:buildable_destruction": {
+                "particle_effect": "badger:fx_destruction_mason_small"
+            },
+            "badger:tags": {
+                "tags": [
+                    "buildable",
+                    "buildable_combat",
+                    "buildable_structure",
+                    "piglin",
+                    "Upgrade",
+                    "pigRangeUp",
+                    "pigBuff"
+                ]
+            },
+            "badger:template": [
+                "badger:component_block_damage_default",
+                "badger:component_generate_ruins_default",
+                "badger:component_health_generation_default",
+                "badger:template_structure_piglin"
+            ],
+            "badger:offline_traits": {
+                "offline_disabled_components": [
+                    "badger:culture"
+                ],
+                "construction_disabled_components": [
+                    "badger:culture",
+                    "badger:aura_applicator"
+                ]
+            }
+        }
+    }
+}

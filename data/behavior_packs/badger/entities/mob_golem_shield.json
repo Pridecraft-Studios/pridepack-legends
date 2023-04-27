@@ -1,0 +1,323 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_golem_shield",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Ally Unit"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 2.65,
+        "height": 4.2
+      },
+      "badger:loot": {
+        "table": "common_mob"
+      },
+      "badger:movement": {
+        "move_speed": 5
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {
+      },
+      "badger:collision_weight": {
+        "weight": 5000
+      },
+      "badger:wander": {
+        "wander_frequency": 0.01,
+        "wander_radius": 0
+      },
+      "badger:navigation": {
+        "avoidance_lookahead": 15.0,
+        "fall_distance": 10,
+        "avoid_block_damage": true,
+        "ignore_solids_rule": "same_team"
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 7,
+          "sc": 6,
+          "rc": 7,
+          "ht": 1
+        }
+      },
+      "badger:tags": {
+        "tags": [
+          "shield_golem",
+          "mob",
+          "luredirect",
+          "special",
+          "frontline",
+          "poi_golem"
+        ]
+      },
+      "badger:health": {
+        "max_health": 600
+      },
+      "badger:map_controller": {
+        "initial_key_values": [
+          {
+            "key": "mob",
+            "value": "mob_golem_shield"
+          },
+          {
+            "key": "visibility",
+            "value": "revealed"
+          }
+        ]
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 20.0,
+        "waypoint_max_range": 20.0,
+        "compass_max_range": "short"
+      },
+      "badger:waypoint_marker": {
+        "path": "waypoint_mob_golem_shield",
+        "alliance_rule_filter": "friendly",
+        "label": "poi.ally.04.name",
+        "world_position_offset": [ 0, 7, 0 ]
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Ally targetting
+          {
+            "name": "ally_shield_spawn",
+            "max_range": 20,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "player",
+              "animal",
+              "host",
+              "wall",
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "shield_spawn"
+            ]
+          },
+          //Melee Attack
+          {
+            "name": "ally_shield_melee_attack",
+            "max_range": 18,
+            "enable_with_line_of_sight": true,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+            ],
+            "exclude_tags": [
+              "wall",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "attack_melee"
+            ]
+          },
+          //Celebrate
+          {
+            "name": "celebrate",
+            "max_range": 100,
+            "action_tickets": {
+              "sc": 0
+            },
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "celebration"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {
+          "ranged": 0.5,
+          "explosion": 2,
+          "hazard": 0.5
+        }
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "shield_spawn",
+            "trigger": "on_shield_spawn",
+            "range": {
+              "max_range": 2
+            },
+            "state_machine": {
+              "wind_up": 2.0,
+              "wind_down": 2.0,
+              "cooldown_time": 10,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {
+              "time_window": 4.21
+            },
+            "spawner": {
+              "type": "badger:proj_golem_shield_impact"
+            }
+          },
+          {
+            "name": "attack_melee",
+            "trigger": "on_attack_melee",
+            "on_hit_target_trigger": "on_golem_shield_melee_attack_hit",
+            "range": {
+              "max_range": 0.5
+            },
+            "state_machine": {
+              "wind_up": 2.0,
+              "wind_down": 3,
+              "cooldown_time": 1.0,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 20,
+                "position": [ 0.0, 0.0, 0.0 ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 30,
+                "damage_types": [
+                  "melee"
+                ]
+              },
+              "apply_status": {
+                "engaged": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                }
+              },
+              "knockback": {
+                "angle": 47,
+                "force": 30,
+                "falloff": {
+                  "min_radius": 0
+                }
+              }
+            }
+          }
+        ]
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 1.2,
+          "position": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "damage_effects": [
+          {
+            "damage": 0,
+            "damage_types": [
+            ],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+            ],
+            "apply_status": {
+              "large_collide": {
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:resist_status": {
+        "stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "rooted": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "spore_damaged": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "spore_healed": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "feared": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "frozen": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "poisoned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "poisoned_no_vfx": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "burning": {
+          "resisted": true,
+          "time": 2.5,
+          "resistance_persist_time": 0
+        }
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 0.0
+      },
+      "badger:auto_despawn": {
+        "distance": 400
+      },
+      "badger:telemetry_category": {
+        "category_name": "POI Golem"
+      },
+      "badger:village_influence": {
+        "amount": 20
+      },
+      "badger:telemetry_track_banner_order": {
+        "enabled": true
+      },
+      "badger:conditionally_solid_blocks": {
+        "include_tags": [
+          "barrier_waterfall"
+        ],
+        "exclude_tags": []
+      },
+      "badger:template": [
+        "badger:template_poi_mob",
+        "badger:component_leash_on_stop_default",
+        "badger:component_becomes_lost_poi_golem"
+      ]
+    }
+  }
+}

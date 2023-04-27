@@ -1,0 +1,10 @@
+{
+  "badger:foundation_service": {
+    "generic_foundation_falloff": [
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_upright_tree_mushroom_glow_01",
+      "material": "badger_wood"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "upright",
+        "camera_collision": false,
+        "directional_texture": false,
+        "directional_shape": true
+      },
+      "minecraft:block_light_emission": {
+        "emission": [
+          242.0,
+          144.0,
+          39.0,
+          255.0
+        ]
+      },
+      "badger:block_type": {
+        "tags": [
+          "gatherable_wood_sml"
+        ]
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }
+    }
+  }
+}

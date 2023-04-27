@@ -1,0 +1,35 @@
+{
+  "format_version": "1.13.0",
+
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_spawner_animal_ocelot_locator_fossil"
+    },
+
+    "structure_name": "spawner_block_animal_ocelot_locator_fossil",
+
+    "placement_range": {
+      "x": [0, 0],
+
+      "y": [0, 0],
+
+      "z": [0, 0]
+    },
+
+    "facing_direction": "random",
+
+    "constraints": {
+      "empty_space": {},
+
+      "grounded": {
+        "block_allow_list": [
+          "badger:block_bone_top",
+          "badger:block_pillar_bone_top",
+          "badger:block_bone_var01",
+          "badger:block_bone_var02",
+          "badger:block_bone_var03"
+        ]
+      }
+    }
+  }
+}

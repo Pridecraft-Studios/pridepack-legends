@@ -1,0 +1,75 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_alliance_creeper_central_flame",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "structure_spawner_creeper",
+        "buildable_category": "",
+        "height_offset": -7
+      },
+      "badger:omit_blocks_outline": {},
+      "badger:buildable_requirement": {
+        "invalid_blocks": [
+          "block_lava",
+          "water"
+        ]
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "poi_mob_alliance_creeper_central_structure",
+        "build_time": 0.1
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:mob_creeper",
+            "percentage": 1
+          }
+        ],
+        "spawn_delay": 2.0,
+        "cap": 6,
+        "batch": 2,
+        "rate": 2,
+        "offset": [
+          0,
+          5.5,
+          4
+        ],
+        "spawning_trigger": "on_barracks_spawn"
+      },
+      "badger:spawner_add_tags": {
+        "tags": [
+          "homestead_mob"
+        ]
+      },
+      "badger:scriptable_buildable_spawner": {},
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "mob_alliance_creeper_central_flame",
+          "CreeperMA"
+        ]
+      },
+      "badger:owned_territory": {
+        "prevent_overlap_tag_set": [],
+        "zone": 140,
+        "village_gen_zone_control_score_threshold": 0.0
+      },
+      "badger:zone_type": {
+        "zone_type": "mob_alliance"
+      },
+      "badger:health": {
+        "max_health": 300
+      },
+      "badger:template": [
+        "badger:template_poi_mob_alliance"
+      ]
+    }
+  }
+}

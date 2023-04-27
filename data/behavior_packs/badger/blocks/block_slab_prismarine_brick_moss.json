@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_slab_prismarine_brick_moss"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "slab",
+        "directional_texture": false,
+        "directional_shape": false
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }
+    }
+  }
+}

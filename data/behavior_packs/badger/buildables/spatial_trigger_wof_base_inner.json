@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spatial_trigger_wof_base_inner",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 220.0,
+        "height": 30.0
+      },
+      "badger:trigger_criteria": {
+        "filters": [
+          {
+            "include_tags": ["player"],
+            "exclude_tags": [],
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      }
+    }
+  }
+}

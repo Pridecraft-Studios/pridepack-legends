@@ -1,0 +1,49 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_poi_player_buff_speed_small",
+      "places_feature": "badger:feature_buff_speed_scatter_small"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "hot_and_dry"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "icy_cold"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "fatelands_pvp"
+            }
+          ]
+        }
+]
+    },
+    "distribution": {
+      "iterations": "math.random(2,6)",
+      "scatter_chance": "temp.villagedist = query.poi_distance(variable.worldx, variable.worldz); return temp.villagedist > 150 ? 5: 0;",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [8, 9]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [8, 9]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)"
+    }
+  }
+}
+

@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_plant_flower_begonia_01", 10.0],
+      ["badger:feature_plant_flower_begonia_02", 10.0],
+      ["badger:feature_plant_flower_begonia_03", 10.0],
+      ["badger:feature_plant_flower_begonia_04", 10.0],
+      ["badger:feature_plant_flower_begonia_05", 10.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_brokenlands_valleys_flower_begonias_weighted"
+    }
+  }
+}

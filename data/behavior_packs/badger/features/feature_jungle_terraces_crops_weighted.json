@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_jungle_terraces_crops_weighted"
+    },
+    "features": [
+      ["badger:feature_jungle_terraces_crop_01",5.0],
+      ["badger:feature_jungle_terraces_crop_02",10.0],
+      ["badger:feature_jungle_terraces_crop_03",20.0],
+      ["badger:feature_jungle_terraces_crop_04",30.0],
+      ["badger:feature_jungle_terraces_crop_05",40.0],
+      ["badger:feature_jungle_terraces_crop_06",50.0]
+    ]
+  }
+}

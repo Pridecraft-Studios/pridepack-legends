@@ -1,0 +1,20 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:template_village_mob_alliance"
+		},
+		"components": {
+			"badger:mob_alliance": {},
+			"badger:village_bounds_trigger_volume_size": {
+				"padding": 25
+			},
+			"badger:telemetry_game_zone": {
+				"id": 6,
+				"alt_id": 99,
+				"add_details_in_pvp": true
+			},
+			"badger:template": "badger:template_village_root"
+		}
+	}
+}

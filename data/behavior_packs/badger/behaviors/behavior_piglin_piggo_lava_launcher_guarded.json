@@ -1,0 +1,247 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_piglin_piggo_lava_launcher_guarded",
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 2
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 10
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Player targeting - short range
+          {
+            "name": "lava_launcher_player_volley",
+            "max_range": 15,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5.0,
+            "include_tags": [
+              "player"
+            ],
+            "action_tickets": {
+              "rc": 1
+            },
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "piggo_lava_launcher_volley"
+            ]
+          },
+          //Support Golem Targeting
+          {
+            "name": "lava_launcher_support_volley",
+            "max_range": 50,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5.0,
+            "include_tags": [
+              "support"
+            ],
+            "action_tickets": {
+              "rc": 1
+            },
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "piggo_lava_launcher_volley"
+            ]
+          },
+          //Player targeting - long range
+          {
+            "name": "lava_launcher_player_volley_long",
+            "max_range": 75,
+            "enable_with_line_of_sight": false,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5.0,
+            "include_tags": [
+              "player"
+            ],
+            "action_tickets": {
+              "rc": 1
+            },
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "piggo_lava_launcher_volley"
+            ]
+          },
+          //mob targeting
+          {
+            "name": "lava_launcher_mob_volley",
+            "max_range": 75,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5.0,
+            "include_tags": [
+              "mob"
+            ],
+            "action_tickets": {
+              "rc": 1
+            },
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "piggo_lava_launcher_volley"
+            ]
+          },
+          //nav fail buildable targeting
+          {
+            "name": "lava_launcher_buildable_volley_nav_fail",
+            "max_range": 10,
+            "enable_with_line_of_sight": false,
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "include_tags": [
+              "wall"
+            ],
+            "action_tickets": {
+              "rc": 1
+            },
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "piggo_lava_launcher_volley"
+            ]
+          },
+          //General targeting
+          {
+            "name": "lava_launcher_default_volley",
+            "max_range": 30,
+            "enable_with_line_of_sight": false,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5.0,
+            "include_tags": [],
+            "action_tickets": {
+              "rc": 1
+            },
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "piggo_lava_launcher_volley"
+            ]
+          },
+          //Approach
+          {
+            "name": "lava_launcher_target_approach",
+            "max_range": 30,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5.0,
+            "action_tickets": {
+              "sc": 1
+            },
+            "include_tags": [],
+            "exclude_tags": [
+              "animal",
+              "buildable_combat",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "piggo_lava_launcher_approach"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "piggo_lava_launcher_volley",
+            "range": {
+              "min_range": 0.35,
+              "max_range": 60
+            },
+            "state_machine": {
+              "wind_up": 2.83,
+              "wind_down": 1.5,
+              "cooldown_time": 8.0,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 2.5,
+              "max_range": 6,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_magma_block",
+              "position_offsets_from_center": [
+                [
+                  0.0,
+                  5.5,
+                  0.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "player",
+                  "mob",
+                  "piglin",
+                  "buildable_combat"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 30,
+                "damage_types": [
+                  "ranged"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 11
+              }
+            }
+          },
+          {
+            "name": "piggo_lava_launcher_approach",
+            "range": {
+              "max_range": 2.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

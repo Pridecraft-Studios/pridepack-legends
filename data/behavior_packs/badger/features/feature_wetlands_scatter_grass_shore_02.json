@@ -1,0 +1,28 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_wetlands_scatter_grass_shore_02"
+    },
+    "places_feature": "badger:feature_wetlands_grass_shore_weighted",
+    "iterations": "20",
+    "scatter_chance": "query.water_distance(variable.worldx, variable.worldz) <= 3 ? 100 : 0",
+    "project_input_to_floor": false,
+    "x": {
+      "extent": [
+        -4,
+        4
+      ],
+      "distribution": "uniform"
+    },
+    "z": {
+      "extent": [
+        -4,
+        4
+      ],
+      "distribution": "uniform"
+    },
+    "y": "0"
+
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:buff_zone_increase",
+      "runtime_identifier": "badger:buff",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buff": {
+        "buff_category": "defensive"
+      },
+      "badger:modifier_zone_size": {
+        "scale": 1.5
+      },
+      "badger:status": {
+				"applied_name": "zone_increase",
+				"default_resistance": {
+					"resisted": false,
+					"time": 5,
+					"resistance_persist_time": 0.5
+				}
+			}
+    }
+  }
+}

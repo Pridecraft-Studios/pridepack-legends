@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "code:scan_surface": {
+    "description": {
+      "identifier": "badger:feature_mud_pit_scan_surface"
+    },
+    "scan_surface_feature": "badger:feature_mud_pit_conditional_list",
+    "constant_y_offset": -1,
+    "temp_variable_setup": "temp.mud = q.mud_distance(v.worldx, v.worldz);",
+    "early_out": "temp.mud == 0 || temp.mud > 11 || v.worldy > q.sea_level + 1 || v.worldy < q.sea_level"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_poison",
+      "material": "badger_water"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "block",
+        "directional_texture": false,
+        "directional_shape": false,
+        "render_layer": "blend",
+        "collision_shape": "empty"
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      },
+      "badger:block_type": {
+        "tags": [
+          "water",
+          "world_hazard"
+        ]
+      },
+      "badger:terrain_type": {
+        "terrain": "poison"
+      },
+      "badger:liquid": {},
+      "badger:block_effects": {
+        "damage_amount": 0,
+        "damage_types": [
+          "hazard"
+        ],
+        "effect_frequency": 0.5,
+        "apply_status": {
+          "poisoned_no_vfx": {
+            "strength": 1.0
+          }
+        }
+      },
+      "badger:telemetry_category": {
+        "category_name": "Environmental"
+      },
+      "minecraft:block_light_emission": {
+        "emission": [
+          26,
+          165,
+          75,
+          10
+        ]
+      }
+    }
+  }
+}

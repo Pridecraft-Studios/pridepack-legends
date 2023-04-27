@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_village_cloth_flat_back_disabled"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty",
+        "directional_texture": false,
+        "directional_shape": false,
+        "camera_collision": true,
+        "collision_shape": "cube",
+        "connection_family": "cloth",
+        "connect_to_family": "cloth"
+      },
+      "badger:block_damage_receiver_material": {
+          "material": "block"
+      }
+    }
+  }
+}

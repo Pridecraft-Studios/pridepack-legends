@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:prop_piglin_attack_wall2",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:template": [
+        "badger:template_prop_wall"
+      ],
+      "badger:buildable_structure": {
+        "nbt_file": "chunk_piglin_attack_wall_01",
+        "build_time": 0
+      }
+    }
+  }
+}

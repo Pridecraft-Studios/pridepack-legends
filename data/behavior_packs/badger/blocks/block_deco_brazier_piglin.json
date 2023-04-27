@@ -1,0 +1,52 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_brazier_piglin", 
+      "material": "badger_metal"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty", 
+        "directional_texture": false, 
+        "directional_shape": true, 
+        "collision_shape": "block"
+      }, 
+      "minecraft:block_light_emission":{
+        "emission": [
+          255,
+          176,
+          0,
+          200
+        ]
+      }, 
+      "badger:telemetry_category": {
+        "category_name": "Environmental"
+      }, 
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }, 
+      "badger:block_effects": {
+        "damage_amount": 0.25, 
+        "damage_types": [
+          "fire"
+        ], 
+        "effect_frequency": 0.25, 
+        "apply_status": {
+          "burning": {
+            "strength": 1.0
+          }
+        }
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "deco_nether", 
+          "piglin_base_not_buildable"
+        ]
+      }, 
+      "badger:terrain_type": {
+        "terrain": "stone"
+      }
+    }
+  }
+}

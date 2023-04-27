@@ -1,0 +1,21 @@
+{
+
+  "format_version": "1.13.0",
+
+  "code:place_weighted_random": {
+
+    "description": {
+// this is all the stuff for the nylium patches in dbb. 
+      "identifier": "badger:feature_nether_dbb_piglin_grass_weighted_01"
+    },
+    "features": [
+      ["badger:feature_plant_nether_grass_dried_dbb", 15.0],
+      ["badger:feature_plant_nether_grass_dried_small_dbb",15.0],
+      ["badger:feature_plant_nether_grass_dried_tall_dbb",15.0],
+      ["badger:feature_plant_netherwart_dried_large_dbb",15.0],
+      ["badger:feature_plant_netherwart_dried_large_dbb",15.0]
+    ]
+
+  }
+
+}

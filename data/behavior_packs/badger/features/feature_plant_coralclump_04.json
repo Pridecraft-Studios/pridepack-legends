@@ -1,0 +1,29 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_plant_coralclump_04"
+    },
+    "structure_name": "nature/plant_coralclump_04",
+    "placement_range": {
+      "x": [
+        0,
+        2
+      ],
+      "z": [
+        0,
+        2
+      ]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {
+        "block_allow_list": [
+          "badger:block_riverbed_a",
+          "badger:block_riverbed_b"
+        ]
+      },
+      "empty_space": {}
+    }
+  }
+}

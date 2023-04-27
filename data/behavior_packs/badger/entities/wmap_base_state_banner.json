@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:wmap_base_state_banner",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 2.125,
+        "length": 0.1875,
+        "width": 0.467968254089
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      }
+    }
+  }
+}

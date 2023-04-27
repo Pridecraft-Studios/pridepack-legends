@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_alliance_zombie_deco_2",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_structure": {
+        "nbt_file": "prop_poi_mob_alliance_zombie_2"
+      },
+      "badger:buildable_requirement": {
+        "invalid_blocks": [
+          "block_lava",
+          "water"
+        ]
+      },
+      "badger:omit_blocks_outline": {},
+      "badger:buildable_foundation": {
+        "style": "generic"
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_prop",
+          "buildable_structure",
+          "mob_alliance_zombie_deco_2",
+          "donotattack"
+        ]
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_health_generation_default"
+      ]
+    }
+  }
+}

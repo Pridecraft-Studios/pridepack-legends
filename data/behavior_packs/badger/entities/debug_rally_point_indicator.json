@@ -1,0 +1,26 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:debug_rally_point_indicator",
+        "runtime_identifier": "badger:badger_mob",
+        "is_summonable": true
+      },
+      "components": {
+        "badger:aabb": {
+          "width": 20.0,
+          "height": 20.0
+        },
+        "badger:trigger_criteria": {
+          "filters": [
+            {
+              "include_tags": ["piglin"],
+              "exclude_tags": [],
+              "alliance_rule_filter": "friendly"
+            }
+          ]
+        }
+      }
+    }
+  }
+  

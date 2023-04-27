@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "material": "badger_wood", 
+      "identifier": "badger:block_coal_burning_top"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube", 
+        "directional_texture": false, 
+        "directional_shape": true
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "gatherable_coal"
+        ]
+      },
+      "minecraft:block_light_emission": {
+        "emission": [
+          255,
+          125,
+          0,
+          130
+        ]
+      }
+    }
+  }
+}

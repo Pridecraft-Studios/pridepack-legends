@@ -1,0 +1,24 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_buff_speed_scatter_small"
+    },
+    "places_feature": "badger:feature_poi_player_buff_speed",
+    "iterations": "math.random(3,6)",
+    "scatter_chance": "return 100 * (1 - query.is_in_village(variable.originx, variable.originz));",
+    "project_input_to_floor": false,
+    "x": {
+      "extent": [-8, 8],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [-8, 8],
+      "distribution": "gaussian"
+    },
+    "y": {
+      "extent": [-2, 2],
+      "distribution": "gaussian"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:metadata_hurtbox",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 5.0,
+        "height": 5.0
+      },
+      "badger:meta_aabb": {
+      },
+      "badger:hurtbox": {
+      },
+      "badger:hurtbox_tags": {
+        "tags": [
+          "buildable_combat"
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb"
+      },
+      "badger:take_block_space": {}
+    }
+  }
+}

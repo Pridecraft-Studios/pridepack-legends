@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_brokenlands_plant_megafern_small_01", 15.0],
+      ["badger:feature_brokenlands_plant_megafern_small_02", 10.0],
+      ["badger:feature_brokenlands_plant_megafern_small_03", 5.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_brokenlands_valleys_veg_cluster_scatter_weighted"
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "badger:in_game_ui": {
+    // "format_version": "1.0.0",
+    "resource_items": [
+      "wood",
+      "stone",
+      "iron",
+      "coal",
+      "redstone",
+      "diamond",
+      "gold",
+      "xp_common",
+      "emerald"
+    ],
+    "max_hotbar_size": 8,
+    "show_interactable_building": true,
+    // Order of toolbar_items must match order of songbook_categories
+    "toolbar_items": [
+      {
+        // resourcing
+        "toolbar_id": "resourcing",
+        "initial_hotbar_items": [
+          "badger:terraform_gather_surface_wood",
+          "badger:terraform_gather_surface_stone"
+        ]
+      },
+      {
+        // combat
+        "toolbar_id": "mobs",
+        "initial_hotbar_items": []
+      },
+      {
+        // structure
+        "toolbar_id": "utility",
+        "initial_hotbar_items": []
+      },
+      {
+        // village
+        "toolbar_id": "village",
+        "initial_hotbar_items": []
+      }
+    ],
+    "compass_ranges": [
+      {
+        "compass_range_id": "zero",
+        "compass_range_value": 0.0
+      },
+      {
+        "compass_range_id": "close",
+        "compass_range_value": 50.0
+      },
+      {
+        "compass_range_id": "short",
+        "compass_range_value": 250.0
+      },
+      {
+        "compass_range_id": "medium",
+        "compass_range_value": 750.0
+      },
+      {
+        "compass_range_id": "medium-long",
+        "compass_range_value": 1000.0
+      },
+      {
+        "compass_range_id": "long",
+        "compass_range_value": 1500.0
+      },
+      {
+        "compass_range_id": "infinite",
+        "compass_range_value": -1.0
+      },
+      {
+        "compass_range_id": "beta",
+        "compass_range_value": 180.0
+      },
+      {
+        "compass_range_id": "poiQuestionMark",
+        "compass_range_value": 192
+      }
+    ],
+    // gamepad: dpad up, down, left, right
+    // keyboard: 1, 2, 3 ,4
+    "songbook_categories": [
+      "resourcing",
+      "mobs",
+      "utility",
+      "village"
+    ],
+    "show_locked_recipes": false,
+    "toolbar_category_index_start": 0,
+    "respawn_post_delay_time": 3,
+    "respawn_pre_screen_delay_time": 1.5,
+    // initial hud elements that are visible at start of game, only affects hud if onboarding is on
+    // all available hud elements: hud_hearts, hud_toolbar, hud_hotbar, hud_quickslot, hud_spawner_bar_flames, hud_spawner_bar_spawners, hud_spawner_bar_build_allays
+    // hud_spawner_bar_gather_allays, hud_map, hud_face_buttons, hud_resource_bar_core, hud_resource_bar_other, hud_compass, songbook
+    "hud_initial_visible_elements": [
+      "hud_hearts",
+      "hud_toolbar",
+      "hud_hotbar",
+      "hud_quickslot",
+      "hud_spawner_bar_flames",
+      "hud_spawner_bar_spawners",
+      "hud_spawner_bar_build_allays",
+      "hud_spawner_bar_gather_allays",
+      "hud_map",
+      "hud_face_buttons",
+      "hud_resource_bar_core",
+      "hud_resource_bar_other",
+      "hud_objective_health_bars",
+      "songbook"
+    ],
+    "end_of_match_chat_message_templates": [
+      "end_of_match.chat.message1",
+      "end_of_match.chat.message2",
+      "end_of_match.chat.message3",
+      "end_of_match.chat.message4",
+      "end_of_match.chat.message5"
+    ],
+    "fade_out_hotbar_tooltip_timer": 5,
+    "recipe_hotbar_bypass": [
+      "badger:unlock_gather_uncommon"
+    ]
+  }
+}

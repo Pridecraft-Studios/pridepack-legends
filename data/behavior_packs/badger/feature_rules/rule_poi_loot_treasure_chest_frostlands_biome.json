@@ -1,0 +1,41 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_poi_loot_treasure_chest_frostlands_biome",
+      "places_feature": "badger:feature_poi_loot_treasure_chest_frostlands"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "frostlands_hills"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "scatter_chance": "return 40 * (1 - query.is_in_village(variable.originx, variable.originz));",
+      "early_out": "v.scatteredy < 35 || math.mod(math.floor(v.originx / 16), 6) != 0 || math.mod(math.floor(v.originz / 16), 6) != 0",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [
+          2,
+          16
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "z": {
+        "distribution": "gaussian",
+        "extent": [
+          2,
+          16
+        ]
+      }
+    }
+  }
+}

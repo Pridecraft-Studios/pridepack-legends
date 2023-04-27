@@ -1,0 +1,39 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_grasslands_flowers_general",
+      "places_feature": "badger:feature_grasslands_flowers_weighted"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "grasslands"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "temp.zscatterfix = math.random(0,16); temp.xscatterfix = math.random(0,16); return math.random(10,15);",
+      "scatter_chance": "temp.minminheight = query.heightmap(variable.originx, variable.originz);\r\ntemp.minmaxheight = query.heightmap(variable.originx, variable.originz + 16);\r\ntemp.maxminheight = query.heightmap(variable.originx + 16, variable.originz);\r\ntemp.maxmaxheight = query.heightmap(variable.originx + 16, variable.originz + 16);\r\ntemp.midheight = query.heightmap(variable.originx + 8, variable.originz + 8);\r\n\r\ntemp.maxheight = math.max(temp.minminheight, math.max(temp.minmaxheight, math.max(temp.maxminheight, math.max(temp.maxmaxheight, temp.midheight))));\r\ntemp.minheight = math.min(temp.minminheight, math.min(temp.minmaxheight, math.min(temp.maxminheight, math.min(temp.maxmaxheight, temp.midheight))));\r\n\r\n return (temp.maxheight - temp.minheight) > 1 ? 0 : 100;",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [
+          "temp.xscatterfix",
+          "temp.xscatterfix + 12"
+        ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "gaussian",
+        "extent": [
+          "temp.zscatterfix",
+          "temp.zscatterfix + 12"
+        ]
+      }
+    }
+  }
+}

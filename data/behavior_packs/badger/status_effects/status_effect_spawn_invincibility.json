@@ -1,0 +1,45 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:status_effect_spawn_invincibility",
+			"runtime_identifier": "badger:status_effect"
+		},
+		"components": {
+			"badger:status": {
+				"applied_name": "spawn_invincibility",
+				"default_resistance": {
+					"resisted": false,
+					"time": 5.0,
+					"resistance_persist_time": 0.0
+				}
+            },
+            "badger:modifier_resistance": {
+                "resistances": {
+                  "melee": 0,
+                  "ranged": 0,
+                  "explosion": 0,
+                  "piercing": 0,
+                  "cavalry": 0,
+                  "fire": 0,
+                  "spore": 0,
+                  "crush": 0,
+                  "fall_damage": 0,
+                  "player": 0
+                }
+              },
+              "badger:negate_status": {
+                "negated_status": [
+                  "spore_damaged",
+                  "burning",
+                  "wet",
+                  "frozen",
+                  "stunned"
+                ]
+              },
+              "badger:modifier_knockback_resistance": {
+                "post_multiply": 0
+              }
+		}
+	}
+}

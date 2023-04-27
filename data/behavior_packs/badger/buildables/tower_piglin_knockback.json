@@ -1,0 +1,69 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:tower_piglin_knockback",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_health_generation_default",
+        "badger:component_offline_construction_default",
+        "badger:template_tower_with_foundation",
+        "badger:template_structure_piglin"
+      ],
+      "badger:telemetry_category": {
+        "category_name": "Piglin Structure"
+      },
+      "badger:buildable_requirement": {
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "tower_piglin_knockback",
+        "build_time": 20,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:generate_ruins": {
+        "max": 6,
+        "min": -1
+      },
+      "badger:health": {
+        "max_health": 200
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_neather_medium"
+      },
+      "badger:loot": {
+        "table": "piglin_super_tower"
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            0, 
+            3, 
+            0
+          ]
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "piglinStructure",
+          "pigKnockbackTower",
+          "piglin"
+        ]
+      }
+    }
+  }
+}

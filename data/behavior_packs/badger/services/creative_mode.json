@@ -1,0 +1,23 @@
+{
+  "badger:creative_mode_service": {
+    "buffs": [
+      "badger:buff_player_creative_mode"
+    ],
+    "waive_costs": {
+      "exclude_resources": [
+        // Tickets
+        "fountain",
+        "lure_cap",
+        "lure_type"
+      ],
+      "waive_tickets": [
+        "gather",
+        "fountain",
+        "build",
+        "spawner",
+        "spawn"
+      ]
+    },
+    "waive_unlocks": {}
+  }
+}

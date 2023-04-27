@@ -1,0 +1,30 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_bullrush_clump_01_wetlands",
+        25
+      ],
+      [
+        "badger:feature_bullrush_clump_02_wetlands",
+        25
+      ],
+      [
+        "badger:feature_bullrush_clump_03_wetlands",
+        25
+      ],
+      [
+        "badger:feature_deco_plant_grassrush_02",
+        50
+      ],
+      [
+        "badger:feature_deco_plant_grassrush_03",
+        50
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_wetlands_grass_shore_weighted"
+    }
+  }
+}

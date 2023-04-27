@@ -1,0 +1,299 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_dot_piston",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1,
+        "height": 51
+      },
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "name": "dot_piston_enemy_group_turret_side1",
+            "min_range": 15,
+            "shape": {
+              "type": "wedge",
+              "aperture_angle": 70,
+              "radius": 60,
+              "thickness": 30,
+              "rotation": 90,
+              "position": [
+                -5.0,
+                0.0,
+                0.0
+              ]
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "required_target_count": 5,
+            "actions": [
+              "turret"
+            ]
+          },
+          {
+            "name": "dot_piston_enemy_group_turret_side2",
+            "min_range": 15,
+            "shape": {
+              "type": "wedge",
+              "aperture_angle": 70,
+              "radius": 60,
+              "thickness": 30,
+              "rotation": 270,
+              "position": [
+                5.0,
+                0.0,
+                0.0
+              ]
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "required_target_count": 5,
+            "actions": [
+              "turret"
+            ]
+          },
+          {
+            "name": "dot_piston_enemy_group_turret_side3",
+            "min_range": 15,
+            "shape": {
+              "type": "wedge",
+              "aperture_angle": 70,
+              "radius": 60,
+              "thickness": 30,
+              "rotation": 180,
+              "position": [
+                0.0,
+                0.0,
+                -5.0
+              ]
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "required_target_count": 5,
+            "actions": [
+              "turret"
+            ]
+          },
+          {
+            "name": "dot_piston_enemy_group_turret_side4",
+            "min_range": 15,
+            "shape": {
+              "type": "wedge",
+              "aperture_angle": 70,
+              "radius": 60,
+              "thickness": 30,
+              "rotation": 0,
+              "position": [
+                0.0,
+                0.0,
+                5.0
+              ]
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "required_target_count": 5,
+            "actions": [
+              "turret"
+            ]
+          },
+          {
+            "name": "dot_piston_enemy_turret_side1",
+            "min_range": 15,
+            "shape": {
+              "type": "wedge",
+              "aperture_angle": 70,
+              "radius": 60,
+              "thickness": 30,
+              "rotation": 90,
+              "position": [
+                -5.0,
+                0.0,
+                0.0
+              ]
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "turret"
+            ]
+          },
+          {
+            "name": "dot_piston_enemy_turret_side2",
+            "min_range": 15,
+            "shape": {
+              "type": "wedge",
+              "aperture_angle": 70,
+              "radius": 60,
+              "thickness": 30,
+              "rotation": 270,
+              "position": [
+                5.0,
+                0.0,
+                0.0
+              ]
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "turret"
+            ]
+          },
+          {
+            "name": "dot_piston_enemy_turret_side3",
+            "min_range": 15,
+            "shape": {
+              "type": "wedge",
+              "aperture_angle": 70,
+              "radius": 60,
+              "thickness": 30,
+              "rotation": 180,
+              "position": [
+                0.0,
+                0.0,
+                -5.0
+              ]
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "turret"
+            ]
+          },
+          {
+            "name": "dot_piston_enemy_turret_side4",
+            "min_range": 15,
+            "shape": {
+              "type": "wedge",
+              "aperture_angle": 70,
+              "radius": 60,
+              "thickness": 30,
+              "rotation": 0,
+              "position": [
+                0.0,
+                0.0,
+                5.0
+              ]
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "turret"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "turret",
+            "trigger": "on_proj_shoot",
+            "range": {
+              "min_range": 10,
+              "max_range": 60
+            },
+            "state_machine": {
+              "wind_up": 3,
+              "cooldown_time": 8.0,
+              "deactivates_on_cooldown": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_poi_ice_tower",
+              "position_offsets_from_center": [
+                [
+                  -6.0,
+                  24.5,
+                  0
+                ],
+                [
+                  6.0,
+                  24.5,
+                  0
+                ],
+                [
+                  0,
+                  24.5,
+                  -6.0
+                ],
+                [
+                  0,
+                  24.5,
+                  6.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "mob",
+                  "wall",
+                  "gate",
+                  "buildable_combat"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 0,
+                "damage_types": [
+                  "neutral"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "block"
+        ]
+      },
+      "badger:exclude_from_spatial_partition": {}
+    }
+  }
+}

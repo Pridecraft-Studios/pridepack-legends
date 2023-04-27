@@ -1,0 +1,60 @@
+{
+  "badger:data_validation_service": {
+    "scan_folders": [
+      "buildables",
+      "camera",
+      "entity",
+      "hit_reactions",
+      "knockback_reactions",
+      "presentation_entity",
+      "villages"
+    ],
+    "root_keys": [
+      "format_version",
+      "minecraft:entity",
+      "minecraft:client_entity"
+    ],
+    "valid_entity_objects": [
+      "description",
+      "mushroom_data",
+      "components"
+    ],
+    "ignore_components": [
+      "badger:template",
+      "badger:auto_fire",
+      "badger:buildable_snap_point",
+      "badger:buildable_destruction",
+      "badger:block_conversion", //I'm struggling too much working through the differences between the parser and the data I'm seeing in game on this one.
+      "badger:damage_receiver", //because the damage_resistances element uses dynamic keys.
+      "badger:destruction_vfx",
+      "badger:interactable", //this is a client side component that is only documented on the client side.
+      "badger:map_controller",
+      "badger:objective_health_bar",
+      "badger:omit_blocks_outline", //This is only used on the client side but stored in the behavior pack.
+      "badger:presentation_event", //because the whole thing is a mess of dynamic keys within dynamic keys
+      "badger:preview_snapping",
+      "badger:tracks_health_change", //This is only used on the client side but stored in the behavior pack.
+      "badger:telemetry_game_zone",
+      "badger:village_bounds_trigger_volume_size",
+      "badger:village_bounds_trigger_volume_size",
+      "badger:village_bridge",
+      "badger:village_building_path",
+      "badger:village_district_path",
+      "badger:village_heart_destruction",
+      "badger:village_path",
+      "badger:village_resource_removal",
+      "badger:village_weathering",
+      "badger:village_zone",
+      "badger:village_zone_scoring",
+      "badger:zone_visualization", //This is a client side component stored on the server
+      "ticket_cost"
+    ],
+    "ignore_component_elements": [
+      "badger:aoe:shape",
+      "badger:buildable_structure:faction_variations", //Uses dynamic keys.
+      "badger:destruction_vfx:AlwaysPlayJsonName", //Used on the Client Side
+      "badger:disable_by_health:block_conversion_states", //Uses Dynamic keys
+      "badger:buildable_foundation:faction_variations" //Uses Dynamic keys
+    ]
+  }
+}

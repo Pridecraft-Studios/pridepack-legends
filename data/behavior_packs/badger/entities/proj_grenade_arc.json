@@ -1,0 +1,31 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:proj_grenade_arc",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:projectile": {
+                "horizontal_speed": 30.0,
+                "min_flight_time": 3.0
+            },
+            "badger:projectile_physics": {
+                "gravity": -25
+            },
+            "badger:presentation_event": {
+                "on_entity_hit": {
+                    "spawn_entity": [
+                        "badger:proj_grenade_impact"
+                    ]
+                },
+                "on_world_hit": {
+                    "spawn_entity": [
+                        "badger:proj_grenade_impact"
+                    ]
+                }
+            }
+        }
+    }
+}

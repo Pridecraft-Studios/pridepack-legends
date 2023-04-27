@@ -1,0 +1,75 @@
+{
+  "id": "piglin_biome_wof",
+  "textures": [
+    {
+      "texture": "piglin/biome_only/piglin_biome_wof",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+  "additional_data": {
+    "height_range": [
+      10,
+      20
+    ],
+    "lock_rotation": true,
+    "priority_biomes": [
+      "nether_final_battle",
+      "lava_moat",
+      "nether_piglin_border_blend",
+      "nether_burnt_border",
+      "nether_final_battle_arena",
+      "nether_burnt_border_final",
+      "nether_burnt_border_inner_edge",
+      "nether_burnt_border_outer_edge",
+      "nether_burnt_border_inner_edge_final",
+      "nether_burnt_border_outer_edge_final"
+    ],
+    "village_texture_stamp": true
+  },
+  "biome_map": [
+    {
+      "biome": "nether_final_battle",
+      "value": 255
+    },
+    {
+      "biome": "nether_piglin_border",
+      "value": 155
+    },
+    {
+      "biome": "nether_piglin_border_blend",
+      "value": 55
+    },
+    {
+      "biome": "nether_burnt_border",
+      "value": 100
+    },
+    {
+      "biome": "nether_burnt_border_outer_edge",
+      "value": 200
+    },
+    {
+      "biome": "nether_burnt_border_inner_edge",
+      "value": 220
+    },
+    {
+      "biome": "nether_final_battle_arena",
+      "value": 150
+    },
+    {
+      "biome": "nether_burnt_border_final",
+      "value": 70
+    },
+    {
+      "biome": "nether_burnt_border_inner_edge_final",
+      "value": 180
+    },
+    {
+      "biome": "nether_burnt_border_outer_edge_final",
+      "value": 230
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_host_knowledge_carefree",
+      "runtime_identifier": "badger:behavior"
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 0
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 20
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "max_range": 50,
+            "action_tickets": {
+              "rc": 1
+            },
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "cheer"
+            ]
+          },
+          {
+            "max_range": 50,
+            "include_tags": [
+              "host"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "talk"
+            ]
+          },
+          {
+            "max_range": 75,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "follow"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder"
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "talk",
+            "trigger": "talk",
+            "range": {
+              "min_range": 1.0,
+              "max_range": 5.0
+            },
+            "state_machine": {
+              "wind_up": 3.3,
+              "wind_down": 0.5,
+              "cooldown_time": 15.0,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "cheer",
+            "range": {
+              "max_range": 10.0
+            },
+            "state_machine": {
+              "wind_up": 4.0,
+              "wind_down": 0.5,
+              "cooldown_time": 20.0,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "follow",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 2.5
+            },
+            "state_machine": {
+              "wind_up": 0.0,
+              "cooldown_time": 5.0,
+              "deactivates_on_cooldown": true
+            }
+          }
+        ]
+      }
+    }
+  }
+}

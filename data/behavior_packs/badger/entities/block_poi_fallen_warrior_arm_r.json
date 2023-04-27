@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:block_poi_fallen_warrior_arm_r",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 4.5,
+        "length": 1.5,
+        "height": 0.9
+      },
+      "badger:tags": {
+        "tags": [
+          "block",
+          "block_poi_fallen_warrior_arm_r",
+          "fallenwarriorrightarm"
+        ]
+      }
+    }
+  }
+}

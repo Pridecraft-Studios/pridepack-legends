@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_forest_trees_autumn_hill_aggregate"
+    },
+    "early_out": "first_failure",
+    "features": [
+      "badger:feature_forest_autumn_trees_hill_scatter",
+      "badger:feature_forest_trees_autumn_leaves_scatter"
+    ]
+  }
+}

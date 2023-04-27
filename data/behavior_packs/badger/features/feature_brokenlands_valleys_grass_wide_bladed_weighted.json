@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_plant_grass_wide_bladed_01", 10.0],
+      ["badger:feature_plant_grass_wide_bladed_02", 10.0],
+      ["badger:feature_plant_grass_wide_bladed_03", 10.0],
+      ["badger:feature_plant_grass_wide_bladed_04", 10.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_brokenlands_valleys_grass_wide_bladed_weighted"
+    }
+  }
+}

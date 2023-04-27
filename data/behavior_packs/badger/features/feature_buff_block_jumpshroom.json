@@ -1,0 +1,53 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_buff_block_jumpshroom"
+    },
+    "may_replace": [
+      "minecraft:air",
+      "badger:block_deco_terraced_grass_01",
+      "badger:block_deco_terraced_grass_02",
+      "badger:block_deco_terraced_grass_03",
+      "badger:block_deco_green_plant_01",
+      "badger:block_deco_green_plant_02",
+      "badger:block_deco_orange_flower_01",
+      "badger:block_deco_orange_flower_02",
+      "badger:block_shrub", 
+      "badger:block_slab_shrub"
+],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_buff_jumpshroom",
+    "may_attach_to": {
+      "bottom": [
+        "minecraft:grass",
+        "badger:block_sand",
+        "badger:block_sand",
+        "badger:block_rivershore",
+        "badger:block_sand",
+        "badger:block_sand_d1",
+        "badger:block_sand_d2",
+        "badger:block_sand_red",
+        "badger:block_riverbed_a",
+        "badger:block_riverbed_a2",
+        "badger:block_redsand_b",
+        "badger:block_redsand_c",
+        "badger:block_redsand_d",
+        "badger:block_redsand_a_top",
+        "badger:block_cliffdirt_01",
+        "badger:block_alpine_rock_01",
+        "badger:block_alpine_rock_snowy_01",
+        "badger:block_shrub", 
+        "badger:block_slab_shrub",
+        "badger:block_tree_mangrove_01",
+        "badger:block_tree_mangrove_02",
+        "badger:block_tree_mangrove_03",
+        "badger:block_tree_mangrove_04",
+        "badger:block_oasistree_leaf_02",
+        "badger:block_tree_mangrove_01"
+        
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_locator_sea_turtle_roam",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:tags": {
+        "tags": [
+          "locator_sea_turtle_roam",
+          "donotattack",
+          "spawner_locator_animal"
+        ]
+      },
+      "badger:aabb": {
+        "width": 1,
+        "height": 1
+      },
+      "badger:campaign_team": {
+        "team_tag": "wild_team"
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:locator_sea_turtle_roam",
+            "percentage": 1
+          }
+        ],
+        "cap": 2,
+        "batch": 1,
+        "rate": 2,
+        "min_radius": 5,
+        "max_radius": 20
+      }
+    }
+  }
+}

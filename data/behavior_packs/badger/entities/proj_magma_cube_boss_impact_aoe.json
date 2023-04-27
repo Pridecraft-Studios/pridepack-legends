@@ -1,0 +1,71 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_magma_cube_boss_impact_aoe",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.7,
+        "height": 1.9
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": false,
+        "auto_step": 3.1
+      },
+      "badger:removal_time": {
+        "time": 12
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 6
+        },
+        "apply_status": {
+          "engaged": {
+            "chance": 1.0,
+            "strength": 1.0
+          }
+        },
+        "timer": {
+          "interval": 1
+        },
+        "damage_effects": [
+          {
+            "name": "aoe_magma_boss_impact",
+            "damage": 1,
+            "damage_types": [
+              "ranged"
+            ],
+            "include_tags": [],
+            "exclude_tags": [],
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:movement": {
+        "move_speed": 0.0
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:piglin_magma_cube_med",
+            "percentage": 1
+          }
+        ],
+        "cap": 1,
+        "rate": 30
+      },
+      "badger:template":[
+        "badger:template_impact_entity_piglin"
+      ]
+    }
+  }
+}

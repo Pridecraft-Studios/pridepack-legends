@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_poi_tower",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Player"
+    },
+    "components": {
+      "badger:template": ["badger:template_structure_stone_player",
+        "badger:component_block_damage_default"],
+      // TODO special loot table?
+      "badger:loot": {
+        "table": "common_structure"
+      }
+    }
+  }
+}

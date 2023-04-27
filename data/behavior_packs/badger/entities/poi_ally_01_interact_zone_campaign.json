@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:poi_ally_01_interact_zone",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:poi_ally_01_interact_zone",
+        "game_mode": "campaign"
+      },
+      "badger:bsharp_interact_cost": {
+        "resource_cost": [
+          {
+            "item": "gold",
+            "amount": 100
+          },
+          {
+            "item": "stone",
+            "amount": 500
+          }
+        ],
+        "unlock": {
+          "item": "unlock_poi_golem_resource",
+          "amount": 1
+        }
+      }
+    }
+  }
+}

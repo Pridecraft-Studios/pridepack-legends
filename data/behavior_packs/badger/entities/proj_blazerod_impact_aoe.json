@@ -1,0 +1,52 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_blazerod_impact_aoe",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:removal_time": {
+        "time": 0.1
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 0.35
+        },
+        "damage_effects": [
+          {
+            "name": "aoe_blazerod_impact",
+            "damage": 0.01,
+            "damage_types": [
+              "fire"
+            ],
+            "include_tags": [],
+            "exclude_tags": [],
+            "apply_status": {
+              "burning": {
+                "chance": 1.0,
+                "strength": 1.0
+              },
+              "engaged": {
+                "chance": 1.0,
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:movement": {
+        "move_speed": 0.0
+      },
+      "badger:template":[
+        "badger:template_impact_entity_piglin"
+      ]
+    }
+  }
+}

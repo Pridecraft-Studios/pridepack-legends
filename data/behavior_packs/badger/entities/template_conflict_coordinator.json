@@ -1,0 +1,60 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_conflict_coordinator",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Spawner",
+      "type": "Player"
+    },
+    "components": {
+      "badger:conflict_coordinator": {
+        "player_engagement_distance": 50,
+        "activated_tag": "coordinator_active"
+      },
+      "badger:aura_applicator": {
+        "auras": [
+          // ex. all mobs are invulnerable until "discovered"
+          {
+            "unlock_condition": {
+              "tag_filter": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "coordinator_active"
+                ]
+              }
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "any_team",
+            "can_apply_to_self": false,
+            "buff_id": "badger:buff_invulnerable",
+            "search_mode": "spawner_controller"
+          }
+          // // ex. creepers specifically are feared until "liberated"
+          // {
+          //   "tag_filter": {
+          //     "include_tags": [],
+          //     "exclude_tags": [
+          //       "coordinator_active"
+          //     ]
+          //   },
+          //   "include_tags": [
+          //     "creeper"
+          //   ],
+          //   "exclude_tags": [],
+          //   "alliance_rule_filter": "any_team",
+          //   "can_apply_to_self": false,
+          //   "buff_id": "badger:status_effect_feared",
+          //   "search_mode": "spawner_controller"
+          // }
+        ]
+      }
+    }
+  }
+}

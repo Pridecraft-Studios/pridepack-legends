@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+    "identifier": "badger:feature_nether_horderunners_piglin_grass_weighted"
+    },
+    "features": [
+      ["badger:feature_plant_nether_grass_dried", 15.0],
+      ["badger:feature_plant_nether_grass_dried_small", 15.0],
+      ["badger:feature_plant_nether_grass_dried_tall", 15.0],
+      ["badger:feature_plant_netherwart_dried_small", 5.0],
+      ["badger:feature_plant_netherwart_dried_large", 5.0]
+    ]
+  }
+}

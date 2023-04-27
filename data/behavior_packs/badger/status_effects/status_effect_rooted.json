@@ -1,0 +1,20 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:status_effect_rooted",
+			"runtime_identifier": "badger:status_effect"
+		},
+		"components": {
+			"badger:status": {
+				"applied_name": "rooted",
+				"default_resistance": {
+					"resisted": false,
+					"time": 4.0,
+					"resistance_persist_time": 12.0
+				}
+			},
+			"badger:disables_movement": {}		
+		}
+	}
+}

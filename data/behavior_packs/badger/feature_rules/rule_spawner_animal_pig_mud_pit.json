@@ -1,0 +1,49 @@
+{
+  "format_version": "1.13.0",
+
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_spawner_animal_pig_mud_pit",
+      "places_feature": "badger:feature_spawner_animal_pig_mud_pit_aggregate"
+    },
+
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mud_pit"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "grasslands_mud_pit"
+            }
+          ]
+        }
+      ]
+    },
+
+    "distribution": {
+      "iterations": "1",
+      "early_out": "query.get_game_rule_value('roaming_animals') == false",
+      "scatter_chance": "query.get_game_rule_value('roaming_animals') ? 4 : 0",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [0, 6]
+      },
+      "z": {
+        "distribution": "gaussian",
+        "extent": [0, 6]
+      },
+
+      "y": "query.heightmap(variable.worldx, variable.worldz)+1",
+
+      "coordinate_eval_order": "xzy"
+    }
+  }
+}

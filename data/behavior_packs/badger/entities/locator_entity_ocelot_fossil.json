@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:locator_entity_ocelot_fossil",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:heartbeat": {
+        "min_expire_time": 0,
+        "max_expire_time": 5
+      },
+      "badger:aabb": {
+        "width": 1,
+        "height": 1
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {}
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 2,
+          "sc": 1
+        }
+      },
+      "badger:tags": {
+        "tags": ["locator_ocelot_fossil", "donotattack"]
+      }
+    }
+  }
+}

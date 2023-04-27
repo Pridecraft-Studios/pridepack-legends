@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:locator_wolf_roam_far",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:removal_time": {
+        "time": 7
+     },
+      "badger:aabb": {
+        "width": 1,
+        "height": 1
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {}
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 6,
+          "sc": 4
+        }
+      },
+      "badger:tags": {
+        "tags": ["locator_wolf_roam_far", "donotattack"]
+      }
+    }
+  }
+}

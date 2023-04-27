@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_pigmadilo_nis",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 4.1875,
+        "length": 1.0,
+        "width": 1.75
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      }
+    }
+  }
+}

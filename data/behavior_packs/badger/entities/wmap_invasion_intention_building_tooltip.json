@@ -1,0 +1,21 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:wmap_invasion_intention_building_tooltip",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": false
+        },
+        "components": {
+            "badger:map3_tooltip_extended": {
+                "description": "tooltip.invasion.intention.building",
+                "icon": "/map_screen/wmaplegend_invasion_alert.png",
+                "priority": 4
+            },
+            "badger:map3_tooltip_audio": {
+                "event_id": "BAE_ui_wmap_invasion_tooltip_telegraph_piglin_danger",
+                "event_type": "Music"
+            }
+        }
+    }
+}

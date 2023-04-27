@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:debug_map_marker_red",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:map_controller": {
+        "initial_key_values": [
+          {
+            "key": "debug",
+            "value": "map_marker_red"
+          }
+        ]
+      }
+    }
+  }
+}

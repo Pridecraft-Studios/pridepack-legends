@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_magma",
+      "material": "badger_magma"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube",
+        "camera_collision": true,
+        "directional_texture": false,
+        "directional_shape": false
+      },
+      "badger:block_type": {
+        "tags": [
+          "lava"
+        ]
+      },
+      "minecraft:block_light_emission": {
+        "emission": 0.6
+      }
+    }
+  }
+}

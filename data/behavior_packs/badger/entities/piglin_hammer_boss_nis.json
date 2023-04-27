@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_hammer_boss_nis",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 4.0,
+        "length": 4.0,
+        "height": 8.0
+      },
+      "badger:collision_weight": {
+        "weight": 5000
+      },
+      "badger:movement": {
+        "move_speed": 0
+      },
+      "badger:wander": {
+        "wander_frequency": 0,
+        "wander_radius": 0
+      },
+      "badger:tags": {
+        "tags": ["hammer_boss_nis"]
+      }
+    }
+  }
+}

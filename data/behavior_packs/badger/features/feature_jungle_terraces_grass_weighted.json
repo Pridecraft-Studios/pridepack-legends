@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_jungle_terraces_grass_weighted"
+    },
+    "features": [
+      ["badger:feature_jungle_terraces_grass_01",5.0],
+      ["badger:feature_jungle_terraces_grass_02",5.0],
+      ["badger:feature_jungle_terraces_grass_03",5.0]
+
+    ]
+  }
+}

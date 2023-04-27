@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:status_effect_sleep_negate",
+      "runtime_identifier": "badger:status_effect"
+    },
+    "components": {
+      "badger:status": {
+        "applied_name": "sleep_negate",
+        "default_resistance": {
+          "resisted": false,
+          "time": 5.0,
+          "resistance_persist_time": -1
+        }
+      },
+      "badger:negate_status": {
+        "negated_status": [
+          "sleep",
+          "sleep_negate"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_nether_rotters_nether_wart_warped_final_arena",
+      // This should lead into an aggergate
+      "places_feature": "badger:feature_nether_rotters_nether_wart_warped_scatter"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "nether_final_battle_arena"
+            }
+          ]           
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(1,2)",
+      "scatter_chance": "75",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [2, 14]
+      },
+      "y": 0,
+      "z": {
+        "distribution": "uniform",
+        "extent": [2, 14]
+      }
+    }
+  }
+}

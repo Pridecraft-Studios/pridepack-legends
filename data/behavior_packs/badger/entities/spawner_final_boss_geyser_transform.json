@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_final_boss_geyser_transform",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:removal_time": {
+        "time": 2
+      },
+      "badger:tags": {
+        "tags": [
+          "boss_geyser_transform",
+          "donotattack"
+        ]
+      },
+      "badger:presentation_event": {
+        "on_destroyed": {
+          "spawn_entity": [
+               "badger:spawner_piglin_final_boss_lava_geyser"
+          ]
+          }
+       }
+    }
+  }
+}

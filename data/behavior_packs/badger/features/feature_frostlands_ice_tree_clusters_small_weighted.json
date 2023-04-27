@@ -1,0 +1,30 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_tree_snowpine_mini_01",
+        10.0
+      ],
+      [
+        "badger:feature_tree_snowpine_mini_02",
+        10.0
+      ],
+      [
+        "badger:feature_tree_snowpine_mini_03",
+        10.0
+      ],
+      [
+        "badger:feature_tree_snowpine_mini_04",
+        10.0
+      ],
+      [
+        "badger:feature_tree_snowpine_mini_05",
+        10.0
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_frostlands_ice_tree_clusters_small_weighted"
+    }
+  }
+}

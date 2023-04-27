@@ -1,0 +1,34 @@
+{
+  "id": "tex_stamp_mountain_sml_01",
+  "textures": [
+    {
+      "texture": "mountains/tex_stamp_mountain_sml_01",
+      "channels": {
+        "r": "blend",
+        "g": "biome",
+        "b": "terrain_height"
+      }
+    }
+  ],
+  "additional_data" : {
+    "absolute_height" : true
+  },
+  "biome_map": [
+    {
+      "biome": "mountain_summit",
+      "value": 250
+    },
+    {
+      "biome": "mountain_peaks",
+      "value": 200
+    },  
+    {
+      "biome": "mountain_mid_hills",
+      "value": 150
+    },  
+    {
+      "biome": "mountain_foothills",
+      "value": 100
+    }
+  ]
+  }

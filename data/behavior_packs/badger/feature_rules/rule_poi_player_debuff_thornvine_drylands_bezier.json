@@ -1,0 +1,63 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_poi_player_debuff_thornvine_drylands_bezier",
+      "places_feature": "badger:feature_debuff_poi_thornvine_expression"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "before_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "any_of": [
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "drylands"
+                },
+                {
+                  "all_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "operator": "==",
+                      "value": "brokenlands"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "operator": "!=",
+                      "value": "brokenlands_valleys"
+                    }
+
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "early_out": "q.get_game_rule_value('prevent_obstacles_on_poi_graph') && q.poi_influence_factor(v.scatteredx, v.scatteredz) < 0.5",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": 0,
+      "z": {
+        "distribution": "gaussian",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "scatter_chance": "q.poi_distance(v.originx, v.originz) > 150 ? 5: 0"
+    }
+  }
+}

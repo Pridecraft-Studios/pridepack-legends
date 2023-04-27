@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_nether_piglin_tree_weighted"
+    },
+    "features": [
+      [
+        "badger:feature_nether_piglin_defend_burned_tree_small",
+        10.0
+      ],
+      [
+        "badger:feature_nether_piglin_defend_burned_tree",
+        10.0
+      ],
+      [
+        "badger:feature_nether_piglin_defend_burned_tree_large",
+        10.0
+      ]
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:stairs_wood_filler",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "",
+        "tooltip_title": "",
+        "tooltip_description": "",
+        "buildable_category": "",
+        "height_offset": 1
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "stairs_wood",
+        "build_time": 0.1,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 3
+          }
+        ],
+        "invalid_blocks": [
+          "block_lava",
+          "flowing_lava",
+          "water",
+          "flowing_water"
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:culture": {
+        "base_culture_a": 2
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 4,
+          "sc": 0,
+          "rc": 4
+        }
+      },
+      "badger:tags": {
+        "tags": [
+          "buffable-mason",
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "structure",
+          "stairs",
+          "playerBridge",
+          "donotattack"
+        ]
+      },
+      "badger:buildable_snap_point": {},
+      "badger:offline_traits": {
+        "offline_disabled_components": [],
+        "construction_disabled_components": [
+          "badger:damage_receiver",
+          "badger:culture"
+        ]
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 6,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction"
+          }
+        ]
+      },
+      "badger:deconstruction": {
+        "clear_siblings": true
+      },
+      "badger:template": [
+        "badger:template_stairs",
+        "badger:template_structure_player"
+      ],
+      "badger:zone_visualization": {
+        "group": "mason_and_carpenter"
+      }
+    }
+  }
+}

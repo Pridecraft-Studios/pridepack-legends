@@ -1,0 +1,23 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_plant_jungle_tropical_plant_01",5.0],
+      ["badger:feature_plant_jungle_tropical_plant_02",5.0],
+      ["badger:feature_plant_jungle_tropical_plant_03",5.0],
+      ["badger:feature_grass_pineapple_top_01",5.0],
+      ["badger:feature_grass_pineapple_top_02",5.0],
+      ["badger:feature_grass_pineapple_top_03",5.0],
+      ["badger:feature_grass_pineapple_top_04",5.0],
+      ["badger:feature_plant_fateful_foxglove_01", 10.0],
+      ["badger:feature_plant_fateful_foxglove_02", 10.0],
+      ["badger:feature_plant_fateful_foxglove_03", 10.0],
+      ["badger:feature_plant_fateful_foxglove_04", 10.0],
+      ["badger:feature_grass_clump_02", 20.0],
+      ["badger:feature_grass_clump_03", 20.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_jungle_grass_tall_weighted"
+    }
+  }
+}

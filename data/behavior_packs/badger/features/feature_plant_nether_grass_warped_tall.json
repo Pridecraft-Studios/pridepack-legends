@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_plant_nether_grass_warped_tall"
+    },
+    "may_replace": ["minecraft:air"],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_attach_to": {
+      "bottom": [
+        "badger:block_nylium_warped",
+        "badger:block_nylium_warped_grass",
+        "badger:block_nylium_warped_var01",
+        "badger:block_nylium_warped_var02",
+        "badger:block_nether_wart_warped"
+      ]
+    },
+    "places_block": "badger:block_deco_nether_grass_warped_tall"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_resource_stone_boulder_small_scatter"
+    },
+    "places_feature": "badger:feature_resource_stone_boulder_small_weighted",
+    "iterations": "1",
+    "scatter_chance": "10",
+    "project_input_to_floor": false,
+    "x": {
+      "extent": [-5, 5],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [-5, 5],
+      "distribution": "gaussian"
+    },
+    "y": {
+      "extent": [-2, 4],
+      "distribution": "uniform"
+        }
+  }
+}

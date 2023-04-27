@@ -1,0 +1,52 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_support_golem",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Spawner",
+      "type": "Player"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:spawner_support_golem",
+        "game_mode": "campaign"
+      },
+      "badger:buildable_requirement": {
+        "unlock": [
+          {
+            "item": "unlock_spawner_support",
+            "amount": 1
+          }
+        ],
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 25
+          },
+          {
+            "item": "stone",
+            "amount": 25
+          },
+          {
+            "item": "iron",
+            "amount": 5
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water", 
+          "lava", 
+          "netherrack",
+          "gatherable_denether", 
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard" 
+        ]
+      }
+    }
+  }
+}

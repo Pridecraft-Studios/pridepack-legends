@@ -1,0 +1,42 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_jungle_terracefill",
+      "places_feature": "badger:feature_jungle_terraces_crops_water_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "jungle_terraces"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "272",
+      "scatter_chance": "100",
+      "x": {
+        "distribution": "jittered_grid",
+        "extent": [
+          0,
+          16
+        ],
+        "step_size": 1.0
+      },
+      "z": {
+        "distribution": "jittered_grid",
+        "extent": [
+          0,
+          16
+        ],
+        "step_size": 1.0
+      },
+      "y": "return query.above_top_solid(variable.worldx, variable.worldz) -1;",
+      "coordinate_eval_order": "xzy"
+    }
+  }
+}

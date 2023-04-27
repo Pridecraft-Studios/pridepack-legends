@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_piglin_magma_boss_lava_geyser",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "role": "Boss",
+      "function": "Campaign"
+    },
+    "components": {
+      "badger:removal_time": {
+        "time": 6
+      },
+      "badger:tags": {
+        "tags": [
+          "lava_geyser_spawner",
+          "donotattack"
+        ]
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:impact_lava_geyser",
+            "percentage": 1
+          }
+        ],
+        "cap": 10,
+        "batch": 2,
+        "rate": 0.65,
+        "max_radius": 40,
+        "min_radius": 10,
+        "max_height_difference": 8
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_valleys_termite_mounds_small_scatter"
+    },
+    "places_feature": "badger:feature_brokenlands_valleys_termite_mounds_small_weighted",
+    "iterations": "math.random(1,2)",
+    "scatter_chance": "50",
+    "project_input_to_floor": false,
+    "x": {
+      "extent": [-16, 15],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [-16, 15],
+      "distribution": "gaussian"
+    },
+    "y": {
+      "extent": [-2, 4],
+      "distribution": "uniform"
+        }
+  }
+}

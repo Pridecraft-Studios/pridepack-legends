@@ -1,0 +1,71 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_illager_curious",
+      "runtime_identifier": "badger:behavior"
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 2
+      },
+      "badger:wander": {
+        "wander_frequency": 0.08,
+        "wander_radius": 20
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "max_range": 15,
+            "include_tags": [
+              "piglin"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "evade"
+            ]
+          },
+          {
+            "max_range": 10,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "evade_player"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder"
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "evade",
+            "range": {
+              "min_range": 10,
+              "max_range": 25
+            }
+          },
+          {
+            "name": "evade_player",
+            "range": {
+              "min_range": 2,
+              "max_range": 8
+            }
+          }
+        ]
+      }
+    }
+  }
+}

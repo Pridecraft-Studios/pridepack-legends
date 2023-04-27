@@ -1,0 +1,68 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:imact_aoe_kaboomery_explosion_rsl",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:physics": {},
+      "badger:world_collision": {
+        "has_collision": false,
+        "auto_step": 3.1
+      },
+      "badger:removal_time": {
+        "time": 0.2
+      },
+      "badger:telemetry_category": {
+        "category_name": "Player Structure"
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 7
+        },
+        "damage_effects": [
+          {
+            "name": "aoe_small_explosion",
+            "damage": 1,
+            "knockback": {
+              "angle": 45,
+              "force": 65
+            },
+            "falloff": {
+              "min_radius": 1,
+              "max_radius": 7,
+              "min_angle": 30,
+              "min_damage": 60
+            },
+            "damage_types": [
+              "explosion",
+              "fire"
+            ],
+            "include_tags": [],
+            "exclude_tags": [],
+            "apply_status": {
+              "engaged": {
+                "chance": 1.0,
+                "strength": 1.0
+              },
+              "burning": {
+                "chance": 1.0,
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:movement": {
+        "move_speed": 0.0
+      }
+    }
+  }
+}

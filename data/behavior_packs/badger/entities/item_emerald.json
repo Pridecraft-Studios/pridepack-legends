@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:item_emerald",
+      "runtime_identifier": "badger:item",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:tags": {
+        "tags": [
+          "item",
+          "emerald"
+        ]
+      },
+      "badger:removal_time": {
+        "time": 60
+      },
+      "badger:projectile_physics": {
+        "gravity": -25.0
+      }
+    }
+  }
+}

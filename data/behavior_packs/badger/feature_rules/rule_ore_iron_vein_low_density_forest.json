@@ -1,0 +1,50 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_ore_iron_vein_low_density_forest",
+      "places_feature": "badger:feature_ore_iron_vein_expression_weighted"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "before_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "resource_iron"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "forest"
+              }
+            ]        
+
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "early_out": "math.mod(math.floor(v.originx / 16), 2) != 0 || math.mod(math.floor(v.originz / 16), 2) != 0",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "gaussian",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "scatter_chance": "q.resource_scaling* 3.5"
+    }
+  }
+}

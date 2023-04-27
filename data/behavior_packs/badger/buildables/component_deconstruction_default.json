@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:component_deconstruction_default",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:deconstruction": {
+        "deconstruct_time_percent": 1,
+        "resource_refund_percent": 1,
+        "isIndestructable": false,
+        "resource_cost": [
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ]
+      }
+    }
+  }
+}

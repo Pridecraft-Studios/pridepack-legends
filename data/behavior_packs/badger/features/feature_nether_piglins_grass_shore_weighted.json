@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_nether_piglins_grass_shore_weighted"
+    },
+    "features": [
+      ["badger:feature_plant_nether_grass_rust", 20.0],
+      ["badger:feature_plant_nether_grass_rust_small", 20.0],
+      ["badger:feature_plant_nether_grass_rust_tall", 20.0],
+      ["badger:feature_plant_nether_netherwart_rust_large", 20.0],
+      ["badger:feature_plant_nether_netherwart_rust_small", 20.0]     
+    ]
+  }
+}
+

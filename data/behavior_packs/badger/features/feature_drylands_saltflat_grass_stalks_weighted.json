@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_plant_drylands_stalks_01",
+        25.0
+      ],
+      [
+        "badger:feature_plant_drylands_stalks_02",
+        25.0
+      ],
+      [
+        "badger:feature_plant_drylands_stalks_03",
+        25.0
+      ],
+      [
+        "badger:feature_plant_drylands_stalks_04",
+        25.0
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_drylands_saltflat_grass_stalks_weighted"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:status_effect_lava",
+			"runtime_identifier": "badger:status_effect"
+		},
+		"components": {
+			"badger:status": {
+				"applied_name": "lava",
+				"default_resistance": {
+					"resisted": false,
+					"time": 0.5,
+					"resistance_persist_time": -1
+				}
+			},
+			"badger:damage_over_time": {
+				"interval": 0.20,
+				"damage": {
+					"damage_amount": 0.75,
+					"damage_types": [
+						"lava"
+					]
+				}
+			},
+			"badger:negate_status":{
+				"negated_status":[ 
+					"frozen"
+				]
+			}
+		}
+	}
+}

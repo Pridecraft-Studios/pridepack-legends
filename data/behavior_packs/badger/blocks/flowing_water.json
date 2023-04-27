@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:flowing_water",
+      "material": "badger_water"
+    },
+    "components": {
+      "badger:block_effects": {
+        "effect_frequency": 0.0,
+        "apply_status": {
+          "wet": {
+            "strength": 1.0
+          }
+        }
+      },
+      "badger:block_type": {
+        "tags": [
+          "water"
+        ]
+      },
+      "badger:terrain_type": {
+        "terrain": "water"
+      },
+      "badger:liquid": {}
+    }
+  }
+}

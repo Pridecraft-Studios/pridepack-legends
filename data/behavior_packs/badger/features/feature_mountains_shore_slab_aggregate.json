@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_mountains_shore_slab_aggregate"
+    },
+    "features": [
+      "badger:feature_mountains_shore_block_weighted_02",
+      "badger:feature_mountains_shore_slab_scatter"
+    ]
+  }
+}

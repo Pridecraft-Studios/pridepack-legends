@@ -1,0 +1,58 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_host_action_celebrate",
+      "runtime_identifier": "badger:behavior"
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 0
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 20
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Celebrate
+          {
+            "name": "celebrate",
+            "max_range": 100,
+            "action_tickets": {
+              "sc": 0
+            },
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "celebration"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder"
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "celebration",
+            "trigger": "on_celebration",
+            "range": {
+              "max_range": 40.0
+            },
+            "state_machine": {
+              "wind_up": 0.0,
+              "wind_down": 2.4,
+              "cooldown_time": 5,
+              "deactivates_on_cooldown": true
+            }
+          }
+        ]
+      }
+    }
+  }
+}

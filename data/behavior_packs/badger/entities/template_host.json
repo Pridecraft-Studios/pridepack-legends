@@ -1,0 +1,63 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_host",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.7,
+        "height": 1.9
+      },
+      "badger:fast_travel": {
+        "windup_time": 4.0,
+        "cooldown_time": 3.0
+      },
+      "badger:interacts_with_blocks": {},
+      "badger:reports_hit_reaction": {},
+      "badger:movement": {
+        "move_speed": 2.5,
+        "air_control_factor": 0.03
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": true,
+        "auto_step": 1.6,
+        "interpolation_speed": 4
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 5
+      },
+      "badger:suppress_target_action": {
+        "max_time": 2
+      },
+      "badger:navigation": {
+        "avoidance_lookahead": 10.0,
+        "fall_distance": 7,
+        "avoid_block_damage": true,
+        "ignore_solids_rule": "same_team"
+      },
+      "badger:tags": {
+        "tags": [
+          "host",
+          "do_not_test"
+        ]
+      },
+      "badger:pop_capped": {},
+      "badger:spawn_tracking": {},
+      "badger:damage_receiver_material": {
+        "material": "mob"
+      },
+      "badger:telemetry_category": {
+        "category_name": "Player Unit"
+      },
+      "badger:dynamic_scale_interpolate": {
+        "interpolate_time": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:placeable_attack_move",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:template": "badger:placeable_force_move",
+            "badger:lure": {
+                "leash_to_line": true,
+                "config_id": "charge"
+            },
+            "badger:target_assigner": {
+                "force_target_range": 15.0
+            },
+            "badger:telemetry_lure_direct": {
+                "order_type": "charge",
+                "is_advanced": true
+            }
+        }
+    }
+}

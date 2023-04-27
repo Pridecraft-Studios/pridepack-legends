@@ -1,0 +1,20 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_mountains_lake_plants_weighted"
+    },
+   "features": [
+    ["badger:feature_mountains_plant_greenblade_01", 10.0],
+    ["badger:feature_mountains_plant_greenblade_02", 10.0],
+    ["badger:feature_mountains_plant_greenblade_03", 10.0],
+    ["badger:feature_mountains_plant_greenblade_flower_01", 5.0],
+    ["badger:feature_mountains_plant_greenblade_flower_02", 5.0],
+    ["badger:feature_mountains_plant_greenblade_flower_03", 5.0],
+    ["badger:feature_mountains_plant_wildflower_01", 10.0],
+    ["badger:feature_mountains_plant_mushroom_stalk_01",5.0],
+    ["badger:feature_mountains_plant_mushroom_stalk_02",5.0],
+    ["badger:feature_mountains_plant_mushroom_stalk_03",5.0]
+   ]
+  }
+}

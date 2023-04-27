@@ -1,0 +1,36 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_tree_baobab_01"
+    },
+    "structure_name": "nature/tree_baobab_01",
+    "placement_range": {
+      "x": [0,4],
+      "z": [0,4],
+      "y": [-4,-2]
+    },
+    "facing_direction": "random",
+    "constraints": { 
+      "grounded": {
+        "block_allow_list": [
+          "minecraft:grass",
+          "badger:block_dirt_rock_var01",
+          "badger:block_dirt_rock_var02",
+          "badger:block_dirt_rock_var03"
+        ]
+      },
+      "block_intersection": {
+        "block_allow_list": [
+          "minecraft:air",
+          "badger:block_slab_tree_baobab_leaves_top",
+          "badger:block_tree_baobab_leaves_top"
+        ],
+        "structure_block_deny_list": [
+          "badger:block_slab_tree_baobab_leaves_top",
+          "badger:block_tree_baobab_leaves_top"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_plateaus_boulder_pebbles_aggregate"
+    },
+    "features": [
+      "badger:feature_brokenlands_plateaus_pebbles_scatter",
+      "badger:feature_brokenlands_plateaus_grass_clump_scatter"
+    ]
+  }
+}

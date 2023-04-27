@@ -1,0 +1,95 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_zoner_utopia",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Utopia",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "recipe": [
+          {
+            "item": "gold",
+            "amount": 400
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [
+          "block_lava",
+          "water",
+          "block_netherrack"
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable"
+        ]
+      },
+      "badger:owned_territory": {
+        "prevent_overlap_tag_set": [],
+        "zone": 41,
+        "village_gen_zone_control_score_threshold": 0.0
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_generic"
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_health_generation_default",
+        "badger:component_foundation_default"
+      ],
+      "badger:health": {
+        "max_health": 1000
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 3.0,
+          "crush": 2.0,
+          "ranged": 0.3,
+          "spore": 0.0
+        }
+      },
+      "badger:culture": {
+        "base_culture_a": 0.0,
+        "is_hq": true
+      },
+      "badger:loot": {
+        "table": "common_structure"
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "zonerUtopia",
+          "zoner_utopia"
+        ]
+      },
+      "badger:zone_type": {
+        "zone_type": "utopia"
+      },
+      "badger:offline_traits": {
+        "construction_disabled_components": [
+          "badger:zone_type",
+          "badger:culture"
+        ]
+      },
+      "badger:village_heart": {}
+    }
+  }
+}

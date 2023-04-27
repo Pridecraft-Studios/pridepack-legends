@@ -1,0 +1,61 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_tree_mangrove_mega_01"
+    },
+    "structure_name": "nature/tree_mangrove_mega_01",
+    "placement_range": {
+      "x": [
+        0,
+        1
+      ],
+      "z": [
+        0,
+        1
+      ],
+      "y": [
+        -3,
+        3
+      ]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {
+        "block_deny_list": [
+          "badger:block_burning_edge_var01",
+          "badger:block_burning_edge_var02",
+          "badger:block_netherrack",
+          "badger:block_nylium_grass",
+          "badger:block_nylium_grass_var01",
+          "badger:block_nylium"
+        ]
+      },
+      "block_intersection": {
+        "block_allow_list": [
+          "minecraft:air",
+          "badger:block_tree_mangrove_01",
+          "badger:block_tree_mangrove_02",
+          "badger:block_tree_mangrove_03",
+          "badger:block_tree_mangrove_04",
+          "badger:block_slab_tree_mangrove_01",
+          "badger:block_deco_plant_junglevine_01",
+          "badger:block_deco_plant_junglevine_02",
+          "badger:block_deco_plant_junglevine_03",
+          "badger:block_deco_plant_junglevine_04"
+        ],
+        "structure_block_deny_list": [
+          "badger:block_tree_mangrove_01",
+          "badger:block_tree_mangrove_02",
+          "badger:block_tree_mangrove_03",
+          "badger:block_tree_mangrove_04",
+          "badger:block_slab_tree_mangrove_01",
+          "badger:block_deco_plant_junglevine_01",
+          "badger:block_deco_plant_junglevine_02",
+          "badger:block_deco_plant_junglevine_03",
+          "badger:block_deco_plant_junglevine_04"
+        ]
+      }
+    }
+  }
+}

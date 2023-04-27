@@ -1,0 +1,45 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_frostlands_grass",
+      "places_feature": "badger:feature_frostlands_plains_grass_weighted"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "icy_cold"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "early_out": "temp.noise = q.noise(v.worldx/40, v.worldz/40);   return query.heightmap(v.worldx, v.worldz) < q.sea_level || temp.noise > 0.15 || temp.noise < -0.15;",
+      "iterations": "25",
+      "scatter_chance": "100",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          -15,
+          15
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          -15,
+          15
+        ]
+      },
+      "y": "return q.heightmap(variable.worldx, variable.worldz);",
+      "coordinate_eval_order": "xzy"
+    }
+  }
+}

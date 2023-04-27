@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_netherrack_blocks_aggregated"
+    },
+    "features": [  
+      "badger:feature_nether_piglin_netherrack_sheet_scatter_down",
+      "badger:feature_nether_piglin_netherrack_slab_scatter_down",
+      "badger:feature_nether_piglin_netherrack_slab_scatter",
+      "badger:feature_nether_piglin_netherrack_sheet_scatter",
+      "badger:feature_nether_piglin_netherrack_block_scatter"
+
+    ]
+  }
+}

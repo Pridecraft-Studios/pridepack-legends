@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_nether_rotters_final_mushrooms_trees_aggregate"
+    },
+    "features": [
+      "badger:feature_nether_rotters_nether_wart_warped_large_scatter",
+      "badger:feature_nether_rotters_final_tree_weighted"
+      
+    ]
+  }
+}

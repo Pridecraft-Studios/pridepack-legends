@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_plant_flower_mountain_03"
+    },
+    "may_replace": [
+      "minecraft:air",
+      "badger:block_alpine_rock_01"
+    ],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_deco_flower_mountain_03",
+    "may_attach_to": {
+      "bottom": [
+        "badger:block_frostsnow",
+        "badger:block_alpine_rock_snowy_01",
+        "badger:block_alpine_rock_snowy_02"
+      ]
+    }
+  }
+}

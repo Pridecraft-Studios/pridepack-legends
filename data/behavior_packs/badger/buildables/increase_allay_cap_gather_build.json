@@ -1,0 +1,127 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:increase_allay_cap_gather_build",
+        "runtime_identifier": "badger:buildable",
+        "is_summonable": true
+      },
+      "components": {
+        "badger:buildable_presentation": {
+          "icon": "structure_increase_allay_cap",
+          "tooltip_title": "structures.increase.allay.cap.gatherbuild.name",
+          "tactical_description": "structures.increase.allay.cap.gatherbuild.tactical_description",
+          "tooltip_description": "structures.increase.allay.cap.gatherbuild.description",
+          "buildable_category": "village",
+          "sort_order": 160,
+          "force_hide_when_locked": true
+        },
+        "badger:buildable_requirement": {
+          "recipe": [
+            {
+              "item": "stone",
+              "amount": 100
+            },
+            {
+              "item": "xp_common",
+              "amount": 50
+            },
+            {
+              "item": "gold",
+              "amount": 10
+            }
+          ],
+          "unlock": [
+            {
+              "item": "unlock_remaining_wof_upgrades",
+              "amount": 1
+            }
+          ],
+          "ticket_cost": [
+            {
+              "ticket": "build",
+              "amount": 1
+            }
+          ]
+        },
+        "badger:ticket_cap_modifier": {
+          "ticket_modifiers": [
+            {
+              "ticket": "build",
+              "amount": 2
+            },
+            {
+              "ticket": "gather",
+              "amount": 2
+            }
+          ]
+        },
+        "badger:rewards": {
+          "reward": [
+            {
+              "item": "ui_tracking_increase_allay_cap",
+              "amount": 1
+            }
+          ]
+        },
+        "badger:buildable_structure": {
+          "nbt_file": "wof_upgrade_small",
+          "build_time": 10,
+          "construction_start_trigger": "on_construction_start",
+          "construction_end_trigger": "on_construction_end",
+          "buildable_placed_player_trigger": "on_building_increase_allay_cap_gather_build"
+        },
+        "badger:nbt_parts":{
+          "locator": "badger:locator_swappable_icon",
+          "block": "block_deco_xp_lute"
+        },
+        "badger:buildable_destruction": {
+          "particle_effect": "badger:fx_destruction_generic"
+        },
+        "badger:tags": {
+          "tags": [
+            "buildable",
+            "buildable_combat",
+            "buildable_structure",
+            "structure",
+            "donotattack",
+            "increase_gather_build_cap",
+            "player_upgrade"
+          ]
+        },
+        "badger:action_tickets": {
+          "action_tickets": {
+            "cc": 0,
+            "rc": 0
+          }
+        },
+        "badger:offline_traits": {
+          "offline_disabled_components": [
+            "badger:culture"
+          ],
+          "construction_disabled_components": [
+            "badger:culture",
+            "badger:ticket_cap_modifier"
+          ]
+        },
+        "badger:interactable": {
+          "interactions": [
+            {
+              "name": "interaction_zone",
+              "range": 13,
+              "include_tags": [
+                "player"
+              ],
+              "exclude_tags": [],
+              "alliance_rule_filter": "friendly",
+              "input_layout_override": "overlay_gameplay_interaction"
+            }
+          ]
+        },
+        "badger:template": [
+          "badger:template_upgrade_xp",
+          "badger:template_structure_player"
+        ]
+      }
+    }
+  }

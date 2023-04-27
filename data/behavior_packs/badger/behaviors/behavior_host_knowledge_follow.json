@@ -1,0 +1,49 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_host_knowledge_follow",
+      "runtime_identifier": "badger:behavior"
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 10
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 20
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Follow
+          {
+            "min_range": 3,
+            "max_range": 50,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "follow"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder"
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "follow",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 7
+            }
+          }
+        ]
+      }
+    }
+  }
+}

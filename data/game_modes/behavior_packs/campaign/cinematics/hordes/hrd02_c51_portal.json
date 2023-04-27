@@ -1,0 +1,3750 @@
+{
+   "audio_snapshot" : "snapshot:/cinematic/STATE_cinematic_nis_piglin_portal",
+   "cine_id" : "hrd02_c51_portal",
+   "clips" : [
+      {
+         "blend_from" : false,
+         "blend_in" : 0,
+         "camera_id" : "s09",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 161,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 47.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s09",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 5,
+         "row_index" : 13,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 1597,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s01",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 120,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 95.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s01",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 5,
+         "row_index" : 13,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 269,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s02",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 181,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 90.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s02",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 5,
+         "row_index" : 13,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 88,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s03",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 120,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 15.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s03",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 5,
+         "row_index" : 13,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 389,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s04",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 254,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 80.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s04",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 5,
+         "row_index" : 13,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 510,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s05",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 88,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 32.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s05",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 5,
+         "row_index" : 13,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 765,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s06",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 146,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 23.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s06",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 5,
+         "row_index" : 13,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 854,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s07",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 359,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 47.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s07",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 5,
+         "row_index" : 13,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 999,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s08",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 238,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 40.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s08",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 5,
+         "row_index" : 13,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 1359,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "camera_id" : "s02",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 181,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1-1",
+         "pan_end_transform" : {
+            "locator_name" : "s02_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s02_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 14,
+         "start_time" : 88,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s03",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 120,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1-1",
+         "pan_end_transform" : {
+            "locator_name" : "s03_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s03_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 14,
+         "start_time" : 389,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s01",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 120,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1-1",
+         "pan_end_transform" : {
+            "locator_name" : "s01_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s01_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 14,
+         "start_time" : 269,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s04",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 254,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1-2",
+         "pan_end_transform" : {
+            "locator_name" : "s04_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s04_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 14,
+         "start_time" : 510,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s05",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 88,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1-2",
+         "pan_end_transform" : {
+            "locator_name" : "s05_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s05_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 14,
+         "start_time" : 765,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s06",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 146,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1-2",
+         "pan_end_transform" : {
+            "locator_name" : "s06_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s06_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 14,
+         "start_time" : 854,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s09",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 161,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1-2",
+         "pan_end_transform" : {
+            "locator_name" : "s09_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s09_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 14,
+         "start_time" : 1597,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s07",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 93,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4449999928474426, 0.05000000074505806 ],
+            "P2" : [ 0.5500000119209290, 0.9499999880790710 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1-2",
+         "pan_end_transform" : {
+            "locator_name" : "s07_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s07_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 14,
+         "start_time" : 1090,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s07",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 105,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4449999928474426, 0.05000000074505806 ],
+            "P2" : [ 0.5500000119209290, 0.9499999880790710 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "2-2",
+         "pan_end_transform" : {
+            "locator_name" : "s07_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s07_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 14,
+         "start_time" : 1184,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s07",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 70,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4449999928474426, 0.05000000074505806 ],
+            "P2" : [ 0.5500000119209290, 0.9499999880790710 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "2-3",
+         "pan_end_transform" : {
+            "locator_name" : "s07_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s07_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 14,
+         "start_time" : 1289,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s07",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 91,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1-1",
+         "pan_end_transform" : {
+            "locator_name" : "s07_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s07_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 14,
+         "start_time" : 999,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s08",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 238,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 0.7650002241134644, 0.9900000095367432 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1-2",
+         "pan_end_transform" : {
+            "locator_name" : "s08_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s08_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 14,
+         "start_time" : 1359,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "clip_type" : "screen_text",
+         "do_debug_draw" : false,
+         "duration" : 1849,
+         "enabled" : false,
+         "locked_for_edit" : false,
+         "name" : "[ Keep Disabled ] Cinematic Candidates Descriptor :: 0:Portal, 1:Player, 2:Creeper",
+         "row_index" : 0,
+         "start_time" : 0,
+         "text" : "0:Portal, 1:Player, 2:Creeper"
+      },
+      {
+         "audio_event_on_skip" : "BAE_cine_hrd02_c51_stop",
+         "audio_event_on_start" : "BAE_cine_hrd02_c51",
+         "audio_event_on_stop" : "",
+         "clip_type" : "audio_clip",
+         "do_debug_draw" : false,
+         "duration" : 1845,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "Audio Track",
+         "row_index" : 2,
+         "start_time" : 0
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 1,
+         "enabled" : true,
+         "entity_id" : "local_player",
+         "locked_for_edit" : false,
+         "name" : "Turn the Local_Player Towards Source NIS",
+         "row_index" : 14,
+         "should_pathfind" : true,
+         "start_time" : 0,
+         "transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 111,
+         "enabled" : true,
+         "frequency" : 20.0,
+         "intensity" : 0.6000000238418579,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.8999999761581421,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.1000000014901161
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 17,
+         "start_time" : 1196
+      },
+      {
+         "archetype" : "badger:piglin_runt_nis",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 1670,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "entity_owner_id" : "0",
+         "faction_selector" : {
+            "id" : "faction.pig.attack",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "p1",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 19,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 88,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "p1_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "audition" : [
+            {
+               "exclude_tags" : null,
+               "include_tags" : [ "piglin_rallying_point" ],
+               "index" : "rallypoint",
+               "optional" : false
+            }
+         ],
+         "clip_type" : "audition_clip",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "max_distance" : -1.0,
+         "name" : "  AUD:: Rally Point",
+         "offset" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 17,
+         "start_time" : 7
+      },
+      {
+         "alliance_rule" : "any_team",
+         "behaviour" : "behavior_piglin_runt_guarded",
+         "behaviour_radius" : 40.0,
+         "clear_actors" : false,
+         "clear_players" : true,
+         "clip_type" : "crowd_clearing",
+         "disable_spawners" : true,
+         "do_debug_draw" : false,
+         "duration" : 1692,
+         "enabled" : true,
+         "exclude_tags" : null,
+         "include_tags" : null,
+         "locked_for_edit" : false,
+         "look_at_radius" : 40.0,
+         "name" : "portal_cc",
+         "navigate_radius" : 39.0,
+         "radius" : 30.0,
+         "restore_teleported_entities" : true,
+         "row_index" : 4,
+         "start_time" : 71,
+         "team" : "blue_team",
+         "transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "alliance_rule" : "any_team",
+         "behaviour" : "badger:behavior_zombie_happy",
+         "behaviour_radius" : 20.0,
+         "clear_actors" : false,
+         "clear_players" : true,
+         "clip_type" : "crowd_clearing",
+         "disable_spawners" : true,
+         "do_debug_draw" : false,
+         "duration" : 1692,
+         "enabled" : true,
+         "exclude_tags" : null,
+         "include_tags" : null,
+         "locked_for_edit" : false,
+         "look_at_radius" : 20.0,
+         "name" : "rallypoint_cc",
+         "navigate_radius" : 10.0,
+         "radius" : 2.0,
+         "restore_teleported_entities" : true,
+         "row_index" : 5,
+         "start_time" : 71,
+         "team" : "blue_team",
+         "transform" : {
+            "locator_name" : "rally_cc",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:piglin_runt_nis",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 218,
+         "enabled" : true,
+         "entity_id" : "p7",
+         "entity_owner_id" : "0",
+         "faction_selector" : {
+            "id" : "faction.pig.attack",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "p7",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 65,
+         "skip_spawn_state" : false,
+         "snap_to_ground" : false,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 1540,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "p7_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "left_look_take_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.2000000029802322,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 20,
+         "start_time" : 704,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "idle_c",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.1000000014901161,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 20,
+         "start_time" : 468,
+         "trigger_parents" : false
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 181,
+         "enabled" : true,
+         "frequency" : 1.0,
+         "intensity" : 0.01999999955296516,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 16,
+         "start_time" : 88
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 343,
+         "enabled" : true,
+         "frequency" : 1.0,
+         "intensity" : 0.01999999955296516,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 17,
+         "start_time" : 510
+      },
+      {
+         "animation" : "right_look_take_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 2.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 20,
+         "start_time" : 618,
+         "trigger_parents" : false
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 97,
+         "enabled" : true,
+         "frequency" : 3.0,
+         "intensity" : 0.50,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.1000000014901161,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.8000000119209290
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 16,
+         "start_time" : 607
+      },
+      {
+         "animation" : "large_take_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.3000000119209290,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 20,
+         "start_time" : 839,
+         "trigger_parents" : false
+      },
+      {
+         "archetype" : "badger:piglin_runt_nis",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 364,
+         "enabled" : true,
+         "entity_id" : "p1_temp",
+         "entity_owner_id" : "0",
+         "faction_selector" : {
+            "id" : "faction.pig.attack",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "p1_temp",
+         "remove_physics" : true,
+         "role" : "",
+         "row_index" : 23,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : false,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 980,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "p1temp_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 70,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 20,
+         "should_pathfind" : false,
+         "start_time" : 1688,
+         "transform" : {
+            "locator_name" : "p1_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 97,
+         "enabled" : true,
+         "frequency" : 3.0,
+         "intensity" : 0.50,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.1000000014901161,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.8000000119209290
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 16,
+         "start_time" : 824
+      },
+      {
+         "animation" : "cine_portal_listening",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p1_temp",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 24,
+         "start_time" : 999,
+         "trigger_parents" : false
+      },
+      {
+         "archetype" : "badger:piglin_piggo_warboar",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 333,
+         "enabled" : true,
+         "entity_id" : "boar1",
+         "entity_owner_id" : "0",
+         "faction_selector" : {
+            "id" : "faction.pig.attack",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "boar1",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 27,
+         "skip_spawn_state" : false,
+         "snap_to_ground" : false,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 1286,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "boar1_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_spawn_from_portal",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 74,
+         "start_time" : 1644,
+         "transform" : {
+            "locator_name" : "boar5_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_spawn_from_portal_large",
+         "locked_for_edit" : false,
+         "name" : "FX_HIDE_Despawning of TempPigling",
+         "row_index" : 21,
+         "start_time" : 1315,
+         "transform" : {
+            "locator_name" : "p1temp_fx1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "run_c",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.3000000119209290,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p5",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 59,
+         "start_time" : 1492,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "charge_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.1000000014901161,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "boar1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 30,
+         "start_time" : 1451,
+         "trigger_parents" : false
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_spawn_from_portal_large",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 29,
+         "start_time" : 1286,
+         "transform" : {
+            "locator_name" : "boar1_fx1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:piglin_piggo_warboar",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 296,
+         "enabled" : true,
+         "entity_id" : "boar3",
+         "entity_owner_id" : "0",
+         "faction_selector" : {
+            "id" : "faction.pig.attack",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "boar3",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 35,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : false,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 1359,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "boar3_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 182,
+         "enabled" : true,
+         "entity_id" : "boar3",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 36,
+         "should_pathfind" : false,
+         "start_time" : 1359,
+         "transform" : {
+            "locator_name" : "boar3_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_spawn_from_portal",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 37,
+         "start_time" : 1359,
+         "transform" : {
+            "locator_name" : "boar3_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:piglin_piggo_warboar",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 296,
+         "enabled" : true,
+         "entity_id" : "boar2",
+         "entity_owner_id" : "0",
+         "faction_selector" : {
+            "id" : "faction.pig.attack",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "boar2",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 31,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : false,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 1315,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "boar2_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 176,
+         "enabled" : true,
+         "entity_id" : "boar2",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 32,
+         "should_pathfind" : false,
+         "start_time" : 1315,
+         "transform" : {
+            "locator_name" : "boar2_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_spawn_from_portal",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 33,
+         "start_time" : 1315,
+         "transform" : {
+            "locator_name" : "boar2_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "run_c",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 20,
+         "start_time" : 940,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "death_c",
+         "blend_in_time" : 0.0,
+         "blend_time" : 1.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 20,
+         "start_time" : 1300,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "death_c",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.3000000119209290,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 20,
+         "start_time" : 1465,
+         "trigger_parents" : false
+      },
+      {
+         "clip_type" : "rotate_entity",
+         "do_debug_draw" : false,
+         "duration" : 14,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "forward_transform" : {
+            "locator_name" : "p1_1rotate",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 21,
+         "start_time" : 839
+      },
+      {
+         "animation" : "death_c",
+         "blend_in_time" : 0.0,
+         "blend_time" : 5.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 20,
+         "start_time" : 1345,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "death_c",
+         "blend_in_time" : 0.0,
+         "blend_time" : 5.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 20,
+         "start_time" : 1405,
+         "trigger_parents" : false
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 238,
+         "enabled" : true,
+         "frequency" : 1.0,
+         "intensity" : 0.50,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.1000000014901161,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.3000000119209290
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 15,
+         "start_time" : 1359
+      },
+      {
+         "archetype" : "badger:piglin_runt_nis",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 249,
+         "enabled" : true,
+         "entity_id" : "p2",
+         "entity_owner_id" : "0",
+         "faction_selector" : {
+            "id" : "faction.pig.attack",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "p2",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 40,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : false,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 1414,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "p2_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 150,
+         "enabled" : true,
+         "entity_id" : "p2",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 41,
+         "should_pathfind" : false,
+         "start_time" : 1414,
+         "transform" : {
+            "locator_name" : "p2_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_spawn_from_portal",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 42,
+         "start_time" : 1414,
+         "transform" : {
+            "locator_name" : "p2_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "run_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.2000000029802322,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 43,
+         "start_time" : 1521,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "charge_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.1000000014901161,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "boar2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 34,
+         "start_time" : 1492,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "charge_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.1000000014901161,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "boar1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 30,
+         "start_time" : 1289,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "scared_run",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.2000000029802322,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "boar3",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 38,
+         "start_time" : 1521,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "charge_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.1000000014901161,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "boar4",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 71,
+         "start_time" : 1629,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "scared_run",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.2000000029802322,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "boar3",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 38,
+         "start_time" : 1359,
+         "trigger_parents" : false
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 178,
+         "enabled" : true,
+         "entity_id" : "boar1",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 28,
+         "should_pathfind" : false,
+         "start_time" : 1286,
+         "transform" : {
+            "locator_name" : "boar1_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "charge_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.1000000014901161,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "boar1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 30,
+         "start_time" : 1398,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "charge_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.1000000014901161,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "boar2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 34,
+         "start_time" : 1439,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "scared_run",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.2000000029802322,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "boar3",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 38,
+         "start_time" : 1468,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "cine_intro_warrun_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 43,
+         "start_time" : 1414,
+         "trigger_parents" : false
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 129,
+         "enabled" : true,
+         "frequency" : 2.0,
+         "intensity" : 3.0,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.1000000014901161,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.50
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 16,
+         "start_time" : 1268
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 124,
+         "enabled" : true,
+         "entity_id" : "p3",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 46,
+         "should_pathfind" : false,
+         "start_time" : 1465,
+         "transform" : {
+            "locator_name" : "s03_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:piglin_runt_nis",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 198,
+         "enabled" : true,
+         "entity_id" : "p3",
+         "entity_owner_id" : "0",
+         "faction_selector" : {
+            "id" : "faction.pig.attack",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "p3",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 45,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : false,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 1465,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "p3_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_spawn_from_portal",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 47,
+         "start_time" : 1465,
+         "transform" : {
+            "locator_name" : "p3_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "run_b",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.1000000014901161,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p3",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 48,
+         "start_time" : 1465,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "run_b",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.1000000014901161,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p3",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 48,
+         "start_time" : 1578,
+         "trigger_parents" : false
+      },
+      {
+         "archetype" : "badger:piglin_runt_nis",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 238,
+         "enabled" : true,
+         "entity_id" : "p4",
+         "entity_owner_id" : "0",
+         "faction_selector" : {
+            "id" : "faction.pig.attack",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "p4",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 51,
+         "skip_spawn_state" : false,
+         "snap_to_ground" : false,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 1359,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "p4_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_spawn_from_portal",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 53,
+         "start_time" : 1359,
+         "transform" : {
+            "locator_name" : "p4_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 192,
+         "enabled" : true,
+         "entity_id" : "p4",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 52,
+         "should_pathfind" : false,
+         "start_time" : 1405,
+         "transform" : {
+            "locator_name" : "p4_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "run_c",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.3000000119209290,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p4",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 54,
+         "start_time" : 1405,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "cine_intro_warrun_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.2000000029802322,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p4",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 54,
+         "start_time" : 1510,
+         "trigger_parents" : false
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 90,
+         "enabled" : true,
+         "entity_id" : "boar5",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 74,
+         "should_pathfind" : false,
+         "start_time" : 1668,
+         "transform" : {
+            "locator_name" : "boar5_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "run_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.3000000119209290,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p7",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 67,
+         "start_time" : 1578,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "stun_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 1.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 20,
+         "start_time" : 1525,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "stun_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.2000000029802322,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 20,
+         "start_time" : 1584,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "cine_intro_warrun_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 21,
+         "start_time" : 1688,
+         "trigger_parents" : false
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 202,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 21,
+         "should_pathfind" : false,
+         "start_time" : 940,
+         "transform" : {
+            "locator_name" : "p1_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "teleport",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 21,
+         "snap_to_ground" : true,
+         "start_time" : 1298,
+         "transform" : {
+            "locator_name" : "p1_2b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "idle_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.1000000014901161,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 20,
+         "start_time" : 1663,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "stun_exit",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.50,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 20,
+         "start_time" : 1644,
+         "trigger_parents" : false
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 120,
+         "enabled" : true,
+         "frequency" : 0.3000000119209290,
+         "intensity" : 0.01999999955296516,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 16,
+         "start_time" : 389
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 120,
+         "enabled" : true,
+         "frequency" : 1.0,
+         "intensity" : 0.01999999955296516,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 16,
+         "start_time" : 269
+      },
+      {
+         "camera_id" : "s07",
+         "clip_type" : "camera_fov_change",
+         "do_debug_draw" : false,
+         "duration" : 15,
+         "enabled" : true,
+         "fov_end" : 1.047197580337524,
+         "fov_start" : 0.8203048110008240,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 15,
+         "start_time" : 1298
+      },
+      {
+         "clip_type" : "rotate_entity",
+         "do_debug_draw" : false,
+         "duration" : 14,
+         "enabled" : true,
+         "entity_id" : "p1",
+         "forward_transform" : {
+            "locator_name" : "p1_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 21,
+         "start_time" : 1330
+      },
+      {
+         "animation" : "charge_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.1000000014901161,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "boar2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 34,
+         "start_time" : 1386,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "charge_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.1000000014901161,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "boar1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 30,
+         "start_time" : 1345,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "scared_run",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.2000000029802322,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "boar3",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 38,
+         "start_time" : 1412,
+         "trigger_parents" : false
+      },
+      {
+         "archetype" : "badger:piglin_runt_nis",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 238,
+         "enabled" : true,
+         "entity_id" : "p5",
+         "entity_owner_id" : "0",
+         "faction_selector" : {
+            "id" : "faction.pig.attack",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "p5",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 57,
+         "skip_spawn_state" : false,
+         "snap_to_ground" : false,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 1368,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "p5_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 182,
+         "enabled" : true,
+         "entity_id" : "p5",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 58,
+         "should_pathfind" : false,
+         "start_time" : 1414,
+         "transform" : {
+            "locator_name" : "p5_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_spawn_from_portal",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 59,
+         "start_time" : 1368,
+         "transform" : {
+            "locator_name" : "p5_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:piglin_piggo_warboar",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 114,
+         "enabled" : true,
+         "entity_id" : "boar5",
+         "entity_owner_id" : "0",
+         "faction_selector" : {
+            "id" : "faction.pig.attack",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "boar5",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 73,
+         "skip_spawn_state" : false,
+         "snap_to_ground" : false,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 1644,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "boar5_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_spawn_from_portal",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 81,
+         "start_time" : 1725,
+         "transform" : {
+            "locator_name" : "p9_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 184,
+         "enabled" : true,
+         "entity_id" : "p6",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 62,
+         "should_pathfind" : false,
+         "start_time" : 1565,
+         "transform" : {
+            "locator_name" : "p6_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "run_c",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.3000000119209290,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p5",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 59,
+         "start_time" : 1414,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "run_c",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.3000000119209290,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "p6",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 63,
+         "start_time" : 1565,
+         "trigger_parents" : false
+      },
+      {
+         "archetype" : "badger:piglin_runt_nis",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 33,
+         "enabled" : true,
+         "entity_id" : "p9",
+         "entity_owner_id" : "0",
+         "faction_selector" : {
+            "id" : "faction.pig.attack",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "p9",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 80,
+         "skip_spawn_state" : false,
+         "snap_to_ground" : false,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 1725,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "p9_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 181,
+         "enabled" : true,
+         "entity_id" : "p7",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 66,
+         "should_pathfind" : false,
+         "start_time" : 1577,
+         "transform" : {
+            "locator_name" : "p7_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "charge_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.1000000014901161,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "boar2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 34,
+         "start_time" : 1315,
+         "trigger_parents" : false
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_spawn_from_portal",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 66,
+         "start_time" : 1540,
+         "transform" : {
+            "locator_name" : "p7_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:piglin_piggo_warboar",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 156,
+         "enabled" : true,
+         "entity_id" : "boar4",
+         "entity_owner_id" : "0",
+         "faction_selector" : {
+            "id" : "faction.pig.attack",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "boar4",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 69,
+         "skip_spawn_state" : false,
+         "snap_to_ground" : false,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 1602,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "boar4_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_spawn_from_portal",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 70,
+         "start_time" : 1602,
+         "transform" : {
+            "locator_name" : "boar4_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 129,
+         "enabled" : true,
+         "entity_id" : "boar4",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 70,
+         "should_pathfind" : false,
+         "start_time" : 1629,
+         "transform" : {
+            "locator_name" : "boar4_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:piglin_runt_nis",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 238,
+         "enabled" : true,
+         "entity_id" : "p6",
+         "entity_owner_id" : "0",
+         "faction_selector" : {
+            "id" : "faction.pig.attack",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "p6",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 61,
+         "skip_spawn_state" : false,
+         "snap_to_ground" : false,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 1510,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "p6_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_spawn_from_portal",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 62,
+         "start_time" : 1510,
+         "transform" : {
+            "locator_name" : "p6_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:piglin_runt_nis",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 60,
+         "enabled" : true,
+         "entity_id" : "p8",
+         "entity_owner_id" : "0",
+         "faction_selector" : {
+            "id" : "faction.pig.attack",
+            "mode" : "by_name"
+         },
+         "locked_for_edit" : false,
+         "name" : "p8",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 77,
+         "skip_spawn_state" : false,
+         "snap_to_ground" : false,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 1698,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "p8_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_spawn_from_portal",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 78,
+         "start_time" : 1698,
+         "transform" : {
+            "locator_name" : "p8_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "cinematic_mode",
+         "color" : [ 0.3251613676548004, 0.8000000119209290, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 1670,
+         "enabled" : false,
+         "entity_id" : "0",
+         "locked_for_edit" : false,
+         "name" : "LIGHT",
+         "row_index" : 86,
+         "start_time" : 88
+      },
+      {
+         "clip_type" : "cinematic_mode",
+         "color" : [ 0.8000000119209290, 0.6554839015007019, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 1670,
+         "enabled" : false,
+         "entity_id" : "0",
+         "locked_for_edit" : false,
+         "name" : "LIGHTING",
+         "row_index" : 87,
+         "start_time" : 88
+      },
+      {
+         "clip_type" : "cinematic_mode",
+         "color" : [ 0.3251613676548004, 0.8000000119209290, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 1670,
+         "enabled" : false,
+         "entity_id" : "0",
+         "locked_for_edit" : false,
+         "name" : "LIGHT",
+         "row_index" : 88,
+         "start_time" : 88
+      },
+      {
+         "Day" : false,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 1670,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_brazier1_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.0,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.0
+         },
+         "lights" : [
+            {
+               "color" : [ 255, 139, 0, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 5.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "brazier1",
+         "row_index" : 90,
+         "start_time" : 88,
+         "transform" : {
+            "locator_name" : "lit_brazier1_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : false,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 75,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_rally2_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.3000000119209290,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.3000000119209290
+         },
+         "lights" : [
+            {
+               "color" : [ 239, 34, 34, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 7.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "rally2",
+         "row_index" : 100,
+         "start_time" : 358,
+         "transform" : {
+            "locator_name" : "lit_rally2_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : false,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 399,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portal2_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.0,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.0
+         },
+         "lights" : [
+            {
+               "color" : [ 246, 0, 255, 255 ],
+               "falloff_power" : 2.0,
+               "intensity" : 10.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 15.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "portal1",
+         "row_index" : 95,
+         "start_time" : 1359,
+         "transform" : {
+            "locator_name" : "lit_portal1_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : false,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 164,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_rally1_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.3000000119209290,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.3000000119209290
+         },
+         "lights" : [
+            {
+               "color" : [ 246, 190, 102, 255 ],
+               "falloff_power" : 2.0,
+               "intensity" : 7.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "rally1",
+         "row_index" : 98,
+         "start_time" : 269,
+         "transform" : {
+            "locator_name" : "lit_rally1_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : false,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 508,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_pig1_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.1000000014901161,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.1000000014901161
+         },
+         "lights" : [
+            {
+               "color" : [ 242, 119, 18, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 7.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "pig1",
+         "row_index" : 107,
+         "start_time" : 491,
+         "transform" : {
+            "locator_name" : "lit_pig1_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : false,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 778,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portal2_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.0,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.1000000014901161
+         },
+         "lights" : [
+            {
+               "color" : [ 246, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 7.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 2.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "portal2",
+         "row_index" : 96,
+         "start_time" : 980,
+         "transform" : {
+            "locator_name" : "lit_portal2_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : false,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 1670,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_eye2_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.0,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.0
+         },
+         "lights" : [
+            {
+               "color" : [ 255, 24, 24, 255 ],
+               "falloff_power" : 0.1000000014901161,
+               "intensity" : 50.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 1.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "eye2",
+         "row_index" : 104,
+         "start_time" : 88,
+         "transform" : {
+            "locator_name" : "lit_eye2_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : false,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 1670,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_eye1_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.0,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.0
+         },
+         "lights" : [
+            {
+               "color" : [ 255, 24, 24, 255 ],
+               "falloff_power" : 0.1000000014901161,
+               "intensity" : 50.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 1.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "eye1",
+         "row_index" : 103,
+         "start_time" : 88,
+         "transform" : {
+            "locator_name" : "lit_eye1_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : false,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 84,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_rally2_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.3000000119209290,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.3000000119209290
+         },
+         "lights" : [
+            {
+               "color" : [ 239, 34, 34, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 7.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "rally2",
+         "row_index" : 100,
+         "start_time" : 253,
+         "transform" : {
+            "locator_name" : "lit_rally2_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : false,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 75,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_rally2_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.3000000119209290,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.3000000119209290
+         },
+         "lights" : [
+            {
+               "color" : [ 239, 34, 34, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 7.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "rally2",
+         "row_index" : 99,
+         "start_time" : 314,
+         "transform" : {
+            "locator_name" : "lit_rally2_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 60,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE OUT Duration",
+         "out_duration" : 0,
+         "row_index" : 9,
+         "start_time" : 90,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF] On Black",
+         "out_duration" : 0,
+         "row_index" : 9,
+         "start_time" : 60,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 60,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE In Duration",
+         "out_duration" : 0,
+         "row_index" : 9,
+         "start_time" : 0,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "do_debug_draw" : false,
+         "duration" : 150,
+         "enabled" : true,
+         "in_duration" : 60,
+         "locked_for_edit" : false,
+         "name" : "[FTB] Nis 1sec In - 1sec Out",
+         "out_duration" : 60,
+         "row_index" : 10,
+         "start_time" : 0,
+         "toggle_state" : "none"
+      },
+      {
+         "clip_type" : "transition_clip",
+         "do_debug_draw" : false,
+         "duration" : 60,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "[ Transition Cam :: IN NIS 1sec ]",
+         "rate" : 0.2000000029802322,
+         "row_index" : 11,
+         "start_time" : 0,
+         "time_to_reach_rate" : 0.3000000119209290,
+         "transition_out" : false
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 60,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE In Duration",
+         "out_duration" : 0,
+         "row_index" : 10,
+         "start_time" : 1698,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "do_debug_draw" : false,
+         "duration" : 151,
+         "enabled" : true,
+         "in_duration" : 60,
+         "locked_for_edit" : false,
+         "name" : "[FTB] Nis 1sec In - 1sec Out",
+         "out_duration" : 60,
+         "row_index" : 11,
+         "start_time" : 1698,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF] On Black",
+         "out_duration" : 0,
+         "row_index" : 10,
+         "start_time" : 1758,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 60,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE OUT Duration",
+         "out_duration" : 0,
+         "row_index" : 10,
+         "start_time" : 1789,
+         "toggle_state" : "none"
+      },
+      {
+         "clip_type" : "transition_clip",
+         "do_debug_draw" : false,
+         "duration" : 60,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "[ Transition Cam :: OUT NIS 1sec ]",
+         "rate" : 0.1000000014901161,
+         "row_index" : 12,
+         "start_time" : 1789,
+         "time_to_reach_rate" : 0.3000000119209290,
+         "transition_out" : true
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "hud_visibility_clip",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 1849,
+         "enabled" : true,
+         "hud_visibility" : "hidden",
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "HIDE HUD - Hidden for NISs",
+         "out_duration" : 0,
+         "row_index" : 1,
+         "start_time" : 0,
+         "toggle_state" : ""
+      },
+      {
+         "audio_event_on_skip" : "",
+         "audio_event_on_start" : "BAE_test_clap_2d",
+         "audio_event_on_stop" : "",
+         "clip_type" : "audio_clip",
+         "do_debug_draw" : false,
+         "duration" : 2,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "CLAPPER - AUDIO: Place on NIS Story Start.",
+         "row_index" : 3,
+         "start_time" : 88
+      }
+   ],
+   "extra_cast" : null,
+   "extra_entity_ids" : [ "barracks" ],
+   "extra_world_requests" : null,
+   "interrupts_vo_sequences" : true,
+   "locators" : [
+      {
+         "attach_to_id" : "",
+         "locator_name" : "FX_PortalCharge_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 0.0, 0.0, 0.0 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "FX_PortalSpawn_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 0.0, 13.39999961853027, -4.800000190734863 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "boar1_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -0.8000000119209290, 12.30000019073486, -5.0 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "boar1_2",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -4.199999809265137, 8.699999809265137, 22.89999961853027 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "boar1_fx1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 0.50, 13.10000038146973, -4.900000095367432 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "boar2_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -1.899999976158142, 11.19999980926514, -5.199999809265137 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "boar2_2",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 6.300000190734863, 12.50, 23.70000076293945 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "boar3_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 2.700000047683716, 12.19999980926514, -5.099999904632568 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "boar3_2",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -5.900000095367432, 12.19999980926514, 24.50 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "boar4_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 2.299999952316284, 11.0, -2.299999952316284 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "boar4_2",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 2.50, 11.0, 5.50 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "boar5_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -2.299999952316284, 11.0, -1.600000023841858 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "boar5_2",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -2.299999952316284, 11.0, 7.199999809265137 ]
+      },
+      {
+         "attach_to_id" : "runt_rax_fighter",
+         "locator_name" : "drunt_runt_nav1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 3.099999904632568, 1.799999952316284, 8.100000381469727 ]
+      },
+      {
+         "attach_to_id" : "runt_rax_fighter",
+         "locator_name" : "drunt_runt_nav2",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -7.300000190734863, 1.799999952316284, 8.100000381469727 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "drunt_runt_po1_1",
+         "rotation" : [ 0.0, -29.0, -0.0 ],
+         "translation" : [ 0.4000000059604645, 12.10000038146973, -3.200000047683716 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "drunt_runt_po1_2",
+         "rotation" : [ 0.0, -29.0, -0.0 ],
+         "translation" : [ -0.4000000059604645, 12.10000038146973, 0.1000000014901161 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "drunt_runt_po2_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 0.2000000029802322, 8.600000381469727, -5.699999809265137 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "drunt_runt_po3_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 2.0, 8.600000381469727, -5.699999809265137 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "drunt_runt_po4_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 3.700000047683716, 8.600000381469727, -5.400000095367432 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "drunt_runt_po_nav1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -0.2000000029802322, 2.400000095367432, 18.10000038146973 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "drunt_runt_po_nav2",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 2.900000095367432, 2.400000095367432, 18.10000038146973 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "drunt_runt_po_nav3",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 1.299999952316284, 7.0, 10.19999980926514 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "drunt_runt_po_nav4",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 12.60000038146973, 2.400000095367432, 8.50 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "frunt1_1",
+         "rotation" : [ 0.0, -180.0, -0.0 ],
+         "translation" : [ 5.0, 8.0, -11.0 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "frunt2_1",
+         "rotation" : [ 0.0, -180.0, -0.0 ],
+         "translation" : [ 3.0, 8.0, -11.0 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "frunt3_1",
+         "rotation" : [ 0.0, -180.0, -0.0 ],
+         "translation" : [ 1.0, 8.0, -11.50 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "frunt4_1",
+         "rotation" : [ 0.0, -180.0, -0.0 ],
+         "translation" : [ -1.0, 8.100000381469727, -11.69999980926514 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "lit_brazier1_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -6.556716918945312, 7.199999809265137, 17.54263114929199 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "lit_brazier2_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 3.447662353515625, 11.80000019073486, 8.603414535522461 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "lit_eye1_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -5.180648803710938, 32.59999847412109, -6.099999904632568 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "lit_eye2_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -3.900000095367432, 32.59999847412109, -6.199999809265137 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "lit_pig1_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -6.900000095367432, 11.50, 5.800000190734863 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "lit_portal1_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 0.6999999880790710, 14.60000038146973, 2.50 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "lit_portal2_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 0.3000000119209290, 13.00526428222656, -5.300000190734863 ]
+      },
+      {
+         "attach_to_id" : "rallypoint",
+         "locator_name" : "lit_rally1_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 2.50, 2.099999904632568, 4.800000190734863 ]
+      },
+      {
+         "attach_to_id" : "rallypoint",
+         "locator_name" : "lit_rally2_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -0.6999999880790710, 3.0, 1.700000047683716 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p1_1",
+         "rotation" : [ 0.0, 23.0, 0.0 ],
+         "translation" : [ -2.299999952316284, 10.39999961853027, 2.299999952316284 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p1_1rotate",
+         "rotation" : [ 0.0, -167.0, -0.0 ],
+         "translation" : [ -2.299999952316284, 10.39999961853027, 2.299999952316284 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p1_2",
+         "rotation" : [ 0.0, -2.0, -0.0 ],
+         "translation" : [ -1.600000023841858, 10.10000038146973, -3.50 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p1_2b",
+         "rotation" : [ 0.0, -12.0, -0.0 ],
+         "translation" : [ 0.6999999880790710, 10.10000038146973, -2.50 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p1_3",
+         "rotation" : [ 0.0, -12.0, -0.0 ],
+         "translation" : [ -0.6000000238418579, 10.10000038146973, 3.099999904632568 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p1temp_1",
+         "rotation" : [ 0.0, -157.0, -0.0 ],
+         "translation" : [ -0.2000000029802322, 12.0, -4.400000095367432 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p1temp_fx1",
+         "rotation" : [ 0.0, -83.0, -0.0 ],
+         "translation" : [ 0.6999999880790710, 11.50, -3.50 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p2_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 1.799999952316284, 11.0, -3.299999952316284 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p2_2",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -3.099999904632568, 11.0, 11.30000019073486 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p3_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -1.299999952316284, 11.0, -2.200000047683716 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p3_2",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 3.099999904632568, 11.0, 13.50 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p4_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -1.50, 11.0, -2.299999952316284 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p4_2",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -1.50, 11.0, 18.60000038146973 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p5_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 1.700000047683716, 11.0, -0.1000000014901161 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p5_2",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 1.700000047683716, 11.0, 21.20000076293945 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p6_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -1.700000047683716, 11.0, -3.0 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p6_2",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -3.200000047683716, 11.0, 11.39999961853027 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p7_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 2.299999952316284, 11.0, -2.299999952316284 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p7_2",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 2.599999904632568, 11.0, 11.89999961853027 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p8_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 0.8999999761581421, 11.0, -2.900000095367432 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "p9_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -1.200000047683716, 11.0, -1.700000047683716 ]
+      },
+      {
+         "attach_to_id" : "rallypoint",
+         "locator_name" : "rally_cc",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 0.0, 2.200000047683716, 0.0 ]
+      },
+      {
+         "attach_to_id" : "rallypoint",
+         "locator_name" : "s01_1",
+         "rotation" : [ 12.0, 48.0, -0.0 ],
+         "translation" : [ -1.444763183593750, 5.203409194946289, 2.36364746093750 ]
+      },
+      {
+         "attach_to_id" : "rallypoint",
+         "locator_name" : "s01_2",
+         "rotation" : [ 12.0, 48.0, -0.0 ],
+         "translation" : [ -1.444763183593750, 5.203409194946289, 2.36364746093750 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s01_4",
+         "rotation" : [ -22.0, -16.0, -0.0 ],
+         "translation" : [ 2.926101684570312, 10.24037933349609, 12.73147583007812 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s01_la_1",
+         "rotation" : [ -45.0, -25.0, -0.0 ],
+         "translation" : [ 2.707290649414062, 10.43569183349609, 12.73121643066406 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s01_la_1b",
+         "rotation" : [ -34.0, -24.0, -0.0 ],
+         "translation" : [ 2.707290649414062, 10.43569183349609, 12.73121643066406 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s01_la_2",
+         "rotation" : [ -3.0, -10.0, -0.0 ],
+         "translation" : [ 2.707290649414062, 10.43569183349609, 12.73121643066406 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s01_la_3",
+         "rotation" : [ -4.0, -12.0, -0.0 ],
+         "translation" : [ 2.707290649414062, 10.43569183349609, 12.73121643066406 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s01_la_4",
+         "rotation" : [ -17.0, -13.0, -0.0 ],
+         "translation" : [ 3.862899780273438, 10.24161529541016, 12.34524536132812 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s02_1",
+         "rotation" : [ -2.0, -51.0, -0.0 ],
+         "translation" : [ -7.964141845703125, 5.60974121093750, 19.9082031250 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s02_2",
+         "rotation" : [ -2.0, -51.0, -0.0 ],
+         "translation" : [ -7.964141845703125, 5.60974121093750, 19.9082031250 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s03_1",
+         "rotation" : [ -44.0, -28.0, -0.0 ],
+         "translation" : [ 3.60070800781250, 10.39608192443848, 12.44293212890625 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s03_2",
+         "rotation" : [ -44.0, -28.0, -0.0 ],
+         "translation" : [ 3.60070800781250, 10.39608192443848, 12.44293212890625 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s04_1",
+         "rotation" : [ 27.0, -29.0, 0.0 ],
+         "translation" : [ 5.9924316406250, 21.84014129638672, 15.79791259765625 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s04_2",
+         "rotation" : [ 27.0, -29.0, 0.0 ],
+         "translation" : [ 5.270019531250, 21.06793975830078, 14.50 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s05_1",
+         "rotation" : [ -9.0, -20.0, -0.0 ],
+         "translation" : [ 2.815345048904419, 10.06026458740234, 11.87364959716797 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s06_1",
+         "rotation" : [ 43.0, -129.0, 0.0 ],
+         "translation" : [ 6.620786666870117, 22.11882019042969, -5.015827178955078 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s07_1",
+         "rotation" : [ -21.0, -104.0, -0.0 ],
+         "translation" : [ 1.803401112556458, 12.35701751708984, -5.328210830688477 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s07_2",
+         "rotation" : [ -21.0, -94.0, -0.0 ],
+         "translation" : [ 1.615862131118774, 12.43120193481445, -5.281454086303711 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s07_3",
+         "rotation" : [ -44.0, -68.0, -20.0 ],
+         "translation" : [ 4.461781024932861, 10.45533752441406, -4.179738998413086 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s08_1",
+         "rotation" : [ 0.0, 1.0, 0.0 ],
+         "translation" : [ -0.1131708621978760, 10.93905258178711, 18.70000076293945 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s08_2",
+         "rotation" : [ 0.0, 1.0, 0.0 ],
+         "translation" : [ 0.1296601295471191, 10.94602584838867, 4.199999809265137 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s09_1",
+         "rotation" : [ 32.0, -20.0, 0.0 ],
+         "translation" : [ 3.31628417968750, 18.95735549926758, 11.5939941406250 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s09_2",
+         "rotation" : [ 32.0, -20.0, 0.0 ],
+         "translation" : [ 3.841888427734375, 19.93099594116211, 13.0583496093750 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "test1",
+         "rotation" : [ 89.0, -150.0, 0.0 ],
+         "translation" : [ 22.06439208984375, 42.50577545166016, 93.98411560058594 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "test2",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -32.29999923706055, 7.800000190734863, 121.0 ]
+      }
+   ],
+   "max_distance" : -1.0,
+   "proximity_range" : 200.0,
+   "requires_watcher" : false,
+   "sharing_policy" : "proximity",
+   "skip_condition_variable" : "",
+   "skip_to_cinematic" : "default_skip_cinematic",
+   "skippable" : true,
+   "stage" : "",
+   "version" : 9,
+   "wants_skip_queue" : true
+}

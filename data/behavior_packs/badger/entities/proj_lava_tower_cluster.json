@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_lava_tower_cluster",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:projectile": {
+        "horizontal_speed": 20.0,
+        "min_flight_time": 1.0
+      },
+      "badger:projectile_physics": {
+        "gravity": -50
+      },
+      "badger:presentation_event": {
+        "on_world_hit": {
+          "spawn_entity": [
+            "badger:piglin_lava_thrower_single",
+            "badger:proj_lava_tower_cluster_impact"
+          ]
+        },
+        "on_entity_hit": {
+          "spawn_entity": [
+            "badger:piglin_lava_thrower_single",
+            "badger:proj_lava_tower_cluster_impact"
+          ]
+        }
+      }
+    }
+  }
+}

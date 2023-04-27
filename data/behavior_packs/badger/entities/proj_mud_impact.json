@@ -1,0 +1,64 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_mud_impact",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.1,
+        "height": 1.0
+      },
+      "badger:removal_time": {
+        "time": 0.1
+      },
+      "badger:movement": {
+        "move_speed": 0.0
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": false,
+        "auto_step": 3.1
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 0.5
+        },
+        "count_limit": 1,
+        "damage_effects": [
+          {
+            "name": "aoe_mud_impact",
+            "damage": 0.1,
+            "damage_types": [
+              "root"
+            ],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "boss"
+            ],
+            "apply_status": {
+              "rooted": {
+                "chance": 1,
+                "strength": 2
+              },
+              "engaged": {
+                "chance": 1.0,
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      }
+    }
+  }
+}

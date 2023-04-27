@@ -1,0 +1,19 @@
+{
+  "format_version": "1.13.0",
+  "code:conditional_list": {
+    "description": {
+      "identifier": "badger:feature_drylands_salt_waves_conditional_list"
+    },
+    "conditional_features": [
+      {
+        "places_feature": "badger:feature_drylands_salt_waves_block_lower",
+        "condition": "temp.noisevalue = q.noise(v.worldx, v.worldz, 20); temp.noise_satisfied = (temp.noisevalue > math.random(-0.3, 0.15) && temp.noisevalue < math.random(0, 0.45)) ? 1.0 : 0.0; return temp.noise_satisfied && variable.worldy == q.sea_level - 1;"
+      },
+      {
+        "places_feature": "badger:feature_drylands_salt_waves_block_upper",
+        "condition": "temp.noise_satisfied && v.worldy == q.sea_level"
+      }
+    ],
+    "early_out_scheme": "placement_success"
+  }
+}

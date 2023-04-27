@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_slab_cake",
+      "material": "badger_dirt"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "slab",
+        "directional_texture": false,
+        "directional_shape": true
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      }
+    }
+  }
+}

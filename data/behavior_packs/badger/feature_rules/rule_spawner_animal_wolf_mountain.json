@@ -1,0 +1,47 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_spawner_animal_wolf_mountain",
+      "places_feature": "badger:feature_spawner_animal_wolf_mountain"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mountain_foothills"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mountain_peaks"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "early_out": "q.water_distance(v.scatteredx, v.scatteredz) <= 2 || query.get_game_rule_value('roaming_animals') == false",
+      "scatter_chance": "q.get_game_rule_value('roaming_animals') ? 0.2 : 0",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0, 15
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0, 15
+        ]
+      }
+    }
+  }
+}

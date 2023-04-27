@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_bullrush_clump_01_riverbed",
+        10.0
+      ],
+      [
+        "badger:feature_bullrush_clump_02_riverbed",
+        10.0
+      ],
+      [
+        "badger:feature_bullrush_clump_03_riverbed",
+        10.0
+      ],
+      [
+        "badger:feature_grassrush_clump_01_riverbed",
+        80.0
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_grasslands_grass_riverbed_weighted"
+    }
+  }
+}

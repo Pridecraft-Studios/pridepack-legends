@@ -1,0 +1,359 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_piglin_piggo_warboar_guarded",
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 6.5
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 8
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Player Targeting
+          {
+            "name": "warboar_player_melee",
+            "max_range": 6,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 2.5,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "warboar_melee_attack"
+            ]
+          },
+          {
+            "name": "warboar_player_charge",
+            "max_range": 10,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 2.5,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "warboar_charge_attack"
+            ]
+          },
+          //Support Golem Targeting
+          {
+            "name": "warboar_default_melee",
+            "max_range": 10,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 2.5,
+            "include_tags": [
+              "support"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "warboar_melee_attack"
+            ]
+          },
+          {
+            "name": "warboar_default_charge",
+            "max_range": 18,
+            "action_tickets": {
+              "sc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 2.5,
+            "include_tags": [
+              "support"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "warboar_charge_attack"
+            ]
+          },
+          //General targeting
+          {
+            "name": "warboar_default_melee",
+            "max_range": 10,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 2.5,
+            "include_tags": [],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "warboar_melee_attack"
+            ]
+          },
+          {
+            "name": "warboar_default_charge",
+            "max_range": 18,
+            "action_tickets": {
+              "sc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 2.5,
+            "include_tags": [],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "warboar_charge_attack"
+            ]
+          },
+          //Secondary Combat Positioning
+          {
+            "name": "warboar_secondary_combat_pos",
+            "max_range": 6,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 2.5,
+            "action_tickets": {
+              "sc": 1
+            },
+            "include_tags": [],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "secondary_combat_position"
+            ]
+          },
+          //Approach
+          {
+            "name": "warboar_target_approach",
+            "max_range": 30.0,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 2.5,
+            "action_tickets": {
+              "sc": 1
+            },
+            "include_tags": [],
+            "exclude_tags": [
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "warboar_approach"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "warboar_melee_attack",
+            "predictive_windup": false,
+            "transfer_activation": [
+              "warboar_melee_attack_back"
+            ],
+            "trigger": "on_melee_attack_a",
+            "range": {
+              "max_range": 1
+            },
+            "state_machine": {
+              "wind_up": 0.40,
+              "wind_down": 2.10,
+              "activation_time": 0.40,
+              "cooldown_time": 4.8,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 160,
+                "radius": 1.5,
+                "thickness": 3.0,
+                "position": [
+                  0.0,
+                  1.0,
+                  1.5
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 3,
+                "damage_types": [
+                  "cavalry"
+                ]
+              },
+              "knockback": {
+                "angle": 35,
+                "force": 10
+              }
+            }
+          },
+          {
+            "name": "warboar_melee_attack_back",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 1
+            },
+            "state_machine": {
+              "wind_up": 1.2,
+              "wind_down": 1.7,
+              "cooldown_time": 1.0,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 160,
+                "radius": 2.5,
+                "rotation": 180,
+                "thickness": 3.0,
+                "position": [
+                  0.0,
+                  1.0,
+                  -1.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 5,
+                "damage_types": [
+                  "cavalry"
+                ]
+              },
+              "knockback": {
+                "angle": 25,
+                "force": 12
+              }
+            }
+          },
+          {
+            "name": "warboar_charge_attack",
+            "predictive_windup": false,
+            "trigger": "on_melee_attack_b",
+            "range": {
+              "min_range": 8,
+              "max_range": 16
+            },
+            "state_machine": {
+              "wind_up": 0.50,
+              "activation_time": 1.0,
+              "wind_down": 1.0,
+              "cooldown_time": 3.0,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 160,
+                "radius": 1.25,
+                "thickness": 3.0,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.75
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "stairs"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 3,
+                "damage_types": [
+                  "cavalry"
+                ]
+              },
+              "knockback": {
+                "angle": 25,
+                "force": 17
+              }
+            },
+            "charge": {
+              "speed": 16
+            }
+          },
+          {
+            "name": "warboar_approach",
+            "range": {
+              "max_range": 2
+            }
+          },
+          {
+            "name": "secondary_combat_position",
+            "range": {
+              "min_range": 0.5,
+              "max_range": 4
+            }
+          }
+        ]
+      }
+    }
+  }
+}

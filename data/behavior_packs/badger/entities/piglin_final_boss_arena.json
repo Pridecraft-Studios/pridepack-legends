@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_final_boss_arena",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:tag_modifier_source": {
+        "radius": 100,
+        "tag_filter": {
+          "include_tags": ["player"],
+          "exclude_tags": []
+        },
+        "alliance_rule_filter": "enemy",
+        "tags_to_add": ["inside_final_boss_arena"]
+      }
+    }
+  }
+}

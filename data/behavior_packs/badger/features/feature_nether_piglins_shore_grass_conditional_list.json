@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:conditional_list": {
+    "description": {
+      "identifier": "badger:feature_nether_piglins_shore_grass_conditional_list"
+    },
+    "conditional_features": [
+      {
+        "places_feature": "badger:feature_nether_piglins_grass_shore_weighted",
+        "condition" : " math.random(0, 6) < 3 && query.water_distance(variable.worldx, variable.worldz) <= 2 && query.heightmap(variable.worldx, variable.worldz) == query.sea_level "
+      }
+    ],
+	"early_out_scheme": "placement_success"
+  }
+}

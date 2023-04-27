@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_mountains_valleys_cedar_mixed_plants_weighted"
+    },
+    "features": [
+      ["badger:feature_mountains_plant_whiteberry_01",10.0],
+      ["badger:feature_mountains_plant_greenblade_01",8.0],
+      ["badger:feature_mountains_plant_greenblade_02",8.0],
+      ["badger:feature_mountains_plant_greenblade_03",8.0]
+    ]
+  }
+}

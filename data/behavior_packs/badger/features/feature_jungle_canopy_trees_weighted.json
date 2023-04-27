@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "description": {
+      "identifier": "badger:feature_jungle_canopy_trees_weighted"
+    },
+    "features": [
+      ["badger:feature_tree_jungle_canopy_01",30.0],
+      ["badger:feature_tree_jungle_canopy_02",30.0],
+      ["badger:feature_tree_jungle_canopy_03",30.0],
+      ["badger:feature_tree_jungle_canopy_04",30.0],
+      ["badger:feature_tree_jungle_canopy_05",30.0]
+    ]
+  }
+}

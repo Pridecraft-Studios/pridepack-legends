@@ -1,0 +1,17 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_tree_horsetail_leaf",
+      "material": "badger_wood"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty",
+        "camera_collision": false,
+        "directional_texture": false,
+        "directional_shape": true
+      }
+    }
+  }
+}

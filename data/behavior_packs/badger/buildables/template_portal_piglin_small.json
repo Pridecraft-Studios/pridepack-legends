@@ -1,0 +1,108 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_portal_piglin_small",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_offline_construction_with_hurtboxes",
+        "badger:template_structure_piglin"
+      ],
+      "badger:village_heart": {},
+      "badger:buildable_structure": {
+        "nbt_file": "portal_piglin_large",
+        "build_time": 0,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:buildable_requirement": {
+      },
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:health": {
+        "max_health": 3000
+      },
+      "badger:waypoint_marker": {
+        "path": "structure_piglin",
+        "label": "",
+        "world_position_offset": [
+          0,
+          7,
+          0
+        ]
+      },
+      "badger:hurtbox_tags": {
+        "tags": [
+          "buildable_combat"
+        ]
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 20.0,
+        "waypoint_max_range": 20.0,
+        "compass_max_range": "long",
+        "filter_tagsets": [
+          {
+            "include_tags":[],
+            "exclude_tags":[]
+          },
+          {
+            "include_tags":["base_assault"],
+            "exclude_tags":[]
+          }
+        ]
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:piglin_runt",
+            "percentage": 1
+          }
+        ],
+        "cap": 0,
+        "rate": 0,
+        "offset": [
+          2.0,
+          2.0,
+          0.0
+        ],
+        "batch": 0,
+        "spawning_trigger": "on_barracks_spawn"
+      },
+      "badger:scriptable_buildable_spawner": {},
+      "badger:loot": {
+        "table": "piglin_portal_loot"
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "portal_piglin_large",
+          "portal_piglin",
+          "piglinStructure",
+          "portalAudioTag",
+          "UnendingFactionPortal",
+          "piglin"
+        ]
+      },
+      "badger:show_debug_health": {},
+      "badger:objective_health_bar": {
+        "max_visible_range": 150,
+        "priority": 1,
+        "type": "portal"
+      },
+      "badger:pop_cap_anchor": {
+        "min_pop_cap": 50,
+        "min_pop_cap_range": 500,
+        "alliance_rule_filter": "friendly",
+        "greedy": false
+      }
+    }
+  }
+}

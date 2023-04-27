@@ -1,0 +1,1050 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_hammer_boss",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Boss"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1.5,
+        "height": 3.0
+      },
+      "badger:loot": {
+        "table": "boss_piglin_loot",
+        "overrides": [
+          {
+            "name": "village_attack",
+            "table": "boss_piglin_loot"
+          }
+        ]
+      },
+      "badger:telemetry_category": {
+        "category_name": "Piglin Boss"
+      },
+      "badger:entity_collision": {},
+      "badger:reports_hit_reaction": {},
+      "badger:world_collision": {
+        "has_collision": true,
+        "auto_step": 3.1,
+        "interpolation_speed": 10
+      },
+      "badger:collision_weight": {
+        "weight": 1000
+      },
+      "badger:physics": {
+        "gravity": -60,
+        "water_speed_modifier": 1,
+        "buoyancy": 10
+      },
+      "badger:movement": {
+        "move_speed": 10
+      },
+      "badger:wander": {
+        "wander_frequency": 0.2,
+        "wander_radius": 20
+      },
+      "badger:tags": {
+        "tags": [
+          "boss",
+          "disruptor",
+          "piglin",
+          "hammerBoss",
+          "mob"
+        ]
+      },
+      "badger:health": {
+        "max_health": 15000
+      },
+      "badger:navigation": {
+        "avoidance_lookahead": 50.0,
+        "fall_distance": 10,
+        "avoid_block_damage": false,
+        "ignore_solids_rule": "same_team"
+      },
+      "badger:conditionally_solid_blocks": {
+        "include_tags": [
+          "boss_solid"
+        ],
+        "exclude_tags": []
+      },
+      "badger:damage_receiver": {
+        "damage_resistances": {
+          "ranged": 0.25,
+          "fire": 0.5,
+          "lava": 12.0
+        },
+        "shape": {
+          "type": "cylinder",
+          "radius": 3.0,
+          "height": 7.0,
+          "direction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 40,
+          "sc": 20,
+          "rc": 40
+        }
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "name": "hammer_retreat",
+            "max_range": 300,
+            "include_tags": [
+              "attack_boss_spawn_target_location"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "retreat"
+            ]
+          },
+          {
+            "name": "hammer_spawner_melee",
+            "min_range": 0,
+            "max_range": 15,
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "spawner"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "wall",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_smash_structure"
+            ]
+          },
+          {
+            "name": "hammer_spawner_charge",
+            "min_range": 0,
+            "max_range": 25,
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "spawner"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "charge_structure"
+            ]
+          },
+          {
+            "name": "hammer_buildable_melee",
+            "min_range": 0,
+            "max_range": 30,
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "buildable_combat",
+              "buildable"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "wall",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_smash_structure"
+            ]
+          },
+          {
+            "name": "buildable_melee_nav_fail",
+            "min_range": 0,
+            "max_range": 10,
+            "enable_with_line_of_sight": true,
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "include_tags": [
+              "buildable_combat",
+              "buildable"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_smash_structure"
+            ]
+          },
+          {
+            "name": "hammer_buildable_charge",
+            "min_range": 0,
+            "max_range": 50,
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "buildable_combat",
+              "buildable"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "fountain"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "charge_structure"
+            ]
+          },
+          {
+            "name": "hammer_default_melee_flurry",
+            "min_range": 0,
+            "max_range": 10,
+            "enable_with_line_of_sight": true,
+            "required_target_count": 15,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_flurry_forward",
+              "melee_flurry_right",
+              "melee_flurry_back",
+              "melee_flurry_left"
+            ]
+          },
+          {
+            "name": "hammer_default_melee_swipe",
+            "min_range": 0,
+            "max_range": 10,
+            "enable_with_line_of_sight": true,
+            "required_target_count": 8,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "buildable_combat",
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_swipe",
+              "melee_swipe_2"
+            ]
+          },
+          {
+            "name": "hammer_default_melee",
+            "min_range": 0,
+            "max_range": 10,
+            "enable_with_line_of_sight": true,
+            "required_target_count": 5,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "buildable_combat",
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_smash"
+            ]
+          },
+          {
+            "name": "hammer_default_charge",
+            "min_range": 0,
+            "max_range": 30,
+            "enable_with_line_of_sight": true,
+            "required_target_count": 5,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "buildable_combat",
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "charge_mobs"
+            ]
+          },
+          {
+            "name": "hammer_player_melee",
+            "min_range": 0,
+            "max_range": 50,
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_smash"
+            ]
+          },
+          {
+            "name": "hammer_default",
+            "min_range": 0,
+            "max_range": 100,
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "fountain"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_smash"
+            ]
+          },
+          {
+            "name": "approach",
+            "min_range": 0,
+            "max_range": 120,
+            "include_tags": [
+              "fountain"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "approach"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "charge_mobs",
+            "trigger": "on_charge_stun",
+            "transfer_activation": "tired_recovery",
+            "on_hit_target_trigger": "on_hammer_boss_melee_attack_hit",
+            "grace_period_between_hits": 0.25,
+            "predictive_windup": false,
+            "range": {
+              "max_range": 30
+            },
+            "state_machine": {
+              "wind_up": 3.0,
+              "cooldown_time": 45,
+              "activation_time": 2.9,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 70,
+                "radius": 6.0,
+                "rotation": 0,
+                "thickness": 12,
+                "position": [
+                  0.0,
+                  5.0,
+                  0.0
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "fountain",
+                  "hammerBoss"
+                ],
+                "alliance_rule_filter": "any_team"
+              },
+              "damage": {
+                "damage_amount": 50,
+                "damage_types": [
+                  "crush"
+                ]
+              },
+              "knockback": {
+                "angle": 25,
+                "force": 25
+              },
+              "falloff": {
+                "min_radius": 5,
+                "max_radius": 10,
+                "min_damage": 15,
+                "min_angle": 10
+              },
+              "apply_status": {
+                "stunned": {
+                  "chance": 1.0,
+                  "strength": 1.5
+                }
+              }
+            },
+            "charge": {
+              "speed": 30
+            }
+          },
+          {
+            "name": "charge_structure",
+            "trigger": "on_charge_stun",
+            "transfer_activation": "tired_recovery",
+            "on_hit_target_trigger": "on_hammer_boss_melee_attack_hit",
+            "grace_period_between_hits": 0.25,
+            "predictive_windup": false,
+            "range": {
+              "max_range": 30
+            },
+            "state_machine": {
+              "wind_up": 3.0,
+              "cooldown_time": 45,
+              "activation_time": 2.9,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 70,
+                "radius": 6.0,
+                "rotation": 0,
+                "thickness": 8,
+                "position": [
+                  0.0,
+                  8.0,
+                  0.0
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "fountain",
+                  "hammerBoss"
+                ],
+                "alliance_rule_filter": "any_team"
+              },
+              "damage": {
+                "damage_amount": 50,
+                "damage_types": [
+                  "crush"
+                ]
+              },
+              "knockback": {
+                "angle": 25,
+                "force": 25
+              },
+              "falloff": {
+                "min_radius": 5,
+                "max_radius": 10,
+                "min_damage": 15,
+                "min_angle": 10
+              },
+              "apply_status": {
+                "stunned": {
+                  "chance": 1.0,
+                  "strength": 1.5
+                }
+              }
+            },
+            "charge": {
+              "speed": 30
+            }
+          },
+          {
+            "name": "tired_recovery",
+            "trigger": "on_tired_recovery",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 30
+            },
+            "state_machine": {
+              "wind_up": 4.0,
+              "wind_down": 3.0,
+              "cooldown_time": 5,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "melee_smash",
+            "on_hit_target_trigger": "on_hammer_boss_melee_attack_hit",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 5.0
+            },
+            "state_machine": {
+              "wind_up": 3.0,
+              "wind_down": 1.5,
+              "cooldown_time": 3,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 5,
+                "position": [
+                  0,
+                  0.0,
+                  5.0
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 50,
+                "damage_types": [
+                  "crush"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 25
+              },
+              "falloff": {
+                "min_radius": 5,
+                "max_radius": 10,
+                "min_damage": 15,
+                "min_angle": 10
+              },
+              "apply_status": {
+                "stunned": {
+                  "chance": 1.0,
+                  "strength": 1.5
+                }
+              }
+            }
+          },
+          {
+            "name": "melee_smash_structure",
+            "on_hit_target_trigger": "on_hammer_boss_melee_attack_hit",
+            "predictive_windup": false,
+            "starts_disabled": false,
+            "range": {
+              "max_range": 5.0
+            },
+            "state_machine": {
+              "wind_up": 3.0,
+              "wind_down": 1.5,
+              "cooldown_time": 10,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 5,
+                "position": [
+                  0,
+                  4.0,
+                  3.5
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 50,
+                "damage_types": [
+                  "crush"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 25
+              },
+              "falloff": {
+                "min_radius": 5,
+                "max_radius": 10,
+                "min_damage": 15,
+                "min_angle": 10
+              },
+              "apply_status": {
+                "stunned": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                }
+              }
+            }
+          },
+          {
+            "name": "melee_swipe",
+            "on_hit_target_trigger": "on_hammer_boss_melee_attack_hit",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 2.5,
+              "wind_down": 2.0,
+              "cooldown_time": 5,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 8,
+                "position": [
+                  0,
+                  4.0,
+                  0
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 25,
+                "damage_types": [
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "angle": 30,
+                "force": 20
+              },
+              "falloff": {
+                "min_radius": 5,
+                "max_radius": 10,
+                "min_damage": 15,
+                "min_angle": 10
+              }
+            }
+          },
+          {
+            "name": "melee_swipe_2",
+            "on_hit_target_trigger": "on_hammer_boss_melee_attack_hit",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 10
+            },
+            "state_machine": {
+              "wind_up": 3.0,
+              "wind_down": 1.5,
+              "cooldown_time": 5,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 10,
+                "position": [
+                  0,
+                  4.0,
+                  0
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 25,
+                "damage_types": [
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "angle": 30,
+                "force": 20
+              },
+              "falloff": {
+                "min_radius": 5,
+                "max_radius": 10,
+                "min_damage": 15,
+                "min_angle": 10
+              }
+            }
+          },
+          {
+            "name": "melee_flurry_forward",
+            "on_hit_target_trigger": "on_hammer_boss_melee_attack_hit",
+            "predictive_windup": false,
+            "starts_disabled": false,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 3.001,
+              "wind_down": 8.999,
+              "cooldown_time": 60,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 10.0,
+                "thickness": 8,
+                "rotation": 0,
+                "position": [
+                  0,
+                  4,
+                  0
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 30,
+                "damage_types": [
+                  "crush"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 25
+              },
+              "falloff": {
+                "min_radius": 5,
+                "max_radius": 10,
+                "min_damage": 15,
+                "min_angle": 10
+              }
+            }
+          },
+          {
+            "name": "melee_flurry_right",
+            "on_hit_target_trigger": "on_hammer_boss_melee_attack_hit",
+            "predictive_windup": false,
+            "starts_disabled": false,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 4.257,
+              "wind_down": 7.743,
+              "cooldown_time": 60,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 10.0,
+                "thickness": 8,
+                "rotation": 90,
+                "position": [
+                  0,
+                  4,
+                  0
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 30,
+                "damage_types": [
+                  "crush"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 25
+              },
+              "falloff": {
+                "min_radius": 5,
+                "max_radius": 10,
+                "min_damage": 15,
+                "min_angle": 10
+              }
+            }
+          },
+          {
+            "name": "melee_flurry_back",
+            "on_hit_target_trigger": "on_hammer_boss_melee_attack_hit",
+            "predictive_windup": false,
+            "starts_disabled": false,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 5.301,
+              "wind_down": 6.699,
+              "cooldown_time": 60,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 10.0,
+                "thickness": 8,
+                "rotation": 180,
+                "position": [
+                  0,
+                  4,
+                  0
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 30,
+                "damage_types": [
+                  "crush"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 25
+              },
+              "falloff": {
+                "min_radius": 5,
+                "max_radius": 10,
+                "min_damage": 15,
+                "min_angle": 10
+              }
+            }
+          },
+          {
+            "name": "melee_flurry_left",
+            "on_hit_target_trigger": "on_hammer_boss_melee_attack_hit",
+            "predictive_windup": false,
+            "starts_disabled": false,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 6.501,
+              "wind_down": 5.499,
+              "cooldown_time": 60,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 10.0,
+                "thickness": 8,
+                "rotation": 270,
+                "position": [
+                  0,
+                  4,
+                  0
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 30,
+                "damage_types": [
+                  "crush"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 25
+              },
+              "falloff": {
+                "min_radius": 5,
+                "max_radius": 10,
+                "min_damage": 15,
+                "min_angle": 10
+              }
+            }
+          },
+          {
+            "name": "approach",
+            "range": {
+              "max_range": 0.0,
+              "min_range": 1.0
+            }
+          }
+        ]
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 7
+        },
+        "timer": {
+          "interval": 1
+        },
+        "damage_effects": {
+          "damage": 0,
+          "damage_types": [],
+          "include_tags": [
+            "piglin_tier1"
+          ],
+          "exclude_tags": [
+            "boss"
+          ],
+          "apply_status": {
+            "feared": {
+              "chance": 1.0,
+              "strength": 0.25
+            }
+          },
+          "alliance_rule_filter": "friendly"
+        }
+      },
+      "badger:presentation_event": {
+        "on_charge_stun": {
+          "spawn_entity": {
+            "chance": 1.0,
+            "entities": [
+              {
+                "chance": 1.0,
+                "entity": "badger:transform_hammer_boss_stunned_state"
+              }
+            ]
+          }
+        }
+      },
+      "badger:cinematic_death": {
+        "cine_id": [
+          "hrd02_c05_attack_boss_death"
+        ]
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 20.0,
+        "waypoint_max_range": 20.0,
+        "compass_max_range": "medium",
+        "filter_tagsets": [
+          {
+            "include_tags": [
+              "village_attack"
+            ],
+            "exclude_tags": []
+          }
+        ]
+      },
+      "badger:damage_receiver_material": {
+        "material": "block"
+      },
+      "badger:waypoint_marker": {
+        "path": "waypoint_piglin_hammer_boss",
+        "label": "faction.piglin.attack.boss.name"
+      },
+      "badger:objective_health_bar": {
+        "max_visible_range": 155,
+        "priority": 2,
+        "type": "boss"
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 0
+      },
+      "badger:resist_status": {
+        "stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "rooted": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "feared": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "slowed": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "poisoned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "spore_damaged": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "burning": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "wet": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "healing": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "healing_stone": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "electric_stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "slowed_piglin_bramble": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        }
+      },
+      "badger:spawn_tracking": {},
+      "badger:music_emitter_states": [
+        "music_boss_attack0",
+        "music_boss_attack1",
+        "music_boss_attack2"
+      ],
+      "badger:template": [
+        "badger:component_difficulty_modifiers_piglin_bosses"
+      ]
+    }
+  }
+}

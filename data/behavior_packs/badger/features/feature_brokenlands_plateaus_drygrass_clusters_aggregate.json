@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_plateaus_drygrass_clusters_aggregate"
+    },
+    "features": [
+      "badger:feature_brokenlands_plateaus_festuca_scatter",
+      "badger:feature_brokenlands_plateaus_grass_clump_scatter",
+      "badger:feature_brokenlands_plateaus_pebbles_festuca_scatter"
+    ],
+    "early_out": "first_failure"
+  }
+}

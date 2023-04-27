@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:status_effect_shrink_aabb",
+			"runtime_identifier": "badger:status_effect"
+		},
+		"components": {
+			"badger:status": {
+				"applied_name": "shrink",
+				"default_resistance": {
+					"resisted": false,
+					"time": 10,
+					"resistance_persist_time": -1
+				}
+			},
+			"badger:modifier_resistance": {
+				"resistances": {
+				  "explosion": 3.0,
+				  "crush": 3.0,
+				  "spore": 3.0,
+				  "ranged": 3.0,
+				  "melee": 3.0,
+				  "fire": 3.0
+				}
+			},
+			"badger:modifier_size": {
+			  "scale": 0.5
+			}
+		}
+	}
+}

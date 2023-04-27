@@ -1,0 +1,43 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:placeable_force_move_entry_point",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:tags": {
+                "tags": [
+                    "lure"
+                ]
+            },
+            "badger:influencer_coordinator": {
+                "formation_aspect_ratio": 2.0,
+                "formation_jitter": 0.25,
+                "formation_separation": 0.25,
+                "despawn_if_empty": true
+            },
+            "badger:lure": {
+                "lure_range": 10.0,
+                "active_timer": 0.0,
+                "release_on_arrival": true,
+                "sticky_assignment": true,
+                "influencer_priority": 11,
+                "influenced_priority": 0,
+                "include_tags": [],
+                "exclude_tags": [
+                    "villager",
+                    "illager"
+                ],
+                "config_id": "force_move",
+                "alliance_rule_filter": "is_lureable",
+                "show_influence_range": false,
+                "show_influence_direction_line": false,
+                "visual_alliance_rule_filter": "friendly",
+                "on_apply_target_trigger": "on_placed_lured",
+                "center_effect_on_owner": false
+            }
+        }
+    }
+}

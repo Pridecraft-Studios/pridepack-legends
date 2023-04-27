@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_block_frostground_01"
+    },
+    "may_replace": [
+      "badger:block_frostground",
+      "badger:block_frostground_02",
+      "badger:block_frostground_03"
+    ],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_frostground"
+  }
+}

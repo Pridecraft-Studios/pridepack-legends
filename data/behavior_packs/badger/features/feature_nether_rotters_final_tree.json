@@ -1,0 +1,25 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_nether_rotters_final_tree"
+    },
+    "structure_name": "prop_piglin_obstacle_tree",
+
+    "placement_range": {
+      "x": [0,1],
+      "z": [0,1],
+      "y": [-1,0]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {},
+      "block_intersection": {
+        "block_deny_list": [
+          "badger:block_water",
+          "minecraft:grass"
+        ]
+      }
+    }
+  }
+}

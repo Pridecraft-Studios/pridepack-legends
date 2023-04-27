@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:zoner_fort_outpost",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Building",
+      "function": "Military",
+      "type": "Player"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:zoner_fort_outpost",
+        "game_mode": "campaign"
+      },
+      "badger:buildable_presentation": {
+        "icon": "structure_fort_outpost_001",
+        "tooltip_title": "structures.zoner_fort_outpost.name",
+        "tactical_description": "structures.zoner_fort_outpost.tactical_description",
+        "tooltip_description": "structures.zoner_fort_outpost.description",
+        "buildable_category": "utility",
+        "sort_order": 1900
+      },
+      "badger:objective_health_bar": {
+        "max_visible_range": 100,
+        "priority": 1,
+        "type": "outpost"
+      },
+      "badger:reports_buildable_state": {
+        "reports_state": "building"
+      }
+    }
+  }
+}

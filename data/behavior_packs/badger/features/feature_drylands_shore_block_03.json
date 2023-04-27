@@ -1,0 +1,25 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_drylands_shore_block_03"
+    },
+    "may_replace": [
+      "badger:block_riverbed_b",
+      "badger:block_riverbed_b2"
+    ],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_riverbed_blend_03",
+    "may_attach_to": {
+      "min_sides_must_attach": 2,
+      "sides": [ 
+        "badger:block_riverbed_blend_02"
+      ],
+      "bottom": [
+        "badger:block_riverbed_b",
+        "badger:block_riverbed_b2"
+      ]
+    }
+  }
+}

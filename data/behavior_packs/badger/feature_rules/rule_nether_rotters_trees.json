@@ -1,0 +1,50 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_nether_rotters_trees",
+      "places_feature": "badger:feature_nether_rotters_mushrooms_trees_aggregate"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "nether_rotters_lower"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "nether_piglin_final"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "1",
+      "scatter_chance": 40,
+      "early_out": "v.scatteredy <= query.sea_level - 3",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          -3,
+          8
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+        -3,
+          8
+        ]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz) - 1"
+    }
+  }
+}

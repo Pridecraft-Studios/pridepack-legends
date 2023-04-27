@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "material": "badger_ice", 
+      "identifier": "badger:block_deco_vine_nether"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty", 
+        "directional_texture": false, 
+        "directional_shape": true
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "deco_nether", 
+          "piglin_base_not_buildable"
+        ]
+      }, 
+      "badger:terrain_type": {
+        "terrain": "snow"
+      }
+    }
+  }
+}

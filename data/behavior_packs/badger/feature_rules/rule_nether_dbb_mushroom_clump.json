@@ -1,0 +1,39 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_nether_dbb_mushroom_clump",
+      "places_feature": "badger:feature_nether_dbb_mushroom_clumps_weighted"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "nether_piglin_dbb"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "temp.zscatterfix = math.random(0,16); temp.xscatterfix = math.random(0,16); return math.random(10,15);",
+      "scatter_chance": 100,
+      "early_out": "v.scatteredy > 30",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "gaussian",
+        "extent": ["temp.xscatterfix", "temp.xscatterfix + 6"]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "z": {
+        "distribution": "gaussian",
+        "extent": ["temp.zscatterfix", "temp.zscatterfix + 6"]
+      }
+    }
+  }
+}

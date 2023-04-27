@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_block_diamond"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_ore_diamond",
+    "may_attach_to": {
+      "bottom": [
+        "badger:block_ore_diamond_sediment",
+        "badger:block_ore_diamond"
+      ]
+    },
+    "may_replace": [
+      "badger:block_glacier_01",
+      "minecraft:air",
+      "badger:block_ore_diamond_sediment"
+    ]
+  }
+}

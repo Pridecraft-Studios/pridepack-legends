@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "material": "badger_grass", 
+      "identifier": "badger:block_jungle_terrace_top"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube", 
+        "directional_texture": false, 
+        "directional_shape": false, 
+        "connection_family": "jungle_terrace_top", 
+        "connect_to_family": "jungle_terrace_top"
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:terrain_type": {
+        "terrain": "grass"
+      }
+    }
+  }
+}

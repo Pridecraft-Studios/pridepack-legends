@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_plant_netherwart_small",10.0],
+      ["badger:feature_plant_netherwart_large",10.0],
+      ["badger:feature_plant_nether_grass_tall",10.0],
+      ["badger:feature_plant_nether_grass_small",30.0],
+      ["badger:feature_plant_nether_grass",20.0]
+    ],
+    "description": {
+      "identifier": "badger:feature_nether_dbb_mushroom_clumps_weighted"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:piglin_attack_medium",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:waypoint_marker_visibility": {
+                "waypoint_min_range": 20,
+                "waypoint_max_range": 20,
+                "compass_max_range": "medium",
+                "filter_tagsets": [
+                    {
+                        "include_tags": [],
+                        "exclude_tags": ["base_assault", "village_attack"]
+                    }
+                ]
+            },
+            "badger:waypoint_marker": {
+                "path": "waypoint_piglinbase_horde_medium",
+                "label": "messages.map_marker_ping.selected.piglin.attack.medium",
+                "world_position_offset": [0, 3, 0]
+            },
+            "badger:village": {
+                "name": "Piglin Attack"
+            },
+            "badger:village_building_placement": {},
+            "badger:village_zone": {
+                "expansion_distance": 160.0,
+                "zone_jitter_min": 0.0,
+                "zone_jitter_max": 6.0,
+                "is_zone_jitter_bell_curve": false,
+                "zone_spacing": 20.0,
+                "water_search_resolution": 6.0
+            },
+            "badger:template": "badger:piglin_attack"
+        }
+    }
+}

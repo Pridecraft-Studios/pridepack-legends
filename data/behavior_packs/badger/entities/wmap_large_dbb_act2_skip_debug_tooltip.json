@@ -1,0 +1,15 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:wmap_large_dbb_act2_skip_debug_tooltip",
+        "runtime_identifier": "badger:badger_mob",
+        "is_summonable": false
+      },
+      "components": {
+        "badger:map3_tooltip_extended": {
+          "description": "This base is only destroyed if you skip act1 through debug commands, so don't worry about this message"
+        }
+      }
+    }
+  }

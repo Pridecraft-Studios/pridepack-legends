@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_burnt_grass_dead_trees_aggregate"
+    },
+    "early_out": "first_failure",
+    "features": [
+      "badger:feature_burnt_grass_dead_trees_scatter",
+      "badger:feature_burnt_grass_drygrass_scatter"
+    ]
+  }
+}

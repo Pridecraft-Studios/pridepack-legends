@@ -1,0 +1,93 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:village_decoration_01",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "village_decoration_01",
+        "tooltip_title": "structures.village.decoration.01.name",
+        "tooltip_description": "structures.village.decoration.01.description",
+        "buildable_category": ""
+      },
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:buildable_foundation": {
+        "style": "generic"
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_health_generation_default",
+        "badger:component_foundation_default"
+      ],
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 5
+          },
+          {
+            "item": "stone",
+            "amount": 5
+          },
+          {
+            "item": "gold",
+            "amount": 5
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether", 
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:offline_traits": {
+        "offline_disabled_components": [
+          "badger:culture"
+        ],
+        "construction_disabled_components": [
+          "badger:culture"
+        ]
+      },
+      "badger:zone_type_requirement": {
+
+        "include_tags": [ "utopia" ]
+
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "village_decoration_01",
+        "build_time": 14,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:tags": {
+        "tags": [
+          "donotattack",
+          "buildable",
+          "buildable_structure",
+          "buildable_prop"
+        ]
+      },
+      "badger:buildable_replace": {},
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_garden_small"
+      }
+    }
+  }
+}

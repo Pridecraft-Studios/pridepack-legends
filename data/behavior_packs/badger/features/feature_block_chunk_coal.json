@@ -1,0 +1,24 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_block_chunk_coal"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "randomize_rotation": true,
+    "places_block": "badger:block_chunk_ore_coal",
+    "may_attach_to": {
+      "auto_rotate": false,
+      "bottom": [
+        "badger:block_coal_light",
+        "badger:block_coal",
+        "badger:block_slab_coal",
+        "badger:block_ore_coal"
+      ]
+    },
+    "may_replace": [
+      "minecraft:air"
+    ]
+  }
+}

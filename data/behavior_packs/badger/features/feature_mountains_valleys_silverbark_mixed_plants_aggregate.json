@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_mountains_valleys_silverbark_mixed_plants_aggregate"
+    },
+    "features": [
+      "badger:feature_mushroom_stalk",
+      "badger:feature_mountains_valleys_mushroom_structure_scatter",
+      "badger:feature_mountains_valleys_silverbark_mixed_plants_scatter_02"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "format_version": "1.13.0",
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_poi_player_buff_speed_drylands_02"
+    },
+    "structure_name": "nature/buff_poi_speed_04",
+    "placement_range": {
+      "x": [0,1],
+      "z": [0,1]
+    },
+    "facing_direction": "random",
+    "constraints": {
+      "unburied":{},
+      "grounded": {
+        "block_allow_list": [
+          "minecraft:grass",
+          "badger:block_sand",
+          "badger:block_sand",
+          "badger:block_rivershore",
+          "badger:block_sand",
+          "badger:block_sand_d1",
+          "badger:block_sand_d2",
+          "badger:block_sand_red",
+          "badger:block_riverbed_a",
+          "badger:block_riverbed_a2",
+          "badger:block_redsand_b",
+          "badger:block_redsand_c",
+          "badger:block_redsand_d",
+          "badger:block_redsand_a_top",
+          "badger:block_cliffdirt_01",
+          "badger:block_frostsnow",
+          "badger:block_frostground_02",
+          "badger:block_frostground_03",
+          "badger:block_frostground_04",
+          "badger:block_frostground_05",
+          "badger:block_frostground_06",
+          "badger:block_frostice_mid",
+          "badger:block_hotrock_var01",
+          "badger:block_hotrock_var02",
+          "badger:block_hotrock_var03",
+          "badger:block_hotrock_var04",
+          "badger:block_riverbed_b"
+        ]
+      },
+      "empty_space": {}
+    }
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_magma_cube_sml",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Melee"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.7,
+        "height": 1.8
+      },
+      "badger:world_collision": {
+        "has_collision": true,
+        "auto_step": 1.1
+      },
+      "badger:telemetry_category": {
+        "category_name": "Piglin Melee"
+      },
+      "badger:collision_weight": {
+        "weight": 5
+      },
+      "badger:movement": {
+        "move_speed": 1.25,
+        "air_control_factor": 0.0
+      },
+      "badger:physics": {
+        "gravity": -30,
+        "friction": 0.04
+      },
+      "badger:loot": {
+        "table": "no_loot"
+      },
+      "badger:tags": {
+        "tags": [
+          "magmacube",
+          "piglin",
+          "mob",
+          "fighter",
+          "melee"
+        ]
+      },
+      "badger:health": {
+        "max_health": 10
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Mob targeting
+          {
+            "name": "cube_sml_mob_melee",
+            "max_range": 10,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack"
+            ]
+          },
+          //Buildable targeting
+          {
+            "name": "cube_sml_buildable_melee",
+            "max_range": 10,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack"
+            ]
+          },
+          {
+            "name": "cube_sml_buildable_melee_nav_fail",
+            "max_range": 1,
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack"
+            ]
+          },
+          //General targeting
+          {
+            "name": "cube_sml_general_attack",
+            "max_range": 25,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {}
+      },
+      "badger:resist_status": {
+        "spore_damaged": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "burning": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "wet": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "healing": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "healing_stone": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "electric_stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "slowed_piglin_bramble": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 1,
+          "sc": 1,
+          "rc": 1
+        }
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "melee_attack",
+            "on_hit_target_trigger": "on_magma_cube_sml_melee_attack_hit",
+            "range": {
+              "max_range": 1
+            },
+            "state_machine": {
+              "wind_up": 0.4,
+              "cooldown_time": 0.6,
+              "deactivates_on_cooldown": false
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 1.3,
+                "thickness": 2.2,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.65
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 2,
+                "damage_types": [
+                  "melee"
+                ]
+              },
+              "apply_status": {
+                "burning": {
+                  "chance": 0.1,
+                  "strength": 0.5
+                }
+              }
+            }
+          },
+          {
+            "name": "secondary_combat_position",
+            "range": {
+              "min_range": 1,
+              "max_range": 1.5
+            }
+          },
+          {
+            "name": "cube_approach",
+            "range": {
+              "max_range": 1.0
+            }
+          }
+        ]
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 1.1,
+          "position": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "damage_effects": [
+          {
+            "damage": 0,
+            "damage_types": [
+            ],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+            ],
+            "apply_status": {
+              "small_collide": {
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 1.1
+      },
+      "badger:conditionally_solid_blocks": {
+        "include_tags": [
+          "barrier_waterfall"
+        ],
+        "exclude_tags": []
+      },
+      "badger:template": "badger:template_piglin"
+    }
+  }
+}

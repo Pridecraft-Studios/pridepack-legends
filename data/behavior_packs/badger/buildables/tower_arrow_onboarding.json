@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:tower_arrow",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:tower_arrow",
+        "game_mode": "onboarding"
+      },
+      "badger:buildable_requirement": {
+        "unlock": [
+          {
+            "item": "unlock_onboarding_defensive_buildings",
+            "amount": 1
+          }
+        ]
+      }
+    }
+  }
+}

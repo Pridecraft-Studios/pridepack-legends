@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mount_beetle",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "PvP",
+      "type": "Mount"
+    },
+    "components": {
+      "badger:glide_telemetry_tracking": {},
+      "badger:template": {
+        "parent": "badger:mount_beetle",
+        "game_mode": "pvp"
+      }
+    }
+  }
+}

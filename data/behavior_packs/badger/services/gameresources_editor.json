@@ -1,0 +1,75 @@
+{
+  "badger:game_resources_service": {
+    "game_resources": [
+      {
+        "resource": "advanced_direct_unlock",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 1
+      },
+      {
+        "resource": "battle_view_unlock",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 1
+      },
+      //core resources
+      {
+        "resource": "wood",
+        "type": "team",
+        "default_amount": 0
+      },
+      {
+        "resource": "stone",
+        "type": "team",
+        "default_amount": 0
+      },
+      {
+        "resource": "iron",
+        "type": "team",
+        "default_amount": 0
+      },
+      {
+        "resource": "gold",
+        "type": "team",
+        "archetype_name": "badger:item_orb_04",
+        "stack_size": 1,
+        "default_amount": 0
+      },
+      {
+        "resource": "diamond",
+        "type": "team",
+        "default_amount": 0
+      },
+      {
+        "resource": "redstone",
+        "type": "team",
+        "default_amount": 0
+      },
+      {
+        "resource": "coal",
+        "type": "team",
+        "default_amount": 0
+      },
+      //Common
+      {
+        "resource": "emerald",
+        "type": "team",
+        "default_amount": 0,
+        "stack_size": 5
+      },
+      //rare
+      {
+        "resource": "xp_common",
+        "type": "team",
+        "archetype_name": "badger:item_orb_03",
+        "default_amount": 0,
+        "stack_size": 1
+      }
+    ],
+    "badger:template": {
+      "parent": "badger:game_resources_service",
+      "game_mode": "editor"
+    }
+  }
+}

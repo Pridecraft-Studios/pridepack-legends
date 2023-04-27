@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_nether_rotters_mushrooms_aggregate"
+    },
+    "features": [
+      "badger:feature_nether_rotters_mushroom_weighted",
+      "badger:feature_nether_rotters_nether_wart_warped_scatter"
+    ]
+  }
+}

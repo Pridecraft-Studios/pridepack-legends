@@ -1,0 +1,27 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_plateaus_grass_long_scatter"
+    },
+    "places_feature": "badger:feature_brokenlands_plateaus_grass_long_weighted",
+    "iterations": "math.random(2,5)",
+    "scatter_chance": "50",
+    "project_input_to_floor": true,
+    "x": {
+      "extent": [
+        -1,
+        1
+      ],
+      "distribution": "uniform"
+    },
+    "z": {
+      "extent": [
+        -1,
+        1
+      ],
+      "distribution": "uniform"
+    },
+    "y": 0.0
+  }
+}

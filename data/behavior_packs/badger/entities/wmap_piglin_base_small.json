@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:wmap_piglin_base_small",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 1.03125,
+        "length": 0.234375019073,
+        "width": 0.5625
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      },
+      "badger:map3_selectable": {}
+    }
+  }
+}

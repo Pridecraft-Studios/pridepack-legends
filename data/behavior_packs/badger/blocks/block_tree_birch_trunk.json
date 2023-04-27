@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_tree_birch_trunk",
+      "material": "badger_wood"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "pillar",
+        "camera_collision": true,
+        "directional_texture": true,
+        "directional_shape": true
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      },
+      "badger:block_type": {
+        "tags": [
+          "gatherable_wood"
+        ]
+      }
+    }
+  }
+}

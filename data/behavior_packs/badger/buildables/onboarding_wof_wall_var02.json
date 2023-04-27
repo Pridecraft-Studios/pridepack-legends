@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:onboarding_wof_wall_var02",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_presentation": {
+      "icon": "structure_spawner_creeper",
+      "buildable_category": "",
+      "height_offset": 1
+    },
+      "badger:buildable_structure": {
+        "nbt_file": "onboarding_wof_wall_var02"
+      },
+      "badger:template": "badger:template_poi",
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "poi"
+          
+        ]
+      },
+      "badger:omit_team_id": {}
+    }
+  }
+}

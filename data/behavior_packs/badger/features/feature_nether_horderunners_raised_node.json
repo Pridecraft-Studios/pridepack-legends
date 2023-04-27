@@ -1,0 +1,56 @@
+{
+    "format_version": "1.13.0",
+    "code:place_node": {
+      "description": {
+        "identifier": "badger:feature_nether_horderunners_raised_node"
+      },
+      "weighted_blocks": [
+        ["badger:block_slab_nylium", 15],
+        ["badger:block_slab_nylium_var01", 15],
+        ["badger:block_slab_nylium_var02", 15],
+        ["badger:block_slab_netherrack_dried", 15],
+        ["badger:block_sheet_netherrack_dried", 15],
+        ["badger:block_sheet_netherrack_dried_var01", 15]
+      ],
+      "x": {
+        "range": [2, 5],
+        "distribution": "gaussian"
+      },
+      "z": {
+        "range": [2, 5],
+        "distribution": "gaussian"
+      },
+      "y": 1,
+      "proportion": {},
+      "num_blocks": {
+        "range": [50, 80],
+        "distribution": "gaussian"
+      },
+      "density": {
+        "range": [1, 3],
+        "distribution": "gaussian"
+      },
+      "constraints": {
+        "block_intersection": {
+          "block_allow_list": [
+            "minecraft:air"
+          ]
+        },
+        "grounded": {
+          "block_allow_list": [
+            "badger:block_netherrack",
+            "badger:block_netherrack_var01",
+            "badger:block_netherrack_var02",
+            "badger:block_netherrack_var03",
+            "badger:block_nylium_grass",
+"badger:block_nylium_grass_var01",
+            "badger:block_nylium", 
+            "badger:block_nylium_var01", 
+            "badger:block_nylium_var02",
+            "badger:block_netherrack_dried"          
+          ],
+          "chop_off": true
+        }
+      }
+    }
+  }

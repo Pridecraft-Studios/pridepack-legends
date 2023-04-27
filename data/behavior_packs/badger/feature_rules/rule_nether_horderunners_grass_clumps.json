@@ -1,0 +1,38 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_nether_horderunners_grass_clumps",
+      "places_feature": "badger:feature_nether_horderunners_piglin_grass_clump_scatter"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "nether_horderunner"
+            }
+          ]           
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(84,124)",
+      "scatter_chance": "temp.noisevalue = query.noise((variable.worldx) / 15, (variable.worldz) / 15);\r\nreturn temp.noisevalue < -0.2;",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [0, 15]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [0, 15]
+      }
+    }
+  }
+}

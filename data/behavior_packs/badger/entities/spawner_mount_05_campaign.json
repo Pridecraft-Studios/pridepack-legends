@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_mount_05",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:campaign_team": {
+        "team_tag": "team_two"
+      },
+      "badger:spawner_rules": {
+        "bsharp_rule": {
+          "variable": "gv_mount_05_unlocked",
+          "value": 0
+        }
+      },
+      "badger:template": { 
+        "parent": "badger:spawner_mount_05",
+        "game_mode": "campaign"
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:hero_nis",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 0.9,
+        "length": 0.1,
+        "width": 0.1
+      },
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": true,
+        "auto_step": 3.1,
+        "interpolation_speed": 12,
+        "interpolate_from_height": false
+      },
+      "badger:physics": {
+      },
+      "badger:movement": {
+        "move_speed": 5.0
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      }
+    }
+  }
+}

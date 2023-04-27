@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:metadata_hurtbox_noticket",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 5.0,
+        "height": 5.0
+      },
+      "badger:meta_aabb": {
+      },
+      "badger:hurtbox": {
+        "no_tickets": true
+      },
+      "badger:tags": {
+        "tags": [
+          "donotattack"
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb"
+      },
+      "badger:take_block_space": {}
+    }
+  }
+}

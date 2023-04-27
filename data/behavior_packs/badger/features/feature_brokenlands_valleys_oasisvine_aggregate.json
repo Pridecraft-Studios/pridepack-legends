@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "code:place_aggregated": {
+    "description": {
+      "identifier": "badger:feature_brokenlands_valleys_oasisvine_aggregate"
+    },
+    "features": [
+      "badger:feature_brokenlands_valleys_oasisvine_tree_scatter",
+      "badger:feature_brokenlands_valleys_oasisvine_cluster_scatter"
+    ]
+  }
+}

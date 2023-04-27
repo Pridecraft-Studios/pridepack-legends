@@ -1,0 +1,11 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_fateful_land_block_groundenergy_medium"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "places_block": "badger:block_wof_ground_energy_medium"
+  }
+}

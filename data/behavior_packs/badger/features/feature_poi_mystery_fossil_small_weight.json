@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+
+  "code:place_weighted_random": {
+    "features": [
+      ["badger:feature_poi_mystery_fossil_large_tail_bone_01", 10.0],
+      ["badger:feature_poi_mystery_fossil_small_rib_bone_01", 10.0],
+      ["badger:feature_poi_mystery_fossil_small_rib_bone_02", 10.0],
+      ["badger:feature_poi_mystery_fossil_small_tail_bone_01", 10.0]
+    ],
+
+    "description": {
+      "identifier": "badger:feature_poi_mystery_fossil_small_weight"
+    }
+  }
+}

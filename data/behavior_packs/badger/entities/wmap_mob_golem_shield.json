@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:wmap_mob_golem_shield",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 1.31250030518,
+        "length": 0.4375,
+        "width": 0.8125
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      },
+      "badger:map3_selectable": {}
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:tower_piglin_arrow_inner",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "pigTowerInner",
+          "piglinStructure",
+          "piglin",
+          "pigArrowTower"
+        ]
+      },
+      "badger:template": [
+        "badger:tower_piglin_arrow",
+        "badger:template_structure_piglin"
+      ]
+    }
+  }
+}

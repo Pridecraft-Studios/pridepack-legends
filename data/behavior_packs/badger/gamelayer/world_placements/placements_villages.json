@@ -1,0 +1,362 @@
+{
+  "factions": [
+    {
+      "unique_card_id": "badger_forest_1_village_culture_required",
+      "map_data": "badger:villager_culture_001",
+      "village_data": "badger:villager_village_001",
+      "placement_name": "forest_1_village",
+      "placement_type": "village",
+      "add_to_poi_graph": true,
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "biome": {
+        "biome": "forest",
+        "total_pixels": 40,
+        "starting_pixels": 9,
+        "spread_priority": 1
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "utopia_biome_village_stamp",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "culture_required"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              56,
+              999
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1,
+            "mandatory_threshold": 1.0
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              60,
+              100
+            ],
+            "distance_to_zero_score": [0, 30],
+            "tag_parent": "wellOfFate",
+            "weight": 1,
+            "mandatory_threshold": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_frostlands_1_village_culture_required",
+      "map_data": "badger:villager_culture_001",
+      "village_data": "badger:villager_village_001",
+      "placement_name": "frostlands_1_village",
+      "placement_type": "village",
+      "add_to_poi_graph": true,
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "biome": {
+        "biome": "frostlands",
+        "total_pixels": 40,
+        "starting_pixels": 9,
+        "spread_priority": 1
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "utopia_biome_village_stamp",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "culture_required"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              56,
+              999
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1,
+            "mandatory_threshold": 1.0
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              999
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "village",
+            "weight": 1,
+            "mandatory_threshold": 1.0
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              60,
+              100
+            ],
+            "distance_to_zero_score": [0, 30],
+            "tag_parent": "wellOfFate",
+            "weight": 1,
+            "mandatory_threshold": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_drylands_1_village_culture_required",
+      "map_data": "badger:villager_culture_001",
+      "village_data": "badger:villager_village_001",
+      "placement_name": "drylands_1_village",
+      "placement_type": "village",
+      "add_to_poi_graph": true,
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "biome": {
+        "biome": "drylands",
+        "total_pixels": 40,
+        "starting_pixels": 9,
+        "spread_priority": 1
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "utopia_biome_village_stamp",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "culture_required"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              56,
+              999
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1,
+            "mandatory_threshold": 1.0
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              999
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "village",
+            "weight": 1,
+            "mandatory_threshold": 1.0
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              60,
+              100
+            ],
+            "distance_to_zero_score": [0, 30],
+            "tag_parent": "wellOfFate",
+            "weight": 1,
+            "mandatory_threshold": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_wetlands_1_village_culture_required",
+      "map_data": "badger:villager_culture_001",
+      "village_data": "badger:villager_village_001",
+      "placement_name": "wetlands_1_village",
+      "placement_type": "village",
+      "add_to_poi_graph": true,
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "biome": {
+        "biome": "wetlands",
+        "total_pixels": 40,
+        "starting_pixels": 9,
+        "spread_priority": 1
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "utopia_biome_village_stamp",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "culture_required"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              56,
+              999
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1,
+            "mandatory_threshold": 1.0
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              999
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "village",
+            "weight": 1,
+            "mandatory_threshold": 1.0
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              60,
+              100
+            ],
+            "distance_to_zero_score": [0, 30],
+            "tag_parent": "wellOfFate",
+            "weight": 1,
+            "mandatory_threshold": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_grasslands_1_village_culture_required",
+      "map_data": "badger:villager_culture_001",
+      "village_data": "badger:villager_village_001",
+      "placement_name": "grasslands_1_village",
+      "placement_type": "village",
+      "add_to_poi_graph": true,
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "biome": {
+        "biome": "grasslands",
+        "total_pixels": 40,
+        "starting_pixels": 9,
+        "spread_priority": 1
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "utopia_biome_village_stamp",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "culture_required"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              56,
+              999
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1,
+            "mandatory_threshold": 1.0
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              999
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "village",
+            "weight": 1,
+            "mandatory_threshold": 1.0
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              60,
+              100
+            ],
+            "distance_to_zero_score": [0, 30],
+            "tag_parent": "wellOfFate",
+            "weight": 1,
+            "mandatory_threshold": 0.1
+          }
+        }
+      ]
+    }
+  ]
+}

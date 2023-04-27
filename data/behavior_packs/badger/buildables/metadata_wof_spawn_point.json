@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:metadata_wof_spawn_point",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:tags": {
+        "tags": [ "respawn_point" ]
+      },
+      "badger:respawn_point": {
+        "alliance_rule": "can_respawn"
+      },
+      "badger:offline_traits": {
+        "disabled_by_health_components": [
+          "badger:respawn_point"
+        ]
+      }
+    }
+  }
+}

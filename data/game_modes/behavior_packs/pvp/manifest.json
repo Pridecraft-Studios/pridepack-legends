@@ -1,0 +1,17 @@
+{
+	"format_version": 1,
+	"header": {
+		"description": "PVP Resource Pack Description",
+		"name": "PVP Resources",
+		"uuid": "1bb7e174-79ec-4edc-b94e-ad4385501228",
+		"version": [0, 0, 1]
+	},
+	"modules": [
+		{
+			"description": "PVP Resource Pack Description",
+			"type": "data",
+			"uuid": "84c44911-a60e-443a-beea-69d845093a23",
+			"version": [ 0, 0, 1 ]
+		}
+ ]
+}

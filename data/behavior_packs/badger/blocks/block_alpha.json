@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_alpha", 
+      "material": "badger_stone"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "block", 
+        "directional_texture": false, 
+        "directional_shape": false, 
+        "render_layer": "blend"
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:terrain_type": {
+        "terrain": "stone"
+      }
+    }
+  }
+}

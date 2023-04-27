@@ -1,0 +1,30 @@
+{
+  "format_version": "1.13.0",
+  "code:place_weighted_random": {
+    "features": [
+      [
+        "badger:feature_plant_drygrass_field_01c",
+        10.0
+      ],
+      [
+        "badger:feature_plant_drygrass_field_02c",
+        20.0
+      ],
+      [
+        "badger:feature_plant_drygrass_field_03c",
+        20.0
+      ],
+      [
+        "badger:feature_plant_drygrass_field_04c",
+        20.0
+      ],
+      [
+        "badger:feature_plant_drygrass_field_05c",
+        20.0
+      ]
+    ],
+    "description": {
+      "identifier": "badger:feature_drylands_grass_waves_a_weighted"
+    }
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_piglin_runt_guarded",
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:movement": {
+        "move_speed": 3.5,
+        "air_control_factor": 0.0
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 5
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Player Targeting
+          {
+            "name": "runt_player_melee",
+            "max_range": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "buildable_combat",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_1"
+            ]
+          },
+          //Support Golem Targeting
+          {
+            "name": "runt_support_melee",
+            "max_range": 15,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [
+              "support"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "mob_alliance_structure",
+              "buildable_combat",
+              "animal",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_1"
+            ]
+          },
+          //Mob targeting
+          {
+            "name": "runt_mob_melee",
+            "max_range": 15,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "mob_alliance_structure",
+              "buildable_combat",
+              "animal",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_1"
+            ]
+          },
+          //buildable nav fail targeting
+          {
+            "name": "runt_buildable_melee_nav_fail",
+            "max_range": 1,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_1"
+            ]
+          },
+          //General targeting
+          {
+            "name": "runt_general_melee",
+            "max_range": 10,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "buildable_combat",
+              "animal",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack_1"
+            ]
+          },
+          //Secondary Combat Positioning
+          {
+            "name": "runt_secondary_combat_pos",
+            "max_range": 15,
+            "action_tickets": {
+              "sc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "mob_alliance_structure",
+              "animal",
+              "buildable_combat",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "secondary_combat_position"
+            ]
+          },
+          //Approach
+          {
+            "name": "runt_default_approach",
+            "max_range": 30,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "action_tickets": {
+              "sc": 1
+            },
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "buildable_combat",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "runt_approach"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "melee_attack_1",
+            "predictive_windup": false,
+            "range": {
+              "min_range": 0.0,
+              "max_range": 1.00
+            },
+            "state_machine": {
+              "wind_up": 0.7,
+              "wind_down": 1.1,
+              "cooldown_time": 1,
+              "deactivates_on_cooldown": false
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 30,
+                "radius": 2,
+                "thickness": 2.2,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.25
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 3,
+                "damage_types": [
+                  "melee",
+                  "crush"
+                ]
+              }
+            }
+          },
+          {
+            "name": "runt_approach",
+            "range": {
+              "max_range": 2
+            }
+          },
+          {
+            "name": "secondary_combat_position",
+            "range": {
+              "min_range": 3,
+              "max_range": 4
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:status_effect_spore_damaged",
+			"runtime_identifier": "badger:status_effect"
+		},
+		"components": {
+			"badger:status": {
+				"applied_name": "spore_damaged",
+				"default_resistance": {
+					"resisted": false,
+					"time": 7.5,
+					"resistance_persist_time": 0.5
+				}
+			},
+			"badger:damage_over_time": {
+				"interval": 0.5,
+				"damage": {
+					"damage_amount": 0.35,
+					"damage_types": [
+						"spore"
+					]
+				}
+			}
+		}
+	}
+}

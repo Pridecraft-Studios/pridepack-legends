@@ -1,0 +1,57 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_lava_thrower_single",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:reports_hit_reaction": {},
+      "badger:aabb": {
+        "width": 0.7,
+        "height": 1.9
+      },
+      "badger:health": {
+        "max_health": 8
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {}
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 0.1
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": false,
+        "auto_step": 3.1
+      },
+      "badger:tags": {
+        "tags": [
+          "piglin",
+          "donotattack"
+        ]
+      },
+      "badger:removal_time": {
+        "time": 5.0,
+        "presentation_event": "on_explosion",
+        "sync_presentation_event": true
+      },
+      "badger:presentation_event": {
+        "on_explosion": {
+          "spawn_entity": [
+            "badger:piglin_lava_thrower_single_aoe"
+          ]
+        }
+      },
+      "badger:movement": {
+        "move_speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:wmap_player_waypoint_teammate_tooltip",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:map3_tooltip": {
+        "title": "tooltip.player.waypoint.teammate.title",
+        "description": "tooltip.player.waypoint.teammate.description",
+        "banner": "map_screen/banners/legend_banner_teammate_waypoint.png"
+      },
+      "badger:map3_selectable": {}
+    }
+  }
+}

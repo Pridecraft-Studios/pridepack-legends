@@ -1,0 +1,60 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_lava",
+      "material": "badger_lava"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube",
+        "directional_texture": false,
+        "directional_shape": true,
+        "collision_shape": "empty",
+        "connection_family": "block_barrier_boss",
+        "render_layer": "opaque_liquid"
+      },
+      "badger:telemetry_category": {
+        "category_name": "Environmental"
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      },
+      "badger:block_effects": {
+        "damage_amount": 0.75,
+        "damage_types": [
+          "lava"
+        ],
+        "effect_frequency": 0.25,
+        "apply_status": {
+          "burning": {
+            "strength": 1.0
+          },
+          "engaged": {
+            "strength": 1.0
+          },
+          "lava": {
+            "strength": 1.0
+          }
+        }
+      },
+      "badger:block_type": {
+        "tags": [
+          "lava"
+        ]
+      },
+      "badger:terrain_type": {
+        "terrain": "lava"
+      },
+      "badger:liquid": {},
+      "minecraft:block_light_emission": {
+        "emission": [
+          255,
+          130,
+          0,
+          255
+        ]
+      }
+    }
+  }
+}

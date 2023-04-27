@@ -1,0 +1,494 @@
+{
+   "audio_snapshot" : "snapshot:/cinematic/STATE_cinematic_nis_piglin_establish",
+   "cine_id" : "mob01_c03b_creeper_piglin_establish",
+   "clips" : [
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_avoidance" : {
+            "camera_disk_radius" : 2.50,
+            "camera_in_geometry_radius" : 2.0,
+            "distance_from_obstacle" : 3.50,
+            "ease" : 0.9499999880790710,
+            "min_distance_from_target" : 1.0,
+            "snap" : 5.0,
+            "target_disk_radius" : 1.50,
+            "target_vertical_offset" : 2.099999904632568
+         },
+         "camera_id" : "s00",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 114,
+         "ease" : "in_out_quart",
+         "enabled" : true,
+         "field_of_view" : 65.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s00",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 0,
+         "row_index" : 8,
+         "spawn_transform" : {
+            "locator_name" : "cine_origin_locator",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 28,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "blend_from" : false,
+         "blend_in" : 240,
+         "camera_avoidance" : {
+            "camera_disk_radius" : 2.50,
+            "camera_in_geometry_radius" : 2.0,
+            "distance_from_obstacle" : 3.50,
+            "ease" : 0.9499999880790710,
+            "min_distance_from_target" : 1.0,
+            "snap" : 5.0,
+            "target_disk_radius" : 1.50,
+            "target_vertical_offset" : 2.099999904632568
+         },
+         "camera_id" : "s01",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 276,
+         "ease" : "in_out_quint",
+         "enabled" : true,
+         "field_of_view" : 65.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s01",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 0,
+         "row_index" : 8,
+         "spawn_transform" : {
+            "locator_name" : "cine_origin_locator",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 142,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "camera_id" : "s00",
+         "clip_type" : "camera_look_at",
+         "do_debug_draw" : false,
+         "duration" : 114,
+         "enabled" : true,
+         "force_look_at_init" : true,
+         "hard_bounds_max" : [ 0.7200000286102295, 0.3200000524520874 ],
+         "hard_bounds_min" : [ -0.5800000429153442, -0.5600000023841858 ],
+         "locked_for_edit" : false,
+         "look_at" : [
+            {
+               "first" : "portal",
+               "second" : 0.0
+            }
+         ],
+         "look_at_offset" : [ 0.0, -10.0, 0.0 ],
+         "look_target_vertical_offset" : 0.0,
+         "name" : "1",
+         "row_index" : 10,
+         "soft_bounds_max" : [ 0.0, 0.1000000238418579 ],
+         "soft_bounds_min" : [ 0.0, -0.01999998092651367 ],
+         "soft_bounds_smoothing_spring" : 4.0,
+         "start_time" : 28,
+         "try_focus_head" : false
+      },
+      {
+         "camera_id" : "s01",
+         "clip_type" : "camera_look_at",
+         "do_debug_draw" : false,
+         "duration" : 276,
+         "enabled" : true,
+         "force_look_at_init" : true,
+         "hard_bounds_max" : [ 0.7200000286102295, 0.3200000524520874 ],
+         "hard_bounds_min" : [ -0.5600000023841858, -0.5600000023841858 ],
+         "locked_for_edit" : false,
+         "look_at" : [
+            {
+               "first" : "local_player",
+               "second" : 0.0
+            }
+         ],
+         "look_at_offset" : [ 0.0, 2.0, 0.0 ],
+         "look_target_vertical_offset" : 0.0,
+         "name" : "1",
+         "row_index" : 10,
+         "soft_bounds_max" : [ 0.0, 0.1200000047683716 ],
+         "soft_bounds_min" : [ 0.0, -0.01999998092651367 ],
+         "soft_bounds_smoothing_spring" : 4.0,
+         "start_time" : 142,
+         "try_focus_head" : true
+      },
+      {
+         "camera_id" : "s00",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 114,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4350000023841858, 0.03000000491738319 ],
+            "P2" : [ 0.2750001251697540, 0.984999954700470 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1-2",
+         "pan_end_transform" : {
+            "locator_name" : "s01_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s01_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 9,
+         "start_time" : 28,
+         "use_transform_orientation" : false,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s01",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 276,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4350000023841858, 0.03000000491738319 ],
+            "P2" : [ 0.2750001251697540, 0.984999954700470 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1-2",
+         "pan_end_transform" : {
+            "locator_name" : "s01_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s01_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 9,
+         "start_time" : 142,
+         "use_transform_orientation" : false,
+         "use_transform_position" : true
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "hud_visibility_clip",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 454,
+         "enabled" : true,
+         "hud_visibility" : "hidden",
+         "in_duration" : 120,
+         "locked_for_edit" : false,
+         "name" : "HIDE HUD",
+         "out_duration" : 120,
+         "row_index" : 1,
+         "start_time" : 0,
+         "toggle_state" : ""
+      },
+      {
+         "clip_type" : "screen_text",
+         "do_debug_draw" : false,
+         "duration" : 454,
+         "enabled" : false,
+         "locked_for_edit" : false,
+         "name" : "[ Keep Disabled ] Cinematic Candidates Descriptor :: 0:Player",
+         "row_index" : 0,
+         "start_time" : 0,
+         "text" : ""
+      },
+      {
+         "audio_event_on_skip" : "BAE_cine_mob01_c03b_stop",
+         "audio_event_on_start" : "BAE_cine_mob01_c03b",
+         "audio_event_on_stop" : "",
+         "clip_type" : "audio_clip",
+         "do_debug_draw" : false,
+         "duration" : 451,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "Audio Track",
+         "row_index" : 2,
+         "start_time" : 0
+      },
+      {
+         "clip_type" : "set_gameplay_camera_clip",
+         "color" : [ 0.9411765336990356, 0.03529414162039757, 0.03529414162039757, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "Reset GAme Camera Position orientation for local player",
+         "pitch" : 70.0,
+         "row_index" : 6,
+         "start_time" : 300,
+         "yaw" : 270.0
+      },
+      {
+         "alliance_rule" : "any_team",
+         "behaviour" : "badger:behavior_zombie_happy",
+         "behaviour_radius" : 11.0,
+         "clear_actors" : false,
+         "clear_players" : false,
+         "clip_type" : "crowd_clearing",
+         "collect_entities_to_clear" : false,
+         "disable_spawners" : false,
+         "do_debug_draw" : false,
+         "duration" : 454,
+         "enabled" : true,
+         "exclude_tags" : null,
+         "include_tags" : null,
+         "locked_for_edit" : false,
+         "look_at_radius" : 11.0,
+         "name" : "Clear Inmediate Area around the player",
+         "navigate_radius" : 11.0,
+         "radius" : 10.0,
+         "restore_teleported_entities" : false,
+         "row_index" : 4,
+         "start_time" : 0,
+         "team" : "blue_team",
+         "transform" : {
+            "entity_id" : "0",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "audition" : [
+            {
+               "exclude_tags" : null,
+               "include_tags" : [ "mob_alliance_creeper_piglin_portal" ],
+               "index" : "portal",
+               "optional" : false
+            }
+         ],
+         "clip_type" : "audition_clip",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "max_distance" : 5000.0,
+         "name" : "  AUD :: Find Portal",
+         "offset" : {
+            "entity_id" : "0",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 6,
+         "start_time" : 12
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : false,
+         "in_duration" : 60,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE In Duration",
+         "out_duration" : 0,
+         "row_index" : 6,
+         "start_time" : 388,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 6,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF] On Black",
+         "out_duration" : 0,
+         "row_index" : 6,
+         "start_time" : 418,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE OUT Duration",
+         "out_duration" : 0,
+         "row_index" : 6,
+         "start_time" : 424,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "do_debug_draw" : false,
+         "duration" : 66,
+         "enabled" : true,
+         "in_duration" : 30,
+         "locked_for_edit" : false,
+         "name" : "[FTB] Nis Quick in - Quick Out",
+         "out_duration" : 30,
+         "row_index" : 7,
+         "start_time" : 388,
+         "toggle_state" : "none"
+      },
+      {
+         "clip_type" : "rotate_entity",
+         "do_debug_draw" : false,
+         "duration" : 8,
+         "enabled" : true,
+         "entity_id" : "local_player",
+         "forward_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "locked_for_edit" : false,
+         "look_at_id" : "portal",
+         "name" : "",
+         "row_index" : 12,
+         "start_time" : 22
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "do_debug_draw" : false,
+         "duration" : 107,
+         "enabled" : true,
+         "in_duration" : 120,
+         "locked_for_edit" : false,
+         "name" : "",
+         "out_duration" : 60,
+         "row_index" : 7,
+         "start_time" : 0,
+         "toggle_state" : "off"
+      },
+      {
+         "clip_type" : "transition_clip",
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "  Opening Transition into Gameplay",
+         "rate" : 0.2000000029802322,
+         "row_index" : 8,
+         "start_time" : 424,
+         "time_to_reach_rate" : 0.3000000119209290,
+         "transition_out" : true
+      }
+   ],
+   "extra_cast" : null,
+   "extra_entity_ids" : null,
+   "extra_world_requests" : [ "1" ],
+   "interrupts_vo_sequences" : true,
+   "locators" : [
+      {
+         "attach_to_id" : "wof",
+         "locator_name" : "Fboss_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 0.0, 0.0, 0.0 ]
+      },
+      {
+         "attach_to_id" : "wof",
+         "locator_name" : "Fboss_Game",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -25.29999923706055, 2.700000047683716, -33.79999923706055 ]
+      },
+      {
+         "attach_to_id" : "local_player",
+         "locator_name" : "aud_pigbuilding",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 0.0, 0.0, 181.3999938964844 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "cam_new_locator",
+         "rotation" : [ 17.0, 167.0, -0.0 ],
+         "translation" : [ 1.25292968750, 39.42277526855469, -8.699798583984375 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s01_1",
+         "rotation" : [ 24.0, -178.0, 0.0 ],
+         "translation" : [ 0.1496582031250, 8.441950798034668, -11.25112915039062 ]
+      },
+      {
+         "attach_to_id" : "0",
+         "locator_name" : "s01_2",
+         "rotation" : [ 17.0, 179.0, -0.0 ],
+         "translation" : [ 0.71423339843750, 39.42277526855469, -8.600006103515625 ]
+      },
+      {
+         "attach_to_id" : "Super_NS",
+         "locator_name" : "s02_1",
+         "rotation" : [ 46.0, -45.0, 0.0 ],
+         "translation" : [ 16.83587646484375, 30.88630485534668, 14.66143798828125 ]
+      },
+      {
+         "attach_to_id" : "Super_NS",
+         "locator_name" : "s02_2",
+         "rotation" : [ 49.0, -74.0, 0.0 ],
+         "translation" : [ 20.96478271484375, 30.88630485534668, 7.847961425781250 ]
+      },
+      {
+         "attach_to_id" : "wof",
+         "locator_name" : "s03_1",
+         "rotation" : [ 37.0, -71.0, 0.0 ],
+         "translation" : [ 32.7473144531250, 35.47809600830078, 15.17235565185547 ]
+      },
+      {
+         "attach_to_id" : "wof",
+         "locator_name" : "s03_2",
+         "rotation" : [ 38.0, -79.0, 0.0 ],
+         "translation" : [ 33.60675048828125, 35.47809600830078, 12.05987548828125 ]
+      },
+      {
+         "attach_to_id" : "wof",
+         "locator_name" : "s04_1",
+         "rotation" : [ -28.0, -67.0, -0.0 ],
+         "translation" : [ 19.05963134765625, 9.307586669921875, 14.17657470703125 ]
+      },
+      {
+         "attach_to_id" : "wof",
+         "locator_name" : "s04_2",
+         "rotation" : [ -53.0, -71.0, -0.0 ],
+         "translation" : [ 19.05963134765625, 9.307586669921875, 14.17657470703125 ]
+      }
+   ],
+   "max_distance" : -1.0,
+   "proximity_range" : 1.0,
+   "requires_watcher" : false,
+   "sharing_policy" : "proximity",
+   "skip_condition_variable" : "",
+   "skip_to_cinematic" : "",
+   "skippable" : false,
+   "stage" : "",
+   "version" : 9,
+   "wants_skip_queue" : false
+}
